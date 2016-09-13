@@ -7,25 +7,27 @@ In the next section, you'll learn what you need to know in order to build, serve
 
 ## Getting Your Environment Setup
 
-This solution depends upon NodeJS and NPM. It is important that you only use Node version 4.4.4 LTS or higher. Do not use the "Current" version which contains latest features, or you may run into build errors. Any verion of Node LTS below 4.4.4 is not guaranteed to work and may also produce build errors.
+This solution depends upon NodeJS and NPM. It is important that you only use Node version 4.4.4 LTS or higher, and NPM version 3.10.6 or higher. Do not use the "Current" version which contains latest features, or you may run into build errors. Any verion of Node LTS below 4.4.4 is not guaranteed to work and may also produce build errors.
 
 **Installation steps:**
 
-* Close visual studio.
+* `npm run onetimesetup`
 
-* **Uninstall** any version of NodeJS you have currently.
+Webpack Dev Server with HMR (Hot Module Replacement) and Angular 2 AOT (Ahead Of Time) compilation
+ 
+* `npm run devserver:aot`
 
-* Navigate to the folder at: **(Solution Root)/ProgramDependencies/**
+Webpack Dev Server with HMR (Hot Module Replacement) and Angular 2 JIT (Just In Time) compilation
+ 
+* `npm run devserver:jit`
 
-* First install the Visual Studio extension "**NPM Task Runner v1.3.59.vsix**". This enables you to see the NPM scripts in a new window pane called Task Runner Explorer. 
+Dev Build (No HMR)
+ 
+* `npm run build:dev`
 
-* Next install "**node-v4.4.4-x64.msi**". Make sure to leave the "Add to PATH" checked during install.
-
-* Reopen Visual Studio and launch the solution. The first time opening the solution will take 3-5 minutes to install all of the node_modules and bower_components depencencies.
-
-* Once it finishes, all dependencies have been restored and you can begin developing. 
-
-* Choose "Web" on the dropdown where you launch the application. This launches the application using the new Kestrel .NET cross platform web server. The app will not run if you use the default "IIS Express". **The app is running on http://localhost:5000. The webpack-dev-server is running on http://localhost:4000** which serves the assets to the main .NET server on port 5000.
+Production Build (No HMR, optimized code)
+ 
+* `npm run build:production`
 
 
 **Important points of consideration**
