@@ -1,0 +1,85 @@
+/********************/
+/* About.scss */
+/********************/
+
+about {
+   // begin monsoonTaxReort
+
+   #monsoonTaxReort {
+      font-size: 12px;
+
+
+      .page {
+         // A4 page size
+         height: 297mm;
+         width: 210mm;
+         margin: auto;
+         // A4 page size
+         padding: 20px;
+         background-color: #fff;
+      }
+      // end .page
+
+      .section__summary {
+
+         h1 {
+            text-transform: capitalize;
+            font-weight: bold;
+            font-size: 1.6em;
+            border-bottom: 3px solid #ccc;
+            padding: 3px;;
+            margin: 0.5em 0;
+
+            span {
+               float: right;
+            }
+         }
+
+         table {
+            float: left;
+
+            td {
+               padding: 2px 5px;
+            }
+
+            td:last-child {
+               font-weight: bold;
+            }
+         }
+
+         .table-left {
+            width: 30%;
+            margin-right: 30px;
+         }
+         .table-right {
+            width: 40%;
+         }
+
+      }
+      // end .section__summary
+
+      .section__subdivision {
+         h2 {
+            background-color: #ddd;
+            text-transform: capitalize;
+            font-weight: bold;
+            font-size: 1.2em;
+            border-top: 3px solid #ccc;
+            padding: 3px;;
+            margin: 0.5em 0;
+         }
+      }
+      // end .section__subdivision
+
+      .clearfix:after {
+         content: ".";
+         visibility: hidden;
+         display: block;
+         height: 0;
+         clear: both;
+      }
+   }
+   // end .monsoonTaxReort
+}
+
+// end @media print

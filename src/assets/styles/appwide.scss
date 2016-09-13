@@ -1,0 +1,13 @@
+/* Appwide/appwide.scss*/
+/* Import Materialize CSS Mixins and Variables */
+@import "~materialize-css/sass/components/_mixins";
+@import "~materialize-css/sass/components/_color";
+@import '~materialize-css/sass/components/_variables';
+/* Import custom appwide styles */
+@import "appwide/susy-grid-config";
+@import "appwide/reset";
+@import "appwide/forms";
+@import "appwide/alignments";
+@import "appwide/display";
+@import "appwide/buttons";
+

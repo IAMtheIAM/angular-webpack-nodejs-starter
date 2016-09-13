@@ -1,0 +1,130 @@
+﻿/********************/
+/* App.scss */
+/********************/
+/// <reference path="../../../node_modules/susy/sass/susy/language/_susy.scss" />
+/// <reference path="../../../node_modules/bourbon/app/assets/stylesheets/bourbon" />
+/// <reference path="../../assets/styles/shared/variables.scss" />
+/// <reference path="../../assets/styles/shared/mixins.scss" />
+/* ====================================================
+ * ============== PAGE LAYOUT =========================
+ * ==================================================== */
+//@import "../../assets/styles/appwide/susy-config";
+/* ====================================================
+ * ============== APP-WIDE STYLES  ====================
+ * ==================================================== */
+@import '../../assets/styles/appwide';
+
+/* ====================================================
+ * ============== "APP" COMPONENT STYLES  =============
+ * ==================================================== */
+
+body {
+  &::before {
+    content: ' ';
+    height: 100%;
+    position: fixed; // instead of background-attachment
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: $colors-app-background;
+    background-image: url('/assets/images/login-ellipse.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    will-change: transform; // creates a new paint layer
+    z-index: -1;
+  }
+}
+
+// The Susy Span Mixin Syntax
+// @include span( <$span> of [<$context>] [<$last>] );
+// @include span( isolate <$span> at [<$column>] [<$last>] );
+
+/********************/
+/* Logged in styles */
+/********************/
+
+@include nested(24) {
+
+  body.authenticated {
+    &::before {
+      background-color: #fff;
+      background-image: none;
+    }
+
+    .app-container {
+      position: relative;
+      top: 0;
+      @include clearfix;
+
+      nav-header {
+        @include span(24);
+      }
+
+      nav-sidebar {
+        @include span(4);
+      }
+
+      nav-sidebar {
+        @include span(20 last);
+      }
+
+      .app-state {
+        color: unset;
+      }
+    }
+
+    .content-container {
+      @include span(isolate 20 at 4 last);
+      padding: 40px;
+    }
+
+    .content {
+      height: unset;
+    }
+  }
+  // end body.authenticated
+
+}
+
+// end nested(24)
+
+/********************/
+/* Logged out styles */
+/********************/
+
+@include nested(24) {
+
+  .app-container {
+    position: relative;
+    top: 140px;
+    @include clearfix;
+
+    nav-header {
+      @include span(24);
+    }
+
+    nav-sidebar {
+      @include span(4);
+    }
+    nav-sidebar {
+      @include span(20 last);
+    }
+
+    .app-state {
+      color: #ffffff;
+    }
+  }
+
+  .content-container {
+    @include span(24 last);
+  }
+
+  .content {
+    //height: 100vh; // This forces .app-container to 100% of your viewport
+  }
+
+}
+
+// end nested(24)

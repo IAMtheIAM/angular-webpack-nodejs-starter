@@ -1,0 +1,57 @@
+{
+   "compilerOptions": {
+      "target": "es5",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "allowSyntheticDefaultImports": false,
+      "noEmitHelpers": true,
+      "pretty": true,
+      "sourceMap": true,
+      "lib": ["es5", "dom"],
+      "strictNullChecks": false,
+      "baseUrl": ".",
+      "sourceMap": true,
+      "sourceRoot": ".",
+      "lib": [
+         "es6",
+         "dom"
+      ],
+      "types": [
+         "hammerjs",
+         "jasmine",
+         "node",
+         "selenium-webdriver",
+         "source-map",
+         "uglify-js",
+         "webpack",
+         "materialize-css",
+         "jquery",
+         "kendo-ui",
+         "jquery.datatables"
+      ],
+      "typeRoots": [
+         "./node_modules/@types"
+      ],
+      "outDir": "./wwwroot/compiled-src"
+   },
+   "exclude": [
+      "./node_modules",
+      "./**/*.e2e.ts",
+      "./**/*.spec.ts",
+      "./src/main.browser.aot.ts"
+   ],
+   "awesomeTypescriptLoaderOptions": {
+      "useWebpackText": true,
+      "forkChecker": true,
+      "useCache": true
+   },
+   "compileOnSave": false,
+   "buildOnSave": false,
+   "atom": {
+      "rewriteTsconfig": false
+   },
+   "angularCompilerOptions": {
+      "genDir": "src/aot-compiled",
+      "debug": true
+   }
+}

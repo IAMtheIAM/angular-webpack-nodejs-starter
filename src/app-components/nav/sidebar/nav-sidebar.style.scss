@@ -1,0 +1,26 @@
+/********************/
+/* Nav-sidebar.scss */
+/********************/
+
+nav-sidebar {
+
+  // The Susy Span Mixin Syntax
+  // @include span( <$span> of [<$context>] [<$last>] );
+  // @include span( isolate <$span> at [<$column>] [<$last>] );
+
+  .side-nav {
+    width: span(3 of 24);
+    background-color: #fff;
+
+     a {
+        font-size: 1em;
+        font-weight: 400;
+     }
+  }
+
+  .side-nav.fixed {
+    top: 64px;
+  }
+
+
+}

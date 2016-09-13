@@ -1,0 +1,48 @@
+/********************/
+/* Login.scss */
+/********************/
+
+/// <reference path="../../../node_modules/susy/sass/susy/language/_susy.scss" />
+/// <reference path="../../../node_modules/bourbon/app/assets/stylesheets/bourbon" />
+/// <reference path="../../assets/styles/shared/variables.scss" />
+/// <reference path="../../assets/styles/shared/mixins.scss" />
+
+// The Susy Span Mixin Syntax
+// This creates the app layout using Susy's Math functions
+// @include span( <$span> of [<$context>] [<$last>] );
+// Note: Arguments within square brackets are optional arguments
+
+
+@include nested(24) {
+  login {
+    align-self: center;
+    //height: 100vh; // This forces .app-container to 100% of your viewport
+
+    @include clearfix;
+    display: flex;
+    justify-content: center;
+
+    .login-form {
+      width: span(6);
+      margin: 20px;
+      position: relative;
+      //top: 200px;
+      @include border-radius(10px);
+
+      md-card {
+        background-color: #f9f9f9;
+        margin: 20px 0;
+        padding: 34px;
+        @include border-radius(10px);
+      }
+
+      button.login-submit {
+        margin: 15px 0 10px;
+        font-size: 1.5em;
+      }
+    }
+
+
+
+  } // end login {}
+} // end susy nested {} context

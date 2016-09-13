@@ -1,0 +1,40 @@
+<div class="navbar-fixed">
+   <!-- Dropdown Structure -->
+   <ul id="dropdown1" class="dropdown-content">
+      <li><a>one</a></li>
+      <li><a>two</a></li>
+      <li class="divider"></li>
+      <li><a>three</a></li>
+   </ul>
+   <nav>
+      <div class="nav-wrapper">
+         <ul class="hide-on-med-and-down">
+            <li class="brand-logo"><a>Atlas</a>
+            </li>
+            <li class="search">
+               <div class="search-wrapper">
+                  <input id="search-sidenav" class="search-sidenav" type="text" placeholder="Search"><i
+                  class="material-icons">search</i>
+                  <div class="search-results"></div>
+               </div>
+            </li>
+         </ul>
+         <ul class="right hide-on-med-and-down">
+
+            <li class="notifications-alert"><a><img src="/assets/icons/alert-notifications.png" alt=""></a></li>
+            <li class="profile-picture"><a class="dropdown-button" href="" data-activates="dropdown1"><img
+               src="/assets/icons/profile-picture.png" alt="">Rose Mendez<i
+               class="material-icons right">arrow_drop_down</i></a>
+            </li>
+            <!-- Dropdown Trigger -->
+            <li>
+            </li>
+            <li>
+               <a (click)="toggleFullScreen()"><img [src]="fullscreen.activeIcon" id="fullScreenTrigger"
+                  class="not-fullscreen" width="30" height="30" /></a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+</div>
+

@@ -1,0 +1,32 @@
+/* Appwide/Forms.scss*/
+
+
+/* ===============================================================
+ *                            ALIGNMENTS
+ * =============================================================== */
+
+.center-block {
+  display: flex;
+  justify-content: center;
+  margin: unset;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}

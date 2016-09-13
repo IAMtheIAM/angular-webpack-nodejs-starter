@@ -1,0 +1,15 @@
+<!-- App Container -->
+<div class="app-container">
+  <nav-header *ngIf="appState.state.isAuthenticated"></nav-header>
+  <nav-sidebar *ngIf="appState.state.isAuthenticated"></nav-sidebar>
+  <div class="content-container">
+    <div class="content">
+      <router-outlet></router-outlet>
+      <pre class="app-state center-block">this.appState.state = {{ appState.state | json }}</pre>
+    </div>
+    <nav-footer></nav-footer>
+  </div>
+</div>
+<a class="hidden" id="manualForceChangeDetection" (click)="manualDetectChanges()">Manual Detect Changes</a>
+<a class="hidden" id="autoForceChangeDetection" (click)="autoDetectChanges()">Auto Detect Changes</a>
+
