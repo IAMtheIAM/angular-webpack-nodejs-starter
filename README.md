@@ -1,7 +1,9 @@
 
 # Angular 2 + AOT Compiler + Webpack 2 + Typescript + SASS
 
-This is based on the Angular2 Webpack Starter repo [available on GitHub](https://angularclass.github.io/angular2-webpack-starter/). The original documentation is here in this file below the customized documentation. This documentation assumes you are developing on Windows 10.
+This is based on the Angular2 Webpack Starter repo [available on GitHub](https://angularclass.github.io/angular2-webpack-starter/). It enhances that repo with additional features, such as Angular 2 AOT Compilation, and SASS + Sourcemaps working with Hot Module Replacement.
+ 
+The original documentation is here in this file below the customized documentation. This documentation assumes you are developing on Windows 10.
 
 In the next section, you'll learn what you need to know in order to build, serve, and edit this app.
 
@@ -31,17 +33,6 @@ This solution depends upon NodeJS and NPM. It is important that you only use Nod
 
 
 **Important points of consideration**
-
-
-* Every time you open the solution, visual studio will execute the `projectlaunch` script because it is bound to the "project open" binding inside the Task Runner Explorer window. This script will install all dependencies, remove the version of NodeJS which comes with Visual Studio 2015, delete wwwroot, generate a new webpack bundle which outputs to wwwroot, and launch the webpack-dev-server running on port 4000. It is critical that the script properly executes in order to build properly. 
-
-* If you have trouble with NPM build errors, check to see if the `remove-web-tools` task is succeeding. There is a folder inside Visual Studio installation directory, located at *%ProgramFiles(x86)%/Microsoft Visual Studio 14.0/Common7/IDE/Extensions/Microsoft/Web Tools/External* which contains prebundled versions of Node, NPM, bower, and a few others. These versions are outdated and usually fail to build when executing these scripts. The "remove-web-tools" task renames the folder where these programs are contained from "External" to "External_DISABLED" which causes Visual Studio to be unable to revolve the location and forces it to look at the global PATH where your newer versions of Node and NPM are installed.
-
-* To see what tasks are running or to execute a new task, simply right click on "package.json" (located in the *project* root) and choose "Task Runner Explorer" to see all NPM scripts. For the future reference, simply double click any task to execute it. (Don't execute any just yet). To see what each task does, open package.json normally and go to the "scripts" section.
-
-* When any project executes, inside Task Runner Explorer there will be a new tab for each task executed. It will say (running) in the tab next to the task name currently executing, such as "projectlaunch (running)". When the task finishes executing, the word (running) will disappear from the tab, indicated the task has finished. 
-
-* During the "projectlaunch" task, once you get the output message of `[default] Ok, 2.694 sec.` all scripts have finished running and you can begin development. However, this script will continue to say "projectlaunch (running)" because the webpack-dev-server does not exit and continues to run. The same is true for the `start` task (which is the final task that "projectlaunch" executes anyway); it will keep running. This is normal, because the webpack-dev-server continues running on port 4000, and you won't be able to develop locally without it. If you accidentally or intentionally need to close the "projectlaunch" task, before you continue developing you will need to execut the `start` script which will fire up the webpack-dev-server again.
 
 * If you ever need to clean your project folder of any generated files, execute the "clean" task. This will remove *"node_modules", "bower_components", "typings", "wwwroot" and "coverage"* from your project directory.
 
