@@ -2,9 +2,6 @@
 # ASP.Net Core 1.0 + Angular2 Webpack Starter
 ### Integrated with Visual Studio 2015 and TFS Build Server
 
-> **Customized Documentation for the new Helios App, by Nathaniel Parson. ARMLS Devs may contact me at 480-382-7107 for help on this project. I will try to answer questions if I am still available for help.**
-
-
 This is the documentation for our starter template. It is based on the Angular2 Webpack Starter repo [available on GitHub](https://angularclass.github.io/angular2-webpack-starter/). The original documentation is here in this file below the customized documentation. This documentation assumes you are developing on Windows 10.
 
 
