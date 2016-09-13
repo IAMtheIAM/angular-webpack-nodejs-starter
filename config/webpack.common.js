@@ -173,7 +173,7 @@ module.exports = {
                '@angularclass/hmr-loader',
                'awesome-typescript-loader',
                'angular2-template-loader',
-               'angular2-router-loader?loader=system&genDir=wwwroot/aot-compiled/app-components&aot=' + AOT
+               // 'angular2-router-loader?loader=system&genDir=wwwroot/aot-compiled/app-components&aot=' + AOT
             ],
             // loader: 'ts-loader',
             // loader: 'happypack/loader?id=ts',
