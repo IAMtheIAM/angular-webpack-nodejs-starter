@@ -2,30 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86fe6da4-45c6-471a-8fe0-426da23d6b09" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Controllers/AccountController.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Controllers/AggregateController.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Controllers/HomeController.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/ApplicationDbContext.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/Migrations/00000000000000_CreateIdentitySchema.Designer.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/Migrations/00000000000000_CreateIdentitySchema.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/Migrations/ApplicationDbContextModelSnapshot.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Models/AccountViewModels/LoginViewModel.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Models/ApplicationUser.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Models/SuscribersMicroServiceConfiguration.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Models/ViolationMicroServiceConfiguration.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Program.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Properties/launchSettings.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Startup.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Views/Home/Index.cshtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Views/_ViewImports.cshtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Views/_ViewStart.cshtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/appsettings.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bundleconfig.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project.lock.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Controllers/AccountController.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Controllers/AggregateController.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Controllers/HomeController.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/ApplicationDbContext.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Migrations/00000000000000_CreateIdentitySchema.Designer.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Migrations/00000000000000_CreateIdentitySchema.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Migrations/ApplicationDbContextModelSnapshot.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Models/AccountViewModels/LoginViewModel.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Models/ApplicationUser.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Models/SuscribersMicroServiceConfiguration.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Models/ViolationMicroServiceConfiguration.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Program.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Properties/launchSettings.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Startup.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Views/Home/Index.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Views/_ViewImports.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Views/_ViewStart.cshtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/appsettings.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bundleconfig.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project.lock.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <list id="ca0226dc-59b8-40ed-8391-6caf7c39d529" name="New changelist" comment="Add kendo files" />
     <ignored path="Microservice.Poc.iws" />
@@ -56,28 +55,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider editor-type-id="MarkdownFxPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="374">
-                <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <first_editor relative-caret-position="391">
+                <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
                 <folding />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeController.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Controllers/HomeController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -255,7 +244,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="54" />
+    <option name="x" value="-1866" />
     <option name="y" value="-8" />
     <option name="width" value="1874" />
     <option name="height" value="1096" />
@@ -302,20 +291,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="angular2-aot-webpack2-typescript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular2-aot-webpack2-typescript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular2-aot-webpack2-typescript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -539,14 +514,7 @@
       <workItem from="1473459878355" duration="3625000" />
       <workItem from="1473715706909" duration="8226000" />
       <workItem from="1473780903876" duration="294000" />
-      <workItem from="1473781301458" duration="173000" />
-    </task>
-    <task id="LOCAL-00042" summary="Add Kendo UI missing files">
-      <created>1469486340401</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1469486340401</updated>
+      <workItem from="1473781301458" duration="420000" />
     </task>
     <task id="LOCAL-00043" summary="Add Kendo UI missing files">
       <created>1469486436334</created>
@@ -884,11 +852,18 @@
       <option name="project" value="LOCAL" />
       <updated>1473781184026</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="Add .NET Core Files">
+      <created>1473781488906</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1473781488907</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="424404000" />
+    <option name="totallyTimeSpent" value="424651000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -900,7 +875,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="-1866" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -945,7 +920,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="true" />
-    <MESSAGE value="Update files to match repo" />
     <MESSAGE value="Fix console logging, minor edits" />
     <MESSAGE value="Change kendo UI grid theme" />
     <MESSAGE value="Test code alert" />
@@ -970,7 +944,8 @@
     <MESSAGE value="Update scripts - moved tsconfig.aot to root" />
     <MESSAGE value="Test" />
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Add .NET Core Files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add .NET Core Files" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
     <option name="CHANGE_BROWSER_SETTINGS">
       <map>
@@ -3806,25 +3781,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/HomeController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="374">
-            <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <first_editor relative-caret-position="391">
+            <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
             <folding />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/HomeController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
