@@ -1,605 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86fe6da4-45c6-471a-8fe0-426da23d6b09" name="Default" comment="Test">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/My IntelliJ Settings Export - Syntax Highlighting + Keyboard Shortcuts.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/fonts/OpenSans-Light.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icons/Down Arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icons/admin_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icons/alert-notifications.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icons/assign_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icons/close_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icons/dashboard_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icons/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icons/full_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icons/logo icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icons/nav_down_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icons/open_close_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icons/profile-picture.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icons/reports_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icons/search icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icons/search_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icons/sm_nav_down_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icons/subscriber_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/login-ellipse.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/logo-helios-login.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/password-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/images/user-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Black/editor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Black/imagebrowser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Black/indeterminate.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Black/loading-image.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Black/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Black/loading_2x.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Black/markers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Black/markers_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Black/slider-h.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Black/slider-v.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Black/sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Black/sprite_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Black/sprite_kpi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Black/sprite_kpi_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/BlueOpal/editor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/BlueOpal/imagebrowser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/BlueOpal/indeterminate.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/BlueOpal/loading-image.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/BlueOpal/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/BlueOpal/loading_2x.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/BlueOpal/markers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/BlueOpal/markers_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/BlueOpal/slider-h.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/BlueOpal/slider-v.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/BlueOpal/sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/BlueOpal/sprite_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/BlueOpal/sprite_kpi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/BlueOpal/sprite_kpi_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Bootstrap/editor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Bootstrap/imagebrowser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Bootstrap/indeterminate.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Bootstrap/loading-image.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Bootstrap/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Bootstrap/loading_2x.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Bootstrap/markers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Bootstrap/markers_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Bootstrap/slider-h.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Bootstrap/slider-v.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Bootstrap/sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Bootstrap/sprite_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Bootstrap/sprite_kpi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Bootstrap/sprite_kpi_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Default/editor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Default/imagebrowser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Default/indeterminate.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Default/loading-image.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Default/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Default/loading_2x.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Default/markers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Default/markers_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Default/slider-h.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Default/slider-v.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Default/sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Default/sprite_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Default/sprite_kpi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Default/sprite_kpi_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Fiori/editor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Fiori/imagebrowser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Fiori/indeterminate.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Fiori/loading-image.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Fiori/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Fiori/loading_2x.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Fiori/markers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Fiori/markers_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Fiori/slider-h.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Fiori/slider-v.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Fiori/sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Fiori/sprite_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Fiori/sprite_kpi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Fiori/sprite_kpi_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Flat/editor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Flat/imagebrowser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Flat/indeterminate.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Flat/loading-image.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Flat/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Flat/loading_2x.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Flat/markers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Flat/markers_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Flat/slider-h.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Flat/slider-v.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Flat/sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Flat/sprite_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Flat/sprite_kpi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Flat/sprite_kpi_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/HighContrast/editor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/HighContrast/imagebrowser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/HighContrast/indeterminate.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/HighContrast/loading-image.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/HighContrast/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/HighContrast/loading_2x.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/HighContrast/markers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/HighContrast/markers_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/HighContrast/slider-h.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/HighContrast/slider-v.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/HighContrast/sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/HighContrast/sprite_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/HighContrast/sprite_kpi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/HighContrast/sprite_kpi_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Material/editor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Material/imagebrowser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Material/indeterminate.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Material/loading-image.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Material/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Material/loading_2x.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Material/markers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Material/markers_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Material/slider-h.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Material/slider-v.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Material/sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Material/sprite_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Material/sprite_kpi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Material/sprite_kpi_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MaterialBlack/editor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MaterialBlack/imagebrowser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MaterialBlack/indeterminate.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MaterialBlack/loading-image.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MaterialBlack/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MaterialBlack/loading_2x.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MaterialBlack/markers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MaterialBlack/markers_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MaterialBlack/slider-h.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MaterialBlack/slider-v.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MaterialBlack/sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MaterialBlack/sprite_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MaterialBlack/sprite_kpi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MaterialBlack/sprite_kpi_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Metro/editor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Metro/imagebrowser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Metro/indeterminate.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Metro/loading-image.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Metro/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Metro/loading_2x.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Metro/markers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Metro/markers_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Metro/slider-h.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Metro/slider-v.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Metro/sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Metro/sprite_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Metro/sprite_kpi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Metro/sprite_kpi_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MetroBlack/editor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MetroBlack/imagebrowser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MetroBlack/indeterminate.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MetroBlack/loading-image.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MetroBlack/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MetroBlack/loading_2x.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MetroBlack/markers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MetroBlack/markers_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MetroBlack/slider-h.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MetroBlack/slider-v.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MetroBlack/sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MetroBlack/sprite_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MetroBlack/sprite_kpi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/MetroBlack/sprite_kpi_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Moonlight/editor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Moonlight/imagebrowser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Moonlight/indeterminate.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Moonlight/loading-image.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Moonlight/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Moonlight/loading_2x.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Moonlight/markers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Moonlight/markers_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Moonlight/slider-h.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Moonlight/slider-v.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Moonlight/sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Moonlight/sprite_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Moonlight/sprite_kpi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Moonlight/sprite_kpi_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Nova/editor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Nova/imagebrowser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Nova/indeterminate.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Nova/loading-image.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Nova/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Nova/loading_2x.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Nova/markers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Nova/markers_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Nova/slider-h.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Nova/slider-v.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Nova/sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Nova/sprite_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Nova/sprite_kpi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Nova/sprite_kpi_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Office365/editor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Office365/imagebrowser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Office365/indeterminate.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Office365/loading-image.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Office365/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Office365/loading_2x.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Office365/markers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Office365/markers_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Office365/slider-h.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Office365/slider-v.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Office365/sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Office365/sprite_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Office365/sprite_kpi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Office365/sprite_kpi_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Silver/editor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Silver/imagebrowser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Silver/indeterminate.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Silver/loading-image.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Silver/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Silver/loading_2x.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Silver/markers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Silver/markers_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Silver/slider-h.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Silver/slider-v.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Silver/sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Silver/sprite_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Silver/sprite_kpi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Silver/sprite_kpi_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Uniform/editor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Uniform/imagebrowser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Uniform/indeterminate.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Uniform/loading-image.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Uniform/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Uniform/loading_2x.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Uniform/markers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Uniform/markers_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Uniform/slider-h.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Uniform/slider-v.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Uniform/sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Uniform/sprite_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Uniform/sprite_kpi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/Uniform/sprite_kpi_2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/fonts/DejaVu/DejaVuSans-Bold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/fonts/DejaVu/DejaVuSans-BoldOblique.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/fonts/DejaVu/DejaVuSans-ExtraLight.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/fonts/DejaVu/DejaVuSans-Oblique.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/fonts/DejaVu/DejaVuSans.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/fonts/DejaVu/DejaVuSansMono-Bold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/fonts/DejaVu/DejaVuSansMono-BoldOblique.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/fonts/DejaVu/DejaVuSansMono-Oblique.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/fonts/DejaVu/DejaVuSansMono.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/fonts/DejaVu/DejaVuSerif-Bold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/fonts/DejaVu/DejaVuSerif-BoldItalic.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/fonts/DejaVu/DejaVuSerif-Italic.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/fonts/DejaVu/DejaVuSerif.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/fonts/glyphs/KendoUIGlyphs.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/fonts/glyphs/KendoUIGlyphs.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/fonts/glyphs/KendoUIGlyphs.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/images/back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/images/kendoui.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/images/kendoui.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/images/wp8_icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/images/wp8_inverseicons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/brushed-metal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/dots1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/dots10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/dots11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/dots12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/dots13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/dots2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/dots3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/dots4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/dots5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/dots6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/dots7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/dots8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/dots9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/glass-lighter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/glass.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/highlight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/hsv-gradient.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/hue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/leather1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/leather2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/noise.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/stripe1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/stripe2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/stripe3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/stripe4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/stripe5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/stripe6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/transparency.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/textures/transtexture.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.babelrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.bootstraprc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.eslintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/Microservice.Poc.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/1__Webpack_Dev_Server____NET_Server___Debugging.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Build_Dev__AOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Build_Production__AOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Compile_Only__AOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Dev_Server__AOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Dev_Server__JIT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/NPM_Install.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/One_Time_Setup.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Run__NET_Server.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.tfignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.Documentation.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/debug-webpack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/empty.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/empty.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/head-config.common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/helpers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/html-elements-plugin/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/karma.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/modules/angular2-hmr-prod.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/protractor.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/rules/importDestructuringSpacingRule.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/rules/importDestructuringSpacingRule.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/spec-bundle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/webpack.common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/webpack.development.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/webpack.production.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/webpack.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/karma.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protractor.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/+detail/detail.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/+detail/detail.routes.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/+detail/detail.style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/+detail/detail.template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/+detail/index.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/404/index.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/404/notfound404.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/404/notfound404.style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/404/notfound404.template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/about/about.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/about/about.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/about/about.style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/about/about.template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/about/index.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/app/app.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/app/app.e2e.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/app/app.module.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/app/app.resolver.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/app/app.routes.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/app/app.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/app/app.style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/app/app.template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/app/environment.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/app/index.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/common/LoggedInOutlet.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/common/appInjector.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/common/forceChangeDetection.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/common/fullscreen.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/common/headers.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/common/index.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/directives/index.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/directives/router-active.directive.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/home/home.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/home/home.e2e.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/home/home.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/home/home.style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/home/home.template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/home/index.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/login/index.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/login/login.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/login/login.style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/login/login.template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/nav/footer/index.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/nav/footer/nav-footer.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/nav/footer/nav-footer.style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/nav/footer/nav-footer.template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/nav/header/index.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/nav/header/nav-header.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/nav/header/nav-header.style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/nav/header/nav-header.template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/nav/sidebar/index.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/nav/sidebar/nav-sidebar.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/nav/sidebar/nav-sidebar.style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/nav/sidebar/nav-sidebar.template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/services/appstate.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/services/authentication.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/services/data.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/services/route-protection.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/services/utility.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/subscriber/index.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/subscriber/subscriber.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/subscriber/subscriber.e2e.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/subscriber/subscriber.spec.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/subscriber/subscriber.style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/subscriber/subscriber.template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app.bootstrap.aot.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app.bootstrap.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/data.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/humans.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icons/browserconfig.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icons/fullscreen-enter.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icons/fullscreen-exit.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/manifest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/mock-data/mock-data.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/robots.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/service-worker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/styles/appwide.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/styles/appwide/alignments.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/styles/appwide/buttons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/styles/appwide/display.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/styles/appwide/forms.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/styles/appwide/reset.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/styles/appwide/susy-grid-config.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/styles/bootstrap/customizations.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/styles/bootstrap/pre-customizations.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/styles/mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/styles/variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/custom-typings.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/js/kendo.core.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/js/kendo.core.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/js/kendo.grid.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/js/kendo.grid.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/js/kendo.web.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/js/kendo.web.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/fonts/DejaVu/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/fonts/glyphs/KendoUIGlyphs.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/images/kendoui.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.black.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.black.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.black.mobile.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.black.mobile.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.blueopal.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.blueopal.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.blueopal.mobile.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.blueopal.mobile.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.bootstrap.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.bootstrap.mobile.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.bootstrap.mobile.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.common-bootstrap.core.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.common-bootstrap.core.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.common-bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.common-bootstrap.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.common-fiori.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.common-fiori.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.common-material.core.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.common-material.core.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.common-material.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.common-material.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.common-nova.core.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.common-nova.core.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.common-nova.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.common-nova.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.common-office365.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.common-office365.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.common.core.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.common.core.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.common.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.common.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.black.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.black.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.blueopal.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.blueopal.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.bootstrap.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.default.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.default.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.fiori.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.fiori.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.flat.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.highcontrast.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.highcontrast.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.material.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.material.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.materialblack.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.materialblack.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.metro.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.metro.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.metroblack.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.metroblack.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.mobile.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.mobile.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.moonlight.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.moonlight.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.nova.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.nova.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.office365.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.office365.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.silver.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.silver.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.uniform.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.dataviz.uniform.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.default.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.default.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.default.mobile.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.default.mobile.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.fiori.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.fiori.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.fiori.mobile.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.fiori.mobile.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.flat.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.flat.mobile.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.flat.mobile.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.highcontrast.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.highcontrast.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.highcontrast.mobile.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.highcontrast.mobile.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.material.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.material.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.material.mobile.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.material.mobile.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.materialblack.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.materialblack.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.materialblack.mobile.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.materialblack.mobile.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.metro.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.metro.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.metro.mobile.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.metro.mobile.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.metroblack.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.metroblack.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.metroblack.mobile.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.metroblack.mobile.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.all.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.all.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.android.dark.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.android.dark.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.android.light.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.android.light.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.blackberry.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.blackberry.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.common.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.common.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.fiori.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.fiori.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.flat.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.ios.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.ios.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.material.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.material.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.meego.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.meego.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.nova.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.nova.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.office365.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.office365.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.wp8.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.mobile.wp8.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.moonlight.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.moonlight.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.moonlight.mobile.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.moonlight.mobile.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.nova.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.nova.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.nova.mobile.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.nova.mobile.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.office365.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.office365.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.office365.mobile.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.office365.mobile.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.rtl.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.rtl.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.silver.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.silver.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.silver.mobile.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.silver.mobile.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.uniform.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.uniform.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.uniform.mobile.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/kendoui/styles/kendo.uniform.mobile.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/polyfills.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/vendors.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/webpack.entry.bundle.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tsconfig.aot.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tsconfig.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tslint.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/typedoc.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web.config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpack.config.js" />
+    <list default="true" id="86fe6da4-45c6-471a-8fe0-426da23d6b09" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/README.Documentation.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="ca0226dc-59b8-40ed-8391-6caf7c39d529" name="New changelist" comment="Add kendo files" />
     <ignored path="Microservice.Poc.iws" />
@@ -641,6 +45,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="IAMtheIAM &lt;iammygod@icloud.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -796,7 +205,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="54" />
+    <option name="x" value="-1866" />
     <option name="y" value="-8" />
     <option name="width" value="1874" />
     <option name="height" value="1096" />
@@ -1079,14 +488,7 @@
       <workItem from="1473455176446" duration="1931000" />
       <workItem from="1473459878355" duration="3625000" />
       <workItem from="1473715706909" duration="8226000" />
-      <workItem from="1473780903876" duration="71000" />
-    </task>
-    <task id="LOCAL-00040" summary="Add KendoUI files">
-      <created>1469484961412</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1469484961412</updated>
+      <workItem from="1473780903876" duration="276000" />
     </task>
     <task id="LOCAL-00041" summary="sync TFS">
       <created>1469485674827</created>
@@ -1424,11 +826,18 @@
       <option name="project" value="LOCAL" />
       <updated>1473719299675</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="Initial Commit">
+      <created>1473781015538</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1473781015538</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="424008000" />
+    <option name="totallyTimeSpent" value="424213000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1440,7 +849,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="-1866" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1485,7 +894,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="true" />
-    <MESSAGE value="Checkin IntellJ Project Files" />
     <MESSAGE value="Update files to match repo" />
     <MESSAGE value="Fix console logging, minor edits" />
     <MESSAGE value="Change kendo UI grid theme" />
@@ -1510,7 +918,8 @@
     <MESSAGE value="Update scripts" />
     <MESSAGE value="Update scripts - moved tsconfig.aot to root" />
     <MESSAGE value="Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test" />
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
     <option name="CHANGE_BROWSER_SETTINGS">
       <map>
@@ -1638,6 +1047,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#833#861#0" expanded="false" />
+            <element signature="e#1564#1660#0" expanded="false" />
+            <element signature="e#1684#1767#0" expanded="false" />
+            <element signature="e#1795#2062#0" expanded="false" />
+            <element signature="e#2084#2228#0" expanded="false" />
+            <element signature="e#2342#2446#0" expanded="false" />
+            <element signature="e#2565#2699#0" expanded="false" />
+            <element signature="e#2721#3456#0" expanded="false" />
+            <element signature="e#3537#3565#0" expanded="false" />
+            <element signature="e#3606#3674#0" expanded="false" />
+            <element signature="e#3736#3863#0" expanded="false" />
+            <element signature="e#3884#4057#0" expanded="false" />
+            <element signature="e#4467#4808#0" expanded="false" />
+            <element signature="e#5603#5737#0" expanded="false" />
+            <element signature="e#5931#6117#0" expanded="false" />
+            <element signature="e#6525#6699#0" expanded="false" />
+            <element signature="e#6947#7067#0" expanded="false" />
+            <element signature="e#7280#9137#0" expanded="false" />
+            <element signature="e#9400#9593#0" expanded="false" />
+            <element signature="e#10128#10451#0" expanded="false" />
+            <element signature="e#10678#10750#0" expanded="false" />
+            <element signature="e#11640#11770#0" expanded="false" />
+            <element signature="e#11987#12094#0" expanded="false" />
+            <element signature="e#12970#12990#0" expanded="false" />
+            <element signature="e#13469#13586#0" expanded="false" />
+            <element signature="e#13651#13833#0" expanded="false" />
+            <element signature="e#13879#14132#0" expanded="false" />
+            <element signature="e#14171#14526#0" expanded="false" />
+            <element signature="e#14644#15104#0" expanded="false" />
+            <element signature="e#16423#16653#0" expanded="false" />
+            <element signature="e#17522#17929#0" expanded="false" />
+            <element signature="e#18135#18618#0" expanded="false" />
+            <element signature="e#18697#19253#0" expanded="false" />
+            <element signature="e#19550#20131#0" expanded="false" />
+            <element signature="e#20220#20396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1659,6 +1106,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
           <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1685,6 +1133,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1692,6 +1141,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1703,6 +1153,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4199">
           <caret line="414" column="9" selection-start-line="414" selection-start-column="9" selection-end-line="414" selection-end-column="9" />
+          <folding>
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#833#861#0" expanded="false" />
+            <element signature="e#1564#1660#0" expanded="false" />
+            <element signature="e#1684#1767#0" expanded="false" />
+            <element signature="e#1795#2062#0" expanded="false" />
+            <element signature="e#2084#2228#0" expanded="false" />
+            <element signature="e#2342#2446#0" expanded="false" />
+            <element signature="e#2565#2699#0" expanded="false" />
+            <element signature="e#2721#3456#0" expanded="false" />
+            <element signature="e#3537#3565#0" expanded="false" />
+            <element signature="e#3606#3674#0" expanded="false" />
+            <element signature="e#3736#3863#0" expanded="false" />
+            <element signature="e#3884#4057#0" expanded="false" />
+            <element signature="e#4467#4808#0" expanded="false" />
+            <element signature="e#5603#5737#0" expanded="false" />
+            <element signature="e#5931#6117#0" expanded="false" />
+            <element signature="e#6525#6699#0" expanded="false" />
+            <element signature="e#6947#7067#0" expanded="false" />
+            <element signature="e#7280#9137#0" expanded="false" />
+            <element signature="e#9400#9593#0" expanded="false" />
+            <element signature="e#10128#10451#0" expanded="false" />
+            <element signature="e#10678#10750#0" expanded="false" />
+            <element signature="e#11640#11770#0" expanded="false" />
+            <element signature="e#11987#12094#0" expanded="false" />
+            <element signature="e#12970#12990#0" expanded="false" />
+            <element signature="e#13469#13586#0" expanded="false" />
+            <element signature="e#13651#13833#0" expanded="false" />
+            <element signature="e#13879#14132#0" expanded="false" />
+            <element signature="e#14171#14526#0" expanded="false" />
+            <element signature="e#14644#15104#0" expanded="false" />
+            <element signature="e#16423#16653#0" expanded="false" />
+            <element signature="e#17522#17929#0" expanded="false" />
+            <element signature="e#18135#18618#0" expanded="false" />
+            <element signature="e#18697#19253#0" expanded="false" />
+            <element signature="e#19550#20131#0" expanded="false" />
+            <element signature="e#20220#20396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1724,6 +1212,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
           <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1750,6 +1239,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1757,6 +1247,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1768,6 +1259,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4199">
           <caret line="414" column="9" selection-start-line="414" selection-start-column="9" selection-end-line="414" selection-end-column="9" />
+          <folding>
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#833#861#0" expanded="false" />
+            <element signature="e#1564#1660#0" expanded="false" />
+            <element signature="e#1684#1767#0" expanded="false" />
+            <element signature="e#1795#2062#0" expanded="false" />
+            <element signature="e#2084#2228#0" expanded="false" />
+            <element signature="e#2342#2446#0" expanded="false" />
+            <element signature="e#2565#2699#0" expanded="false" />
+            <element signature="e#2721#3456#0" expanded="false" />
+            <element signature="e#3537#3565#0" expanded="false" />
+            <element signature="e#3606#3674#0" expanded="false" />
+            <element signature="e#3736#3863#0" expanded="false" />
+            <element signature="e#3884#4057#0" expanded="false" />
+            <element signature="e#4467#4808#0" expanded="false" />
+            <element signature="e#5603#5737#0" expanded="false" />
+            <element signature="e#5931#6117#0" expanded="false" />
+            <element signature="e#6525#6699#0" expanded="false" />
+            <element signature="e#6947#7067#0" expanded="false" />
+            <element signature="e#7280#9137#0" expanded="false" />
+            <element signature="e#9400#9593#0" expanded="false" />
+            <element signature="e#10128#10451#0" expanded="false" />
+            <element signature="e#10678#10750#0" expanded="false" />
+            <element signature="e#11640#11770#0" expanded="false" />
+            <element signature="e#11987#12094#0" expanded="false" />
+            <element signature="e#12970#12990#0" expanded="false" />
+            <element signature="e#13469#13586#0" expanded="false" />
+            <element signature="e#13651#13833#0" expanded="false" />
+            <element signature="e#13879#14132#0" expanded="false" />
+            <element signature="e#14171#14526#0" expanded="false" />
+            <element signature="e#14644#15104#0" expanded="false" />
+            <element signature="e#16423#16653#0" expanded="false" />
+            <element signature="e#17522#17929#0" expanded="false" />
+            <element signature="e#18135#18618#0" expanded="false" />
+            <element signature="e#18697#19253#0" expanded="false" />
+            <element signature="e#19550#20131#0" expanded="false" />
+            <element signature="e#20220#20396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1789,6 +1318,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
           <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1815,6 +1345,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1822,6 +1353,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1832,6 +1364,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4199">
           <caret line="414" column="9" selection-start-line="414" selection-start-column="9" selection-end-line="414" selection-end-column="9" />
+          <folding>
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#833#861#0" expanded="false" />
+            <element signature="e#1564#1660#0" expanded="false" />
+            <element signature="e#1684#1767#0" expanded="false" />
+            <element signature="e#1795#2062#0" expanded="false" />
+            <element signature="e#2084#2228#0" expanded="false" />
+            <element signature="e#2342#2446#0" expanded="false" />
+            <element signature="e#2565#2699#0" expanded="false" />
+            <element signature="e#2721#3456#0" expanded="false" />
+            <element signature="e#3537#3565#0" expanded="false" />
+            <element signature="e#3606#3674#0" expanded="false" />
+            <element signature="e#3736#3863#0" expanded="false" />
+            <element signature="e#3884#4057#0" expanded="false" />
+            <element signature="e#4467#4808#0" expanded="false" />
+            <element signature="e#5603#5737#0" expanded="false" />
+            <element signature="e#5931#6117#0" expanded="false" />
+            <element signature="e#6525#6699#0" expanded="false" />
+            <element signature="e#6947#7067#0" expanded="false" />
+            <element signature="e#7280#9137#0" expanded="false" />
+            <element signature="e#9400#9593#0" expanded="false" />
+            <element signature="e#10128#10451#0" expanded="false" />
+            <element signature="e#10678#10750#0" expanded="false" />
+            <element signature="e#11640#11770#0" expanded="false" />
+            <element signature="e#11987#12094#0" expanded="false" />
+            <element signature="e#12970#12990#0" expanded="false" />
+            <element signature="e#13469#13586#0" expanded="false" />
+            <element signature="e#13651#13833#0" expanded="false" />
+            <element signature="e#13879#14132#0" expanded="false" />
+            <element signature="e#14171#14526#0" expanded="false" />
+            <element signature="e#14644#15104#0" expanded="false" />
+            <element signature="e#16423#16653#0" expanded="false" />
+            <element signature="e#17522#17929#0" expanded="false" />
+            <element signature="e#18135#18618#0" expanded="false" />
+            <element signature="e#18697#19253#0" expanded="false" />
+            <element signature="e#19550#20131#0" expanded="false" />
+            <element signature="e#20220#20396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1860,6 +1430,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
           <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1886,6 +1457,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1893,6 +1465,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1931,6 +1504,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6171">
           <caret line="592" column="42" selection-start-line="592" selection-start-column="42" selection-end-line="592" selection-end-column="42" />
+          <folding>
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#833#861#0" expanded="false" />
+            <element signature="e#1564#1660#0" expanded="false" />
+            <element signature="e#1684#1767#0" expanded="false" />
+            <element signature="e#1795#2062#0" expanded="false" />
+            <element signature="e#2084#2228#0" expanded="false" />
+            <element signature="e#2342#2446#0" expanded="false" />
+            <element signature="e#2565#2699#0" expanded="false" />
+            <element signature="e#2721#3456#0" expanded="false" />
+            <element signature="e#3537#3565#0" expanded="false" />
+            <element signature="e#3606#3674#0" expanded="false" />
+            <element signature="e#3736#3863#0" expanded="false" />
+            <element signature="e#3884#4057#0" expanded="false" />
+            <element signature="e#4467#4808#0" expanded="false" />
+            <element signature="e#5603#5737#0" expanded="false" />
+            <element signature="e#5931#6117#0" expanded="false" />
+            <element signature="e#6525#6699#0" expanded="false" />
+            <element signature="e#6947#7067#0" expanded="false" />
+            <element signature="e#7280#9137#0" expanded="false" />
+            <element signature="e#9400#9593#0" expanded="false" />
+            <element signature="e#10128#10451#0" expanded="false" />
+            <element signature="e#10678#10750#0" expanded="false" />
+            <element signature="e#11640#11770#0" expanded="false" />
+            <element signature="e#11987#12094#0" expanded="false" />
+            <element signature="e#12970#12990#0" expanded="false" />
+            <element signature="e#13469#13586#0" expanded="false" />
+            <element signature="e#13651#13833#0" expanded="false" />
+            <element signature="e#13879#14132#0" expanded="false" />
+            <element signature="e#14171#14526#0" expanded="false" />
+            <element signature="e#14644#15104#0" expanded="false" />
+            <element signature="e#16423#16653#0" expanded="false" />
+            <element signature="e#17522#17929#0" expanded="false" />
+            <element signature="e#18135#18618#0" expanded="false" />
+            <element signature="e#18697#19253#0" expanded="false" />
+            <element signature="e#19550#20131#0" expanded="false" />
+            <element signature="e#20220#20396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1946,6 +1557,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1960,6 +1572,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1998,6 +1611,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6171">
           <caret line="592" column="42" selection-start-line="592" selection-start-column="42" selection-end-line="592" selection-end-column="42" />
+          <folding>
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#833#861#0" expanded="false" />
+            <element signature="e#1564#1660#0" expanded="false" />
+            <element signature="e#1684#1767#0" expanded="false" />
+            <element signature="e#1795#2062#0" expanded="false" />
+            <element signature="e#2084#2228#0" expanded="false" />
+            <element signature="e#2342#2446#0" expanded="false" />
+            <element signature="e#2565#2699#0" expanded="false" />
+            <element signature="e#2721#3456#0" expanded="false" />
+            <element signature="e#3537#3565#0" expanded="false" />
+            <element signature="e#3606#3674#0" expanded="false" />
+            <element signature="e#3736#3863#0" expanded="false" />
+            <element signature="e#3884#4057#0" expanded="false" />
+            <element signature="e#4467#4808#0" expanded="false" />
+            <element signature="e#5603#5737#0" expanded="false" />
+            <element signature="e#5931#6117#0" expanded="false" />
+            <element signature="e#6525#6699#0" expanded="false" />
+            <element signature="e#6947#7067#0" expanded="false" />
+            <element signature="e#7280#9137#0" expanded="false" />
+            <element signature="e#9400#9593#0" expanded="false" />
+            <element signature="e#10128#10451#0" expanded="false" />
+            <element signature="e#10678#10750#0" expanded="false" />
+            <element signature="e#11640#11770#0" expanded="false" />
+            <element signature="e#11987#12094#0" expanded="false" />
+            <element signature="e#12970#12990#0" expanded="false" />
+            <element signature="e#13469#13586#0" expanded="false" />
+            <element signature="e#13651#13833#0" expanded="false" />
+            <element signature="e#13879#14132#0" expanded="false" />
+            <element signature="e#14171#14526#0" expanded="false" />
+            <element signature="e#14644#15104#0" expanded="false" />
+            <element signature="e#16423#16653#0" expanded="false" />
+            <element signature="e#17522#17929#0" expanded="false" />
+            <element signature="e#18135#18618#0" expanded="false" />
+            <element signature="e#18697#19253#0" expanded="false" />
+            <element signature="e#19550#20131#0" expanded="false" />
+            <element signature="e#20220#20396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2013,6 +1664,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2027,6 +1679,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2092,6 +1745,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3247">
           <caret line="317" column="10" selection-start-line="317" selection-start-column="10" selection-end-line="317" selection-end-column="10" />
+          <folding>
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#833#861#0" expanded="false" />
+            <element signature="e#1564#1660#0" expanded="false" />
+            <element signature="e#1684#1767#0" expanded="false" />
+            <element signature="e#1795#2062#0" expanded="false" />
+            <element signature="e#2084#2228#0" expanded="false" />
+            <element signature="e#2342#2446#0" expanded="false" />
+            <element signature="e#2565#2699#0" expanded="false" />
+            <element signature="e#2721#3456#0" expanded="false" />
+            <element signature="e#3537#3565#0" expanded="false" />
+            <element signature="e#3606#3674#0" expanded="false" />
+            <element signature="e#3736#3863#0" expanded="false" />
+            <element signature="e#3884#4057#0" expanded="false" />
+            <element signature="e#4467#4808#0" expanded="false" />
+            <element signature="e#5603#5737#0" expanded="false" />
+            <element signature="e#5931#6117#0" expanded="false" />
+            <element signature="e#6525#6699#0" expanded="false" />
+            <element signature="e#6947#7067#0" expanded="false" />
+            <element signature="e#7280#9137#0" expanded="false" />
+            <element signature="e#9400#9593#0" expanded="false" />
+            <element signature="e#10128#10451#0" expanded="false" />
+            <element signature="e#10678#10750#0" expanded="false" />
+            <element signature="e#11640#11770#0" expanded="false" />
+            <element signature="e#11987#12094#0" expanded="false" />
+            <element signature="e#12970#12990#0" expanded="false" />
+            <element signature="e#13469#13586#0" expanded="false" />
+            <element signature="e#13651#13833#0" expanded="false" />
+            <element signature="e#13879#14132#0" expanded="false" />
+            <element signature="e#14171#14526#0" expanded="false" />
+            <element signature="e#14644#15104#0" expanded="false" />
+            <element signature="e#16423#16653#0" expanded="false" />
+            <element signature="e#17522#17929#0" expanded="false" />
+            <element signature="e#18135#18618#0" expanded="false" />
+            <element signature="e#18697#19253#0" expanded="false" />
+            <element signature="e#19550#20131#0" expanded="false" />
+            <element signature="e#20220#20396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2156,6 +1847,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3247">
           <caret line="317" column="10" selection-start-line="317" selection-start-column="10" selection-end-line="317" selection-end-column="10" />
+          <folding>
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#833#861#0" expanded="false" />
+            <element signature="e#1564#1660#0" expanded="false" />
+            <element signature="e#1684#1767#0" expanded="false" />
+            <element signature="e#1795#2062#0" expanded="false" />
+            <element signature="e#2084#2228#0" expanded="false" />
+            <element signature="e#2342#2446#0" expanded="false" />
+            <element signature="e#2565#2699#0" expanded="false" />
+            <element signature="e#2721#3456#0" expanded="false" />
+            <element signature="e#3537#3565#0" expanded="false" />
+            <element signature="e#3606#3674#0" expanded="false" />
+            <element signature="e#3736#3863#0" expanded="false" />
+            <element signature="e#3884#4057#0" expanded="false" />
+            <element signature="e#4467#4808#0" expanded="false" />
+            <element signature="e#5603#5737#0" expanded="false" />
+            <element signature="e#5931#6117#0" expanded="false" />
+            <element signature="e#6525#6699#0" expanded="false" />
+            <element signature="e#6947#7067#0" expanded="false" />
+            <element signature="e#7280#9137#0" expanded="false" />
+            <element signature="e#9400#9593#0" expanded="false" />
+            <element signature="e#10128#10451#0" expanded="false" />
+            <element signature="e#10678#10750#0" expanded="false" />
+            <element signature="e#11640#11770#0" expanded="false" />
+            <element signature="e#11987#12094#0" expanded="false" />
+            <element signature="e#12970#12990#0" expanded="false" />
+            <element signature="e#13469#13586#0" expanded="false" />
+            <element signature="e#13651#13833#0" expanded="false" />
+            <element signature="e#13879#14132#0" expanded="false" />
+            <element signature="e#14171#14526#0" expanded="false" />
+            <element signature="e#14644#15104#0" expanded="false" />
+            <element signature="e#16423#16653#0" expanded="false" />
+            <element signature="e#17522#17929#0" expanded="false" />
+            <element signature="e#18135#18618#0" expanded="false" />
+            <element signature="e#18697#19253#0" expanded="false" />
+            <element signature="e#19550#20131#0" expanded="false" />
+            <element signature="e#20220#20396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2220,6 +1949,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3247">
           <caret line="317" column="10" selection-start-line="317" selection-start-column="10" selection-end-line="317" selection-end-column="10" />
+          <folding>
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#833#861#0" expanded="false" />
+            <element signature="e#1564#1660#0" expanded="false" />
+            <element signature="e#1684#1767#0" expanded="false" />
+            <element signature="e#1795#2062#0" expanded="false" />
+            <element signature="e#2084#2228#0" expanded="false" />
+            <element signature="e#2342#2446#0" expanded="false" />
+            <element signature="e#2565#2699#0" expanded="false" />
+            <element signature="e#2721#3456#0" expanded="false" />
+            <element signature="e#3537#3565#0" expanded="false" />
+            <element signature="e#3606#3674#0" expanded="false" />
+            <element signature="e#3736#3863#0" expanded="false" />
+            <element signature="e#3884#4057#0" expanded="false" />
+            <element signature="e#4467#4808#0" expanded="false" />
+            <element signature="e#5603#5737#0" expanded="false" />
+            <element signature="e#5931#6117#0" expanded="false" />
+            <element signature="e#6525#6699#0" expanded="false" />
+            <element signature="e#6947#7067#0" expanded="false" />
+            <element signature="e#7280#9137#0" expanded="false" />
+            <element signature="e#9400#9593#0" expanded="false" />
+            <element signature="e#10128#10451#0" expanded="false" />
+            <element signature="e#10678#10750#0" expanded="false" />
+            <element signature="e#11640#11770#0" expanded="false" />
+            <element signature="e#11987#12094#0" expanded="false" />
+            <element signature="e#12970#12990#0" expanded="false" />
+            <element signature="e#13469#13586#0" expanded="false" />
+            <element signature="e#13651#13833#0" expanded="false" />
+            <element signature="e#13879#14132#0" expanded="false" />
+            <element signature="e#14171#14526#0" expanded="false" />
+            <element signature="e#14644#15104#0" expanded="false" />
+            <element signature="e#16423#16653#0" expanded="false" />
+            <element signature="e#17522#17929#0" expanded="false" />
+            <element signature="e#18135#18618#0" expanded="false" />
+            <element signature="e#18697#19253#0" expanded="false" />
+            <element signature="e#19550#20131#0" expanded="false" />
+            <element signature="e#20220#20396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2284,6 +2051,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3247">
           <caret line="317" column="10" selection-start-line="317" selection-start-column="10" selection-end-line="317" selection-end-column="10" />
+          <folding>
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#833#861#0" expanded="false" />
+            <element signature="e#1564#1660#0" expanded="false" />
+            <element signature="e#1684#1767#0" expanded="false" />
+            <element signature="e#1795#2062#0" expanded="false" />
+            <element signature="e#2084#2228#0" expanded="false" />
+            <element signature="e#2342#2446#0" expanded="false" />
+            <element signature="e#2565#2699#0" expanded="false" />
+            <element signature="e#2721#3456#0" expanded="false" />
+            <element signature="e#3537#3565#0" expanded="false" />
+            <element signature="e#3606#3674#0" expanded="false" />
+            <element signature="e#3736#3863#0" expanded="false" />
+            <element signature="e#3884#4057#0" expanded="false" />
+            <element signature="e#4467#4808#0" expanded="false" />
+            <element signature="e#5603#5737#0" expanded="false" />
+            <element signature="e#5931#6117#0" expanded="false" />
+            <element signature="e#6525#6699#0" expanded="false" />
+            <element signature="e#6947#7067#0" expanded="false" />
+            <element signature="e#7280#9137#0" expanded="false" />
+            <element signature="e#9400#9593#0" expanded="false" />
+            <element signature="e#10128#10451#0" expanded="false" />
+            <element signature="e#10678#10750#0" expanded="false" />
+            <element signature="e#11640#11770#0" expanded="false" />
+            <element signature="e#11987#12094#0" expanded="false" />
+            <element signature="e#12970#12990#0" expanded="false" />
+            <element signature="e#13469#13586#0" expanded="false" />
+            <element signature="e#13651#13833#0" expanded="false" />
+            <element signature="e#13879#14132#0" expanded="false" />
+            <element signature="e#14171#14526#0" expanded="false" />
+            <element signature="e#14644#15104#0" expanded="false" />
+            <element signature="e#16423#16653#0" expanded="false" />
+            <element signature="e#17522#17929#0" expanded="false" />
+            <element signature="e#18135#18618#0" expanded="false" />
+            <element signature="e#18697#19253#0" expanded="false" />
+            <element signature="e#19550#20131#0" expanded="false" />
+            <element signature="e#20220#20396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2348,6 +2153,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1241">
           <caret line="125" column="19" selection-start-line="125" selection-start-column="19" selection-end-line="125" selection-end-column="19" />
+          <folding>
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#833#861#0" expanded="false" />
+            <element signature="e#1564#1660#0" expanded="false" />
+            <element signature="e#1684#1767#0" expanded="false" />
+            <element signature="e#1795#2062#0" expanded="false" />
+            <element signature="e#2084#2228#0" expanded="false" />
+            <element signature="e#2342#2446#0" expanded="false" />
+            <element signature="e#2565#2699#0" expanded="false" />
+            <element signature="e#2721#3456#0" expanded="false" />
+            <element signature="e#3537#3565#0" expanded="false" />
+            <element signature="e#3606#3674#0" expanded="false" />
+            <element signature="e#3736#3863#0" expanded="false" />
+            <element signature="e#3884#4057#0" expanded="false" />
+            <element signature="e#4467#4808#0" expanded="false" />
+            <element signature="e#5603#5737#0" expanded="false" />
+            <element signature="e#5931#6117#0" expanded="false" />
+            <element signature="e#6525#6699#0" expanded="false" />
+            <element signature="e#6947#7067#0" expanded="false" />
+            <element signature="e#7280#9137#0" expanded="false" />
+            <element signature="e#9400#9593#0" expanded="false" />
+            <element signature="e#10128#10451#0" expanded="false" />
+            <element signature="e#10678#10750#0" expanded="false" />
+            <element signature="e#11640#11770#0" expanded="false" />
+            <element signature="e#11987#12094#0" expanded="false" />
+            <element signature="e#12970#12990#0" expanded="false" />
+            <element signature="e#13469#13586#0" expanded="false" />
+            <element signature="e#13651#13833#0" expanded="false" />
+            <element signature="e#13879#14132#0" expanded="false" />
+            <element signature="e#14171#14526#0" expanded="false" />
+            <element signature="e#14644#15104#0" expanded="false" />
+            <element signature="e#16423#16653#0" expanded="false" />
+            <element signature="e#17522#17929#0" expanded="false" />
+            <element signature="e#18135#18618#0" expanded="false" />
+            <element signature="e#18697#19253#0" expanded="false" />
+            <element signature="e#19550#20131#0" expanded="false" />
+            <element signature="e#20220#20396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2399,6 +2242,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4522">
           <caret line="452" column="31" selection-start-line="452" selection-start-column="31" selection-end-line="452" selection-end-column="31" />
+          <folding>
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#833#861#0" expanded="false" />
+            <element signature="e#1564#1660#0" expanded="false" />
+            <element signature="e#1684#1767#0" expanded="false" />
+            <element signature="e#1795#2062#0" expanded="false" />
+            <element signature="e#2084#2228#0" expanded="false" />
+            <element signature="e#2342#2446#0" expanded="false" />
+            <element signature="e#2565#2699#0" expanded="false" />
+            <element signature="e#2721#3456#0" expanded="false" />
+            <element signature="e#3537#3565#0" expanded="false" />
+            <element signature="e#3606#3674#0" expanded="false" />
+            <element signature="e#3736#3863#0" expanded="false" />
+            <element signature="e#3884#4057#0" expanded="false" />
+            <element signature="e#4467#4808#0" expanded="false" />
+            <element signature="e#5603#5737#0" expanded="false" />
+            <element signature="e#5931#6117#0" expanded="false" />
+            <element signature="e#6525#6699#0" expanded="false" />
+            <element signature="e#6947#7067#0" expanded="false" />
+            <element signature="e#7280#9137#0" expanded="false" />
+            <element signature="e#9400#9593#0" expanded="false" />
+            <element signature="e#10128#10451#0" expanded="false" />
+            <element signature="e#10678#10750#0" expanded="false" />
+            <element signature="e#11640#11770#0" expanded="false" />
+            <element signature="e#11987#12094#0" expanded="false" />
+            <element signature="e#12970#12990#0" expanded="false" />
+            <element signature="e#13469#13586#0" expanded="false" />
+            <element signature="e#13651#13833#0" expanded="false" />
+            <element signature="e#13879#14132#0" expanded="false" />
+            <element signature="e#14171#14526#0" expanded="false" />
+            <element signature="e#14644#15104#0" expanded="false" />
+            <element signature="e#16423#16653#0" expanded="false" />
+            <element signature="e#17522#17929#0" expanded="false" />
+            <element signature="e#18135#18618#0" expanded="false" />
+            <element signature="e#18697#19253#0" expanded="false" />
+            <element signature="e#19550#20131#0" expanded="false" />
+            <element signature="e#20220#20396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2485,6 +2366,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#833#861#0" expanded="false" />
+            <element signature="e#1564#1660#0" expanded="false" />
+            <element signature="e#1684#1767#0" expanded="false" />
+            <element signature="e#1795#2062#0" expanded="false" />
+            <element signature="e#2084#2228#0" expanded="false" />
+            <element signature="e#2342#2446#0" expanded="false" />
+            <element signature="e#2565#2699#0" expanded="false" />
+            <element signature="e#2721#3456#0" expanded="false" />
+            <element signature="e#3537#3565#0" expanded="false" />
+            <element signature="e#3606#3674#0" expanded="false" />
+            <element signature="e#3736#3863#0" expanded="false" />
+            <element signature="e#3884#4057#0" expanded="false" />
+            <element signature="e#4467#4808#0" expanded="false" />
+            <element signature="e#5603#5737#0" expanded="false" />
+            <element signature="e#5931#6117#0" expanded="false" />
+            <element signature="e#6525#6699#0" expanded="false" />
+            <element signature="e#6947#7067#0" expanded="false" />
+            <element signature="e#7280#9137#0" expanded="false" />
+            <element signature="e#9400#9593#0" expanded="false" />
+            <element signature="e#10128#10451#0" expanded="false" />
+            <element signature="e#10678#10750#0" expanded="false" />
+            <element signature="e#11640#11770#0" expanded="false" />
+            <element signature="e#11987#12094#0" expanded="false" />
+            <element signature="e#12970#12990#0" expanded="false" />
+            <element signature="e#13469#13586#0" expanded="false" />
+            <element signature="e#13651#13833#0" expanded="false" />
+            <element signature="e#13879#14132#0" expanded="false" />
+            <element signature="e#14171#14526#0" expanded="false" />
+            <element signature="e#14644#15104#0" expanded="false" />
+            <element signature="e#16423#16653#0" expanded="false" />
+            <element signature="e#17522#17929#0" expanded="false" />
+            <element signature="e#18135#18618#0" expanded="false" />
+            <element signature="e#18697#19253#0" expanded="false" />
+            <element signature="e#19550#20131#0" expanded="false" />
+            <element signature="e#20220#20396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2514,6 +2433,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2363">
           <caret line="143" column="11" selection-start-line="143" selection-start-column="11" selection-end-line="143" selection-end-column="11" />
+          <folding>
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#833#861#0" expanded="false" />
+            <element signature="e#1564#1660#0" expanded="false" />
+            <element signature="e#1684#1767#0" expanded="false" />
+            <element signature="e#1795#2062#0" expanded="false" />
+            <element signature="e#2084#2228#0" expanded="false" />
+            <element signature="e#2342#2446#0" expanded="false" />
+            <element signature="e#2565#2699#0" expanded="false" />
+            <element signature="e#2721#3456#0" expanded="false" />
+            <element signature="e#3537#3565#0" expanded="false" />
+            <element signature="e#3606#3674#0" expanded="false" />
+            <element signature="e#3736#3863#0" expanded="false" />
+            <element signature="e#3884#4057#0" expanded="false" />
+            <element signature="e#4467#4808#0" expanded="false" />
+            <element signature="e#5603#5737#0" expanded="false" />
+            <element signature="e#5931#6117#0" expanded="false" />
+            <element signature="e#6525#6699#0" expanded="false" />
+            <element signature="e#6947#7067#0" expanded="false" />
+            <element signature="e#7280#9137#0" expanded="false" />
+            <element signature="e#9400#9593#0" expanded="false" />
+            <element signature="e#10128#10451#0" expanded="false" />
+            <element signature="e#10678#10750#0" expanded="false" />
+            <element signature="e#11640#11770#0" expanded="false" />
+            <element signature="e#11987#12094#0" expanded="false" />
+            <element signature="e#12970#12990#0" expanded="false" />
+            <element signature="e#13469#13586#0" expanded="false" />
+            <element signature="e#13651#13833#0" expanded="false" />
+            <element signature="e#13879#14132#0" expanded="false" />
+            <element signature="e#14171#14526#0" expanded="false" />
+            <element signature="e#14644#15104#0" expanded="false" />
+            <element signature="e#16423#16653#0" expanded="false" />
+            <element signature="e#17522#17929#0" expanded="false" />
+            <element signature="e#18135#18618#0" expanded="false" />
+            <element signature="e#18697#19253#0" expanded="false" />
+            <element signature="e#19550#20131#0" expanded="false" />
+            <element signature="e#20220#20396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2592,6 +2549,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3094">
           <caret line="186" column="49" selection-start-line="186" selection-start-column="49" selection-end-line="186" selection-end-column="77" />
+          <folding>
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#833#861#0" expanded="false" />
+            <element signature="e#1564#1660#0" expanded="false" />
+            <element signature="e#1684#1767#0" expanded="false" />
+            <element signature="e#1795#2062#0" expanded="false" />
+            <element signature="e#2084#2228#0" expanded="false" />
+            <element signature="e#2342#2446#0" expanded="false" />
+            <element signature="e#2565#2699#0" expanded="false" />
+            <element signature="e#2721#3456#0" expanded="false" />
+            <element signature="e#3537#3565#0" expanded="false" />
+            <element signature="e#3606#3674#0" expanded="false" />
+            <element signature="e#3736#3863#0" expanded="false" />
+            <element signature="e#3884#4057#0" expanded="false" />
+            <element signature="e#4467#4808#0" expanded="false" />
+            <element signature="e#5603#5737#0" expanded="false" />
+            <element signature="e#5931#6117#0" expanded="false" />
+            <element signature="e#6525#6699#0" expanded="false" />
+            <element signature="e#6947#7067#0" expanded="false" />
+            <element signature="e#7280#9137#0" expanded="false" />
+            <element signature="e#9400#9593#0" expanded="false" />
+            <element signature="e#10128#10451#0" expanded="false" />
+            <element signature="e#10678#10750#0" expanded="false" />
+            <element signature="e#11640#11770#0" expanded="false" />
+            <element signature="e#11987#12094#0" expanded="false" />
+            <element signature="e#12970#12990#0" expanded="false" />
+            <element signature="e#13469#13586#0" expanded="false" />
+            <element signature="e#13651#13833#0" expanded="false" />
+            <element signature="e#13879#14132#0" expanded="false" />
+            <element signature="e#14171#14526#0" expanded="false" />
+            <element signature="e#14644#15104#0" expanded="false" />
+            <element signature="e#16423#16653#0" expanded="false" />
+            <element signature="e#17522#17929#0" expanded="false" />
+            <element signature="e#18135#18618#0" expanded="false" />
+            <element signature="e#18697#19253#0" expanded="false" />
+            <element signature="e#19550#20131#0" expanded="false" />
+            <element signature="e#20220#20396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2671,6 +2666,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6868">
           <caret line="408" column="44" selection-start-line="408" selection-start-column="44" selection-end-line="408" selection-end-column="44" />
+          <folding>
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#833#861#0" expanded="false" />
+            <element signature="e#1564#1660#0" expanded="false" />
+            <element signature="e#1684#1767#0" expanded="false" />
+            <element signature="e#1795#2062#0" expanded="false" />
+            <element signature="e#2084#2228#0" expanded="false" />
+            <element signature="e#2342#2446#0" expanded="false" />
+            <element signature="e#2565#2699#0" expanded="false" />
+            <element signature="e#2721#3456#0" expanded="false" />
+            <element signature="e#3537#3565#0" expanded="false" />
+            <element signature="e#3606#3674#0" expanded="false" />
+            <element signature="e#3736#3863#0" expanded="false" />
+            <element signature="e#3884#4057#0" expanded="false" />
+            <element signature="e#4467#4808#0" expanded="false" />
+            <element signature="e#5603#5737#0" expanded="false" />
+            <element signature="e#5931#6117#0" expanded="false" />
+            <element signature="e#6525#6699#0" expanded="false" />
+            <element signature="e#6947#7067#0" expanded="false" />
+            <element signature="e#7280#9137#0" expanded="false" />
+            <element signature="e#9400#9593#0" expanded="false" />
+            <element signature="e#10128#10451#0" expanded="false" />
+            <element signature="e#10678#10750#0" expanded="false" />
+            <element signature="e#11640#11770#0" expanded="false" />
+            <element signature="e#11987#12094#0" expanded="false" />
+            <element signature="e#12970#12990#0" expanded="false" />
+            <element signature="e#13469#13586#0" expanded="false" />
+            <element signature="e#13651#13833#0" expanded="false" />
+            <element signature="e#13879#14132#0" expanded="false" />
+            <element signature="e#14171#14526#0" expanded="false" />
+            <element signature="e#14644#15104#0" expanded="false" />
+            <element signature="e#16423#16653#0" expanded="false" />
+            <element signature="e#17522#17929#0" expanded="false" />
+            <element signature="e#18135#18618#0" expanded="false" />
+            <element signature="e#18697#19253#0" expanded="false" />
+            <element signature="e#19550#20131#0" expanded="false" />
+            <element signature="e#20220#20396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2722,6 +2755,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6868">
           <caret line="408" column="44" selection-start-line="408" selection-start-column="44" selection-end-line="408" selection-end-column="44" />
+          <folding>
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#833#861#0" expanded="false" />
+            <element signature="e#1564#1660#0" expanded="false" />
+            <element signature="e#1684#1767#0" expanded="false" />
+            <element signature="e#1795#2062#0" expanded="false" />
+            <element signature="e#2084#2228#0" expanded="false" />
+            <element signature="e#2342#2446#0" expanded="false" />
+            <element signature="e#2565#2699#0" expanded="false" />
+            <element signature="e#2721#3456#0" expanded="false" />
+            <element signature="e#3537#3565#0" expanded="false" />
+            <element signature="e#3606#3674#0" expanded="false" />
+            <element signature="e#3736#3863#0" expanded="false" />
+            <element signature="e#3884#4057#0" expanded="false" />
+            <element signature="e#4467#4808#0" expanded="false" />
+            <element signature="e#5603#5737#0" expanded="false" />
+            <element signature="e#5931#6117#0" expanded="false" />
+            <element signature="e#6525#6699#0" expanded="false" />
+            <element signature="e#6947#7067#0" expanded="false" />
+            <element signature="e#7280#9137#0" expanded="false" />
+            <element signature="e#9400#9593#0" expanded="false" />
+            <element signature="e#10128#10451#0" expanded="false" />
+            <element signature="e#10678#10750#0" expanded="false" />
+            <element signature="e#11640#11770#0" expanded="false" />
+            <element signature="e#11987#12094#0" expanded="false" />
+            <element signature="e#12970#12990#0" expanded="false" />
+            <element signature="e#13469#13586#0" expanded="false" />
+            <element signature="e#13651#13833#0" expanded="false" />
+            <element signature="e#13879#14132#0" expanded="false" />
+            <element signature="e#14171#14526#0" expanded="false" />
+            <element signature="e#14644#15104#0" expanded="false" />
+            <element signature="e#16423#16653#0" expanded="false" />
+            <element signature="e#17522#17929#0" expanded="false" />
+            <element signature="e#18135#18618#0" expanded="false" />
+            <element signature="e#18697#19253#0" expanded="false" />
+            <element signature="e#19550#20131#0" expanded="false" />
+            <element signature="e#20220#20396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2772,6 +2843,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6868">
           <caret line="408" column="44" selection-start-line="408" selection-start-column="44" selection-end-line="408" selection-end-column="44" />
+          <folding>
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#833#861#0" expanded="false" />
+            <element signature="e#1564#1660#0" expanded="false" />
+            <element signature="e#1684#1767#0" expanded="false" />
+            <element signature="e#1795#2062#0" expanded="false" />
+            <element signature="e#2084#2228#0" expanded="false" />
+            <element signature="e#2342#2446#0" expanded="false" />
+            <element signature="e#2565#2699#0" expanded="false" />
+            <element signature="e#2721#3456#0" expanded="false" />
+            <element signature="e#3537#3565#0" expanded="false" />
+            <element signature="e#3606#3674#0" expanded="false" />
+            <element signature="e#3736#3863#0" expanded="false" />
+            <element signature="e#3884#4057#0" expanded="false" />
+            <element signature="e#4467#4808#0" expanded="false" />
+            <element signature="e#5603#5737#0" expanded="false" />
+            <element signature="e#5931#6117#0" expanded="false" />
+            <element signature="e#6525#6699#0" expanded="false" />
+            <element signature="e#6947#7067#0" expanded="false" />
+            <element signature="e#7280#9137#0" expanded="false" />
+            <element signature="e#9400#9593#0" expanded="false" />
+            <element signature="e#10128#10451#0" expanded="false" />
+            <element signature="e#10678#10750#0" expanded="false" />
+            <element signature="e#11640#11770#0" expanded="false" />
+            <element signature="e#11987#12094#0" expanded="false" />
+            <element signature="e#12970#12990#0" expanded="false" />
+            <element signature="e#13469#13586#0" expanded="false" />
+            <element signature="e#13651#13833#0" expanded="false" />
+            <element signature="e#13879#14132#0" expanded="false" />
+            <element signature="e#14171#14526#0" expanded="false" />
+            <element signature="e#14644#15104#0" expanded="false" />
+            <element signature="e#16423#16653#0" expanded="false" />
+            <element signature="e#17522#17929#0" expanded="false" />
+            <element signature="e#18135#18618#0" expanded="false" />
+            <element signature="e#18697#19253#0" expanded="false" />
+            <element signature="e#19550#20131#0" expanded="false" />
+            <element signature="e#20220#20396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -4355,6 +4464,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
           <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4376,6 +4486,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4383,6 +4494,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4400,6 +4512,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="336" column="5" selection-start-line="336" selection-start-column="5" selection-end-line="336" selection-end-column="5" />
+          <folding>
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#833#861#0" expanded="false" />
+            <element signature="e#1564#1660#0" expanded="false" />
+            <element signature="e#1684#1767#0" expanded="false" />
+            <element signature="e#1795#2062#0" expanded="false" />
+            <element signature="e#2084#2228#0" expanded="false" />
+            <element signature="e#2342#2446#0" expanded="false" />
+            <element signature="e#2565#2699#0" expanded="false" />
+            <element signature="e#2721#3456#0" expanded="false" />
+            <element signature="e#3537#3565#0" expanded="false" />
+            <element signature="e#3606#3674#0" expanded="false" />
+            <element signature="e#3736#3863#0" expanded="false" />
+            <element signature="e#3884#4057#0" expanded="false" />
+            <element signature="e#4467#4808#0" expanded="false" />
+            <element signature="e#5603#5737#0" expanded="false" />
+            <element signature="e#5931#6117#0" expanded="false" />
+            <element signature="e#6525#6699#0" expanded="false" />
+            <element signature="e#6947#7067#0" expanded="false" />
+            <element signature="e#7280#9137#0" expanded="false" />
+            <element signature="e#9400#9593#0" expanded="false" />
+            <element signature="e#10128#10451#0" expanded="false" />
+            <element signature="e#10678#10750#0" expanded="false" />
+            <element signature="e#11640#11770#0" expanded="false" />
+            <element signature="e#11987#12094#0" expanded="false" />
+            <element signature="e#12970#12990#0" expanded="false" />
+            <element signature="e#13469#13586#0" expanded="false" />
+            <element signature="e#13651#13833#0" expanded="false" />
+            <element signature="e#13879#14132#0" expanded="false" />
+            <element signature="e#14171#14526#0" expanded="false" />
+            <element signature="e#14644#15104#0" expanded="false" />
+            <element signature="e#16423#16653#0" expanded="false" />
+            <element signature="e#17522#17929#0" expanded="false" />
+            <element signature="e#18135#18618#0" expanded="false" />
+            <element signature="e#18697#19253#0" expanded="false" />
+            <element signature="e#19550#20131#0" expanded="false" />
+            <element signature="e#20220#20396#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -4410,6 +4560,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
