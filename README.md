@@ -13,19 +13,19 @@ This solution depends upon NodeJS and NPM. It is important that you only use Nod
 
 * `npm run onetimesetup`
 
-Webpack Dev Server with HMR (Hot Module Replacement) and Angular 2 AOT (Ahead Of Time) compilation
- 
+**Webpack Dev Server with HMR (Hot Module Replacement) and Angular 2 AOT (Ahead Of Time) compilation** 
+
 * `npm run devserver:aot`
 
-Webpack Dev Server with HMR (Hot Module Replacement) and Angular 2 JIT (Just In Time) compilation
+**Webpack Dev Server with HMR (Hot Module Replacement) and Angular 2 JIT (Just In Time) compilation**
  
 * `npm run devserver:jit`
 
-Dev Build (No HMR)
+**Dev Build (No HMR)**
  
 * `npm run build:dev` 
 
-Production Build (No HMR, optimized code)
+**Production Build (No HMR, optimized code)**
  
 * `npm run build:production`
 
