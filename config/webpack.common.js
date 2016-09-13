@@ -47,7 +47,7 @@ const METADATA = {
 };
 const PATHS = {
    appRoot: [Path.resolve(__dirname, "../src")],
-   happyPackTempDir: '../../cache/happypack'
+   happyPackTempDir: './cache/happypack'
 };
 
 
