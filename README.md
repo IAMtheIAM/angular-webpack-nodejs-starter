@@ -23,7 +23,7 @@ Webpack Dev Server with HMR (Hot Module Replacement) and Angular 2 JIT (Just In 
 
 Dev Build (No HMR)
  
-* `npm run build:dev`
+* `npm run build:dev` 
 
 Production Build (No HMR, optimized code)
  
