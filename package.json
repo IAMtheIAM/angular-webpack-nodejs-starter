@@ -52,7 +52,7 @@
     "launch:Tests-E2E": "start npm run e2e",
     "launch:Tests-Unit": "start npm run test:karma",
     "lint": "npm run tslint \"src/**/*.ts\" && npm run eslint \"config/**/*.js\"",
-    "onetimesetup": "npm run install:globals:all && npm run install:all && npm run projectlaunch",
+    "onetimesetup": "dotnet restore && npm run install:globals:all && npm run install:all && npm run projectlaunch",
     "postversion": "git push && git push --tags",
     "pree2e": "npm run webdriver:update -- --standalone",
     "pree2e:server": "npm run clean:wwwroot",
