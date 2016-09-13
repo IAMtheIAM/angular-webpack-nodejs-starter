@@ -4,3 +4,6 @@ aot-compiled/
 node_modules/
 npm-debug.log
 wwwroot/
+bin/
+obj/
+project.lock.json
