@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86fe6da4-45c6-471a-8fe0-426da23d6b09" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Controllers/AccountController.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Controllers/AggregateController.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Controllers/HomeController.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/ApplicationDbContext.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Migrations/00000000000000_CreateIdentitySchema.Designer.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Migrations/00000000000000_CreateIdentitySchema.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/Migrations/ApplicationDbContextModelSnapshot.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Models/AccountViewModels/LoginViewModel.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Models/ApplicationUser.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Models/SuscribersMicroServiceConfiguration.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Models/ViolationMicroServiceConfiguration.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Program.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Properties/launchSettings.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Startup.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Views/Home/Index.cshtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Views/_ViewImports.cshtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Views/_ViewStart.cshtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/appsettings.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bundleconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project.lock.json" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/images/webpack-overview-diagram.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <list id="ca0226dc-59b8-40ed-8391-6caf7c39d529" name="New changelist" comment="Add kendo files" />
     <ignored path="Microservice.Poc.iws" />
@@ -62,8 +42,8 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="391">
-                <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+              <first_editor relative-caret-position="231">
+                <caret line="55" column="92" selection-start-line="55" selection-start-column="92" selection-end-line="55" selection-end-column="92" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -89,6 +69,11 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dotnet-core-1.0" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -294,6 +279,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular2-aot-webpack2-typescript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular2-aot-webpack2-typescript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -327,11 +330,11 @@
       <recent name="C:\Source\POC\Microservice.Poc\Armls.Helios.Web\config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Source\GitHub\angular2-aot-webpack2-typescript\docs" />
       <recent name="C:\Source\GitHub\angular2-aot-webpack2-typescript" />
       <recent name="C:\Source\POC\Microservice.Poc\Armls.Helios.Web\src" />
       <recent name="C:\Source\POC\Microservice.Poc\Armls.Helios.Web\.idea" />
       <recent name="C:\Source\POC\Microservice.Poc\Armls.Helios.Web\src\app-components" />
-      <recent name="C:\Source\POC\Microservice.Poc\Armls.Helios.Web\node_modules\datatables\media\css" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.Debug in IDE">
@@ -514,21 +517,7 @@
       <workItem from="1473459878355" duration="3625000" />
       <workItem from="1473715706909" duration="8226000" />
       <workItem from="1473780903876" duration="294000" />
-      <workItem from="1473781301458" duration="420000" />
-    </task>
-    <task id="LOCAL-00043" summary="Add Kendo UI missing files">
-      <created>1469486436334</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1469486436334</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Fix error">
-      <created>1469487694819</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1469487694819</updated>
+      <workItem from="1473781301458" duration="1016000" />
     </task>
     <task id="LOCAL-00045" summary="Fix error with materialize css">
       <created>1469555932542</created>
@@ -859,11 +848,25 @@
       <option name="project" value="LOCAL" />
       <updated>1473781488907</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="Remove .NET Core Files to move into separate branch">
+      <created>1473781740147</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1473781740147</updated>
+    </task>
+    <task id="LOCAL-00093" summary="Add .NET Core Files to move into separate branch">
+      <created>1473781976392</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1473781976392</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="424651000" />
+    <option name="totallyTimeSpent" value="425247000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -885,9 +888,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5022051" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="3003" y="-509" width="1072" height="875" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276414" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3676957" sideWeight="0.48986125" order="9" side_tool="false" content_ui="tabs" x="62" y="0" width="967" height="1082" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25566342" sideWeight="0.49380806" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3276414" sideWeight="0.49779493" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25303197" sideWeight="0.5247678" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30705622" sideWeight="0.51013875" order="8" side_tool="true" content_ui="tabs" x="639" y="443" width="1814" height="1039" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -895,11 +900,9 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30705622" sideWeight="0.51013875" order="8" side_tool="true" content_ui="tabs" x="639" y="443" width="1814" height="1039" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870865" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3676957" sideWeight="0.48986125" order="9" side_tool="false" content_ui="tabs" x="62" y="0" width="967" height="1082" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16427784" sideWeight="0.6254002" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.49779493" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870865" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -920,8 +923,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="true" />
-    <MESSAGE value="Fix console logging, minor edits" />
-    <MESSAGE value="Change kendo UI grid theme" />
     <MESSAGE value="Test code alert" />
     <MESSAGE value="Update jQuery integration" />
     <MESSAGE value="Update jQuery integration again" />
@@ -945,7 +946,9 @@
     <MESSAGE value="Test" />
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Add .NET Core Files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add .NET Core Files" />
+    <MESSAGE value="Remove .NET Core Files to move into separate branch" />
+    <MESSAGE value="Add .NET Core Files to move into separate branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add .NET Core Files to move into separate branch" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
     <option name="CHANGE_BROWSER_SETTINGS">
       <map>
@@ -2815,7 +2818,6 @@
     <entry file="file://$PROJECT_DIR$/Models/SuscribersMicroServiceConfiguration.cs" />
     <entry file="file://$PROJECT_DIR$/Models/ViolationMicroServiceConfiguration.cs" />
     <entry file="file://$PROJECT_DIR$/Models/ApplicationUser.cs" />
-    <entry file="file://$PROJECT_DIR$/Startup.cs" />
     <entry file="file://$PROJECT_DIR$/Controllers/AggregateController.cs" />
     <entry file="file://$PROJECT_DIR$/Views/Home/Index.cshtml" />
     <entry file="file://$PROJECT_DIR$/Views/_ViewStart.cshtml" />
@@ -3700,7 +3702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project.json" />
     <entry file="file://$PROJECT_DIR$/Properties/launchSettings.json" />
     <entry file="file://$PROJECT_DIR$/config/webpack.common.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -3789,14 +3790,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="391">
-            <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+          <first_editor relative-caret-position="231">
+            <caret line="55" column="92" selection-start-line="55" selection-start-column="92" selection-end-line="55" selection-end-column="92" />
             <folding />
           </first_editor>
           <second_editor />

@@ -1,9 +1,7 @@
 
-# ASP.Net Core 1.0 + Angular2 Webpack Starter
-### Integrated with Visual Studio 2015 and TFS Build Server
+# Angular 2 + AOT Compilation + Webpack 2 + Typescript
 
-This is the documentation for our starter template. It is based on the Angular2 Webpack Starter repo [available on GitHub](https://angularclass.github.io/angular2-webpack-starter/). The original documentation is here in this file below the customized documentation. This documentation assumes you are developing on Windows 10.
-
+This is based on the Angular2 Webpack Starter repo [available on GitHub](https://angularclass.github.io/angular2-webpack-starter/). The original documentation is here in this file below the customized documentation. This documentation assumes you are developing on Windows 10.
 
 In the next section, you'll learn what you need to know in order to build, serve, and edit this app.
 
@@ -51,7 +49,7 @@ This solution depends upon NodeJS and NPM. It is important that you only use Nod
 
 ## Webpack
 
-<img src="../../Documentation/images/webpack-overview-diagram.png" alt="Webpack Dev Server with Hot Module Replacement" width="900"/>
+<img src="./docs/images/webpack-overview-diagram.png" alt="Webpack Dev Server with Hot Module Replacement" width="900"/>
 
 **For more info on Webpack Hot module Replacement (HMR), see: [Understanding Webpack Hot Module Replacement](http://andrewhfarmer.com/understanding-hmr/).**
 
@@ -76,7 +74,7 @@ The benefit of this is that you will not lose your app "state" nor your current 
 
 My goal was to enable a standard CSS development workflow wherein all styles are "externally" loaded via `<link href="" />` tags rather than embedded/inlined styles via `<style>...</style>` tags in the `<head></head>`. The reason is because using embedded styles causes the source of the style to be hidden from the DevTools inspector. This was a big problem, because the default "Angular2 way" of loading styles within `@Component` results in the styles being embedded in the `<head></head>`, making it very difficult to know which css/scss file is applying the styles to a particular element. See image below.
 
-<img align="right" src="../../Documentation/images/styles-explanation.png" alt="Styles explanation" />
+<img align="right" src="./docs/images/styles-explanation.png" alt="Styles explanation" />
 
 In addition, I wanted Webpack Hot Module Replacement to still work, and because we're using SASS which compiles to CSS, I wanted to see the original .SCSS source-mapped file appear in the DevTools inspector, not the compiled .CSS file. Seeing the compiled .CSS is a step better, but it still forces the developer to have to "backtrack" the compiled .CSS to the original .SCSS. Sourcemaps solves this by directly displaying the original .SCSS source file in the Styles Pane, which you can click on and jump to the exact line in question within the original .SCSS file!
 
