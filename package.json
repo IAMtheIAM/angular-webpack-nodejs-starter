@@ -54,7 +54,6 @@
       "pree2e": "npm run webdriver:update -- --standalone",
       "pree2e:server": "npm run clean:wwwroot",
       "prelint": "tsc -m commonjs --noImplicitAny config/rules/importDestructuringSpacingRule.ts node_modules/tslint/lib/tslint.d.ts",
-      "preonetimesetup": "npm run remove-web-tools",
       "preversion": "npm test:karma",
       "projectlaunch": "npm run build:dev",
       "postprojectlaunch": "npm run devserver:aot",
