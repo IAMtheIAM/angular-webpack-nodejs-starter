@@ -41,7 +41,7 @@
     "e2e:live": "npm run e2e -- --elementExplorer",
     "e2e:server": "npm run start && npm run protractor",
     "eslint": "eslint",
-    "install:globals:all": "npm install typescript webpack-dev-server rimraf webpack renamer -g --no-optional",
+    "install:globals:all": "npm install typescript webpack-dev-server cross-env rimraf webpack renamer -g --no-optional",
     "install:globals:rimraf": "npm install rimraf -g --no-optional",
     "launch:Debug": "npm version",
     "launch:FrontEnd": "npm run build:dev",
