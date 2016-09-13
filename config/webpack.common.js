@@ -167,12 +167,13 @@ module.exports = {
          {
             test: /\.ts$/,
             include: PATHS.appRoot,
-            exclude: [/\.(spec|e2e)\.ts$/],
+            exclude: [/\.(spec|e2e|d)\.ts$/],
             // loaders: ['awesome-typescript-loader'],
             loaders: [
                '@angularclass/hmr-loader',
                'awesome-typescript-loader',
                'angular2-template-loader',
+               'angular2-router-loader?loader=system&genDir=wwwroot/aot-compiled/app-components&aot=' + AOT
             ],
             // loader: 'ts-loader',
             // loader: 'happypack/loader?id=ts',

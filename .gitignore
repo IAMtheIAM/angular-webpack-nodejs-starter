@@ -1,5 +1,6 @@
 .idea/workspace.xml
 angular2-aot-webpack2-typescript.iml
+<<<<<<< HEAD
 aot-compiled/
 node_modules/
 npm-debug.log
@@ -7,3 +8,5 @@ wwwroot/
 bin/
 obj/
 project.lock.json
+=======
+>>>>>>> master

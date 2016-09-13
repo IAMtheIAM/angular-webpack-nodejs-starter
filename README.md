@@ -1,47 +1,38 @@
 
-# ASP.Net Core 1.0 + Angular2 Webpack Starter
-### Integrated with Visual Studio 2015 and TFS Build Server
+# Angular 2 + AOT Compiler + Webpack 2 + Typescript + SASS
 
-This is the documentation for our starter template. It is based on the Angular2 Webpack Starter repo [available on GitHub](https://angularclass.github.io/angular2-webpack-starter/). The original documentation is here in this file below the customized documentation. This documentation assumes you are developing on Windows 10.
-
+This is based on the Angular2 Webpack Starter repo [available on GitHub](https://angularclass.github.io/angular2-webpack-starter/). It enhances that repo with additional features, such as Angular 2 AOT Compilation, and SASS + Sourcemaps working with Hot Module Replacement.
+ 
+The original documentation is here in this file below the customized documentation. This documentation assumes you are developing on Windows 10.
 
 In the next section, you'll learn what you need to know in order to build, serve, and edit this app.
 
 ## Getting Your Environment Setup
 
-This solution depends upon NodeJS and NPM. It is important that you only use Node version 4.4.4 LTS or higher. Do not use the "Current" version which contains latest features, or you may run into build errors. Any verion of Node LTS below 4.4.4 is not guaranteed to work and may also produce build errors.
+This solution depends upon NodeJS and NPM. It is important that you only use Node version 4.4.4 LTS or higher, and NPM version 3.10.6 or higher. Do not use the "Current" version which contains latest features, or you may run into build errors. Any verion of Node LTS below 4.4.4 is not guaranteed to work and may also produce build errors.
 
 **Installation steps:**
 
-* Close visual studio.
+* `npm run onetimesetup`
 
-* **Uninstall** any version of NodeJS you have currently.
+**Webpack Dev Server with HMR (Hot Module Replacement) and Angular 2 AOT (Ahead Of Time) compilation** 
 
-* Navigate to the folder at: **(Solution Root)/ProgramDependencies/**
+* `npm run devserver:aot`
 
-* First install the Visual Studio extension "**NPM Task Runner v1.3.59.vsix**". This enables you to see the NPM scripts in a new window pane called Task Runner Explorer. 
+**Webpack Dev Server with HMR (Hot Module Replacement) and Angular 2 JIT (Just In Time) compilation**
+ 
+* `npm run devserver:jit`
 
-* Next install "**node-v4.4.4-x64.msi**". Make sure to leave the "Add to PATH" checked during install.
+**Dev Build (No HMR)**
+ 
+* `npm run build:dev` 
 
-* Reopen Visual Studio and launch the solution. The first time opening the solution will take 3-5 minutes to install all of the node_modules and bower_components depencencies.
-
-* Once it finishes, all dependencies have been restored and you can begin developing. 
-
-* Choose "Web" on the dropdown where you launch the application. This launches the application using the new Kestrel .NET cross platform web server. The app will not run if you use the default "IIS Express". **The app is running on http://localhost:5000. The webpack-dev-server is running on http://localhost:4000** which serves the assets to the main .NET server on port 5000.
+**Production Build (No HMR, optimized code)**
+ 
+* `npm run build:production`
 
 
 **Important points of consideration**
-
-
-* Every time you open the solution, visual studio will execute the `projectlaunch` script because it is bound to the "project open" binding inside the Task Runner Explorer window. This script will install all dependencies, remove the version of NodeJS which comes with Visual Studio 2015, delete wwwroot, generate a new webpack bundle which outputs to wwwroot, and launch the webpack-dev-server running on port 4000. It is critical that the script properly executes in order to build properly. 
-
-* If you have trouble with NPM build errors, check to see if the `remove-web-tools` task is succeeding. There is a folder inside Visual Studio installation directory, located at *%ProgramFiles(x86)%/Microsoft Visual Studio 14.0/Common7/IDE/Extensions/Microsoft/Web Tools/External* which contains prebundled versions of Node, NPM, bower, and a few others. These versions are outdated and usually fail to build when executing these scripts. The "remove-web-tools" task renames the folder where these programs are contained from "External" to "External_DISABLED" which causes Visual Studio to be unable to revolve the location and forces it to look at the global PATH where your newer versions of Node and NPM are installed.
-
-* To see what tasks are running or to execute a new task, simply right click on "package.json" (located in the *project* root) and choose "Task Runner Explorer" to see all NPM scripts. For the future reference, simply double click any task to execute it. (Don't execute any just yet). To see what each task does, open package.json normally and go to the "scripts" section.
-
-* When any project executes, inside Task Runner Explorer there will be a new tab for each task executed. It will say (running) in the tab next to the task name currently executing, such as "projectlaunch (running)". When the task finishes executing, the word (running) will disappear from the tab, indicated the task has finished. 
-
-* During the "projectlaunch" task, once you get the output message of `[default] Ok, 2.694 sec.` all scripts have finished running and you can begin development. However, this script will continue to say "projectlaunch (running)" because the webpack-dev-server does not exit and continues to run. The same is true for the `start` task (which is the final task that "projectlaunch" executes anyway); it will keep running. This is normal, because the webpack-dev-server continues running on port 4000, and you won't be able to develop locally without it. If you accidentally or intentionally need to close the "projectlaunch" task, before you continue developing you will need to execut the `start` script which will fire up the webpack-dev-server again.
 
 * If you ever need to clean your project folder of any generated files, execute the "clean" task. This will remove *"node_modules", "bower_components", "typings", "wwwroot" and "coverage"* from your project directory.
 
@@ -51,7 +42,7 @@ This solution depends upon NodeJS and NPM. It is important that you only use Nod
 
 ## Webpack
 
-<img src="../../Documentation/images/webpack-overview-diagram.png" alt="Webpack Dev Server with Hot Module Replacement" width="900"/>
+<img src="./docs/images/webpack-overview-diagram.png" alt="Webpack Dev Server with Hot Module Replacement" width="900"/>
 
 **For more info on Webpack Hot module Replacement (HMR), see: [Understanding Webpack Hot Module Replacement](http://andrewhfarmer.com/understanding-hmr/).**
 
@@ -76,7 +67,7 @@ The benefit of this is that you will not lose your app "state" nor your current 
 
 My goal was to enable a standard CSS development workflow wherein all styles are "externally" loaded via `<link href="" />` tags rather than embedded/inlined styles via `<style>...</style>` tags in the `<head></head>`. The reason is because using embedded styles causes the source of the style to be hidden from the DevTools inspector. This was a big problem, because the default "Angular2 way" of loading styles within `@Component` results in the styles being embedded in the `<head></head>`, making it very difficult to know which css/scss file is applying the styles to a particular element. See image below.
 
-<img align="right" src="../../Documentation/images/styles-explanation.png" alt="Styles explanation" />
+<img align="right" src="./docs/images/styles-explanation.png" alt="Styles explanation" />
 
 In addition, I wanted Webpack Hot Module Replacement to still work, and because we're using SASS which compiles to CSS, I wanted to see the original .SCSS source-mapped file appear in the DevTools inspector, not the compiled .CSS file. Seeing the compiled .CSS is a step better, but it still forces the developer to have to "backtrack" the compiled .CSS to the original .SCSS. Sourcemaps solves this by directly displaying the original .SCSS source file in the Styles Pane, which you can click on and jump to the exact line in question within the original .SCSS file!
 
