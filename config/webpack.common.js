@@ -25,7 +25,7 @@ const HappyThreadPool = HappyPack.ThreadPool({size: 5});
  */
 
 const ENVlc = process.env.npm_lifecycle_event;
-const AOT = ENVlc === 'devserver:aot' || ENVlc === 'build:dev' || ENVlc === 'build:production';
+const AOT = ENVlc === 'devserver:aot' || ENVlc === 'build:dev:aot' || ENVlc === 'build:production';
 // const isProd = ENVlc === 'build:prod' || ENVlc === 'server:prod' || ENVlc === 'watch:prod' ||  ENVlc === 'build:aot';
 
 var appBoostrapFile;
