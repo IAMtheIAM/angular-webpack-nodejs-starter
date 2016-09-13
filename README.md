@@ -1,5 +1,5 @@
 
-# Angular 2 + AOT Compilation + Webpack 2 + Typescript
+# Angular 2 + AOT Compiler + Webpack 2 + Typescript + SASS
 
 This is based on the Angular2 Webpack Starter repo [available on GitHub](https://angularclass.github.io/angular2-webpack-starter/). The original documentation is here in this file below the customized documentation. This documentation assumes you are developing on Windows 10.
 
