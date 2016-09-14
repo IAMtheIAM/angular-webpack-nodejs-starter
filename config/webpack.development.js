@@ -17,6 +17,10 @@ const NamedModulesPlugin = require('webpack/lib/NamedModulesPlugin');
 /**
  * Webpack Constants
  */
+
+
+const DEBUG = ENV !== 'production';
+const ENVlc = process.env.npm_lifecycle_event;
 const ENV = process.env.ENV = process.env.NODE_ENV = 'development';
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 4000;
@@ -29,6 +33,18 @@ const METADATA = webpackMerge(commonConfig.metadata, {
    ENV: ENV,
    HMR: HMR
 });
+const AOT = ENVlc === 'devserver:aot' || ENVlc === 'build:dev' || ENVlc === 'build:production';
+// const isProd = ENVlc === 'build:prod' || ENVlc === 'server:prod' || ENVlc === 'watch:prod' ||  ENVlc === 'build:aot';
+
+var appBoostrapFile;
+
+if (AOT) {
+   appBoostrapFile = './src/app.bootstrap.aot.ts'
+   METADATA.port = 4500;
+} else {
+   appBoostrapFile = './src/app.bootstrap.ts'
+}
+
 
 /**
  * Webpack configuration

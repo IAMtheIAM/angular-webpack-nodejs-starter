@@ -24,31 +24,33 @@ const HappyThreadPool = HappyPack.ThreadPool({size: 5});
  * Webpack Constants
  */
 
+const ENV = process.env.NODE_ENV;
+const DEBUG = ENV !== 'production';
 const ENVlc = process.env.npm_lifecycle_event;
-const AOT = ENVlc === 'devserver:aot' || ENVlc === 'build:dev' || ENVlc === 'build:production';
+const AOT = ENVlc === 'devserver:aot' || ENVlc === 'build:dev:aot' || ENVlc === 'build:production';
 // const isProd = ENVlc === 'build:prod' || ENVlc === 'server:prod' || ENVlc === 'watch:prod' ||  ENVlc === 'build:aot';
-
 var appBoostrapFile;
+
 if (AOT) {
    appBoostrapFile = './src/app.bootstrap.aot.ts'
 } else {
-    appBoostrapFile = './src/app.bootstrap.ts'
+   appBoostrapFile = './src/app.bootstrap.ts'
 }
 
-const ENV = process.env.NODE_ENV;
-const DEBUG = ENV !== 'production';
-const METADATA = {
-   host: 'localhost',
-   port: 4000,
-   dotnetport: 5000,
-   baseUrl: '/',
-   ENV: ENV
+// const METADATA = {
+   // host: 'localhost',
+   // port: 4000,
+   // dotnetport: 5000,
+   // baseUrl: '/',
+   // ENV: ENV
 
-};
+// };
+
 const PATHS = {
    appRoot: [Path.resolve(__dirname, "../src")],
    happyPackTempDir: './cache/happypack'
 };
+
 
 
 /**
@@ -63,7 +65,7 @@ module.exports = {
     *
     * See: (custom attribute)
     */
-   metadata: METADATA,
+   // metadata: METADATA,
 
    /**
     * Cache generated modules and chunks to improve performance for multiple incremental builds.
