@@ -172,10 +172,10 @@ module.exports = {
             exclude: [/\.(spec|e2e|d)\.ts$/],
             // loaders: ['awesome-typescript-loader'],
             loaders: [
-               '@angularclass/hmr-loader',
+               // '@angularclass/hmr-loader',
                'awesome-typescript-loader',
                'angular2-template-loader',
-               // 'angular2-router-loader?loader=system&genDir=wwwroot/aot-compiled/app-components&aot=' + AOT
+               'angular2-router-loader?loader=system&genDir=src/compiled/app&aot=' + AOT
             ],
             // loader: 'ts-loader',
             // loader: 'happypack/loader?id=ts',

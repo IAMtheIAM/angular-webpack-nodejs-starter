@@ -2,30 +2,43 @@
 <html lang="">
 <head>
 
-  <title>Atlas - Helios</title>
+   <title>Atlas - Helios</title>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="<%= webpackConfig.metadata.title %>">
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="<%= webpackConfig.metadata.title %>">
 
-  <!-- use http://www.favicon-generator.org/ to replace files in public/icon-->
+   <!-- use http://www.favicon-generator.org/ to replace files in public/icon-->
 
-  <% if (webpackConfig.htmlElements.headTags) { %>
-  <!-- Configured Head Tags  -->
-  <%= webpackConfig.htmlElements.headTags %>
-  <% } %>
+   <% if (webpackConfig.htmlElements.headTags) { %>
+   <!-- Configured Head Tags  -->
+   <%= webpackConfig.htmlElements.headTags %>
+   <% } %>
 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- base url -->
-  <base href="<%= webpackConfig.metadata.baseUrl %>">
+   <!-- base url -->
+   <base href="<%= webpackConfig.metadata.baseUrl %>">
 
+   <environment names="Development, Production">
+      <!-- .NET Production mode  -->
+      <!--<link href="@host/css/tax-summary.style.css?8f36206a5988beed8411&8f36206a5988beed8411" rel="stylesheet">-->
+   </environment>
 </head>
 
 <body class="<%= webpackConfig.metadata.ENV %>">
 Loading...
 @RenderBody()
- <environment names="Development"></environment><environment names="Staging,Production"></environment>
+
+<environment names="Development, Production">
+   <!-- .NET Development/Production mode  -->
+   <!--<script type="text/javascript" src="@host/js/tax-summary.bundle.js?8f36206a5988beed8411"></script>-->
+</environment>
+
+<environment names="Webpack">
+   <!-- Webpack Development mode -->
+   <!--<script type="text/javascript" src="http://localhost:4500/js/tax-summary.bundle.js?8f36206a5988beed8411"></script>-->
+</environment>
 </body>
 </html>
