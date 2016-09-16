@@ -1,0 +1,1 @@
+{"__symbolic":"module","version":1,"metadata":{"routes":[{"path":"","component":{"__symbolic":"reference","module":"./detail.component","name":"DetailComponent"},"canActivate":[{"__symbolic":"reference","module":"../services/route-protection.service","name":"RouteProtection"}],"pathMatch":"full"}]}}
