@@ -50,7 +50,7 @@ export class AppComponent {
 
    ngOnInit() {
       if (Logging.isEnabled.light) {
-         console.log('%c Hello \"AppComponent\" component!', Logging.normal.lime);
+         console.log('%c Hello \"App\" component!', Logging.normal.lime);
       }
       if (Logging.isEnabled.verbose) {
          console.log('Initial AppComponent State', this.appState.state);

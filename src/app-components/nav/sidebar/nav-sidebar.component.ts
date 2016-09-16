@@ -9,8 +9,7 @@ import { Component } from '@angular/core';
  * Shared Utilities
  */
 
-import { Logging, $ } from '../../services/utility.service'; // don't import jQuery's '$' alias in this component, or it
-                                                          // breaks the javascript, not sure why
+import { Logging } from '../../services/utility.service'; // don't import jQuery's '$' alias in this component, or it breaks the javascript, not sure why
 import { AppState } from '../../services/appstate.service';
 
 /**
@@ -34,9 +33,9 @@ export class NavSidebarComponent {
       if (Logging.isEnabled.light) {
          console.log('%c Hello \"Nav-Sidebar\" component!', Logging.normal.lime);
       }
-      // // Initialize collapse button
-      // $(".button-collapse").sideNav();
-      // // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-      // $('.collapsible').collapsible();
+      // Initialize collapse button
+      $(".button-collapse").sideNav();
+      // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+      $('.collapsible').collapsible();
    }
 }

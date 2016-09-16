@@ -6,8 +6,6 @@
 import 'zone.js/dist/zone';
 import 'reflect-metadata';
 
-declare var ENV: string;
-
 import { enableProdMode } from '@angular/core';
 import { platformBrowser } from '@angular/platform-browser';
 import { decorateModuleRef } from './app-components/app/environment';
@@ -37,10 +35,10 @@ export function main(initialHmrState?: any): Promise<any> {
    return null; // this line doesn't make sense, but makes TS compiler happy
 }
 
-export function bootstrapDomReady() {
-   document.addEventListener('DOMContentLoaded', main);
-}
-
-bootstrapDomReady();
+// export function bootstrapDomReady() {
+//    document.addEventListener('DOMContentLoaded', main);
+// }
 //
-// bootloader(main);
+// bootstrapDomReady();
+
+bootloader(main);

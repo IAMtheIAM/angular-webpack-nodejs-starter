@@ -32,7 +32,7 @@
       "typeRoots": [
          "./node_modules/@types"
       ],
-      "outDir": "./aot-compiled/compiled-src"
+      "outDir": "./wwwroot/compiled-src"
    },
    "exclude": [
       "./node_modules",

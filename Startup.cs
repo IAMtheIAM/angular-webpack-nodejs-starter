@@ -23,11 +23,16 @@ namespace Armls.Helios.Web
             {
                 // For more details on using the user secret store see http://go.microsoft.com/fwlink/?LinkID=532709
                 builder.AddUserSecrets();
+
             }
 
             builder.AddEnvironmentVariables();
             Configuration = builder.Build();
+            
+            Environment = env.EnvironmentName;
         }
+
+        public static string Environment { get; private set; }
 
         public IConfigurationRoot Configuration { get; }
 

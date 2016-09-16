@@ -21,6 +21,12 @@ import { SubscriberComponent } from '../subscriber/subscriber.component.ts';
 import { NotFound404Component } from '../404/notfound404.component';
 
 
+export function loadLazy() {
+   // return require('es6-promise!../+detail/detail.routes')('DetailComponent');
+   return System.import('../+detail/detail.routes').then((r: any) => r.DetailComponent)
+
+}
+
 export const ROUTES: Routes = [{
    path: '',
    component: LoginComponent
@@ -44,7 +50,7 @@ export const ROUTES: Routes = [{
    // }
 }, {
    path: 'detail',
-   loadChildren:  './+detail/index'
+   loadChildren: loadLazy
    // loadChildren: "es6-promise!../+detail/detail.routes"
 }, {
    path: '**',

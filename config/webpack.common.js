@@ -17,6 +17,8 @@ const AutoPrefixer = require('autoprefixer');
 const Path = require('path');
 const HappyPack = require('happypack');
 const HappyThreadPool = HappyPack.ThreadPool({size: 5});
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 // const ExtractTextPlugin = require("extract-text-webpack-plugin");
 //const VSFixSourceMapsPlugin = require('vs-fix-sourcemaps');
 
@@ -24,33 +26,31 @@ const HappyThreadPool = HappyPack.ThreadPool({size: 5});
  * Webpack Constants
  */
 
-const ENV = process.env.NODE_ENV;
-const DEBUG = ENV !== 'production';
 const ENVlc = process.env.npm_lifecycle_event;
-const AOT = ENVlc === 'devserver:aot' || ENVlc === 'build:dev:aot' || ENVlc === 'build:production';
+const AOT = ENVlc === 'devserver:aot' || ENVlc === 'build:dev:aot' || ENVlc === 'build:production:aot';
 // const isProd = ENVlc === 'build:prod' || ENVlc === 'server:prod' || ENVlc === 'watch:prod' ||  ENVlc === 'build:aot';
-var appBoostrapFile;
 
+var appBoostrapFile;
 if (AOT) {
    appBoostrapFile = './src/app.bootstrap.aot.ts'
 } else {
-   appBoostrapFile = './src/app.bootstrap.ts'
+    appBoostrapFile = './src/app.bootstrap.ts'
 }
 
-// const METADATA = {
-   // host: 'localhost',
-   // port: 4000,
-   // dotnetport: 5000,
-   // baseUrl: '/',
-   // ENV: ENV
+const ENV = process.env.NODE_ENV;
+const DEBUG = ENV !== 'production';
+const METADATA = {
+   host: 'localhost',
+   port: 4000,
+   dotnetport: 5000,
+   baseUrl: '/',
+   ENV: ENV
 
-// };
-
+};
 const PATHS = {
    appRoot: [Path.resolve(__dirname, "../src")],
-   happyPackTempDir: './cache/happypack'
+   happyPackTempDir: '../../cache/happypack'
 };
-
 
 
 /**
@@ -65,7 +65,7 @@ module.exports = {
     *
     * See: (custom attribute)
     */
-   // metadata: METADATA,
+   metadata: METADATA,
 
    /**
     * Cache generated modules and chunks to improve performance for multiple incremental builds.
@@ -169,13 +169,12 @@ module.exports = {
          {
             test: /\.ts$/,
             include: PATHS.appRoot,
-            exclude: [/\.(spec|e2e|d)\.ts$/],
+            exclude: [/\.(spec|e2e)\.ts$/],
             // loaders: ['awesome-typescript-loader'],
             loaders: [
-               // '@angularclass/hmr-loader',
+               '@angularclass/hmr-loader',
                'awesome-typescript-loader',
                'angular2-template-loader',
-               'angular2-router-loader?loader=system&genDir=src/compiled/app&aot=' + AOT
             ],
             // loader: 'ts-loader',
             // loader: 'happypack/loader?id=ts',
@@ -201,14 +200,15 @@ module.exports = {
           * See: https://github.com/webpack/raw-loader
           */
          {
-            test: /\.css$/,
-            // include: PATHS.appRoot,
-            // loaders: ['to-string-loader', 'css-loader'],
-            // loader: 'raw-loader',
-            // loader: 'style/url!file?name=assets/css/[name].[sha512:hash:base64:7].css',
-            loaders: ['style', 'css?sourceMap', 'postcss'],
-            // happy: {id: 'css'} // HappyPack middleware
-
+            test: /\.(css)$/,
+            loaders: DEBUG ?
+               ['style', 'css?sourceMap', 'postcss'] : // dev mode
+               ExtractTextPlugin.extract({
+                  fallbackLoader: "css-loader",
+                  notExtractLoader: "css-loader",
+                  loader: ['css?sourceMap', 'postcss'],
+                  publicPath: '/' // 'string' override the publicPath setting for this loader
+               })
          },
 
          /**
@@ -232,40 +232,15 @@ module.exports = {
           */
          {
             test: /\.(scss)$/,
-            loaders: ['style', 'css?sourceMap', 'postcss', 'sass?sourceMap', 'sass-resources']
-            // , happy: {id: 'scss'} // HappyPack middleware
-
-
-            /**
-             *
-             * What this basically says is:
-             * (Read from right to left)
-             *
-             * 1) First look for any file ending in .scss  (based on test regex pattern above)
-             *
-             * 2) Then load the "sass-resources" and @import all mixins and variables from into each .scss file.
-             * See: https://github.com/shakacode/sass-resources-loader
-             *
-             * 3) Then load "sass-loader" and compile the sass and generate sourcemaps.
-             * Sass-loader pipes that output of compiled sass to the "file-loader".
-             * See: https://github.com/jtangelder/sass-loader
-             *
-             * 4) File-loader prepends assets/css before the file and then renames the file to [name].compiled.[hash].css. This means the output is
-             * assets/css/[name].compiled.[hash].css. The Path to the public url is returned as output. File-loader pipes the output to "style-loader".
-             * See: https://github.com/webpack/file-loader
-             *
-             * Finally because we specified "style/url", "style-loader" takes the public url, creates a <link> tag with the href= to the URL output from file-loader, and appends that to the <head>
-             * Example: <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/about.compiled.1ye2TBV.css">
-             * See: https://github.com/webpack/style-loader
-             *
-             * If we specified "style" without the "/url" part, instead of creating an external css <link> tag, it will embed the css directly into the <head>
-             * inside of a <style>...</style> tag.
-             *
-             * Note: The "-loader" part of each of the loaders is optional. So you can write "file-loader" or "file", "sass-loader" or "sass", etc.
-             *
-             */
+            loaders: DEBUG ?
+               ['style', 'css?sourceMap', 'postcss', 'sass?sourceMap', 'sass-resources'] : // dev mode
+               ExtractTextPlugin.extract({
+                  fallbackLoader: "sass-loader",
+                  notExtractLoader: "sass-loader",
+                  loader: ['css?sourceMap', 'postcss', 'sass?sourceMap', 'sass-resources'],
+                  publicPath: '/' // 'string' override the publicPath setting for this loader
+               })
          },
-
          // Bootstrap 4 - Used to serve jQuery for Bootstrap scripts:
 
          {
@@ -432,13 +407,13 @@ module.exports = {
        *
        * See: https://github.com/ampedandwired/html-webpack-plugin
        */
-      new HtmlWebpackPlugin({
-         template: 'src/index.html',
-         chunksSortMode: 'dependency',
-         hash: true, // creates ?[hash], such as: main.bundle.js?62cd29765a7e959d0fe5
-         filename: 'index.html',
-         environment: ENV
-      }),
+      // new HtmlWebpackPlugin({
+      //    template: 'src/index.html',
+      //    chunksSortMode: 'dependency',
+      //    hash: true, // creates ?[hash], such as: main.bundle.js?62cd29765a7e959d0fe5
+      //    filename: 'index.html',
+      //    environment: ENV
+      // }),
 
       /**
        * Plugin: HtmlHeadConfigPlugin

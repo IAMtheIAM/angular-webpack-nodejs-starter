@@ -1,0 +1,37 @@
+/* Appwide/Forms.scss*/
+
+/* ===============================================================
+ *                MATERIALIZE CSS CUSTOMIZATIONS
+ * =============================================================== */
+
+.suffix {
+  float: right;
+  width: 1em;
+  font-size: 2rem;
+  transition: color .2s;
+  position: absolute;
+  top: 5px;
+  right: 0px;
+
+  &.active {
+    color: $input-focus-color;
+  }
+}
+
+.suffix ~ input,
+.suffix ~ textarea {
+  margin-right: 2rem;
+  width: calc(100% - 2rem);
+}
+
+.suffix ~ textarea {
+  padding-top: .8rem;
+}
+
+.suffix ~ label {
+  margin-right: 3rem;
+}
+
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+  box-sizing: border-box;
+}

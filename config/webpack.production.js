@@ -17,6 +17,7 @@ const IgnorePlugin = require('webpack/lib/IgnorePlugin');
 // const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const CompressionPlugin = require('compression-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 
 /**
@@ -31,6 +32,10 @@ const METADATA = webpackMerge(commonConfig.metadata, {
    ENV: ENV,
    HMR: false
 });
+
+// Compile the template depending on the script running
+var cssOutput = '/css/[name].style.css?[hash]';
+
 
 module.exports = webpackMerge(commonConfig, {
 
@@ -95,6 +100,18 @@ module.exports = webpackMerge(commonConfig, {
     * See: http://webpack.github.io/docs/configuration.html#plugins
     */
    plugins: [
+
+      /**
+       * Plugin: ExtractTextPlugin
+       * Description: Extract SCSS/CSS from bundle into external .css file
+       *
+       * See: https://github.com/webpack/extract-text-webpack-plugin
+       */
+      new ExtractTextPlugin({
+         filename: cssOutput,
+         disable: false,
+         allChunks: true
+      }),
 
       /**
        * Plugin: WebpackMd5Hash
@@ -211,6 +228,23 @@ module.exports = webpackMerge(commonConfig, {
       emitErrors: true,
       failOnHint: true,
       resourcePath: 'src'
+   },
+
+   stats: {
+      colors: true,
+      errors: true,
+      errorDetails: false,
+      reasons: true,
+      publicPath: false,
+      version: true,
+      timings: true,
+      assets: true,
+      modules: true,
+      source: true,
+      children: true,
+      hash: false,
+      chunks: false, // make sure 'chunks' is false or it will add 5-10 seconds to your build and incremental build time, due to excessive output.
+      warnings: false
    },
 
    /**

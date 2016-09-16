@@ -1,6 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
 .idea/workspace.xml
-angular2-aot-webpack2-typescript.iml
-aot-compiled/
+Armls.Helios.Web.xproj.user
+Armls.Helios.Web.xproj.vspscc
+bin/
+cache/
 node_modules/
 npm-debug.log
-wwwroot/
+obj/
+project.lock.json

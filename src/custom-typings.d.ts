@@ -56,7 +56,6 @@ interface SystemJS {
 }
 
 interface GlobalEnvironment {
-   AOT;
    ENV;
    HMR;
    SystemJS: SystemJS;
@@ -154,4 +153,3 @@ interface JQuery {
 }
 
 declare var __webpack_public_path__: string;
-declare var AOT: boolean;

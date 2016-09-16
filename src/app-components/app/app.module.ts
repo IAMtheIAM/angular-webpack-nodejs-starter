@@ -26,7 +26,6 @@ import { NotFound404Component } from '../404/notfound404.component';
 import { NavHeaderComponent } from '../nav/header/nav-header.component';
 import { NavSidebarComponent } from '../nav/sidebar/nav-sidebar.component';
 import { NavFooterComponent } from '../nav/footer/nav-footer.component';
-
 /*
  * AppComponent Wide Services & Utilities
  */
@@ -79,32 +78,36 @@ type StoreType = {
 })
 
 export class AppModule {
-   constructor(public appRef: ApplicationRef, public appState: AppState) {}
+   constructor(public appRef: ApplicationRef, public appState: AppState) {
+      if (Logging.isEnabled.light) {
+         console.log('%c Hello \"App\" Module!', Logging.normal.orange);
+      }
+   }
 
-   // hmrOnInit(store: StoreType) {
-   //    if (!store || !store.state) {
-   //       return;
-   //    }
-   //    console.log('HMR store', store);
-   //    // this.appState.set('state', store.state);
-   //    this.appState._state = store.state;
-   //    this.appRef.tick();
-   //    delete store.state;
-   // }
-   //
-   // hmrOnDestroy(store: StoreType) {
-   //    const cmpLocation = this.appRef.components.map(cmp => cmp.location.nativeElement);
-   //    // recreate elements
-   //    const state = this.appState._state;
-   //    store.state = state;
-   //    store.disposeOldHosts = createNewHosts(cmpLocation);
-   //    // remove styles
-   //    removeNgStyles();
-   // }
-   //
-   // hmrAfterDestroy(store: StoreType) {
-   //    // display new elements
-   //    store.disposeOldHosts();
-   //    delete store.disposeOldHosts;
-   // }
+   hmrOnInit(store: StoreType) {
+      if (!store || !store.state) {
+         return;
+      }
+      console.log('HMR store', store);
+      // this.appState.set('state', store.state);
+      this.appState._state = store.state;
+      this.appRef.tick();
+      delete store.state;
+   }
+
+   hmrOnDestroy(store: StoreType) {
+      const cmpLocation = this.appRef.components.map(cmp => cmp.location.nativeElement);
+      // recreate elements
+      const state = this.appState._state;
+      store.state = state;
+      store.disposeOldHosts = createNewHosts(cmpLocation);
+      // remove styles
+      removeNgStyles();
+   }
+
+   hmrAfterDestroy(store: StoreType) {
+      // display new elements
+      store.disposeOldHosts();
+      delete store.disposeOldHosts;
+   }
 }
