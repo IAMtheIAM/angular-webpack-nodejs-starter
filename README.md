@@ -42,7 +42,7 @@ This solution depends upon NodeJS and NPM. It is important that you only use Nod
 
 ## Webpack
 
-<img src="./docs/images/webpack-overview-diagram.png" alt="Webpack Dev Server with Hot Module Replacement" width="900"/>
+<img src="./tools/docs/images/webpack-overview-diagram.png" alt="Webpack Dev Server with Hot Module Replacement" width="900"/>
 
 **For more info on Webpack Hot module Replacement (HMR), see: [Understanding Webpack Hot Module Replacement](http://andrewhfarmer.com/understanding-hmr/).**
 
