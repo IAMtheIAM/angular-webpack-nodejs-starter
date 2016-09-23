@@ -52,3 +52,14 @@ $transition-default-property: all;
 $transition-default-easing: ease-in-out;
 $transition-default-speed: 0.2s;
 $transition-default-speed-easing: $transition-default-speed $transition-default-easing;
+
+
+//// Layout Conditions - // disabled, currently passed in from './sass-js-variables.js' via sass-vars-loader
+//$sidebarEnabled: true;
+//$contentContainerWidth: if($sidebarEnabled, 21, 24); // if($condition, true, false)
+//$contentContainerPosition: if($sidebarEnabled, 4, 1);
+//
+//$sidebarWidth: if($sidebarEnabled, 3, 0);
+//$sidebarPosition: if($sidebarEnabled, 1, 1);
+//
+//$showSidebar: if($sidebarEnabled, visible, hidden);

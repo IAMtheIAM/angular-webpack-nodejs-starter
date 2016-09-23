@@ -15,7 +15,7 @@ export class DataResolver implements Resolve<any> {
   }
 }
 
-// an array of services to resolve routes with data
+// an array of services to resolve detailRoutes with data
 export const APP_RESOLVER_PROVIDERS = [
   DataResolver
 ];

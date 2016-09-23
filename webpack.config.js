@@ -6,7 +6,7 @@
 switch (process.env.NODE_ENV) {
   case 'prod':
   case 'production':
-    module.exports = require('./config/webpack.release.js');
+    module.exports = require('./config/webpack.production.js');
     break;
   case 'test':
   case 'testing':

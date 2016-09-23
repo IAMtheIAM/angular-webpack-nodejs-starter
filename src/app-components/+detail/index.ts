@@ -9,7 +9,7 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 //
-import { routes } from './detail.routes';
+import { detailRoutes } from './detail.routes';
 
 /*
  * Shared Utilities & Other Services
@@ -25,7 +25,7 @@ import { DetailComponent } from './detail.component';
 @NgModule({
    declarations: [// Components / Directives/ Pipes
       DetailComponent],
-   imports: [CommonModule, BrowserModule, FormsModule, RouterModule.forChild(routes)]
+   imports: [CommonModule, BrowserModule, FormsModule, RouterModule.forChild(detailRoutes)]
 })
 
 

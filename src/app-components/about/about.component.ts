@@ -11,7 +11,6 @@ import { ActivatedRoute } from '@angular/router';
 import { Logging } from '../services/utility.service';
 import { Authentication } from '../services/authentication.service';
 import { AppState } from '../services/appstate.service';
-import { constructorForceChangeDetection } from '../common/forceChangeDetection';
 
 /**
  * This is where CSS/SCSS files that the component depends on are required.
@@ -32,10 +31,6 @@ export class AboutComponent {
 
    constructor(
       public appState: AppState, public authService: Authentication, public route: ActivatedRoute) {
-
-      // TODO: This is a hack. Find a better solution for getting change detection to work when the final Angular2 RTM
-      // gets released
-      constructorForceChangeDetection();
 
       this.isAuthenticated = authService.isLoggedIn();
       this.appState.set('isAuthenticated', this.isAuthenticated);

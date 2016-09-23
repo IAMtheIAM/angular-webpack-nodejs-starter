@@ -2,17 +2,25 @@
 /*
  * Angular 2 decorators and services
  */
-import { Component, NgZone } from '@angular/core';
+import { Component } from '@angular/core';
 import { Http } from '@angular/http';
 import { Router } from '@angular/router';
 
 /*
  * Shared Utilities
  */
-import { Logging, $ } from '../services/utility.service';
+import { Logging } from '../services/utility.service';
 import { AppState } from '../services/appstate.service';
 import { Authentication } from '../services/authentication.service';
-import { constructorForceChangeDetection } from '../common/forceChangeDetection';
+
+/** These are for the jQuery version of Kendo UI */
+// const $ = require('jquery');
+require('../../lib/kendoui/styles/kendo.common.min.css');
+// require('lib/kendoui/styles/kendo.material.min.css');
+require('../../lib/kendoui/styles/kendo.default.min.css');
+require('../../lib/kendoui/js/kendo.web.min.js');
+require('../../lib/kendoui/js/kendo.core.min.js');
+require('script-loader!../../lib/kendoui/js/kendo.grid.min.js'); // must be passed through webpack "script-loader"
 
 
 /**
@@ -53,12 +61,7 @@ export class HomeComponent {
 
    // TypeScript public modifiers
    constructor(
-      public appState: AppState, public router: Router, public http: Http, public authService: Authentication,
-      public ngZone: NgZone) {
-
-      // TODO: This is a hack. Find a better solution for getting change detection to work when the final Angular2 RTM
-      // gets released
-      constructorForceChangeDetection();
+      public appState: AppState, public router: Router, public http: Http, public authService: Authentication) {
 
       // if (Logging.isEnabled.light) {
       //   console.log('%c Home Constructor Instantiated', Logging.normal.teal);
@@ -75,6 +78,8 @@ export class HomeComponent {
    ngAfterViewInit() {
       // The ngAfterViewInit lifecycle hook makes sure the view is rendered so jQuery can do it's thing
       // This is where you put all your "$(document).ready(function() { });" code
+
+      // jQuery Kendo UI - switching to Angular 2 Kendo UI
       this.loadKendoUIGrid();
    }
 

@@ -43,6 +43,8 @@
  *
  */
 
+
+
 // support NodeJS modules without type definitions
 declare module '*';
 
@@ -122,15 +124,6 @@ interface NodeRequireFunction extends Es6PromiseLoader  {}
 interface NodeModule extends WebpackModule {}
 interface Global extends GlobalEnvironment  {}
 
-
-// Extend Window Typings
-interface Window {
-    jwt_decode(jwt: string): any;
-    dhx: any;
-    jQuery: JQuery;
-    $: JQuery;
-}
-
 // Extend Document Typings
 interface Document {
     msExitFullscreen(): void;
@@ -146,10 +139,19 @@ interface HTMLElement {
 interface ExitStatus {
     Token: any;
 }
-
-interface JQuery {
-    // shieldGrid(any): void;
-    // jqxGrid(any): void;
-}
+//
+// interface JQuery {
+//     // shieldGrid(any): void;
+//     // jqxGrid(any): void;
+// }
 
 declare var __webpack_public_path__: string;
+
+
+// Extend Window Typings
+interface Window {
+   jwt_decode(jwt: string): any;
+   dhx: any;
+   jQuery: any;
+   $: any;
+}

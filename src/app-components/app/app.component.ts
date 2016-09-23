@@ -3,18 +3,23 @@
  * Angular 2 decorators and services
  */
 import { Component, ViewEncapsulation } from '@angular/core';
-// import { RouteConfig, RouterLink, Router } from '@angular/router';
-// import { ROUTER_DIRECTIVES } from '@angular/router';
-// import { CORE_DIRECTIVES } from "@angular/common"
-// import { RouterActive } from '../directives/router-active.directive';
 
 /*
  * Shared Utilities
  */
-import { Logging, $ } from '../services/utility.service';
+import { Logging } from '../services/utility.service';
 import { AppState } from '../services/appstate.service';
 import { Authentication } from '../services/authentication.service';
 import { manualForceChangeDetection, autoForceChangeDetection } from '../common/forceChangeDetection';
+
+/** Materialize JS - needs to be required() here so its within the app.bundle.js - must use
+ * "script-loader" or custom jQuery functions will be undefined within the  components
+ *
+ * Materialize CSS: The SCSS require() must come before KendoUI for css specificity to be correct
+ **/
+require('script-loader!materialize-css/dist/js/materialize.js');
+require('materialize-css/sass/materialize.scss');
+// require('../../assets/styles/sass-conditions.js');
 
 /**
  * THIS IS WHERE WE REQUIRE/IMPORT CSS/SCSS FILES THAT THIS COMPONENT NEEDS
@@ -42,7 +47,8 @@ export class AppComponent {
    login: any;
 
    constructor(
-      public appState: AppState, public authService: Authentication) {
+      public appState: AppState,
+      public authService: Authentication) {
 
       this.isAuthenticated = authService.isLoggedIn();
       this.appState.set('isAuthenticated', this.isAuthenticated);
@@ -56,8 +62,6 @@ export class AppComponent {
          console.log('Initial AppComponent State', this.appState.state);
          console.log(`%c Logged In: ${this.isAuthenticated}`, Logging.normal.white);
 
-
-
          //==== AppComponent Wide Initializations ====//
 
          // Materialize Select
@@ -65,17 +69,13 @@ export class AppComponent {
 
          //==== End AppComponent Wide Initializations ====//
 
-
-
       }
    }
-
 
    ngAfterViewInit() {
       // The ngAfterViewInit lifecycle hook makes sure the view is rendered so jQuery can do it's thing
       // This is where you put all your "$(document).ready() {}" code
       // this.loadJqxGrid();
-
 
    }
 

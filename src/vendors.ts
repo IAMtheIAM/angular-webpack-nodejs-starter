@@ -50,27 +50,20 @@ import 'rxjs/Observable';
 import 'rxjs/Subject';
 import 'rxjs/Subscription';
 
-
 /** jQuery 3.1.0 */
 /** During development, use full jquery library, then scale back before production launch */
-const $ = require('jquery');
-const jQuery = $;
+require.ensure([], function(require) {
+   window.$ = window.jQuery = require('jquery');
+   // require('expose?jQuery!jquery');
+}, "jquery") // 3rd parameter is the name of the chunk during compilation output - chunk.name.js
 
-/** Materialize CSS - JS require()  */
-require('materialize-css/dist/js/materialize.js'); // main js file
-/** Materialize CSS - SCSS require() must come before KendoUI for css specificity to be   */
-require('materialize-css/sass/materialize.scss'); // main scss file
 
-/** KendoUI Professional */
-require('./lib/kendoui/styles/kendo.common.min.css');
-// require('lib/kendoui/styles/kendo.material.min.css');
-require('./lib/kendoui/styles/kendo.default.min.css');
-require('./lib/kendoui/js/kendo.web.min.js');
-require('./lib/kendoui/js/kendo.core.min.js');
-require('script-loader!./lib/kendoui/js/kendo.grid.min.js'); // must be passed through webpack "script-loader"
 
-/** Bootstrap 4.0.0.2 Alpha */
-// require('bootstrap/scss/bootstrap.scss');
+
+// /** KendoUI Professional */
+// /** These are for the Angular 2 version of Kendo UI */
+// require('@progress/kendo-angular-grid/dist/npm/css/main.css');
+// // require('@progress/kendo-angular-buttons/dist/npm/css/main.css');
 
 /** Angular 2 Material 2 */
 // require('@angular2-material/button');

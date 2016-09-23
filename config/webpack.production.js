@@ -14,10 +14,11 @@ const DefinePlugin = require('webpack/lib/DefinePlugin');
 const NormalModuleReplacementPlugin = require('webpack/lib/NormalModuleReplacementPlugin');
 const IgnorePlugin = require('webpack/lib/IgnorePlugin');
 // const DedupePlugin = require('webpack/lib/optimize/DedupePlugin');
-// const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
+const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const CompressionPlugin = require('compression-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const PurifyCSSPlugin = require('../tools/node_modules_customized/purifycss-webpack-plugin');
 
 
 /**
@@ -33,18 +34,8 @@ const METADATA = webpackMerge(commonConfig.metadata, {
    HMR: false
 });
 
-// Compile the template depending on the script running
-var cssOutput = '/css/[name].style.css?[hash]';
-
 
 module.exports = webpackMerge(commonConfig, {
-
-   /**
-    * Switch loaders to debug mode.
-    *
-    * See: http://webpack.github.io/docs/configuration.html#debug
-    */
-   debug: false,
 
    /**
     * Developer tool to enhance debugging
@@ -60,6 +51,7 @@ module.exports = webpackMerge(commonConfig, {
     * See: http://webpack.github.io/docs/configuration.html#output
     */
    output: {
+
 
       /**
        * The output directory as absolute path (required).
@@ -90,7 +82,7 @@ module.exports = webpackMerge(commonConfig, {
        *
        * See: http://webpack.github.io/docs/configuration.html#output-chunkfilename
        */
-      chunkFilename: '[id].chunk.js'
+      chunkFilename: 'chunk.[name].js',
 
    },
 
@@ -108,10 +100,41 @@ module.exports = webpackMerge(commonConfig, {
        * See: https://github.com/webpack/extract-text-webpack-plugin
        */
       new ExtractTextPlugin({
-         filename: cssOutput,
+         filename: '/css/[name].style.css?[hash]',
          disable: false,
          allChunks: true
       }),
+
+
+      /**
+       * Plugin: PurifyCSS WebPack Plugin
+       * Description: This is a plugin for WebPack that utilizes PurifyCSS to clean your CSS. Its dead simple, but it requires you to be prepared.
+       *
+       * See: https://github.com/purifycss/purifycss-webpack-plugin
+       */
+
+      new PurifyCSSPlugin({
+         basePath: helpers.paths.root,
+         paths: [
+            "/src/app-components/**/*.template.html",
+            "/src/app-components/**/*.component.ts",
+         ],
+         resolveExtensions: ['.html'],
+         purifyOptions: {
+            minify: true,
+            info: true,
+            output: 'wwwroot/css/purified',
+            rejected: false,
+            whitelist: // KendoUI for jQuery - classes that are programatically added to DOM, therefore must be whitelisted since they cannot be evaluated during compile-time
+            // '*selector*' means any class which contains that selector.
+
+               ["*gridcell*", "*k-alt*", "*k-auto-scrollable*", "*k-button*", "*k-button-icontext*", "*k-current-page*", "*k-delete*", "*k-edit*", "*k-editable*", "*k-filter-row*", "*k-floatwrap*", "*k-grid*", "*k-grid-content*", "*k-grid-edit*", "*k-grid-header*", "*k-grid-header-wrap*", "*k-grid-pager*", "*k-grid-toolbar*", "*k-grouping-header*", "*k-header*", "*k-i-arrow-e*", "*k-i-arrow-w*", "*k-i-seek-e*", "*k-i-seek-w*", "*k-icon*", "*k-label*", "*k-link*", "*k-pager-first*", "*k-pager-info*", "*k-pager-last*", "*k-pager-nav*", "*k-pager-nav*", "*k-pager-numbers*", "*k-pager-wrap*", "*k-reset*", "*k-state-disabled*", "*k-state-selected*", "*k-widget*", "*kendoUI*", "*k-widget*", "*k-numerictextbox*", "*k-numeric-wrap*", "*k-state-default*",
+                  "*k-formatted-value*", "*k-input*", "*k-select*", "*k-textbox*", "*k-cancel*",
+                  "*k-grid-cancel*", "*k-grid-update*", "*k-state-hover*"]
+
+         }
+      }),
+
 
       /**
        * Plugin: WebpackMd5Hash
@@ -126,7 +149,6 @@ module.exports = webpackMerge(commonConfig, {
        * Description: Prevents the inclusion of duplicate code into your bundle
        * and instead applies a copy of the function at runtime.
        *
-       * See: https://webpack.github.io/docs/list-of-plugins.html#defineplugin
        * See: https://github.com/webpack/docs/wiki/optimization#deduplication
        */
       // new DedupePlugin(),
@@ -202,7 +224,7 @@ module.exports = webpackMerge(commonConfig, {
        * See: http://webpack.github.io/docs/list-of-plugins.html#ignoreplugin
        */
 
-      // new IgnorePlugin(/angular2-hmr/),
+      new IgnorePlugin(/angular2-hmr/),
 
       /**
        * Plugin: CompressionPlugin
@@ -212,23 +234,14 @@ module.exports = webpackMerge(commonConfig, {
        * See: https://github.com/webpack/compression-webpack-plugin
        */
       new CompressionPlugin({
+         asset: "[path].gz[query]",
          regExp: /\.css$|\.html$|\.js$|\.map$/,
-         threshold: 2 * 1024
+         threshold: 2 * 1024,
+         algorithm: "gzip",
+         minRatio: 0.8
       })
 
    ],
-
-   /**
-    * Static analysis linter for TypeScript advanced options configuration
-    * Description: An extensible linter for the TypeScript language.
-    *
-    * See: https://github.com/wbuchwalter/tslint-loader
-    */
-   tslint: {
-      emitErrors: true,
-      failOnHint: true,
-      resourcePath: 'src'
-   },
 
    stats: {
       colors: true,
@@ -238,31 +251,13 @@ module.exports = webpackMerge(commonConfig, {
       publicPath: false,
       version: true,
       timings: true,
-      assets: true,
+      assets: false,
       modules: true,
       source: true,
-      children: true,
+      children: false,
       hash: false,
       chunks: false, // make sure 'chunks' is false or it will add 5-10 seconds to your build and incremental build time, due to excessive output.
       warnings: false
-   },
-
-   /**
-    * Html loader advanced options
-    *
-    * See: https://github.com/webpack/html-loader#advanced-options
-    */
-   // TODO: Need to workaround Angular 2's html syntax => #id [bind] (event) *ngFor
-   htmlLoader: {
-      minimize: true,
-      removeAttributeQuotes: false,
-      caseSensitive: true,
-      customAttrSurround: [
-         [/#/, /(?:)/],
-         [/\*/, /(?:)/],
-         [/\[?\(?/, /(?:)/]
-      ],
-      customAttrAssign: [/\)?\]?=/]
    },
 
    /**
@@ -272,8 +267,8 @@ module.exports = webpackMerge(commonConfig, {
     * See: https://webpack.github.io/docs/configuration.html#node
     */
    node: {
-      global: 'window',
-      crypto: 'empty',
+      global: true,
+      crypto: "empty",
       process: false,
       module: false,
       clearImmediate: false,

@@ -17,12 +17,16 @@ export class DataService {
       this._pageSize = pageSize;
    }
 
-   get(page: number) {
-      var uri = this._baseUri + page.toString() + '/' + this._pageSize.toString();
-
-      return this.http.get(uri)
-                 .map(response => (<Response>response));
+   get(url: string) {
+         return this.http.get(url);
    }
+
+   // get(page: number) {
+   //    var uri = this._baseUri + page.toString() + '/' + this._pageSize.toString();
+   //
+   //    return this.http.get(uri)
+   //               .map(response => (<Response>response));
+   // }
 
    post(data?: any, mapJson: boolean = true) {
       if (mapJson)

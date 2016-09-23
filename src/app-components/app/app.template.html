@@ -1,7 +1,9 @@
 <!-- App Container -->
 <div class="app-container">
   <nav-header *ngIf="appState.state.isAuthenticated"></nav-header>
+  <!-- Hiding nav-sidebar until design requires it-->
   <nav-sidebar *ngIf="appState.state.isAuthenticated"></nav-sidebar>
+
   <div class="content-container">
     <div class="content">
       <router-outlet></router-outlet>

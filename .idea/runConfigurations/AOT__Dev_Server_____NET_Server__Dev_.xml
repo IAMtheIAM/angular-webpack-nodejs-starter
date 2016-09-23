@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="AOT: Dev Server  + .NET Server (Dev)" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
+    <toRun type="js.build_tools.npm" name="AOT: Dev Server" />
+    <toRun type="js.build_tools.npm" name="Run .NET Server: DEV" />
+    <method />
+  </configuration>
+</component>

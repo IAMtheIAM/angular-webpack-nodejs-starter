@@ -12,6 +12,7 @@
 /* ====================================================
  * ============== APP-WIDE STYLES  ====================
  * ==================================================== */
+@import '../../assets/styles/appwide-metastyles.scss';
 @import '../../assets/styles/appwide';
 
 /* ====================================================
@@ -19,22 +20,22 @@
  * ==================================================== */
 
 body {
-  &::before {
-    content: ' ';
-    height: 100%;
-    position: fixed; // instead of background-attachment
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: $colors-app-background;
-    background-image: url('/assets/images/login-ellipse.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    will-change: transform; // creates a new paint layer
-    z-index: -1;
-  }
+   &::before {
+      content: ' ';
+      height: 100%;
+      position: fixed; // instead of background-attachment
+      width: 100%;
+      top: 0;
+      left: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: $colors-app-background;
+      background-image: url('/assets/images/login-ellipse.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      will-change: transform; // creates a new paint layer
+      z-index: -1;
+   }
 }
 
 // The Susy Span Mixin Syntax
@@ -45,48 +46,46 @@ body {
 /* Logged in styles */
 /********************/
 
-@include nested(24) {
+//@include nested(24) {
 
-  body.authenticated {
-    &::before {
-      background-color: #fff;
+body.authenticated {
+   &::before {
+      background-color: #eeeeee;
       background-image: none;
-    }
+   }
 
-    .app-container {
+   .app-container {
       position: relative;
       top: 0;
       @include clearfix;
 
       nav-header {
-        @include span(24);
+         @include span(24);
       }
 
       nav-sidebar {
-        @include span(4);
-      }
-
-      nav-sidebar {
-        @include span(20 last);
+         @include span(isolate $sidebarWidth at $sidebarPosition);
+         visibility: $showSidebar;
       }
 
       .app-state {
-        color: unset;
+         color: unset;
       }
-    }
+   }
 
-    .content-container {
-      @include span(isolate 20 at 4 last);
+   .content-container {
+      @include span(isolate $contentContainerWidth at $contentContainerPosition last);
       padding: 40px;
-    }
+   }
 
-    .content {
+   .content {
       height: unset;
-    }
-  }
-  // end body.authenticated
-
+   }
 }
+
+// end body.authenticated
+
+//}
 
 // end nested(24)
 
@@ -95,36 +94,33 @@ body {
 /********************/
 
 @include nested(24) {
+   &:not(body.authenticated) {
+      .app-container {
+         position: relative;
+         top: 140px;
+         @include clearfix;
 
-  .app-container {
-    position: relative;
-    top: 140px;
-    @include clearfix;
+         nav-header {
+            @include span(24);
+         }
 
-    nav-header {
-      @include span(24);
-    }
+         nav-sidebar {
+            @include span(0);
+         }
 
-    nav-sidebar {
-      @include span(4);
-    }
-    nav-sidebar {
-      @include span(20 last);
-    }
+         .app-state {
+            color: #ffffff;
+         }
+      }
 
-    .app-state {
-      color: #ffffff;
-    }
-  }
+      .content-container {
+         @include span(24 last);
+      }
 
-  .content-container {
-    @include span(24 last);
-  }
-
-  .content {
-    //height: 100vh; // This forces .app-container to 100% of your viewport
-  }
-
+      .content {
+         //height: 100vh; // This forces .app-container to 100% of your viewport
+      }
+   }
 }
 
 // end nested(24)

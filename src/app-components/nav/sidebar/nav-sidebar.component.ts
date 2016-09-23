@@ -12,6 +12,7 @@ import { Component } from '@angular/core';
 import { Logging } from '../../services/utility.service'; // don't import jQuery's '$' alias in this component, or it breaks the javascript, not sure why
 import { AppState } from '../../services/appstate.service';
 
+
 /**
  * This is where CSS/SCSS files that the component depends on are required.
  *

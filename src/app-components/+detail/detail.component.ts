@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
 import { Logging } from '../services/utility.service';
 import { Authentication } from '../services/authentication.service';
 import { AppState } from '../services/appstate.service';
-import { constructorForceChangeDetection } from '../common/forceChangeDetection';
 
 
 /**
@@ -25,9 +24,7 @@ import './detail.style.scss';
 export class DetailComponent {
   constructor() {
 
-     // TODO: This is a hack. Find a better solution for getting change detection to work when the final Angular2 RTM
-     // gets released
-     constructorForceChangeDetection();
+
   }
 
   ngOnInit() {

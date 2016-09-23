@@ -30,3 +30,16 @@
 .float-left {
   float: left;
 }
+
+.clearfix {
+   // These are 2 great methods for clearing floats, so the parent of the floated elements expands to contain the floats. Both work well, but the overflow method may have side effects in certain situations.
+
+   //overflow: hidden;
+   &:after {
+      content: " ";
+      display: block;
+      height: 0;
+      clear: both;
+   }
+}
+

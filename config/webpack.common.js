@@ -8,19 +8,25 @@
  * Webpack Plugins & Required Modules
  */
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ForkCheckerPlugin = require('awesome-typescript-loader').ForkCheckerPlugin;
-const HtmlElementsPlugin = require('./html-elements-plugin');
 const webpack = require('webpack');
-const helpers = require('./helpers');
 const AutoPrefixer = require('autoprefixer');
-const Path = require('path');
 const HappyPack = require('happypack');
-const HappyThreadPool = HappyPack.ThreadPool({size: 5});
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+const chalk = require('chalk');
+const CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
+const ContextReplacementPlugin = require("webpack/lib/ContextReplacementPlugin");
+const path = require('path');
+const helpers = require('./helpers');
+const resolveNgRoute = require('@angularclass/resolve-angular-routes');
+const querystring = require('querystring');
+const HappyThreadPool = HappyPack.ThreadPool({size: 5});
+const HtmlElementsPlugin = require('./html-elements-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-// const ExtractTextPlugin = require("extract-text-webpack-plugin");
-//const VSFixSourceMapsPlugin = require('vs-fix-sourcemaps');
+// const ChunkManifestPlugin = require('chunk-manifest-webpack-plugin');
+// const SplitByPathPlugin = require('webpack-split-by-path');
 
 /**
  * Webpack Constants
@@ -34,7 +40,7 @@ var appBoostrapFile;
 if (AOT) {
    appBoostrapFile = './src/app.bootstrap.aot.ts'
 } else {
-    appBoostrapFile = './src/app.bootstrap.ts'
+   appBoostrapFile = './src/app.bootstrap.ts'
 }
 
 const ENV = process.env.NODE_ENV;
@@ -47,11 +53,20 @@ const METADATA = {
    ENV: ENV
 
 };
-const PATHS = {
-   appRoot: [Path.resolve(__dirname, "../src")],
-   happyPackTempDir: '../../cache/happypack'
-};
 
+/**
+ * The sass-vars-loader will convert any module.exports of a .JS or .JSON file into valid SASS
+ * and append to the beginning of each .scss file loaded.
+ *
+ * See: https://github.com/epegzz/sass-vars-loader
+ */
+const sassVarsConfig = querystring.stringify({
+   files: [
+      path.resolve(helpers.paths.appRoot + '/assets/styles/sass-js-variables.js')
+      // path.resolve(__dirname, '/path/to/breakpoints.js'), // JS
+      // path.resolve(__dirname, '/path/to/colors.json'), // JSON
+   ]
+});
 
 /**
  * Webpack configuration
@@ -59,13 +74,6 @@ const PATHS = {
  * See: http://webpack.github.io/docs/configuration.html#cli
  */
 module.exports = {
-
-   /**
-    * Static metadata for index.html
-    *
-    * See: (custom attribute)
-    */
-   metadata: METADATA,
 
    /**
     * Cache generated modules and chunks to improve performance for multiple incremental builds.
@@ -84,15 +92,15 @@ module.exports = {
     * See: http://webpack.github.io/docs/configuration.html#entry
     */
    entry: {
-      //// Entry points for webpack bundles
-      // 'main': ['./src/webpack.entry.bundle.ts']
       /**
        *  Webpack dev server gets loaded by webpack-dev-server CLI, DO NOT include it here
        */
 
       'polyfills': './src/polyfills.ts',
       'vendors': './src/vendors.ts',
-      'app': appBoostrapFile
+      'app': appBoostrapFile,
+      // 'jquery': ["jquery"] // this is referencing the node_module, like calling require('jquery')
+
    },
 
    /**
@@ -114,13 +122,8 @@ module.exports = {
        *
        * See: http://webpack.github.io/docs/configuration.html#resolve-extensions
        */
-      extensions: ['', '.ts', '.js', '.scss', '.css', '.html', '.json'],
+      extensions: ['.ts', '.js', '.scss', '.css', '.html', '.json'],
 
-      /** Make sure root is src */
-      root: helpers.root('src'),
-
-      /** To enable webpack to resolve in multiple package directories: */
-      modulesDirectories: ['node_modules', 'src'],
    },
 
    /**
@@ -129,25 +132,6 @@ module.exports = {
     * See: http://webpack.github.io/docs/configuration.html#module
     */
    module: {
-
-      /**
-       * An array of applied pre and post loaders.
-       *
-       * See: http://webpack.github.io/docs/configuration.html#module-preloaders-module-postloaders
-       */
-      preLoaders: [
-         {
-            test: /\.ts$/,
-            loader: 'string-replace-loader',
-            query: {
-               search: '(System|SystemJS)(.*[\\n\\r]\\s*\\.|\\.)import\\((.+)\\)',
-               replace: '$1.import($3).then(mod => mod.__esModule ? mod.default : mod)',
-               flags: 'g'
-            },
-            include: [helpers.root('src')]
-         },
-
-      ],
 
       /**
        * An array of automatically applied loaders.
@@ -159,24 +143,56 @@ module.exports = {
        */
       loaders: [
 
+
          /**
-          * Typescript loader support for .ts and Angular 2 async routes via .async.ts
+          * SASS loader support for *.scss files
+          * See: https://github.com/webpack/raw-loader
+          */
+         {
+            test: /\.(scss)$/,
+            loaders: DEBUG ?
+               ['style', 'css?sourceMap', 'postcss', 'sass?sourceMap', 'sass-resources','@epegzz/sass-vars-loader?' + sassVarsConfig] : // dev mode
+               ExtractTextPlugin.extract({
+                  fallbackLoader: "sass-loader",
+                  notExtractLoader: "sass-loader",
+                  loader: ['css?sourceMap', 'postcss', 'sass?sourceMap', 'sass-resources','@epegzz/sass-vars-loader?' + sassVarsConfig],
+                  publicPath: '/' // 'string' override the publicPath setting for this loader
+               })
+         },
+
+         /**
+          * Typescript loader support for .ts and Angular 2 async detailRoutes via .async.ts
           * Replace template and stylesUrl with require()
           *
           * See: https://github.com/s-panferov/awesome-typescript-loader
           * See: https://github.com/TheLarkInn/angular2-template-loader
           */
+
+         // This is the preloader
+         {
+            enforce: 'pre',
+            test: /\.ts$/,
+            loader: 'string-replace-loader',
+            query: {
+               search: '(System|SystemJS)(.*[\\n\\r]\\s*\\.|\\.)import\\((.+)\\)',
+               replace: '$1.import($3).then(mod => (mod.__esModule && mod.default) ? mod.default : mod)',
+               // flags: 'g'
+            },
+            include: [helpers.root('./src')]
+         },
+
          {
             test: /\.ts$/,
-            include: PATHS.appRoot,
+            include: helpers.paths.appRoot,
             exclude: [/\.(spec|e2e)\.ts$/],
             // loaders: ['awesome-typescript-loader'],
             loaders: [
                '@angularclass/hmr-loader',
                'awesome-typescript-loader',
                'angular2-template-loader',
+               "angular2-load-children-loader" // this loader replace loadChildren value to function to call require.
+
             ],
-            // loader: 'ts-loader',
             // loader: 'happypack/loader?id=ts',
          },
 
@@ -187,9 +203,8 @@ module.exports = {
           */
          {
             test: /\.json$/,
-            include: PATHS.appRoot,
+            include: helpers.paths.appRoot,
             loader: 'json-loader',
-            // happy: {id: 'json'} // HappyPack middleware
 
          },
 
@@ -203,12 +218,14 @@ module.exports = {
             test: /\.(css)$/,
             loaders: DEBUG ?
                ['style', 'css?sourceMap', 'postcss'] : // dev mode
-               ExtractTextPlugin.extract({
-                  fallbackLoader: "css-loader",
-                  notExtractLoader: "css-loader",
-                  loader: ['css?sourceMap', 'postcss'],
-                  publicPath: '/' // 'string' override the publicPath setting for this loader
-               })
+               ExtractTextPlugin.extract(
+                  {
+                     fallbackLoader: "css-loader",
+                     notExtractLoader: "css-loader",
+                     loader: ['css?sourceMap', 'postcss'],
+                     publicPath: '/' // 'string' override the publicPath setting for this loader
+                  }
+               )
          },
 
          /**
@@ -219,33 +236,17 @@ module.exports = {
           */
          {
             test: /\.html$/,
-            include: PATHS.appRoot,
+            include: helpers.paths.appRoot,
             loader: 'raw-loader',
-            exclude: [helpers.root('src/index.html')],
-            // happy: {id: 'html'} // HappyPack middleware
+            exclude: [helpers.root('./src/index.html')],
 
          },
 
-         /**
-          * SASS loader support for *.scss files
-          * See: https://github.com/webpack/raw-loader
-          */
-         {
-            test: /\.(scss)$/,
-            loaders: DEBUG ?
-               ['style', 'css?sourceMap', 'postcss', 'sass?sourceMap', 'sass-resources'] : // dev mode
-               ExtractTextPlugin.extract({
-                  fallbackLoader: "sass-loader",
-                  notExtractLoader: "sass-loader",
-                  loader: ['css?sourceMap', 'postcss', 'sass?sourceMap', 'sass-resources'],
-                  publicPath: '/' // 'string' override the publicPath setting for this loader
-               })
-         },
          // Bootstrap 4 - Used to serve jQuery for Bootstrap scripts:
 
          {
             test: /bootstrap[\/\\]dist[\/\\]js[\/\\]umd[\/\\]/,
-            //include: PATHS.appRoot,
+            //include: helpers.paths.appRoot,
             loader: 'imports?jQuery=jquery'
          },
          /**
@@ -263,7 +264,7 @@ module.exports = {
 
                // 'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "90", speed: 4}}'
             ],
-            happy: {id: 'images'} // HappyPack middleware
+            // happy: {id: 'images'} // HappyPack middleware
          },
 
          /**
@@ -280,7 +281,6 @@ module.exports = {
          {
             test: /\.((woff2)(\?v=[0-9]\.[0-9]))|(woff2?)$/,
             loader: 'url?limit=10000&name=assets/fonts/[name].[ext]'
-            // , happy: {id: 'woff2'} // HappyPack middleware
          },
 
          /**
@@ -303,18 +303,13 @@ module.exports = {
           * Expose the library "jquery" as "$" and "jQuery"
           * require('expose?$!expose?jQuery!jquery');
           */
-         {
-            test: require.resolve('jquery'),
-            loaders: ['expose?jQuery', 'expose?$']
-         }
+         // {
+         //    test: require.resolve('jquery'),
+         //    loaders: ['expose?jQuery', 'expose?$']
+         // }
       ]
    },
 
-   postcss: function () {
-      return [AutoPrefixer];
-   },
-
-   sassResources: ['./src/assets/styles/variables.scss', './src/assets/styles/mixins.scss'],
 
    /**
     * Add additional plugins to the compiler.
@@ -323,57 +318,35 @@ module.exports = {
     */
    plugins: [
 
+      new ContextReplacementPlugin(
+         // The (\\|\/) piece accounts for path separators in *nix and Windows
+         /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
+         helpers.root('./src'),
+         resolveNgRoute(helpers.root('./src'))
+      ),
 
-      new HappyPack({
-         id: 'js',
-         loaders: ['source-map-loader'],
-         threadPool: HappyThreadPool,
-         tempDir: PATHS.happyPackTempDir,
-         cache: false
+
+      new webpack.LoaderOptionsPlugin({
+         options: {
+            postcss: function () {
+               return [AutoPrefixer];
+            },
+         }
       }),
-      // new HappyPack({id: 'scss', threadPool: HappyThreadPool, tempDir: PATHS.happyPackTempDir, cache: false}),
-      // new HappyPack({id: 'css', threadPool: HappyThreadPool, tempDir: PATHS.happyPackTempDir, cache: false}),
-      // new HappyPack({id: 'json', threadPool: HappyThreadPool, tempDir: PATHS.happyPackTempDir, cache: false}),
-      // new HappyPack({id: 'html', threadPool: HappyThreadPool, tempDir: PATHS.happyPackTempDir, cache: false}),
-      // new HappyPack({id: 'images', threadPool: HappyThreadPool, tempDir: PATHS.happyPackTempDir}),
-      // new HappyPack({id: 'woff2', threadPool: HappyThreadPool, tempDir: PATHS.happyPackTempDir}),
-      // new HappyPack({id: 'ttf_eot', threadPool: HappyThreadPool, tempDir: PATHS.happyPackTempDir}),
-      // new HappyPack({
-      //    id: 'ts',
-      //    loader: 'awesome-typescript-loader',
-      //    threadPool: HappyThreadPool,
-      //    tempDir: PATHS.happyPackTempDir,
-      //    cache: false
-      // }),
 
+      new webpack.LoaderOptionsPlugin({
+         options: {
+            sassResources: ['./src/assets/styles/variables.scss', './src/assets/styles/mixins.scss'],
+            context: helpers.paths.root
+         }
+      }),
 
-      // //new HappyPack({
-      // //  id: 'scss',
-      // //  threadPool: HappyThreadPool,
-      // //  loaders: ['style', 'css?sourceMap', 'sass?sourceMap&sourceComments'],
-      // //  tempDir: PATHS.happyPackTempDir
-      // //  //loaders: DEBUG
-      // //  //           ? ['style', 'css?sourceMap', 'sass?sourceMap&sourceComments']
-      // //  //           : ['style/url', 'file?name=/assets/css/[name].compiled.[sha512:hash:base64:7].css', 'sass?sourceMap&sourceComments']
-      // //}),
+      new ProgressBarPlugin({
+         clear: false,
+         format: chalk.red.bold('build [:bar] ') + chalk.green.bold(':percent') + chalk.blue.bold('  (:elapsed seconds)'),
 
-      /**
-       * Plugin: ExtractTextPlugin
-       * Extracts text into external css file
-       *
-       * See:
-       */
+      }),
 
-      //new ExtractTextPlugin('assets/css/[name].css'),
-
-      /**
-       * Plugin: VSFixSourceMapsPlugin
-       * Fix Webpack JSX and JS Sourcemaps in Visual Studio
-       *
-       * See: https://github.com/joevbruno/vs-fix-sourcemaps
-       */
-
-      //new VSFixSourceMapsPlugin(),
 
       /**
        * Plugin: ForkCheckerPlugin
@@ -396,17 +369,29 @@ module.exports = {
          name: ['polyfills', 'vendors'].reverse()
       }),
 
+      new CommonsChunkPlugin('commons'),
 
       /**
-       * Plugin: HtmlWebpackPlugin
-       * Description: Simplifies creation of HTML files to serve your webpack bundles.
-       * This is especially useful for webpack bundles that include a hash in the filename
-       * which changes every compilation.
+       * Plugin: ChunkManifestPlugin
+       * Description: Allows exporting a JSON file that maps chunk ids to their resulting asset files. Webpack can then read this mapping, assuming it is provided somehow on the client, instead of storing a mapping (with chunk asset hashes) in the bootstrap script, which allows to actually leverage long-term caching.
        *
-       * This injects the webpack bundles into your main *.html/**.cshtml document which the browser loads
-       *
-       * See: https://github.com/ampedandwired/html-webpack-plugin
+       * See: https://github.com/diurnalist/chunk-manifest-webpack-plugin
        */
+      // new ChunkManifestPlugin({
+      //    filename: "manifest.json",
+      //    manifestVariable: "webpackManifest"
+      // }),
+
+      // /**
+      //  * Plugin: HtmlWebpackPlugin
+      //  * Description: Simplifies creation of HTML files to serve your webpack bundles.
+      //  * This is especially useful for webpack bundles that include a hash in the filename
+      //  * which changes every compilation.
+      //  *
+      //  * This injects the webpack bundles into your main *.html/**.cshtml document which the browser loads
+      //  *
+      //  * See: https://github.com/ampedandwired/html-webpack-plugin
+      //  */
       // new HtmlWebpackPlugin({
       //    template: 'src/index.html',
       //    chunksSortMode: 'dependency',
@@ -415,32 +400,6 @@ module.exports = {
       //    environment: ENV
       // }),
 
-      /**
-       * Plugin: HtmlHeadConfigPlugin
-       * Description: Generate html tags based on javascript maps.
-       *
-       * If a publicPath is set in the webpack output configuration, it will be automatically added to
-       * href attributes, you can disable that by adding a "=href": false property.
-       * You can also enable it to other attribute by settings "=attName": true.
-       *
-       * The configuration supplied is map between a location (key) and an element definition object (value)
-       * The location (key) is then exported to the template under then htmlElements property in webpack configuration.
-       *
-       * Example:
-       *  Adding this plugin configuration
-       *  new HtmlElementsPlugin({
-       *    headTags: { ... }
-       *  })
-       *
-       *  Means we can use it in the template like this:
-       *  <%= webpackConfig.htmlElements.headTags %>
-       *
-       * Dependencies: HtmlWebpackPlugin
-       */
-
-      new HtmlElementsPlugin({
-         headTags: require('./head-config.common')
-      }),
       /**
        * Plugin: CopyWebpackPlugin
        * Description: Copy files and directories in webpack.
@@ -462,8 +421,7 @@ module.exports = {
          {
             ignore: [
                // Doesn't copy any files with a txt extension
-               //'*.txt',
-
+               // '*.txt'
                // Doesn't copy any file, even if they start with a dot
                //{ glob: '**/**', dot: true }
             ],
@@ -484,63 +442,19 @@ module.exports = {
        */
       new webpack.ProvidePlugin({
          'Promise': 'imports?this=>global!exports?global.Promise!es6-promise',
-         'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
+         'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch',
+         jQuery: "jquery",
+         $: "jquery",
       }),
-
-      /**
-       * Plugin: Underscore.js
-       * Description: A JavaScript library that provides useful functional programming helpers.
-       *
-       * Underscore provides over 100 functions that support both your favorite workaday functional helpers: map,
-       * filter, invoke � as well as more specialized goodies: function binding, javascript templating, creating
-       * quick indexes, deep equality testing, and so on.
-
-       *
-       * See: http://underscorejs.org/
-       */
-      new webpack.ProvidePlugin({
-         "_": "underscore"
-      }),
-
-      /**
-       * Plugin: jQuery.js
-       * Description: A JavaScript library for DOM manipulation.
-       *
-       * jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal
-       * and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across
-       * a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that
-       * millions of people write JavaScript.
-
-       *
-       * See: http://jquery.com/
-       */
-      // new webpack.ProvidePlugin({
-      //    "$": "jquery",
-      //    "jquery": "jquery",
-      //    "jQuery": "jquery",
-      //    "JQuery": "jquery",
-      //    "window.jquery": "jquery",
-      //    "window.jQuery": "jquery",
-      //    "window.JQuery": "jquery"
-      // }),
-
-      /**
-       * Plugin: Tether.js
-       * Description: A positioning engine to make overlays, tooltips and dropdowns better.
-       *
-       * Tether is a small, focused JavaScript library for defining and managing the position
-       * of user interface (UI) elements in relation to one another on a web page. It is a tool
-       * for web developers building features that require certain UI elements to be precisely
-       * positioned based on the location of another UI element.
-
-       *
-       * See: https://github.com/HubSpot/tether
-       * See: http://tether.io/
-       */
-      new webpack.ProvidePlugin({
-         "window.Tether": "tether"
-      })
    ],
+
+   externals: {
+      // use the externals property to map the jquery module to the global jQuery variable:
+      // Result: 'require("jquery")' is external and available on the global var jQuery
+
+      // 'jquery': 'jQuery'
+   }
+   ,
 
    /**
     * Include polyfills or mocks for various node stuff
@@ -549,24 +463,31 @@ module.exports = {
     * See: https://webpack.github.io/docs/configuration.html#node
     */
    node: {
-      global: 'window',
-      crypto: 'empty',
+      global: true,
+      crypto: "empty",
       process: true,
       module: false,
       clearImmediate: false,
       setImmediate: false
    }
-};
-
+}
+;
 
 
 console.log("\n \n==================================================");
 
 if (ENV) {
-   console.log("            Building for: " + ENV);
-   console.log("            DEBUG: " + DEBUG);
+
+   var ENV_color = ENV === 'development' ? chalk.bold.cyan : chalk.bold.green;
+   var DEBUG_color = DEBUG ? chalk.green : chalk.red;
+   var AOT_color = AOT ? chalk.green : chalk.red;
+
+   console.log(ENV_color("            Building for: " + ENV));
+   console.log(DEBUG_color("            DEBUG: " + DEBUG));
+   console.log(AOT_color("            AOT: " + AOT));
    console.log("            ENVlc: " + ENVlc);
-   console.log("            AOT: " + AOT);
+   console.log("            helpers.paths.root: " + helpers.paths.root);
+
 } else {
    console.log("            NODE_ENV not set!");
 }

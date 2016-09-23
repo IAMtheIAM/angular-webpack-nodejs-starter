@@ -8,3 +8,4 @@ node_modules/
 npm-debug.log
 obj/
 project.lock.json
+stats.json

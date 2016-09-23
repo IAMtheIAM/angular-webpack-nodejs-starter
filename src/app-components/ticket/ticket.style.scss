@@ -1,0 +1,13 @@
+/********************/
+/* Home.scss */
+/********************/
+@import '../../assets/styles/appwide-metastyles.scss';
+
+ticket {
+   //color: $lime;
+   .card-panel {
+      @include clearfix;
+
+      //background-color: $magenta;
+   }
+}

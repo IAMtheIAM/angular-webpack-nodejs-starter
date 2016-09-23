@@ -8,9 +8,10 @@ import { DetailComponent } from './detail.component';
  */
 import { RouteProtection } from '../services/route-protection.service';
 
-// async components must be named routes for WebpackAsyncRoute
-export const routes = [{
+// async components must be named detailRoutes for WebpackAsyncRoute
+export const detailRoutes = [{
    path: '',
    component: DetailComponent, // canActivate: [RouteProtection],
    // pathMatch: 'full'
 }];
+;

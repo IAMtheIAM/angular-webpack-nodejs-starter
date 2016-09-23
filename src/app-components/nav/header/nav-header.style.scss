@@ -1,7 +1,16 @@
 /********************/
 /* Nav-header.scss */
 /********************/
+@import '../../../assets/styles/appwide-metastyles.scss';
+
 nav-header {
+
+   // must clear the 'float: left' from this nav-header element, regardless of the next element
+   & + * {
+      content: "";
+      display: table;
+      clear: both;
+   }
 
    nav {
       color: unset;

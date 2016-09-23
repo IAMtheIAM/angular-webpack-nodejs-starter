@@ -26,8 +26,7 @@
          "webpack",
          "materialize-css",
          "jquery",
-         "kendo-ui",
-         "jquery.datatables"
+         "kendo-ui"
       ],
       "typeRoots": [
          "../node_modules/@types"
@@ -40,7 +39,8 @@
    "filesGlob": [
       "./src/app-components/**/*.ts",
       "!./node_modules/**",
-      "./src/custom-typings.d.ts"
+      "./src/custom-typings.d.ts",
+      "./src/types/require.d.ts"
    ],
    "awesomeTypescriptLoaderOptions": {
       "resolveGlobs": true,

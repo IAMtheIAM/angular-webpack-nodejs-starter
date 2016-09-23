@@ -8,6 +8,7 @@
   display: none;
 }
 
+// Hidden from production build
 .app-state {
   display: none;
 }
@@ -15,7 +16,7 @@
 /* =================================================
  *               DEVELOPMENT MODE CSS
  * ================================================= */
-body.development {
+body.development, body.webpack {
 
   .app-state {
     display: flex;

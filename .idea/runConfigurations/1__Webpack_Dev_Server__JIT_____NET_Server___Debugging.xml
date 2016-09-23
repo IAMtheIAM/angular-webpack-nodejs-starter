@@ -1,7 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="1: Webpack Dev Server (JIT) + .NET Server + Debugging" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
-    <toRun type="js.build_tools.npm" name="Dev Server: JIT" />
-    <toRun type="js.build_tools.npm" name="Run .NET Server" />
-    <method />
-  </configuration>
-</component>

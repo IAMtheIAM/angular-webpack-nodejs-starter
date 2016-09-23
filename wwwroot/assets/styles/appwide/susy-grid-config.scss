@@ -11,12 +11,13 @@
 /// <reference path="./variables.scss" />
 //
 // ============================
+@import '../../../assets/styles/appwide-metastyles.scss';
 
 $susy: (
     columns:                    24,
     container:                  $hd-widescreen,
     global-box-sizing:          border-box,
-    gutters:                    1/2, //<gutter-width>/<column-width> = // 20px gutters & 70px columns
+    gutters:                    1/8, //<gutter-width>/<column-width> = // 20px gutters & 70px columns
     gutter-position:            after,
     use-custom: (
         clearfix:               false,

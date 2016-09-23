@@ -28,8 +28,8 @@ namespace Armls.Helios.Web
 
             builder.AddEnvironmentVariables();
             Configuration = builder.Build();
-            
-            Environment = env.EnvironmentName;
+
+            Environment = env.EnvironmentName.ToLower();
         }
 
         public static string Environment { get; private set; }

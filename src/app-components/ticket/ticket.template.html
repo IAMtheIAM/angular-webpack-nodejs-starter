@@ -1,0 +1,58 @@
+<div class="row">
+   <div class="col s12">
+
+
+      <div class="card-panel">
+
+         <form (ngSubmit)="searchSubscriberByID(localState.subscriberID)" autocomplete="off">
+            <div class="row">
+               <div class="input-field col s3">
+                  <input name="subscriberID"
+                     [value]="localState.subscriberID"
+                     (input)="localState.subscriberID = $event.target.value"
+                     placeholder="Submit Local State to App State"
+                     autofocus>
+               </div>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+               <i class="material-icons right">search</i>
+            </button>
+         </form>
+
+
+         <!--<form class="col m6">-->
+         <!--<div class="row">-->
+         <!--<div class="input-field col s6">-->
+         <!--<input id="first_name" type="text" class="validate">-->
+         <!--<label for="first_name">First Name</label>-->
+         <!--</div>-->
+         <!--</div>-->
+         <!--<a class="btn btn-primary btn-lg" role="submit" (click)="searchSubscriberByID()">Search </a>-->
+         <!--</form>-->
+         <!--</div>-->
+
+
+      </div>
+   </div>
+
+   <div class="row">
+      <div class="col s4">
+         <div class="card-panel">
+            <pre *ngIf="subscriberFoundByID" class="jwt"><code>{{ subscriberFoundByID | json }}</code></pre>
+         </div>
+      </div>
+      <div class="col s4">
+         <div class="card-panel">
+          <span>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+          </span>
+         </div>
+      </div>
+      <div class="col s4">
+         <div class="card-panel">
+          <span>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+          </span>
+         </div>
+      </div>
+   </div>

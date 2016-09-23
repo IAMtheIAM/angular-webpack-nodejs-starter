@@ -6,7 +6,7 @@ export class Logging {
 
     public static isEnabled = {
         light: true,    // Light logging
-        verbose: false   // Detailed logging
+        verbose: true   // Detailed logging
     };
 
     public static normal = {
@@ -62,10 +62,3 @@ export class UtilityService {
         this.navigate('/login');
     }
 }
-
-/*
-* For some reason '$' and 'jQuery' are not getting loaded into this component, even though the
-* webpack expose loader is configured to make it available globally, so redeclare it here
-*/
-export const $ = require('jquery');
-export const jQuery = $;

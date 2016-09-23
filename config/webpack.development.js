@@ -39,19 +39,6 @@ module.exports = webpackMerge(commonConfig,
   {
     cache: true,
 
-    /**
-     * Merged metadata from webpack.common.js for index.html
-     *
-     * See: (custom attribute)
-     */
-    metadata: METADATA,
-
-    /**
-     * Switch loaders to debug mode.
-     *
-     * See: http://webpack.github.io/docs/configuration.html#debug
-     */
-    debug: true,
 
     /**
      * Developer tool to enhance debugging
@@ -60,7 +47,7 @@ module.exports = webpackMerge(commonConfig,
      * See: https://github.com/webpack/docs/wiki/build-performance#sourcemaps
      */
 
-    devtool: 'cheap-module-source-map',
+    devtool: 'eval',
     // devtool: 'cheap-module-source-map',
 
 
@@ -99,7 +86,7 @@ module.exports = webpackMerge(commonConfig,
        *
        * See: http://webpack.github.io/docs/configuration.html#output-chunkfilename
        */
-      chunkFilename: '[id].chunk.js',
+      chunkFilename: 'chunk.[name].js',
 
       /* publicPath is where you want Webpack to make requests for assets.
        * For example, when running webpack-dev-server on a different port than your main app
@@ -139,7 +126,7 @@ module.exports = webpackMerge(commonConfig,
         *
         * See: https://github.com/webpack/webpack/commit/a04ffb928365b19feb75087c63f13cadfc08e1eb
         */
-       // new NamedModulesPlugin(),
+       new NamedModulesPlugin(),
 
        /**
         * Plugin: DashboardPlugin
@@ -151,18 +138,6 @@ module.exports = webpackMerge(commonConfig,
        // new DashboardPlugin(),
 
     ], // end plugins
-
-    /**
-     * Static analysis linter for TypeScript advanced options configuration
-     * Description: An extensible linter for the TypeScript language.
-     *
-     * See: https://github.com/wbuchwalter/tslint-loader
-     */
-    tslint: {
-      emitErrors: false,
-      failOnHint: false,
-      resourcePath: 'src'
-    },
 
     /**
      * Webpack Development Server configuration
@@ -214,8 +189,8 @@ module.exports = webpackMerge(commonConfig,
      * See: https://webpack.github.io/docs/configuration.html#node
      */
     node: {
-      global: 'window',
-      crypto: 'empty',
+      global: true,
+      crypto: "empty",
       process: true,
       module: false,
       clearImmediate: false,

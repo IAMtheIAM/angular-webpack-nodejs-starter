@@ -1,1 +1,0 @@
-{"__symbolic":"module","version":1,"metadata":{"AppState":{"__symbolic":"class","decorators":[{"__symbolic":"call","expression":{"__symbolic":"reference","module":"@angular/core","name":"Injectable"}}],"members":{"__ctor__":[{"__symbolic":"constructor"}],"get":[{"__symbolic":"method"}],"set":[{"__symbolic":"method"}],"_clone":[{"__symbolic":"method"}]}}}}

@@ -2,7 +2,7 @@
 /*
  * Angular 2 decorators and services
  */
-import { Component, NgZone } from '@angular/core';
+import { Component } from '@angular/core';
 import { Http } from '@angular/http';
 import { Router } from '@angular/router';
 // import { AuthHttp } from 'angular2-jwt';
@@ -10,11 +10,19 @@ import { Router } from '@angular/router';
 /*
  * Shared Utilities
  */
-import { Logging, $ } from '../services/utility.service';
+import { Logging } from '../services/utility.service';
 import { AppState } from '../services/appstate.service';
 import { Authentication } from '../services/authentication.service';
 // import { isLoggedIn } from '../common/isloggedIn';
-import { constructorForceChangeDetection } from '../common/forceChangeDetection';
+
+/** These are for the jQuery version of Kendo UI */
+// const $ = require('jquery');
+require('../../lib/kendoui/styles/kendo.common.min.css');
+// require('lib/kendoui/styles/kendo.material.min.css');
+require('../../lib/kendoui/styles/kendo.default.min.css');
+require('../../lib/kendoui/js/kendo.web.min.js');
+require('../../lib/kendoui/js/kendo.core.min.js');
+require('script-loader!../../lib/kendoui/js/kendo.grid.min.js'); // must be passed through webpack "script-loader"
 
 /**
  * This is where CSS/SCSS files that the component depends on are required.
@@ -48,11 +56,11 @@ export class SubscriberComponent {
 
    // TypeScript public modifiers
    constructor(
-      public appState: AppState, public router: Router, public http: Http, public authService: Authentication, public ngZone: NgZone) {
+      public appState: AppState,
+      public router: Router,
+      public http: Http,
+      public authService: Authentication) {
 
-      // TODO: This is a hack. Find a better solution for getting change detection to work when the final Angular2 RTM
-      // gets released
-      constructorForceChangeDetection();
       this.isAuthenticated = authService.isLoggedIn();
    }
 
