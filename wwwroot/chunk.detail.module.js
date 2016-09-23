@@ -1,6 +1,6 @@
-webpackJsonp([0,5],{
+webpackJsonp([1,5],{
 
-/***/ 1097:
+/***/ 1096:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ webpackJsonp([0,5],{
 /**
  * Imported Components
  */
-var detail_component_1 = __webpack_require__(515);
+var detail_component_1 = __webpack_require__(508);
 // async components must be named detailRoutes for WebpackAsyncRoute
 exports.detailRoutes = [{
         path: '',
@@ -19,7 +19,7 @@ exports.detailRoutes = [{
 
 /***/ },
 
-/***/ 516:
+/***/ 509:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37,21 +37,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var common_1 = __webpack_require__(58);
-var platform_browser_1 = __webpack_require__(103);
-var router_1 = __webpack_require__(63);
-var core_1 = __webpack_require__(2);
-var forms_1 = __webpack_require__(239);
+var common_1 = __webpack_require__(56);
+var platform_browser_1 = __webpack_require__(102);
+var router_1 = __webpack_require__(61);
+var core_1 = __webpack_require__(1);
+var forms_1 = __webpack_require__(238);
 //
-var detail_routes_1 = __webpack_require__(1097);
+var detail_routes_1 = __webpack_require__(1096);
 /*
  * Shared Utilities & Other Services
  */
-var utility_service_1 = __webpack_require__(18);
+var utility_service_1 = __webpack_require__(17);
 /**
  * Imported Components
  */
-var detail_component_1 = __webpack_require__(515);
+var detail_component_1 = __webpack_require__(508);
 var DetailModule = (function () {
     function DetailModule() {
         if (utility_service_1.Logging.isEnabled.light) {

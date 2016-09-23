@@ -15,14 +15,7 @@ import { AppState } from '../services/appstate.service';
 import { Authentication } from '../services/authentication.service';
 // import { isLoggedIn } from '../common/isloggedIn';
 
-/** These are for the jQuery version of Kendo UI */
-// const $ = require('jquery');
-require('../../lib/kendoui/styles/kendo.common.min.css');
-// require('lib/kendoui/styles/kendo.material.min.css');
-require('../../lib/kendoui/styles/kendo.default.min.css');
-require('../../lib/kendoui/js/kendo.web.min.js');
-require('../../lib/kendoui/js/kendo.core.min.js');
-require('script-loader!../../lib/kendoui/js/kendo.grid.min.js'); // must be passed through webpack "script-loader"
+
 
 /**
  * This is where CSS/SCSS files that the component depends on are required.
@@ -67,7 +60,24 @@ export class SubscriberComponent {
    ngOnInit() {
       if (Logging.isEnabled.light) { console.log('%c Hello \"Subscriber\" component!', Logging.normal.lime); }
       if (Logging.isEnabled.verbose) { console.log('isLoggedIn(): ' + this.authService.isLoggedIn()); }
-      this.authService.redirectIfNotLoggedIn();
+
+      // Async load KendoUI for jQeury, with webpack require.ensure
+      require.ensure(['jquery'], function(require) {
+
+         /** These are for the jQuery version of Kendo UI */
+         // require('lib/kendoui/styles/kendo.material.min.css');
+         require('../../lib/kendoui/styles/kendo.common.min.css');
+         require('../../lib/kendoui/styles/kendo.default.min.css');
+         require('../../lib/kendoui/js/kendo.web.min.js');
+         require('../../lib/kendoui/js/kendo.core.min.js');
+         require('script!../../lib/kendoui/js/kendo.grid.min.js'); // must pass through "script-loader"
+
+         // Must call the prototype function, because 'this' is undefined inside the require.ensure during runtime
+         SubscriberComponent.prototype.loadKendoUIGrid();
+
+      }, "kendo.for.jquery") // 3rd parameter is the name of the chunk during compilation output - chunk.name.js
+
+      // this.authService.redirectIfNotLoggedIn();
    }
 
    ngAfterViewInit() {
@@ -75,7 +85,6 @@ export class SubscriberComponent {
       // This is where you put all your "$(document).ready() {}" code
       // this.loadJqxGrid();
 
-      this.loadKendoUIGrid();
 
    }
 

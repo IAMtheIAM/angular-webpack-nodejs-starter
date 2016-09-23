@@ -52,10 +52,11 @@ import 'rxjs/Subscription';
 
 /** jQuery 3.1.0 */
 /** During development, use full jquery library, then scale back before production launch */
-require.ensure([], function(require) {
+// require.ensure([], function(require) {
+
    window.$ = window.jQuery = require('jquery');
-   // require('expose?jQuery!jquery');
-}, "jquery") // 3rd parameter is the name of the chunk during compilation output - chunk.name.js
+
+// }, "jquery") // 3rd parameter is the name of the chunk during compilation output - chunk.name.js
 
 
 

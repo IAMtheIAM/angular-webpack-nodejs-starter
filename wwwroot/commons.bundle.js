@@ -77,7 +77,7 @@
 /******/ 		script.async = true;
 /******/ 		script.timeout = 120000;
 
-/******/ 		script.src = __webpack_require__.p + "chunk." + ({"0":"detail.module","1":"jquery","2":"vendors","3":"app","4":"polyfills"}[chunkId]||chunkId) + ".js";
+/******/ 		script.src = __webpack_require__.p + "chunk." + ({"0":"kendo.for.jquery","1":"detail.module","2":"vendors","3":"app","4":"polyfills"}[chunkId]||chunkId) + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {

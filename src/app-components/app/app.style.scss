@@ -60,7 +60,7 @@ body.authenticated {
       @include clearfix;
 
       nav-header {
-         @include span(24);
+         width: 100%
       }
 
       nav-sidebar {
@@ -101,7 +101,7 @@ body.authenticated {
          @include clearfix;
 
          nav-header {
-            @include span(24);
+            width: 100%
          }
 
          nav-sidebar {

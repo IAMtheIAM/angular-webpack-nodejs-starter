@@ -9,7 +9,7 @@ In the next section, you'll learn what you need to know in order to build, serve
 
 ## Getting Your Environment Setup
 
-This solution depends upon NodeJS and NPM. It is important that you only use Node version 4.4.4 LTS or higher, and NPM version 3.10.6 or higher. Do not use the "Current" version which contains latest features, or you may run into build errors. Any verion of Node LTS below 4.4.4 is not guaranteed to work and may also produce build errors.
+This solution depends upon NodeJS and NPM. It is important that you only use Node version 4.4.4 LTS or higher, and NPM version 3.10.6 or higher. I do not recommend using the "Current" version which contains latest features, or you may run into build errors. Any other version of NodeJS and NPM is not guaranteed to work and may produce build errors.
 
 **Installation steps:**
 
@@ -58,7 +58,7 @@ The benefit of this is that you will not lose your app "state" nor your current 
 
 **To use Hot Module Replacement is easy.**
 
-1. First, make sure your webpack-dev-server is running on port 4000 (meaning either `projectlaunch` or `start` is actively "running" with a final message of `[default] Ok, 2.694 sec.`). 
+1. First, make sure your webpack-dev-server is running on port 4000 (meaning either `devserver:jit` or `devserver:aot` is actively "running" with a final message of `[default] Ok, x.xxx sec.`). 
 
 2. Then, simply make your changes to the source code, press save, and watch the page to see the magic happen. The changes you made will instantly reflect in the app real-time! For more detailed information of what is happening behind the scenes, view your browser's Developer Console for debugging output.
 
@@ -67,7 +67,7 @@ The benefit of this is that you will not lose your app "state" nor your current 
 
 My goal was to enable a standard CSS development workflow wherein all styles are "externally" loaded via `<link href="" />` tags rather than embedded/inlined styles via `<style>...</style>` tags in the `<head></head>`. The reason is because using embedded styles causes the source of the style to be hidden from the DevTools inspector. This was a big problem, because the default "Angular2 way" of loading styles within `@Component` results in the styles being embedded in the `<head></head>`, making it very difficult to know which css/scss file is applying the styles to a particular element. See image below.
 
-<img align="right" src="./docs/images/styles-explanation.png" alt="Styles explanation" />
+<img align="right" src="./tools/docs/images/styles-explanation.png" alt="Styles explanation" />
 
 In addition, I wanted Webpack Hot Module Replacement to still work, and because we're using SASS which compiles to CSS, I wanted to see the original .SCSS source-mapped file appear in the DevTools inspector, not the compiled .CSS file. Seeing the compiled .CSS is a step better, but it still forces the developer to have to "backtrack" the compiled .CSS to the original .SCSS. Sourcemaps solves this by directly displaying the original .SCSS source file in the Styles Pane, which you can click on and jump to the exact line in question within the original .SCSS file!
 

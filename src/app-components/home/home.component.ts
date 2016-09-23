@@ -13,16 +13,6 @@ import { Logging } from '../services/utility.service';
 import { AppState } from '../services/appstate.service';
 import { Authentication } from '../services/authentication.service';
 
-/** These are for the jQuery version of Kendo UI */
-// const $ = require('jquery');
-require('../../lib/kendoui/styles/kendo.common.min.css');
-// require('lib/kendoui/styles/kendo.material.min.css');
-require('../../lib/kendoui/styles/kendo.default.min.css');
-require('../../lib/kendoui/js/kendo.web.min.js');
-require('../../lib/kendoui/js/kendo.core.min.js');
-require('script-loader!../../lib/kendoui/js/kendo.grid.min.js'); // must be passed through webpack "script-loader"
-
-
 /**
  * This is where CSS/SCSS files that the component depends on are required.
  *
@@ -61,17 +51,38 @@ export class HomeComponent {
 
    // TypeScript public modifiers
    constructor(
-      public appState: AppState, public router: Router, public http: Http, public authService: Authentication) {
+      public appState: AppState,
+      public router: Router,
+      public http: Http,
+      public authService: Authentication) {
 
       // if (Logging.isEnabled.light) {
       //   console.log('%c Home Constructor Instantiated', Logging.normal.teal);
       // }
+
       this.isAuthenticated = authService.isLoggedIn();
    }
 
    ngOnInit() {
       if (Logging.isEnabled.light) { console.log('%c Hello \"Home\" component!', Logging.normal.lime); }
       if (Logging.isEnabled.verbose) { console.log('isLoggedIn(): ' + this.authService.isLoggedIn()); }
+
+      // Async load KendoUI for jQeury, with webpack require.ensure
+      require.ensure(['jquery'], function(require) {
+
+         /** These are for the jQuery version of Kendo UI */
+         // require('lib/kendoui/styles/kendo.material.min.css');
+         require('../../lib/kendoui/styles/kendo.common.min.css');
+         require('../../lib/kendoui/styles/kendo.default.min.css');
+         require('../../lib/kendoui/js/kendo.web.min.js');
+         require('../../lib/kendoui/js/kendo.core.min.js');
+         require('script!../../lib/kendoui/js/kendo.grid.min.js'); // must pass through "script-loader"
+
+         // Must call the prototype function, because 'this' is undefined inside the require.ensure during runtime
+         HomeComponent.prototype.loadKendoUIGrid();
+
+      }, "kendo.for.jquery") // 3rd parameter is the name of the chunk during compilation output - chunk.name.js
+
       this.authService.redirectIfNotLoggedIn();
    }
 
@@ -80,7 +91,6 @@ export class HomeComponent {
       // This is where you put all your "$(document).ready(function() { });" code
 
       // jQuery Kendo UI - switching to Angular 2 Kendo UI
-      this.loadKendoUIGrid();
    }
 
    loadKendoUIGrid() {
@@ -112,7 +122,9 @@ export class HomeComponent {
                url: crudServiceBaseUrl + "/Products/Create",
                dataType: "jsonp"
             },
-            parameterMap: function(options, operation) {
+            parameterMap: function(
+               options,
+               operation) {
                if (operation !== "read" && options.models) {
                   return { models: kendo.stringify(options.models) };
                }

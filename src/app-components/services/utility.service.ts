@@ -6,7 +6,7 @@ export class Logging {
 
     public static isEnabled = {
         light: true,    // Light logging
-        verbose: true   // Detailed logging
+        verbose: false   // Detailed logging
     };
 
     public static normal = {

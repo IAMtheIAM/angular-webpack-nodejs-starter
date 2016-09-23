@@ -17,7 +17,7 @@ import { manualForceChangeDetection, autoForceChangeDetection } from '../common/
  *
  * Materialize CSS: The SCSS require() must come before KendoUI for css specificity to be correct
  **/
-require('script-loader!materialize-css/dist/js/materialize.js');
+require('script!materialize-css/dist/js/materialize.js'); // must pass through "script-loader"
 require('materialize-css/sass/materialize.scss');
 // require('../../assets/styles/sass-conditions.js');
 
