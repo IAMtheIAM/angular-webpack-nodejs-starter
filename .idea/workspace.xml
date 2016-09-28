@@ -65,8 +65,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wwwroot/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+            <state relative-caret-position="476">
+              <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -447,7 +447,7 @@
       <workItem from="1475101053287" duration="48000" />
       <workItem from="1475101619790" duration="84000" />
       <workItem from="1475101809037" duration="38000" />
-      <workItem from="1475102333320" duration="994000" />
+      <workItem from="1475102333320" duration="1068000" />
     </task>
     <task id="LOCAL-00003" summary="Add sass Conditions: sidebar enabled true/false in variables.scss&#10;Create Ticket component; Integrate Ticket component with backend subscriber API, async request loads data to component.">
       <created>1474649236980</created>
@@ -624,11 +624,18 @@
       <option name="project" value="LOCAL" />
       <updated>1475103305139</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Update index.html with new asset paths. (for running the application without .NET)">
+      <created>1475103330953</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1475103330953</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116801000" />
+    <option name="totallyTimeSpent" value="116875000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -6523,8 +6530,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        <state relative-caret-position="476">
+          <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
           <folding />
         </state>
       </provider>
