@@ -1,240 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86fe6da4-45c6-471a-8fe0-426da23d6b09" name="Default" comment="Get AOT compilation to work finally. &#10;Setup DLL reference plugin and begin testing it, need to finish integrating it still.&#10;Fix errors with duplicate declarations of DetailModule&#10;Remove Kendo UI for angular2 buttons module due to errors during AOT compilation.&#10;Refactor structure of wwwroot to contains /js folder for js files.&#10;Switch sidebar flag into variables.scss from sass-js-variables.js&#10;Update run configs&#10;Update NPM scripts&#10;Get DLL reference bundles working with AOT application build. Speeds up webpack builds by 40% approximately.&#10;Update Regex for CompressionPlugin, &#10;Add CompressionPlugin to DLLs build.&#10;Include new Gzipped files.&#10;Enable serving of compressed Gzip assets&#10;Default to .Gz version of js and css files.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/AOT__Compile___Build_Prod____NET_Server__Prod_.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Build_Webpack_DLLs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/_NET_Server__DEV.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/_NET_Server__Production.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/+detail/detail.component.ngfactory.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/+detail/detail.module.ngfactory.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/404/notfound404.component.ngfactory.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/about/about.component.ngfactory.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/app/app.component.ngfactory.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/app/app.module.ngfactory.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/home/home.component.ngfactory.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/login/login.component.ngfactory.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/nav/footer/nav-footer.component.ngfactory.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/nav/header/nav-header.component.ngfactory.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/nav/sidebar/nav-sidebar.component.ngfactory.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/subscriber/subscriber.component.ngfactory.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/ticket/ticket.component.ngfactory.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/webpack.conditionals.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/webpack.dll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules_custom/@epegzz/sass-vars-loader/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules_custom/@epegzz/sass-vars-loader/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules_custom/@epegzz/sass-vars-loader/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/404/notfound404.component.ngfactory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/404/notfound404.component.ngfactory.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/about/about.component.ngfactory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/about/about.component.ngfactory.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/app/app.component.ngfactory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/app/app.component.ngfactory.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/app/app.module.ngfactory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/app/app.module.ngfactory.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/home/home.component.ngfactory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/home/home.component.ngfactory.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/login/login.component.ngfactory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/login/login.component.ngfactory.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/footer/nav-footer.component.ngfactory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/footer/nav-footer.component.ngfactory.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/header/nav-header.component.ngfactory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/header/nav-header.component.ngfactory.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/sidebar/nav-sidebar.component.ngfactory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/sidebar/nav-sidebar.component.ngfactory.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/subscriber/subscriber.component.ngfactory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/subscriber/subscriber.component.ngfactory.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/ticket/ticket.component.ngfactory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/ticket/ticket.component.ngfactory.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/config/rules/importDestructuringSpacingRule.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/config/rules/importDestructuringSpacingRule.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.component.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.component.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.module.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.module.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.module.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.routes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.routes.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.routes.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/index.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/index.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/404/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/404/index.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/404/index.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/404/notfound404.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/404/notfound404.component.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/404/notfound404.component.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/about/about.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/about/about.component.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/about/about.component.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/about/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/about/index.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/about/index.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.component.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.component.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.module.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.module.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.module.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.resolver.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.resolver.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.resolver.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.routes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.routes.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.routes.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/environment.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/environment.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/environment.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/index.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/index.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/LoggedInOutlet.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/LoggedInOutlet.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/appInjector.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/appInjector.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/appInjector.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/forceChangeDetection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/forceChangeDetection.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/fullscreen.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/fullscreen.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/fullscreen.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/headers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/headers.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/headers.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/index.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/index.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/directives/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/directives/index.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/directives/index.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/directives/router-active.directive.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/directives/router-active.directive.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/home/home.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/home/home.component.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/home/home.component.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/home/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/home/index.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/home/index.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/login/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/login/index.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/login/index.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/login/login.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/login/login.component.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/login/login.component.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/footer/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/footer/index.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/footer/index.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/footer/nav-footer.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/footer/nav-footer.component.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/footer/nav-footer.component.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/header/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/header/index.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/header/index.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/header/nav-header.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/header/nav-header.component.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/header/nav-header.component.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/sidebar/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/sidebar/index.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/sidebar/index.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/sidebar/nav-sidebar.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/sidebar/nav-sidebar.component.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/sidebar/nav-sidebar.component.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/appstate.service.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/appstate.service.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/appstate.service.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/authentication.service.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/authentication.service.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/authentication.service.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/data.service.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/data.service.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/data.service.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/route-protection.service.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/route-protection.service.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/route-protection.service.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/utility.service.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/utility.service.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/utility.service.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/subscriber/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/subscriber/index.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/subscriber/index.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/subscriber/subscriber.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/subscriber/subscriber.component.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/subscriber/subscriber.component.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/ticket/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/ticket/index.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/ticket/index.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/ticket/ticket.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/ticket/ticket.component.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/ticket/ticket.component.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app.bootstrap.aot.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app.bootstrap.aot.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app.bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app.bootstrap.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app.bootstrap.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/polyfills.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/polyfills.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/vendors.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/vendors.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/webpack.entry.bundle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/webpack.entry.bundle.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/css/app.style.css.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/dlls/dll.polyfills.bundle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/dlls/dll.polyfills.bundle.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/dlls/dll.vendors.bundle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/dlls/dll.vendors.bundle.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/dlls/polyfills-manifest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/dlls/vendors-manifest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/1.bundle.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/1.bundle.map.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/app.bundle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/app.bundle.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/app.bundle.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/chunk.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/chunk.1.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/chunk.kendo.for.jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/chunk.kendo.for.jquery.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/commons.bundle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/commons.bundle.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/commons.bundle.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/commons.bundle.map.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/kendo.for.jquery.bundle.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/kendo.for.jquery.bundle.map.gz" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Debug_Webpack_Dev_Server__Production_.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Debug_Webpack_Dev_Server__Dev_.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Debug_This_Application.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Debug_This_Application.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/JIT__Dev_Server____NET_Server__Dev_.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/JIT__Dev_Server____NET_Server__Dev_.xml" />
+    <list default="true" id="86fe6da4-45c6-471a-8fe0-426da23d6b09" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Angular2-Webpack2-DotNet-Starter.sln" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Angular2-Webpack2-DotNet-Starter.xproj" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Armls.Helios.Web.sln" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Armls.Helios.Web.xproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Armls.Helios.Web.xproj.user" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Armls.Helios.Web.xproj.vspscc" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Armls.Helios.Web.xproj.user" afterPath="$PROJECT_DIR$/Armls.Helios.Web.xproj.user" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Startup.cs" afterPath="$PROJECT_DIR$/Startup.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" afterPath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/webpack.common.js" afterPath="$PROJECT_DIR$/config/webpack.common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/webpack.development.js" afterPath="$PROJECT_DIR$/config/webpack.development.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/webpack.production.js" afterPath="$PROJECT_DIR$/config/webpack.production.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/+detail/detail.module.ts" afterPath="$PROJECT_DIR$/src/app-components/+detail/detail.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/+detail/index.ts" afterPath="$PROJECT_DIR$/src/app-components/+detail/index.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/404/notfound404.template.html" afterPath="$PROJECT_DIR$/src/app-components/404/notfound404.template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/about/about.component.ts" afterPath="$PROJECT_DIR$/src/app-components/about/about.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/app/app.component.ts" afterPath="$PROJECT_DIR$/src/app-components/app/app.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/app/app.module.ts" afterPath="$PROJECT_DIR$/src/app-components/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/app/app.routes.ts" afterPath="$PROJECT_DIR$/src/app-components/app/app.routes.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/app/index.ts" afterPath="$PROJECT_DIR$/src/app-components/app/index.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/home/home.template.html" afterPath="$PROJECT_DIR$/src/app-components/home/home.template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/ticket/ticket.component.ts" afterPath="$PROJECT_DIR$/src/app-components/ticket/ticket.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app.bootstrap.aot.ts" afterPath="$PROJECT_DIR$/src/app.bootstrap.aot.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app.bootstrap.ts" afterPath="$PROJECT_DIR$/src/app.bootstrap.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/appwide/susy-grid-config.scss" afterPath="$PROJECT_DIR$/src/assets/styles/appwide/susy-grid-config.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/sass-js-variables.js" afterPath="$PROJECT_DIR$/src/assets/styles/sass-js-variables.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/variables.scss" afterPath="$PROJECT_DIR$/src/assets/styles/variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/polyfills.ts" afterPath="$PROJECT_DIR$/src/polyfills.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/vendors.ts" afterPath="$PROJECT_DIR$/src/vendors.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/assets/styles/appwide/susy-grid-config.scss" afterPath="$PROJECT_DIR$/wwwroot/assets/styles/appwide/susy-grid-config.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/assets/styles/sass-js-variables.js" afterPath="$PROJECT_DIR$/wwwroot/assets/styles/sass-js-variables.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/assets/styles/variables.scss" afterPath="$PROJECT_DIR$/wwwroot/assets/styles/variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/css/app.style.css" afterPath="$PROJECT_DIR$/wwwroot/css/app.style.css" />
     </list>
     <list id="ca0226dc-59b8-40ed-8391-6caf7c39d529" name="New changelist" comment="Add kendo files" />
     <list id="3ca96da9-9568-425e-922b-d2c83b8e0695" name="Ignore" comment="" />
@@ -260,8 +34,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+            <state relative-caret-position="442">
+              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -367,7 +141,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="54" />
+    <option name="x" value="-1866" />
     <option name="y" value="-8" />
     <option name="width" value="1874" />
     <option name="height" value="1096" />
@@ -432,7 +206,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="C:/dev/nodejs/node" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GitHub/angular2-aot-webpack2-typescript-dotnet/master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -623,7 +397,8 @@
       <workItem from="1474927017275" duration="224000" />
       <workItem from="1474927312673" duration="197000" />
       <workItem from="1474929117498" duration="50368000" />
-      <workItem from="1475100153438" duration="401000" />
+      <workItem from="1475100153438" duration="779000" />
+      <workItem from="1475101053287" duration="20000" />
     </task>
     <task id="LOCAL-00003" summary="Add sass Conditions: sidebar enabled true/false in variables.scss&#10;Create Ticket component; Integrate Ticket component with backend subscriber API, async request loads data to component.">
       <created>1474649236980</created>
@@ -744,18 +519,25 @@
       <option name="project" value="LOCAL" />
       <updated>1475099967232</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Get AOT compilation to work finally. &#10;Setup DLL reference plugin and begin testing it, need to finish integrating it still.&#10;Fix errors with duplicate declarations of DetailModule&#10;Remove Kendo UI for angular2 buttons module due to errors during AOT compilation.&#10;Refactor structure of wwwroot to contains /js folder for js files.&#10;Switch sidebar flag into variables.scss from sass-js-variables.js&#10;Update run configs&#10;Update NPM scripts&#10;Get DLL reference bundles working with AOT application build. Speeds up webpack builds by 40% approximately.&#10;Update Regex for CompressionPlugin, &#10;Add CompressionPlugin to DLLs build.&#10;Include new Gzipped files.&#10;Enable serving of compressed Gzip assets&#10;Default to .Gz version of js and css files.">
+      <created>1475100575976</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1475100575976</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115259000" />
+    <option name="totallyTimeSpent" value="115657000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="-1866" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20837927" sideWeight="0.3543223" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21058434" sideWeight="0.3543223" order="4" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.5022051" order="5" side_tool="true" content_ui="tabs" />
@@ -830,7 +612,8 @@
     <MESSAGE value="Get DLL reference bundles working with AOT application build. Speeds up webpack builds by 40% approximately." />
     <MESSAGE value="Update Regex for CompressionPlugin, &#10;Add CompressionPlugin to DLLs build.&#10;Include new Gzipped files." />
     <MESSAGE value="Enable serving of compressed Gzip assets&#10;Default to .Gz version of js and css files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Enable serving of compressed Gzip assets&#10;Default to .Gz version of js and css files." />
+    <MESSAGE value="Get AOT compilation to work finally. &#10;Setup DLL reference plugin and begin testing it, need to finish integrating it still.&#10;Fix errors with duplicate declarations of DetailModule&#10;Remove Kendo UI for angular2 buttons module due to errors during AOT compilation.&#10;Refactor structure of wwwroot to contains /js folder for js files.&#10;Switch sidebar flag into variables.scss from sass-js-variables.js&#10;Update run configs&#10;Update NPM scripts&#10;Get DLL reference bundles working with AOT application build. Speeds up webpack builds by 40% approximately.&#10;Update Regex for CompressionPlugin, &#10;Add CompressionPlugin to DLLs build.&#10;Include new Gzipped files.&#10;Enable serving of compressed Gzip assets&#10;Default to .Gz version of js and css files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Get AOT compilation to work finally. &#10;Setup DLL reference plugin and begin testing it, need to finish integrating it still.&#10;Fix errors with duplicate declarations of DetailModule&#10;Remove Kendo UI for angular2 buttons module due to errors during AOT compilation.&#10;Refactor structure of wwwroot to contains /js folder for js files.&#10;Switch sidebar flag into variables.scss from sass-js-variables.js&#10;Update run configs&#10;Update NPM scripts&#10;Get DLL reference bundles working with AOT application build. Speeds up webpack builds by 40% approximately.&#10;Update Regex for CompressionPlugin, &#10;Add CompressionPlugin to DLLs build.&#10;Include new Gzipped files.&#10;Enable serving of compressed Gzip assets&#10;Default to .Gz version of js and css files." />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
   </component>
   <component name="XDebuggerManager">
@@ -891,6 +674,14 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/webpack.conditionals.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -971,7 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1036,7 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1098,7 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1160,7 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1222,7 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1283,7 +1069,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1380,7 +1165,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -6084,7 +5868,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -6093,6 +5876,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6107,7 +5891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -6115,6 +5898,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6218,6 +6002,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
           <caret line="821" column="14" selection-start-line="821" selection-start-column="14" selection-end-line="821" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6239,6 +6024,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6246,6 +6032,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6261,6 +6048,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6275,6 +6063,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="471" column="37" selection-start-line="471" selection-start-column="37" selection-end-line="471" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6289,6 +6078,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3532">
           <caret line="300" column="15" selection-start-line="300" selection-start-column="13" selection-end-line="300" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6296,6 +6086,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="597">
           <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6303,6 +6094,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6310,6 +6102,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="367" column="38" selection-start-line="367" selection-start-column="38" selection-end-line="367" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6317,6 +6110,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6324,6 +6118,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6338,6 +6133,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
           <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6345,6 +6141,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="57" column="141" selection-start-line="57" selection-start-column="141" selection-end-line="57" selection-end-column="141" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#582#628#0" expanded="true" />
+            <element signature="e#849#904#0" expanded="true" />
+            <element signature="e#1860#1914#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -6359,6 +6161,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6388,6 +6191,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="14" column="165" selection-start-line="14" selection-start-column="165" selection-end-line="14" selection-end-column="165" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="sourcemapFileViewerProvider">
@@ -6398,6 +6202,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6419,6 +6224,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3009">
           <caret line="168" column="7" selection-start-line="168" selection-start-column="7" selection-end-line="168" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6440,6 +6246,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6447,6 +6254,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6454,6 +6262,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-92260">
           <caret line="44560" column="40" selection-start-line="44560" selection-start-column="40" selection-end-line="44560" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6471,6 +6280,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1371">
           <caret line="175" column="19" selection-start-line="175" selection-start-column="19" selection-end-line="175" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6506,6 +6316,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -6590,7 +6401,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -6666,8 +6476,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        <state relative-caret-position="442">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
           <folding />
         </state>
       </provider>
