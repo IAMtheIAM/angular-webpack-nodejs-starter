@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86fe6da4-45c6-471a-8fe0-426da23d6b09" name="Default" comment="Update package name and .gitignore">
+    <list default="true" id="86fe6da4-45c6-471a-8fe0-426da23d6b09" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -43,8 +43,8 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="463">
-                <caret line="57" column="344" selection-start-line="57" selection-start-column="344" selection-end-line="57" selection-end-column="344" />
+              <first_editor relative-caret-position="395">
+                <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -422,7 +422,7 @@
       <workItem from="1475101053287" duration="48000" />
       <workItem from="1475101619790" duration="84000" />
       <workItem from="1475101809037" duration="38000" />
-      <workItem from="1475102333320" duration="22000" />
+      <workItem from="1475102333320" duration="374000" />
     </task>
     <task id="LOCAL-00003" summary="Add sass Conditions: sidebar enabled true/false in variables.scss&#10;Create Ticket component; Integrate Ticket component with backend subscriber API, async request loads data to component.">
       <created>1474649236980</created>
@@ -571,11 +571,18 @@
       <option name="project" value="LOCAL" />
       <updated>1475101841207</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Update .README with working scripts">
+      <created>1475102362245</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1475102362245</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115829000" />
+    <option name="totallyTimeSpent" value="116181000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -661,7 +668,8 @@
     <MESSAGE value="Update project/solution names." />
     <MESSAGE value="Update .gitignore" />
     <MESSAGE value="Update package name and .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update package name and .gitignore" />
+    <MESSAGE value="Update .README with working scripts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update .README with working scripts" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
   </component>
   <component name="XDebuggerManager">
@@ -6464,8 +6472,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="463">
-            <caret line="57" column="344" selection-start-line="57" selection-start-column="344" selection-end-line="57" selection-end-column="344" />
+          <first_editor relative-caret-position="395">
+            <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />

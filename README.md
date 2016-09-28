@@ -20,22 +20,31 @@ This solution depends upon NodeJS and NPM. It is important that you only use Nod
 * `npm run build:dlls`
 * `npm run compile:aot`
 * `npm run devserver:aot`
+* `npm run server:dotnetcore:dev`
 
 **Webpack Dev Server with HMR (Hot Module Replacement) and Angular 2 JIT (Just In Time) compilation**
  
 * `npm run build:dlls`
 * `npm run devserver:jit`
+* `npm run server:dotnetcore:dev`
 
 **Production Build /w AOT Compilationv (No HMR, optimized code)**
  
 * `npm run build:dlls`
 * `npm run compile:aot`
 * `npm run build:production:aot`
+* `npm run server:dotnetcore:production`
 
 **Production Build /w JIT compilation (No HMR, optimized code)**
  
 * `npm run build:dlls`
 * `npm run build:production:jit`
+* `npm run server:dotnetcore:production`
+
+**Start .NET Core Server (Kestrel)**
+ 
+* `npm run server:dotnetcore:dev` (reads js/css files from Webpack-Dev-Server, on localhost:4000)
+* `npm run server:dotnetcore:production` (reads js/css files from wwwroot, on localhost:5000)
 
 **Important points of consideration**
 
