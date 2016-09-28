@@ -17,20 +17,25 @@ This solution depends upon NodeJS and NPM. It is important that you only use Nod
 
 **Webpack Dev Server with HMR (Hot Module Replacement) and Angular 2 AOT (Ahead Of Time) compilation** 
 
+* `npm run build:dlls`
+* `npm run compile:aot`
 * `npm run devserver:aot`
 
 **Webpack Dev Server with HMR (Hot Module Replacement) and Angular 2 JIT (Just In Time) compilation**
  
+* `npm run build:dlls`
 * `npm run devserver:jit`
 
-**Dev Build (No HMR)**
+**Production Build /w AOT Compilationv (No HMR, optimized code)**
  
-* `npm run build:dev` 
+* `npm run build:dlls`
+* `npm run compile:aot`
+* `npm run build:production:aot`
 
-**Production Build (No HMR, optimized code)**
+**Production Build /w JIT compilation (No HMR, optimized code)**
  
-* `npm run build:production`
-
+* `npm run build:dlls`
+* `npm run build:production:jit`
 
 **Important points of consideration**
 
