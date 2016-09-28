@@ -1,5 +1,5 @@
 {
-   "name": "SuperCharged-Angular2-Webpack2-DotNET-Starter",
+   "name": "Angular2-Webpack2-DotNET-Starter",
    "version": "2.0.0",
    "description": "A complete starter kit for building Single Page Apps featuring Angular 2, Typescript, Webpack, Authentication, NPM Scripts, Unit Tests, and E2E Tests. Includes optional .NET Core 1.0 integration for working with a C# backend and Continuous Integration scripts for using source control on a TFS build server.",
    "author": "Nathan P. Forked from 'Anuglar2-webpack-starter' on github",
