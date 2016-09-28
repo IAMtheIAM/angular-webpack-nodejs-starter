@@ -9,4 +9,7 @@ npm-debug.log
 obj/
 project.lock.json
 stats.json
-
+aot-compiled/
+Atlas-UI.sln
+Atlas-UI.xproj
+Atlas-UI.xproj.user
