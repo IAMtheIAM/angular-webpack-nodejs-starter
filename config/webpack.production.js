@@ -5,16 +5,17 @@
 const helpers = require('./helpers');
 const webpackMerge = require('webpack-merge'); // used to merge webpack configs
 const commonConfig = require('./webpack.common.js'); // the settings that are common to prod and dev
+const webpack = require('webpack');
 
 /**
  * Webpack Plugins
  */
-const ProvidePlugin = require('webpack/lib/ProvidePlugin');
-const DefinePlugin = require('webpack/lib/DefinePlugin');
-const NormalModuleReplacementPlugin = require('webpack/lib/NormalModuleReplacementPlugin');
-const IgnorePlugin = require('webpack/lib/IgnorePlugin');
+// const ProvidePlugin = require('webpack/lib/ProvidePlugin');
+// const DefinePlugin = require('webpack/lib/DefinePlugin');
+// const NormalModuleReplacementPlugin = require('webpack/lib/NormalModuleReplacementPlugin');
+// const IgnorePlugin = require('webpack/lib/IgnorePlugin');
 // const DedupePlugin = require('webpack/lib/optimize/DedupePlugin');
-const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
+// const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const CompressionPlugin = require('compression-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -43,7 +44,9 @@ module.exports = webpackMerge(commonConfig, {
     * See: http://webpack.github.io/docs/configuration.html#devtool
     * See: https://github.com/webpack/docs/wiki/build-performance#sourcemaps
     */
-   devtool: false,
+   // devtool: false,
+   // devtool: 'cheap-module-source-map',
+   devtool: 'source-map',
 
    /**
     * Options affecting the output of the compilation.
@@ -66,7 +69,7 @@ module.exports = webpackMerge(commonConfig, {
        *
        * See: http://webpack.github.io/docs/configuration.html#output-filename
        */
-      filename: '[name].bundle.js',
+      filename: 'js/[name].bundle.js',
 
       /**
        * The filename of the SourceMaps for the JavaScript files.
@@ -74,7 +77,7 @@ module.exports = webpackMerge(commonConfig, {
        *
        * See: http://webpack.github.io/docs/configuration.html#output-sourcemapfilename
        */
-      sourceMapFilename: '[name].bundle.map',
+      sourceMapFilename: 'js/[name].bundle.map',
 
       /**
        * The filename of non-entry chunks as relative path
@@ -82,7 +85,7 @@ module.exports = webpackMerge(commonConfig, {
        *
        * See: http://webpack.github.io/docs/configuration.html#output-chunkfilename
        */
-      chunkFilename: 'chunk.[name].js',
+      chunkFilename: 'js/chunk.[name].js',
 
    },
 
@@ -163,7 +166,7 @@ module.exports = webpackMerge(commonConfig, {
        * See: https://webpack.github.io/docs/list-of-plugins.html#defineplugin
        */
       // NOTE: when adding more properties make sure you include them in custom-typings.d.ts
-      new DefinePlugin({
+      new webpack.DefinePlugin({
          'ENV': JSON.stringify(METADATA.ENV),
          'HMR': METADATA.HMR,
          'process.env': {
@@ -182,7 +185,7 @@ module.exports = webpackMerge(commonConfig, {
        */
       // NOTE: To debug prod builds uncomment //debug lines and comment //prod lines
 
-      // new UglifyJsPlugin({
+      // new webpack.UglifyJsPlugin({
       //    // beautify: true, //debug
       //    // mangle: false, //debug
       //    // dead_code: false, //debug
@@ -212,7 +215,7 @@ module.exports = webpackMerge(commonConfig, {
        * See: http://webpack.github.io/docs/list-of-plugins.html#normalmodulereplacementplugin
        */
 
-      new NormalModuleReplacementPlugin(
+      new webpack.NormalModuleReplacementPlugin(
          /angular2-hmr/,
          helpers.root('config/modules/angular2-hmr-prod.js')
       ),
@@ -224,7 +227,7 @@ module.exports = webpackMerge(commonConfig, {
        * See: http://webpack.github.io/docs/list-of-plugins.html#ignoreplugin
        */
 
-      new IgnorePlugin(/angular2-hmr/),
+      new webpack.IgnorePlugin(/angular2-hmr/),
 
       /**
        * Plugin: CompressionPlugin
@@ -234,31 +237,15 @@ module.exports = webpackMerge(commonConfig, {
        * See: https://github.com/webpack/compression-webpack-plugin
        */
       new CompressionPlugin({
-         asset: "[path].gz[query]",
-         regExp: /\.css$|\.html$|\.js$|\.map$/,
+         asset: "[path].gz",
+         // regExp: /\.css$|\.html$|\.js$|\.map$/,
+         test: /\.(css|html|js|json|map)(\?{0}(?=\?|$))/,
          threshold: 2 * 1024,
          algorithm: "gzip",
          minRatio: 0.8
       })
 
    ],
-
-   stats: {
-      colors: true,
-      errors: true,
-      errorDetails: false,
-      reasons: true,
-      publicPath: false,
-      version: true,
-      timings: true,
-      assets: false,
-      modules: true,
-      source: true,
-      children: false,
-      hash: false,
-      chunks: false, // make sure 'chunks' is false or it will add 5-10 seconds to your build and incremental build time, due to excessive output.
-      warnings: false
-   },
 
    /**
     * Include polyfills or mocks for various node stuff
@@ -273,6 +260,22 @@ module.exports = webpackMerge(commonConfig, {
       module: false,
       clearImmediate: false,
       setImmediate: false
+   },
+   stats: {
+      colors: true,
+      errors: true,
+      errorDetails: false,
+      reasons: true,
+      publicPath: false,
+      version: true,
+      timings: true,
+      assets: false,
+      modules: false,
+      source: true,
+      children: false,
+      hash: false,
+      chunks: false, // make sure 'chunks' is false or it will add 5-10 seconds to your build and incremental build time, due to excessive output.
+      warnings: false
    }
 
 });

@@ -25,11 +25,13 @@ import { DetailComponent } from './detail.component';
 @NgModule({
    declarations: [// Components / Directives/ Pipes
       DetailComponent],
-   imports: [CommonModule, BrowserModule, FormsModule, RouterModule.forChild(detailRoutes)]
+   imports: [
+      RouterModule.forChild(detailRoutes)
+   ]
 })
 
 
-export default class DetailModule {
+export class DetailModule {
 
    constructor() {
       if (Logging.isEnabled.light) { console.log('%c Hello \"Detail\" component!', Logging.normal.lime); }

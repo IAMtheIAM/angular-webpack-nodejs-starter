@@ -1,13 +1,15 @@
 /**
+ * JIT Build
  * MAIN ANGULAR2 APP ENTRY POINT
  * This is where we bootstrap the Angular2 application
  */
 
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { decorateModuleRef  } from './app-components/app/environment';
+import { decorateModuleRef } from './app-components/app/environment';
 import { ApplicationRef } from '@angular/core';
 import { bootloader } from '@angularclass/hmr';
+import { Logging } from './app-components/services/utility.service';
 
 /**
  * AppComponent and AppComponent Services
@@ -26,8 +28,10 @@ export function main(initialHmrState?: any): Promise<any> {
    return platformBrowserDynamic()
       .bootstrapModule(AppModule)
       .then(decorateModuleRef)
-      .catch(err => console.error(err));
-
+      .catch(function(err) {
+         console.log('%c ERROR Bootstrapping Angular 2 JIT! \n', Logging.bold.teal);
+         // console.error(err);
+      });
 }
 
 bootloader(main);

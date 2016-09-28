@@ -62,8 +62,9 @@ export class TicketComponent {
       // This is where you put all your "$(document).ready(function() { });" code
    }
 
-   searchSubscriberByID() {
-      this.appState.set('searchSubscriberByID', this.localState.subscriberID);
+   searchSubscriberByID(subscriberID) {
+      // this.appState.set('searchSubscriberByID', this.localState.subscriberID);
+      this.appState.set('searchSubscriberByID', subscriberID);
       this._callApi('DataService', '/api/subscriber/' + this.localState.subscriberID);
    }
 

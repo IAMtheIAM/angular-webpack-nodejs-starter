@@ -60,14 +60,16 @@ export const ROUTES: Routes = [{
    canActivate: [RouteProtection], // resolve: {
    //    'dataBroughtToComponent': DataResolver
    // }
-}, {
-   path: 'detail',
-   // loadChildren: () => System.import('../+detail/detail.module'),
-   // loadChildren: '../+detail/detail.module#DetailModule',
-   loadChildren: 'es6-promise?,[name]!../+detail/detail.module#DetailModule',
-   // loadChildren: loadLazy('../+detail/detail.detailRoutes', DetailComponent)
-   // loadChildren: () => System.import('../+detail/detail.module.ts')
-}, {
+},
+//    {
+//    path: 'detail',
+//    // loadChildren: () => System.import('../+detail/detail.module'),
+//    // loadChildren: '../+detail/detail.module#DetailModule',
+//    loadChildren: 'es6-promise?,[name]!../+detail/detail.module#DetailModule',
+//    // loadChildren: loadLazy('../+detail/detail.detailRoutes', DetailComponent)
+//    // loadChildren: () => System.import('../+detail/detail.module.ts')
+// },
+   {
    path: '**',
    component: NotFound404Component
 }, {

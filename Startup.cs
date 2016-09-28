@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System.Net.Http.Headers;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -7,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Armls.Helios.Web.Data;
 using Armls.Helios.Web.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace Armls.Helios.Web
 {
@@ -91,7 +93,28 @@ namespace Armls.Helios.Web
                 app.UseExceptionHandler("/Home/Error");
             }
 
-            app.UseStaticFiles();
+            //app.UseStaticFiles();
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                OnPrepareResponse = context =>
+                {
+                    IHeaderDictionary headers = context.Context.Response.Headers;
+                    string contentType = headers["Content-Type"];
+                    if (contentType == "application/x-gzip")
+                    {
+                        if (context.File.Name.EndsWith("js.gz"))
+                        {
+                            contentType = "application/javascript";
+                        }
+                        else if (context.File.Name.EndsWith("css.gz"))
+                        {
+                            contentType = "text/css";
+                        }
+                        headers.Add("Content-Encoding", "gzip");
+                        headers["Content-Type"] = contentType;
+                    }
+                }
+            });
 
             app.UseIdentity();
 
@@ -103,6 +126,11 @@ namespace Armls.Helios.Web
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+
+
+
+
         }
     }
 }

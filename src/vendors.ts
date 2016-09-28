@@ -54,12 +54,12 @@ import 'rxjs/Subscription';
 /** During development, use full jquery library, then scale back before production launch */
 // require.ensure([], function(require) {
 
-   window.$ = window.jQuery = require('jquery');
+// window.$ = window.jQuery = require('jquery');
 
 // }, "jquery") // 3rd parameter is the name of the chunk during compilation output - chunk.name.js
 
-
-
+// require('script!materialize-css/dist/js/materialize.js'); // must pass through "script-loader"
+// require('materialize-css/sass/materialize.scss');
 
 // /** KendoUI Professional */
 // /** These are for the Angular 2 version of Kendo UI */

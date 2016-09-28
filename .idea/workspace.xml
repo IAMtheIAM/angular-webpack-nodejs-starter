@@ -1,10 +1,240 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86fe6da4-45c6-471a-8fe0-426da23d6b09" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/chunk.kendo.for.jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/chunk.kendo.for.jquery.js.gz" />
+    <list default="true" id="86fe6da4-45c6-471a-8fe0-426da23d6b09" name="Default" comment="Get AOT compilation to work finally. &#10;Setup DLL reference plugin and begin testing it, need to finish integrating it still.&#10;Fix errors with duplicate declarations of DetailModule&#10;Remove Kendo UI for angular2 buttons module due to errors during AOT compilation.&#10;Refactor structure of wwwroot to contains /js folder for js files.&#10;Switch sidebar flag into variables.scss from sass-js-variables.js&#10;Update run configs&#10;Update NPM scripts&#10;Get DLL reference bundles working with AOT application build. Speeds up webpack builds by 40% approximately.&#10;Update Regex for CompressionPlugin, &#10;Add CompressionPlugin to DLLs build.&#10;Include new Gzipped files.&#10;Enable serving of compressed Gzip assets&#10;Default to .Gz version of js and css files.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/AOT__Compile___Build_Prod____NET_Server__Prod_.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Build_Webpack_DLLs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/_NET_Server__DEV.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/_NET_Server__Production.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/+detail/detail.component.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/+detail/detail.module.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/404/notfound404.component.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/about/about.component.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/app/app.component.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/app/app.module.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/home/home.component.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/login/login.component.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/nav/footer/nav-footer.component.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/nav/header/nav-header.component.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/nav/sidebar/nav-sidebar.component.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/subscriber/subscriber.component.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/ticket/ticket.component.ngfactory.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/webpack.conditionals.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/webpack.dll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules_custom/@epegzz/sass-vars-loader/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules_custom/@epegzz/sass-vars-loader/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules_custom/@epegzz/sass-vars-loader/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/404/notfound404.component.ngfactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/404/notfound404.component.ngfactory.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/about/about.component.ngfactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/about/about.component.ngfactory.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/app/app.component.ngfactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/app/app.component.ngfactory.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/app/app.module.ngfactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/app/app.module.ngfactory.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/home/home.component.ngfactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/home/home.component.ngfactory.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/login/login.component.ngfactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/login/login.component.ngfactory.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/footer/nav-footer.component.ngfactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/footer/nav-footer.component.ngfactory.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/header/nav-header.component.ngfactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/header/nav-header.component.ngfactory.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/sidebar/nav-sidebar.component.ngfactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/sidebar/nav-sidebar.component.ngfactory.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/subscriber/subscriber.component.ngfactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/subscriber/subscriber.component.ngfactory.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/ticket/ticket.component.ngfactory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/ticket/ticket.component.ngfactory.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/config/rules/importDestructuringSpacingRule.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/config/rules/importDestructuringSpacingRule.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.component.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.component.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.component.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.module.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.module.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.module.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.routes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.routes.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.routes.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/index.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/index.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/404/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/404/index.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/404/index.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/404/notfound404.component.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/404/notfound404.component.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/404/notfound404.component.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/about/about.component.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/about/about.component.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/about/about.component.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/about/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/about/index.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/about/index.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.component.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.component.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.component.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.module.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.module.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.module.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.resolver.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.resolver.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.resolver.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.routes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.routes.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.routes.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/environment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/environment.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/environment.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/index.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/index.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/LoggedInOutlet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/LoggedInOutlet.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/appInjector.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/appInjector.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/appInjector.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/forceChangeDetection.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/forceChangeDetection.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/fullscreen.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/fullscreen.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/fullscreen.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/headers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/headers.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/headers.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/index.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/index.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/directives/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/directives/index.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/directives/index.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/directives/router-active.directive.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/directives/router-active.directive.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/home/home.component.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/home/home.component.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/home/home.component.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/home/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/home/index.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/home/index.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/login/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/login/index.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/login/index.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/login/login.component.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/login/login.component.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/login/login.component.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/footer/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/footer/index.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/footer/index.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/footer/nav-footer.component.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/footer/nav-footer.component.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/footer/nav-footer.component.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/header/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/header/index.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/header/index.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/header/nav-header.component.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/header/nav-header.component.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/header/nav-header.component.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/sidebar/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/sidebar/index.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/sidebar/index.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/sidebar/nav-sidebar.component.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/sidebar/nav-sidebar.component.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/sidebar/nav-sidebar.component.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/appstate.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/appstate.service.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/appstate.service.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/authentication.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/authentication.service.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/authentication.service.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/data.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/data.service.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/data.service.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/route-protection.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/route-protection.service.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/route-protection.service.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/utility.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/utility.service.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/utility.service.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/subscriber/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/subscriber/index.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/subscriber/index.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/subscriber/subscriber.component.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/subscriber/subscriber.component.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/subscriber/subscriber.component.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/ticket/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/ticket/index.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/ticket/index.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/ticket/ticket.component.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/ticket/ticket.component.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/ticket/ticket.component.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app.bootstrap.aot.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app.bootstrap.aot.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app.bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app.bootstrap.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app.bootstrap.metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/polyfills.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/polyfills.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/vendors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/vendors.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/webpack.entry.bundle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/webpack.entry.bundle.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/css/app.style.css.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/dlls/dll.polyfills.bundle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/dlls/dll.polyfills.bundle.js.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/dlls/dll.vendors.bundle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/dlls/dll.vendors.bundle.js.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/dlls/polyfills-manifest.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/dlls/vendors-manifest.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/1.bundle.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/1.bundle.map.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/app.bundle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/app.bundle.js.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/app.bundle.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/chunk.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/chunk.1.js.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/chunk.kendo.for.jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/chunk.kendo.for.jquery.js.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/commons.bundle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/commons.bundle.js.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/commons.bundle.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/commons.bundle.map.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/kendo.for.jquery.bundle.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/kendo.for.jquery.bundle.map.gz" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Debug_Webpack_Dev_Server__Production_.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Debug_Webpack_Dev_Server__Dev_.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Debug_This_Application.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Debug_This_Application.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/JIT__Dev_Server____NET_Server__Dev_.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/JIT__Dev_Server____NET_Server__Dev_.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Armls.Helios.Web.xproj.user" afterPath="$PROJECT_DIR$/Armls.Helios.Web.xproj.user" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Startup.cs" afterPath="$PROJECT_DIR$/Startup.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" afterPath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/webpack.common.js" afterPath="$PROJECT_DIR$/config/webpack.common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/webpack.development.js" afterPath="$PROJECT_DIR$/config/webpack.development.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/webpack.production.js" afterPath="$PROJECT_DIR$/config/webpack.production.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/+detail/detail.module.ts" afterPath="$PROJECT_DIR$/src/app-components/+detail/detail.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/+detail/index.ts" afterPath="$PROJECT_DIR$/src/app-components/+detail/index.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/404/notfound404.template.html" afterPath="$PROJECT_DIR$/src/app-components/404/notfound404.template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/about/about.component.ts" afterPath="$PROJECT_DIR$/src/app-components/about/about.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/app/app.component.ts" afterPath="$PROJECT_DIR$/src/app-components/app/app.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/app/app.module.ts" afterPath="$PROJECT_DIR$/src/app-components/app/app.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/app/app.routes.ts" afterPath="$PROJECT_DIR$/src/app-components/app/app.routes.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/app/index.ts" afterPath="$PROJECT_DIR$/src/app-components/app/index.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/home/home.template.html" afterPath="$PROJECT_DIR$/src/app-components/home/home.template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/ticket/ticket.component.ts" afterPath="$PROJECT_DIR$/src/app-components/ticket/ticket.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app.bootstrap.aot.ts" afterPath="$PROJECT_DIR$/src/app.bootstrap.aot.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app.bootstrap.ts" afterPath="$PROJECT_DIR$/src/app.bootstrap.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/appwide/susy-grid-config.scss" afterPath="$PROJECT_DIR$/src/assets/styles/appwide/susy-grid-config.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/sass-js-variables.js" afterPath="$PROJECT_DIR$/src/assets/styles/sass-js-variables.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/variables.scss" afterPath="$PROJECT_DIR$/src/assets/styles/variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/polyfills.ts" afterPath="$PROJECT_DIR$/src/polyfills.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/vendors.ts" afterPath="$PROJECT_DIR$/src/vendors.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/assets/styles/appwide/susy-grid-config.scss" afterPath="$PROJECT_DIR$/wwwroot/assets/styles/appwide/susy-grid-config.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/assets/styles/sass-js-variables.js" afterPath="$PROJECT_DIR$/wwwroot/assets/styles/sass-js-variables.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/assets/styles/variables.scss" afterPath="$PROJECT_DIR$/wwwroot/assets/styles/variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/css/app.style.css" afterPath="$PROJECT_DIR$/wwwroot/css/app.style.css" />
     </list>
     <list id="ca0226dc-59b8-40ed-8391-6caf7c39d529" name="New changelist" comment="Add kendo files" />
     <list id="3ca96da9-9568-425e-922b-d2c83b8e0695" name="Ignore" comment="" />
@@ -27,31 +257,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.routes.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app-components/app/app.routes.ts">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="37" column="28" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav-sidebar.template.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app-components/nav/sidebar/nav-sidebar.template.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="115" selection-start-line="17" selection-start-column="115" selection-end-line="17" selection-end-column="115" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+            <state relative-caret-position="102">
+              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -73,20 +283,10 @@
         <option value="webpack:///./~/@progress/kendo-angular-buttons/dist/npm/js/main.js" />
         <option value="webpack:///./~/@progress/kendo-angular-grid/dist/npm/js/main.js" />
         <option value="$PROJECT_DIR$/src/app-components/services/data.service.ts" />
-        <option value="$PROJECT_DIR$/src/app-components/ticket/ticket.component.ts" />
-        <option value="$PROJECT_DIR$/config/webpack.development.js" />
-        <option value="$PROJECT_DIR$/src/app-components/+detail/detail.module.ts" />
-        <option value="$PROJECT_DIR$/src/app-components/+detail/index.ts" />
         <option value="$PROJECT_DIR$/src/app-components/+detail/detail.routes.ts" />
-        <option value="$PROJECT_DIR$/src/app-components/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/src/app-components/app/app.routes.ts" />
         <option value="webpack:///./~/materialize-css/~/jquery/dist/jquery.js" />
         <option value="webpack:///./~/materialize-css/dist/js/materialize.js" />
-        <option value="$PROJECT_DIR$/src/app-components/nav/sidebar/nav-sidebar.component.ts" />
-        <option value="$PROJECT_DIR$/src/app-components/subscriber/subscriber.component.ts" />
-        <option value="$PROJECT_DIR$/src/app-components/home/home.component.ts" />
         <option value="$PROJECT_DIR$/node_modules/@epegzz/sass-vars-loader/package.json" />
-        <option value="$PROJECT_DIR$/src/app-components/app/app.component.ts" />
         <option value="$PROJECT_DIR$/node_modules/sass-loader/index.js" />
         <option value="$PROJECT_DIR$/src/assets/styles/sass-conditions.js" />
         <option value="$PROJECT_DIR$/src/assets/styles/sass-colors.js" />
@@ -95,7 +295,6 @@
         <option value="$PROJECT_DIR$/node_modules/sassport-loader/example/my_colors.js" />
         <option value="$PROJECT_DIR$/node_modules/sassport-loader/example/styles.scss" />
         <option value="$PROJECT_DIR$/src/assets/styles/appwide.scss" />
-        <option value="$PROJECT_DIR$/src/assets/styles/appwide/susy-grid-config.scss" />
         <option value="$PROJECT_DIR$/src/app-components/login/login.style.scss" />
         <option value="$PROJECT_DIR$/src/app-components/home/home.style.scss" />
         <option value="$PROJECT_DIR$/src/app-components/subscriber/subscriber.style.scss" />
@@ -103,27 +302,56 @@
         <option value="$PROJECT_DIR$/src/app-components/404/notfound404.style.scss" />
         <option value="$PROJECT_DIR$/src/app-components/+detail/detail.style.scss" />
         <option value="$PROJECT_DIR$/src/assets/styles/sassport-module.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/assets/styles/appwide-metastyles.scss" />
-        <option value="$PROJECT_DIR$/src/app-components/nav/header/nav-header.style.scss" />
         <option value="$PROJECT_DIR$/src/app-components/nav/footer/nav-footer.style.scss" />
         <option value="$PROJECT_DIR$/src/app-components/nav/sidebar/nav-sidebar.style.scss" />
-        <option value="$PROJECT_DIR$/src/app-components/app/app.template.html" />
-        <option value="$PROJECT_DIR$/src/app-components/app/app.style.scss" />
-        <option value="$PROJECT_DIR$/src/assets/styles/sass-js-variables.js" />
         <option value="$PROJECT_DIR$/src/app-components/common/forceChangeDetection.ts" />
-        <option value="$PROJECT_DIR$/config/webpack.common.js" />
-        <option value="$PROJECT_DIR$/config/webpack.production.js" />
-        <option value="$PROJECT_DIR$/src/assets/styles/variables.scss" />
-        <option value="$PROJECT_DIR$/src/vendors.ts" />
         <option value="$PROJECT_DIR$/src/app-components/ticket/ticket.template.html" />
         <option value="$PROJECT_DIR$/src/app-components/ticket/ticket.style.scss" />
         <option value="webpack:///./~/rxjs/operator/materialize.js" />
-        <option value="$PROJECT_DIR$/src/app-components/services/utility.service.ts" />
         <option value="$PROJECT_DIR$/src/app-components/login/login.component.ts" />
         <option value="$PROJECT_DIR$/src/app-components/nav/sidebar/nav-sidebar.template.html" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/app-components/app/app.template.html" />
+        <option value="$PROJECT_DIR$/src/app-components/nav/header/nav-header.style.scss" />
+        <option value="$PROJECT_DIR$/src/app-components/app/app.style.scss" />
+        <option value="$PROJECT_DIR$/src/app-components/home/home.component.ts" />
+        <option value="$PROJECT_DIR$/src/app-components/subscriber/subscriber.component.ts" />
+        <option value="$PROJECT_DIR$/src/app-components/services/utility.service.ts" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/app-components/home/home.template.html" />
+        <option value="$PROJECT_DIR$/src/assets/styles/appwide/susy-grid-config.scss" />
+        <option value="$PROJECT_DIR$/src/app-components/+detail/detail.module.ts" />
+        <option value="$PROJECT_DIR$/config/webpack.dll.config.js" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/src/polyfills.ts" />
+        <option value="$PROJECT_DIR$/src/app-components/app/app.routes.ts" />
+        <option value="$PROJECT_DIR$/src/app-components/+detail/index.ts" />
+        <option value="$PROJECT_DIR$/src/app-components/app/index.ts" />
+        <option value="$PROJECT_DIR$/src/app-components/ticket/ticket.component.ts" />
+        <option value="$PROJECT_DIR$/aot-compiled/src/app-components/ticket/ticket.component.ngfactory.ts" />
+        <option value="$PROJECT_DIR$/src/app-components/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/src/assets/styles/sass-js-variables.js" />
+        <option value="$PROJECT_DIR$/src/assets/styles/variables.scss" />
+        <option value="$PROJECT_DIR$/src/app-components/404/notfound404.template.html" />
+        <option value="$PROJECT_DIR$/wwwroot/js/kendo.for.jquery.bundle.map" />
+        <option value="$PROJECT_DIR$/src/app.bootstrap.aot.ts" />
+        <option value="$PROJECT_DIR$/src/app.bootstrap.ts" />
+        <option value="$PROJECT_DIR$/config/webpack.development.js" />
+        <option value="$PROJECT_DIR$/src/vendors.ts" />
+        <option value="$PROJECT_DIR$/src/app-components/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/src/app-components/nav/sidebar/nav-sidebar.component.ts" />
+        <option value="module.js" />
+        <option value="internal/module.js" />
+        <option value="$PROJECT_DIR$/config/webpack.conditionals.js" />
+        <option value="$PROJECT_DIR$/src/app-components/about/about.component.ts" />
+        <option value="$PROJECT_DIR$/config/webpack.common.js" />
+        <option value="$PROJECT_DIR$/config/webpack.dll.js" />
+        <option value="$PROJECT_DIR$/config/webpack.production.js" />
+        <option value="$PROJECT_DIR$/Startup.cs" />
+        <option value="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -135,13 +363,14 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/aot-compiled/node_modules" />
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="219" />
-    <option name="y" value="45" />
-    <option name="width" value="1419" />
-    <option name="height" value="957" />
+    <option name="x" value="54" />
+    <option name="y" value="-8" />
+    <option name="width" value="1874" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -168,8 +397,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -189,83 +416,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sassport-example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="editor.config.accepted" value="true" />
     <property name="js-jscs-nodeInterpreter" value="C:\dev\nodejs\node.exe" />
     <property name="SearchEverywhereHistoryKey" value="verbose&#9;null&#9;null" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="typescript-compiler-editor-notification" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -275,13 +436,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Source\GitHub\angular2-aot-webpack2-typescript-dotnet\master\tools\docs\images" />
+      <recent name="C:\Source\Atlas\config" />
+      <recent name="C:\Source\Atlas" />
+      <recent name="C:\Source\Atlas\wwwroot" />
+      <recent name="C:\Source\Atlas\tools\docs\images" />
       <recent name="C:\Source\GitHub\angular2-aot-webpack2-typescript-dotnet\master" />
-      <recent name="C:\Source\GitHub\angular2-aot-webpack2-typescript-dotnet\master\tools" />
-      <recent name="C:\Source\GitHub\angular2-aot-webpack2-typescript-dotnet\master\.idea" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.JIT: Build Production">
+  <component name="RunManager" selected="Node.js.Debug Webpack (Production)">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -372,28 +534,43 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="21">
+    <configuration default="false" name="Debug Webpack (DLLs)" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="project" path-to-js-file="webpack.debugger.cli.js" working-dir="$PROJECT_DIR$">
+      <envs>
+        <env name="NODE_ENV" value="dlls" />
+      </envs>
+      <profiling v8-profiler-path="" />
+      <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSProfilingRunConfigurationExtension">
+        <profiling v8-profiler-path="" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <list size="26">
       <item index="0" class="java.lang.String" itemvalue="Compound.AOT: Compile + Build Dev + .NET Server (Dev)" />
       <item index="1" class="java.lang.String" itemvalue="Compound.AOT: Compile + Build Production + .NET Server (Production)" />
       <item index="2" class="java.lang.String" itemvalue="Compound.AOT: Dev Server  + .NET Server (Dev)" />
       <item index="3" class="java.lang.String" itemvalue="Compound.JIT: Build Production: + .NET Server (Production)" />
       <item index="4" class="java.lang.String" itemvalue="Compound.JIT: Dev Server + .NET Server (Dev)" />
-      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.Debug This Application" />
-      <item index="6" class="java.lang.String" itemvalue="Node.js.Debug Webpack (Production)" />
-      <item index="7" class="java.lang.String" itemvalue="Node.js.Debug Webpack-Dev-Server (Production)" />
-      <item index="8" class="java.lang.String" itemvalue="npm.JIT: Dev Server" />
-      <item index="9" class="java.lang.String" itemvalue="npm.JIT: Build Production" />
-      <item index="10" class="java.lang.String" itemvalue="npm.JIT: Build Dev" />
-      <item index="11" class="java.lang.String" itemvalue="npm.AOT: Build Dev" />
+      <item index="5" class="java.lang.String" itemvalue="Compound.AOT: Compile + Build Prod + .NET Server (Prod)" />
+      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.Debug This Application" />
+      <item index="7" class="java.lang.String" itemvalue="Node.js.Debug Webpack (Production)" />
+      <item index="8" class="java.lang.String" itemvalue="Node.js.Debug Webpack (DLLs)" />
+      <item index="9" class="java.lang.String" itemvalue="Node.js.Debug Webpack-Dev-Server (Dev)" />
+      <item index="10" class="java.lang.String" itemvalue="npm.Run .NET Server: DEV" />
+      <item index="11" class="java.lang.String" itemvalue="npm.Run .NET Server: Production" />
       <item index="12" class="java.lang.String" itemvalue="npm.AOT: Build Production" />
-      <item index="13" class="java.lang.String" itemvalue="npm.AOT: Dev Server" />
-      <item index="14" class="java.lang.String" itemvalue="npm.Compile + Build Dev: AOT" />
-      <item index="15" class="java.lang.String" itemvalue="npm.Compile + Build Production: AOT" />
-      <item index="16" class="java.lang.String" itemvalue="npm.Compile Only: AOT" />
-      <item index="17" class="java.lang.String" itemvalue="npm.NPM Install" />
-      <item index="18" class="java.lang.String" itemvalue="npm.One Time Setup" />
-      <item index="19" class="java.lang.String" itemvalue="npm.Run .NET Server: DEV" />
-      <item index="20" class="java.lang.String" itemvalue="npm.Run .NET Server: Production" />
+      <item index="13" class="java.lang.String" itemvalue="npm.Build Webpack DLLs" />
+      <item index="14" class="java.lang.String" itemvalue="npm..NET Server: Production" />
+      <item index="15" class="java.lang.String" itemvalue="npm..NET Server: DEV" />
+      <item index="16" class="java.lang.String" itemvalue="npm.JIT: Dev Server" />
+      <item index="17" class="java.lang.String" itemvalue="npm.JIT: Build Production" />
+      <item index="18" class="java.lang.String" itemvalue="npm.JIT: Build Dev" />
+      <item index="19" class="java.lang.String" itemvalue="npm.AOT: Build Dev" />
+      <item index="20" class="java.lang.String" itemvalue="npm.AOT: Dev Server" />
+      <item index="21" class="java.lang.String" itemvalue="npm.Compile + Build Dev: AOT" />
+      <item index="22" class="java.lang.String" itemvalue="npm.Compile + Build Production: AOT" />
+      <item index="23" class="java.lang.String" itemvalue="npm.Compile Only: AOT" />
+      <item index="24" class="java.lang.String" itemvalue="npm.NPM Install" />
+      <item index="25" class="java.lang.String" itemvalue="npm.One Time Setup" />
     </list>
     <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
@@ -438,7 +615,15 @@
       <workItem from="1474560031169" duration="33720000" />
       <workItem from="1474662641709" duration="168000" />
       <workItem from="1474663612436" duration="615000" />
-      <workItem from="1474669579059" duration="585000" />
+      <workItem from="1474664412223" duration="5871000" />
+      <workItem from="1474670356341" duration="4852000" />
+      <workItem from="1474910921303" duration="599000" />
+      <workItem from="1474912691804" duration="170000" />
+      <workItem from="1474916084788" duration="4176000" />
+      <workItem from="1474927017275" duration="224000" />
+      <workItem from="1474927312673" duration="197000" />
+      <workItem from="1474929117498" duration="50368000" />
+      <workItem from="1475100153438" duration="401000" />
     </task>
     <task id="LOCAL-00003" summary="Add sass Conditions: sidebar enabled true/false in variables.scss&#10;Create Ticket component; Integrate Ticket component with backend subscriber API, async request loads data to component.">
       <created>1474649236980</created>
@@ -468,30 +653,114 @@
       <option name="project" value="LOCAL" />
       <updated>1474663741914</updated>
     </task>
-    <task id="LOCAL-00007" summary="Update readme, add missing image.">
-      <created>1474670056569</created>
+    <task id="LOCAL-00007" summary="Update Readme - add missing docs image">
+      <created>1474664534191</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1474670056569</updated>
+      <updated>1474664534191</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Webpack lazy-loading (require.ensure) integrated with Kendo UI for jQuery on HomeComponent and SubscriberComponent.">
+      <created>1474669640110</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1474669640110</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Update readme, add missing image.">
+      <created>1474670066862</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1474670066862</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update readme, add missing files.">
+      <created>1474670130217</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1474670130217</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Update readme, add index.html to wwwroot.">
+      <created>1474670410530</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1474670410530</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Get sass-js-vars loader to work with vars in config file.">
+      <created>1474990678135</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1474990678135</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Get AOT compilation to work finally. &#10;Setup DLL reference plugin and begin testing it, need to finish integrating it still.&#10;Fix errors with duplicate declarations of DetailModule&#10;Remove Kendo UI for angular2 buttons module due to errors during AOT compilation.&#10;Refactor structure of wwwroot to contains /js folder for js files.">
+      <created>1475008924696</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1475008924696</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Switch sidebar flag into variables.scss from sass-js-variables.js&#10;Update run configs&#10;Update NPM scripts">
+      <created>1475011686231</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1475011686231</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Get DLL reference bundles working with AOT application build. Speeds up webpack builds by 40% approximately.">
+      <created>1475093143595</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1475093143595</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Get DLL reference bundles working with AOT application build. Speeds up webpack builds by 40% approximately.">
+      <created>1475093228787</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1475093228787</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Get DLL reference bundles working with AOT application build. Speeds up webpack builds by 40% approximately.">
+      <created>1475093492311</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1475093492311</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Update Regex for CompressionPlugin, &#10;Add CompressionPlugin to DLLs build.&#10;Include new Gzipped files.">
+      <created>1475096852562</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1475096852562</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Enable serving of compressed Gzip assets&#10;Default to .Gz version of js and css files.">
+      <created>1475099967232</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1475099967232</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48986000" />
+    <option name="totallyTimeSpent" value="115259000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="219" y="45" width="1419" height="957" extended-state="0" />
+    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25459898" sideWeight="0.3543223" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20837927" sideWeight="0.3543223" order="4" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.5022051" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="3003" y="-509" width="1072" height="875" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38471177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276414" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2553305" sideWeight="0.49380806" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.49779493" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25303197" sideWeight="0.5247678" order="3" side_tool="true" content_ui="tabs" />
@@ -502,15 +771,33 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29437706" sideWeight="0.5827108" order="9" side_tool="true" content_ui="tabs" x="639" y="443" width="1814" height="1039" />
+      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29437706" sideWeight="0.5805763" order="9" side_tool="true" content_ui="tabs" x="639" y="443" width="1814" height="1039" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870865" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29437706" sideWeight="0.41728923" order="8" side_tool="false" content_ui="tabs" x="62" y="0" width="967" height="1082" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29437706" sideWeight="0.4194237" order="8" side_tool="false" content_ui="tabs" x="62" y="0" width="967" height="1082" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.176957" sideWeight="0.6456777" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.49779493" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870865" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -532,20 +819,710 @@
     <MESSAGE value="Add sass-vars-loaders to load sass-js-variables.js - prepends module.exports into all sass files&#10;" />
     <MESSAGE value="Update repo with latest file - Sass-vars-loader, sidebar conditional show/hide, ticket component with working API request." />
     <MESSAGE value="Allow workspace.xml" />
+    <MESSAGE value="Update Readme - add missing docs image" />
+    <MESSAGE value="Webpack lazy-loading (require.ensure) integrated with Kendo UI for jQuery on HomeComponent and SubscriberComponent." />
     <MESSAGE value="Update readme, add missing image." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update readme, add missing image." />
+    <MESSAGE value="Update readme, add missing files." />
+    <MESSAGE value="Update readme, add index.html to wwwroot." />
+    <MESSAGE value="Get sass-js-vars loader to work with vars in config file." />
+    <MESSAGE value="Get AOT compilation to work finally. &#10;Setup DLL reference plugin and begin testing it, need to finish integrating it still.&#10;Fix errors with duplicate declarations of DetailModule&#10;Remove Kendo UI for angular2 buttons module due to errors during AOT compilation.&#10;Refactor structure of wwwroot to contains /js folder for js files." />
+    <MESSAGE value="Switch sidebar flag into variables.scss from sass-js-variables.js&#10;Update run configs&#10;Update NPM scripts" />
+    <MESSAGE value="Get DLL reference bundles working with AOT application build. Speeds up webpack builds by 40% approximately." />
+    <MESSAGE value="Update Regex for CompressionPlugin, &#10;Add CompressionPlugin to DLLs build.&#10;Include new Gzipped files." />
+    <MESSAGE value="Enable serving of compressed Gzip assets&#10;Default to .Gz version of js and css files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Enable serving of compressed Gzip assets&#10;Default to .Gz version of js and css files." />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules_custom/@epegzz/sass-vars-loader/index.js</url>
+          <line>28</line>
+          <option name="timeStamp" value="165" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules_custom/@epegzz/sass-vars-loader/index.js</url>
+          <line>2</line>
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/src/app-components/app/app.component.ts</url>
+          <line>58</line>
+          <option name="timeStamp" value="169" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/src/vendors.ts</url>
+          <line>27</line>
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/src/app-components/nav/sidebar/nav-sidebar.component.ts</url>
+          <line>37</line>
+          <option name="timeStamp" value="200" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/src/vendors.ts</url>
+          <line>13</line>
+          <option name="timeStamp" value="205" />
+        </line-breakpoint>
+        <line-breakpoint type="javascript">
+          <url>file://$PROJECT_DIR$/config/webpack.common.js</url>
+          <line>119</line>
+          <option name="timeStamp" value="209" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/config/webpack.dll.js</url>
+          <line>21</line>
+          <option name="timeStamp" value="211" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="162" />
+      <option name="time" value="217" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="NodeJSConfigurationType">
+        <watch expression="commonConfig.module.loaders[&quot;0&quot;].loaders" />
+        <watch expression="ENV" language="JavaScript" />
+        <watch expression="DEBUG" language="JavaScript" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/config/webpack.conditionals.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+          <folding>
+            <element signature="e#2338#2415#0" expanded="false" />
+            <element signature="e#3967#3995#0" expanded="false" />
+            <element signature="e#4091#4097#0" expanded="false" />
+            <element signature="e#8185#8219#0" expanded="false" />
+            <element signature="e#8713#9459#0" expanded="false" />
+            <element signature="e#9129#9153#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3638">
+          <caret line="228" column="35" selection-start-line="228" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#360#419#0" expanded="false" />
+            <element signature="e#795#823#0" expanded="false" />
+            <element signature="e#2117#2221#0" expanded="false" />
+            <element signature="e#2228#2265#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.dll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="94" column="29" selection-start-line="94" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.production.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2431">
+          <caret line="237" column="9" selection-start-line="237" selection-start-column="9" selection-end-line="237" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#33#0" expanded="false" />
+            <element signature="e#291#317#0" expanded="false" />
+            <element signature="e#318#380#0" expanded="false" />
+            <element signature="e#1021#1049#0" expanded="false" />
+            <element signature="e#1370#1573#0" expanded="false" />
+            <element signature="e#1668#1806#0" expanded="false" />
+            <element signature="e#1828#1984#0" expanded="false" />
+            <element signature="e#2029#2251#0" expanded="false" />
+            <element signature="e#2298#2526#0" expanded="false" />
+            <element signature="e#2583#2791#0" expanded="false" />
+            <element signature="e#2846#2976#0" expanded="false" />
+            <element signature="e#2998#3199#0" expanded="false" />
+            <element signature="e#3349#3628#0" expanded="false" />
+            <element signature="e#5231#5425#0" expanded="false" />
+            <element signature="e#5461#5735#0" expanded="false" />
+            <element signature="e#5772#6079#0" expanded="false" />
+            <element signature="e#6472#6723#0" expanded="false" />
+            <element signature="e#7567#7816#0" expanded="false" />
+            <element signature="e#7969#8187#0" expanded="false" />
+            <element signature="e#8244#8475#0" expanded="false" />
+            <element signature="e#8745#8921#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Shared/_Layout.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1819">
+          <caret line="107" column="25" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aot-compiled/src/app-components/about/about.component.ngfactory.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/about/about.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.routes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <folding>
+            <element signature="e#155#209#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1207">
+            <caret line="71" column="484" selection-start-line="71" selection-start-column="484" selection-end-line="71" selection-end-column="484" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#360#419#0" expanded="false" />
+            <element signature="e#795#823#0" expanded="false" />
+            <element signature="e#2117#2221#0" expanded="false" />
+            <element signature="e#2228#2265#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@epegzz/sass-vars-loader/index.js" />
+    <entry file="file://$PROJECT_DIR$/src/app-components/services/utility.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.routes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <folding>
+            <element signature="e#155#209#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1207">
+            <caret line="71" column="484" selection-start-line="71" selection-start-column="484" selection-end-line="71" selection-end-column="484" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#360#419#0" expanded="false" />
+            <element signature="e#795#823#0" expanded="false" />
+            <element signature="e#2117#2221#0" expanded="false" />
+            <element signature="e#2228#2265#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@epegzz/sass-vars-loader/index.js" />
+    <entry file="file://$PROJECT_DIR$/src/app-components/services/utility.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.routes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <folding>
+            <element signature="e#155#209#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1207">
+            <caret line="71" column="484" selection-start-line="71" selection-start-column="484" selection-end-line="71" selection-end-column="484" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#360#419#0" expanded="false" />
+            <element signature="e#795#823#0" expanded="false" />
+            <element signature="e#2117#2221#0" expanded="false" />
+            <element signature="e#2228#2265#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@epegzz/sass-vars-loader/index.js" />
+    <entry file="file://$PROJECT_DIR$/src/app-components/services/utility.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.routes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <folding>
+            <element signature="e#155#209#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1207">
+            <caret line="71" column="484" selection-start-line="71" selection-start-column="484" selection-end-line="71" selection-end-column="484" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#360#419#0" expanded="false" />
+            <element signature="e#795#823#0" expanded="false" />
+            <element signature="e#2117#2221#0" expanded="false" />
+            <element signature="e#2228#2265#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/services/utility.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.routes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <folding>
+            <element signature="e#155#209#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1207">
+            <caret line="71" column="484" selection-start-line="71" selection-start-column="484" selection-end-line="71" selection-end-column="484" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="106" column="42" selection-start-line="106" selection-start-column="42" selection-end-line="106" selection-end-column="42" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#360#419#0" expanded="false" />
+            <element signature="e#795#823#0" expanded="false" />
+            <element signature="e#2117#2221#0" expanded="false" />
+            <element signature="e#2228#2265#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vendors.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/home/home.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/subscriber/subscriber.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1547">
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/services/utility.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.routes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <folding>
+            <element signature="e#155#209#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1207">
+            <caret line="71" column="484" selection-start-line="71" selection-start-column="484" selection-end-line="71" selection-end-column="484" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="106" column="42" selection-start-line="106" selection-start-column="42" selection-end-line="106" selection-end-column="42" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#360#419#0" expanded="false" />
+            <element signature="e#795#823#0" expanded="false" />
+            <element signature="e#2117#2221#0" expanded="false" />
+            <element signature="e#2228#2265#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vendors.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/home/home.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/subscriber/subscriber.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1547">
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/services/utility.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.routes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <folding>
+            <element signature="e#155#209#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vendors.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/home/home.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/subscriber/subscriber.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1547">
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/services/utility.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Shared/_Layout.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="74" selection-start-line="0" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app-components/app/app.routes.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -558,7 +1535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="115" selection-start-line="17" selection-start-column="115" selection-end-line="17" selection-end-column="115" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -566,22 +1542,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.routes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/nav/sidebar/nav-sidebar.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app-components/app/app.routes.ts">
@@ -596,23 +1585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.routes.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="37" column="28" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/nav/sidebar/nav-sidebar.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4029,13 +5001,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/dhtmlxSuite/sources/dhtmlxCommon/codebase/dhtmlxcore.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/dhtmlxSuite/codebase/dhtmlx.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/webpack-webstorm-debugger-script/webstorm-debugger.js" />
-    <entry file="file://$USER_HOME$/AppData/Roaming/npm/node_modules/webpack/bin/webpack.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-901">
-          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/4.4.7/core-modules/events.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -4043,7 +5008,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/webpack/bin/webpack.js" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/4.4.7/core-modules/path.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -4241,13 +5205,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/webpack.entry.bundle.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -4301,13 +5258,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/@angularclass/hmr/dist/index.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/@angularclass/hmr/dist/helpers.d.ts" />
     <entry file="file://$PROJECT_DIR$/node_modules/@angularclass/hmr/state.js" />
-    <entry file="file://$PROJECT_DIR$/src/app-components/home/home.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/spec-bundle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
@@ -4315,29 +5265,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/app/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@angular/common/package.json" />
-    <entry file="file://$PROJECT_DIR$/.babelrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app-components/subscriber/subscriber.component.ngfactory.ts" />
-    <entry file="file://$PROJECT_DIR$/src/app-components/404/notfound404.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tslint.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-868">
@@ -4477,13 +5406,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/jquery/package.json" />
     <entry file="file://$PROJECT_DIR$/node_modules/@types/materialize-css/index.d.ts" />
     <entry file="file://$PROJECT_DIR$/node_modules/@types/node/index.d.ts" />
-    <entry file="file://$PROJECT_DIR$/src/polyfills.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="807">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/aot-compiled/node_modules/@angular/common/src/common_module.ngfactory.ts" />
     <entry file="file://$PROJECT_DIR$/Properties/launchSettings.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -4504,24 +5426,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@angular/compiler-cli/src/static_reflector.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/@angular/router/src/router_module.d.ts" />
-    <entry file="file://$PROJECT_DIR$/aot-compiled/src/app-components/404/notfound404.component.ngfactory.ts" />
-    <entry file="file://$PROJECT_DIR$/aot-compiled/src/app-components/app/app.module.ngfactory.ts" />
     <entry file="file://$PROJECT_DIR$/aot-compiled/src/app-components/app/app.component.ngfactory.ts" />
     <entry file="file://$PROJECT_DIR$/aot-compiled/src/app-components/nav/footer/nav-footer.component.ngfactory.ts" />
     <entry file="file://$PROJECT_DIR$/aot-compiled/src/app-components/nav/header/nav-header.component.ngfactory.ts" />
-    <entry file="file://$PROJECT_DIR$/aot-compiled/src/app-components/about/about.component.ngfactory.ts" />
     <entry file="file://$PROJECT_DIR$/aot-compiled/src/app-components/+detail/index.ngfactory.ts" />
     <entry file="file://$PROJECT_DIR$/aot-compiled/src/app-components/+detail/detail.component.ngfactory.ts" />
     <entry file="file://$PROJECT_DIR$/aot-compiled/src/app-components/login/login.component.ngfactory.ts" />
     <entry file="file://$PROJECT_DIR$/aot-compiled/src/app-components/home/home.component.ngfactory.ts" />
     <entry file="file://$PROJECT_DIR$/aot-compiled/src/app-components/subscriber/subscriber.component.ngfactory.ts" />
-    <entry file="file://$PROJECT_DIR$/src/app-components/about/about.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/runConfigurations/Run__NET_Server.xml" />
     <entry file="file://$PROJECT_DIR$/.idea/runConfigurations/Dev_Server__AOT.xml" />
     <entry file="file://$PROJECT_DIR$/.idea/runConfigurations/Run__NET_Server__DEV__All_Reports_.xml" />
@@ -4556,13 +5468,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/css/vendors.css" />
     <entry file="file://$PROJECT_DIR$/wwwroot/css/app.css" />
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="849">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/javascript/nodejs/library/node-globals-stub.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -4580,33 +5485,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Startup.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="38" column="79" selection-start-line="38" selection-start-column="79" selection-end-line="38" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@progress/kendo-angular-buttons/dist/npm/js/buttons.module.d.ts" />
     <entry file="file://$PROJECT_DIR$/node_modules/@progress/kendo-angular-buttons/dist/npm/css/main.css" />
     <entry file="file://$PROJECT_DIR$/node_modules/@progress/kendo-angular-grid/dist/npm/css/main.css" />
     <entry file="file://$PROJECT_DIR$/node_modules/@progress/kendo-angular-grid/dist/npm/js/grid.component.d.ts" />
     <entry file="file://$PROJECT_DIR$/node_modules/@progress/kendo-angular-grid/dist/npm/js/grid.component.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/@progress/kendo-angular-grid/dist/npm/js/main.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/webpack/lib/NamedModulesPlugin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/webpack/lib/webpack.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -4670,36 +5554,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/+detail/detail.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/+detail/detail.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/common.bundle.js" />
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stats.json">
-      <provider editor-type-id="LargeFileEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="753">
           <caret line="76839" column="1" selection-start-line="76839" selection-start-column="1" selection-end-line="76839" selection-end-column="1" />
         </state>
+      </provider>
+      <provider editor-type-id="LargeFileEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/app-entry.bundle.js" />
@@ -4732,13 +5595,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@types/systemjs/index.d.ts" />
-    <entry file="file://$PROJECT_DIR$/tsconfig.aot.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app-components/ticket/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -4774,30 +5630,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/custom-typings.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="64" column="1" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/chunk.0.js" />
-    <entry file="file://$PROJECT_DIR$/Views/Shared/_Layout.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/test.json" />
     <entry file="file://$PROJECT_DIR$/node_modules/purify-css/src/utils/PrintUtil.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/tapable/lib/Tapable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/purify-css/src/purifycss.js" />
     <entry file="file://$PROJECT_DIR$/wwwroot/css/vendors.style.css" />
     <entry file="file://$PROJECT_DIR$/wwwroot/css/app.style.css" />
@@ -4830,20 +5665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@angular/compiler/bundles/compiler.umd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14125" column="36" selection-start-line="14125" selection-start-column="36" selection-end-line="14125" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.debugger.cli.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.debugger.programmatic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -4872,13 +5693,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/webpack/schemas/webpackOptionsSchema.json" />
-    <entry file="file://$PROJECT_DIR$/node_modules/webpack/bin/convert-argv.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="412" column="56" selection-start-line="412" selection-start-column="56" selection-end-line="412" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/7.0.0-nightly2016091353178f908f/core-modules/fs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
@@ -4954,38 +5768,10 @@
     <entry file="file://$PROJECT_DIR$/config/empty.ts" />
     <entry file="file://$PROJECT_DIR$/config/debug-webpack.js" />
     <entry file="file://$PROJECT_DIR$/config/head-config.common.js" />
-    <entry file="file://$PROJECT_DIR$/config/helpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/webpack/lib/ContextReplacementPlugin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.bootstrap.aot.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/angular2-jwt/angular2-jwt.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -5000,27 +5786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/ticket/ticket.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/+detail/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1662">
-          <caret line="116" column="58" selection-start-line="116" selection-start-column="58" selection-end-line="116" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -5052,27 +5817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/home/home.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/subscriber/subscriber.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.bootstrap.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/styles/appwide/display.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -5088,7 +5832,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@epegzz/sass-vars-loader/package.json" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@epegzz/sass-vars-loader/index.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/sass-loader/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
@@ -5114,13 +5857,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/sassport-loader/example/build/main.css" />
     <entry file="file://$PROJECT_DIR$/node_modules/sassport-loader/example/webpack.config.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/sassport-loader/example/build/bundle.js" />
-    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/sassport-loader/example/styles.scss" />
     <entry file="file://$PROJECT_DIR$/node_modules/sassport-loader/example/my_colors.js" />
     <entry file="file://$PROJECT_DIR$/src/assets/styles/appwide/alignments.scss">
@@ -5158,24 +5894,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/styles/appwide/susy-grid-config.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app-components/home/home.style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/nav/sidebar/nav-sidebar.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="11" column="142" selection-start-line="11" selection-start-column="142" selection-end-line="11" selection-end-column="142" />
         </state>
       </provider>
     </entry>
@@ -5200,13 +5922,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/+detail/detail.routes.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app-components/about/about.style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -5225,13 +5940,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/sassport-loader/node_modules/async/lib/async.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/sassport-loader/index.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/sass-resources-loader/lib/loader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/autoprefixer/lib/autoprefixer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
@@ -5239,24 +5947,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/nav/header/nav-header.style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/styles/appwide-metastyles.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="217" column="39" selection-start-line="217" selection-start-column="39" selection-end-line="217" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -5274,38 +5968,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/styles/sassport-module.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/common/forceChangeDetection.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/extract-text-webpack-plugin/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="105" column="9" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/webpack.production.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="227" column="0" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -5323,52 +5989,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/chunk.jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/+detail/detail.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/styles/variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/styles/sass-js-variables.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/ticket/ticket.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/chunk.jquery.js" />
     <entry file="file://$PROJECT_DIR$/src/app-components/ticket/ticket.style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="100" column="17" selection-start-line="100" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -5386,13 +6011,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/services/utility.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app-components/login/login.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
@@ -5400,69 +6018,656 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vendors.ts">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/webpack.development.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1777">
-          <caret line="50" column="23" selection-start-line="50" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/webpack.common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="423" column="18" selection-start-line="423" selection-start-column="18" selection-end-line="423" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.routes.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="37" column="28" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="153">
+          <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app-components/nav/sidebar/nav-sidebar.template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="277">
           <caret line="17" column="115" selection-start-line="17" selection-start-column="115" selection-end-line="17" selection-end-column="115" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/chunk.kendo.for.jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="107" column="29" selection-start-line="107" selection-start-column="29" selection-end-line="107" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/nav/header/nav-header.style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/subscriber/subscriber.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1547">
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="374">
-            <caret line="162" column="0" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
-            <folding />
+          <first_editor relative-caret-position="820">
+            <caret line="71" column="484" selection-start-line="71" selection-start-column="484" selection-end-line="71" selection-end-column="484" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/wwwroot/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/node_modules/@epegzz/sass-vars-loader/index.js" />
+    <entry file="file://$PROJECT_DIR$/src/app-components/home/home.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.aot.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/styles/appwide/susy-grid-config.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules_custom/@epegzz/sass-vars-loader/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/home/home.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="89" column="61" selection-start-line="89" selection-start-column="61" selection-end-line="89" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@angular/compiler/bundles/compiler.umd.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="30" column="31826" selection-start-line="30" selection-start-column="31826" selection-end-line="30" selection-end-column="31826" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/+detail/detail.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/common/forceChangeDetection.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/+detail/detail.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/dll.polyfills.bundle.js" />
+    <entry file="file://$PROJECT_DIR$/wwwroot/dll.vendors.bundle.js" />
+    <entry file="file://$PROJECT_DIR$/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/dlls/vendors-manifest.json" />
+    <entry file="file://$PROJECT_DIR$/config/dlls/polyfills-manifest.json" />
+    <entry file="file://$PROJECT_DIR$/src/app-components/+detail/detail.routes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/webpack/lib/IgnorePlugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/webpack/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="364" column="23" selection-start-line="364" selection-start-column="23" selection-end-line="364" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/webpack/lib/NamedModulesPlugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/reflect-metadata/Reflect.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="672" column="20" selection-start-line="672" selection-start-column="20" selection-end-line="672" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@angular/core/src/util/decorators.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="166" column="3" selection-start-line="166" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/dlls/vendors-manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="821" column="14" selection-start-line="821" selection-start-column="14" selection-end-line="821" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@angular/compiler/bundles/compiler.umd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14152" column="166" selection-start-line="14152" selection-start-column="166" selection-end-line="14152" selection-end-column="166" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/about/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/app/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/+detail/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.routes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/+detail/detail.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/ticket/ticket.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aot-compiled/src/app-components/ticket/ticket.component.ngfactory.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="471" column="37" selection-start-line="471" selection-start-column="37" selection-end-line="471" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/angular2-jwt/angular2-jwt.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="73" column="2" selection-start-line="73" selection-start-column="2" selection-end-line="73" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/dlls/polyfills-manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3532">
+          <caret line="300" column="15" selection-start-line="300" selection-start-column="13" selection-end-line="300" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/styles/variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aot-compiled/src/app-components/404/notfound404.component.ngfactory.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aot-compiled/src/app-components/app/app.module.ngfactory.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="367" column="38" selection-start-line="367" selection-start-column="38" selection-end-line="367" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/404/notfound404.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/styles/sass-js-variables.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/angular2-jwt/angular2-jwt.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/ticket/ticket.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="57" column="141" selection-start-line="57" selection-start-column="141" selection-end-line="57" selection-end-column="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/webpack/lib/DllPlugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/dlls/dll.polyfills.bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/dlls/dll.commons.bundle.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/extract-text-webpack-plugin/loader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/enhanced-resolve/lib/ParsePlugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/services/utility.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/js/kendo.for.jquery.bundle.map">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+          <caret line="14" column="165" selection-start-line="14" selection-start-column="165" selection-end-line="14" selection-end-column="165" />
+        </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/polyfills.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webpack.entry.bundle.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/custom-typings.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/js/app.bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3009">
+          <caret line="168" column="7" selection-start-line="168" selection-start-column="7" selection-end-line="168" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/sass-resources-loader/lib/loader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/tapable/lib/Tapable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="232" column="3" selection-start-line="232" selection-start-column="3" selection-end-line="232" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app.bootstrap.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app.bootstrap.aot.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/dlls/dll.vendors.bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92260">
+          <caret line="44560" column="40" selection-start-line="44560" selection-start-column="40" selection-end-line="44560" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+          <folding>
+            <element signature="e#155#209#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.development.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1371">
+          <caret line="175" column="19" selection-start-line="175" selection-start-column="19" selection-end-line="175" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/extract-text-webpack-plugin/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-411">
+          <caret line="105" column="9" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.debugger.cli.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/npm/node_modules/webpack/bin/webpack.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/webpack/bin/webpack.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="140" column="38" selection-start-line="140" selection-start-column="38" selection-end-line="140" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/app/app.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/webpack/bin/convert-argv.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="110" column="6" selection-start-line="110" selection-start-column="6" selection-end-line="110" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vendors.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/nav/sidebar/nav-sidebar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aot-compiled/src/app-components/about/about.component.ngfactory.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.production.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2431">
+          <caret line="237" column="9" selection-start-line="237" selection-start-column="9" selection-end-line="237" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#33#0" expanded="false" />
+            <element signature="e#291#317#0" expanded="false" />
+            <element signature="e#318#380#0" expanded="false" />
+            <element signature="e#1021#1049#0" expanded="false" />
+            <element signature="e#1370#1573#0" expanded="false" />
+            <element signature="e#1668#1806#0" expanded="false" />
+            <element signature="e#1828#1984#0" expanded="false" />
+            <element signature="e#2029#2251#0" expanded="false" />
+            <element signature="e#2298#2526#0" expanded="false" />
+            <element signature="e#2583#2791#0" expanded="false" />
+            <element signature="e#2846#2976#0" expanded="false" />
+            <element signature="e#2998#3199#0" expanded="false" />
+            <element signature="e#3349#3628#0" expanded="false" />
+            <element signature="e#5231#5425#0" expanded="false" />
+            <element signature="e#5461#5735#0" expanded="false" />
+            <element signature="e#5772#6079#0" expanded="false" />
+            <element signature="e#6472#6723#0" expanded="false" />
+            <element signature="e#7567#7816#0" expanded="false" />
+            <element signature="e#7969#8187#0" expanded="false" />
+            <element signature="e#8244#8475#0" expanded="false" />
+            <element signature="e#8745#8921#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1819">
+          <caret line="107" column="25" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/Shared/_Layout.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.conditionals.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+          <folding>
+            <element signature="e#2338#2415#0" expanded="false" />
+            <element signature="e#3967#3995#0" expanded="false" />
+            <element signature="e#4091#4097#0" expanded="false" />
+            <element signature="e#8185#8219#0" expanded="false" />
+            <element signature="e#8713#9459#0" expanded="false" />
+            <element signature="e#9129#9153#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="228" column="35" selection-start-line="228" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#148#193#0" expanded="false" />
+            <element signature="e#360#419#0" expanded="false" />
+            <element signature="e#795#823#0" expanded="false" />
+            <element signature="e#2117#2221#0" expanded="false" />
+            <element signature="e#2228#2265#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.dll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="94" column="29" selection-start-line="94" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/about/about.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
           <folding />
         </state>
       </provider>

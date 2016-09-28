@@ -3,39 +3,31 @@
 // Docs - https://github.com/oddbird/susy
 //---------------------------------------------//
 
-// ============================
-// Reference Paths for Visual Studio SASS Syntax / Intellisense | KEEP THIS OR INTELLISENSE WILL NOT WORK!
-// REQUIRES 3 FORWARD SLASHES (///) TO WORK PROPERLY
-
-/// <reference path="../../../../node_modules/susy/sass/susy/language/_susy.scss" />
-/// <reference path="./variables.scss" />
-//
-// ============================
 @import '../../../assets/styles/appwide-metastyles.scss';
 
 $susy: (
-    columns:                    24,
-    container:                  $hd-widescreen,
-    global-box-sizing:          border-box,
-    gutters:                    1/8, //<gutter-width>/<column-width> = // 20px gutters & 70px columns
-    gutter-position:            after,
-    use-custom: (
-        clearfix:               false,
-        background-image:       true,
-        breakpoint:             true,
-        box-sizing:             false,
-    ),
-    debug:   (
-         image: show,
-         output: overlay, //background, overlay
-         toggle: bottom right,
-    ),
+   columns: 24,
+   container: $hd-widescreen,
+   global-box-sizing: border-box,
+   gutters: 1/8, //<gutter-width>/<column-width> = // 20px gutters & 70px columns
+   gutter-position: after,
+   use-custom: (
+      clearfix: false,
+      background-image: true,
+      breakpoint: true,
+      box-sizing: false,
+   ),
+   debug: (
+      image: $susyDebug,
+      output: overlay, //background, overlay
+      toggle: bottom right,
+   ),
 );
 
 @include border-box-sizing; //uses border box sizing like the old IE
 
 .app-container {
-  @include container(100%);
-  padding: 0;
+   @include container(100%);
+   padding: 0;
 }
 

@@ -2,15 +2,16 @@
  * @author: @AngularClass
  */
 
-const helpers = require('./helpers');
 const webpackMerge = require('webpack-merge'); // used to merge webpack configs
+const webpack = require('webpack');
+const helpers = require('./helpers');
 const commonConfig = require('./webpack.common.js'); // the settings that are common to prod and dev
 
 /**
  * Webpack Plugins
  */
 // const DashboardPlugin = require('webpack-dashboard/plugin');
-const DefinePlugin = require('webpack/lib/DefinePlugin');
+// const DefinePlugin = require('webpack/lib/DefinePlugin');
 const NamedModulesPlugin = require('webpack/lib/NamedModulesPlugin');
 
 
@@ -47,8 +48,8 @@ module.exports = webpackMerge(commonConfig,
      * See: https://github.com/webpack/docs/wiki/build-performance#sourcemaps
      */
 
-    devtool: 'eval',
-    // devtool: 'cheap-module-source-map',
+    // devtool: 'eval',
+    devtool: 'cheap-module-source-map',
 
 
     /**
@@ -71,7 +72,7 @@ module.exports = webpackMerge(commonConfig,
        *
        * See: http://webpack.github.io/docs/configuration.html#output-filename
        */
-      filename: '[name].bundle.js',
+      filename: 'js/[name].bundle.js',
 
       /**
        * The filename of the SourceMaps for the JavaScript files.
@@ -79,14 +80,14 @@ module.exports = webpackMerge(commonConfig,
        *
        * See: http://webpack.github.io/docs/configuration.html#output-sourcemapfilename
        */
-      sourceMapFilename: '[name].map',
+      sourceMapFilename: 'js/[name].map',
 
       /** The filename of non-entry chunks as relative Path
        * inside the output.Path directory.
        *
        * See: http://webpack.github.io/docs/configuration.html#output-chunkfilename
        */
-      chunkFilename: 'chunk.[name].js',
+      chunkFilename: 'js/chunk.[name].js',
 
       /* publicPath is where you want Webpack to make requests for assets.
        * For example, when running webpack-dev-server on a different port than your main app
@@ -110,7 +111,7 @@ module.exports = webpackMerge(commonConfig,
        * See: https://webpack.github.io/docs/list-of-plugins.html#defineplugin
        */
       // NOTE: when adding more properties, make sure you include them in custom-typings.d.ts
-      new DefinePlugin({
+      new webpack.DefinePlugin({
         'ENV': JSON.stringify(METADATA.ENV),
         'HMR': METADATA.HMR,
         'process.env': {

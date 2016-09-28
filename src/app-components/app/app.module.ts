@@ -8,8 +8,8 @@ import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularcla
 /*
  * Kendo UI For Angular 2 Components
  */
-import { ButtonsModule } from '@progress/kendo-angular-buttons';
-import { GridModule } from '@progress/kendo-angular-grid';
+// import { ButtonsModule } from '@progress/kendo-angular-buttons';
+// import { GridModule } from '@progress/kendo-angular-grid';
 
 /*
  * Platform and Environment providers/directives/pipes
@@ -33,7 +33,7 @@ import { NotFound404Component } from '../404/notfound404.component';
 import { NavHeaderComponent } from '../nav/header/nav-header.component';
 import { NavSidebarComponent } from '../nav/sidebar/nav-sidebar.component';
 import { NavFooterComponent } from '../nav/footer/nav-footer.component';
-import { DetailComponent } from '../+detail/detail.component';
+// import { DetailComponent } from '../+detail/detail.component';
 /*
  * AppComponent Wide Services & Utilities
  */
@@ -51,11 +51,12 @@ import { Authentication } from '../services/authentication.service';
 import { DataService } from '../services/data.service';
 import { UtilityService } from '../services/utility.service';
 import { RouteProtection } from '../services/route-protection.service';
-import { AuthHttp } from "angular2-jwt";
+// import { AuthHttp } from "angular2-jwt";
 
 // Declare Services & Utilities as AppComponent Providers
 // Application wide providers
-const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS, AppState, Logging, Authentication, DataService, UtilityService, RouteProtection, AuthHttp];
+const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS, AppState, Logging, Authentication, DataService, UtilityService, RouteProtection//, AuthHttp
+];
 
 
 /**
@@ -66,7 +67,7 @@ const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS, AppState, Logging, Authenticat
    declarations: [ // declarations contains: components, directives and pipes
 
       // Components
-      AppComponent, HomeComponent, AboutComponent, LoginComponent, SubscriberComponent, NotFound404Component, TicketComponent, DetailComponent,
+      AppComponent, HomeComponent, AboutComponent, LoginComponent, SubscriberComponent, NotFound404Component, TicketComponent,// DetailComponent,
 
       // Directives
       NavSidebarComponent, NavHeaderComponent, NavFooterComponent
@@ -75,7 +76,7 @@ const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS, AppState, Logging, Authenticat
 
    ],
    imports: [ // import other modules
-      ButtonsModule, GridModule, BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(ROUTES, { useHash: true }), // true = http://app.com/#/about,
+      /** ButtonsModule, GridModule,*/ BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(ROUTES, { useHash: true }), // true = http://app.com/#/about,
       // false = http://app.com/about
 
    ],
