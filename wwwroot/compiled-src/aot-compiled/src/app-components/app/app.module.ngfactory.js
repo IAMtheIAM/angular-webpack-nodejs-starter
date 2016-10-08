@@ -82,6 +82,7 @@ var AppModuleInjector = (function (_super) {
         _super.call(this, parent, [
             import37.LoginComponentNgFactory,
             import38.TicketComponentNgFactory,
+            import38.TicketComponentNgFactory,
             import39.HomeComponentNgFactory,
             import40.SubscriberComponentNgFactory,
             import37.LoginComponentNgFactory,
@@ -424,17 +425,32 @@ var AppModuleInjector = (function (_super) {
                             component: import51.LoginComponent
                         },
                         {
+                            path: 'detail',
+                            loadChildren: 'es6-promise?,[name]!../+detail/detail.module#DetailModule',
+                            canActivate: [import35.RouteProtection]
+                        },
+                        {
+                            path: 'iframe',
+                            loadChildren: 'es6-promise?,[name]!../+iframe-module/iframe.module#IframeModule',
+                            canActivate: [import35.RouteProtection]
+                        },
+                        {
                             path: 'ticket',
                             component: import52.TicketComponent,
                             canActivate: [import35.RouteProtection]
                         },
                         {
-                            path: 'home',
+                            path: 'ticket/:ticketID',
+                            component: import52.TicketComponent,
+                            canActivate: [import35.RouteProtection]
+                        },
+                        {
+                            path: 'grid1',
                             component: import53.HomeComponent,
                             canActivate: [import35.RouteProtection]
                         },
                         {
-                            path: 'subscriber',
+                            path: 'grid2',
                             component: import54.SubscriberComponent,
                             canActivate: [import35.RouteProtection]
                         },
@@ -445,7 +461,8 @@ var AppModuleInjector = (function (_super) {
                         {
                             path: 'about',
                             component: import55.AboutComponent,
-                            canActivate: [import35.RouteProtection]
+                            canActivate: [import35.RouteProtection],
+                            resolve: { dataBroughtToComponent: import31.DataResolver }
                         },
                         {
                             path: '**',

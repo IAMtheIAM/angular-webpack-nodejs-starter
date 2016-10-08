@@ -4,19 +4,6 @@ const CompressionPlugin = require('compression-webpack-plugin');
 const AutoPrefixer = require('autoprefixer');
 const helpers = require('./helpers');
 const commonConfig = require('./webpack.common.js'); // the settings that are common to prod and dev
-const webpackMerge = require('webpack-merge'); // used to merge webpack configs
-
-// const querystring = require('querystring');
-// const path = require('path');
-// const ExtractTextPlugin = require('extract-text-webpack-plugin');
-// //clear out the parts of commonConfig we don't want here
-// commonConfig.entry = [];
-// commonConfig.resolve = {};
-// commonConfig.externals = {};
-//// get a reference to your required module for shared variables
-// const sassVarsConfig = commonConfig.sassVarsConfig;
-// const DEBUG = commonConfig.DEBUG;
-
 
 // module.exports = webpackMerge(commonConfig,
 module.exports = {
@@ -26,10 +13,11 @@ module.exports = {
       vendors: ['./src/vendors.ts']
    },
    output: {
-      path: helpers.root('wwwroot/dlls'),
-      filename: 'dll.[name].bundle.js',
-      sourceMapFilename: 'dll.[name].map',
-      chunkFilename: 'dll.[id].chunk.js',
+      path: helpers.root('wwwroot'),
+      filename: 'dlls/[name].dll.bundle.js',
+      sourceMapFilename: 'dlls/maps/[name].map',
+      chunkFilename: 'dlls/chunks/[name].chunk.js',
+
 
       // The name of the global variable which the library's
       // require() function will be assigned to

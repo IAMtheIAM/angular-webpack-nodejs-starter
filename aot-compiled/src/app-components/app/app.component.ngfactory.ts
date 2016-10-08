@@ -305,7 +305,7 @@ class _View_AppComponent0 extends import3.DebugAppView<import1.AppComponent> {
   }
 }
 export function viewFactory_AppComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<import1.AppComponent> {
-  if ((renderType_AppComponent === (null as any))) { (renderType_AppComponent = viewUtils.createRenderComponentType('C:/Source/Atlas/src/app-components/app/app.template.html',0,import11.ViewEncapsulation.None,styles_AppComponent,{})); }
+  if ((renderType_AppComponent === (null as any))) { (renderType_AppComponent = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-aot-webpack2-typescript-dotnet/master/src/app-components/app/app.template.html',0,import11.ViewEncapsulation.None,styles_AppComponent,{})); }
   return new _View_AppComponent0(viewUtils,parentInjector,declarationEl);
 }
 const nodeDebugInfos_AppComponent1:import0.StaticNodeDebugInfo[] = [new import0.StaticNodeDebugInfo([import21.NavHeaderComponent],import21.NavHeaderComponent,{})];

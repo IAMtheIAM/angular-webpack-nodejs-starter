@@ -63,9 +63,9 @@ body.authenticated {
          width: 100%
       }
 
-      nav-sidebar {
-         @include span(isolate $sidebarWidth at $sidebarPosition);
-         visibility: $showSidebar;
+      nav-sidebar { // inputs come from variables.scss
+         @include span(isolate $sidebarWidth at $sidebarPosition); // 3 cols if true, 1 col if false.
+         display: $showSidebar;
       }
 
       .app-state {
@@ -105,7 +105,7 @@ body.authenticated {
          }
 
          nav-sidebar {
-            @include span(0);
+            display: none;
          }
 
          .app-state {

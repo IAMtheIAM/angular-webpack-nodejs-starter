@@ -43,6 +43,12 @@ var _View_NotFound404Component_Host0 = (function (_super) {
         }
         this.detectContentChildrenChanges(throwOnChange);
         this.detectViewChildrenChanges(throwOnChange);
+        if (!throwOnChange) {
+            this.debug(0, 0, 0);
+            if ((this.numberOfChecks === 0)) {
+                this._NotFound404Component_0_4.ngAfterViewInit();
+            }
+        }
     };
     return _View_NotFound404Component_Host0;
 }(import3.DebugAppView));
@@ -63,12 +69,6 @@ var nodeDebugInfos_NotFound404Component0 = [
     new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {})
 ];
 var renderType_NotFound404Component = null;
@@ -79,38 +79,26 @@ var _View_NotFound404Component0 = (function (_super) {
     }
     _View_NotFound404Component0.prototype.createInternal = function (rootSelector) {
         var parentRenderNode = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
-        this._text_0 = this.renderer.createText(parentRenderNode, '\n  ', this.debug(0, 0, 25));
-        this._text_1 = this.renderer.createText(parentRenderNode, '\n    ', this.debug(1, 1, 35));
-        this._text_2 = this.renderer.createText(parentRenderNode, '\n    ', this.debug(2, 2, 39));
-        this._text_3 = this.renderer.createText(parentRenderNode, '\n  ', this.debug(3, 3, 57));
-        this._text_4 = this.renderer.createText(parentRenderNode, '\n', this.debug(4, 4, 15));
-        this._text_5 = this.renderer.createText(parentRenderNode, '\n\n', this.debug(5, 5, 13));
-        this._el_6 = this.renderer.createElement(parentRenderNode, 'div', this.debug(6, 7, 0));
-        this.renderer.setElementAttribute(this._el_6, 'class', 'card-panel');
-        this._text_7 = this.renderer.createText(this._el_6, '\n   ', this.debug(7, 7, 24));
-        this._el_8 = this.renderer.createElement(this._el_6, 'h1', this.debug(8, 8, 3));
-        this._text_9 = this.renderer.createText(this._el_8, '404 Page Not Found!', this.debug(9, 8, 7));
-        this._text_10 = this.renderer.createText(this._el_6, '\n   ', this.debug(10, 8, 31));
-        this._el_11 = this.renderer.createElement(this._el_6, 'p', this.debug(11, 9, 3));
-        this._text_12 = this.renderer.createText(this._el_11, 'Check the website address and try again', this.debug(12, 9, 6));
-        this._text_13 = this.renderer.createText(this._el_6, '\n', this.debug(13, 9, 49));
-        this._text_14 = this.renderer.createText(parentRenderNode, '\n', this.debug(14, 10, 6));
+        this._el_0 = this.renderer.createElement(parentRenderNode, 'div', this.debug(0, 0, 0));
+        this.renderer.setElementAttribute(this._el_0, 'class', 'card-panel');
+        this._text_1 = this.renderer.createText(this._el_0, '\n   ', this.debug(1, 0, 24));
+        this._el_2 = this.renderer.createElement(this._el_0, 'h1', this.debug(2, 1, 3));
+        this._text_3 = this.renderer.createText(this._el_2, '404 Page Not Found!', this.debug(3, 1, 7));
+        this._text_4 = this.renderer.createText(this._el_0, '\n   ', this.debug(4, 1, 31));
+        this._el_5 = this.renderer.createElement(this._el_0, 'p', this.debug(5, 2, 3));
+        this._text_6 = this.renderer.createText(this._el_5, 'Check the website address and try again', this.debug(6, 2, 6));
+        this._text_7 = this.renderer.createText(this._el_0, '\n', this.debug(7, 2, 49));
+        this._text_8 = this.renderer.createText(parentRenderNode, '\n', this.debug(8, 3, 6));
         this.init([], [
-            this._text_0,
+            this._el_0,
             this._text_1,
-            this._text_2,
+            this._el_2,
             this._text_3,
             this._text_4,
-            this._text_5,
-            this._el_6,
+            this._el_5,
+            this._text_6,
             this._text_7,
-            this._el_8,
-            this._text_9,
-            this._text_10,
-            this._el_11,
-            this._text_12,
-            this._text_13,
-            this._text_14
+            this._text_8
         ], [], []);
         return null;
     };
@@ -118,7 +106,7 @@ var _View_NotFound404Component0 = (function (_super) {
 }(import3.DebugAppView));
 function viewFactory_NotFound404Component0(viewUtils, parentInjector, declarationEl) {
     if ((renderType_NotFound404Component === null)) {
-        (renderType_NotFound404Component = viewUtils.createRenderComponentType('C:/Source/Atlas/src/app-components/404/NotFound404.template.html', 0, import11.ViewEncapsulation.None, styles_NotFound404Component, {}));
+        (renderType_NotFound404Component = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-aot-webpack2-typescript-dotnet/master/src/app-components/404/NotFound404.template.html', 0, import11.ViewEncapsulation.None, styles_NotFound404Component, {}));
     }
     return new _View_NotFound404Component0(viewUtils, parentInjector, declarationEl);
 }

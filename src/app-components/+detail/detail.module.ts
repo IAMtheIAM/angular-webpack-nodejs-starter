@@ -21,12 +21,14 @@ import { Logging } from '../services/utility.service';
  */
 import { DetailComponent } from './detail.component';
 
-
 @NgModule({
-   declarations: [// Components / Directives/ Pipes
-      DetailComponent],
    imports: [
+      CommonModule,
+      // SharedModule,
       RouterModule.forChild(detailRoutes)
+   ],
+   declarations: [ // Components / Directives/ Pipes
+      DetailComponent
    ]
 })
 
@@ -34,6 +36,7 @@ import { DetailComponent } from './detail.component';
 export class DetailModule {
 
    constructor() {
-      if (Logging.isEnabled.light) { console.log('%c Hello \"Detail\" component!', Logging.normal.lime); }
-   }
+      if (Logging.isEnabled.light) {
+         console.log('%c Hello \"Detail\" Module!', Logging.normal.orange);
+      }   }
 }

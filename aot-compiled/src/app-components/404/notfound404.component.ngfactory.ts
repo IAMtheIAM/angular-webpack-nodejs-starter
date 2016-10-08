@@ -44,6 +44,10 @@ class _View_NotFound404Component_Host0 extends import3.DebugAppView<any> {
     if (((this.numberOfChecks === 0) && !throwOnChange)) { this._NotFound404Component_0_4.ngOnInit(); }
     this.detectContentChildrenChanges(throwOnChange);
     this.detectViewChildrenChanges(throwOnChange);
+    if (!throwOnChange) {
+      this.debug(0,0,0);
+      if ((this.numberOfChecks === 0)) { this._NotFound404Component_0_4.ngAfterViewInit(); }
+    }
   }
 }
 function viewFactory_NotFound404Component_Host0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<any> {
@@ -61,75 +65,51 @@ const nodeDebugInfos_NotFound404Component0:import0.StaticNodeDebugInfo[] = [
   new import0.StaticNodeDebugInfo([],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{})
 ]
 ;
 var renderType_NotFound404Component:import2.RenderComponentType = (null as any);
 class _View_NotFound404Component0 extends import3.DebugAppView<import1.NotFound404Component> {
-  _text_0:any;
+  _el_0:any;
   _text_1:any;
-  _text_2:any;
+  _el_2:any;
   _text_3:any;
   _text_4:any;
-  _text_5:any;
-  _el_6:any;
+  _el_5:any;
+  _text_6:any;
   _text_7:any;
-  _el_8:any;
-  _text_9:any;
-  _text_10:any;
-  _el_11:any;
-  _text_12:any;
-  _text_13:any;
-  _text_14:any;
+  _text_8:any;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement) {
     super(_View_NotFound404Component0,renderType_NotFound404Component,import7.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_NotFound404Component0);
   }
   createInternal(rootSelector:string):import4.AppElement {
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
-    this._text_0 = this.renderer.createText(parentRenderNode,'\n  ',this.debug(0,0,25));
-    this._text_1 = this.renderer.createText(parentRenderNode,'\n    ',this.debug(1,1,35));
-    this._text_2 = this.renderer.createText(parentRenderNode,'\n    ',this.debug(2,2,39));
-    this._text_3 = this.renderer.createText(parentRenderNode,'\n  ',this.debug(3,3,57));
-    this._text_4 = this.renderer.createText(parentRenderNode,'\n',this.debug(4,4,15));
-    this._text_5 = this.renderer.createText(parentRenderNode,'\n\n',this.debug(5,5,13));
-    this._el_6 = this.renderer.createElement(parentRenderNode,'div',this.debug(6,7,0));
-    this.renderer.setElementAttribute(this._el_6,'class','card-panel');
-    this._text_7 = this.renderer.createText(this._el_6,'\n   ',this.debug(7,7,24));
-    this._el_8 = this.renderer.createElement(this._el_6,'h1',this.debug(8,8,3));
-    this._text_9 = this.renderer.createText(this._el_8,'404 Page Not Found!',this.debug(9,8,7));
-    this._text_10 = this.renderer.createText(this._el_6,'\n   ',this.debug(10,8,31));
-    this._el_11 = this.renderer.createElement(this._el_6,'p',this.debug(11,9,3));
-    this._text_12 = this.renderer.createText(this._el_11,'Check the website address and try again',this.debug(12,9,6));
-    this._text_13 = this.renderer.createText(this._el_6,'\n',this.debug(13,9,49));
-    this._text_14 = this.renderer.createText(parentRenderNode,'\n',this.debug(14,10,6));
+    this._el_0 = this.renderer.createElement(parentRenderNode,'div',this.debug(0,0,0));
+    this.renderer.setElementAttribute(this._el_0,'class','card-panel');
+    this._text_1 = this.renderer.createText(this._el_0,'\n   ',this.debug(1,0,24));
+    this._el_2 = this.renderer.createElement(this._el_0,'h1',this.debug(2,1,3));
+    this._text_3 = this.renderer.createText(this._el_2,'404 Page Not Found!',this.debug(3,1,7));
+    this._text_4 = this.renderer.createText(this._el_0,'\n   ',this.debug(4,1,31));
+    this._el_5 = this.renderer.createElement(this._el_0,'p',this.debug(5,2,3));
+    this._text_6 = this.renderer.createText(this._el_5,'Check the website address and try again',this.debug(6,2,6));
+    this._text_7 = this.renderer.createText(this._el_0,'\n',this.debug(7,2,49));
+    this._text_8 = this.renderer.createText(parentRenderNode,'\n',this.debug(8,3,6));
     this.init([],[
-      this._text_0,
+      this._el_0,
       this._text_1,
-      this._text_2,
+      this._el_2,
       this._text_3,
       this._text_4,
-      this._text_5,
-      this._el_6,
+      this._el_5,
+      this._text_6,
       this._text_7,
-      this._el_8,
-      this._text_9,
-      this._text_10,
-      this._el_11,
-      this._text_12,
-      this._text_13,
-      this._text_14
+      this._text_8
     ]
     ,[],[]);
     return (null as any);
   }
 }
 export function viewFactory_NotFound404Component0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<import1.NotFound404Component> {
-  if ((renderType_NotFound404Component === (null as any))) { (renderType_NotFound404Component = viewUtils.createRenderComponentType('C:/Source/Atlas/src/app-components/404/NotFound404.template.html',0,import11.ViewEncapsulation.None,styles_NotFound404Component,{})); }
+  if ((renderType_NotFound404Component === (null as any))) { (renderType_NotFound404Component = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-aot-webpack2-typescript-dotnet/master/src/app-components/404/NotFound404.template.html',0,import11.ViewEncapsulation.None,styles_NotFound404Component,{})); }
   return new _View_NotFound404Component0(viewUtils,parentInjector,declarationEl);
 }

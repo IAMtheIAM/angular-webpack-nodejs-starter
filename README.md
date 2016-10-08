@@ -43,8 +43,8 @@ This solution depends upon NodeJS and NPM. It is important that you only use Nod
 
 **Start .NET Core Server (Kestrel)**
  
-* `npm run server:dotnetcore:dev` (reads js/css files from Webpack-Dev-Server, on localhost:4000)
-* `npm run server:dotnetcore:production` (reads js/css files from wwwroot, on localhost:5000)
+* `npm run server:dotnetcore:dev` (reads js/css files from webpack-dev-server memory, on localhost:4000)
+* `npm run server:dotnetcore:production` (reads js/css files from wwwroot disk folder, on localhost:5000)
 
 **Important points of consideration**
 

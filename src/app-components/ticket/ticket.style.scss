@@ -1,13 +1,62 @@
 /********************/
-/* Home.scss */
+/* Ticket.style.scss */
 /********************/
 @import '../../assets/styles/appwide-metastyles.scss';
 
 ticket {
-   //color: $lime;
-   .card-panel {
-      @include clearfix;
 
-      //background-color: $magenta;
+   .ticket-action-container {
+
+      &.card-panel {
+         @include clearfix;
+      }
+
+      @include nested(24) {
+
+         .col_subscriber-search {
+            @include span(3);
+         }
+         .col_problem-statement {
+            @include span(6);
+
+         }
+         .col_support-info {
+            @include span(4);
+
+         }
+         .col_solution {
+            @include span(6);
+
+         }
+         .col_action-buttons {
+            @include span(5 last);
+
+            .input-field {
+               max-width: 85%;
+            }
+
+            //.input-field {
+            //   width: span(1 of 2);
+            //   display: inline-block;
+            //
+            //   &:nth-child(2) {
+            //      width: span(1 of 2 last);
+            //      margin-left: gutter(3);
+            //
+            //   }
+            //}
+
+         }
+      }
+      // end nested(24)
+
+      .action-button {
+         display: inline-block;
+      }
+
+
+
    }
-}
+   // end .ticket-action-container
+} // end ticket
+

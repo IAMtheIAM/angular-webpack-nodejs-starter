@@ -94,9 +94,9 @@ class _View_HomeComponent0 extends import4.DebugAppView<import2.HomeComponent> {
   }
   createInternal(rootSelector:string):import5.AppElement {
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
-    this._el_0 = this.renderer.createElement(parentRenderNode,'h2',this.debug(0,0,0));
-    this._text_1 = this.renderer.createText(this._el_0,'Home (Lazy loaded)',this.debug(1,0,4));
-    this._text_2 = this.renderer.createText(parentRenderNode,'\n',this.debug(2,0,27));
+    this._el_0 = this.renderer.createElement(parentRenderNode,'h1',this.debug(0,0,0));
+    this._text_1 = this.renderer.createText(this._el_0,'Grid (Editing, Lazy loaded)',this.debug(1,0,4));
+    this._text_2 = this.renderer.createText(parentRenderNode,'\n',this.debug(2,0,36));
     this._el_3 = this.renderer.createElement(parentRenderNode,'div',this.debug(3,1,0));
     this.renderer.setElementAttribute(this._el_3,'id','kendoUI');
     this._text_4 = this.renderer.createText(parentRenderNode,'\n\n\n',this.debug(4,1,24));
@@ -120,6 +120,6 @@ class _View_HomeComponent0 extends import4.DebugAppView<import2.HomeComponent> {
   }
 }
 export function viewFactory_HomeComponent0(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import5.AppElement):import4.AppView<import2.HomeComponent> {
-  if ((renderType_HomeComponent === (null as any))) { (renderType_HomeComponent = viewUtils.createRenderComponentType('C:/Source/Atlas/src/app-components/home/home.template.html',0,import14.ViewEncapsulation.None,styles_HomeComponent,{})); }
+  if ((renderType_HomeComponent === (null as any))) { (renderType_HomeComponent = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-aot-webpack2-typescript-dotnet/master/src/app-components/home/home.template.html',0,import14.ViewEncapsulation.None,styles_HomeComponent,{})); }
   return new _View_HomeComponent0(viewUtils,parentInjector,declarationEl);
 }

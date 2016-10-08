@@ -10,30 +10,24 @@ const webpack = require('webpack');
 /**
  * Webpack Plugins
  */
-// const ProvidePlugin = require('webpack/lib/ProvidePlugin');
-// const DefinePlugin = require('webpack/lib/DefinePlugin');
-// const NormalModuleReplacementPlugin = require('webpack/lib/NormalModuleReplacementPlugin');
-// const IgnorePlugin = require('webpack/lib/IgnorePlugin');
-// const DedupePlugin = require('webpack/lib/optimize/DedupePlugin');
-// const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
+   // const ProvidePlugin = require('webpack/lib/ProvidePlugin');
+   // const DefinePlugin = require('webpack/lib/DefinePlugin');
+   // const NormalModuleReplacementPlugin = require('webpack/lib/NormalModuleReplacementPlugin');
+   // const IgnorePlugin = require('webpack/lib/IgnorePlugin');
+   // const DedupePlugin = require('webpack/lib/optimize/DedupePlugin');
+   // const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const CompressionPlugin = require('compression-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const PurifyCSSPlugin = require('../tools/node_modules_customized/purifycss-webpack-plugin');
+const PurifyCSSPlugin = require('../node_modules_custom/purifycss-webpack-plugin');
 
 
 /**
  * Webpack Constants
  */
-const ENV = process.env.NODE_ENV = process.env.ENV = 'production';
-const HOST = process.env.HOST || 'localhost';
-const PORT = process.env.PORT || 8080;
-const METADATA = webpackMerge(commonConfig.metadata, {
-   host: HOST,
-   port: PORT,
-   ENV: ENV,
-   HMR: false
-});
+// const webpackConditionals = require('./webpack.conditionals')
+// const METADATA = webpackConditionals.METADATA;
+
 
 
 module.exports = webpackMerge(commonConfig, {
@@ -77,7 +71,7 @@ module.exports = webpackMerge(commonConfig, {
        *
        * See: http://webpack.github.io/docs/configuration.html#output-sourcemapfilename
        */
-      sourceMapFilename: 'js/[name].bundle.map',
+      sourceMapFilename: 'js/maps/[name].map',
 
       /**
        * The filename of non-entry chunks as relative path
@@ -85,7 +79,7 @@ module.exports = webpackMerge(commonConfig, {
        *
        * See: http://webpack.github.io/docs/configuration.html#output-chunkfilename
        */
-      chunkFilename: 'js/chunk.[name].js',
+      chunkFilename: 'js/chunks/[name].chunk.js',
 
    },
 
@@ -156,25 +150,7 @@ module.exports = webpackMerge(commonConfig, {
        */
       // new DedupePlugin(),
 
-      /**
-       * Plugin: DefinePlugin
-       * Description: Define free variables.
-       * Useful for having development builds with debug logging or adding global constants.
-       *
-       * Environment helpers
-       *
-       * See: https://webpack.github.io/docs/list-of-plugins.html#defineplugin
-       */
-      // NOTE: when adding more properties make sure you include them in custom-typings.d.ts
-      new webpack.DefinePlugin({
-         'ENV': JSON.stringify(METADATA.ENV),
-         'HMR': METADATA.HMR,
-         'process.env': {
-            'ENV': JSON.stringify(METADATA.ENV),
-            'NODE_ENV': JSON.stringify(METADATA.ENV),
-            'HMR': METADATA.HMR,
-         }
-      }),
+
 
       /**
        * Plugin: UglifyJsPlugin
@@ -214,6 +190,23 @@ module.exports = webpackMerge(commonConfig, {
        *
        * See: http://webpack.github.io/docs/list-of-plugins.html#normalmodulereplacementplugin
        */
+
+      // Replace .js files with .min.js files for production build (when available)
+
+      new webpack.NormalModuleReplacementPlugin(
+         /tinymce\/themes\/modern\/theme\.js$/,
+         "tinymce/themes/modern/theme.min.js"),
+
+
+      new webpack.NormalModuleReplacementPlugin(
+         /materialize-css\/dist\/js\/materialize\.js$/,
+         "materialize-css/dist/js/materialize.min.js"),
+
+
+      new webpack.NormalModuleReplacementPlugin(
+         /tinymce\/tinymce\.js$/,
+         "tinymce/tinymce.min.js"),
+
 
       new webpack.NormalModuleReplacementPlugin(
          /angular2-hmr/,

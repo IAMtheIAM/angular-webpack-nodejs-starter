@@ -24,13 +24,17 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
  */
 
 const webpackConditionals = require('./webpack.conditionals')
-
 const webpackPlugins = webpackConditionals.webpackPlugins;
 const sassVarsConfig = webpackConditionals.sassVarsConfig;
 const ENVlc = webpackConditionals.ENVlc;
 const AOT = webpackConditionals.AOT;
+const JIT = webpackConditionals.JIT;
 const DEBUG = webpackConditionals.DEBUG;
 const ENV = webpackConditionals.ENV;
+const PRODUCTION = webpackConditionals.PRODUCTION;
+const isDLLs = webpackConditionals.isDLLs;
+const appBoostrapFile = webpackConditionals.appBoostrapFile;
+
 
 
 /*********************************************************************************************
@@ -69,7 +73,7 @@ module.exports = {
       // 'vendors': './src/vendors.ts',
       // 'app': appBoostrapFile,
 
-      app: [], // this is
+      app: [`${appBoostrapFile}`], // set in webpack.conditionals.js
 
    },
 
@@ -78,6 +82,11 @@ module.exports = {
     *
     * See: http://webpack.github.io/docs/configuration.html#resolve
     */
+   resolveLoader: {
+
+      // An array of directory names to be resolved to the current directory
+      modules: ['node_modules', 'node_modules_custom', helpers.root('src')],
+   },
 
    resolve: {
 
@@ -88,8 +97,17 @@ module.exports = {
        */
       extensions: ['.ts', '.js', '.scss', '.css', '.html', '.json'],
 
-      // An array of directory names to be resolved to the current directory
-      modules: ['node_modules', 'node_modules_custom', helpers.root('src')],
+      alias: {
+         // Override any included versions of jquery in node_modules packages with v3.1.0
+         jquery: PRODUCTION ?
+            path.resolve(helpers.paths.nodeModulesRoot, "jquery/dist/jquery.min.js") :
+            path.resolve(helpers.paths.nodeModulesRoot, "jquery/dist/jquery.js"),
+         // it's important what kind of paths you're using (relative vs. absolute)
+         // tinymce: PRODUCTION ?
+         //    path.resolve(helpers.paths.nodeModulesRoot, "tinymce/tinymce.min.js") :
+         //    path.resolve(helpers.paths.nodeModulesRoot, "tinymce/tinymce.js"),
+
+      }
 
    },
 
@@ -112,8 +130,7 @@ module.exports = {
 
 
          /**
-          * SASS loader support for *.scss files
-          * See: https://github.com/webpack/raw-loader
+          * SASS support for *.scss files
           */
          {
             test: /\.(scss)$/,
@@ -135,19 +152,6 @@ module.exports = {
           * See: https://github.com/TheLarkInn/angular2-template-loader
           */
 
-         // This is the preloader
-         // {
-         //    enforce: 'pre',
-         //    test: /\.ts$/,
-         //    loader: 'string-replace-loader',
-         //    query: {
-         //       search: '(System|SystemJS)(.*[\\n\\r]\\s*\\.|\\.)import\\((.+)\\)',
-         //       replace: '$1.import($3).then(mod => (mod.__esModule && mod.default) ? mod.default : mod)',
-         //       // flags: 'g'
-         //    },
-         //    include: [helpers.root('./src')]
-         // },
-
          {
             test: /\.ts$/,
             include: [helpers.paths.appRoot, helpers.root('./aot-compiled')],
@@ -157,12 +161,26 @@ module.exports = {
                '@angularclass/hmr-loader',
                'awesome-typescript-loader',
                'angular2-template-loader',
-               // 'angular2-router-loader'
-               // "angular2-load-children-loader" // this loader replace loadChildren value to function to call require.
+               'angular2-router-loader?loader=system',
+               "angular2-load-children-loader" // this loader replaces loadChildren value to work with AOT/JIT
 
             ],
             // loader: 'happypack/loader?id=ts',
          },
+
+         // {
+         //    test: require.resolve('tinymce/tinymce'),
+         //    loaders: [
+         //       'imports?this=>window',
+         //       'exports?window.tinymce'
+         //    ]
+         // },
+         // {
+         //    test: /tinymce\/(themes|plugins)\//,
+         //    loaders: [
+         //       'imports?this=>window'
+         //    ]
+         // },
 
          /**
           * Json loader support for *.json files.
@@ -171,7 +189,7 @@ module.exports = {
           */
          {
             test: /\.json$/,
-            include: helpers.paths.appRoot,
+            include: [helpers.paths.appRoot],
             loader: 'json-loader',
 
          },
@@ -204,7 +222,7 @@ module.exports = {
           */
          {
             test: /\.html$/,
-            include: helpers.paths.appRoot,
+            include: [helpers.paths.appRoot],
             loader: 'raw-loader',
             exclude: [helpers.root('./src/index.html')],
 
@@ -336,9 +354,9 @@ module.exports = {
  ***************   END Webpack Configuration - module.exports object      ********************
  ********************************************************************************************/
 
-if (webpackConditionals.appBoostrapFile) {
-   module.exports.entry['app'] = webpackConditionals.appBoostrapFile;
-}
+// if (webpackConditionals.appBoostrapFile) {
+//    module.exports.entry['app'] = webpackConditionals.appBoostrapFile;
+// }
 
 
 console.log("\n \n==================================================");
@@ -346,12 +364,14 @@ console.log("\n \n==================================================");
 if (ENV) {
 
    var ENV_color = ENV === 'development' ? chalk.bold.cyan : chalk.bold.green;
-   var DEBUG_color = DEBUG ? chalk.green : chalk.red;
-   var AOT_color = AOT ? chalk.green : chalk.red;
+   var DEBUG_color = DEBUG ? chalk.blue : chalk.red;
+   var AOT_color = AOT ? chalk.blue : chalk.red;
 
    console.log(ENV_color("            Building for: " + ENV));
-   console.log(DEBUG_color("            DEBUG: " + DEBUG));
    console.log(AOT_color("            AOT: " + AOT));
+   console.log(DEBUG_color("            DEBUG: " + DEBUG));
+   console.log("            PRODUCTION: " + PRODUCTION);
+   console.log("            isDLLs: " + isDLLs);
    console.log("            ENVlc: " + ENVlc);
    console.log("            helpers.paths.root: " + helpers.paths.root);
 

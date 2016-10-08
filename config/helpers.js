@@ -7,9 +7,10 @@ var path = require('path');
 // export var ROOT = path.resolve(__dirname, '..');
 
 const paths = {
-   appRoot: [path.resolve(__dirname, "../src")],
+   appRoot: path.resolve(__dirname, '../src'),
    happyPackTempDir: '../../cache/happypack',
-   root: path.resolve(__dirname, '..')
+   root: path.resolve(__dirname, '..'),
+   nodeModulesRoot: path.resolve(__dirname, '../node_modules')
 };
 
 function hasProcessFlag(flag) {

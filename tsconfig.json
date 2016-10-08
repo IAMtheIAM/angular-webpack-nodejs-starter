@@ -14,9 +14,9 @@
       ],
       "strictNullChecks": false,
       "baseUrl": "./src",
-      "paths": [
-      ],
+      "paths": {},
       "types": [
+         "lodash",
          "hammerjs",
          "jasmine",
          "node",

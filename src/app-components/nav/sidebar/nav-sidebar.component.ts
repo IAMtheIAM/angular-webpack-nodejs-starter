@@ -16,9 +16,9 @@ import { AppState } from '../../services/appstate.service';
 /**
  * This is where CSS/SCSS files that the component depends on are required.
  *
- * Function: To enable so-called "Lazy Loading" CSS/SCSS files "on demand"
- * as the app views need them. Do NOT add styles the "Angular2 Way"
- * in the @Component decorator ("styles" and "styleUrls" properties)
+ * Function: To enable "Hot Module Replacement" of CSS/SCSS files
+ * during development. During productions, all styles will be extracted into
+ *  external stylesheets. Do NOT add styles the "Angular2 Way" in
  */
 import './nav-sidebar.style.scss';
 

@@ -59,7 +59,8 @@ $sidebarEnabled: true;
 $contentContainerWidth: if($sidebarEnabled, 21, 24); // if($condition, true, false)
 $contentContainerPosition: if($sidebarEnabled, 4, 1);
 
-$sidebarWidth: if($sidebarEnabled, 3, 0);
+$sidebarWidth: if($sidebarEnabled, 3, 1); // 3 cols if true, 1 col if false. if false, sidebar will be display:none
 $sidebarPosition: if($sidebarEnabled, 1, 1);
 
-$showSidebar: if($sidebarEnabled, visible, hidden);
+//$showSidebar: if($sidebarEnabled, visible, hidden);
+$showSidebar: if($sidebarEnabled, block, none);

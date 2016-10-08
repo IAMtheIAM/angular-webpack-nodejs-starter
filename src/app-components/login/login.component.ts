@@ -20,9 +20,9 @@ import { UtilityService } from '../services/utility.service';
 /**
  * This is where CSS/SCSS files that the component depends on are required.
  *
- * Function: To enable so-called "Lazy Loading" CSS/SCSS files "on demand"
- * as the app views need them. Do NOT add styles the "Angular2 Way"
- * in the @Component decorator ("styles" and "styleUrls" properties)
+ * Function: To enable "Hot Module Replacement" of CSS/SCSS files
+ * during development. During productions, all styles will be extracted into
+ *  external stylesheets. Do NOT add styles the "Angular2 Way" in
  */
 import './login.style.scss';
 
@@ -54,9 +54,9 @@ export class LoginComponent {
       // If user is already logged in, skip the login page
       if (this.isAuthenticated) {
          if (Logging.isEnabled.light) {
-            console.log('%c Already logged in! Navigating to Home Component', Logging.normal.orange);
+            console.log('%c Already logged in! Navigating to Ticket Component', Logging.normal.purple);
          }
-         this.utilityService.navigate('/home');
+         this.utilityService.navigate('/ticket');
       }
 
       if (Logging.isEnabled.light) {

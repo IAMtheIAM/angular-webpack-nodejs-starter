@@ -33,7 +33,7 @@ import { NotFound404Component } from '../404/notfound404.component';
 import { NavHeaderComponent } from '../nav/header/nav-header.component';
 import { NavSidebarComponent } from '../nav/sidebar/nav-sidebar.component';
 import { NavFooterComponent } from '../nav/footer/nav-footer.component';
-// import { DetailComponent } from '../+detail/detail.component';
+import { CKEditor } from '../directives/ckeditor/ckeditor.component';
 /*
  * AppComponent Wide Services & Utilities
  */
@@ -46,7 +46,7 @@ export * from '../services/utility.service';
 export * from '../services/route-protection.service';
 
 import { Logging } from '../services/utility.service';
-import { AppState, InteralStateType } from '../services/appstate.service';
+import { AppState, InternalStateType } from '../services/appstate.service';
 import { Authentication } from '../services/authentication.service';
 import { DataService } from '../services/data.service';
 import { UtilityService } from '../services/utility.service';
@@ -58,7 +58,6 @@ import { RouteProtection } from '../services/route-protection.service';
 const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS, AppState, Logging, Authentication, DataService, UtilityService, RouteProtection//, AuthHttp
 ];
 
-
 /**
  * `AppModule` is the main entry point into Angular2's bootstraping process
  */
@@ -67,17 +66,16 @@ const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS, AppState, Logging, Authenticat
    declarations: [ // declarations contains: components, directives and pipes
 
       // Components
-      AppComponent, HomeComponent, AboutComponent, LoginComponent, SubscriberComponent, NotFound404Component, TicketComponent,// DetailComponent,
+      AppComponent, HomeComponent, AboutComponent, LoginComponent, SubscriberComponent, NotFound404Component, TicketComponent,
 
       // Directives
-      NavSidebarComponent, NavHeaderComponent, NavFooterComponent
+      NavSidebarComponent, NavHeaderComponent, NavFooterComponent, CKEditor
 
       // Pipes
 
    ],
    imports: [ // import other modules
-      /** ButtonsModule, GridModule,*/ BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(ROUTES, { useHash: true }), // true = http://app.com/#/about,
-      // false = http://app.com/about
+      /** ButtonsModule, GridModule,*/ BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(ROUTES, { useHash: true }),
 
    ],
    providers: [ // expose our Services and Providers into Angular's dependency injection
@@ -94,7 +92,9 @@ export class AppModule {
    }
 
    hmrOnInit(store: StoreType) {
-      if (!store || !store.state) return;
+      if (!store || !store.state) {
+         return;
+      }
       console.log('HMR store', JSON.stringify(store, null, 2));
       // set state
       this.appState._state = store.state;
@@ -110,14 +110,15 @@ export class AppModule {
    }
 
    hmrOnDestroy(store: StoreType) {
-      const cmpLocation = this.appRef.components.map(cmp => cmp.location.nativeElement);
+      const cmpLocation = this.appRef.components.map(
+         cmp => cmp.location.nativeElement);
       // save state
       const state = this.appState._state;
       store.state = state;
       // recreate root elements
       store.disposeOldHosts = createNewHosts(cmpLocation);
       // save input values
-      store.restoreInputValues  = createInputTransfer();
+      store.restoreInputValues = createInputTransfer();
       // remove styles
       removeNgStyles();
    }
@@ -129,9 +130,8 @@ export class AppModule {
    }
 }
 
-
 type StoreType = {
-   state: InteralStateType,
+   state: InternalStateType,
    restoreInputValues: () => void,
    disposeOldHosts: () => void
 };

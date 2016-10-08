@@ -4,8 +4,7 @@
  * Angular 2 decorators and services
  */
 var core_1 = require('@angular/core');
-// import { Http } from '@angular/http';
-// import { AuthHttp } from 'angular2-jwt';
+var router_1 = require('@angular/router');
 /*
  * Shared Utilities
  */
@@ -16,9 +15,9 @@ var data_service_1 = require('../services/data.service');
 /**
  * This is where CSS/SCSS files that the component depends on are required.
  *
- * Function: To enable so-called "Lazy Loading" CSS/SCSS files "on demand"
- * as the app views need them. Do NOT add styles the "Angular2 Way"
- * in the @Component decorator ("styles" and "styleUrls" properties)
+ * Function: To enable "Hot Module Replacement" of CSS/SCSS files
+ * during development. During productions, all styles will be extracted into
+ *  external stylesheets. Do NOT add styles the "Angular2 Way" in
  */
 require('./ticket.style.scss');
 var TicketComponent = (function () {
@@ -26,17 +25,16 @@ var TicketComponent = (function () {
     function TicketComponent(appState, 
         // public http: Http,
         // public authHttp: AuthHttp,
-        dataService, authService) {
+        dataService, authService, route) {
         this.appState = appState;
         this.dataService = dataService;
         this.authService = authService;
+        this.route = route;
         this.progress = 0;
-        // Set our default values
-        this.localState = {
-            subscriberID: "dh048"
-        };
+        this.ticketID = '';
     }
     TicketComponent.prototype.ngOnInit = function () {
+        var _this = this;
         if (utility_service_1.Logging.isEnabled.light) {
             console.log('%c Hello \"Ticket\" component!', utility_service_1.Logging.normal.lime);
         }
@@ -44,15 +42,29 @@ var TicketComponent = (function () {
             console.log('isLoggedIn(): ' + this.authService.isLoggedIn());
         }
         this.authService.redirectIfNotLoggedIn();
+        // Subscriber to the Angular2 route parameters object
+        this.ticketInstance = this.route.params.subscribe(function (params) {
+            // If theres no route paramters, don't do anything, which leaves ticketID = '' instead of 'undefined'
+            if (!_.isEmpty(params)) {
+                _this.ticketID = params['ticketID']; // use +param to convert string 'ticketID' to a number
+                // Execute the subscriber search on ticket load
+                _this.searchSubscriberByID(_this.ticketID);
+            }
+        });
     };
     TicketComponent.prototype.ngAfterViewInit = function () {
         // The ngAfterViewInit lifecycle hook makes sure the view is rendered so jQuery can do it's thing
         // This is where you put all your "$(document).ready(function() { });" code
+        // Init Material select dropdowns
+        $('select').material_select();
+    };
+    TicketComponent.prototype.ngOnDestroy = function () {
+        this.ticketInstance.unsubscribe();
     };
     TicketComponent.prototype.searchSubscriberByID = function (subscriberID) {
-        // this.appState.set('searchSubscriberByID', this.localState.subscriberID);
         this.appState.set('searchSubscriberByID', subscriberID);
-        this._callApi('DataService', '/api/subscriber/' + this.localState.subscriberID);
+        this._callApi('DataService', '/api/subscriber/' + subscriberID);
+        // this._callApi('DataService', 'https://jsonplaceholder.typicode.com/users');
     };
     TicketComponent.prototype._callApi = function (type, url) {
         var _this = this;
@@ -61,7 +73,19 @@ var TicketComponent = (function () {
         if (type === 'DataService') {
             // For non-protected detailRoutes, just use Http
             this.dataService.get(url)
-                .subscribe(function (response) { return _this.subscriberFoundByID = response.json(); }, function (error) { return _this.response = error.text(); }, function () {
+                .subscribe(function (response) { return _this.subscriberFoundByID = response.json(); }, 
+            // response => {
+            //    for (var i = 0; i < 3; i++) {
+            //       var thisName = response.json()[i].name;
+            //       if (!namesArray) {
+            //          var namesArray = [];
+            //       }
+            //       namesArray.push(thisName);
+            //    }
+            //    //namesArray;
+            //    this.subscriberFoundByID = namesArray;
+            //},
+            function (error) { return _this.response = error.text(); }, function () {
                 if (utility_service_1.Logging.isEnabled.light) {
                     console.log('%c API Call Complete', utility_service_1.Logging.normal.orange);
                 }
@@ -90,6 +114,7 @@ var TicketComponent = (function () {
         { type: appstate_service_1.AppState, },
         { type: data_service_1.DataService, },
         { type: authentication_service_1.Authentication, },
+        { type: router_1.ActivatedRoute, },
     ];
     return TicketComponent;
 }());

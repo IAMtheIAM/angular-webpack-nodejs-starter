@@ -280,7 +280,7 @@ var _View_AppComponent0 = (function (_super) {
 }(import3.DebugAppView));
 function viewFactory_AppComponent0(viewUtils, parentInjector, declarationEl) {
     if ((renderType_AppComponent === null)) {
-        (renderType_AppComponent = viewUtils.createRenderComponentType('C:/Source/Atlas/src/app-components/app/app.template.html', 0, import11.ViewEncapsulation.None, styles_AppComponent, {}));
+        (renderType_AppComponent = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-aot-webpack2-typescript-dotnet/master/src/app-components/app/app.template.html', 0, import11.ViewEncapsulation.None, styles_AppComponent, {}));
     }
     return new _View_AppComponent0(viewUtils, parentInjector, declarationEl);
 }

@@ -130,7 +130,7 @@ var _View_NavFooterComponent0 = (function (_super) {
 }(import3.DebugAppView));
 function viewFactory_NavFooterComponent0(viewUtils, parentInjector, declarationEl) {
     if ((renderType_NavFooterComponent === null)) {
-        (renderType_NavFooterComponent = viewUtils.createRenderComponentType('C:/Source/Atlas/src/app-components/nav/footer/nav-footer.template.html', 0, import11.ViewEncapsulation.None, styles_NavFooterComponent, {}));
+        (renderType_NavFooterComponent = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-aot-webpack2-typescript-dotnet/master/src/app-components/nav/footer/nav-footer.template.html', 0, import11.ViewEncapsulation.None, styles_NavFooterComponent, {}));
     }
     return new _View_NavFooterComponent0(viewUtils, parentInjector, declarationEl);
 }

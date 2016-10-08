@@ -17,6 +17,7 @@
          "dom"
       ],
       "types": [
+         "lodash",
          "hammerjs",
          "jasmine",
          "node",

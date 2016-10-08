@@ -4,7 +4,8 @@
  * MAIN ANGULAR2 APP ENTRY POINT
  * This is where we bootstrap the Angular2 application
  */
-// These 2 imports are needed here first, or typescript @annotations don't work in the app
+// These 2 imports are needed here first, or app throws errors during bootstrapping
+// import 'core-js/shim';
 require('zone.js/dist/zone');
 require('reflect-metadata');
 var core_1 = require('@angular/core');
@@ -28,7 +29,7 @@ function main(initialHmrState) {
         .then(environment_1.decorateModuleRef)
         .catch(function (err) {
         console.log('%c ERROR Bootstrapping Angular 2 AOT! \n', utility_service_1.Logging.bold.teal);
-        // console.error(err);
+        console.error(err);
     });
     return null; // this line doesn't make sense, but makes TS compiler happy
 }

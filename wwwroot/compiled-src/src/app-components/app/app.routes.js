@@ -7,6 +7,7 @@
  * Other services
  */
 var route_protection_service_1 = require('../services/route-protection.service');
+var app_resolver_1 = require('./app.resolver');
 /**
  * Imported Components
  */
@@ -16,29 +17,31 @@ var login_component_1 = require('../login/login.component');
 var subscriber_component_ts_1 = require('../subscriber/subscriber.component.ts');
 var ticket_component_ts_1 = require('../ticket/ticket.component.ts');
 var notfound404_component_1 = require('../404/notfound404.component');
-function loadLazy(pathToFile, componentClassName) {
-    // return System.import(pathToFile).then((res: any) => res[componentClassName])
-    // .error();
-    // return System.import('../+detail/detail.detailRoutes').then((r: any) => r.DetailComponent)
-    // return require('es6-promise!../+detail/detail.detailRoutes')('DetailComponent');
-    // return require('es6-promise!' + pathToFile)(componentClassName);
-}
-exports.loadLazy = loadLazy;
 exports.ROUTES = [{
         path: '',
         component: login_component_1.LoginComponent
+    }, {
+        path: 'detail',
+        loadChildren: 'es6-promise?,[name]!../+detail/detail.module#DetailModule',
+        canActivate: [route_protection_service_1.RouteProtection]
+    }, {
+        path: 'iframe',
+        loadChildren: 'es6-promise?,[name]!../+iframe-module/iframe.module#IframeModule',
+        canActivate: [route_protection_service_1.RouteProtection]
     }, {
         path: 'ticket',
         component: ticket_component_ts_1.TicketComponent,
         canActivate: [route_protection_service_1.RouteProtection]
     }, {
-        path: 'home',
-        // loadChildren: loadLazy('../home/home.component', HomeComponent)
+        path: 'ticket/:ticketID',
+        component: ticket_component_ts_1.TicketComponent,
+        canActivate: [route_protection_service_1.RouteProtection]
+    }, {
+        path: 'grid1',
         component: home_component_1.HomeComponent,
         canActivate: [route_protection_service_1.RouteProtection]
     }, {
-        path: 'subscriber',
-        // SubscriberComponent),
+        path: 'grid2',
         component: subscriber_component_ts_1.SubscriberComponent,
         canActivate: [route_protection_service_1.RouteProtection]
     }, {
@@ -48,16 +51,10 @@ exports.ROUTES = [{
         path: 'about',
         component: about_component_1.AboutComponent,
         canActivate: [route_protection_service_1.RouteProtection],
-    },
-    //    {
-    //    path: 'detail',
-    //    // loadChildren: () => System.import('../+detail/detail.module'),
-    //    // loadChildren: '../+detail/detail.module#DetailModule',
-    //    loadChildren: 'es6-promise?,[name]!../+detail/detail.module#DetailModule',
-    //    // loadChildren: loadLazy('../+detail/detail.detailRoutes', DetailComponent)
-    //    // loadChildren: () => System.import('../+detail/detail.module.ts')
-    // },
-    {
+        resolve: {
+            'dataBroughtToComponent': app_resolver_1.DataResolver
+        }
+    }, {
         path: '**',
         component: notfound404_component_1.NotFound404Component
     }, {

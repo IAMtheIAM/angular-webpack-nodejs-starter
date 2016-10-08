@@ -1,9 +1,13 @@
+"use strict";
 /**
  * JIT Build
  * MAIN ANGULAR2 APP ENTRY POINT
  * This is where we bootstrap the Angular2 application
  */
-"use strict";
+// These 2 imports are needed here first, or app throws errors during bootstrapping
+// import 'core-js/shim';
+require('zone.js/dist/zone');
+require('reflect-metadata');
 var core_1 = require('@angular/core');
 var platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
 var environment_1 = require('./app-components/app/environment');
@@ -25,7 +29,7 @@ function main(initialHmrState) {
         .then(environment_1.decorateModuleRef)
         .catch(function (err) {
         console.log('%c ERROR Bootstrapping Angular 2 JIT! \n', utility_service_1.Logging.bold.teal);
-        // console.error(err);
+        console.error(err);
     });
 }
 exports.main = main;

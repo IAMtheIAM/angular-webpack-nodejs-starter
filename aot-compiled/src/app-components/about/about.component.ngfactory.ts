@@ -86,6 +86,6 @@ class _View_AboutComponent0 extends import3.DebugAppView<import1.AboutComponent>
   }
 }
 export function viewFactory_AboutComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<import1.AboutComponent> {
-  if ((renderType_AboutComponent === (null as any))) { (renderType_AboutComponent = viewUtils.createRenderComponentType('C:/Source/Atlas/src/app-components/about/about.template.html',0,import12.ViewEncapsulation.None,styles_AboutComponent,{})); }
+  if ((renderType_AboutComponent === (null as any))) { (renderType_AboutComponent = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-aot-webpack2-typescript-dotnet/master/src/app-components/about/about.template.html',0,import12.ViewEncapsulation.None,styles_AboutComponent,{})); }
   return new _View_AboutComponent0(viewUtils,parentInjector,declarationEl);
 }

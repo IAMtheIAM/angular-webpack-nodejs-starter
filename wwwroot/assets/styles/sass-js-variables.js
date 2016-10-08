@@ -35,8 +35,8 @@ const susyDebug = DEBUG ? 'show' : 'hide';
 module.exports = {
    susyDebug: susyDebug,
 
-   // lime: '#C0FF33',
-   // magenta: '#cc33dd',
+   lime: '#C0FF33',
+   magenta: '#cc33dd',
    // sidebarEnabled: sidebarEnabled,
 
    // contentContainerWidth: contentContainerWidth,

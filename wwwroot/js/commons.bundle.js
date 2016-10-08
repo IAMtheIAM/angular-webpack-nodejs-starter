@@ -32,7 +32,7 @@
 /******/
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		3: 0
+/******/ 		7: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -77,7 +77,7 @@
 /******/ 		script.async = true;
 /******/ 		script.timeout = 120000;
 /******/
-/******/ 		script.src = __webpack_require__.p + "js/chunk." + ({"0":"kendo.for.jquery","2":"app"}[chunkId]||chunkId) + ".js";
+/******/ 		script.src = __webpack_require__.p + "js/chunks/" + ({"0":"kendo.for.jquery","1":"mock-data","2":"iframe.module.ngfactory","3":"iframe.module","4":"detail.module.ngfactory","5":"detail.module","6":"app"}[chunkId]||chunkId) + ".chunk.js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -136,4 +136,4 @@
 /******/ })
 /************************************************************************/
 /******/ ([]);
-//# sourceMappingURL=commons.bundle.map
+//# sourceMappingURL=maps/commons.map

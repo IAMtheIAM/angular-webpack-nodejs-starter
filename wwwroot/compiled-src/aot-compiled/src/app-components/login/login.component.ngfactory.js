@@ -405,7 +405,7 @@ var _View_LoginComponent0 = (function (_super) {
 }(import3.DebugAppView));
 function viewFactory_LoginComponent0(viewUtils, parentInjector, declarationEl) {
     if ((renderType_LoginComponent === null)) {
-        (renderType_LoginComponent = viewUtils.createRenderComponentType('C:/Source/Atlas/src/app-components/login/login.template.html', 0, import13.ViewEncapsulation.None, styles_LoginComponent, {}));
+        (renderType_LoginComponent = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-aot-webpack2-typescript-dotnet/master/src/app-components/login/login.template.html', 0, import13.ViewEncapsulation.None, styles_LoginComponent, {}));
     }
     return new _View_LoginComponent0(viewUtils, parentInjector, declarationEl);
 }

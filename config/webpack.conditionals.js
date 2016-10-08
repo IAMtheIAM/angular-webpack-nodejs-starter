@@ -1,4 +1,3 @@
-
 /*********************************************************************************************
  *******************************  Webpack Requires ******************************************
  ********************************************************************************************/
@@ -19,19 +18,27 @@ const helpers = require('./helpers');
  ********************************************************************************************/
 const ENVlc = process.env.npm_lifecycle_event;
 const AOT = ENVlc === 'devserver:aot' || ENVlc === 'build:dev:aot' || ENVlc === 'build:production:aot';
-// const isProd = ENVlc === 'build:prod' || ENVlc === 'server:prod' || ENVlc === 'watch:prod' ||  ENVlc === 'build:aot';
-const ENV = process.env.NODE_ENV;
-var DEBUG = ENV === 'development'
-const METADATA = {
-   host: 'localhost',
-   port: 4000,
-   dotnetport: 5000,
-   baseUrl: '/',
-   ENV: ENV
-};
+const JIT = ENVlc === 'devserver:jit' || ENVlc === 'build:dev:jit' || ENVlc === 'build:production:jit';
+const isDLLs = ENVlc === 'build:dlls:jit';
 
+const ENV = process.env.NODE_ENV;
+const PRODUCTION = ENV === 'production';
+const DEBUG = ENV === 'development';
+const HOST = process.env.HOST || 'localhost';
+const HMR = helpers.hasProcessFlag('hot');
+const PORT = process.env.PORT || 4000;
+const DOTNETPORT = process.env.DOTNETPORT || 5000;
+
+const METADATA = {
+   host: HOST,
+   port: PORT,
+   dotnetport: DOTNETPORT,
+   ENV: ENV,
+   baseUrl: '/',
+   HMR: HMR
+};
 /*********************************************************************************************
- *******************************  Webpack Plugins ********************************************
+ *******************************  All ENVs Webpack Plugins ********************************************
  ********************************************************************************************/
 
 
@@ -60,28 +67,29 @@ var webpackPlugins = [
    ),
 
 
-   /**
-    * Plugin: ForkCheckerPlugin
-    * Description: Do type checking in a separate process, so webpack don't need to wait.
-    *
-    * See: https://github.com/s-panferov/awesome-typescript-loader#forkchecker-boolean-defaultfalse
-    */
    new ForkCheckerPlugin(),
 
-   /**
-    * Plugin: CommonsChunkPlugin
-    * Description: Shares common code between the pages.
-    * It identifies common modules and put them into a commons chunk.
-    *
-    * See: https://webpack.github.io/docs/list-of-plugins.html#commonschunkplugin
-    * See: https://github.com/webpack/docs/wiki/optimization#multi-page-app
-    */
 
    new webpack.optimize.CommonsChunkPlugin({
       name: ['polyfills', 'vendors'].reverse()
    }),
 
    new webpack.optimize.CommonsChunkPlugin('commons'),
+
+
+   // NOTE: when adding more properties, make sure you include them in custom-typings.d.ts
+   new webpack.DefinePlugin({
+      'ENV': JSON.stringify(METADATA.ENV),
+      'HMR': METADATA.HMR,
+      'AOT': AOT,
+      'JIT': JIT,
+      'process.env': {
+         'ENV': JSON.stringify(METADATA.ENV),
+         'NODE_ENV': JSON.stringify(METADATA.ENV),
+         'HMR': METADATA.HMR
+      },
+   }),
+
 
    /**
     * Plugin: ChunkManifestPlugin
@@ -93,7 +101,6 @@ var webpackPlugins = [
    //    filename: "manifest.json",
    //    manifestVariable: "webpackManifest"
    // }),
-
    // /**
    //  * Plugin: HtmlWebpackPlugin
    //  * Description: Simplifies creation of HTML files to serve your webpack bundles.
@@ -115,10 +122,10 @@ var webpackPlugins = [
 
 
 /*********************************************************************************************
- ******************************* Conditional Webpack Plugins ********************************
+ ******************************* Non DLLs Conditional Webpack Plugins ********************************
  ********************************************************************************************/
 
-
+// Skip for DLLS build
 if (ENV === "production" || ENV === "development" || ENV === "testing") {
 
    var conditionalPlugins = [
@@ -136,14 +143,7 @@ if (ENV === "production" || ENV === "development" || ENV === "testing") {
          manifest: require(helpers.root('wwwroot/dlls', 'vendors-manifest.json')),
       }),
 
-      /**
-       * Plugin: CopyWebpackPlugin
-       * Description: Copy files and directories in webpack.
-       *
-       * Copies project static assets.
-       *
-       * See: https://www.npmjs.com/package/copy-webpack-plugin
-       */
+
       new CopyWebpackPlugin(
          [{
             from: 'src/assets',
@@ -154,20 +154,25 @@ if (ENV === "production" || ENV === "development" || ENV === "testing") {
             copyUnmodified: false
          }),
 
-      /**
-       * Plugin: Fetch.js
-       * Description: Request represents a HTTP request to be performed via fetch().
-       *
-       * The global fetch function is an easier way to make web requests and handle responses than using an
-       * XMLHttpRequest. This polyfill is written as closely as possible to the standard Fetch specification at.
-       *
-       * See: https://fetch.spec.whatwg.org
-       */
+
+      new CopyWebpackPlugin([
+         {from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/plugins"), to: 'js/ckeditor/plugins'},
+         {from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/lang"), to: 'js/ckeditor/lang'},
+         {from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/skins"), to: 'js/ckeditor/skins'},
+         {from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/ckeditor.js"), to: 'js/ckeditor'},
+         {from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/styles.js"), to: 'js/ckeditor'},
+         {from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/contents.css"), to: 'js/ckeditor'},
+      ]),
+
+
       new webpack.ProvidePlugin({
          'Promise': 'imports?this=>global!exports?global.Promise!es6-promise',
          'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch',
-         // jQuery: "jquery",
-         // $: "jquery",
+         // 'tinymce': 'imports?tinymce=>window.tinymce!exports?window.tinymce!tinymce/tinymce.min.js',
+         'jQuery': "jquery",
+         '$': "jquery",
+         '_': 'lodash'
+
       }),
 
    ] // end conditional plugins
@@ -181,20 +186,11 @@ if (ENV === "production" || ENV === "development" || ENV === "testing") {
  ********************************************************************************************/
 
 
-// Skip this entry point if we're building the DLLs, app.bootstrap is only for regular builds
-if (ENVlc !== 'build:dlls:jit') {
-   var appBoostrapFile;
-   if (AOT) {
-      appBoostrapFile = ['./src/app.bootstrap.aot.ts'];
-      // module.exports.entry['app'] = ["./src/app.bootstrap.aot.ts"];
-
-   }
-   else {
-      appBoostrapFile = ['./src/app.bootstrap.ts'];
-      // module.exports.entry['app'] = ["./src/app.bootstrap.ts"];
-
-   }
+// Skip this entry point if we're building the DLLs, app.bootstrap.*.ts is only for regular builds
+if (!isDLLs) {
+   var appBoostrapFile = AOT ? ['./src/app.bootstrap.aot.ts'] : ['./src/app.bootstrap.ts'];
 }
+
 
 /*********************************************************************************************
  ********************************* Sass Vars Loader ******************************************
@@ -250,8 +246,13 @@ exports.webpackPlugins = webpackPlugins;
 exports.sassVarsConfig = sassVarsConfig;
 exports.ENVlc = ENVlc;
 exports.AOT = AOT;
+exports.JIT = JIT;
 exports.DEBUG = DEBUG;
 exports.ENV = ENV;
+exports.PRODUCTION = PRODUCTION;
+exports.isDLLs = isDLLs;
+exports.METADATA = METADATA;
+// skip this entry point for DLLS build
 if (appBoostrapFile) {
    exports.appBoostrapFile = appBoostrapFile;
 }

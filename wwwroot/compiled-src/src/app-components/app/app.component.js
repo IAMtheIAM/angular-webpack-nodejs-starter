@@ -16,15 +16,16 @@ var forceChangeDetection_1 = require('../common/forceChangeDetection');
  *
  * Materialize CSS: The SCSS require() must come before KendoUI for css specificity to be correct
  **/
+/** jQuery 3.1.0 */
 window.$ = window.jQuery = require('jquery');
 require('script!materialize-css/dist/js/materialize.js'); // must pass through "script-loader"
 require('materialize-css/sass/materialize.scss');
 /**
  * THIS IS WHERE WE REQUIRE/IMPORT CSS/SCSS FILES THAT THIS COMPONENT NEEDS
  *
- * Function: To enable so-called "Lazy Loading" CSS/SCSS files "on demand"
- * as the app views need them. Do NOT add styles the "Angular2 Way"
- * in the @Component decorator ("styles" and "styleUrls" properties)
+ * Function: To enable "Hot Module Replacement" of CSS/SCSS files
+ * during development. During productions, all styles will be extracted into
+ *  external stylesheets. Do NOT add styles the "Angular2 Way" in
  */
 require('./app.style.scss');
 /**

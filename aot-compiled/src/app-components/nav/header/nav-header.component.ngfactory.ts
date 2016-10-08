@@ -242,8 +242,8 @@ class _View_NavHeaderComponent0 extends import3.DebugAppView<import1.NavHeaderCo
     this._el_26 = this.renderer.createElement(this._el_24,'li',this.debug(26,11,12));
     this.renderer.setElementAttribute(this._el_26,'class','brand-logo');
     this._el_27 = this.renderer.createElement(this._el_26,'a',this.debug(27,11,35));
-    this._text_28 = this.renderer.createText(this._el_27,'Atlas',this.debug(28,11,38));
-    this._text_29 = this.renderer.createText(this._el_26,'\n            ',this.debug(29,11,47));
+    this._text_28 = this.renderer.createText(this._el_27,'IAMtheIAM',this.debug(28,11,38));
+    this._text_29 = this.renderer.createText(this._el_26,'\n            ',this.debug(29,11,51));
     this._text_30 = this.renderer.createText(this._el_24,'\n            ',this.debug(30,12,17));
     this._el_31 = this.renderer.createElement(this._el_24,'li',this.debug(31,13,12));
     this.renderer.setElementAttribute(this._el_31,'class','search');
@@ -406,6 +406,6 @@ class _View_NavHeaderComponent0 extends import3.DebugAppView<import1.NavHeaderCo
   }
 }
 export function viewFactory_NavHeaderComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<import1.NavHeaderComponent> {
-  if ((renderType_NavHeaderComponent === (null as any))) { (renderType_NavHeaderComponent = viewUtils.createRenderComponentType('C:/Source/Atlas/src/app-components/nav/header/nav-header.template.html',0,import10.ViewEncapsulation.None,styles_NavHeaderComponent,{})); }
+  if ((renderType_NavHeaderComponent === (null as any))) { (renderType_NavHeaderComponent = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-aot-webpack2-typescript-dotnet/master/src/app-components/nav/header/nav-header.template.html',0,import10.ViewEncapsulation.None,styles_NavHeaderComponent,{})); }
   return new _View_NavHeaderComponent0(viewUtils,parentInjector,declarationEl);
 }

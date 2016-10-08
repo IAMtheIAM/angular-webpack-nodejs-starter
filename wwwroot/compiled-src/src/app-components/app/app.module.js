@@ -33,7 +33,7 @@ var notfound404_component_1 = require('../404/notfound404.component');
 var nav_header_component_1 = require('../nav/header/nav-header.component');
 var nav_sidebar_component_1 = require('../nav/sidebar/nav-sidebar.component');
 var nav_footer_component_1 = require('../nav/footer/nav-footer.component');
-// import { DetailComponent } from '../+detail/detail.component';
+var ckeditor_component_1 = require('../directives/ckeditor/ckeditor.component');
 /*
  * AppComponent Wide Services & Utilities
  */
@@ -66,8 +66,9 @@ var AppModule = (function () {
         }
     }
     AppModule.prototype.hmrOnInit = function (store) {
-        if (!store || !store.state)
+        if (!store || !store.state) {
             return;
+        }
         console.log('HMR store', JSON.stringify(store, null, 2));
         // set state
         this.appState._state = store.state;
@@ -104,7 +105,7 @@ var AppModule = (function () {
                         // Components
                         app_component_1.AppComponent, home_component_1.HomeComponent, about_component_ts_1.AboutComponent, login_component_1.LoginComponent, subscriber_component_ts_1.SubscriberComponent, notfound404_component_1.NotFound404Component, ticket_component_ts_1.TicketComponent,
                         // Directives
-                        nav_sidebar_component_1.NavSidebarComponent, nav_header_component_1.NavHeaderComponent, nav_footer_component_1.NavFooterComponent
+                        nav_sidebar_component_1.NavSidebarComponent, nav_header_component_1.NavHeaderComponent, nav_footer_component_1.NavFooterComponent, ckeditor_component_1.CKEditor
                     ],
                     imports: [
                         /** ButtonsModule, GridModule,*/ platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule, router_1.RouterModule.forRoot(app_routes_1.ROUTES, { useHash: true }),

@@ -13,9 +13,9 @@ var appstate_service_1 = require('../services/appstate.service');
 /**
  * This is where CSS/SCSS files that the component depends on are required.
  *
- * Function: To enable so-called "Lazy Loading" CSS/SCSS files "on demand"
- * as the app views need them. Do NOT add styles the "Angular2 Way"
- * in the @Component decorator ("styles" and "styleUrls" properties)
+ * Function: To enable "Hot Module Replacement" of CSS/SCSS files
+ * during development. During productions, all styles will be extracted into
+ *  external stylesheets. Do NOT add styles the "Angular2 Way" in
  */
 require('./NotFound404.style.scss');
 var NotFound404Component = (function () {
@@ -29,6 +29,11 @@ var NotFound404Component = (function () {
         if (utility_service_1.Logging.isEnabled.light) {
             console.log('%c Hello \"404 Not Found\" component!', utility_service_1.Logging.normal.lime);
         }
+    };
+    NotFound404Component.prototype.ngAfterViewInit = function () {
+        // The ngAfterViewInit lifecycle hook makes sure the view is rendered so jQuery can do it's thing
+        // This is where you put all your "$(document).ready() {}" code
+        // this.loadDataTables();
     };
     NotFound404Component.decorators = [
         { type: core_1.Component, args: [{

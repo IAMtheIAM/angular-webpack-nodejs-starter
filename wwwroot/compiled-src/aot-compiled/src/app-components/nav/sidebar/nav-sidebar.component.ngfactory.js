@@ -87,6 +87,10 @@ var nodeDebugInfos_NavSidebarComponent0 = [
     new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
+    new import0.StaticNodeDebugInfo([import12.RouterLinkWithHref], null, {}),
+    new import0.StaticNodeDebugInfo([], null, {}),
+    new import0.StaticNodeDebugInfo([], null, {}),
+    new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
@@ -109,32 +113,8 @@ var nodeDebugInfos_NavSidebarComponent0 = [
     new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([import12.RouterLinkWithHref], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([import12.RouterLinkWithHref], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([import12.RouterLinkWithHref], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([import12.RouterLinkWithHref], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([import12.RouterLinkWithHref], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([import12.RouterLinkWithHref], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
@@ -179,138 +159,103 @@ var _View_NavSidebarComponent0 = (function (_super) {
         this.renderer.setElementAttribute(this._el_7, 'class', 'waves-effect waves-darkblue');
         this.renderer.setElementAttribute(this._el_7, 'router-active', '');
         this._RouterLinkWithHref_7_3 = new import12.RouterLinkWithHref(this.parentInjector.get(import13.Router), this.parentInjector.get(import14.ActivatedRoute), this.parentInjector.get(import15.LocationStrategy));
-        this._text_8 = this.renderer.createText(this._el_7, 'Home', this.debug(8, 2, 85));
-        this._text_9 = this.renderer.createText(this._el_0, '\n   ', this.debug(9, 2, 98));
+        this._text_8 = this.renderer.createText(this._el_7, 'Ticket', this.debug(8, 2, 87));
+        this._text_9 = this.renderer.createText(this._el_0, '\n   ', this.debug(9, 2, 102));
         this._el_10 = this.renderer.createElement(this._el_0, 'li', this.debug(10, 3, 3));
         this._el_11 = this.renderer.createElement(this._el_10, 'a', this.debug(11, 3, 7));
         this.renderer.setElementAttribute(this._el_11, 'class', 'waves-effect waves-darkblue');
         this.renderer.setElementAttribute(this._el_11, 'router-active', '');
         this._RouterLinkWithHref_11_3 = new import12.RouterLinkWithHref(this.parentInjector.get(import13.Router), this.parentInjector.get(import14.ActivatedRoute), this.parentInjector.get(import15.LocationStrategy));
-        this._text_12 = this.renderer.createText(this._el_11, 'Ticket', this.debug(12, 3, 87));
-        this._text_13 = this.renderer.createText(this._el_0, '\n   ', this.debug(13, 3, 102));
+        this._text_12 = this.renderer.createText(this._el_11, 'Grid (Editing)', this.debug(12, 3, 86));
+        this._text_13 = this.renderer.createText(this._el_0, '\n   ', this.debug(13, 3, 109));
         this._el_14 = this.renderer.createElement(this._el_0, 'li', this.debug(14, 4, 3));
         this._el_15 = this.renderer.createElement(this._el_14, 'a', this.debug(15, 4, 7));
         this.renderer.setElementAttribute(this._el_15, 'class', 'waves-effect waves-darkblue');
         this.renderer.setElementAttribute(this._el_15, 'router-active', '');
         this._RouterLinkWithHref_15_3 = new import12.RouterLinkWithHref(this.parentInjector.get(import13.Router), this.parentInjector.get(import14.ActivatedRoute), this.parentInjector.get(import15.LocationStrategy));
-        this._text_16 = this.renderer.createText(this._el_15, 'About', this.debug(16, 4, 86));
-        this._text_17 = this.renderer.createText(this._el_0, '\n   ', this.debug(17, 4, 100));
+        this._text_16 = this.renderer.createText(this._el_15, 'Grid (Nested)', this.debug(16, 4, 86));
+        this._text_17 = this.renderer.createText(this._el_0, '\n   ', this.debug(17, 4, 108));
         this._el_18 = this.renderer.createElement(this._el_0, 'li', this.debug(18, 5, 3));
         this._el_19 = this.renderer.createElement(this._el_18, 'a', this.debug(19, 5, 7));
         this.renderer.setElementAttribute(this._el_19, 'class', 'waves-effect waves-darkblue');
         this.renderer.setElementAttribute(this._el_19, 'router-active', '');
         this._RouterLinkWithHref_19_3 = new import12.RouterLinkWithHref(this.parentInjector.get(import13.Router), this.parentInjector.get(import14.ActivatedRoute), this.parentInjector.get(import15.LocationStrategy));
-        this._text_20 = this.renderer.createText(this._el_19, 'Detail (Throws error)', this.debug(20, 5, 87));
-        this._text_21 = this.renderer.createText(this._el_0, '\n   ', this.debug(21, 5, 117));
+        this._text_20 = this.renderer.createText(this._el_19, 'About', this.debug(20, 5, 86));
+        this._text_21 = this.renderer.createText(this._el_0, '\n   ', this.debug(21, 5, 100));
         this._el_22 = this.renderer.createElement(this._el_0, 'li', this.debug(22, 6, 3));
         this._el_23 = this.renderer.createElement(this._el_22, 'a', this.debug(23, 6, 7));
         this.renderer.setElementAttribute(this._el_23, 'class', 'waves-effect waves-darkblue');
         this.renderer.setElementAttribute(this._el_23, 'router-active', '');
         this._RouterLinkWithHref_23_3 = new import12.RouterLinkWithHref(this.parentInjector.get(import13.Router), this.parentInjector.get(import14.ActivatedRoute), this.parentInjector.get(import15.LocationStrategy));
-        this._text_24 = this.renderer.createText(this._el_23, 'Subscriber', this.debug(24, 6, 91));
-        this._text_25 = this.renderer.createText(this._el_0, '\n\n   ', this.debug(25, 6, 110));
-        this._el_26 = this.renderer.createElement(this._el_0, 'li', this.debug(26, 8, 3));
-        this.renderer.setElementAttribute(this._el_26, 'class', 'no-padding');
-        this._text_27 = this.renderer.createText(this._el_26, '\n      ', this.debug(27, 8, 26));
-        this._el_28 = this.renderer.createElement(this._el_26, 'ul', this.debug(28, 9, 6));
-        this.renderer.setElementAttribute(this._el_28, 'class', 'collapsible');
-        this.renderer.setElementAttribute(this._el_28, 'data-collapsible', 'expandable');
-        this._text_29 = this.renderer.createText(this._el_28, '\n         ', this.debug(29, 9, 60));
-        this._el_30 = this.renderer.createElement(this._el_28, 'li', this.debug(30, 10, 9));
-        this._text_31 = this.renderer.createText(this._el_30, '\n            ', this.debug(31, 10, 13));
-        this._el_32 = this.renderer.createElement(this._el_30, 'a', this.debug(32, 11, 12));
-        this.renderer.setElementAttribute(this._el_32, 'class', 'collapsible-header');
-        this._text_33 = this.renderer.createText(this._el_32, 'Dropdown', this.debug(33, 11, 78));
-        this._el_34 = this.renderer.createElement(this._el_32, 'i', this.debug(34, 11, 86));
-        this.renderer.setElementAttribute(this._el_34, 'class', 'mdi-navigation-arrow-drop-down');
-        this._text_35 = this.renderer.createText(this._el_30, '\n            ', this.debug(35, 11, 136));
-        this._el_36 = this.renderer.createElement(this._el_30, 'div', this.debug(36, 12, 12));
-        this.renderer.setElementAttribute(this._el_36, 'class', 'collapsible-body');
-        this._text_37 = this.renderer.createText(this._el_36, '\n               ', this.debug(37, 12, 42));
-        this._el_38 = this.renderer.createElement(this._el_36, 'ul', this.debug(38, 13, 15));
-        this._text_39 = this.renderer.createText(this._el_38, '\n                  ', this.debug(39, 13, 19));
-        this._el_40 = this.renderer.createElement(this._el_38, 'li', this.debug(40, 14, 18));
-        this._el_41 = this.renderer.createElement(this._el_40, 'a', this.debug(41, 14, 22));
-        this.renderer.setElementAttribute(this._el_41, 'class', 'waves-effect waves-darkblue');
-        this.renderer.setElementAttribute(this._el_41, 'router-active', '');
-        this._RouterLinkWithHref_41_3 = new import12.RouterLinkWithHref(this.parentInjector.get(import13.Router), this.parentInjector.get(import14.ActivatedRoute), this.parentInjector.get(import15.LocationStrategy));
-        this._text_42 = this.renderer.createText(this._el_41, 'Index', this.debug(42, 14, 96));
-        this._text_43 = this.renderer.createText(this._el_38, '\n                  ', this.debug(43, 14, 110));
-        this._el_44 = this.renderer.createElement(this._el_38, 'li', this.debug(44, 15, 18));
+        this._text_24 = this.renderer.createText(this._el_23, 'Login', this.debug(24, 6, 86));
+        this._text_25 = this.renderer.createText(this._el_0, '\n   ', this.debug(25, 6, 100));
+        this._el_26 = this.renderer.createElement(this._el_0, 'li', this.debug(26, 7, 3));
+        this._el_27 = this.renderer.createElement(this._el_26, 'a', this.debug(27, 7, 7));
+        this.renderer.setElementAttribute(this._el_27, 'class', 'waves-effect waves-darkblue');
+        this.renderer.setElementAttribute(this._el_27, 'router-active', '');
+        this._RouterLinkWithHref_27_3 = new import12.RouterLinkWithHref(this.parentInjector.get(import13.Router), this.parentInjector.get(import14.ActivatedRoute), this.parentInjector.get(import15.LocationStrategy));
+        this._text_28 = this.renderer.createText(this._el_27, 'Detail (Sub Module)', this.debug(28, 7, 87));
+        this._text_29 = this.renderer.createText(this._el_0, '\n\n   ', this.debug(29, 7, 115));
+        this._el_30 = this.renderer.createElement(this._el_0, 'li', this.debug(30, 9, 3));
+        this.renderer.setElementAttribute(this._el_30, 'class', 'no-padding');
+        this._text_31 = this.renderer.createText(this._el_30, '\n      ', this.debug(31, 9, 26));
+        this._el_32 = this.renderer.createElement(this._el_30, 'ul', this.debug(32, 10, 6));
+        this.renderer.setElementAttribute(this._el_32, 'class', 'collapsible');
+        this.renderer.setElementAttribute(this._el_32, 'data-collapsible', 'expandable');
+        this._text_33 = this.renderer.createText(this._el_32, '\n         ', this.debug(33, 10, 60));
+        this._el_34 = this.renderer.createElement(this._el_32, 'li', this.debug(34, 11, 9));
+        this._text_35 = this.renderer.createText(this._el_34, '\n            ', this.debug(35, 11, 13));
+        this._el_36 = this.renderer.createElement(this._el_34, 'a', this.debug(36, 12, 12));
+        this.renderer.setElementAttribute(this._el_36, 'class', 'collapsible-header');
+        this._text_37 = this.renderer.createText(this._el_36, 'Iframe Module', this.debug(37, 12, 78));
+        this._el_38 = this.renderer.createElement(this._el_36, 'i', this.debug(38, 12, 91));
+        this.renderer.setElementAttribute(this._el_38, 'class', 'mdi-navigation-arrow-drop-down');
+        this._text_39 = this.renderer.createText(this._el_34, '\n            ', this.debug(39, 12, 141));
+        this._el_40 = this.renderer.createElement(this._el_34, 'div', this.debug(40, 13, 12));
+        this.renderer.setElementAttribute(this._el_40, 'class', 'collapsible-body');
+        this._text_41 = this.renderer.createText(this._el_40, '\n               ', this.debug(41, 13, 42));
+        this._el_42 = this.renderer.createElement(this._el_40, 'ul', this.debug(42, 14, 15));
+        this._text_43 = this.renderer.createText(this._el_42, '\n                  ', this.debug(43, 14, 19));
+        this._el_44 = this.renderer.createElement(this._el_42, 'li', this.debug(44, 15, 18));
         this._el_45 = this.renderer.createElement(this._el_44, 'a', this.debug(45, 15, 22));
         this.renderer.setElementAttribute(this._el_45, 'class', 'waves-effect waves-darkblue');
         this.renderer.setElementAttribute(this._el_45, 'router-active', '');
         this._RouterLinkWithHref_45_3 = new import12.RouterLinkWithHref(this.parentInjector.get(import13.Router), this.parentInjector.get(import14.ActivatedRoute), this.parentInjector.get(import15.LocationStrategy));
-        this._text_46 = this.renderer.createText(this._el_45, 'Home', this.debug(46, 15, 100));
-        this._text_47 = this.renderer.createText(this._el_38, '\n                  ', this.debug(47, 15, 113));
-        this._el_48 = this.renderer.createElement(this._el_38, 'li', this.debug(48, 16, 18));
+        this._text_46 = this.renderer.createText(this._el_45, 'Webpage 1', this.debug(46, 15, 111));
+        this._text_47 = this.renderer.createText(this._el_42, '\n                  ', this.debug(47, 15, 129));
+        this._el_48 = this.renderer.createElement(this._el_42, 'li', this.debug(48, 16, 18));
         this._el_49 = this.renderer.createElement(this._el_48, 'a', this.debug(49, 16, 22));
         this.renderer.setElementAttribute(this._el_49, 'class', 'waves-effect waves-darkblue');
         this.renderer.setElementAttribute(this._el_49, 'router-active', '');
         this._RouterLinkWithHref_49_3 = new import12.RouterLinkWithHref(this.parentInjector.get(import13.Router), this.parentInjector.get(import14.ActivatedRoute), this.parentInjector.get(import15.LocationStrategy));
-        this._text_50 = this.renderer.createText(this._el_49, 'Ticket', this.debug(50, 16, 102));
-        this._text_51 = this.renderer.createText(this._el_38, '\n                  ', this.debug(51, 16, 117));
-        this._el_52 = this.renderer.createElement(this._el_38, 'li', this.debug(52, 17, 18));
-        this._el_53 = this.renderer.createElement(this._el_52, 'a', this.debug(53, 17, 22));
-        this.renderer.setElementAttribute(this._el_53, 'class', 'waves-effect waves-darkblue');
-        this.renderer.setElementAttribute(this._el_53, 'router-active', '');
-        this._RouterLinkWithHref_53_3 = new import12.RouterLinkWithHref(this.parentInjector.get(import13.Router), this.parentInjector.get(import14.ActivatedRoute), this.parentInjector.get(import15.LocationStrategy));
-        this._text_54 = this.renderer.createText(this._el_53, 'About', this.debug(54, 17, 101));
-        this._text_55 = this.renderer.createText(this._el_38, '\n                  ', this.debug(55, 17, 115));
-        this._el_56 = this.renderer.createElement(this._el_38, 'li', this.debug(56, 18, 18));
-        this._el_57 = this.renderer.createElement(this._el_56, 'a', this.debug(57, 18, 22));
-        this.renderer.setElementAttribute(this._el_57, 'class', 'waves-effect waves-darkblue');
-        this.renderer.setElementAttribute(this._el_57, 'router-active', '');
-        this._RouterLinkWithHref_57_3 = new import12.RouterLinkWithHref(this.parentInjector.get(import13.Router), this.parentInjector.get(import14.ActivatedRoute), this.parentInjector.get(import15.LocationStrategy));
-        this._text_58 = this.renderer.createText(this._el_57, 'Detail (Throws error)', this.debug(58, 18, 102));
-        this._text_59 = this.renderer.createText(this._el_38, '\n                  ', this.debug(59, 18, 132));
-        this._el_60 = this.renderer.createElement(this._el_38, 'li', this.debug(60, 19, 18));
-        this._el_61 = this.renderer.createElement(this._el_60, 'a', this.debug(61, 19, 22));
-        this.renderer.setElementAttribute(this._el_61, 'class', 'waves-effect waves-darkblue');
-        this.renderer.setElementAttribute(this._el_61, 'router-active', '');
-        this._RouterLinkWithHref_61_3 = new import12.RouterLinkWithHref(this.parentInjector.get(import13.Router), this.parentInjector.get(import14.ActivatedRoute), this.parentInjector.get(import15.LocationStrategy));
-        this._text_62 = this.renderer.createText(this._el_61, 'Subscriber', this.debug(62, 19, 106));
-        this._text_63 = this.renderer.createText(this._el_38, '\n                  ', this.debug(63, 19, 125));
-        this._el_64 = this.renderer.createElement(this._el_38, 'li', this.debug(64, 20, 18));
-        this._el_65 = this.renderer.createElement(this._el_64, 'a', this.debug(65, 20, 22));
-        this.renderer.setElementAttribute(this._el_65, 'class', 'waves-effect waves-darkblue');
-        this.renderer.setElementAttribute(this._el_65, 'router-active', '');
-        this._RouterLinkWithHref_65_3 = new import12.RouterLinkWithHref(this.parentInjector.get(import13.Router), this.parentInjector.get(import14.ActivatedRoute), this.parentInjector.get(import15.LocationStrategy));
-        this._text_66 = this.renderer.createText(this._el_65, 'Login', this.debug(66, 20, 101));
-        this._text_67 = this.renderer.createText(this._el_38, '\n               ', this.debug(67, 20, 115));
-        this._text_68 = this.renderer.createText(this._el_36, '\n            ', this.debug(68, 21, 20));
-        this._text_69 = this.renderer.createText(this._el_30, '\n         ', this.debug(69, 22, 18));
-        this._text_70 = this.renderer.createText(this._el_28, '\n      ', this.debug(70, 23, 14));
-        this._text_71 = this.renderer.createText(this._el_26, '\n   ', this.debug(71, 24, 11));
-        this._text_72 = this.renderer.createText(this._el_0, '\n   ', this.debug(72, 25, 8));
-        this._el_73 = this.renderer.createElement(this._el_0, 'li', this.debug(73, 26, 3));
-        this._el_74 = this.renderer.createElement(this._el_73, 'a', this.debug(74, 26, 7));
-        this.renderer.setElementAttribute(this._el_74, 'class', 'waves-effect waves-darkblue');
-        this.renderer.setElementAttribute(this._el_74, 'router-active', '');
-        this._RouterLinkWithHref_74_3 = new import12.RouterLinkWithHref(this.parentInjector.get(import13.Router), this.parentInjector.get(import14.ActivatedRoute), this.parentInjector.get(import15.LocationStrategy));
-        this._text_75 = this.renderer.createText(this._el_74, 'Login', this.debug(75, 26, 86));
-        this._text_76 = this.renderer.createText(this._el_0, '\n', this.debug(76, 26, 100));
-        this._text_77 = this.renderer.createText(parentRenderNode, '\n', this.debug(77, 27, 5));
-        this._el_78 = this.renderer.createElement(parentRenderNode, 'a', this.debug(78, 28, 0));
-        this.renderer.setElementAttribute(this._el_78, 'class', 'waves-effect waves-darkblue button-collapse');
-        this.renderer.setElementAttribute(this._el_78, 'data-activates', 'slide-out');
-        this.renderer.setElementAttribute(this._el_78, 'href', '#');
-        this._el_79 = this.renderer.createElement(this._el_78, 'i', this.debug(79, 28, 91));
-        this.renderer.setElementAttribute(this._el_79, 'class', 'mdi-navigation-menu');
-        this._text_80 = this.renderer.createText(parentRenderNode, '\n\n', this.debug(80, 28, 130));
-        this._text_81 = this.renderer.createText(parentRenderNode, '\n', this.debug(81, 30, 23));
-        this._text_82 = this.renderer.createText(parentRenderNode, '\n\n', this.debug(82, 31, 148));
-        this._text_83 = this.renderer.createText(parentRenderNode, '\n', this.debug(83, 33, 74));
-        this._text_84 = this.renderer.createText(parentRenderNode, '\n\n', this.debug(84, 34, 24));
-        this._text_85 = this.renderer.createText(parentRenderNode, '\n', this.debug(85, 36, 23));
-        this._text_86 = this.renderer.createText(parentRenderNode, '\n', this.debug(86, 37, 77));
-        this._text_87 = this.renderer.createText(parentRenderNode, '\n\n', this.debug(87, 38, 24));
-        this._text_88 = this.renderer.createText(parentRenderNode, '\n', this.debug(88, 40, 23));
-        this._text_89 = this.renderer.createText(parentRenderNode, '\n', this.debug(89, 41, 79));
-        this._text_90 = this.renderer.createText(parentRenderNode, '\n\n', this.debug(90, 42, 24));
-        this._text_91 = this.renderer.createText(parentRenderNode, '\n', this.debug(91, 44, 23));
-        this._text_92 = this.renderer.createText(parentRenderNode, '\n', this.debug(92, 45, 79));
-        this._text_93 = this.renderer.createText(parentRenderNode, '\n\n', this.debug(93, 46, 24));
+        this._text_50 = this.renderer.createText(this._el_49, 'Webpage 2', this.debug(50, 16, 111));
+        this._text_51 = this.renderer.createText(this._el_42, '\n               ', this.debug(51, 16, 129));
+        this._text_52 = this.renderer.createText(this._el_40, '\n            ', this.debug(52, 17, 20));
+        this._text_53 = this.renderer.createText(this._el_34, '\n         ', this.debug(53, 18, 18));
+        this._text_54 = this.renderer.createText(this._el_32, '\n      ', this.debug(54, 19, 14));
+        this._text_55 = this.renderer.createText(this._el_30, '\n   ', this.debug(55, 20, 11));
+        this._text_56 = this.renderer.createText(this._el_0, '\n', this.debug(56, 21, 8));
+        this._text_57 = this.renderer.createText(parentRenderNode, '\n', this.debug(57, 22, 5));
+        this._el_58 = this.renderer.createElement(parentRenderNode, 'a', this.debug(58, 23, 0));
+        this.renderer.setElementAttribute(this._el_58, 'class', 'waves-effect waves-darkblue button-collapse');
+        this.renderer.setElementAttribute(this._el_58, 'data-activates', 'slide-out');
+        this.renderer.setElementAttribute(this._el_58, 'href', '#');
+        this._el_59 = this.renderer.createElement(this._el_58, 'i', this.debug(59, 23, 91));
+        this.renderer.setElementAttribute(this._el_59, 'class', 'mdi-navigation-menu');
+        this._text_60 = this.renderer.createText(parentRenderNode, '\n\n', this.debug(60, 23, 130));
+        this._text_61 = this.renderer.createText(parentRenderNode, '\n', this.debug(61, 25, 23));
+        this._text_62 = this.renderer.createText(parentRenderNode, '\n\n', this.debug(62, 26, 148));
+        this._text_63 = this.renderer.createText(parentRenderNode, '\n', this.debug(63, 28, 74));
+        this._text_64 = this.renderer.createText(parentRenderNode, '\n\n', this.debug(64, 29, 24));
+        this._text_65 = this.renderer.createText(parentRenderNode, '\n', this.debug(65, 31, 23));
+        this._text_66 = this.renderer.createText(parentRenderNode, '\n', this.debug(66, 32, 77));
+        this._text_67 = this.renderer.createText(parentRenderNode, '\n\n', this.debug(67, 33, 24));
+        this._text_68 = this.renderer.createText(parentRenderNode, '\n', this.debug(68, 35, 23));
+        this._text_69 = this.renderer.createText(parentRenderNode, '\n', this.debug(69, 36, 79));
+        this._text_70 = this.renderer.createText(parentRenderNode, '\n\n', this.debug(70, 37, 24));
+        this._text_71 = this.renderer.createText(parentRenderNode, '\n', this.debug(71, 39, 23));
+        this._text_72 = this.renderer.createText(parentRenderNode, '\n', this.debug(72, 40, 79));
+        this._text_73 = this.renderer.createText(parentRenderNode, '\n\n', this.debug(73, 41, 24));
         var disposable_0 = this.renderer.listen(this._el_3, 'click', this.eventHandler(this._handle_click_3_0.bind(this)));
         this._arr_0 = import5.pureProxy1(function (p0) {
             return [p0];
@@ -347,7 +292,7 @@ var _View_NavSidebarComponent0 = (function (_super) {
         });
         this._expr_16 = import8.UNINITIALIZED;
         this._expr_17 = import8.UNINITIALIZED;
-        var disposable_6 = this.renderer.listen(this._el_41, 'click', this.eventHandler(this._handle_click_41_0.bind(this)));
+        var disposable_6 = this.renderer.listen(this._el_27, 'click', this.eventHandler(this._handle_click_27_0.bind(this)));
         this._arr_6 = import5.pureProxy1(function (p0) {
             return [p0];
         });
@@ -365,36 +310,6 @@ var _View_NavSidebarComponent0 = (function (_super) {
         });
         this._expr_25 = import8.UNINITIALIZED;
         this._expr_26 = import8.UNINITIALIZED;
-        var disposable_9 = this.renderer.listen(this._el_53, 'click', this.eventHandler(this._handle_click_53_0.bind(this)));
-        this._arr_9 = import5.pureProxy1(function (p0) {
-            return [p0];
-        });
-        this._expr_28 = import8.UNINITIALIZED;
-        this._expr_29 = import8.UNINITIALIZED;
-        var disposable_10 = this.renderer.listen(this._el_57, 'click', this.eventHandler(this._handle_click_57_0.bind(this)));
-        this._arr_10 = import5.pureProxy1(function (p0) {
-            return [p0];
-        });
-        this._expr_31 = import8.UNINITIALIZED;
-        this._expr_32 = import8.UNINITIALIZED;
-        var disposable_11 = this.renderer.listen(this._el_61, 'click', this.eventHandler(this._handle_click_61_0.bind(this)));
-        this._arr_11 = import5.pureProxy1(function (p0) {
-            return [p0];
-        });
-        this._expr_34 = import8.UNINITIALIZED;
-        this._expr_35 = import8.UNINITIALIZED;
-        var disposable_12 = this.renderer.listen(this._el_65, 'click', this.eventHandler(this._handle_click_65_0.bind(this)));
-        this._arr_12 = import5.pureProxy1(function (p0) {
-            return [p0];
-        });
-        this._expr_37 = import8.UNINITIALIZED;
-        this._expr_38 = import8.UNINITIALIZED;
-        var disposable_13 = this.renderer.listen(this._el_74, 'click', this.eventHandler(this._handle_click_74_0.bind(this)));
-        this._arr_13 = import5.pureProxy1(function (p0) {
-            return [p0];
-        });
-        this._expr_40 = import8.UNINITIALIZED;
-        this._expr_41 = import8.UNINITIALIZED;
         this.init([], [
             this._el_0,
             this._text_1,
@@ -423,8 +338,8 @@ var _View_NavSidebarComponent0 = (function (_super) {
             this._text_24,
             this._text_25,
             this._el_26,
-            this._text_27,
-            this._el_28,
+            this._el_27,
+            this._text_28,
             this._text_29,
             this._el_30,
             this._text_31,
@@ -437,8 +352,8 @@ var _View_NavSidebarComponent0 = (function (_super) {
             this._el_38,
             this._text_39,
             this._el_40,
-            this._el_41,
-            this._text_42,
+            this._text_41,
+            this._el_42,
             this._text_43,
             this._el_44,
             this._el_45,
@@ -448,20 +363,20 @@ var _View_NavSidebarComponent0 = (function (_super) {
             this._el_49,
             this._text_50,
             this._text_51,
-            this._el_52,
-            this._el_53,
+            this._text_52,
+            this._text_53,
             this._text_54,
             this._text_55,
-            this._el_56,
-            this._el_57,
-            this._text_58,
-            this._text_59,
-            this._el_60,
-            this._el_61,
+            this._text_56,
+            this._text_57,
+            this._el_58,
+            this._el_59,
+            this._text_60,
+            this._text_61,
             this._text_62,
             this._text_63,
-            this._el_64,
-            this._el_65,
+            this._text_64,
+            this._text_65,
             this._text_66,
             this._text_67,
             this._text_68,
@@ -469,27 +384,7 @@ var _View_NavSidebarComponent0 = (function (_super) {
             this._text_70,
             this._text_71,
             this._text_72,
-            this._el_73,
-            this._el_74,
-            this._text_75,
-            this._text_76,
-            this._text_77,
-            this._el_78,
-            this._el_79,
-            this._text_80,
-            this._text_81,
-            this._text_82,
-            this._text_83,
-            this._text_84,
-            this._text_85,
-            this._text_86,
-            this._text_87,
-            this._text_88,
-            this._text_89,
-            this._text_90,
-            this._text_91,
-            this._text_92,
-            this._text_93
+            this._text_73
         ], [
             disposable_0,
             disposable_1,
@@ -499,12 +394,7 @@ var _View_NavSidebarComponent0 = (function (_super) {
             disposable_5,
             disposable_6,
             disposable_7,
-            disposable_8,
-            disposable_9,
-            disposable_10,
-            disposable_11,
-            disposable_12,
-            disposable_13
+            disposable_8
         ], []);
         return null;
     };
@@ -527,29 +417,14 @@ var _View_NavSidebarComponent0 = (function (_super) {
         if (((token === import12.RouterLinkWithHref) && ((23 <= requestNodeIndex) && (requestNodeIndex <= 24)))) {
             return this._RouterLinkWithHref_23_3;
         }
-        if (((token === import12.RouterLinkWithHref) && ((41 <= requestNodeIndex) && (requestNodeIndex <= 42)))) {
-            return this._RouterLinkWithHref_41_3;
+        if (((token === import12.RouterLinkWithHref) && ((27 <= requestNodeIndex) && (requestNodeIndex <= 28)))) {
+            return this._RouterLinkWithHref_27_3;
         }
         if (((token === import12.RouterLinkWithHref) && ((45 <= requestNodeIndex) && (requestNodeIndex <= 46)))) {
             return this._RouterLinkWithHref_45_3;
         }
         if (((token === import12.RouterLinkWithHref) && ((49 <= requestNodeIndex) && (requestNodeIndex <= 50)))) {
             return this._RouterLinkWithHref_49_3;
-        }
-        if (((token === import12.RouterLinkWithHref) && ((53 <= requestNodeIndex) && (requestNodeIndex <= 54)))) {
-            return this._RouterLinkWithHref_53_3;
-        }
-        if (((token === import12.RouterLinkWithHref) && ((57 <= requestNodeIndex) && (requestNodeIndex <= 58)))) {
-            return this._RouterLinkWithHref_57_3;
-        }
-        if (((token === import12.RouterLinkWithHref) && ((61 <= requestNodeIndex) && (requestNodeIndex <= 62)))) {
-            return this._RouterLinkWithHref_61_3;
-        }
-        if (((token === import12.RouterLinkWithHref) && ((65 <= requestNodeIndex) && (requestNodeIndex <= 66)))) {
-            return this._RouterLinkWithHref_65_3;
-        }
-        if (((token === import12.RouterLinkWithHref) && ((74 <= requestNodeIndex) && (requestNodeIndex <= 75)))) {
-            return this._RouterLinkWithHref_74_3;
         }
         return notFoundResult;
     };
@@ -573,7 +448,7 @@ var _View_NavSidebarComponent0 = (function (_super) {
         this.debug(7, 2, 7);
         changes = null;
         this.debug(7, 2, 60);
-        var currVal_4 = this._arr_1('/home');
+        var currVal_4 = this._arr_1('/ticket');
         if (import5.checkBinding(throwOnChange, this._expr_4, currVal_4)) {
             this._RouterLinkWithHref_7_3.routerLink = currVal_4;
             if ((changes === null)) {
@@ -588,7 +463,7 @@ var _View_NavSidebarComponent0 = (function (_super) {
         this.debug(11, 3, 7);
         changes = null;
         this.debug(11, 3, 60);
-        var currVal_7 = this._arr_2('/ticket');
+        var currVal_7 = this._arr_2('/grid1');
         if (import5.checkBinding(throwOnChange, this._expr_7, currVal_7)) {
             this._RouterLinkWithHref_11_3.routerLink = currVal_7;
             if ((changes === null)) {
@@ -603,7 +478,7 @@ var _View_NavSidebarComponent0 = (function (_super) {
         this.debug(15, 4, 7);
         changes = null;
         this.debug(15, 4, 60);
-        var currVal_10 = this._arr_3('/about');
+        var currVal_10 = this._arr_3('/grid2');
         if (import5.checkBinding(throwOnChange, this._expr_10, currVal_10)) {
             this._RouterLinkWithHref_15_3.routerLink = currVal_10;
             if ((changes === null)) {
@@ -618,7 +493,7 @@ var _View_NavSidebarComponent0 = (function (_super) {
         this.debug(19, 5, 7);
         changes = null;
         this.debug(19, 5, 60);
-        var currVal_13 = this._arr_4('/detail');
+        var currVal_13 = this._arr_4('/about');
         if (import5.checkBinding(throwOnChange, this._expr_13, currVal_13)) {
             this._RouterLinkWithHref_19_3.routerLink = currVal_13;
             if ((changes === null)) {
@@ -633,7 +508,7 @@ var _View_NavSidebarComponent0 = (function (_super) {
         this.debug(23, 6, 7);
         changes = null;
         this.debug(23, 6, 60);
-        var currVal_16 = this._arr_5('/subscriber');
+        var currVal_16 = this._arr_5('/login');
         if (import5.checkBinding(throwOnChange, this._expr_16, currVal_16)) {
             this._RouterLinkWithHref_23_3.routerLink = currVal_16;
             if ((changes === null)) {
@@ -645,12 +520,12 @@ var _View_NavSidebarComponent0 = (function (_super) {
         if ((changes !== null)) {
             this._RouterLinkWithHref_23_3.ngOnChanges(changes);
         }
-        this.debug(41, 14, 22);
+        this.debug(27, 7, 7);
         changes = null;
-        this.debug(41, 14, 75);
-        var currVal_19 = this._arr_6('/');
+        this.debug(27, 7, 60);
+        var currVal_19 = this._arr_6('/detail');
         if (import5.checkBinding(throwOnChange, this._expr_19, currVal_19)) {
-            this._RouterLinkWithHref_41_3.routerLink = currVal_19;
+            this._RouterLinkWithHref_27_3.routerLink = currVal_19;
             if ((changes === null)) {
                 (changes = {});
             }
@@ -658,12 +533,12 @@ var _View_NavSidebarComponent0 = (function (_super) {
             this._expr_19 = currVal_19;
         }
         if ((changes !== null)) {
-            this._RouterLinkWithHref_41_3.ngOnChanges(changes);
+            this._RouterLinkWithHref_27_3.ngOnChanges(changes);
         }
         this.debug(45, 15, 22);
         changes = null;
         this.debug(45, 15, 75);
-        var currVal_22 = this._arr_7('/home');
+        var currVal_22 = this._arr_7('/iframe/webpage1');
         if (import5.checkBinding(throwOnChange, this._expr_22, currVal_22)) {
             this._RouterLinkWithHref_45_3.routerLink = currVal_22;
             if ((changes === null)) {
@@ -678,7 +553,7 @@ var _View_NavSidebarComponent0 = (function (_super) {
         this.debug(49, 16, 22);
         changes = null;
         this.debug(49, 16, 75);
-        var currVal_25 = this._arr_8('/ticket');
+        var currVal_25 = this._arr_8('/iframe/webpage2');
         if (import5.checkBinding(throwOnChange, this._expr_25, currVal_25)) {
             this._RouterLinkWithHref_49_3.routerLink = currVal_25;
             if ((changes === null)) {
@@ -689,81 +564,6 @@ var _View_NavSidebarComponent0 = (function (_super) {
         }
         if ((changes !== null)) {
             this._RouterLinkWithHref_49_3.ngOnChanges(changes);
-        }
-        this.debug(53, 17, 22);
-        changes = null;
-        this.debug(53, 17, 75);
-        var currVal_28 = this._arr_9('/about');
-        if (import5.checkBinding(throwOnChange, this._expr_28, currVal_28)) {
-            this._RouterLinkWithHref_53_3.routerLink = currVal_28;
-            if ((changes === null)) {
-                (changes = {});
-            }
-            changes['routerLink'] = new import8.SimpleChange(this._expr_28, currVal_28);
-            this._expr_28 = currVal_28;
-        }
-        if ((changes !== null)) {
-            this._RouterLinkWithHref_53_3.ngOnChanges(changes);
-        }
-        this.debug(57, 18, 22);
-        changes = null;
-        this.debug(57, 18, 75);
-        var currVal_31 = this._arr_10('/detail');
-        if (import5.checkBinding(throwOnChange, this._expr_31, currVal_31)) {
-            this._RouterLinkWithHref_57_3.routerLink = currVal_31;
-            if ((changes === null)) {
-                (changes = {});
-            }
-            changes['routerLink'] = new import8.SimpleChange(this._expr_31, currVal_31);
-            this._expr_31 = currVal_31;
-        }
-        if ((changes !== null)) {
-            this._RouterLinkWithHref_57_3.ngOnChanges(changes);
-        }
-        this.debug(61, 19, 22);
-        changes = null;
-        this.debug(61, 19, 75);
-        var currVal_34 = this._arr_11('/subscriber');
-        if (import5.checkBinding(throwOnChange, this._expr_34, currVal_34)) {
-            this._RouterLinkWithHref_61_3.routerLink = currVal_34;
-            if ((changes === null)) {
-                (changes = {});
-            }
-            changes['routerLink'] = new import8.SimpleChange(this._expr_34, currVal_34);
-            this._expr_34 = currVal_34;
-        }
-        if ((changes !== null)) {
-            this._RouterLinkWithHref_61_3.ngOnChanges(changes);
-        }
-        this.debug(65, 20, 22);
-        changes = null;
-        this.debug(65, 20, 75);
-        var currVal_37 = this._arr_12('/login');
-        if (import5.checkBinding(throwOnChange, this._expr_37, currVal_37)) {
-            this._RouterLinkWithHref_65_3.routerLink = currVal_37;
-            if ((changes === null)) {
-                (changes = {});
-            }
-            changes['routerLink'] = new import8.SimpleChange(this._expr_37, currVal_37);
-            this._expr_37 = currVal_37;
-        }
-        if ((changes !== null)) {
-            this._RouterLinkWithHref_65_3.ngOnChanges(changes);
-        }
-        this.debug(74, 26, 7);
-        changes = null;
-        this.debug(74, 26, 60);
-        var currVal_40 = this._arr_13('/login');
-        if (import5.checkBinding(throwOnChange, this._expr_40, currVal_40)) {
-            this._RouterLinkWithHref_74_3.routerLink = currVal_40;
-            if ((changes === null)) {
-                (changes = {});
-            }
-            changes['routerLink'] = new import8.SimpleChange(this._expr_40, currVal_40);
-            this._expr_40 = currVal_40;
-        }
-        if ((changes !== null)) {
-            this._RouterLinkWithHref_74_3.ngOnChanges(changes);
         }
         this.detectContentChildrenChanges(throwOnChange);
         this.debug(3, 1, 7);
@@ -802,10 +602,10 @@ var _View_NavSidebarComponent0 = (function (_super) {
             this.renderer.setElementProperty(this._el_23, 'href', this.viewUtils.sanitizer.sanitize(import16.SecurityContext.URL, currVal_17));
             this._expr_17 = currVal_17;
         }
-        this.debug(41, 14, 22);
-        var currVal_20 = this._RouterLinkWithHref_41_3.href;
+        this.debug(27, 7, 7);
+        var currVal_20 = this._RouterLinkWithHref_27_3.href;
         if (import5.checkBinding(throwOnChange, this._expr_20, currVal_20)) {
-            this.renderer.setElementProperty(this._el_41, 'href', this.viewUtils.sanitizer.sanitize(import16.SecurityContext.URL, currVal_20));
+            this.renderer.setElementProperty(this._el_27, 'href', this.viewUtils.sanitizer.sanitize(import16.SecurityContext.URL, currVal_20));
             this._expr_20 = currVal_20;
         }
         this.debug(45, 15, 22);
@@ -819,36 +619,6 @@ var _View_NavSidebarComponent0 = (function (_super) {
         if (import5.checkBinding(throwOnChange, this._expr_26, currVal_26)) {
             this.renderer.setElementProperty(this._el_49, 'href', this.viewUtils.sanitizer.sanitize(import16.SecurityContext.URL, currVal_26));
             this._expr_26 = currVal_26;
-        }
-        this.debug(53, 17, 22);
-        var currVal_29 = this._RouterLinkWithHref_53_3.href;
-        if (import5.checkBinding(throwOnChange, this._expr_29, currVal_29)) {
-            this.renderer.setElementProperty(this._el_53, 'href', this.viewUtils.sanitizer.sanitize(import16.SecurityContext.URL, currVal_29));
-            this._expr_29 = currVal_29;
-        }
-        this.debug(57, 18, 22);
-        var currVal_32 = this._RouterLinkWithHref_57_3.href;
-        if (import5.checkBinding(throwOnChange, this._expr_32, currVal_32)) {
-            this.renderer.setElementProperty(this._el_57, 'href', this.viewUtils.sanitizer.sanitize(import16.SecurityContext.URL, currVal_32));
-            this._expr_32 = currVal_32;
-        }
-        this.debug(61, 19, 22);
-        var currVal_35 = this._RouterLinkWithHref_61_3.href;
-        if (import5.checkBinding(throwOnChange, this._expr_35, currVal_35)) {
-            this.renderer.setElementProperty(this._el_61, 'href', this.viewUtils.sanitizer.sanitize(import16.SecurityContext.URL, currVal_35));
-            this._expr_35 = currVal_35;
-        }
-        this.debug(65, 20, 22);
-        var currVal_38 = this._RouterLinkWithHref_65_3.href;
-        if (import5.checkBinding(throwOnChange, this._expr_38, currVal_38)) {
-            this.renderer.setElementProperty(this._el_65, 'href', this.viewUtils.sanitizer.sanitize(import16.SecurityContext.URL, currVal_38));
-            this._expr_38 = currVal_38;
-        }
-        this.debug(74, 26, 7);
-        var currVal_41 = this._RouterLinkWithHref_74_3.href;
-        if (import5.checkBinding(throwOnChange, this._expr_41, currVal_41)) {
-            this.renderer.setElementProperty(this._el_74, 'href', this.viewUtils.sanitizer.sanitize(import16.SecurityContext.URL, currVal_41));
-            this._expr_41 = currVal_41;
         }
         this.detectViewChildrenChanges(throwOnChange);
     };
@@ -865,22 +635,12 @@ var _View_NavSidebarComponent0 = (function (_super) {
         this._RouterLinkWithHref_19_3.ngOnDestroy();
         this.debug(23, 6, 7);
         this._RouterLinkWithHref_23_3.ngOnDestroy();
-        this.debug(41, 14, 22);
-        this._RouterLinkWithHref_41_3.ngOnDestroy();
+        this.debug(27, 7, 7);
+        this._RouterLinkWithHref_27_3.ngOnDestroy();
         this.debug(45, 15, 22);
         this._RouterLinkWithHref_45_3.ngOnDestroy();
         this.debug(49, 16, 22);
         this._RouterLinkWithHref_49_3.ngOnDestroy();
-        this.debug(53, 17, 22);
-        this._RouterLinkWithHref_53_3.ngOnDestroy();
-        this.debug(57, 18, 22);
-        this._RouterLinkWithHref_57_3.ngOnDestroy();
-        this.debug(61, 19, 22);
-        this._RouterLinkWithHref_61_3.ngOnDestroy();
-        this.debug(65, 20, 22);
-        this._RouterLinkWithHref_65_3.ngOnDestroy();
-        this.debug(74, 26, 7);
-        this._RouterLinkWithHref_74_3.ngOnDestroy();
     };
     _View_NavSidebarComponent0.prototype._handle_click_3_0 = function ($event) {
         this.markPathToRootAsCheckOnce();
@@ -918,10 +678,10 @@ var _View_NavSidebarComponent0 = (function (_super) {
         var pd_0 = (this._RouterLinkWithHref_23_3.onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
         return (true && pd_0);
     };
-    _View_NavSidebarComponent0.prototype._handle_click_41_0 = function ($event) {
+    _View_NavSidebarComponent0.prototype._handle_click_27_0 = function ($event) {
         this.markPathToRootAsCheckOnce();
-        this.debug(41, 14, 22);
-        var pd_0 = (this._RouterLinkWithHref_41_3.onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
+        this.debug(27, 7, 7);
+        var pd_0 = (this._RouterLinkWithHref_27_3.onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
         return (true && pd_0);
     };
     _View_NavSidebarComponent0.prototype._handle_click_45_0 = function ($event) {
@@ -936,41 +696,11 @@ var _View_NavSidebarComponent0 = (function (_super) {
         var pd_0 = (this._RouterLinkWithHref_49_3.onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
         return (true && pd_0);
     };
-    _View_NavSidebarComponent0.prototype._handle_click_53_0 = function ($event) {
-        this.markPathToRootAsCheckOnce();
-        this.debug(53, 17, 22);
-        var pd_0 = (this._RouterLinkWithHref_53_3.onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
-        return (true && pd_0);
-    };
-    _View_NavSidebarComponent0.prototype._handle_click_57_0 = function ($event) {
-        this.markPathToRootAsCheckOnce();
-        this.debug(57, 18, 22);
-        var pd_0 = (this._RouterLinkWithHref_57_3.onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
-        return (true && pd_0);
-    };
-    _View_NavSidebarComponent0.prototype._handle_click_61_0 = function ($event) {
-        this.markPathToRootAsCheckOnce();
-        this.debug(61, 19, 22);
-        var pd_0 = (this._RouterLinkWithHref_61_3.onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
-        return (true && pd_0);
-    };
-    _View_NavSidebarComponent0.prototype._handle_click_65_0 = function ($event) {
-        this.markPathToRootAsCheckOnce();
-        this.debug(65, 20, 22);
-        var pd_0 = (this._RouterLinkWithHref_65_3.onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
-        return (true && pd_0);
-    };
-    _View_NavSidebarComponent0.prototype._handle_click_74_0 = function ($event) {
-        this.markPathToRootAsCheckOnce();
-        this.debug(74, 26, 7);
-        var pd_0 = (this._RouterLinkWithHref_74_3.onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
-        return (true && pd_0);
-    };
     return _View_NavSidebarComponent0;
 }(import3.DebugAppView));
 function viewFactory_NavSidebarComponent0(viewUtils, parentInjector, declarationEl) {
     if ((renderType_NavSidebarComponent === null)) {
-        (renderType_NavSidebarComponent = viewUtils.createRenderComponentType('C:/Source/Atlas/src/app-components/nav/sidebar/nav-sidebar.template.html', 0, import10.ViewEncapsulation.None, styles_NavSidebarComponent, {}));
+        (renderType_NavSidebarComponent = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-aot-webpack2-typescript-dotnet/master/src/app-components/nav/sidebar/nav-sidebar.template.html', 0, import10.ViewEncapsulation.None, styles_NavSidebarComponent, {}));
     }
     return new _View_NavSidebarComponent0(viewUtils, parentInjector, declarationEl);
 }

@@ -136,7 +136,7 @@ class _View_NavFooterComponent0 extends import3.DebugAppView<import1.NavFooterCo
   }
 }
 export function viewFactory_NavFooterComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<import1.NavFooterComponent> {
-  if ((renderType_NavFooterComponent === (null as any))) { (renderType_NavFooterComponent = viewUtils.createRenderComponentType('C:/Source/Atlas/src/app-components/nav/footer/nav-footer.template.html',0,import11.ViewEncapsulation.None,styles_NavFooterComponent,{})); }
+  if ((renderType_NavFooterComponent === (null as any))) { (renderType_NavFooterComponent = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-aot-webpack2-typescript-dotnet/master/src/app-components/nav/footer/nav-footer.template.html',0,import11.ViewEncapsulation.None,styles_NavFooterComponent,{})); }
   return new _View_NavFooterComponent0(viewUtils,parentInjector,declarationEl);
 }
 const nodeDebugInfos_NavFooterComponent1:import0.StaticNodeDebugInfo[] = [

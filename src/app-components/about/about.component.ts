@@ -15,9 +15,9 @@ import { AppState } from '../services/appstate.service';
 /**
  * This is where CSS/SCSS files that the component depends on are required.
  *
- * Function: To enable so-called "Lazy Loading" CSS/SCSS files "on demand"
- * as the app views need them. Do NOT add styles the "Angular2 Way"
- * in the @Component decorator ("styles" and "styleUrls" properties)
+ * Function: To enable "Hot Module Replacement" of CSS/SCSS files
+ * during development. During productions, all styles will be extracted into
+ *  external stylesheets. Do NOT add styles the "Angular2 Way" in
  */
 import './about.style.scss';
 
@@ -49,6 +49,7 @@ export class AboutComponent {
       // var mockData = require('assets/mock-data/mock-data.json');
       // console.log('mockData', mockData);
       // if you're working with mock data you can also use http.get('assets/mock-data/mock-data.json')
+
       this.asyncDataWithWebpackSystemJS ();
 
    }
@@ -63,7 +64,7 @@ export class AboutComponent {
       // you can also async load mock data with 'es6-promise-loader'
       // you would do this if you don't want the mock-data bundled
       // remember that 'es6-promise-loader' is a promise
-      let asyncMockDataPromiseFactory = require('es6-promise!../../assets/mock-data/mock-data.json');
+      let asyncMockDataPromiseFactory = require('es6-promise?,[name]!../../assets/mock-data/mock-data.json');
       setTimeout(() => {
 
          // let asyncDataPromise = asyncMockDataPromiseFactory();

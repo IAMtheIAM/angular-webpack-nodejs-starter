@@ -2,9 +2,8 @@
 /*
  * Angular 2 decorators and services
  */
-import { Component } from '@angular/core';
-// import { Http } from '@angular/http';
-// import { AuthHttp } from 'angular2-jwt';
+import { Component, Output } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 /*
  * Shared Utilities
@@ -17,9 +16,9 @@ import { DataService } from '../services/data.service';
 /**
  * This is where CSS/SCSS files that the component depends on are required.
  *
- * Function: To enable so-called "Lazy Loading" CSS/SCSS files "on demand"
- * as the app views need them. Do NOT add styles the "Angular2 Way"
- * in the @Component decorator ("styles" and "styleUrls" properties)
+ * Function: To enable "Hot Module Replacement" of CSS/SCSS files
+ * during development. During productions, all styles will be extracted into
+ *  external stylesheets. Do NOT add styles the "Angular2 Way" in
  */
 import './ticket.style.scss';
 
@@ -32,13 +31,15 @@ export class TicketComponent {
    // Here we define this component's instance variables
    // They're accessible from the template
    response: string;
-   subscriberFoundByID: string;
+   //subscriberFoundByID: string;
+   subscriberFoundByID: any;
    progress: number = 0;
    isAuthenticated: boolean;
    // Set our default values
-   localState = {
-      subscriberID: "dh048"
-   };
+   subscriberID: "dh048"
+
+   ticketID: string = '';
+   ticketInstance: any;
 
    // TypeScript public modifiers
    constructor(
@@ -46,8 +47,8 @@ export class TicketComponent {
       // public http: Http,
       // public authHttp: AuthHttp,
       public dataService: DataService,
-      public authService: Authentication) {
-
+      public authService: Authentication,
+      private route: ActivatedRoute) {
 
    }
 
@@ -55,17 +56,37 @@ export class TicketComponent {
       if (Logging.isEnabled.light) { console.log('%c Hello \"Ticket\" component!', Logging.normal.lime); }
       if (Logging.isEnabled.verbose) { console.log('isLoggedIn(): ' + this.authService.isLoggedIn()); }
       this.authService.redirectIfNotLoggedIn();
+
+      // Subscriber to the Angular2 route parameters object
+      this.ticketInstance = this.route.params.subscribe(
+         params => {
+            // If theres no route paramters, don't do anything, which leaves ticketID = '' instead of 'undefined'
+            if (!_.isEmpty(params)) {
+               this.ticketID = params['ticketID']; // use +param to convert string 'ticketID' to a number
+
+               // Execute the subscriber search on ticket load
+               this.searchSubscriberByID(this.ticketID);
+            }
+         });
    }
 
    ngAfterViewInit() {
       // The ngAfterViewInit lifecycle hook makes sure the view is rendered so jQuery can do it's thing
       // This is where you put all your "$(document).ready(function() { });" code
+
+      // Init Material select dropdowns
+      $('select').material_select();
+
+   }
+
+   ngOnDestroy() {
+      this.ticketInstance.unsubscribe();
    }
 
    searchSubscriberByID(subscriberID) {
-      // this.appState.set('searchSubscriberByID', this.localState.subscriberID);
       this.appState.set('searchSubscriberByID', subscriberID);
-      this._callApi('DataService', '/api/subscriber/' + this.localState.subscriberID);
+      this._callApi('DataService', '/api/subscriber/' + subscriberID);
+      // this._callApi('DataService', 'https://jsonplaceholder.typicode.com/users');
    }
 
    _callApi(
@@ -79,8 +100,19 @@ export class TicketComponent {
          this.dataService.get(url)
              .subscribe(
                 response =>this.subscriberFoundByID = response.json(),
-                error => this.response = error.text(),
-                () => {
+
+                // response => {
+                //    for (var i = 0; i < 3; i++) {
+                //       var thisName = response.json()[i].name;
+                //       if (!namesArray) {
+                //          var namesArray = [];
+                //       }
+                //       namesArray.push(thisName);
+                //    }
+                //    //namesArray;
+                //    this.subscriberFoundByID = namesArray;
+                //},
+                error => this.response = error.text(), () => {
                    if (Logging.isEnabled.light) {
                       console.log('%c API Call Complete', Logging.normal.orange);
                    }
