@@ -1,56 +1,54 @@
 
 # Angular 2 AOT + Webpack 2 + Typescript + SASS + .NET Core 1
 
-This is based on the Angular2 Webpack Starter repo [available on GitHub](https://angularclass.github.io/angular2-webpack-starter/). It enhances that repo with additional features, such as Angular 2 AOT Compilation, and SASS + Sourcemaps working with Hot Module Replacement.
- 
-The original documentation is here in this file below the customized documentation. This documentation assumes you are developing on Windows 10.
+The purpose of the project is to assist Front-end developers and .NET developers to easily integrate their code. This documentation assumes you are developing on Windows 10, however it should work with little to no changes for Linux and Mac.
 
-In the next section, you'll learn what you need to know in order to build, serve, and edit this app.
+This is based on the Angular 2 Webpack Starter repo [available on GitHub](https://angularclass.github.io/angular2-webpack-starter/). It enhances that repo with additional features, such as integration with .NET Core 1.0, Angular 2 AOT Compilation, Webpack 2.1.5, and SASS + Sourcemaps working with Hot Module Replacement.
+
+
+In the following section, you'll learn what you need to know in order to build, serve, and edit this app.
 
 ## Getting Your Environment Setup
 
-This solution depends upon NodeJS and NPM. It is important that you only use Node version 4.4.4 LTS or higher, and NPM version 3.10.6 or higher. I do not recommend using the "Current" version which contains latest features, or you may run into build errors. Any other version of NodeJS and NPM is not guaranteed to work and may produce build errors.
+This project depends upon NodeJS and NPM. It is important that you only use Node version 4.4.4 LTS or higher, and NPM version 3.10.6 or higher. I do not recommend using the "Current" version which contains latest features, or you may run into build errors. Any other version of NodeJS and NPM is not guaranteed to work and may produce build errors.
 
 **Installation steps:**
 
-* `npm run onetimesetup`
-
-**Webpack Dev Server with HMR (Hot Module Replacement) and Angular 2 AOT (Ahead Of Time) compilation** 
-
-* `npm run build:dlls`
-* `npm run compile:aot`
-* `npm run devserver:aot`
-* `npm run server:dotnetcore:dev`
+* `npm run onetimesetup` (this will take between 3-10 minutes depending on your computer speed) 
 
 **Webpack Dev Server with HMR (Hot Module Replacement) and Angular 2 JIT (Just In Time) compilation**
  
 * `npm run build:dlls`
 * `npm run devserver:jit`
-* `npm run server:dotnetcore:dev`
+* `npm run server:dotnetcore:dev` (reads js/css files from webpack-dev-server memory, on localhost:4000)
 
-**Production Build /w AOT Compilationv (No HMR, optimized code)**
+**Production Build /w AOT Compilation (No HMR, optimized code)**
  
-* `npm run build:dlls`
 * `npm run compile:aot`
+* `npm run build:dlls`
 * `npm run build:production:aot`
-* `npm run server:dotnetcore:production`
+* `npm run server:dotnetcore:production` (reads js/css files from wwwroot disk folder, on localhost:5000)
 
-**Production Build /w JIT compilation (No HMR, optimized code)**
+**Production Build /w JIT Compilation (No HMR, optimized code)**
+
+I wouldn't recommend JIT build for production code, because it's around 50% slower to bootstrap the app compared to AOT build. But here's how you do it in case you want to for some reason:
  
 * `npm run build:dlls`
 * `npm run build:production:jit`
 * `npm run server:dotnetcore:production`
 
-**Start .NET Core Server (Kestrel)**
- 
-* `npm run server:dotnetcore:dev` (reads js/css files from webpack-dev-server memory, on localhost:4000)
-* `npm run server:dotnetcore:production` (reads js/css files from wwwroot disk folder, on localhost:5000)
 
 **Important points of consideration**
 
-* If you ever need to clean your project folder of any generated files, execute the "clean" task. This will remove *"node_modules", "bower_components", "typings", "wwwroot" and "coverage"* from your project directory.
+* The project repo includes a .idea folder. This is for developing in IntelliJ IDEA 2016, which is excellent in my opinion for developing front end code. The project takes advantage of the `dotnet` command-line SDK which allows you to compile .NET code outside of Visual Studio 2015. 
 
-* Alternatively you can execute "clean:install" which will perform the task `clean` followed by the task `install:all` which will reinstall all dependencies from a locally stored cache in the form of a .tar file. This is faster than downloading all the packages from the NPM repository. If you want to clean then redownload all dependencies rather than use local cache, run "clean:install:download" which will perform the tasks `clean` followed by `install:all:download`.
+* For IntelliJ IDEA 2016 users, there are many useful run configurations, including debugging the Webpack build, debugging the Angular 2 application, and compound run configurations which upon executing, will execute the above scripts in order for you, so you don't have to remember the order and run multiple commands each time.
+
+* Of course, the app also works fine in Visual Studio 2015. However, the run configurations are not up to date, since I use IntelliJ for my main IDE. I will update them soon. You'll need to install `Task Runner Explorer` to execute the commands from within VS2015, otherwise you'll have to use a Terminal / Command Prompt.
+
+* If you ever need to clean your project folder of any generated files, execute the "clean" task. This will remove everything within *"node_modules", "bower_components", "cache", "wwwroot" and "coverage"*.
+
+* Alternatively you can execute "clean:install" which will perform the task `clean` followed by the task `install:all` which will redownload and reinstall all dependencies for you.
 
 # Features of this Project
 
