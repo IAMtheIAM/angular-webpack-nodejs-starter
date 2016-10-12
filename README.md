@@ -3,16 +3,22 @@
 
 The purpose of the project is to assist Front-end developers and .NET developers to easily integrate their code. This documentation assumes you are developing on Windows 10, however it should work with little to no changes for Linux and Mac.
 
-This is based on the Angular 2 Webpack Starter repo [available on GitHub](https://angularclass.github.io/angular2-webpack-starter/). It enhances that repo with additional features, such as integration with .NET Core 1.0, Angular 2 AOT Compilation, Webpack 2.1.5, and SASS + Sourcemaps working with Hot Module Replacement.
+This is based on the Angular 2 Webpack Starter repo [available on GitHub](https://angularclass.github.io/angular2-webpack-starter/). It enhances that repo with additional features, such as integration with .NET Core 1.0, Angular 2 AOT Compilation, Webpack 2.1.0-beta.25, and SASS + Sourcemaps working with Hot Module Replacement.
 
 
 In the following section, you'll learn what you need to know in order to build, serve, and edit this app.
 
 ## Getting Your Environment Setup
 
-This project depends upon NodeJS and NPM. It is important that you only use Node version 4.4.4 LTS or higher, and NPM version 3.10.6 or higher. I do not recommend using the "Current" version which contains latest features, or you may run into build errors. Any other version of NodeJS and NPM is not guaranteed to work and may produce build errors.
+This project depends upon NodeJS and NPM. It is important that you only use **Node version 4.4.4 LTS or higher**, and **NPM version 3.10.6 or higher**. I do not recommend using the "Current" version which contains latest features, or you may run into build errors. Any other version of NodeJS and NPM is not guaranteed to work and may produce build errors.
 
 **Installation steps:**
+
+Install .NET Core SDK
+ 
+* [https://www.microsoft.com/net/core#windows](https://www.microsoft.com/net/core#windows)
+
+Run One Time Setup
 
 * `npm run onetimesetup` (this will take between 3-10 minutes depending on your computer speed) 
 
@@ -37,6 +43,9 @@ I wouldn't recommend JIT build for production code, because it's around 50% slow
 * `npm run build:production:jit`
 * `npm run server:dotnetcore:production`
 
+Viewing The App
+
+* [http://localhost:5000](http://localhost:5000)
 
 **Important points of consideration**
 
@@ -115,59 +124,6 @@ NPM utilizing exit codes to indicate whether the executing task failed or succee
 **CAVEAT**: When chaining scripts together with `pre`, `post` or `&&`, they are all run **synchronously**, meaning that they happen sequentially in order, and if one fails, the rest will not execute. Therefore it is imperitive that all your scripts being executed issue an exit code 0 in order to continue scripting. 
 
 **CAVEAT 2**: Webpack-Dev-Server is an ongoing task and does NOT have an exit code, because it stays alive. Therefore you cannot chain any tasks after running Webpack-Dev-Server without utilizing a workaround to get them to run **asynchronously**. There are also other NPM pacakges such as `concurrently` that can help with this, and command line tools such as chaining commands together with a single `&` and prefixing them with `start` to open each command in a new cmd.exe instance and run them in parallel).(`start npm run server:Frontend:hmr & start npm run apiserver`). 
-
-## Integration with Local Build and TFS Build Server
-
-In order to integrate the NPM scripts with your local Visual Studio build and on a remote build server, it is necessary to take advantage of the *.xproj file. This is the project file. To edit this within Visual Studio, go to Solution Manager and right click on your project name, then choose "Unload Project." Now right click on the project file again and chooose "Edit *.xproj". Alternatively you can navigate in File Explorer to "(Solution Root)/src/starterproject" and edit StarterProject.xproj with Notepad++ or any text editor. 
-
-**Inside StarterProject.xproj, The section you are concerned with is:**
-
-```
-  <PropertyGroup>
-    <CompileDependsOn>
-      $(CompileDependsOn);
-	  PreBuildEvents
-    </CompileDependsOn>
-    <CleanDependsOn>
-      $(CleanDependsOn); 
-      NpmClean
-    </CleanDependsOn>
-    <BuildDependsOn>
-      $(BuildDependsOn);
-	  PostBuildEvents
-    </BuildDependsOn>
-  </PropertyGroup>
-  <Target Name="PreBuildEvents">
-    <Exec Command="set NODE_ENV=$(ConfigurationName)" />
-	<Exec Command="npm run launch:$(ConfigurationName)" />
-  </Target>
-  <Target Name="NpmClean">
-    <Exec Command="set NODE_ENV=$(ConfigurationName)" />
-    <Exec Command="npm run cleancache" />
-  </Target>
-  <Target Name="PostBuildEvents">
-    <Exec Command="set NODE_ENV=$(ConfigurationName)" />
-  </Target>
-```
-
-PropertyGroup has a property called CompileDependsOn. First, it executes $(CompileDependsOn), which is a reference to execute all preconfigured compile events for visual studio. Then, it proceeds to execute PreBuildEvents, which points to the Target named "PreBuildEvents". 
-
-**Within this target is where we execute 2 commands:**
-
-* The first command sets the current build configuration to the NODE_ENV variable (used throughout WebPack and other scripts), so webpack can hook into this and know which scripts to execute based on our build configuration.
-* The second command is the one that hooks into our NPM Scripts, and fires **npm run launch:$(ConfigurationName)** where *$(ConfigurationName)* is a variable whos value is equal to the current "build configuration". These NPM scripts hook into the various `build:` scripts
-
-Because of this section in the *.xproj file, Visual Studio and TFS will execute the NPM scripts BEFORE the C# build happens both locally and on the TFS build server.
-
-Your current build configuration is whatever you have chosen under the dropdown one box left from the "Any CPU" box. 
-
-**Your available build configurations are:**
-
-1. **Debug**: This is for C# developers. It will not execute *any* npm scripts nor webpack, and will use the exiting files in wwwroot to launch the app. Fastest build time.
-2. **FrontEnd**: This is for FrontEnd developers and anyone making changes to the front end web application. It will execute the npm script `build:FrontEnd` which first wipes out wwwroot, then it launches webpack based on the **webpack.development.js** configuration. Webpack then recompiles and bundles our assets, and spits them into wwwroot.
-3. **Release**: This is to emulate what the build server does when it builds the code you check in. This does the same as FrontEnd, except it executes `build:Release` which launches webpack based on the **webpack.production.js** configuration.
-4. **Tests-E2E**: NOT WORKING. This kicks off the End to End tests by Protractor. These tests are defined in the files called `*.e2e.ts`. Currently it does not work unless you have your .NET Kestrel Web Server and Webpack Dev Server simultaneously running PRIOR to starting the test, because it launches the app in an actual browser and runs through the post-compiled source code in wwwroot (exactly what your browser sees). To get this working, make sure your Webpack-Dev-Server is running (from either `projectlaunch` or `start`), and then start your .NET server using the "FrontEnd" release configuration. Then go to NPM Task Runner Explorer and execute the task `test:e2e`. Protractor will run through the tests now.
-5. **Tests-Unit**: This kicks off the Unit tests by Karma. It uses a headless browser and runs through the pre-compiled source code in "/src", or more specifically "(Project Root)/src/starterproject/src". These tests are defined in the files called `*.spec.ts`. Alternatively, you can launch this test from NPM Task Runner Explorer also by executing the task `test:karma`. No servers need to be running for Karma to execute properly.
 
 
 # License
