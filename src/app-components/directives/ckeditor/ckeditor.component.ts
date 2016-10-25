@@ -1,8 +1,7 @@
 import { Component, Input } from '@angular/core'
 import { Logging } from '../../services/utility.service';
 
-var loadScript = require('scriptjs');
-declare var CKEDITOR;
+const loadScript = require('scriptjs');
 
 
 @Component({

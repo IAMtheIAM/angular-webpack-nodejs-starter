@@ -56,15 +56,6 @@ nav-header {
       .search {
          width: span(5 of 24);
 
-         i.material-icons {
-            position: absolute;
-            top: 0;
-            right: 17px;
-            cursor: pointer;
-            align-items: center;
-            display: flex;
-         }
-
          input.search-sidenav {
             display: block;
             font-size: 16px;
@@ -84,7 +75,7 @@ nav-header {
       }
       .search-wrapper {
          position: relative;
-         padding: 8px;
+         padding: 8px 0;
       }
 
    }

@@ -35,12 +35,6 @@ import './home.style.scss';
    templateUrl: './home.template.html'
 })
 
-// @CanActivate(() => isLoggedIn())
-
-// @CanActivate(() => {
-//   return isLoggedIn(); // navigate to protected route after logging in
-// })
-
 export class HomeComponent {
 
    // Here we define this component's instance variables
@@ -55,10 +49,6 @@ export class HomeComponent {
       public router: Router,
       public http: Http,
       public authService: Authentication) {
-
-      // if (Logging.isEnabled.light) {
-      //   console.log('%c Home Constructor Instantiated', Logging.normal.teal);
-      // }
 
       this.isAuthenticated = authService.isLoggedIn();
    }

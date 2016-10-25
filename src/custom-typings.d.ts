@@ -54,6 +54,7 @@ declare var AOT: string;
 declare var JIT: string;
 declare var HMR: boolean;
 declare var System: SystemJS;
+declare var CKEDITOR;
 
 interface SystemJS {
    import: (path?: string) => Promise<any>;

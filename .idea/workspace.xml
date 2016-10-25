@@ -1,404 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86fe6da4-45c6-471a-8fe0-426da23d6b09" name="Default" comment="Update index.html with new asset paths. (for running the application without .NET)">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/plugins/about/dialogs/logo_ckeditor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/plugins/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/plugins/icons_hidpi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/plugins/link/images/anchor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/plugins/link/images/hidpi/anchor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/plugins/pagebreak/images/pagebreak.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/img/github-top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/img/header-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/img/header-separator.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/img/navigation-tip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/assets/inlineall/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/assets/sample.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/toolbarconfigurator/font/fontello.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/toolbarconfigurator/font/fontello.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/skins/office2013/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/skins/office2013/icons_hidpi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/skins/office2013/images/arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/skins/office2013/images/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/skins/office2013/images/hidpi/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/skins/office2013/images/hidpi/lock-open.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/skins/office2013/images/hidpi/lock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/skins/office2013/images/hidpi/refresh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/skins/office2013/images/lock-open.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/skins/office2013/images/lock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/skins/office2013/images/refresh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/plugins/about/dialogs/logo_ckeditor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/plugins/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/plugins/icons_hidpi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/plugins/link/images/anchor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/plugins/link/images/hidpi/anchor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/plugins/pagebreak/images/pagebreak.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/skins/office2013/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/skins/office2013/icons_hidpi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/skins/office2013/images/arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/skins/office2013/images/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/skins/office2013/images/hidpi/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/skins/office2013/images/hidpi/lock-open.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/skins/office2013/images/hidpi/lock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/skins/office2013/images/hidpi/refresh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/skins/office2013/images/lock-open.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/skins/office2013/images/lock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/skins/office2013/images/refresh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules_custom/purifycss-webpack-plugin/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules_custom/purifycss-webpack-plugin/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules_custom/purifycss-webpack-plugin/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules_custom/purifycss-webpack-plugin/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/+iframe-module/iframe.module.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/+iframe-module/iframe.routes.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/+iframe-module/index.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/+iframe-module/webpage-1/index.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/+iframe-module/webpage-1/webpage-1.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/+iframe-module/webpage-1/webpage-1.style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/+iframe-module/webpage-1/webpage-1.template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/+iframe-module/webpage-2/index.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/+iframe-module/webpage-2/webpage-2.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/+iframe-module/webpage-2/webpage-2.style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/+iframe-module/webpage-2/webpage-2.template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app-components/directives/ckeditor/ckeditor.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app.bootstrap.combo-test.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/CHANGES.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/adapters/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/build-config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/ckeditor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/contents.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/lang/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/plugins/about/dialogs/about.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/plugins/clipboard/dialogs/paste.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/plugins/colordialog/dialogs/colordialog.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/plugins/colordialog/dialogs/colordialog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/plugins/dialog/dialogDefinition.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/plugins/find/dialogs/find.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/plugins/link/dialogs/anchor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/plugins/link/dialogs/link.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/plugins/scayt/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/plugins/scayt/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/plugins/scayt/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/plugins/scayt/dialogs/options.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/plugins/scayt/dialogs/toolbar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/css/samples.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/js/sample.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/js/sf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/ajax.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/api.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/appendto.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/assets/posteddata.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/assets/uilanguages/languages.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/datafiltering.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/dialog/assets/my_dialog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/dialog/dialog.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/divreplace.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/enterkey/enterkey.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/inlineall.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/inlinebycode.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/inlinetextarea.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/jquery.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/readonly.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/replacebyclass.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/replacebycode.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/sample.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/sample.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/sample_posteddata.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/tabindex.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/toolbar/toolbar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/uicolor.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/uilanguages.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/wysiwygarea/fullpage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/old/xhtmlstyle.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/toolbarconfigurator/css/fontello.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/toolbarconfigurator/font/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/toolbarconfigurator/font/fontello.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/toolbarconfigurator/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/toolbarconfigurator/lib/codemirror/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/skins/office2013/dialog.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/skins/office2013/editor.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/skins/office2013/skin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/ckeditor/styles.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+iframe-module/iframe.module.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+iframe-module/iframe.module.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+iframe-module/iframe.module.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+iframe-module/iframe.routes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+iframe-module/iframe.routes.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+iframe-module/iframe.routes.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+iframe-module/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+iframe-module/index.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+iframe-module/index.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+iframe-module/webpage-1/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+iframe-module/webpage-1/index.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+iframe-module/webpage-1/index.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+iframe-module/webpage-1/webpage-1.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+iframe-module/webpage-1/webpage-1.component.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+iframe-module/webpage-1/webpage-1.component.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+iframe-module/webpage-2/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+iframe-module/webpage-2/index.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+iframe-module/webpage-2/index.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+iframe-module/webpage-2/webpage-2.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+iframe-module/webpage-2/webpage-2.component.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+iframe-module/webpage-2/webpage-2.component.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/directives/ckeditor/ckeditor.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/directives/ckeditor/ckeditor.component.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/directives/ckeditor/ckeditor.component.metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app.bootstrap.combo-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app.bootstrap.combo-test.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/dlls/polyfills.dll.bundle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/dlls/polyfills.dll.bundle.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/dlls/vendors.dll.bundle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/dlls/vendors.dll.bundle.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/chunks/detail.module.chunk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/chunks/detail.module.chunk.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/chunks/detail.module.ngfactory.chunk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/chunks/detail.module.ngfactory.chunk.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/chunks/iframe.module.chunk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/chunks/iframe.module.chunk.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/chunks/iframe.module.ngfactory.chunk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/chunks/iframe.module.ngfactory.chunk.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/chunks/kendo.for.jquery.chunk.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/chunks/mock-data.chunk.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/ckeditor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/contents.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/lang/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/plugins/about/dialogs/about.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/plugins/clipboard/dialogs/paste.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/plugins/colordialog/dialogs/colordialog.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/plugins/colordialog/dialogs/colordialog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/plugins/dialog/dialogDefinition.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/plugins/find/dialogs/find.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/plugins/link/dialogs/anchor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/plugins/link/dialogs/link.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/plugins/scayt/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/plugins/scayt/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/plugins/scayt/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/plugins/scayt/dialogs/options.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/plugins/scayt/dialogs/toolbar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/skins/office2013/dialog.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/skins/office2013/editor.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/skins/office2013/skin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/ckeditor/styles.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/maps/commons.map.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/maps/detail.module.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/maps/detail.module.map.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/maps/detail.module.ngfactory.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/maps/detail.module.ngfactory.map.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/maps/iframe.module.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/maps/iframe.module.map.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/maps/iframe.module.ngfactory.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/maps/iframe.module.ngfactory.map.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/maps/kendo.for.jquery.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/maps/kendo.for.jquery.map.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/maps/mock-data.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wwwroot/js/maps/mock-data.map.gz" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/AOT__Compile___Build_Dev____NET_Server__Dev_.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/AOT__Compile___Build_Production____NET_Server__Production_.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/AOT__Dev_Server_____NET_Server__Dev_.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/JIT__Build_Production_____NET_Server__Production_.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Run__NET_Server__Production.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/dlls/dll.polyfills.bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/dlls/dll.polyfills.bundle.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/dlls/dll.vendors.bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/dlls/dll.vendors.bundle.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/js/1.bundle.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/js/1.bundle.map.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/js/chunk.1.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/js/chunk.kendo.for.jquery.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/js/commons.bundle.map.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/js/kendo.for.jquery.bundle.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwroot/js/kendo.for.jquery.bundle.map.gz" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Build_Webpack_DLLs.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/DLLs__Build.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Run__NET_Server__DEV.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/NPM_Clean__Install_.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wwwroot/js/app.bundle.map" afterPath="$PROJECT_DIR$/wwwroot/js/maps/app.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wwwroot/js/chunk.1.js" afterPath="$PROJECT_DIR$/wwwroot/js/chunks/mock-data.chunk.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wwwroot/js/chunk.kendo.for.jquery.js" afterPath="$PROJECT_DIR$/wwwroot/js/chunks/kendo.for.jquery.chunk.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wwwroot/js/commons.bundle.map" afterPath="$PROJECT_DIR$/wwwroot/js/maps/commons.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="86fe6da4-45c6-471a-8fe0-426da23d6b09" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/styles/appwide.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/styles/appwide/alignments.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/styles/appwide/buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/styles/appwide/display.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/styles/appwide/forms.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/styles/appwide/reset.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/styles/appwide/susy-grid-config.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/webpack.entry.bundle.ts" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" afterPath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aot-compiled/src/app-components/+detail/detail.component.ngfactory.ts" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/+detail/detail.component.ngfactory.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aot-compiled/src/app-components/+detail/detail.module.ngfactory.ts" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/+detail/detail.module.ngfactory.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aot-compiled/src/app-components/404/notfound404.component.ngfactory.ts" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/404/notfound404.component.ngfactory.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aot-compiled/src/app-components/about/about.component.ngfactory.ts" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/about/about.component.ngfactory.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aot-compiled/src/app-components/app/app.component.ngfactory.ts" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/app/app.component.ngfactory.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aot-compiled/src/app-components/app/app.module.ngfactory.ts" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/app/app.module.ngfactory.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aot-compiled/src/app-components/home/home.component.ngfactory.ts" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/home/home.component.ngfactory.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aot-compiled/src/app-components/login/login.component.ngfactory.ts" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/login/login.component.ngfactory.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aot-compiled/src/app-components/nav/footer/nav-footer.component.ngfactory.ts" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/nav/footer/nav-footer.component.ngfactory.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aot-compiled/src/app-components/nav/header/nav-header.component.ngfactory.ts" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/nav/header/nav-header.component.ngfactory.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aot-compiled/src/app-components/nav/sidebar/nav-sidebar.component.ngfactory.ts" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/nav/sidebar/nav-sidebar.component.ngfactory.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aot-compiled/src/app-components/subscriber/subscriber.component.ngfactory.ts" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/subscriber/subscriber.component.ngfactory.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aot-compiled/src/app-components/ticket/ticket.component.ngfactory.ts" afterPath="$PROJECT_DIR$/aot-compiled/src/app-components/ticket/ticket.component.ngfactory.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/helpers.js" afterPath="$PROJECT_DIR$/config/helpers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/webpack.common.js" afterPath="$PROJECT_DIR$/config/webpack.common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/webpack.conditionals.js" afterPath="$PROJECT_DIR$/config/webpack.conditionals.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/webpack.development.js" afterPath="$PROJECT_DIR$/config/webpack.development.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/webpack.dll.js" afterPath="$PROJECT_DIR$/config/webpack.dll.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/webpack.production.js" afterPath="$PROJECT_DIR$/config/webpack.production.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/+detail/detail.component.ts" afterPath="$PROJECT_DIR$/src/app-components/+detail/detail.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/+detail/detail.module.ts" afterPath="$PROJECT_DIR$/src/app-components/+detail/detail.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/+detail/detail.style.scss" afterPath="$PROJECT_DIR$/src/app-components/+detail/detail.style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/+detail/detail.template.html" afterPath="$PROJECT_DIR$/src/app-components/+detail/detail.template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/404/notfound404.component.ts" afterPath="$PROJECT_DIR$/src/app-components/404/notfound404.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/404/notfound404.template.html" afterPath="$PROJECT_DIR$/src/app-components/404/notfound404.template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/about/about.component.ts" afterPath="$PROJECT_DIR$/src/app-components/about/about.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/about/about.style.scss" afterPath="$PROJECT_DIR$/src/app-components/about/about.style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/app/app.component.ts" afterPath="$PROJECT_DIR$/src/app-components/app/app.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/app/app.module.ts" afterPath="$PROJECT_DIR$/src/app-components/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/app/app.routes.ts" afterPath="$PROJECT_DIR$/src/app-components/app/app.routes.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/app/app.style.scss" afterPath="$PROJECT_DIR$/src/app-components/app/app.style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/directives/ckeditor/ckeditor.component.ts" afterPath="$PROJECT_DIR$/src/app-components/directives/ckeditor/ckeditor.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/home/home.component.ts" afterPath="$PROJECT_DIR$/src/app-components/home/home.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/home/home.template.html" afterPath="$PROJECT_DIR$/src/app-components/home/home.template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/login/login.component.ts" afterPath="$PROJECT_DIR$/src/app-components/login/login.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/nav/footer/nav-footer.component.ts" afterPath="$PROJECT_DIR$/src/app-components/nav/footer/nav-footer.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/nav/header/nav-header.component.ts" afterPath="$PROJECT_DIR$/src/app-components/nav/header/nav-header.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/nav/header/nav-header.style.scss" afterPath="$PROJECT_DIR$/src/app-components/nav/header/nav-header.style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/nav/header/nav-header.template.html" afterPath="$PROJECT_DIR$/src/app-components/nav/header/nav-header.template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/nav/sidebar/nav-sidebar.component.ts" afterPath="$PROJECT_DIR$/src/app-components/nav/sidebar/nav-sidebar.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/nav/sidebar/nav-sidebar.template.html" afterPath="$PROJECT_DIR$/src/app-components/nav/sidebar/nav-sidebar.template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/services/appstate.service.ts" afterPath="$PROJECT_DIR$/src/app-components/services/appstate.service.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/subscriber/subscriber.component.ts" afterPath="$PROJECT_DIR$/src/app-components/subscriber/subscriber.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/subscriber/subscriber.style.scss" afterPath="$PROJECT_DIR$/src/app-components/subscriber/subscriber.style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/subscriber/subscriber.template.html" afterPath="$PROJECT_DIR$/src/app-components/subscriber/subscriber.template.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/ticket/ticket.component.ts" afterPath="$PROJECT_DIR$/src/app-components/ticket/ticket.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/ticket/ticket.style.scss" afterPath="$PROJECT_DIR$/src/app-components/ticket/ticket.style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app-components/ticket/ticket.template.html" afterPath="$PROJECT_DIR$/src/app-components/ticket/ticket.template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app.bootstrap.aot.ts" afterPath="$PROJECT_DIR$/src/app.bootstrap.aot.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app.bootstrap.ts" afterPath="$PROJECT_DIR$/src/app.bootstrap.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/appwide/susy-grid-config.scss" afterPath="$PROJECT_DIR$/src/assets/styles/appwide/susy-grid-config.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/sass-js-variables.js" afterPath="$PROJECT_DIR$/src/assets/styles/sass-js-variables.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/styles/variables.scss" afterPath="$PROJECT_DIR$/src/assets/styles/variables.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/custom-typings.d.ts" afterPath="$PROJECT_DIR$/src/custom-typings.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/vendors.ts" afterPath="$PROJECT_DIR$/src/vendors.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/node_modules_customized/purifycss-webpack-plugin/package.json" afterPath="$PROJECT_DIR$/tools/node_modules_customized/purifycss-webpack-plugin/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tsconfig.aot.json" afterPath="$PROJECT_DIR$/tsconfig.aot.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tsconfig.json" afterPath="$PROJECT_DIR$/tsconfig.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/assets/styles/appwide/susy-grid-config.scss" afterPath="$PROJECT_DIR$/wwwroot/assets/styles/appwide/susy-grid-config.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/assets/styles/sass-js-variables.js" afterPath="$PROJECT_DIR$/wwwroot/assets/styles/sass-js-variables.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/assets/styles/variables.scss" afterPath="$PROJECT_DIR$/wwwroot/assets/styles/variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/404/notfound404.component.ngfactory.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/404/notfound404.component.ngfactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/404/notfound404.component.ngfactory.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/404/notfound404.component.ngfactory.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/about/about.component.ngfactory.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/about/about.component.ngfactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/about/about.component.ngfactory.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/about/about.component.ngfactory.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/app/app.component.ngfactory.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/app/app.component.ngfactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/app/app.component.ngfactory.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/app/app.component.ngfactory.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/app/app.module.ngfactory.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/app/app.module.ngfactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/app/app.module.ngfactory.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/app/app.module.ngfactory.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/home/home.component.ngfactory.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/home/home.component.ngfactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/home/home.component.ngfactory.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/home/home.component.ngfactory.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/login/login.component.ngfactory.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/login/login.component.ngfactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/login/login.component.ngfactory.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/login/login.component.ngfactory.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/footer/nav-footer.component.ngfactory.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/footer/nav-footer.component.ngfactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/footer/nav-footer.component.ngfactory.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/footer/nav-footer.component.ngfactory.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/header/nav-header.component.ngfactory.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/header/nav-header.component.ngfactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/header/nav-header.component.ngfactory.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/header/nav-header.component.ngfactory.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/sidebar/nav-sidebar.component.ngfactory.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/sidebar/nav-sidebar.component.ngfactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/sidebar/nav-sidebar.component.ngfactory.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/nav/sidebar/nav-sidebar.component.ngfactory.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/subscriber/subscriber.component.ngfactory.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/subscriber/subscriber.component.ngfactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/subscriber/subscriber.component.ngfactory.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/subscriber/subscriber.component.ngfactory.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/ticket/ticket.component.ngfactory.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/ticket/ticket.component.ngfactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/ticket/ticket.component.ngfactory.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/aot-compiled/src/app-components/ticket/ticket.component.ngfactory.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/config/rules/importDestructuringSpacingRule.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/config/rules/importDestructuringSpacingRule.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.component.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.component.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.module.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.module.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.module.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.module.metadata.json" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.module.metadata.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.routes.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/detail.routes.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/index.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/+detail/index.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/404/index.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/404/index.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/404/notfound404.component.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/404/notfound404.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/404/notfound404.component.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/404/notfound404.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/404/notfound404.component.metadata.json" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/404/notfound404.component.metadata.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/about/about.component.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/about/about.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/about/about.component.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/about/about.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/about/index.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/about/index.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.component.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.component.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.module.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.module.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.module.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.module.metadata.json" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.module.metadata.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.resolver.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.resolver.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.routes.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.routes.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.routes.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.routes.metadata.json" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/app.routes.metadata.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/environment.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/environment.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/index.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/app/index.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/LoggedInOutlet.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/LoggedInOutlet.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/appInjector.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/appInjector.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/forceChangeDetection.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/forceChangeDetection.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/fullscreen.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/fullscreen.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/headers.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/headers.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/index.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/common/index.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/directives/index.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/directives/index.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/directives/router-active.directive.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/directives/router-active.directive.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/home/home.component.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/home/home.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/home/home.component.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/home/home.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/home/index.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/home/index.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/login/index.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/login/index.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/login/login.component.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/login/login.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/login/login.component.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/login/login.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/footer/index.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/footer/index.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/footer/nav-footer.component.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/footer/nav-footer.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/footer/nav-footer.component.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/footer/nav-footer.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/header/index.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/header/index.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/header/nav-header.component.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/header/nav-header.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/header/nav-header.component.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/header/nav-header.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/sidebar/index.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/sidebar/index.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/sidebar/nav-sidebar.component.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/sidebar/nav-sidebar.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/sidebar/nav-sidebar.component.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/nav/sidebar/nav-sidebar.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/appstate.service.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/appstate.service.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/authentication.service.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/authentication.service.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/data.service.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/data.service.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/route-protection.service.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/route-protection.service.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/utility.service.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/services/utility.service.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/subscriber/index.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/subscriber/index.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/subscriber/subscriber.component.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/subscriber/subscriber.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/subscriber/subscriber.component.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/subscriber/subscriber.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/ticket/index.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/ticket/index.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/ticket/ticket.component.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/ticket/ticket.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/ticket/ticket.component.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/ticket/ticket.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/ticket/ticket.component.metadata.json" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app-components/ticket/ticket.component.metadata.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app.bootstrap.aot.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app.bootstrap.aot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app.bootstrap.aot.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app.bootstrap.aot.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app.bootstrap.js" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app.bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app.bootstrap.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app.bootstrap.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/app.bootstrap.metadata.json" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/app.bootstrap.metadata.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/polyfills.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/polyfills.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/vendors.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/vendors.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/compiled-src/src/webpack.entry.bundle.js.map" afterPath="$PROJECT_DIR$/wwwroot/compiled-src/src/webpack.entry.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/css/app.style.css" afterPath="$PROJECT_DIR$/wwwroot/css/app.style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/css/app.style.css.gz" afterPath="$PROJECT_DIR$/wwwroot/css/app.style.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/dlls/polyfills-manifest.json" afterPath="$PROJECT_DIR$/wwwroot/dlls/polyfills-manifest.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/dlls/vendors-manifest.json" afterPath="$PROJECT_DIR$/wwwroot/dlls/vendors-manifest.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/js/app.bundle.js" afterPath="$PROJECT_DIR$/wwwroot/js/app.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/js/app.bundle.js.gz" afterPath="$PROJECT_DIR$/wwwroot/js/app.bundle.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/js/commons.bundle.js" afterPath="$PROJECT_DIR$/wwwroot/js/commons.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwroot/js/commons.bundle.js.gz" afterPath="$PROJECT_DIR$/wwwroot/js/commons.bundle.js.gz" />
     </list>
     <list id="ca0226dc-59b8-40ed-8391-6caf7c39d529" name="New changelist" comment="Add kendo files" />
     <list id="3ca96da9-9568-425e-922b-d2c83b8e0695" name="Ignore" comment="" />
@@ -421,33 +45,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="webpage-1.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app-components/+iframe-module/webpage-1/webpage-1.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="807">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="408">
+                <caret line="37" column="64" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="about.component.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app-components/about/about.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webpage-2.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app-components/+iframe-module/webpage-2/webpage-2.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="37" column="78" selection-start-line="37" selection-start-column="78" selection-end-line="37" selection-end-column="78" />
-              <folding />
-            </state>
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -503,7 +113,6 @@
         <option value="$PROJECT_DIR$/src/app-components/home/home.component.ts" />
         <option value="$PROJECT_DIR$/src/app-components/subscriber/subscriber.component.ts" />
         <option value="$PROJECT_DIR$/src/app-components/services/utility.service.ts" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/app-components/home/home.template.html" />
         <option value="$PROJECT_DIR$/src/assets/styles/appwide/susy-grid-config.scss" />
         <option value="$PROJECT_DIR$/src/app-components/+detail/detail.module.ts" />
@@ -554,6 +163,7 @@
         <option value="$PROJECT_DIR$/src/app-components/+iframe-module/webpage-2/webpage-2.component.ts" />
         <option value="$PROJECT_DIR$/src/app-components/+iframe-module/webpage-1/webpage-1.component.ts" />
         <option value="$PROJECT_DIR$/src/app-components/about/about.component.ts" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -564,12 +174,13 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/aot-compiled/node_modules" />
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1866" />
+    <option name="x" value="57" />
     <option name="y" value="-8" />
-    <option name="width" value="1874" />
+    <option name="width" value="1871" />
     <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -597,8 +208,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -641,13 +251,80 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app-components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app-components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nav" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sidebar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app-components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nav" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -853,7 +530,12 @@
       <workItem from="1475101809037" duration="38000" />
       <workItem from="1475102333320" duration="1672000" />
       <workItem from="1475882224787" duration="580000" />
-      <workItem from="1475882812814" duration="2005000" />
+      <workItem from="1475882812814" duration="2253000" />
+      <workItem from="1476126171976" duration="1846000" />
+      <workItem from="1476201933956" duration="12000" />
+      <workItem from="1476312026105" duration="1208000" />
+      <workItem from="1476384135585" duration="15000" />
+      <workItem from="1477423211232" duration="640000" />
     </task>
     <task id="LOCAL-00003" summary="Add sass Conditions: sidebar enabled true/false in variables.scss&#10;Create Ticket component; Integrate Ticket component with backend subscriber API, async request loads data to component.">
       <created>1474649236980</created>
@@ -1044,29 +726,47 @@
       <option name="project" value="LOCAL" />
       <updated>1475103405656</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Update repo with latest changes:&#10;Sub Modules working&#10;CKEditor Component created&#10;Add route parameters to TicketComponent&#10;Various other optimizations">
+      <created>1475884976510</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1475884976510</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Update README">
+      <created>1476126190194</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1476126190194</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Update README">
+      <created>1476312135277</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1476312135277</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120064000" />
+    <option name="totallyTimeSpent" value="124033000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1866" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="57" y="-8" width="1871" height="1096" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2341248" sideWeight="0.3543223" order="4" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.5022051" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276414" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29437706" sideWeight="0.4194237" order="8" side_tool="false" content_ui="tabs" x="62" y="0" width="967" height="1082" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.49779493" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2216097" sideWeight="0.3543223" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="3003" y="-509" width="1072" height="875" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870865" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276414" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2553305" sideWeight="0.49380806" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.49779493" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25303197" sideWeight="0.5247678" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29437706" sideWeight="0.5805763" order="9" side_tool="true" content_ui="tabs" x="639" y="443" width="1814" height="1039" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1074,11 +774,14 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29437706" sideWeight="0.5805763" order="9" side_tool="true" content_ui="tabs" x="639" y="443" width="1814" height="1039" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870865" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29437706" sideWeight="0.4194237" order="8" side_tool="false" content_ui="tabs" x="62" y="0" width="967" height="1082" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.176957" sideWeight="0.6456777" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.49779493" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870865" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1113,7 +816,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Wire up searchBySubscriberID to API method, bind data to angular2 component." />
     <MESSAGE value="Clean up component" />
     <MESSAGE value="Add sass Conditions: sidebar enabled true/false in variables.scss&#10;Create Ticket component; Integrate Ticket component with backend subscriber API, async request loads data to component." />
     <MESSAGE value="Add sass-vars-loaders to load sass-js-variables.js - prepends module.exports into all sass files&#10;" />
@@ -1137,7 +839,9 @@
     <MESSAGE value="Update .README with working scripts" />
     <MESSAGE value="Remove refactored files from wwwroot." />
     <MESSAGE value="Update index.html with new asset paths. (for running the application without .NET)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update index.html with new asset paths. (for running the application without .NET)" />
+    <MESSAGE value="Update repo with latest changes:&#10;Sub Modules working&#10;CKEditor Component created&#10;Add route parameters to TicketComponent&#10;Various other optimizations" />
+    <MESSAGE value="Update README" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="false" />
   </component>
   <component name="XDebuggerManager">
@@ -1198,11 +902,186 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/app-components/+iframe-module/webpage-1/webpage-1.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/about/about.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="64" column="65" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/+iframe-module/webpage-2/webpage-2.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="37" column="78" selection-start-line="37" selection-start-column="78" selection-end-line="37" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/+iframe-module/webpage-1/webpage-1.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/about/about.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="64" column="65" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/+iframe-module/webpage-2/webpage-2.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="37" column="78" selection-start-line="37" selection-start-column="78" selection-end-line="37" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/+iframe-module/webpage-1/webpage-1.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/about/about.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="64" column="65" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/+iframe-module/webpage-2/webpage-2.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="37" column="78" selection-start-line="37" selection-start-column="78" selection-end-line="37" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/+iframe-module/webpage-1/webpage-1.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/about/about.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="64" column="65" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/+iframe-module/webpage-2/webpage-2.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="37" column="78" selection-start-line="37" selection-start-column="78" selection-end-line="37" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/+iframe-module/webpage-1/webpage-1.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/about/about.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/+iframe-module/webpage-2/webpage-2.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="37" column="78" selection-start-line="37" selection-start-column="78" selection-end-line="37" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="172" selection-start-line="9" selection-start-column="172" selection-end-line="9" selection-end-column="172" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1222,7 +1101,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1230,7 +1108,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1238,14 +1115,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="969">
@@ -1255,27 +1128,22 @@
           <second_editor />
         </state>
       </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/index.html" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1283,7 +1151,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1291,7 +1158,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1299,7 +1165,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1307,7 +1172,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1315,7 +1179,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1406,9 +1269,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="1207">
@@ -1417,14 +1277,11 @@
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/index.html" />
     <entry file="file://$PROJECT_DIR$/config/webpack.common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1463,9 +1320,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="1207">
@@ -1474,14 +1328,11 @@
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/index.html" />
     <entry file="file://$PROJECT_DIR$/config/webpack.common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1520,9 +1371,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="1207">
@@ -1531,14 +1379,11 @@
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/index.html" />
     <entry file="file://$PROJECT_DIR$/config/webpack.common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1577,9 +1422,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="1207">
@@ -1588,14 +1430,11 @@
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/index.html" />
     <entry file="file://$PROJECT_DIR$/config/webpack.common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1633,9 +1472,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="1207">
@@ -1644,14 +1480,11 @@
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/index.html" />
     <entry file="file://$PROJECT_DIR$/config/webpack.common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1734">
@@ -1675,7 +1508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1725,9 +1557,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="1207">
@@ -1736,14 +1565,11 @@
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/index.html" />
     <entry file="file://$PROJECT_DIR$/config/webpack.common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1734">
@@ -1767,7 +1593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1824,9 +1649,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
@@ -1835,12 +1657,14 @@
           <second_editor />
         </state>
       </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1901,9 +1725,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
@@ -1911,6 +1732,9 @@
           </first_editor>
           <second_editor />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app-components/app/app.routes.ts">
@@ -2372,7 +2196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2422,7 +2245,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -6371,13 +6193,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/nav/sidebar/nav-sidebar.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="17" column="115" selection-start-line="17" selection-start-column="115" selection-end-line="17" selection-end-column="115" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/chunk.kendo.for.jquery.js" />
     <entry file="file://$PROJECT_DIR$/src/app-components/app/app.style.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -6658,13 +6473,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/dlls/dll.polyfills.bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/dlls/dll.polyfills.bundle.js" />
     <entry file="file://$PROJECT_DIR$/wwwroot/dlls/dll.commons.bundle.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/extract-text-webpack-plugin/loader.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -6737,13 +6546,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/dlls/dll.vendors.bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92260">
-          <caret line="44560" column="40" selection-start-line="44560" selection-start-column="40" selection-end-line="44560" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/dlls/dll.vendors.bundle.js" />
     <entry file="file://$PROJECT_DIR$/src/app-components/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -6894,7 +6697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -6905,32 +6707,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="1071">
-            <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/index.html" />
     <entry file="file://$PROJECT_DIR$/.idea/runConfigurations/DLLs__Build.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -6938,7 +6719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -6958,7 +6738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="9" column="172" selection-start-line="9" selection-start-column="172" selection-end-line="9" selection-end-column="172" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -6966,7 +6745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -6974,7 +6752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -6982,7 +6759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -6990,7 +6766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -6998,7 +6773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -7006,7 +6780,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -7014,10 +6787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="18" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="18" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#31#90#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -7025,6 +6794,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/+iframe-module/iframe.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/styles/variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/+iframe-module/webpage-2/webpage-2.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="37" column="78" selection-start-line="37" selection-start-column="78" selection-end-line="37" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app-components/nav/sidebar/nav-sidebar.template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -7037,29 +6835,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/+iframe-module/iframe.module.ts">
+    <entry file="file://$PROJECT_DIR$/src/app-components/about/about.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#533#592#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/styles/variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/+iframe-module/webpage-2/webpage-2.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="37" column="78" selection-start-line="37" selection-start-column="78" selection-end-line="37" selection-end-column="78" />
+        <state relative-caret-position="875">
+          <caret line="64" column="65" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="65" />
           <folding />
         </state>
       </provider>
@@ -7072,12 +6851,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app-components/about/about.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="408">
+            <caret line="37" column="64" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>

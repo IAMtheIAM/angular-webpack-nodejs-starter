@@ -77,7 +77,7 @@ export class SubscriberComponent {
 
       }, "kendo.for.jquery") // 3rd parameter is the name of the chunk during compilation output - chunk.name.js
 
-      // this.authService.redirectIfNotLoggedIn();
+      this.authService.redirectIfNotLoggedIn();
    }
 
    ngAfterViewInit() {
