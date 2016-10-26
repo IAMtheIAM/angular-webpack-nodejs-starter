@@ -11,6 +11,7 @@ const resolveNgRoute = require('@angularclass/resolve-angular-routes');
 const querystring = require('querystring');
 const path = require('path');
 const helpers = require('./helpers');
+const AssetsPlugin = require('assets-webpack-plugin');
 
 
 /*********************************************************************************************
@@ -30,12 +31,12 @@ const PORT = process.env.PORT || 4000;
 const DOTNETPORT = process.env.DOTNETPORT || 5000;
 
 const METADATA = {
-   host: HOST,
-   port: PORT,
-   dotnetport: DOTNETPORT,
-   ENV: ENV,
-   baseUrl: '/',
-   HMR: HMR
+    host: HOST,
+    port: PORT,
+    dotnetport: DOTNETPORT,
+    ENV: ENV,
+    baseUrl: '/',
+    HMR: HMR
 };
 /*********************************************************************************************
  *******************************  All ENVs Webpack Plugins ********************************************
@@ -44,19 +45,24 @@ const METADATA = {
 
 var webpackPlugins = [
 
+   new AssetsPlugin({
+          path: helpers.root('./wwwroot/js'),
+          filename: 'webpack.assets.json',
+          prettyPrint: true
+   }),
 
    new webpack.LoaderOptionsPlugin({
-      /** Append a new entry under the "options" property to pass addition custom properties to webpack loaders. They listen for the properties here. */
-      options: {
-         postcss: function () {
-            return [AutoPrefixer];
-         },
-         sassResources: ['./src/assets/styles/variables.scss', './src/assets/styles/mixins.scss'],
-         context: helpers.paths.root,
-         // sassLoader: {  //Pass custom variables such as ENV variable to scss files.
-         //    data: "$susyDebug: " + susyDebug + ";"
-         // }
-      }
+       /** Append a new entry under the "options" property to pass addition custom properties to webpack loaders. They listen for the properties here. */
+       options: {
+           postcss: function () {
+               return [AutoPrefixer];
+           },
+           sassResources: ['./src/assets/styles/variables.scss', './src/assets/styles/mixins.scss'],
+           context: helpers.paths.root,
+           // sassLoader: {  //Pass custom variables such as ENV variable to scss files.
+           //    data: "$susyDebug: " + susyDebug + ";"
+           // }
+       }
    }),
 
    new ContextReplacementPlugin(
@@ -71,7 +77,7 @@ var webpackPlugins = [
 
 
    new webpack.optimize.CommonsChunkPlugin({
-      name: ['polyfills', 'vendors'].reverse()
+       name: ['polyfills', 'vendors'].reverse()
    }),
 
    new webpack.optimize.CommonsChunkPlugin('commons'),
@@ -79,15 +85,15 @@ var webpackPlugins = [
 
    // NOTE: when adding more properties, make sure you include them in custom-typings.d.ts
    new webpack.DefinePlugin({
-      'ENV': JSON.stringify(METADATA.ENV),
-      'HMR': METADATA.HMR,
-      'AOT': AOT,
-      'JIT': JIT,
-      'process.env': {
-         'ENV': JSON.stringify(METADATA.ENV),
-         'NODE_ENV': JSON.stringify(METADATA.ENV),
-         'HMR': METADATA.HMR
-      },
+       'ENV': JSON.stringify(METADATA.ENV),
+       'HMR': METADATA.HMR,
+       'AOT': AOT,
+       'JIT': JIT,
+       'process.env': {
+           'ENV': JSON.stringify(METADATA.ENV),
+           'NODE_ENV': JSON.stringify(METADATA.ENV),
+           'HMR': METADATA.HMR
+       },
    }),
 
 
@@ -128,57 +134,57 @@ var webpackPlugins = [
 // Skip for DLLS build
 if (ENV === "production" || ENV === "development" || ENV === "testing") {
 
-   var conditionalPlugins = [
+    var conditionalPlugins = [
 
-      new webpack.DllReferencePlugin({
-         context: '.',
-         // manifest: helpers.root('wwwroot/dlls/polyfills-manifest.json'),
-         manifest: require(helpers.root('wwwroot/dlls', 'polyfills-manifest.json')),
+       new webpack.DllReferencePlugin({
+           context: '.',
+           // manifest: helpers.root('wwwroot/dlls/polyfills-manifest.json'),
+           manifest: require(helpers.root('wwwroot/dlls', 'polyfills-manifest.json')),
 
-      }),
+       }),
 
-      new webpack.DllReferencePlugin({
-         context: '.',
-         // manifest: helpers.root('wwwroot/dlls/vendors-manifest.json'),
-         manifest: require(helpers.root('wwwroot/dlls', 'vendors-manifest.json')),
-      }),
-
-
-      new CopyWebpackPlugin(
-         [{
-            from: 'src/assets',
-            to: 'assets',
-            force: true
-         }],
-         {
-            copyUnmodified: false
-         }),
+       new webpack.DllReferencePlugin({
+           context: '.',
+           // manifest: helpers.root('wwwroot/dlls/vendors-manifest.json'),
+           manifest: require(helpers.root('wwwroot/dlls', 'vendors-manifest.json')),
+       }),
 
 
-      new CopyWebpackPlugin([
-         {from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/plugins"), to: 'js/ckeditor/plugins'},
-         {from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/lang"), to: 'js/ckeditor/lang'},
-         {from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/skins"), to: 'js/ckeditor/skins'},
-         {from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/ckeditor.js"), to: 'js/ckeditor'},
-         {from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/styles.js"), to: 'js/ckeditor'},
-         {from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/contents.css"), to: 'js/ckeditor'},
-      ]),
+       new CopyWebpackPlugin(
+          [{
+              from: 'src/assets',
+              to: 'assets',
+              force: true
+          }],
+          {
+              copyUnmodified: false
+          }),
 
 
-      new webpack.ProvidePlugin({
-         'Promise': 'imports?this=>global!exports?global.Promise!es6-promise',
-         'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch',
-         // 'tinymce': 'imports?tinymce=>window.tinymce!exports?window.tinymce!tinymce/tinymce.min.js',
-         'jQuery': "jquery",
-         '$': "jquery",
-         '_': 'lodash'
+       new CopyWebpackPlugin([
+          { from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/plugins"), to: 'js/ckeditor/plugins' },
+          { from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/lang"), to: 'js/ckeditor/lang' },
+          { from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/skins"), to: 'js/ckeditor/skins' },
+          { from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/ckeditor.js"), to: 'js/ckeditor' },
+          { from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/styles.js"), to: 'js/ckeditor' },
+          { from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/contents.css"), to: 'js/ckeditor' },
+       ]),
 
-      }),
 
-   ] // end conditional plugins
+       new webpack.ProvidePlugin({
+           'Promise': 'imports?this=>global!exports?global.Promise!es6-promise',
+           'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch',
+           // 'tinymce': 'imports?tinymce=>window.tinymce!exports?window.tinymce!tinymce/tinymce.min.js',
+           'jQuery': "jquery",
+           '$': "jquery",
+           '_': 'lodash'
 
-   // module.exports.plugins = module.exports.plugins.concat(conditionalPlugins)
-   webpackPlugins = webpackPlugins.concat(conditionalPlugins)
+       }),
+
+    ] // end conditional plugins
+
+    // module.exports.plugins = module.exports.plugins.concat(conditionalPlugins)
+    webpackPlugins = webpackPlugins.concat(conditionalPlugins)
 }
 
 /*********************************************************************************************
@@ -188,7 +194,7 @@ if (ENV === "production" || ENV === "development" || ENV === "testing") {
 
 // Skip this entry point if we're building the DLLs, app.bootstrap.*.ts is only for regular builds
 if (!isDLLs) {
-   var appBoostrapFile = AOT ? ['./src/app.bootstrap.aot.ts'] : ['./src/app.bootstrap.ts'];
+    var appBoostrapFile = AOT ? ['./src/app.bootstrap.aot.ts'] : ['./src/app.bootstrap.ts'];
 }
 
 
@@ -202,38 +208,38 @@ if (!isDLLs) {
  *
  * See: https://github.com/epegzz/sass-vars-loader
  */
-   //    //Flag to trigger the styles
-   // var sidebarEnabled = true;
-   // var contentContainerWidth = sidebarEnabled ? 21 : 24;
-   // var contentContainerPosition = sidebarEnabled ? 4 : 1;
-   // var sidebarWidth = sidebarEnabled ? 3 : 0;
-   // var sidebarPosition = sidebarEnabled ? 1 : 0;
-   // var showSidebar = sidebarEnabled ? 'visible' : 'hidden';
+//    //Flag to trigger the styles
+// var sidebarEnabled = true;
+// var contentContainerWidth = sidebarEnabled ? 21 : 24;
+// var contentContainerPosition = sidebarEnabled ? 4 : 1;
+// var sidebarWidth = sidebarEnabled ? 3 : 0;
+// var sidebarPosition = sidebarEnabled ? 1 : 0;
+// var showSidebar = sidebarEnabled ? 'visible' : 'hidden';
 
 
-   // Sets debug for Susy Grid to "hide" or "show" depending on environment variable
+// Sets debug for Susy Grid to "hide" or "show" depending on environment variable
 const susyDebug = DEBUG ? 'show' : 'hide';
 const sassVarsConfig = querystring.stringify({
-   files: [
-      // path.resolve(__dirname, '/path/to/breakpoints.js'), // JS
-      // path.resolve(__dirname, '/path/to/colors.json'), // JSON
+    files: [
+       // path.resolve(__dirname, '/path/to/breakpoints.js'), // JS
+       // path.resolve(__dirname, '/path/to/colors.json'), // JSON
 
-      // set vars in external .js or .json file
-      path.resolve(helpers.paths.appRoot + '/assets/styles/sass-js-variables.js')
-   ],
+       // set vars in external .js or .json file
+       path.resolve(helpers.paths.appRoot + '/assets/styles/sass-js-variables.js')
+    ],
 
-   /** Wait for my PR to be approved, then this will work.
-    *  See: https://github.com/epegzz/sass-vars-loader/pull/5
-    */
-   // vars: JSON.stringify(
-   //    {
-   //       susyDebug: susyDebug,
-   //       contentContainerWidth: contentContainerWidth,
-   //       contentContainerPosition: contentContainerPosition,
-   //       sidebarWidth: sidebarWidth,
-   //       sidebarPosition: sidebarPosition,
-   //       showSidebar: showSidebar
-   //    }),
+    /** Wait for my PR to be approved, then this will work.
+     *  See: https://github.com/epegzz/sass-vars-loader/pull/5
+     */
+    // vars: JSON.stringify(
+    //    {
+    //       susyDebug: susyDebug,
+    //       contentContainerWidth: contentContainerWidth,
+    //       contentContainerPosition: contentContainerPosition,
+    //       sidebarWidth: sidebarWidth,
+    //       sidebarPosition: sidebarPosition,
+    //       showSidebar: showSidebar
+    //    }),
 
 });
 
@@ -254,5 +260,5 @@ exports.isDLLs = isDLLs;
 exports.METADATA = METADATA;
 // skip this entry point for DLLS build
 if (appBoostrapFile) {
-   exports.appBoostrapFile = appBoostrapFile;
+    exports.appBoostrapFile = appBoostrapFile;
 }

@@ -85,8 +85,8 @@ var _View_NavFooterComponent0 = (function (_super) {
         this._text_2 = this.renderer.createText(this._el_1, '\n   ', this.debug(2, 1, 31));
         this._el_3 = this.renderer.createElement(this._el_1, 'p', this.debug(3, 2, 3));
         this.renderer.setElementAttribute(this._el_3, 'class', 'copyright');
-        this._text_4 = this.renderer.createText(this._el_3, 'Copyright © 2016 Helios. All rights reserved.', this.debug(4, 2, 24));
-        this._text_5 = this.renderer.createText(this._el_1, '\n   ', this.debug(5, 2, 78));
+        this._text_4 = this.renderer.createText(this._el_3, 'Copyright © 2016 IAMtheIAM. All rights reserved.', this.debug(4, 2, 24));
+        this._text_5 = this.renderer.createText(this._el_1, '\n   ', this.debug(5, 2, 81));
         this._anchor_6 = this.renderer.createTemplateAnchor(this._el_1, this.debug(6, 3, 3));
         this._appEl_6 = new import4.AppElement(6, 1, this, this._anchor_6);
         this._TemplateRef_6_5 = new import13.TemplateRef_(this._appEl_6, viewFactory_NavFooterComponent1);

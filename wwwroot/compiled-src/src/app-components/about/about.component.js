@@ -41,7 +41,7 @@ var AboutComponent = (function () {
         // var mockData = require('assets/mock-data/mock-data.json');
         // console.log('mockData', mockData);
         // if you're working with mock data you can also use http.get('assets/mock-data/mock-data.json')
-        // this.asyncDataWithWebpackSystemJS ();
+        this.asyncDataWithWebpackSystemJS();
     };
     AboutComponent.prototype.ngAfterViewInit = function () {
         // The ngAfterViewInit lifecycle hook makes sure the view is rendered so jQuery can do it's thing

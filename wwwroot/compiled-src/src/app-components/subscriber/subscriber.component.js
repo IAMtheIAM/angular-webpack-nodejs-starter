@@ -51,7 +51,7 @@ var SubscriberComponent = (function () {
             // Must call the prototype function, because 'this' is undefined inside the require.ensure during runtime
             SubscriberComponent.prototype.loadKendoUIGrid();
         }, "kendo.for.jquery"); // 3rd parameter is the name of the chunk during compilation output - chunk.name.js
-        // this.authService.redirectIfNotLoggedIn();
+        this.authService.redirectIfNotLoggedIn();
     };
     SubscriberComponent.prototype.ngAfterViewInit = function () {
         // The ngAfterViewInit lifecycle hook makes sure the view is rendered so jQuery can do it's thing

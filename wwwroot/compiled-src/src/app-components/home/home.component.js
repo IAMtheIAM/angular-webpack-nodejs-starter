@@ -20,16 +20,9 @@ var authentication_service_1 = require('../services/authentication.service');
  *  external stylesheets. Do NOT add styles the "Angular2 Way" in
  */
 require('./home.style.scss');
-// @CanActivate(() => isLoggedIn())
-// @CanActivate(() => {
-//   return isLoggedIn(); // navigate to protected route after logging in
-// })
 var HomeComponent = (function () {
     // TypeScript public modifiers
     function HomeComponent(appState, router, http, authService) {
-        // if (Logging.isEnabled.light) {
-        //   console.log('%c Home Constructor Instantiated', Logging.normal.teal);
-        // }
         this.appState = appState;
         this.router = router;
         this.http = http;

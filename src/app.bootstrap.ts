@@ -3,9 +3,10 @@
  * MAIN ANGULAR2 APP ENTRY POINT
  * This is where we bootstrap the Angular2 application
  */
-// These 2 imports are needed here first, or app throws errors during bootstrapping
-// import 'core-js/shim';
-import 'zone.js/dist/zone';
+
+/**
+ * reflect-metadata needs to be imported here, in the app bundle, or app throws errors during bootstrapping
+ */
 import 'reflect-metadata';
 
 import { enableProdMode } from '@angular/core';
@@ -19,6 +20,12 @@ import { Logging } from './app-components/services/utility.service';
  * AppComponent and AppComponent Services
  */
 import { AppModule } from './app-components/app/app.module';
+
+/**
+ * zone.js MUST be imported AFTER AppModule/AppModuleNgFactory, otherwise it will throw
+ * error "ZoneAware promise has been overriden" during bootstrapping
+ */
+import 'zone.js/dist/zone';
 
 if ('production' === ENV) {
    enableProdMode();

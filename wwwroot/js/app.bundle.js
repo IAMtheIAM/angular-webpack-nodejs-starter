@@ -20,16 +20,22 @@ module.exports = (__webpack_require__(0))(18);
 /* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(86);
+module.exports = (__webpack_require__(0))(0);
 
 /***/ },
 /* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(91);
+module.exports = (__webpack_require__(0))(86);
 
 /***/ },
 /* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(91);
+
+/***/ },
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43,7 +49,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = __webpack_require__(7);
+var core_1 = __webpack_require__(3);
 var router_1 = __webpack_require__(22);
 var Logging = (function () {
     function Logging() {
@@ -112,7 +118,7 @@ exports.UtilityService = UtilityService;
 
 
 /***/ },
-/* 6 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -126,7 +132,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = __webpack_require__(7);
+var core_1 = __webpack_require__(3);
 var AppState = (function () {
     function AppState() {
         this._state = {};
@@ -166,12 +172,6 @@ exports.AppState = AppState;
 
 
 /***/ },
-/* 7 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(0);
-
-/***/ },
 /* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -191,17 +191,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Angular 2 decorators and services
  */
 // import { Router, RouterLink} from '@angular/router';
-var core_1 = __webpack_require__(7);
-var rxjs_1 = __webpack_require__(168);
-var http_1 = __webpack_require__(26);
+var core_1 = __webpack_require__(3);
+var rxjs_1 = __webpack_require__(199);
+var http_1 = __webpack_require__(27);
 var router_1 = __webpack_require__(22);
 /*
  * Shared Utilities
  */
-var utility_service_1 = __webpack_require__(5);
-var appstate_service_1 = __webpack_require__(6);
-var headers_1 = __webpack_require__(135);
-var jwt_decode = __webpack_require__(155);
+var utility_service_1 = __webpack_require__(6);
+var appstate_service_1 = __webpack_require__(7);
+var headers_1 = __webpack_require__(166);
+var jwt_decode = __webpack_require__(186);
 var Authentication = (function () {
     function Authentication(appState, router, http, // public authHttp: AuthHttp,
         utilityService) {
@@ -265,7 +265,7 @@ exports.Authentication = Authentication;
 /* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(66);
+module.exports = (__webpack_require__(0))(65);
 
 /***/ },
 /* 10 */
@@ -274,7 +274,7 @@ module.exports = (__webpack_require__(0))(66);
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! jQuery v3.1.1 | (c) jQuery Foundation | jquery.org/license */
 !function(a,b){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error("jQuery requires a window with a document");return b(a)}:b(a)}("undefined"!=typeof window?window:this,function(a,b){"use strict";var c=[],d=a.document,e=Object.getPrototypeOf,f=c.slice,g=c.concat,h=c.push,i=c.indexOf,j={},k=j.toString,l=j.hasOwnProperty,m=l.toString,n=m.call(Object),o={};function p(a,b){b=b||d;var c=b.createElement("script");c.text=a,b.head.appendChild(c).parentNode.removeChild(c)}var q="3.1.1",r=function(a,b){return new r.fn.init(a,b)},s=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,t=/^-ms-/,u=/-([a-z])/g,v=function(a,b){return b.toUpperCase()};r.fn=r.prototype={jquery:q,constructor:r,length:0,toArray:function(){return f.call(this)},get:function(a){return null==a?f.call(this):a<0?this[a+this.length]:this[a]},pushStack:function(a){var b=r.merge(this.constructor(),a);return b.prevObject=this,b},each:function(a){return r.each(this,a)},map:function(a){return this.pushStack(r.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(f.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(a<0?b:0);return this.pushStack(c>=0&&c<b?[this[c]]:[])},end:function(){return this.prevObject||this.constructor()},push:h,sort:c.sort,splice:c.splice},r.extend=r.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for("boolean"==typeof g&&(j=g,g=arguments[h]||{},h++),"object"==typeof g||r.isFunction(g)||(g={}),h===i&&(g=this,h--);h<i;h++)if(null!=(a=arguments[h]))for(b in a)c=g[b],d=a[b],g!==d&&(j&&d&&(r.isPlainObject(d)||(e=r.isArray(d)))?(e?(e=!1,f=c&&r.isArray(c)?c:[]):f=c&&r.isPlainObject(c)?c:{},g[b]=r.extend(j,f,d)):void 0!==d&&(g[b]=d));return g},r.extend({expando:"jQuery"+(q+Math.random()).replace(/\D/g,""),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return"function"===r.type(a)},isArray:Array.isArray,isWindow:function(a){return null!=a&&a===a.window},isNumeric:function(a){var b=r.type(a);return("number"===b||"string"===b)&&!isNaN(a-parseFloat(a))},isPlainObject:function(a){var b,c;return!(!a||"[object Object]"!==k.call(a))&&(!(b=e(a))||(c=l.call(b,"constructor")&&b.constructor,"function"==typeof c&&m.call(c)===n))},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},type:function(a){return null==a?a+"":"object"==typeof a||"function"==typeof a?j[k.call(a)]||"object":typeof a},globalEval:function(a){p(a)},camelCase:function(a){return a.replace(t,"ms-").replace(u,v)},nodeName:function(a,b){return a.nodeName&&a.nodeName.toLowerCase()===b.toLowerCase()},each:function(a,b){var c,d=0;if(w(a)){for(c=a.length;d<c;d++)if(b.call(a[d],d,a[d])===!1)break}else for(d in a)if(b.call(a[d],d,a[d])===!1)break;return a},trim:function(a){return null==a?"":(a+"").replace(s,"")},makeArray:function(a,b){var c=b||[];return null!=a&&(w(Object(a))?r.merge(c,"string"==typeof a?[a]:a):h.call(c,a)),c},inArray:function(a,b,c){return null==b?-1:i.call(b,a,c)},merge:function(a,b){for(var c=+b.length,d=0,e=a.length;d<c;d++)a[e++]=b[d];return a.length=e,a},grep:function(a,b,c){for(var d,e=[],f=0,g=a.length,h=!c;f<g;f++)d=!b(a[f],f),d!==h&&e.push(a[f]);return e},map:function(a,b,c){var d,e,f=0,h=[];if(w(a))for(d=a.length;f<d;f++)e=b(a[f],f,c),null!=e&&h.push(e);else for(f in a)e=b(a[f],f,c),null!=e&&h.push(e);return g.apply([],h)},guid:1,proxy:function(a,b){var c,d,e;if("string"==typeof b&&(c=a[b],b=a,a=c),r.isFunction(a))return d=f.call(arguments,2),e=function(){return a.apply(b||this,d.concat(f.call(arguments)))},e.guid=a.guid=a.guid||r.guid++,e},now:Date.now,support:o}),"function"==typeof Symbol&&(r.fn[Symbol.iterator]=c[Symbol.iterator]),r.each("Boolean Number String Function Array Date RegExp Object Error Symbol".split(" "),function(a,b){j["[object "+b+"]"]=b.toLowerCase()});function w(a){var b=!!a&&"length"in a&&a.length,c=r.type(a);return"function"!==c&&!r.isWindow(a)&&("array"===c||0===b||"number"==typeof b&&b>0&&b-1 in a)}var x=function(a){var b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u="sizzle"+1*new Date,v=a.document,w=0,x=0,y=ha(),z=ha(),A=ha(),B=function(a,b){return a===b&&(l=!0),0},C={}.hasOwnProperty,D=[],E=D.pop,F=D.push,G=D.push,H=D.slice,I=function(a,b){for(var c=0,d=a.length;c<d;c++)if(a[c]===b)return c;return-1},J="checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",K="[\\x20\\t\\r\\n\\f]",L="(?:\\\\.|[\\w-]|[^\0-\\xa0])+",M="\\["+K+"*("+L+")(?:"+K+"*([*^$|!~]?=)"+K+"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|("+L+"))|)"+K+"*\\]",N=":("+L+")(?:\\((('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|((?:\\\\.|[^\\\\()[\\]]|"+M+")*)|.*)\\)|)",O=new RegExp(K+"+","g"),P=new RegExp("^"+K+"+|((?:^|[^\\\\])(?:\\\\.)*)"+K+"+$","g"),Q=new RegExp("^"+K+"*,"+K+"*"),R=new RegExp("^"+K+"*([>+~]|"+K+")"+K+"*"),S=new RegExp("="+K+"*([^\\]'\"]*?)"+K+"*\\]","g"),T=new RegExp(N),U=new RegExp("^"+L+"$"),V={ID:new RegExp("^#("+L+")"),CLASS:new RegExp("^\\.("+L+")"),TAG:new RegExp("^("+L+"|[*])"),ATTR:new RegExp("^"+M),PSEUDO:new RegExp("^"+N),CHILD:new RegExp("^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\("+K+"*(even|odd|(([+-]|)(\\d*)n|)"+K+"*(?:([+-]|)"+K+"*(\\d+)|))"+K+"*\\)|)","i"),bool:new RegExp("^(?:"+J+")$","i"),needsContext:new RegExp("^"+K+"*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\("+K+"*((?:-\\d)?\\d*)"+K+"*\\)|)(?=[^-]|$)","i")},W=/^(?:input|select|textarea|button)$/i,X=/^h\d$/i,Y=/^[^{]+\{\s*\[native \w/,Z=/^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,$=/[+~]/,_=new RegExp("\\\\([\\da-f]{1,6}"+K+"?|("+K+")|.)","ig"),aa=function(a,b,c){var d="0x"+b-65536;return d!==d||c?b:d<0?String.fromCharCode(d+65536):String.fromCharCode(d>>10|55296,1023&d|56320)},ba=/([\0-\x1f\x7f]|^-?\d)|^-$|[^\0-\x1f\x7f-\uFFFF\w-]/g,ca=function(a,b){return b?"\0"===a?"\ufffd":a.slice(0,-1)+"\\"+a.charCodeAt(a.length-1).toString(16)+" ":"\\"+a},da=function(){m()},ea=ta(function(a){return a.disabled===!0&&("form"in a||"label"in a)},{dir:"parentNode",next:"legend"});try{G.apply(D=H.call(v.childNodes),v.childNodes),D[v.childNodes.length].nodeType}catch(fa){G={apply:D.length?function(a,b){F.apply(a,H.call(b))}:function(a,b){var c=a.length,d=0;while(a[c++]=b[d++]);a.length=c-1}}}function ga(a,b,d,e){var f,h,j,k,l,o,r,s=b&&b.ownerDocument,w=b?b.nodeType:9;if(d=d||[],"string"!=typeof a||!a||1!==w&&9!==w&&11!==w)return d;if(!e&&((b?b.ownerDocument||b:v)!==n&&m(b),b=b||n,p)){if(11!==w&&(l=Z.exec(a)))if(f=l[1]){if(9===w){if(!(j=b.getElementById(f)))return d;if(j.id===f)return d.push(j),d}else if(s&&(j=s.getElementById(f))&&t(b,j)&&j.id===f)return d.push(j),d}else{if(l[2])return G.apply(d,b.getElementsByTagName(a)),d;if((f=l[3])&&c.getElementsByClassName&&b.getElementsByClassName)return G.apply(d,b.getElementsByClassName(f)),d}if(c.qsa&&!A[a+" "]&&(!q||!q.test(a))){if(1!==w)s=b,r=a;else if("object"!==b.nodeName.toLowerCase()){(k=b.getAttribute("id"))?k=k.replace(ba,ca):b.setAttribute("id",k=u),o=g(a),h=o.length;while(h--)o[h]="#"+k+" "+sa(o[h]);r=o.join(","),s=$.test(a)&&qa(b.parentNode)||b}if(r)try{return G.apply(d,s.querySelectorAll(r)),d}catch(x){}finally{k===u&&b.removeAttribute("id")}}}return i(a.replace(P,"$1"),b,d,e)}function ha(){var a=[];function b(c,e){return a.push(c+" ")>d.cacheLength&&delete b[a.shift()],b[c+" "]=e}return b}function ia(a){return a[u]=!0,a}function ja(a){var b=n.createElement("fieldset");try{return!!a(b)}catch(c){return!1}finally{b.parentNode&&b.parentNode.removeChild(b),b=null}}function ka(a,b){var c=a.split("|"),e=c.length;while(e--)d.attrHandle[c[e]]=b}function la(a,b){var c=b&&a,d=c&&1===a.nodeType&&1===b.nodeType&&a.sourceIndex-b.sourceIndex;if(d)return d;if(c)while(c=c.nextSibling)if(c===b)return-1;return a?1:-1}function ma(a){return function(b){var c=b.nodeName.toLowerCase();return"input"===c&&b.type===a}}function na(a){return function(b){var c=b.nodeName.toLowerCase();return("input"===c||"button"===c)&&b.type===a}}function oa(a){return function(b){return"form"in b?b.parentNode&&b.disabled===!1?"label"in b?"label"in b.parentNode?b.parentNode.disabled===a:b.disabled===a:b.isDisabled===a||b.isDisabled!==!a&&ea(b)===a:b.disabled===a:"label"in b&&b.disabled===a}}function pa(a){return ia(function(b){return b=+b,ia(function(c,d){var e,f=a([],c.length,b),g=f.length;while(g--)c[e=f[g]]&&(c[e]=!(d[e]=c[e]))})})}function qa(a){return a&&"undefined"!=typeof a.getElementsByTagName&&a}c=ga.support={},f=ga.isXML=function(a){var b=a&&(a.ownerDocument||a).documentElement;return!!b&&"HTML"!==b.nodeName},m=ga.setDocument=function(a){var b,e,g=a?a.ownerDocument||a:v;return g!==n&&9===g.nodeType&&g.documentElement?(n=g,o=n.documentElement,p=!f(n),v!==n&&(e=n.defaultView)&&e.top!==e&&(e.addEventListener?e.addEventListener("unload",da,!1):e.attachEvent&&e.attachEvent("onunload",da)),c.attributes=ja(function(a){return a.className="i",!a.getAttribute("className")}),c.getElementsByTagName=ja(function(a){return a.appendChild(n.createComment("")),!a.getElementsByTagName("*").length}),c.getElementsByClassName=Y.test(n.getElementsByClassName),c.getById=ja(function(a){return o.appendChild(a).id=u,!n.getElementsByName||!n.getElementsByName(u).length}),c.getById?(d.filter.ID=function(a){var b=a.replace(_,aa);return function(a){return a.getAttribute("id")===b}},d.find.ID=function(a,b){if("undefined"!=typeof b.getElementById&&p){var c=b.getElementById(a);return c?[c]:[]}}):(d.filter.ID=function(a){var b=a.replace(_,aa);return function(a){var c="undefined"!=typeof a.getAttributeNode&&a.getAttributeNode("id");return c&&c.value===b}},d.find.ID=function(a,b){if("undefined"!=typeof b.getElementById&&p){var c,d,e,f=b.getElementById(a);if(f){if(c=f.getAttributeNode("id"),c&&c.value===a)return[f];e=b.getElementsByName(a),d=0;while(f=e[d++])if(c=f.getAttributeNode("id"),c&&c.value===a)return[f]}return[]}}),d.find.TAG=c.getElementsByTagName?function(a,b){return"undefined"!=typeof b.getElementsByTagName?b.getElementsByTagName(a):c.qsa?b.querySelectorAll(a):void 0}:function(a,b){var c,d=[],e=0,f=b.getElementsByTagName(a);if("*"===a){while(c=f[e++])1===c.nodeType&&d.push(c);return d}return f},d.find.CLASS=c.getElementsByClassName&&function(a,b){if("undefined"!=typeof b.getElementsByClassName&&p)return b.getElementsByClassName(a)},r=[],q=[],(c.qsa=Y.test(n.querySelectorAll))&&(ja(function(a){o.appendChild(a).innerHTML="<a id='"+u+"'></a><select id='"+u+"-\r\\' msallowcapture=''><option selected=''></option></select>",a.querySelectorAll("[msallowcapture^='']").length&&q.push("[*^$]="+K+"*(?:''|\"\")"),a.querySelectorAll("[selected]").length||q.push("\\["+K+"*(?:value|"+J+")"),a.querySelectorAll("[id~="+u+"-]").length||q.push("~="),a.querySelectorAll(":checked").length||q.push(":checked"),a.querySelectorAll("a#"+u+"+*").length||q.push(".#.+[+~]")}),ja(function(a){a.innerHTML="<a href='' disabled='disabled'></a><select disabled='disabled'><option/></select>";var b=n.createElement("input");b.setAttribute("type","hidden"),a.appendChild(b).setAttribute("name","D"),a.querySelectorAll("[name=d]").length&&q.push("name"+K+"*[*^$|!~]?="),2!==a.querySelectorAll(":enabled").length&&q.push(":enabled",":disabled"),o.appendChild(a).disabled=!0,2!==a.querySelectorAll(":disabled").length&&q.push(":enabled",":disabled"),a.querySelectorAll("*,:x"),q.push(",.*:")})),(c.matchesSelector=Y.test(s=o.matches||o.webkitMatchesSelector||o.mozMatchesSelector||o.oMatchesSelector||o.msMatchesSelector))&&ja(function(a){c.disconnectedMatch=s.call(a,"*"),s.call(a,"[s!='']:x"),r.push("!=",N)}),q=q.length&&new RegExp(q.join("|")),r=r.length&&new RegExp(r.join("|")),b=Y.test(o.compareDocumentPosition),t=b||Y.test(o.contains)?function(a,b){var c=9===a.nodeType?a.documentElement:a,d=b&&b.parentNode;return a===d||!(!d||1!==d.nodeType||!(c.contains?c.contains(d):a.compareDocumentPosition&&16&a.compareDocumentPosition(d)))}:function(a,b){if(b)while(b=b.parentNode)if(b===a)return!0;return!1},B=b?function(a,b){if(a===b)return l=!0,0;var d=!a.compareDocumentPosition-!b.compareDocumentPosition;return d?d:(d=(a.ownerDocument||a)===(b.ownerDocument||b)?a.compareDocumentPosition(b):1,1&d||!c.sortDetached&&b.compareDocumentPosition(a)===d?a===n||a.ownerDocument===v&&t(v,a)?-1:b===n||b.ownerDocument===v&&t(v,b)?1:k?I(k,a)-I(k,b):0:4&d?-1:1)}:function(a,b){if(a===b)return l=!0,0;var c,d=0,e=a.parentNode,f=b.parentNode,g=[a],h=[b];if(!e||!f)return a===n?-1:b===n?1:e?-1:f?1:k?I(k,a)-I(k,b):0;if(e===f)return la(a,b);c=a;while(c=c.parentNode)g.unshift(c);c=b;while(c=c.parentNode)h.unshift(c);while(g[d]===h[d])d++;return d?la(g[d],h[d]):g[d]===v?-1:h[d]===v?1:0},n):n},ga.matches=function(a,b){return ga(a,null,null,b)},ga.matchesSelector=function(a,b){if((a.ownerDocument||a)!==n&&m(a),b=b.replace(S,"='$1']"),c.matchesSelector&&p&&!A[b+" "]&&(!r||!r.test(b))&&(!q||!q.test(b)))try{var d=s.call(a,b);if(d||c.disconnectedMatch||a.document&&11!==a.document.nodeType)return d}catch(e){}return ga(b,n,null,[a]).length>0},ga.contains=function(a,b){return(a.ownerDocument||a)!==n&&m(a),t(a,b)},ga.attr=function(a,b){(a.ownerDocument||a)!==n&&m(a);var e=d.attrHandle[b.toLowerCase()],f=e&&C.call(d.attrHandle,b.toLowerCase())?e(a,b,!p):void 0;return void 0!==f?f:c.attributes||!p?a.getAttribute(b):(f=a.getAttributeNode(b))&&f.specified?f.value:null},ga.escape=function(a){return(a+"").replace(ba,ca)},ga.error=function(a){throw new Error("Syntax error, unrecognized expression: "+a)},ga.uniqueSort=function(a){var b,d=[],e=0,f=0;if(l=!c.detectDuplicates,k=!c.sortStable&&a.slice(0),a.sort(B),l){while(b=a[f++])b===a[f]&&(e=d.push(f));while(e--)a.splice(d[e],1)}return k=null,a},e=ga.getText=function(a){var b,c="",d=0,f=a.nodeType;if(f){if(1===f||9===f||11===f){if("string"==typeof a.textContent)return a.textContent;for(a=a.firstChild;a;a=a.nextSibling)c+=e(a)}else if(3===f||4===f)return a.nodeValue}else while(b=a[d++])c+=e(b);return c},d=ga.selectors={cacheLength:50,createPseudo:ia,match:V,attrHandle:{},find:{},relative:{">":{dir:"parentNode",first:!0}," ":{dir:"parentNode"},"+":{dir:"previousSibling",first:!0},"~":{dir:"previousSibling"}},preFilter:{ATTR:function(a){return a[1]=a[1].replace(_,aa),a[3]=(a[3]||a[4]||a[5]||"").replace(_,aa),"~="===a[2]&&(a[3]=" "+a[3]+" "),a.slice(0,4)},CHILD:function(a){return a[1]=a[1].toLowerCase(),"nth"===a[1].slice(0,3)?(a[3]||ga.error(a[0]),a[4]=+(a[4]?a[5]+(a[6]||1):2*("even"===a[3]||"odd"===a[3])),a[5]=+(a[7]+a[8]||"odd"===a[3])):a[3]&&ga.error(a[0]),a},PSEUDO:function(a){var b,c=!a[6]&&a[2];return V.CHILD.test(a[0])?null:(a[3]?a[2]=a[4]||a[5]||"":c&&T.test(c)&&(b=g(c,!0))&&(b=c.indexOf(")",c.length-b)-c.length)&&(a[0]=a[0].slice(0,b),a[2]=c.slice(0,b)),a.slice(0,3))}},filter:{TAG:function(a){var b=a.replace(_,aa).toLowerCase();return"*"===a?function(){return!0}:function(a){return a.nodeName&&a.nodeName.toLowerCase()===b}},CLASS:function(a){var b=y[a+" "];return b||(b=new RegExp("(^|"+K+")"+a+"("+K+"|$)"))&&y(a,function(a){return b.test("string"==typeof a.className&&a.className||"undefined"!=typeof a.getAttribute&&a.getAttribute("class")||"")})},ATTR:function(a,b,c){return function(d){var e=ga.attr(d,a);return null==e?"!="===b:!b||(e+="","="===b?e===c:"!="===b?e!==c:"^="===b?c&&0===e.indexOf(c):"*="===b?c&&e.indexOf(c)>-1:"$="===b?c&&e.slice(-c.length)===c:"~="===b?(" "+e.replace(O," ")+" ").indexOf(c)>-1:"|="===b&&(e===c||e.slice(0,c.length+1)===c+"-"))}},CHILD:function(a,b,c,d,e){var f="nth"!==a.slice(0,3),g="last"!==a.slice(-4),h="of-type"===b;return 1===d&&0===e?function(a){return!!a.parentNode}:function(b,c,i){var j,k,l,m,n,o,p=f!==g?"nextSibling":"previousSibling",q=b.parentNode,r=h&&b.nodeName.toLowerCase(),s=!i&&!h,t=!1;if(q){if(f){while(p){m=b;while(m=m[p])if(h?m.nodeName.toLowerCase()===r:1===m.nodeType)return!1;o=p="only"===a&&!o&&"nextSibling"}return!0}if(o=[g?q.firstChild:q.lastChild],g&&s){m=q,l=m[u]||(m[u]={}),k=l[m.uniqueID]||(l[m.uniqueID]={}),j=k[a]||[],n=j[0]===w&&j[1],t=n&&j[2],m=n&&q.childNodes[n];while(m=++n&&m&&m[p]||(t=n=0)||o.pop())if(1===m.nodeType&&++t&&m===b){k[a]=[w,n,t];break}}else if(s&&(m=b,l=m[u]||(m[u]={}),k=l[m.uniqueID]||(l[m.uniqueID]={}),j=k[a]||[],n=j[0]===w&&j[1],t=n),t===!1)while(m=++n&&m&&m[p]||(t=n=0)||o.pop())if((h?m.nodeName.toLowerCase()===r:1===m.nodeType)&&++t&&(s&&(l=m[u]||(m[u]={}),k=l[m.uniqueID]||(l[m.uniqueID]={}),k[a]=[w,t]),m===b))break;return t-=e,t===d||t%d===0&&t/d>=0}}},PSEUDO:function(a,b){var c,e=d.pseudos[a]||d.setFilters[a.toLowerCase()]||ga.error("unsupported pseudo: "+a);return e[u]?e(b):e.length>1?(c=[a,a,"",b],d.setFilters.hasOwnProperty(a.toLowerCase())?ia(function(a,c){var d,f=e(a,b),g=f.length;while(g--)d=I(a,f[g]),a[d]=!(c[d]=f[g])}):function(a){return e(a,0,c)}):e}},pseudos:{not:ia(function(a){var b=[],c=[],d=h(a.replace(P,"$1"));return d[u]?ia(function(a,b,c,e){var f,g=d(a,null,e,[]),h=a.length;while(h--)(f=g[h])&&(a[h]=!(b[h]=f))}):function(a,e,f){return b[0]=a,d(b,null,f,c),b[0]=null,!c.pop()}}),has:ia(function(a){return function(b){return ga(a,b).length>0}}),contains:ia(function(a){return a=a.replace(_,aa),function(b){return(b.textContent||b.innerText||e(b)).indexOf(a)>-1}}),lang:ia(function(a){return U.test(a||"")||ga.error("unsupported lang: "+a),a=a.replace(_,aa).toLowerCase(),function(b){var c;do if(c=p?b.lang:b.getAttribute("xml:lang")||b.getAttribute("lang"))return c=c.toLowerCase(),c===a||0===c.indexOf(a+"-");while((b=b.parentNode)&&1===b.nodeType);return!1}}),target:function(b){var c=a.location&&a.location.hash;return c&&c.slice(1)===b.id},root:function(a){return a===o},focus:function(a){return a===n.activeElement&&(!n.hasFocus||n.hasFocus())&&!!(a.type||a.href||~a.tabIndex)},enabled:oa(!1),disabled:oa(!0),checked:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&!!a.checked||"option"===b&&!!a.selected},selected:function(a){return a.parentNode&&a.parentNode.selectedIndex,a.selected===!0},empty:function(a){for(a=a.firstChild;a;a=a.nextSibling)if(a.nodeType<6)return!1;return!0},parent:function(a){return!d.pseudos.empty(a)},header:function(a){return X.test(a.nodeName)},input:function(a){return W.test(a.nodeName)},button:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&"button"===a.type||"button"===b},text:function(a){var b;return"input"===a.nodeName.toLowerCase()&&"text"===a.type&&(null==(b=a.getAttribute("type"))||"text"===b.toLowerCase())},first:pa(function(){return[0]}),last:pa(function(a,b){return[b-1]}),eq:pa(function(a,b,c){return[c<0?c+b:c]}),even:pa(function(a,b){for(var c=0;c<b;c+=2)a.push(c);return a}),odd:pa(function(a,b){for(var c=1;c<b;c+=2)a.push(c);return a}),lt:pa(function(a,b,c){for(var d=c<0?c+b:c;--d>=0;)a.push(d);return a}),gt:pa(function(a,b,c){for(var d=c<0?c+b:c;++d<b;)a.push(d);return a})}},d.pseudos.nth=d.pseudos.eq;for(b in{radio:!0,checkbox:!0,file:!0,password:!0,image:!0})d.pseudos[b]=ma(b);for(b in{submit:!0,reset:!0})d.pseudos[b]=na(b);function ra(){}ra.prototype=d.filters=d.pseudos,d.setFilters=new ra,g=ga.tokenize=function(a,b){var c,e,f,g,h,i,j,k=z[a+" "];if(k)return b?0:k.slice(0);h=a,i=[],j=d.preFilter;while(h){c&&!(e=Q.exec(h))||(e&&(h=h.slice(e[0].length)||h),i.push(f=[])),c=!1,(e=R.exec(h))&&(c=e.shift(),f.push({value:c,type:e[0].replace(P," ")}),h=h.slice(c.length));for(g in d.filter)!(e=V[g].exec(h))||j[g]&&!(e=j[g](e))||(c=e.shift(),f.push({value:c,type:g,matches:e}),h=h.slice(c.length));if(!c)break}return b?h.length:h?ga.error(a):z(a,i).slice(0)};function sa(a){for(var b=0,c=a.length,d="";b<c;b++)d+=a[b].value;return d}function ta(a,b,c){var d=b.dir,e=b.next,f=e||d,g=c&&"parentNode"===f,h=x++;return b.first?function(b,c,e){while(b=b[d])if(1===b.nodeType||g)return a(b,c,e);return!1}:function(b,c,i){var j,k,l,m=[w,h];if(i){while(b=b[d])if((1===b.nodeType||g)&&a(b,c,i))return!0}else while(b=b[d])if(1===b.nodeType||g)if(l=b[u]||(b[u]={}),k=l[b.uniqueID]||(l[b.uniqueID]={}),e&&e===b.nodeName.toLowerCase())b=b[d]||b;else{if((j=k[f])&&j[0]===w&&j[1]===h)return m[2]=j[2];if(k[f]=m,m[2]=a(b,c,i))return!0}return!1}}function ua(a){return a.length>1?function(b,c,d){var e=a.length;while(e--)if(!a[e](b,c,d))return!1;return!0}:a[0]}function va(a,b,c){for(var d=0,e=b.length;d<e;d++)ga(a,b[d],c);return c}function wa(a,b,c,d,e){for(var f,g=[],h=0,i=a.length,j=null!=b;h<i;h++)(f=a[h])&&(c&&!c(f,d,e)||(g.push(f),j&&b.push(h)));return g}function xa(a,b,c,d,e,f){return d&&!d[u]&&(d=xa(d)),e&&!e[u]&&(e=xa(e,f)),ia(function(f,g,h,i){var j,k,l,m=[],n=[],o=g.length,p=f||va(b||"*",h.nodeType?[h]:h,[]),q=!a||!f&&b?p:wa(p,m,a,h,i),r=c?e||(f?a:o||d)?[]:g:q;if(c&&c(q,r,h,i),d){j=wa(r,n),d(j,[],h,i),k=j.length;while(k--)(l=j[k])&&(r[n[k]]=!(q[n[k]]=l))}if(f){if(e||a){if(e){j=[],k=r.length;while(k--)(l=r[k])&&j.push(q[k]=l);e(null,r=[],j,i)}k=r.length;while(k--)(l=r[k])&&(j=e?I(f,l):m[k])>-1&&(f[j]=!(g[j]=l))}}else r=wa(r===g?r.splice(o,r.length):r),e?e(null,g,r,i):G.apply(g,r)})}function ya(a){for(var b,c,e,f=a.length,g=d.relative[a[0].type],h=g||d.relative[" "],i=g?1:0,k=ta(function(a){return a===b},h,!0),l=ta(function(a){return I(b,a)>-1},h,!0),m=[function(a,c,d){var e=!g&&(d||c!==j)||((b=c).nodeType?k(a,c,d):l(a,c,d));return b=null,e}];i<f;i++)if(c=d.relative[a[i].type])m=[ta(ua(m),c)];else{if(c=d.filter[a[i].type].apply(null,a[i].matches),c[u]){for(e=++i;e<f;e++)if(d.relative[a[e].type])break;return xa(i>1&&ua(m),i>1&&sa(a.slice(0,i-1).concat({value:" "===a[i-2].type?"*":""})).replace(P,"$1"),c,i<e&&ya(a.slice(i,e)),e<f&&ya(a=a.slice(e)),e<f&&sa(a))}m.push(c)}return ua(m)}function za(a,b){var c=b.length>0,e=a.length>0,f=function(f,g,h,i,k){var l,o,q,r=0,s="0",t=f&&[],u=[],v=j,x=f||e&&d.find.TAG("*",k),y=w+=null==v?1:Math.random()||.1,z=x.length;for(k&&(j=g===n||g||k);s!==z&&null!=(l=x[s]);s++){if(e&&l){o=0,g||l.ownerDocument===n||(m(l),h=!p);while(q=a[o++])if(q(l,g||n,h)){i.push(l);break}k&&(w=y)}c&&((l=!q&&l)&&r--,f&&t.push(l))}if(r+=s,c&&s!==r){o=0;while(q=b[o++])q(t,u,g,h);if(f){if(r>0)while(s--)t[s]||u[s]||(u[s]=E.call(i));u=wa(u)}G.apply(i,u),k&&!f&&u.length>0&&r+b.length>1&&ga.uniqueSort(i)}return k&&(w=y,j=v),t};return c?ia(f):f}return h=ga.compile=function(a,b){var c,d=[],e=[],f=A[a+" "];if(!f){b||(b=g(a)),c=b.length;while(c--)f=ya(b[c]),f[u]?d.push(f):e.push(f);f=A(a,za(e,d)),f.selector=a}return f},i=ga.select=function(a,b,c,e){var f,i,j,k,l,m="function"==typeof a&&a,n=!e&&g(a=m.selector||a);if(c=c||[],1===n.length){if(i=n[0]=n[0].slice(0),i.length>2&&"ID"===(j=i[0]).type&&9===b.nodeType&&p&&d.relative[i[1].type]){if(b=(d.find.ID(j.matches[0].replace(_,aa),b)||[])[0],!b)return c;m&&(b=b.parentNode),a=a.slice(i.shift().value.length)}f=V.needsContext.test(a)?0:i.length;while(f--){if(j=i[f],d.relative[k=j.type])break;if((l=d.find[k])&&(e=l(j.matches[0].replace(_,aa),$.test(i[0].type)&&qa(b.parentNode)||b))){if(i.splice(f,1),a=e.length&&sa(i),!a)return G.apply(c,e),c;break}}}return(m||h(a,n))(e,b,!p,c,!b||$.test(a)&&qa(b.parentNode)||b),c},c.sortStable=u.split("").sort(B).join("")===u,c.detectDuplicates=!!l,m(),c.sortDetached=ja(function(a){return 1&a.compareDocumentPosition(n.createElement("fieldset"))}),ja(function(a){return a.innerHTML="<a href='#'></a>","#"===a.firstChild.getAttribute("href")})||ka("type|href|height|width",function(a,b,c){if(!c)return a.getAttribute(b,"type"===b.toLowerCase()?1:2)}),c.attributes&&ja(function(a){return a.innerHTML="<input/>",a.firstChild.setAttribute("value",""),""===a.firstChild.getAttribute("value")})||ka("value",function(a,b,c){if(!c&&"input"===a.nodeName.toLowerCase())return a.defaultValue}),ja(function(a){return null==a.getAttribute("disabled")})||ka(J,function(a,b,c){var d;if(!c)return a[b]===!0?b.toLowerCase():(d=a.getAttributeNode(b))&&d.specified?d.value:null}),ga}(a);r.find=x,r.expr=x.selectors,r.expr[":"]=r.expr.pseudos,r.uniqueSort=r.unique=x.uniqueSort,r.text=x.getText,r.isXMLDoc=x.isXML,r.contains=x.contains,r.escapeSelector=x.escape;var y=function(a,b,c){var d=[],e=void 0!==c;while((a=a[b])&&9!==a.nodeType)if(1===a.nodeType){if(e&&r(a).is(c))break;d.push(a)}return d},z=function(a,b){for(var c=[];a;a=a.nextSibling)1===a.nodeType&&a!==b&&c.push(a);return c},A=r.expr.match.needsContext,B=/^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i,C=/^.[^:#\[\.,]*$/;function D(a,b,c){return r.isFunction(b)?r.grep(a,function(a,d){return!!b.call(a,d,a)!==c}):b.nodeType?r.grep(a,function(a){return a===b!==c}):"string"!=typeof b?r.grep(a,function(a){return i.call(b,a)>-1!==c}):C.test(b)?r.filter(b,a,c):(b=r.filter(b,a),r.grep(a,function(a){return i.call(b,a)>-1!==c&&1===a.nodeType}))}r.filter=function(a,b,c){var d=b[0];return c&&(a=":not("+a+")"),1===b.length&&1===d.nodeType?r.find.matchesSelector(d,a)?[d]:[]:r.find.matches(a,r.grep(b,function(a){return 1===a.nodeType}))},r.fn.extend({find:function(a){var b,c,d=this.length,e=this;if("string"!=typeof a)return this.pushStack(r(a).filter(function(){for(b=0;b<d;b++)if(r.contains(e[b],this))return!0}));for(c=this.pushStack([]),b=0;b<d;b++)r.find(a,e[b],c);return d>1?r.uniqueSort(c):c},filter:function(a){return this.pushStack(D(this,a||[],!1))},not:function(a){return this.pushStack(D(this,a||[],!0))},is:function(a){return!!D(this,"string"==typeof a&&A.test(a)?r(a):a||[],!1).length}});var E,F=/^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]+))$/,G=r.fn.init=function(a,b,c){var e,f;if(!a)return this;if(c=c||E,"string"==typeof a){if(e="<"===a[0]&&">"===a[a.length-1]&&a.length>=3?[null,a,null]:F.exec(a),!e||!e[1]&&b)return!b||b.jquery?(b||c).find(a):this.constructor(b).find(a);if(e[1]){if(b=b instanceof r?b[0]:b,r.merge(this,r.parseHTML(e[1],b&&b.nodeType?b.ownerDocument||b:d,!0)),B.test(e[1])&&r.isPlainObject(b))for(e in b)r.isFunction(this[e])?this[e](b[e]):this.attr(e,b[e]);return this}return f=d.getElementById(e[2]),f&&(this[0]=f,this.length=1),this}return a.nodeType?(this[0]=a,this.length=1,this):r.isFunction(a)?void 0!==c.ready?c.ready(a):a(r):r.makeArray(a,this)};G.prototype=r.fn,E=r(d);var H=/^(?:parents|prev(?:Until|All))/,I={children:!0,contents:!0,next:!0,prev:!0};r.fn.extend({has:function(a){var b=r(a,this),c=b.length;return this.filter(function(){for(var a=0;a<c;a++)if(r.contains(this,b[a]))return!0})},closest:function(a,b){var c,d=0,e=this.length,f=[],g="string"!=typeof a&&r(a);if(!A.test(a))for(;d<e;d++)for(c=this[d];c&&c!==b;c=c.parentNode)if(c.nodeType<11&&(g?g.index(c)>-1:1===c.nodeType&&r.find.matchesSelector(c,a))){f.push(c);break}return this.pushStack(f.length>1?r.uniqueSort(f):f)},index:function(a){return a?"string"==typeof a?i.call(r(a),this[0]):i.call(this,a.jquery?a[0]:a):this[0]&&this[0].parentNode?this.first().prevAll().length:-1},add:function(a,b){return this.pushStack(r.uniqueSort(r.merge(this.get(),r(a,b))))},addBack:function(a){return this.add(null==a?this.prevObject:this.prevObject.filter(a))}});function J(a,b){while((a=a[b])&&1!==a.nodeType);return a}r.each({parent:function(a){var b=a.parentNode;return b&&11!==b.nodeType?b:null},parents:function(a){return y(a,"parentNode")},parentsUntil:function(a,b,c){return y(a,"parentNode",c)},next:function(a){return J(a,"nextSibling")},prev:function(a){return J(a,"previousSibling")},nextAll:function(a){return y(a,"nextSibling")},prevAll:function(a){return y(a,"previousSibling")},nextUntil:function(a,b,c){return y(a,"nextSibling",c)},prevUntil:function(a,b,c){return y(a,"previousSibling",c)},siblings:function(a){return z((a.parentNode||{}).firstChild,a)},children:function(a){return z(a.firstChild)},contents:function(a){return a.contentDocument||r.merge([],a.childNodes)}},function(a,b){r.fn[a]=function(c,d){var e=r.map(this,b,c);return"Until"!==a.slice(-5)&&(d=c),d&&"string"==typeof d&&(e=r.filter(d,e)),this.length>1&&(I[a]||r.uniqueSort(e),H.test(a)&&e.reverse()),this.pushStack(e)}});var K=/[^\x20\t\r\n\f]+/g;function L(a){var b={};return r.each(a.match(K)||[],function(a,c){b[c]=!0}),b}r.Callbacks=function(a){a="string"==typeof a?L(a):r.extend({},a);var b,c,d,e,f=[],g=[],h=-1,i=function(){for(e=a.once,d=b=!0;g.length;h=-1){c=g.shift();while(++h<f.length)f[h].apply(c[0],c[1])===!1&&a.stopOnFalse&&(h=f.length,c=!1)}a.memory||(c=!1),b=!1,e&&(f=c?[]:"")},j={add:function(){return f&&(c&&!b&&(h=f.length-1,g.push(c)),function d(b){r.each(b,function(b,c){r.isFunction(c)?a.unique&&j.has(c)||f.push(c):c&&c.length&&"string"!==r.type(c)&&d(c)})}(arguments),c&&!b&&i()),this},remove:function(){return r.each(arguments,function(a,b){var c;while((c=r.inArray(b,f,c))>-1)f.splice(c,1),c<=h&&h--}),this},has:function(a){return a?r.inArray(a,f)>-1:f.length>0},empty:function(){return f&&(f=[]),this},disable:function(){return e=g=[],f=c="",this},disabled:function(){return!f},lock:function(){return e=g=[],c||b||(f=c=""),this},locked:function(){return!!e},fireWith:function(a,c){return e||(c=c||[],c=[a,c.slice?c.slice():c],g.push(c),b||i()),this},fire:function(){return j.fireWith(this,arguments),this},fired:function(){return!!d}};return j};function M(a){return a}function N(a){throw a}function O(a,b,c){var d;try{a&&r.isFunction(d=a.promise)?d.call(a).done(b).fail(c):a&&r.isFunction(d=a.then)?d.call(a,b,c):b.call(void 0,a)}catch(a){c.call(void 0,a)}}r.extend({Deferred:function(b){var c=[["notify","progress",r.Callbacks("memory"),r.Callbacks("memory"),2],["resolve","done",r.Callbacks("once memory"),r.Callbacks("once memory"),0,"resolved"],["reject","fail",r.Callbacks("once memory"),r.Callbacks("once memory"),1,"rejected"]],d="pending",e={state:function(){return d},always:function(){return f.done(arguments).fail(arguments),this},"catch":function(a){return e.then(null,a)},pipe:function(){var a=arguments;return r.Deferred(function(b){r.each(c,function(c,d){var e=r.isFunction(a[d[4]])&&a[d[4]];f[d[1]](function(){var a=e&&e.apply(this,arguments);a&&r.isFunction(a.promise)?a.promise().progress(b.notify).done(b.resolve).fail(b.reject):b[d[0]+"With"](this,e?[a]:arguments)})}),a=null}).promise()},then:function(b,d,e){var f=0;function g(b,c,d,e){return function(){var h=this,i=arguments,j=function(){var a,j;if(!(b<f)){if(a=d.apply(h,i),a===c.promise())throw new TypeError("Thenable self-resolution");j=a&&("object"==typeof a||"function"==typeof a)&&a.then,r.isFunction(j)?e?j.call(a,g(f,c,M,e),g(f,c,N,e)):(f++,j.call(a,g(f,c,M,e),g(f,c,N,e),g(f,c,M,c.notifyWith))):(d!==M&&(h=void 0,i=[a]),(e||c.resolveWith)(h,i))}},k=e?j:function(){try{j()}catch(a){r.Deferred.exceptionHook&&r.Deferred.exceptionHook(a,k.stackTrace),b+1>=f&&(d!==N&&(h=void 0,i=[a]),c.rejectWith(h,i))}};b?k():(r.Deferred.getStackHook&&(k.stackTrace=r.Deferred.getStackHook()),a.setTimeout(k))}}return r.Deferred(function(a){c[0][3].add(g(0,a,r.isFunction(e)?e:M,a.notifyWith)),c[1][3].add(g(0,a,r.isFunction(b)?b:M)),c[2][3].add(g(0,a,r.isFunction(d)?d:N))}).promise()},promise:function(a){return null!=a?r.extend(a,e):e}},f={};return r.each(c,function(a,b){var g=b[2],h=b[5];e[b[1]]=g.add,h&&g.add(function(){d=h},c[3-a][2].disable,c[0][2].lock),g.add(b[3].fire),f[b[0]]=function(){return f[b[0]+"With"](this===f?void 0:this,arguments),this},f[b[0]+"With"]=g.fireWith}),e.promise(f),b&&b.call(f,f),f},when:function(a){var b=arguments.length,c=b,d=Array(c),e=f.call(arguments),g=r.Deferred(),h=function(a){return function(c){d[a]=this,e[a]=arguments.length>1?f.call(arguments):c,--b||g.resolveWith(d,e)}};if(b<=1&&(O(a,g.done(h(c)).resolve,g.reject),"pending"===g.state()||r.isFunction(e[c]&&e[c].then)))return g.then();while(c--)O(e[c],h(c),g.reject);return g.promise()}});var P=/^(Eval|Internal|Range|Reference|Syntax|Type|URI)Error$/;r.Deferred.exceptionHook=function(b,c){a.console&&a.console.warn&&b&&P.test(b.name)&&a.console.warn("jQuery.Deferred exception: "+b.message,b.stack,c)},r.readyException=function(b){a.setTimeout(function(){throw b})};var Q=r.Deferred();r.fn.ready=function(a){return Q.then(a)["catch"](function(a){r.readyException(a)}),this},r.extend({isReady:!1,readyWait:1,holdReady:function(a){a?r.readyWait++:r.ready(!0)},ready:function(a){(a===!0?--r.readyWait:r.isReady)||(r.isReady=!0,a!==!0&&--r.readyWait>0||Q.resolveWith(d,[r]))}}),r.ready.then=Q.then;function R(){d.removeEventListener("DOMContentLoaded",R),
 a.removeEventListener("load",R),r.ready()}"complete"===d.readyState||"loading"!==d.readyState&&!d.documentElement.doScroll?a.setTimeout(r.ready):(d.addEventListener("DOMContentLoaded",R),a.addEventListener("load",R));var S=function(a,b,c,d,e,f,g){var h=0,i=a.length,j=null==c;if("object"===r.type(c)){e=!0;for(h in c)S(a,b,h,c[h],!0,f,g)}else if(void 0!==d&&(e=!0,r.isFunction(d)||(g=!0),j&&(g?(b.call(a,d),b=null):(j=b,b=function(a,b,c){return j.call(r(a),c)})),b))for(;h<i;h++)b(a[h],c,g?d:d.call(a[h],h,b(a[h],c)));return e?a:j?b.call(a):i?b(a[0],c):f},T=function(a){return 1===a.nodeType||9===a.nodeType||!+a.nodeType};function U(){this.expando=r.expando+U.uid++}U.uid=1,U.prototype={cache:function(a){var b=a[this.expando];return b||(b={},T(a)&&(a.nodeType?a[this.expando]=b:Object.defineProperty(a,this.expando,{value:b,configurable:!0}))),b},set:function(a,b,c){var d,e=this.cache(a);if("string"==typeof b)e[r.camelCase(b)]=c;else for(d in b)e[r.camelCase(d)]=b[d];return e},get:function(a,b){return void 0===b?this.cache(a):a[this.expando]&&a[this.expando][r.camelCase(b)]},access:function(a,b,c){return void 0===b||b&&"string"==typeof b&&void 0===c?this.get(a,b):(this.set(a,b,c),void 0!==c?c:b)},remove:function(a,b){var c,d=a[this.expando];if(void 0!==d){if(void 0!==b){r.isArray(b)?b=b.map(r.camelCase):(b=r.camelCase(b),b=b in d?[b]:b.match(K)||[]),c=b.length;while(c--)delete d[b[c]]}(void 0===b||r.isEmptyObject(d))&&(a.nodeType?a[this.expando]=void 0:delete a[this.expando])}},hasData:function(a){var b=a[this.expando];return void 0!==b&&!r.isEmptyObject(b)}};var V=new U,W=new U,X=/^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,Y=/[A-Z]/g;function Z(a){return"true"===a||"false"!==a&&("null"===a?null:a===+a+""?+a:X.test(a)?JSON.parse(a):a)}function $(a,b,c){var d;if(void 0===c&&1===a.nodeType)if(d="data-"+b.replace(Y,"-$&").toLowerCase(),c=a.getAttribute(d),"string"==typeof c){try{c=Z(c)}catch(e){}W.set(a,b,c)}else c=void 0;return c}r.extend({hasData:function(a){return W.hasData(a)||V.hasData(a)},data:function(a,b,c){return W.access(a,b,c)},removeData:function(a,b){W.remove(a,b)},_data:function(a,b,c){return V.access(a,b,c)},_removeData:function(a,b){V.remove(a,b)}}),r.fn.extend({data:function(a,b){var c,d,e,f=this[0],g=f&&f.attributes;if(void 0===a){if(this.length&&(e=W.get(f),1===f.nodeType&&!V.get(f,"hasDataAttrs"))){c=g.length;while(c--)g[c]&&(d=g[c].name,0===d.indexOf("data-")&&(d=r.camelCase(d.slice(5)),$(f,d,e[d])));V.set(f,"hasDataAttrs",!0)}return e}return"object"==typeof a?this.each(function(){W.set(this,a)}):S(this,function(b){var c;if(f&&void 0===b){if(c=W.get(f,a),void 0!==c)return c;if(c=$(f,a),void 0!==c)return c}else this.each(function(){W.set(this,a,b)})},null,b,arguments.length>1,null,!0)},removeData:function(a){return this.each(function(){W.remove(this,a)})}}),r.extend({queue:function(a,b,c){var d;if(a)return b=(b||"fx")+"queue",d=V.get(a,b),c&&(!d||r.isArray(c)?d=V.access(a,b,r.makeArray(c)):d.push(c)),d||[]},dequeue:function(a,b){b=b||"fx";var c=r.queue(a,b),d=c.length,e=c.shift(),f=r._queueHooks(a,b),g=function(){r.dequeue(a,b)};"inprogress"===e&&(e=c.shift(),d--),e&&("fx"===b&&c.unshift("inprogress"),delete f.stop,e.call(a,g,f)),!d&&f&&f.empty.fire()},_queueHooks:function(a,b){var c=b+"queueHooks";return V.get(a,c)||V.access(a,c,{empty:r.Callbacks("once memory").add(function(){V.remove(a,[b+"queue",c])})})}}),r.fn.extend({queue:function(a,b){var c=2;return"string"!=typeof a&&(b=a,a="fx",c--),arguments.length<c?r.queue(this[0],a):void 0===b?this:this.each(function(){var c=r.queue(this,a,b);r._queueHooks(this,a),"fx"===a&&"inprogress"!==c[0]&&r.dequeue(this,a)})},dequeue:function(a){return this.each(function(){r.dequeue(this,a)})},clearQueue:function(a){return this.queue(a||"fx",[])},promise:function(a,b){var c,d=1,e=r.Deferred(),f=this,g=this.length,h=function(){--d||e.resolveWith(f,[f])};"string"!=typeof a&&(b=a,a=void 0),a=a||"fx";while(g--)c=V.get(f[g],a+"queueHooks"),c&&c.empty&&(d++,c.empty.add(h));return h(),e.promise(b)}});var _=/[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/.source,aa=new RegExp("^(?:([+-])=|)("+_+")([a-z%]*)$","i"),ba=["Top","Right","Bottom","Left"],ca=function(a,b){return a=b||a,"none"===a.style.display||""===a.style.display&&r.contains(a.ownerDocument,a)&&"none"===r.css(a,"display")},da=function(a,b,c,d){var e,f,g={};for(f in b)g[f]=a.style[f],a.style[f]=b[f];e=c.apply(a,d||[]);for(f in b)a.style[f]=g[f];return e};function ea(a,b,c,d){var e,f=1,g=20,h=d?function(){return d.cur()}:function(){return r.css(a,b,"")},i=h(),j=c&&c[3]||(r.cssNumber[b]?"":"px"),k=(r.cssNumber[b]||"px"!==j&&+i)&&aa.exec(r.css(a,b));if(k&&k[3]!==j){j=j||k[3],c=c||[],k=+i||1;do f=f||".5",k/=f,r.style(a,b,k+j);while(f!==(f=h()/i)&&1!==f&&--g)}return c&&(k=+k||+i||0,e=c[1]?k+(c[1]+1)*c[2]:+c[2],d&&(d.unit=j,d.start=k,d.end=e)),e}var fa={};function ga(a){var b,c=a.ownerDocument,d=a.nodeName,e=fa[d];return e?e:(b=c.body.appendChild(c.createElement(d)),e=r.css(b,"display"),b.parentNode.removeChild(b),"none"===e&&(e="block"),fa[d]=e,e)}function ha(a,b){for(var c,d,e=[],f=0,g=a.length;f<g;f++)d=a[f],d.style&&(c=d.style.display,b?("none"===c&&(e[f]=V.get(d,"display")||null,e[f]||(d.style.display="")),""===d.style.display&&ca(d)&&(e[f]=ga(d))):"none"!==c&&(e[f]="none",V.set(d,"display",c)));for(f=0;f<g;f++)null!=e[f]&&(a[f].style.display=e[f]);return a}r.fn.extend({show:function(){return ha(this,!0)},hide:function(){return ha(this)},toggle:function(a){return"boolean"==typeof a?a?this.show():this.hide():this.each(function(){ca(this)?r(this).show():r(this).hide()})}});var ia=/^(?:checkbox|radio)$/i,ja=/<([a-z][^\/\0>\x20\t\r\n\f]+)/i,ka=/^$|\/(?:java|ecma)script/i,la={option:[1,"<select multiple='multiple'>","</select>"],thead:[1,"<table>","</table>"],col:[2,"<table><colgroup>","</colgroup></table>"],tr:[2,"<table><tbody>","</tbody></table>"],td:[3,"<table><tbody><tr>","</tr></tbody></table>"],_default:[0,"",""]};la.optgroup=la.option,la.tbody=la.tfoot=la.colgroup=la.caption=la.thead,la.th=la.td;function ma(a,b){var c;return c="undefined"!=typeof a.getElementsByTagName?a.getElementsByTagName(b||"*"):"undefined"!=typeof a.querySelectorAll?a.querySelectorAll(b||"*"):[],void 0===b||b&&r.nodeName(a,b)?r.merge([a],c):c}function na(a,b){for(var c=0,d=a.length;c<d;c++)V.set(a[c],"globalEval",!b||V.get(b[c],"globalEval"))}var oa=/<|&#?\w+;/;function pa(a,b,c,d,e){for(var f,g,h,i,j,k,l=b.createDocumentFragment(),m=[],n=0,o=a.length;n<o;n++)if(f=a[n],f||0===f)if("object"===r.type(f))r.merge(m,f.nodeType?[f]:f);else if(oa.test(f)){g=g||l.appendChild(b.createElement("div")),h=(ja.exec(f)||["",""])[1].toLowerCase(),i=la[h]||la._default,g.innerHTML=i[1]+r.htmlPrefilter(f)+i[2],k=i[0];while(k--)g=g.lastChild;r.merge(m,g.childNodes),g=l.firstChild,g.textContent=""}else m.push(b.createTextNode(f));l.textContent="",n=0;while(f=m[n++])if(d&&r.inArray(f,d)>-1)e&&e.push(f);else if(j=r.contains(f.ownerDocument,f),g=ma(l.appendChild(f),"script"),j&&na(g),c){k=0;while(f=g[k++])ka.test(f.type||"")&&c.push(f)}return l}!function(){var a=d.createDocumentFragment(),b=a.appendChild(d.createElement("div")),c=d.createElement("input");c.setAttribute("type","radio"),c.setAttribute("checked","checked"),c.setAttribute("name","t"),b.appendChild(c),o.checkClone=b.cloneNode(!0).cloneNode(!0).lastChild.checked,b.innerHTML="<textarea>x</textarea>",o.noCloneChecked=!!b.cloneNode(!0).lastChild.defaultValue}();var qa=d.documentElement,ra=/^key/,sa=/^(?:mouse|pointer|contextmenu|drag|drop)|click/,ta=/^([^.]*)(?:\.(.+)|)/;function ua(){return!0}function va(){return!1}function wa(){try{return d.activeElement}catch(a){}}function xa(a,b,c,d,e,f){var g,h;if("object"==typeof b){"string"!=typeof c&&(d=d||c,c=void 0);for(h in b)xa(a,h,c,d,b[h],f);return a}if(null==d&&null==e?(e=c,d=c=void 0):null==e&&("string"==typeof c?(e=d,d=void 0):(e=d,d=c,c=void 0)),e===!1)e=va;else if(!e)return a;return 1===f&&(g=e,e=function(a){return r().off(a),g.apply(this,arguments)},e.guid=g.guid||(g.guid=r.guid++)),a.each(function(){r.event.add(this,b,e,d,c)})}r.event={global:{},add:function(a,b,c,d,e){var f,g,h,i,j,k,l,m,n,o,p,q=V.get(a);if(q){c.handler&&(f=c,c=f.handler,e=f.selector),e&&r.find.matchesSelector(qa,e),c.guid||(c.guid=r.guid++),(i=q.events)||(i=q.events={}),(g=q.handle)||(g=q.handle=function(b){return"undefined"!=typeof r&&r.event.triggered!==b.type?r.event.dispatch.apply(a,arguments):void 0}),b=(b||"").match(K)||[""],j=b.length;while(j--)h=ta.exec(b[j])||[],n=p=h[1],o=(h[2]||"").split(".").sort(),n&&(l=r.event.special[n]||{},n=(e?l.delegateType:l.bindType)||n,l=r.event.special[n]||{},k=r.extend({type:n,origType:p,data:d,handler:c,guid:c.guid,selector:e,needsContext:e&&r.expr.match.needsContext.test(e),namespace:o.join(".")},f),(m=i[n])||(m=i[n]=[],m.delegateCount=0,l.setup&&l.setup.call(a,d,o,g)!==!1||a.addEventListener&&a.addEventListener(n,g)),l.add&&(l.add.call(a,k),k.handler.guid||(k.handler.guid=c.guid)),e?m.splice(m.delegateCount++,0,k):m.push(k),r.event.global[n]=!0)}},remove:function(a,b,c,d,e){var f,g,h,i,j,k,l,m,n,o,p,q=V.hasData(a)&&V.get(a);if(q&&(i=q.events)){b=(b||"").match(K)||[""],j=b.length;while(j--)if(h=ta.exec(b[j])||[],n=p=h[1],o=(h[2]||"").split(".").sort(),n){l=r.event.special[n]||{},n=(d?l.delegateType:l.bindType)||n,m=i[n]||[],h=h[2]&&new RegExp("(^|\\.)"+o.join("\\.(?:.*\\.|)")+"(\\.|$)"),g=f=m.length;while(f--)k=m[f],!e&&p!==k.origType||c&&c.guid!==k.guid||h&&!h.test(k.namespace)||d&&d!==k.selector&&("**"!==d||!k.selector)||(m.splice(f,1),k.selector&&m.delegateCount--,l.remove&&l.remove.call(a,k));g&&!m.length&&(l.teardown&&l.teardown.call(a,o,q.handle)!==!1||r.removeEvent(a,n,q.handle),delete i[n])}else for(n in i)r.event.remove(a,n+b[j],c,d,!0);r.isEmptyObject(i)&&V.remove(a,"handle events")}},dispatch:function(a){var b=r.event.fix(a),c,d,e,f,g,h,i=new Array(arguments.length),j=(V.get(this,"events")||{})[b.type]||[],k=r.event.special[b.type]||{};for(i[0]=b,c=1;c<arguments.length;c++)i[c]=arguments[c];if(b.delegateTarget=this,!k.preDispatch||k.preDispatch.call(this,b)!==!1){h=r.event.handlers.call(this,b,j),c=0;while((f=h[c++])&&!b.isPropagationStopped()){b.currentTarget=f.elem,d=0;while((g=f.handlers[d++])&&!b.isImmediatePropagationStopped())b.rnamespace&&!b.rnamespace.test(g.namespace)||(b.handleObj=g,b.data=g.data,e=((r.event.special[g.origType]||{}).handle||g.handler).apply(f.elem,i),void 0!==e&&(b.result=e)===!1&&(b.preventDefault(),b.stopPropagation()))}return k.postDispatch&&k.postDispatch.call(this,b),b.result}},handlers:function(a,b){var c,d,e,f,g,h=[],i=b.delegateCount,j=a.target;if(i&&j.nodeType&&!("click"===a.type&&a.button>=1))for(;j!==this;j=j.parentNode||this)if(1===j.nodeType&&("click"!==a.type||j.disabled!==!0)){for(f=[],g={},c=0;c<i;c++)d=b[c],e=d.selector+" ",void 0===g[e]&&(g[e]=d.needsContext?r(e,this).index(j)>-1:r.find(e,this,null,[j]).length),g[e]&&f.push(d);f.length&&h.push({elem:j,handlers:f})}return j=this,i<b.length&&h.push({elem:j,handlers:b.slice(i)}),h},addProp:function(a,b){Object.defineProperty(r.Event.prototype,a,{enumerable:!0,configurable:!0,get:r.isFunction(b)?function(){if(this.originalEvent)return b(this.originalEvent)}:function(){if(this.originalEvent)return this.originalEvent[a]},set:function(b){Object.defineProperty(this,a,{enumerable:!0,configurable:!0,writable:!0,value:b})}})},fix:function(a){return a[r.expando]?a:new r.Event(a)},special:{load:{noBubble:!0},focus:{trigger:function(){if(this!==wa()&&this.focus)return this.focus(),!1},delegateType:"focusin"},blur:{trigger:function(){if(this===wa()&&this.blur)return this.blur(),!1},delegateType:"focusout"},click:{trigger:function(){if("checkbox"===this.type&&this.click&&r.nodeName(this,"input"))return this.click(),!1},_default:function(a){return r.nodeName(a.target,"a")}},beforeunload:{postDispatch:function(a){void 0!==a.result&&a.originalEvent&&(a.originalEvent.returnValue=a.result)}}}},r.removeEvent=function(a,b,c){a.removeEventListener&&a.removeEventListener(b,c)},r.Event=function(a,b){return this instanceof r.Event?(a&&a.type?(this.originalEvent=a,this.type=a.type,this.isDefaultPrevented=a.defaultPrevented||void 0===a.defaultPrevented&&a.returnValue===!1?ua:va,this.target=a.target&&3===a.target.nodeType?a.target.parentNode:a.target,this.currentTarget=a.currentTarget,this.relatedTarget=a.relatedTarget):this.type=a,b&&r.extend(this,b),this.timeStamp=a&&a.timeStamp||r.now(),void(this[r.expando]=!0)):new r.Event(a,b)},r.Event.prototype={constructor:r.Event,isDefaultPrevented:va,isPropagationStopped:va,isImmediatePropagationStopped:va,isSimulated:!1,preventDefault:function(){var a=this.originalEvent;this.isDefaultPrevented=ua,a&&!this.isSimulated&&a.preventDefault()},stopPropagation:function(){var a=this.originalEvent;this.isPropagationStopped=ua,a&&!this.isSimulated&&a.stopPropagation()},stopImmediatePropagation:function(){var a=this.originalEvent;this.isImmediatePropagationStopped=ua,a&&!this.isSimulated&&a.stopImmediatePropagation(),this.stopPropagation()}},r.each({altKey:!0,bubbles:!0,cancelable:!0,changedTouches:!0,ctrlKey:!0,detail:!0,eventPhase:!0,metaKey:!0,pageX:!0,pageY:!0,shiftKey:!0,view:!0,"char":!0,charCode:!0,key:!0,keyCode:!0,button:!0,buttons:!0,clientX:!0,clientY:!0,offsetX:!0,offsetY:!0,pointerId:!0,pointerType:!0,screenX:!0,screenY:!0,targetTouches:!0,toElement:!0,touches:!0,which:function(a){var b=a.button;return null==a.which&&ra.test(a.type)?null!=a.charCode?a.charCode:a.keyCode:!a.which&&void 0!==b&&sa.test(a.type)?1&b?1:2&b?3:4&b?2:0:a.which}},r.event.addProp),r.each({mouseenter:"mouseover",mouseleave:"mouseout",pointerenter:"pointerover",pointerleave:"pointerout"},function(a,b){r.event.special[a]={delegateType:b,bindType:b,handle:function(a){var c,d=this,e=a.relatedTarget,f=a.handleObj;return e&&(e===d||r.contains(d,e))||(a.type=f.origType,c=f.handler.apply(this,arguments),a.type=b),c}}}),r.fn.extend({on:function(a,b,c,d){return xa(this,a,b,c,d)},one:function(a,b,c,d){return xa(this,a,b,c,d,1)},off:function(a,b,c){var d,e;if(a&&a.preventDefault&&a.handleObj)return d=a.handleObj,r(a.delegateTarget).off(d.namespace?d.origType+"."+d.namespace:d.origType,d.selector,d.handler),this;if("object"==typeof a){for(e in a)this.off(e,b,a[e]);return this}return b!==!1&&"function"!=typeof b||(c=b,b=void 0),c===!1&&(c=va),this.each(function(){r.event.remove(this,a,c,b)})}});var ya=/<(?!area|br|col|embed|hr|img|input|link|meta|param)(([a-z][^\/\0>\x20\t\r\n\f]*)[^>]*)\/>/gi,za=/<script|<style|<link/i,Aa=/checked\s*(?:[^=]|=\s*.checked.)/i,Ba=/^true\/(.*)/,Ca=/^\s*<!(?:\[CDATA\[|--)|(?:\]\]|--)>\s*$/g;function Da(a,b){return r.nodeName(a,"table")&&r.nodeName(11!==b.nodeType?b:b.firstChild,"tr")?a.getElementsByTagName("tbody")[0]||a:a}function Ea(a){return a.type=(null!==a.getAttribute("type"))+"/"+a.type,a}function Fa(a){var b=Ba.exec(a.type);return b?a.type=b[1]:a.removeAttribute("type"),a}function Ga(a,b){var c,d,e,f,g,h,i,j;if(1===b.nodeType){if(V.hasData(a)&&(f=V.access(a),g=V.set(b,f),j=f.events)){delete g.handle,g.events={};for(e in j)for(c=0,d=j[e].length;c<d;c++)r.event.add(b,e,j[e][c])}W.hasData(a)&&(h=W.access(a),i=r.extend({},h),W.set(b,i))}}function Ha(a,b){var c=b.nodeName.toLowerCase();"input"===c&&ia.test(a.type)?b.checked=a.checked:"input"!==c&&"textarea"!==c||(b.defaultValue=a.defaultValue)}function Ia(a,b,c,d){b=g.apply([],b);var e,f,h,i,j,k,l=0,m=a.length,n=m-1,q=b[0],s=r.isFunction(q);if(s||m>1&&"string"==typeof q&&!o.checkClone&&Aa.test(q))return a.each(function(e){var f=a.eq(e);s&&(b[0]=q.call(this,e,f.html())),Ia(f,b,c,d)});if(m&&(e=pa(b,a[0].ownerDocument,!1,a,d),f=e.firstChild,1===e.childNodes.length&&(e=f),f||d)){for(h=r.map(ma(e,"script"),Ea),i=h.length;l<m;l++)j=e,l!==n&&(j=r.clone(j,!0,!0),i&&r.merge(h,ma(j,"script"))),c.call(a[l],j,l);if(i)for(k=h[h.length-1].ownerDocument,r.map(h,Fa),l=0;l<i;l++)j=h[l],ka.test(j.type||"")&&!V.access(j,"globalEval")&&r.contains(k,j)&&(j.src?r._evalUrl&&r._evalUrl(j.src):p(j.textContent.replace(Ca,""),k))}return a}function Ja(a,b,c){for(var d,e=b?r.filter(b,a):a,f=0;null!=(d=e[f]);f++)c||1!==d.nodeType||r.cleanData(ma(d)),d.parentNode&&(c&&r.contains(d.ownerDocument,d)&&na(ma(d,"script")),d.parentNode.removeChild(d));return a}r.extend({htmlPrefilter:function(a){return a.replace(ya,"<$1></$2>")},clone:function(a,b,c){var d,e,f,g,h=a.cloneNode(!0),i=r.contains(a.ownerDocument,a);if(!(o.noCloneChecked||1!==a.nodeType&&11!==a.nodeType||r.isXMLDoc(a)))for(g=ma(h),f=ma(a),d=0,e=f.length;d<e;d++)Ha(f[d],g[d]);if(b)if(c)for(f=f||ma(a),g=g||ma(h),d=0,e=f.length;d<e;d++)Ga(f[d],g[d]);else Ga(a,h);return g=ma(h,"script"),g.length>0&&na(g,!i&&ma(a,"script")),h},cleanData:function(a){for(var b,c,d,e=r.event.special,f=0;void 0!==(c=a[f]);f++)if(T(c)){if(b=c[V.expando]){if(b.events)for(d in b.events)e[d]?r.event.remove(c,d):r.removeEvent(c,d,b.handle);c[V.expando]=void 0}c[W.expando]&&(c[W.expando]=void 0)}}}),r.fn.extend({detach:function(a){return Ja(this,a,!0)},remove:function(a){return Ja(this,a)},text:function(a){return S(this,function(a){return void 0===a?r.text(this):this.empty().each(function(){1!==this.nodeType&&11!==this.nodeType&&9!==this.nodeType||(this.textContent=a)})},null,a,arguments.length)},append:function(){return Ia(this,arguments,function(a){if(1===this.nodeType||11===this.nodeType||9===this.nodeType){var b=Da(this,a);b.appendChild(a)}})},prepend:function(){return Ia(this,arguments,function(a){if(1===this.nodeType||11===this.nodeType||9===this.nodeType){var b=Da(this,a);b.insertBefore(a,b.firstChild)}})},before:function(){return Ia(this,arguments,function(a){this.parentNode&&this.parentNode.insertBefore(a,this)})},after:function(){return Ia(this,arguments,function(a){this.parentNode&&this.parentNode.insertBefore(a,this.nextSibling)})},empty:function(){for(var a,b=0;null!=(a=this[b]);b++)1===a.nodeType&&(r.cleanData(ma(a,!1)),a.textContent="");return this},clone:function(a,b){return a=null!=a&&a,b=null==b?a:b,this.map(function(){return r.clone(this,a,b)})},html:function(a){return S(this,function(a){var b=this[0]||{},c=0,d=this.length;if(void 0===a&&1===b.nodeType)return b.innerHTML;if("string"==typeof a&&!za.test(a)&&!la[(ja.exec(a)||["",""])[1].toLowerCase()]){a=r.htmlPrefilter(a);try{for(;c<d;c++)b=this[c]||{},1===b.nodeType&&(r.cleanData(ma(b,!1)),b.innerHTML=a);b=0}catch(e){}}b&&this.empty().append(a)},null,a,arguments.length)},replaceWith:function(){var a=[];return Ia(this,arguments,function(b){var c=this.parentNode;r.inArray(this,a)<0&&(r.cleanData(ma(this)),c&&c.replaceChild(b,this))},a)}}),r.each({appendTo:"append",prependTo:"prepend",insertBefore:"before",insertAfter:"after",replaceAll:"replaceWith"},function(a,b){r.fn[a]=function(a){for(var c,d=[],e=r(a),f=e.length-1,g=0;g<=f;g++)c=g===f?this:this.clone(!0),r(e[g])[b](c),h.apply(d,c.get());return this.pushStack(d)}});var Ka=/^margin/,La=new RegExp("^("+_+")(?!px)[a-z%]+$","i"),Ma=function(b){var c=b.ownerDocument.defaultView;return c&&c.opener||(c=a),c.getComputedStyle(b)};!function(){function b(){if(i){i.style.cssText="box-sizing:border-box;position:relative;display:block;margin:auto;border:1px;padding:1px;top:1%;width:50%",i.innerHTML="",qa.appendChild(h);var b=a.getComputedStyle(i);c="1%"!==b.top,g="2px"===b.marginLeft,e="4px"===b.width,i.style.marginRight="50%",f="4px"===b.marginRight,qa.removeChild(h),i=null}}var c,e,f,g,h=d.createElement("div"),i=d.createElement("div");i.style&&(i.style.backgroundClip="content-box",i.cloneNode(!0).style.backgroundClip="",o.clearCloneStyle="content-box"===i.style.backgroundClip,h.style.cssText="border:0;width:8px;height:0;top:0;left:-9999px;padding:0;margin-top:1px;position:absolute",h.appendChild(i),r.extend(o,{pixelPosition:function(){return b(),c},boxSizingReliable:function(){return b(),e},pixelMarginRight:function(){return b(),f},reliableMarginLeft:function(){return b(),g}}))}();function Na(a,b,c){var d,e,f,g,h=a.style;return c=c||Ma(a),c&&(g=c.getPropertyValue(b)||c[b],""!==g||r.contains(a.ownerDocument,a)||(g=r.style(a,b)),!o.pixelMarginRight()&&La.test(g)&&Ka.test(b)&&(d=h.width,e=h.minWidth,f=h.maxWidth,h.minWidth=h.maxWidth=h.width=g,g=c.width,h.width=d,h.minWidth=e,h.maxWidth=f)),void 0!==g?g+"":g}function Oa(a,b){return{get:function(){return a()?void delete this.get:(this.get=b).apply(this,arguments)}}}var Pa=/^(none|table(?!-c[ea]).+)/,Qa={position:"absolute",visibility:"hidden",display:"block"},Ra={letterSpacing:"0",fontWeight:"400"},Sa=["Webkit","Moz","ms"],Ta=d.createElement("div").style;function Ua(a){if(a in Ta)return a;var b=a[0].toUpperCase()+a.slice(1),c=Sa.length;while(c--)if(a=Sa[c]+b,a in Ta)return a}function Va(a,b,c){var d=aa.exec(b);return d?Math.max(0,d[2]-(c||0))+(d[3]||"px"):b}function Wa(a,b,c,d,e){var f,g=0;for(f=c===(d?"border":"content")?4:"width"===b?1:0;f<4;f+=2)"margin"===c&&(g+=r.css(a,c+ba[f],!0,e)),d?("content"===c&&(g-=r.css(a,"padding"+ba[f],!0,e)),"margin"!==c&&(g-=r.css(a,"border"+ba[f]+"Width",!0,e))):(g+=r.css(a,"padding"+ba[f],!0,e),"padding"!==c&&(g+=r.css(a,"border"+ba[f]+"Width",!0,e)));return g}function Xa(a,b,c){var d,e=!0,f=Ma(a),g="border-box"===r.css(a,"boxSizing",!1,f);if(a.getClientRects().length&&(d=a.getBoundingClientRect()[b]),d<=0||null==d){if(d=Na(a,b,f),(d<0||null==d)&&(d=a.style[b]),La.test(d))return d;e=g&&(o.boxSizingReliable()||d===a.style[b]),d=parseFloat(d)||0}return d+Wa(a,b,c||(g?"border":"content"),e,f)+"px"}r.extend({cssHooks:{opacity:{get:function(a,b){if(b){var c=Na(a,"opacity");return""===c?"1":c}}}},cssNumber:{animationIterationCount:!0,columnCount:!0,fillOpacity:!0,flexGrow:!0,flexShrink:!0,fontWeight:!0,lineHeight:!0,opacity:!0,order:!0,orphans:!0,widows:!0,zIndex:!0,zoom:!0},cssProps:{"float":"cssFloat"},style:function(a,b,c,d){if(a&&3!==a.nodeType&&8!==a.nodeType&&a.style){var e,f,g,h=r.camelCase(b),i=a.style;return b=r.cssProps[h]||(r.cssProps[h]=Ua(h)||h),g=r.cssHooks[b]||r.cssHooks[h],void 0===c?g&&"get"in g&&void 0!==(e=g.get(a,!1,d))?e:i[b]:(f=typeof c,"string"===f&&(e=aa.exec(c))&&e[1]&&(c=ea(a,b,e),f="number"),null!=c&&c===c&&("number"===f&&(c+=e&&e[3]||(r.cssNumber[h]?"":"px")),o.clearCloneStyle||""!==c||0!==b.indexOf("background")||(i[b]="inherit"),g&&"set"in g&&void 0===(c=g.set(a,c,d))||(i[b]=c)),void 0)}},css:function(a,b,c,d){var e,f,g,h=r.camelCase(b);return b=r.cssProps[h]||(r.cssProps[h]=Ua(h)||h),g=r.cssHooks[b]||r.cssHooks[h],g&&"get"in g&&(e=g.get(a,!0,c)),void 0===e&&(e=Na(a,b,d)),"normal"===e&&b in Ra&&(e=Ra[b]),""===c||c?(f=parseFloat(e),c===!0||isFinite(f)?f||0:e):e}}),r.each(["height","width"],function(a,b){r.cssHooks[b]={get:function(a,c,d){if(c)return!Pa.test(r.css(a,"display"))||a.getClientRects().length&&a.getBoundingClientRect().width?Xa(a,b,d):da(a,Qa,function(){return Xa(a,b,d)})},set:function(a,c,d){var e,f=d&&Ma(a),g=d&&Wa(a,b,d,"border-box"===r.css(a,"boxSizing",!1,f),f);return g&&(e=aa.exec(c))&&"px"!==(e[3]||"px")&&(a.style[b]=c,c=r.css(a,b)),Va(a,c,g)}}}),r.cssHooks.marginLeft=Oa(o.reliableMarginLeft,function(a,b){if(b)return(parseFloat(Na(a,"marginLeft"))||a.getBoundingClientRect().left-da(a,{marginLeft:0},function(){return a.getBoundingClientRect().left}))+"px"}),r.each({margin:"",padding:"",border:"Width"},function(a,b){r.cssHooks[a+b]={expand:function(c){for(var d=0,e={},f="string"==typeof c?c.split(" "):[c];d<4;d++)e[a+ba[d]+b]=f[d]||f[d-2]||f[0];return e}},Ka.test(a)||(r.cssHooks[a+b].set=Va)}),r.fn.extend({css:function(a,b){return S(this,function(a,b,c){var d,e,f={},g=0;if(r.isArray(b)){for(d=Ma(a),e=b.length;g<e;g++)f[b[g]]=r.css(a,b[g],!1,d);return f}return void 0!==c?r.style(a,b,c):r.css(a,b)},a,b,arguments.length>1)}});function Ya(a,b,c,d,e){return new Ya.prototype.init(a,b,c,d,e)}r.Tween=Ya,Ya.prototype={constructor:Ya,init:function(a,b,c,d,e,f){this.elem=a,this.prop=c,this.easing=e||r.easing._default,this.options=b,this.start=this.now=this.cur(),this.end=d,this.unit=f||(r.cssNumber[c]?"":"px")},cur:function(){var a=Ya.propHooks[this.prop];return a&&a.get?a.get(this):Ya.propHooks._default.get(this)},run:function(a){var b,c=Ya.propHooks[this.prop];return this.options.duration?this.pos=b=r.easing[this.easing](a,this.options.duration*a,0,1,this.options.duration):this.pos=b=a,this.now=(this.end-this.start)*b+this.start,this.options.step&&this.options.step.call(this.elem,this.now,this),c&&c.set?c.set(this):Ya.propHooks._default.set(this),this}},Ya.prototype.init.prototype=Ya.prototype,Ya.propHooks={_default:{get:function(a){var b;return 1!==a.elem.nodeType||null!=a.elem[a.prop]&&null==a.elem.style[a.prop]?a.elem[a.prop]:(b=r.css(a.elem,a.prop,""),b&&"auto"!==b?b:0)},set:function(a){r.fx.step[a.prop]?r.fx.step[a.prop](a):1!==a.elem.nodeType||null==a.elem.style[r.cssProps[a.prop]]&&!r.cssHooks[a.prop]?a.elem[a.prop]=a.now:r.style(a.elem,a.prop,a.now+a.unit)}}},Ya.propHooks.scrollTop=Ya.propHooks.scrollLeft={set:function(a){a.elem.nodeType&&a.elem.parentNode&&(a.elem[a.prop]=a.now)}},r.easing={linear:function(a){return a},swing:function(a){return.5-Math.cos(a*Math.PI)/2},_default:"swing"},r.fx=Ya.prototype.init,r.fx.step={};var Za,$a,_a=/^(?:toggle|show|hide)$/,ab=/queueHooks$/;function bb(){$a&&(a.requestAnimationFrame(bb),r.fx.tick())}function cb(){return a.setTimeout(function(){Za=void 0}),Za=r.now()}function db(a,b){var c,d=0,e={height:a};for(b=b?1:0;d<4;d+=2-b)c=ba[d],e["margin"+c]=e["padding"+c]=a;return b&&(e.opacity=e.width=a),e}function eb(a,b,c){for(var d,e=(hb.tweeners[b]||[]).concat(hb.tweeners["*"]),f=0,g=e.length;f<g;f++)if(d=e[f].call(c,b,a))return d}function fb(a,b,c){var d,e,f,g,h,i,j,k,l="width"in b||"height"in b,m=this,n={},o=a.style,p=a.nodeType&&ca(a),q=V.get(a,"fxshow");c.queue||(g=r._queueHooks(a,"fx"),null==g.unqueued&&(g.unqueued=0,h=g.empty.fire,g.empty.fire=function(){g.unqueued||h()}),g.unqueued++,m.always(function(){m.always(function(){g.unqueued--,r.queue(a,"fx").length||g.empty.fire()})}));for(d in b)if(e=b[d],_a.test(e)){if(delete b[d],f=f||"toggle"===e,e===(p?"hide":"show")){if("show"!==e||!q||void 0===q[d])continue;p=!0}n[d]=q&&q[d]||r.style(a,d)}if(i=!r.isEmptyObject(b),i||!r.isEmptyObject(n)){l&&1===a.nodeType&&(c.overflow=[o.overflow,o.overflowX,o.overflowY],j=q&&q.display,null==j&&(j=V.get(a,"display")),k=r.css(a,"display"),"none"===k&&(j?k=j:(ha([a],!0),j=a.style.display||j,k=r.css(a,"display"),ha([a]))),("inline"===k||"inline-block"===k&&null!=j)&&"none"===r.css(a,"float")&&(i||(m.done(function(){o.display=j}),null==j&&(k=o.display,j="none"===k?"":k)),o.display="inline-block")),c.overflow&&(o.overflow="hidden",m.always(function(){o.overflow=c.overflow[0],o.overflowX=c.overflow[1],o.overflowY=c.overflow[2]})),i=!1;for(d in n)i||(q?"hidden"in q&&(p=q.hidden):q=V.access(a,"fxshow",{display:j}),f&&(q.hidden=!p),p&&ha([a],!0),m.done(function(){p||ha([a]),V.remove(a,"fxshow");for(d in n)r.style(a,d,n[d])})),i=eb(p?q[d]:0,d,m),d in q||(q[d]=i.start,p&&(i.end=i.start,i.start=0))}}function gb(a,b){var c,d,e,f,g;for(c in a)if(d=r.camelCase(c),e=b[d],f=a[c],r.isArray(f)&&(e=f[1],f=a[c]=f[0]),c!==d&&(a[d]=f,delete a[c]),g=r.cssHooks[d],g&&"expand"in g){f=g.expand(f),delete a[d];for(c in f)c in a||(a[c]=f[c],b[c]=e)}else b[d]=e}function hb(a,b,c){var d,e,f=0,g=hb.prefilters.length,h=r.Deferred().always(function(){delete i.elem}),i=function(){if(e)return!1;for(var b=Za||cb(),c=Math.max(0,j.startTime+j.duration-b),d=c/j.duration||0,f=1-d,g=0,i=j.tweens.length;g<i;g++)j.tweens[g].run(f);return h.notifyWith(a,[j,f,c]),f<1&&i?c:(h.resolveWith(a,[j]),!1)},j=h.promise({elem:a,props:r.extend({},b),opts:r.extend(!0,{specialEasing:{},easing:r.easing._default},c),originalProperties:b,originalOptions:c,startTime:Za||cb(),duration:c.duration,tweens:[],createTween:function(b,c){var d=r.Tween(a,j.opts,b,c,j.opts.specialEasing[b]||j.opts.easing);return j.tweens.push(d),d},stop:function(b){var c=0,d=b?j.tweens.length:0;if(e)return this;for(e=!0;c<d;c++)j.tweens[c].run(1);return b?(h.notifyWith(a,[j,1,0]),h.resolveWith(a,[j,b])):h.rejectWith(a,[j,b]),this}}),k=j.props;for(gb(k,j.opts.specialEasing);f<g;f++)if(d=hb.prefilters[f].call(j,a,k,j.opts))return r.isFunction(d.stop)&&(r._queueHooks(j.elem,j.opts.queue).stop=r.proxy(d.stop,d)),d;return r.map(k,eb,j),r.isFunction(j.opts.start)&&j.opts.start.call(a,j),r.fx.timer(r.extend(i,{elem:a,anim:j,queue:j.opts.queue})),j.progress(j.opts.progress).done(j.opts.done,j.opts.complete).fail(j.opts.fail).always(j.opts.always)}r.Animation=r.extend(hb,{tweeners:{"*":[function(a,b){var c=this.createTween(a,b);return ea(c.elem,a,aa.exec(b),c),c}]},tweener:function(a,b){r.isFunction(a)?(b=a,a=["*"]):a=a.match(K);for(var c,d=0,e=a.length;d<e;d++)c=a[d],hb.tweeners[c]=hb.tweeners[c]||[],hb.tweeners[c].unshift(b)},prefilters:[fb],prefilter:function(a,b){b?hb.prefilters.unshift(a):hb.prefilters.push(a)}}),r.speed=function(a,b,c){var e=a&&"object"==typeof a?r.extend({},a):{complete:c||!c&&b||r.isFunction(a)&&a,duration:a,easing:c&&b||b&&!r.isFunction(b)&&b};return r.fx.off||d.hidden?e.duration=0:"number"!=typeof e.duration&&(e.duration in r.fx.speeds?e.duration=r.fx.speeds[e.duration]:e.duration=r.fx.speeds._default),null!=e.queue&&e.queue!==!0||(e.queue="fx"),e.old=e.complete,e.complete=function(){r.isFunction(e.old)&&e.old.call(this),e.queue&&r.dequeue(this,e.queue)},e},r.fn.extend({fadeTo:function(a,b,c,d){return this.filter(ca).css("opacity",0).show().end().animate({opacity:b},a,c,d)},animate:function(a,b,c,d){var e=r.isEmptyObject(a),f=r.speed(b,c,d),g=function(){var b=hb(this,r.extend({},a),f);(e||V.get(this,"finish"))&&b.stop(!0)};return g.finish=g,e||f.queue===!1?this.each(g):this.queue(f.queue,g)},stop:function(a,b,c){var d=function(a){var b=a.stop;delete a.stop,b(c)};return"string"!=typeof a&&(c=b,b=a,a=void 0),b&&a!==!1&&this.queue(a||"fx",[]),this.each(function(){var b=!0,e=null!=a&&a+"queueHooks",f=r.timers,g=V.get(this);if(e)g[e]&&g[e].stop&&d(g[e]);else for(e in g)g[e]&&g[e].stop&&ab.test(e)&&d(g[e]);for(e=f.length;e--;)f[e].elem!==this||null!=a&&f[e].queue!==a||(f[e].anim.stop(c),b=!1,f.splice(e,1));!b&&c||r.dequeue(this,a)})},finish:function(a){return a!==!1&&(a=a||"fx"),this.each(function(){var b,c=V.get(this),d=c[a+"queue"],e=c[a+"queueHooks"],f=r.timers,g=d?d.length:0;for(c.finish=!0,r.queue(this,a,[]),e&&e.stop&&e.stop.call(this,!0),b=f.length;b--;)f[b].elem===this&&f[b].queue===a&&(f[b].anim.stop(!0),f.splice(b,1));for(b=0;b<g;b++)d[b]&&d[b].finish&&d[b].finish.call(this);delete c.finish})}}),r.each(["toggle","show","hide"],function(a,b){var c=r.fn[b];r.fn[b]=function(a,d,e){return null==a||"boolean"==typeof a?c.apply(this,arguments):this.animate(db(b,!0),a,d,e)}}),r.each({slideDown:db("show"),slideUp:db("hide"),slideToggle:db("toggle"),fadeIn:{opacity:"show"},fadeOut:{opacity:"hide"},fadeToggle:{opacity:"toggle"}},function(a,b){r.fn[a]=function(a,c,d){return this.animate(b,a,c,d)}}),r.timers=[],r.fx.tick=function(){var a,b=0,c=r.timers;for(Za=r.now();b<c.length;b++)a=c[b],a()||c[b]!==a||c.splice(b--,1);c.length||r.fx.stop(),Za=void 0},r.fx.timer=function(a){r.timers.push(a),a()?r.fx.start():r.timers.pop()},r.fx.interval=13,r.fx.start=function(){$a||($a=a.requestAnimationFrame?a.requestAnimationFrame(bb):a.setInterval(r.fx.tick,r.fx.interval))},r.fx.stop=function(){a.cancelAnimationFrame?a.cancelAnimationFrame($a):a.clearInterval($a),$a=null},r.fx.speeds={slow:600,fast:200,_default:400},r.fn.delay=function(b,c){return b=r.fx?r.fx.speeds[b]||b:b,c=c||"fx",this.queue(c,function(c,d){var e=a.setTimeout(c,b);d.stop=function(){a.clearTimeout(e)}})},function(){var a=d.createElement("input"),b=d.createElement("select"),c=b.appendChild(d.createElement("option"));a.type="checkbox",o.checkOn=""!==a.value,o.optSelected=c.selected,a=d.createElement("input"),a.value="t",a.type="radio",o.radioValue="t"===a.value}();var ib,jb=r.expr.attrHandle;r.fn.extend({attr:function(a,b){return S(this,r.attr,a,b,arguments.length>1)},removeAttr:function(a){return this.each(function(){r.removeAttr(this,a)})}}),r.extend({attr:function(a,b,c){var d,e,f=a.nodeType;if(3!==f&&8!==f&&2!==f)return"undefined"==typeof a.getAttribute?r.prop(a,b,c):(1===f&&r.isXMLDoc(a)||(e=r.attrHooks[b.toLowerCase()]||(r.expr.match.bool.test(b)?ib:void 0)),
-void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:(a.setAttribute(b,c+""),c):e&&"get"in e&&null!==(d=e.get(a,b))?d:(d=r.find.attr(a,b),null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"===b&&r.nodeName(a,"input")){var c=a.value;return a.setAttribute("type",b),c&&(a.value=c),b}}}},removeAttr:function(a,b){var c,d=0,e=b&&b.match(K);if(e&&1===a.nodeType)while(c=e[d++])a.removeAttribute(c)}}),ib={set:function(a,b,c){return b===!1?r.removeAttr(a,c):a.setAttribute(c,c),c}},r.each(r.expr.match.bool.source.match(/\w+/g),function(a,b){var c=jb[b]||r.find.attr;jb[b]=function(a,b,d){var e,f,g=b.toLowerCase();return d||(f=jb[g],jb[g]=e,e=null!=c(a,b,d)?g:null,jb[g]=f),e}});var kb=/^(?:input|select|textarea|button)$/i,lb=/^(?:a|area)$/i;r.fn.extend({prop:function(a,b){return S(this,r.prop,a,b,arguments.length>1)},removeProp:function(a){return this.each(function(){delete this[r.propFix[a]||a]})}}),r.extend({prop:function(a,b,c){var d,e,f=a.nodeType;if(3!==f&&8!==f&&2!==f)return 1===f&&r.isXMLDoc(a)||(b=r.propFix[b]||b,e=r.propHooks[b]),void 0!==c?e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&&"get"in e&&null!==(d=e.get(a,b))?d:a[b]},propHooks:{tabIndex:{get:function(a){var b=r.find.attr(a,"tabindex");return b?parseInt(b,10):kb.test(a.nodeName)||lb.test(a.nodeName)&&a.href?0:-1}}},propFix:{"for":"htmlFor","class":"className"}}),o.optSelected||(r.propHooks.selected={get:function(a){var b=a.parentNode;return b&&b.parentNode&&b.parentNode.selectedIndex,null},set:function(a){var b=a.parentNode;b&&(b.selectedIndex,b.parentNode&&b.parentNode.selectedIndex)}}),r.each(["tabIndex","readOnly","maxLength","cellSpacing","cellPadding","rowSpan","colSpan","useMap","frameBorder","contentEditable"],function(){r.propFix[this.toLowerCase()]=this});function mb(a){var b=a.match(K)||[];return b.join(" ")}function nb(a){return a.getAttribute&&a.getAttribute("class")||""}r.fn.extend({addClass:function(a){var b,c,d,e,f,g,h,i=0;if(r.isFunction(a))return this.each(function(b){r(this).addClass(a.call(this,b,nb(this)))});if("string"==typeof a&&a){b=a.match(K)||[];while(c=this[i++])if(e=nb(c),d=1===c.nodeType&&" "+mb(e)+" "){g=0;while(f=b[g++])d.indexOf(" "+f+" ")<0&&(d+=f+" ");h=mb(d),e!==h&&c.setAttribute("class",h)}}return this},removeClass:function(a){var b,c,d,e,f,g,h,i=0;if(r.isFunction(a))return this.each(function(b){r(this).removeClass(a.call(this,b,nb(this)))});if(!arguments.length)return this.attr("class","");if("string"==typeof a&&a){b=a.match(K)||[];while(c=this[i++])if(e=nb(c),d=1===c.nodeType&&" "+mb(e)+" "){g=0;while(f=b[g++])while(d.indexOf(" "+f+" ")>-1)d=d.replace(" "+f+" "," ");h=mb(d),e!==h&&c.setAttribute("class",h)}}return this},toggleClass:function(a,b){var c=typeof a;return"boolean"==typeof b&&"string"===c?b?this.addClass(a):this.removeClass(a):r.isFunction(a)?this.each(function(c){r(this).toggleClass(a.call(this,c,nb(this),b),b)}):this.each(function(){var b,d,e,f;if("string"===c){d=0,e=r(this),f=a.match(K)||[];while(b=f[d++])e.hasClass(b)?e.removeClass(b):e.addClass(b)}else void 0!==a&&"boolean"!==c||(b=nb(this),b&&V.set(this,"__className__",b),this.setAttribute&&this.setAttribute("class",b||a===!1?"":V.get(this,"__className__")||""))})},hasClass:function(a){var b,c,d=0;b=" "+a+" ";while(c=this[d++])if(1===c.nodeType&&(" "+mb(nb(c))+" ").indexOf(b)>-1)return!0;return!1}});var ob=/\r/g;r.fn.extend({val:function(a){var b,c,d,e=this[0];{if(arguments.length)return d=r.isFunction(a),this.each(function(c){var e;1===this.nodeType&&(e=d?a.call(this,c,r(this).val()):a,null==e?e="":"number"==typeof e?e+="":r.isArray(e)&&(e=r.map(e,function(a){return null==a?"":a+""})),b=r.valHooks[this.type]||r.valHooks[this.nodeName.toLowerCase()],b&&"set"in b&&void 0!==b.set(this,e,"value")||(this.value=e))});if(e)return b=r.valHooks[e.type]||r.valHooks[e.nodeName.toLowerCase()],b&&"get"in b&&void 0!==(c=b.get(e,"value"))?c:(c=e.value,"string"==typeof c?c.replace(ob,""):null==c?"":c)}}}),r.extend({valHooks:{option:{get:function(a){var b=r.find.attr(a,"value");return null!=b?b:mb(r.text(a))}},select:{get:function(a){var b,c,d,e=a.options,f=a.selectedIndex,g="select-one"===a.type,h=g?null:[],i=g?f+1:e.length;for(d=f<0?i:g?f:0;d<i;d++)if(c=e[d],(c.selected||d===f)&&!c.disabled&&(!c.parentNode.disabled||!r.nodeName(c.parentNode,"optgroup"))){if(b=r(c).val(),g)return b;h.push(b)}return h},set:function(a,b){var c,d,e=a.options,f=r.makeArray(b),g=e.length;while(g--)d=e[g],(d.selected=r.inArray(r.valHooks.option.get(d),f)>-1)&&(c=!0);return c||(a.selectedIndex=-1),f}}}}),r.each(["radio","checkbox"],function(){r.valHooks[this]={set:function(a,b){if(r.isArray(b))return a.checked=r.inArray(r(a).val(),b)>-1}},o.checkOn||(r.valHooks[this].get=function(a){return null===a.getAttribute("value")?"on":a.value})});var pb=/^(?:focusinfocus|focusoutblur)$/;r.extend(r.event,{trigger:function(b,c,e,f){var g,h,i,j,k,m,n,o=[e||d],p=l.call(b,"type")?b.type:b,q=l.call(b,"namespace")?b.namespace.split("."):[];if(h=i=e=e||d,3!==e.nodeType&&8!==e.nodeType&&!pb.test(p+r.event.triggered)&&(p.indexOf(".")>-1&&(q=p.split("."),p=q.shift(),q.sort()),k=p.indexOf(":")<0&&"on"+p,b=b[r.expando]?b:new r.Event(p,"object"==typeof b&&b),b.isTrigger=f?2:3,b.namespace=q.join("."),b.rnamespace=b.namespace?new RegExp("(^|\\.)"+q.join("\\.(?:.*\\.|)")+"(\\.|$)"):null,b.result=void 0,b.target||(b.target=e),c=null==c?[b]:r.makeArray(c,[b]),n=r.event.special[p]||{},f||!n.trigger||n.trigger.apply(e,c)!==!1)){if(!f&&!n.noBubble&&!r.isWindow(e)){for(j=n.delegateType||p,pb.test(j+p)||(h=h.parentNode);h;h=h.parentNode)o.push(h),i=h;i===(e.ownerDocument||d)&&o.push(i.defaultView||i.parentWindow||a)}g=0;while((h=o[g++])&&!b.isPropagationStopped())b.type=g>1?j:n.bindType||p,m=(V.get(h,"events")||{})[b.type]&&V.get(h,"handle"),m&&m.apply(h,c),m=k&&h[k],m&&m.apply&&T(h)&&(b.result=m.apply(h,c),b.result===!1&&b.preventDefault());return b.type=p,f||b.isDefaultPrevented()||n._default&&n._default.apply(o.pop(),c)!==!1||!T(e)||k&&r.isFunction(e[p])&&!r.isWindow(e)&&(i=e[k],i&&(e[k]=null),r.event.triggered=p,e[p](),r.event.triggered=void 0,i&&(e[k]=i)),b.result}},simulate:function(a,b,c){var d=r.extend(new r.Event,c,{type:a,isSimulated:!0});r.event.trigger(d,null,b)}}),r.fn.extend({trigger:function(a,b){return this.each(function(){r.event.trigger(a,b,this)})},triggerHandler:function(a,b){var c=this[0];if(c)return r.event.trigger(a,b,c,!0)}}),r.each("blur focus focusin focusout resize scroll click dblclick mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave change select submit keydown keypress keyup contextmenu".split(" "),function(a,b){r.fn[b]=function(a,c){return arguments.length>0?this.on(b,null,a,c):this.trigger(b)}}),r.fn.extend({hover:function(a,b){return this.mouseenter(a).mouseleave(b||a)}}),o.focusin="onfocusin"in a,o.focusin||r.each({focus:"focusin",blur:"focusout"},function(a,b){var c=function(a){r.event.simulate(b,a.target,r.event.fix(a))};r.event.special[b]={setup:function(){var d=this.ownerDocument||this,e=V.access(d,b);e||d.addEventListener(a,c,!0),V.access(d,b,(e||0)+1)},teardown:function(){var d=this.ownerDocument||this,e=V.access(d,b)-1;e?V.access(d,b,e):(d.removeEventListener(a,c,!0),V.remove(d,b))}}});var qb=a.location,rb=r.now(),sb=/\?/;r.parseXML=function(b){var c;if(!b||"string"!=typeof b)return null;try{c=(new a.DOMParser).parseFromString(b,"text/xml")}catch(d){c=void 0}return c&&!c.getElementsByTagName("parsererror").length||r.error("Invalid XML: "+b),c};var tb=/\[\]$/,ub=/\r?\n/g,vb=/^(?:submit|button|image|reset|file)$/i,wb=/^(?:input|select|textarea|keygen)/i;function xb(a,b,c,d){var e;if(r.isArray(b))r.each(b,function(b,e){c||tb.test(a)?d(a,e):xb(a+"["+("object"==typeof e&&null!=e?b:"")+"]",e,c,d)});else if(c||"object"!==r.type(b))d(a,b);else for(e in b)xb(a+"["+e+"]",b[e],c,d)}r.param=function(a,b){var c,d=[],e=function(a,b){var c=r.isFunction(b)?b():b;d[d.length]=encodeURIComponent(a)+"="+encodeURIComponent(null==c?"":c)};if(r.isArray(a)||a.jquery&&!r.isPlainObject(a))r.each(a,function(){e(this.name,this.value)});else for(c in a)xb(c,a[c],b,e);return d.join("&")},r.fn.extend({serialize:function(){return r.param(this.serializeArray())},serializeArray:function(){return this.map(function(){var a=r.prop(this,"elements");return a?r.makeArray(a):this}).filter(function(){var a=this.type;return this.name&&!r(this).is(":disabled")&&wb.test(this.nodeName)&&!vb.test(a)&&(this.checked||!ia.test(a))}).map(function(a,b){var c=r(this).val();return null==c?null:r.isArray(c)?r.map(c,function(a){return{name:b.name,value:a.replace(ub,"\r\n")}}):{name:b.name,value:c.replace(ub,"\r\n")}}).get()}});var yb=/%20/g,zb=/#.*$/,Ab=/([?&])_=[^&]*/,Bb=/^(.*?):[ \t]*([^\r\n]*)$/gm,Cb=/^(?:about|app|app-storage|.+-extension|file|res|widget):$/,Db=/^(?:GET|HEAD)$/,Eb=/^\/\//,Fb={},Gb={},Hb="*/".concat("*"),Ib=d.createElement("a");Ib.href=qb.href;function Jb(a){return function(b,c){"string"!=typeof b&&(c=b,b="*");var d,e=0,f=b.toLowerCase().match(K)||[];if(r.isFunction(c))while(d=f[e++])"+"===d[0]?(d=d.slice(1)||"*",(a[d]=a[d]||[]).unshift(c)):(a[d]=a[d]||[]).push(c)}}function Kb(a,b,c,d){var e={},f=a===Gb;function g(h){var i;return e[h]=!0,r.each(a[h]||[],function(a,h){var j=h(b,c,d);return"string"!=typeof j||f||e[j]?f?!(i=j):void 0:(b.dataTypes.unshift(j),g(j),!1)}),i}return g(b.dataTypes[0])||!e["*"]&&g("*")}function Lb(a,b){var c,d,e=r.ajaxSettings.flatOptions||{};for(c in b)void 0!==b[c]&&((e[c]?a:d||(d={}))[c]=b[c]);return d&&r.extend(!0,a,d),a}function Mb(a,b,c){var d,e,f,g,h=a.contents,i=a.dataTypes;while("*"===i[0])i.shift(),void 0===d&&(d=a.mimeType||b.getResponseHeader("Content-Type"));if(d)for(e in h)if(h[e]&&h[e].test(d)){i.unshift(e);break}if(i[0]in c)f=i[0];else{for(e in c){if(!i[0]||a.converters[e+" "+i[0]]){f=e;break}g||(g=e)}f=f||g}if(f)return f!==i[0]&&i.unshift(f),c[f]}function Nb(a,b,c,d){var e,f,g,h,i,j={},k=a.dataTypes.slice();if(k[1])for(g in a.converters)j[g.toLowerCase()]=a.converters[g];f=k.shift();while(f)if(a.responseFields[f]&&(c[a.responseFields[f]]=b),!i&&d&&a.dataFilter&&(b=a.dataFilter(b,a.dataType)),i=f,f=k.shift())if("*"===f)f=i;else if("*"!==i&&i!==f){if(g=j[i+" "+f]||j["* "+f],!g)for(e in j)if(h=e.split(" "),h[1]===f&&(g=j[i+" "+h[0]]||j["* "+h[0]])){g===!0?g=j[e]:j[e]!==!0&&(f=h[0],k.unshift(h[1]));break}if(g!==!0)if(g&&a["throws"])b=g(b);else try{b=g(b)}catch(l){return{state:"parsererror",error:g?l:"No conversion from "+i+" to "+f}}}return{state:"success",data:b}}r.extend({active:0,lastModified:{},etag:{},ajaxSettings:{url:qb.href,type:"GET",isLocal:Cb.test(qb.protocol),global:!0,processData:!0,async:!0,contentType:"application/x-www-form-urlencoded; charset=UTF-8",accepts:{"*":Hb,text:"text/plain",html:"text/html",xml:"application/xml, text/xml",json:"application/json, text/javascript"},contents:{xml:/\bxml\b/,html:/\bhtml/,json:/\bjson\b/},responseFields:{xml:"responseXML",text:"responseText",json:"responseJSON"},converters:{"* text":String,"text html":!0,"text json":JSON.parse,"text xml":r.parseXML},flatOptions:{url:!0,context:!0}},ajaxSetup:function(a,b){return b?Lb(Lb(a,r.ajaxSettings),b):Lb(r.ajaxSettings,a)},ajaxPrefilter:Jb(Fb),ajaxTransport:Jb(Gb),ajax:function(b,c){"object"==typeof b&&(c=b,b=void 0),c=c||{};var e,f,g,h,i,j,k,l,m,n,o=r.ajaxSetup({},c),p=o.context||o,q=o.context&&(p.nodeType||p.jquery)?r(p):r.event,s=r.Deferred(),t=r.Callbacks("once memory"),u=o.statusCode||{},v={},w={},x="canceled",y={readyState:0,getResponseHeader:function(a){var b;if(k){if(!h){h={};while(b=Bb.exec(g))h[b[1].toLowerCase()]=b[2]}b=h[a.toLowerCase()]}return null==b?null:b},getAllResponseHeaders:function(){return k?g:null},setRequestHeader:function(a,b){return null==k&&(a=w[a.toLowerCase()]=w[a.toLowerCase()]||a,v[a]=b),this},overrideMimeType:function(a){return null==k&&(o.mimeType=a),this},statusCode:function(a){var b;if(a)if(k)y.always(a[y.status]);else for(b in a)u[b]=[u[b],a[b]];return this},abort:function(a){var b=a||x;return e&&e.abort(b),A(0,b),this}};if(s.promise(y),o.url=((b||o.url||qb.href)+"").replace(Eb,qb.protocol+"//"),o.type=c.method||c.type||o.method||o.type,o.dataTypes=(o.dataType||"*").toLowerCase().match(K)||[""],null==o.crossDomain){j=d.createElement("a");try{j.href=o.url,j.href=j.href,o.crossDomain=Ib.protocol+"//"+Ib.host!=j.protocol+"//"+j.host}catch(z){o.crossDomain=!0}}if(o.data&&o.processData&&"string"!=typeof o.data&&(o.data=r.param(o.data,o.traditional)),Kb(Fb,o,c,y),k)return y;l=r.event&&o.global,l&&0===r.active++&&r.event.trigger("ajaxStart"),o.type=o.type.toUpperCase(),o.hasContent=!Db.test(o.type),f=o.url.replace(zb,""),o.hasContent?o.data&&o.processData&&0===(o.contentType||"").indexOf("application/x-www-form-urlencoded")&&(o.data=o.data.replace(yb,"+")):(n=o.url.slice(f.length),o.data&&(f+=(sb.test(f)?"&":"?")+o.data,delete o.data),o.cache===!1&&(f=f.replace(Ab,"$1"),n=(sb.test(f)?"&":"?")+"_="+rb++ +n),o.url=f+n),o.ifModified&&(r.lastModified[f]&&y.setRequestHeader("If-Modified-Since",r.lastModified[f]),r.etag[f]&&y.setRequestHeader("If-None-Match",r.etag[f])),(o.data&&o.hasContent&&o.contentType!==!1||c.contentType)&&y.setRequestHeader("Content-Type",o.contentType),y.setRequestHeader("Accept",o.dataTypes[0]&&o.accepts[o.dataTypes[0]]?o.accepts[o.dataTypes[0]]+("*"!==o.dataTypes[0]?", "+Hb+"; q=0.01":""):o.accepts["*"]);for(m in o.headers)y.setRequestHeader(m,o.headers[m]);if(o.beforeSend&&(o.beforeSend.call(p,y,o)===!1||k))return y.abort();if(x="abort",t.add(o.complete),y.done(o.success),y.fail(o.error),e=Kb(Gb,o,c,y)){if(y.readyState=1,l&&q.trigger("ajaxSend",[y,o]),k)return y;o.async&&o.timeout>0&&(i=a.setTimeout(function(){y.abort("timeout")},o.timeout));try{k=!1,e.send(v,A)}catch(z){if(k)throw z;A(-1,z)}}else A(-1,"No Transport");function A(b,c,d,h){var j,m,n,v,w,x=c;k||(k=!0,i&&a.clearTimeout(i),e=void 0,g=h||"",y.readyState=b>0?4:0,j=b>=200&&b<300||304===b,d&&(v=Mb(o,y,d)),v=Nb(o,v,y,j),j?(o.ifModified&&(w=y.getResponseHeader("Last-Modified"),w&&(r.lastModified[f]=w),w=y.getResponseHeader("etag"),w&&(r.etag[f]=w)),204===b||"HEAD"===o.type?x="nocontent":304===b?x="notmodified":(x=v.state,m=v.data,n=v.error,j=!n)):(n=x,!b&&x||(x="error",b<0&&(b=0))),y.status=b,y.statusText=(c||x)+"",j?s.resolveWith(p,[m,x,y]):s.rejectWith(p,[y,x,n]),y.statusCode(u),u=void 0,l&&q.trigger(j?"ajaxSuccess":"ajaxError",[y,o,j?m:n]),t.fireWith(p,[y,x]),l&&(q.trigger("ajaxComplete",[y,o]),--r.active||r.event.trigger("ajaxStop")))}return y},getJSON:function(a,b,c){return r.get(a,b,c,"json")},getScript:function(a,b){return r.get(a,void 0,b,"script")}}),r.each(["get","post"],function(a,b){r[b]=function(a,c,d,e){return r.isFunction(c)&&(e=e||d,d=c,c=void 0),r.ajax(r.extend({url:a,type:b,dataType:e,data:c,success:d},r.isPlainObject(a)&&a))}}),r._evalUrl=function(a){return r.ajax({url:a,type:"GET",dataType:"script",cache:!0,async:!1,global:!1,"throws":!0})},r.fn.extend({wrapAll:function(a){var b;return this[0]&&(r.isFunction(a)&&(a=a.call(this[0])),b=r(a,this[0].ownerDocument).eq(0).clone(!0),this[0].parentNode&&b.insertBefore(this[0]),b.map(function(){var a=this;while(a.firstElementChild)a=a.firstElementChild;return a}).append(this)),this},wrapInner:function(a){return r.isFunction(a)?this.each(function(b){r(this).wrapInner(a.call(this,b))}):this.each(function(){var b=r(this),c=b.contents();c.length?c.wrapAll(a):b.append(a)})},wrap:function(a){var b=r.isFunction(a);return this.each(function(c){r(this).wrapAll(b?a.call(this,c):a)})},unwrap:function(a){return this.parent(a).not("body").each(function(){r(this).replaceWith(this.childNodes)}),this}}),r.expr.pseudos.hidden=function(a){return!r.expr.pseudos.visible(a)},r.expr.pseudos.visible=function(a){return!!(a.offsetWidth||a.offsetHeight||a.getClientRects().length)},r.ajaxSettings.xhr=function(){try{return new a.XMLHttpRequest}catch(b){}};var Ob={0:200,1223:204},Pb=r.ajaxSettings.xhr();o.cors=!!Pb&&"withCredentials"in Pb,o.ajax=Pb=!!Pb,r.ajaxTransport(function(b){var c,d;if(o.cors||Pb&&!b.crossDomain)return{send:function(e,f){var g,h=b.xhr();if(h.open(b.type,b.url,b.async,b.username,b.password),b.xhrFields)for(g in b.xhrFields)h[g]=b.xhrFields[g];b.mimeType&&h.overrideMimeType&&h.overrideMimeType(b.mimeType),b.crossDomain||e["X-Requested-With"]||(e["X-Requested-With"]="XMLHttpRequest");for(g in e)h.setRequestHeader(g,e[g]);c=function(a){return function(){c&&(c=d=h.onload=h.onerror=h.onabort=h.onreadystatechange=null,"abort"===a?h.abort():"error"===a?"number"!=typeof h.status?f(0,"error"):f(h.status,h.statusText):f(Ob[h.status]||h.status,h.statusText,"text"!==(h.responseType||"text")||"string"!=typeof h.responseText?{binary:h.response}:{text:h.responseText},h.getAllResponseHeaders()))}},h.onload=c(),d=h.onerror=c("error"),void 0!==h.onabort?h.onabort=d:h.onreadystatechange=function(){4===h.readyState&&a.setTimeout(function(){c&&d()})},c=c("abort");try{h.send(b.hasContent&&b.data||null)}catch(i){if(c)throw i}},abort:function(){c&&c()}}}),r.ajaxPrefilter(function(a){a.crossDomain&&(a.contents.script=!1)}),r.ajaxSetup({accepts:{script:"text/javascript, application/javascript, application/ecmascript, application/x-ecmascript"},contents:{script:/\b(?:java|ecma)script\b/},converters:{"text script":function(a){return r.globalEval(a),a}}}),r.ajaxPrefilter("script",function(a){void 0===a.cache&&(a.cache=!1),a.crossDomain&&(a.type="GET")}),r.ajaxTransport("script",function(a){if(a.crossDomain){var b,c;return{send:function(e,f){b=r("<script>").prop({charset:a.scriptCharset,src:a.url}).on("load error",c=function(a){b.remove(),c=null,a&&f("error"===a.type?404:200,a.type)}),d.head.appendChild(b[0])},abort:function(){c&&c()}}}});var Qb=[],Rb=/(=)\?(?=&|$)|\?\?/;r.ajaxSetup({jsonp:"callback",jsonpCallback:function(){var a=Qb.pop()||r.expando+"_"+rb++;return this[a]=!0,a}}),r.ajaxPrefilter("json jsonp",function(b,c,d){var e,f,g,h=b.jsonp!==!1&&(Rb.test(b.url)?"url":"string"==typeof b.data&&0===(b.contentType||"").indexOf("application/x-www-form-urlencoded")&&Rb.test(b.data)&&"data");if(h||"jsonp"===b.dataTypes[0])return e=b.jsonpCallback=r.isFunction(b.jsonpCallback)?b.jsonpCallback():b.jsonpCallback,h?b[h]=b[h].replace(Rb,"$1"+e):b.jsonp!==!1&&(b.url+=(sb.test(b.url)?"&":"?")+b.jsonp+"="+e),b.converters["script json"]=function(){return g||r.error(e+" was not called"),g[0]},b.dataTypes[0]="json",f=a[e],a[e]=function(){g=arguments},d.always(function(){void 0===f?r(a).removeProp(e):a[e]=f,b[e]&&(b.jsonpCallback=c.jsonpCallback,Qb.push(e)),g&&r.isFunction(f)&&f(g[0]),g=f=void 0}),"script"}),o.createHTMLDocument=function(){var a=d.implementation.createHTMLDocument("").body;return a.innerHTML="<form></form><form></form>",2===a.childNodes.length}(),r.parseHTML=function(a,b,c){if("string"!=typeof a)return[];"boolean"==typeof b&&(c=b,b=!1);var e,f,g;return b||(o.createHTMLDocument?(b=d.implementation.createHTMLDocument(""),e=b.createElement("base"),e.href=d.location.href,b.head.appendChild(e)):b=d),f=B.exec(a),g=!c&&[],f?[b.createElement(f[1])]:(f=pa([a],b,g),g&&g.length&&r(g).remove(),r.merge([],f.childNodes))},r.fn.load=function(a,b,c){var d,e,f,g=this,h=a.indexOf(" ");return h>-1&&(d=mb(a.slice(h)),a=a.slice(0,h)),r.isFunction(b)?(c=b,b=void 0):b&&"object"==typeof b&&(e="POST"),g.length>0&&r.ajax({url:a,type:e||"GET",dataType:"html",data:b}).done(function(a){f=arguments,g.html(d?r("<div>").append(r.parseHTML(a)).find(d):a)}).always(c&&function(a,b){g.each(function(){c.apply(this,f||[a.responseText,b,a])})}),this},r.each(["ajaxStart","ajaxStop","ajaxComplete","ajaxError","ajaxSuccess","ajaxSend"],function(a,b){r.fn[b]=function(a){return this.on(b,a)}}),r.expr.pseudos.animated=function(a){return r.grep(r.timers,function(b){return a===b.elem}).length};function Sb(a){return r.isWindow(a)?a:9===a.nodeType&&a.defaultView}r.offset={setOffset:function(a,b,c){var d,e,f,g,h,i,j,k=r.css(a,"position"),l=r(a),m={};"static"===k&&(a.style.position="relative"),h=l.offset(),f=r.css(a,"top"),i=r.css(a,"left"),j=("absolute"===k||"fixed"===k)&&(f+i).indexOf("auto")>-1,j?(d=l.position(),g=d.top,e=d.left):(g=parseFloat(f)||0,e=parseFloat(i)||0),r.isFunction(b)&&(b=b.call(a,c,r.extend({},h))),null!=b.top&&(m.top=b.top-h.top+g),null!=b.left&&(m.left=b.left-h.left+e),"using"in b?b.using.call(a,m):l.css(m)}},r.fn.extend({offset:function(a){if(arguments.length)return void 0===a?this:this.each(function(b){r.offset.setOffset(this,a,b)});var b,c,d,e,f=this[0];if(f)return f.getClientRects().length?(d=f.getBoundingClientRect(),d.width||d.height?(e=f.ownerDocument,c=Sb(e),b=e.documentElement,{top:d.top+c.pageYOffset-b.clientTop,left:d.left+c.pageXOffset-b.clientLeft}):d):{top:0,left:0}},position:function(){if(this[0]){var a,b,c=this[0],d={top:0,left:0};return"fixed"===r.css(c,"position")?b=c.getBoundingClientRect():(a=this.offsetParent(),b=this.offset(),r.nodeName(a[0],"html")||(d=a.offset()),d={top:d.top+r.css(a[0],"borderTopWidth",!0),left:d.left+r.css(a[0],"borderLeftWidth",!0)}),{top:b.top-d.top-r.css(c,"marginTop",!0),left:b.left-d.left-r.css(c,"marginLeft",!0)}}},offsetParent:function(){return this.map(function(){var a=this.offsetParent;while(a&&"static"===r.css(a,"position"))a=a.offsetParent;return a||qa})}}),r.each({scrollLeft:"pageXOffset",scrollTop:"pageYOffset"},function(a,b){var c="pageYOffset"===b;r.fn[a]=function(d){return S(this,function(a,d,e){var f=Sb(a);return void 0===e?f?f[b]:a[d]:void(f?f.scrollTo(c?f.pageXOffset:e,c?e:f.pageYOffset):a[d]=e)},a,d,arguments.length)}}),r.each(["top","left"],function(a,b){r.cssHooks[b]=Oa(o.pixelPosition,function(a,c){if(c)return c=Na(a,b),La.test(c)?r(a).position()[b]+"px":c})}),r.each({Height:"height",Width:"width"},function(a,b){r.each({padding:"inner"+a,content:b,"":"outer"+a},function(c,d){r.fn[d]=function(e,f){var g=arguments.length&&(c||"boolean"!=typeof e),h=c||(e===!0||f===!0?"margin":"border");return S(this,function(b,c,e){var f;return r.isWindow(b)?0===d.indexOf("outer")?b["inner"+a]:b.document.documentElement["client"+a]:9===b.nodeType?(f=b.documentElement,Math.max(b.body["scroll"+a],f["scroll"+a],b.body["offset"+a],f["offset"+a],f["client"+a])):void 0===e?r.css(b,c,h):r.style(b,c,e,h)},b,g?e:void 0,g)}})}),r.fn.extend({bind:function(a,b,c){return this.on(a,null,b,c)},unbind:function(a,b){return this.off(a,null,b)},delegate:function(a,b,c,d){return this.on(b,a,c,d)},undelegate:function(a,b,c){return 1===arguments.length?this.off(a,"**"):this.off(b,a||"**",c)}}),r.parseJSON=JSON.parse,"function"=="function"&&__webpack_require__(87)&&!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function(){return r}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));var Tb=a.jQuery,Ub=a.$;return r.noConflict=function(b){return a.$===r&&(a.$=Ub),b&&a.jQuery===r&&(a.jQuery=Tb),r},b||(a.jQuery=a.$=r),r});
+void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:(a.setAttribute(b,c+""),c):e&&"get"in e&&null!==(d=e.get(a,b))?d:(d=r.find.attr(a,b),null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"===b&&r.nodeName(a,"input")){var c=a.value;return a.setAttribute("type",b),c&&(a.value=c),b}}}},removeAttr:function(a,b){var c,d=0,e=b&&b.match(K);if(e&&1===a.nodeType)while(c=e[d++])a.removeAttribute(c)}}),ib={set:function(a,b,c){return b===!1?r.removeAttr(a,c):a.setAttribute(c,c),c}},r.each(r.expr.match.bool.source.match(/\w+/g),function(a,b){var c=jb[b]||r.find.attr;jb[b]=function(a,b,d){var e,f,g=b.toLowerCase();return d||(f=jb[g],jb[g]=e,e=null!=c(a,b,d)?g:null,jb[g]=f),e}});var kb=/^(?:input|select|textarea|button)$/i,lb=/^(?:a|area)$/i;r.fn.extend({prop:function(a,b){return S(this,r.prop,a,b,arguments.length>1)},removeProp:function(a){return this.each(function(){delete this[r.propFix[a]||a]})}}),r.extend({prop:function(a,b,c){var d,e,f=a.nodeType;if(3!==f&&8!==f&&2!==f)return 1===f&&r.isXMLDoc(a)||(b=r.propFix[b]||b,e=r.propHooks[b]),void 0!==c?e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&&"get"in e&&null!==(d=e.get(a,b))?d:a[b]},propHooks:{tabIndex:{get:function(a){var b=r.find.attr(a,"tabindex");return b?parseInt(b,10):kb.test(a.nodeName)||lb.test(a.nodeName)&&a.href?0:-1}}},propFix:{"for":"htmlFor","class":"className"}}),o.optSelected||(r.propHooks.selected={get:function(a){var b=a.parentNode;return b&&b.parentNode&&b.parentNode.selectedIndex,null},set:function(a){var b=a.parentNode;b&&(b.selectedIndex,b.parentNode&&b.parentNode.selectedIndex)}}),r.each(["tabIndex","readOnly","maxLength","cellSpacing","cellPadding","rowSpan","colSpan","useMap","frameBorder","contentEditable"],function(){r.propFix[this.toLowerCase()]=this});function mb(a){var b=a.match(K)||[];return b.join(" ")}function nb(a){return a.getAttribute&&a.getAttribute("class")||""}r.fn.extend({addClass:function(a){var b,c,d,e,f,g,h,i=0;if(r.isFunction(a))return this.each(function(b){r(this).addClass(a.call(this,b,nb(this)))});if("string"==typeof a&&a){b=a.match(K)||[];while(c=this[i++])if(e=nb(c),d=1===c.nodeType&&" "+mb(e)+" "){g=0;while(f=b[g++])d.indexOf(" "+f+" ")<0&&(d+=f+" ");h=mb(d),e!==h&&c.setAttribute("class",h)}}return this},removeClass:function(a){var b,c,d,e,f,g,h,i=0;if(r.isFunction(a))return this.each(function(b){r(this).removeClass(a.call(this,b,nb(this)))});if(!arguments.length)return this.attr("class","");if("string"==typeof a&&a){b=a.match(K)||[];while(c=this[i++])if(e=nb(c),d=1===c.nodeType&&" "+mb(e)+" "){g=0;while(f=b[g++])while(d.indexOf(" "+f+" ")>-1)d=d.replace(" "+f+" "," ");h=mb(d),e!==h&&c.setAttribute("class",h)}}return this},toggleClass:function(a,b){var c=typeof a;return"boolean"==typeof b&&"string"===c?b?this.addClass(a):this.removeClass(a):r.isFunction(a)?this.each(function(c){r(this).toggleClass(a.call(this,c,nb(this),b),b)}):this.each(function(){var b,d,e,f;if("string"===c){d=0,e=r(this),f=a.match(K)||[];while(b=f[d++])e.hasClass(b)?e.removeClass(b):e.addClass(b)}else void 0!==a&&"boolean"!==c||(b=nb(this),b&&V.set(this,"__className__",b),this.setAttribute&&this.setAttribute("class",b||a===!1?"":V.get(this,"__className__")||""))})},hasClass:function(a){var b,c,d=0;b=" "+a+" ";while(c=this[d++])if(1===c.nodeType&&(" "+mb(nb(c))+" ").indexOf(b)>-1)return!0;return!1}});var ob=/\r/g;r.fn.extend({val:function(a){var b,c,d,e=this[0];{if(arguments.length)return d=r.isFunction(a),this.each(function(c){var e;1===this.nodeType&&(e=d?a.call(this,c,r(this).val()):a,null==e?e="":"number"==typeof e?e+="":r.isArray(e)&&(e=r.map(e,function(a){return null==a?"":a+""})),b=r.valHooks[this.type]||r.valHooks[this.nodeName.toLowerCase()],b&&"set"in b&&void 0!==b.set(this,e,"value")||(this.value=e))});if(e)return b=r.valHooks[e.type]||r.valHooks[e.nodeName.toLowerCase()],b&&"get"in b&&void 0!==(c=b.get(e,"value"))?c:(c=e.value,"string"==typeof c?c.replace(ob,""):null==c?"":c)}}}),r.extend({valHooks:{option:{get:function(a){var b=r.find.attr(a,"value");return null!=b?b:mb(r.text(a))}},select:{get:function(a){var b,c,d,e=a.options,f=a.selectedIndex,g="select-one"===a.type,h=g?null:[],i=g?f+1:e.length;for(d=f<0?i:g?f:0;d<i;d++)if(c=e[d],(c.selected||d===f)&&!c.disabled&&(!c.parentNode.disabled||!r.nodeName(c.parentNode,"optgroup"))){if(b=r(c).val(),g)return b;h.push(b)}return h},set:function(a,b){var c,d,e=a.options,f=r.makeArray(b),g=e.length;while(g--)d=e[g],(d.selected=r.inArray(r.valHooks.option.get(d),f)>-1)&&(c=!0);return c||(a.selectedIndex=-1),f}}}}),r.each(["radio","checkbox"],function(){r.valHooks[this]={set:function(a,b){if(r.isArray(b))return a.checked=r.inArray(r(a).val(),b)>-1}},o.checkOn||(r.valHooks[this].get=function(a){return null===a.getAttribute("value")?"on":a.value})});var pb=/^(?:focusinfocus|focusoutblur)$/;r.extend(r.event,{trigger:function(b,c,e,f){var g,h,i,j,k,m,n,o=[e||d],p=l.call(b,"type")?b.type:b,q=l.call(b,"namespace")?b.namespace.split("."):[];if(h=i=e=e||d,3!==e.nodeType&&8!==e.nodeType&&!pb.test(p+r.event.triggered)&&(p.indexOf(".")>-1&&(q=p.split("."),p=q.shift(),q.sort()),k=p.indexOf(":")<0&&"on"+p,b=b[r.expando]?b:new r.Event(p,"object"==typeof b&&b),b.isTrigger=f?2:3,b.namespace=q.join("."),b.rnamespace=b.namespace?new RegExp("(^|\\.)"+q.join("\\.(?:.*\\.|)")+"(\\.|$)"):null,b.result=void 0,b.target||(b.target=e),c=null==c?[b]:r.makeArray(c,[b]),n=r.event.special[p]||{},f||!n.trigger||n.trigger.apply(e,c)!==!1)){if(!f&&!n.noBubble&&!r.isWindow(e)){for(j=n.delegateType||p,pb.test(j+p)||(h=h.parentNode);h;h=h.parentNode)o.push(h),i=h;i===(e.ownerDocument||d)&&o.push(i.defaultView||i.parentWindow||a)}g=0;while((h=o[g++])&&!b.isPropagationStopped())b.type=g>1?j:n.bindType||p,m=(V.get(h,"events")||{})[b.type]&&V.get(h,"handle"),m&&m.apply(h,c),m=k&&h[k],m&&m.apply&&T(h)&&(b.result=m.apply(h,c),b.result===!1&&b.preventDefault());return b.type=p,f||b.isDefaultPrevented()||n._default&&n._default.apply(o.pop(),c)!==!1||!T(e)||k&&r.isFunction(e[p])&&!r.isWindow(e)&&(i=e[k],i&&(e[k]=null),r.event.triggered=p,e[p](),r.event.triggered=void 0,i&&(e[k]=i)),b.result}},simulate:function(a,b,c){var d=r.extend(new r.Event,c,{type:a,isSimulated:!0});r.event.trigger(d,null,b)}}),r.fn.extend({trigger:function(a,b){return this.each(function(){r.event.trigger(a,b,this)})},triggerHandler:function(a,b){var c=this[0];if(c)return r.event.trigger(a,b,c,!0)}}),r.each("blur focus focusin focusout resize scroll click dblclick mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave change select submit keydown keypress keyup contextmenu".split(" "),function(a,b){r.fn[b]=function(a,c){return arguments.length>0?this.on(b,null,a,c):this.trigger(b)}}),r.fn.extend({hover:function(a,b){return this.mouseenter(a).mouseleave(b||a)}}),o.focusin="onfocusin"in a,o.focusin||r.each({focus:"focusin",blur:"focusout"},function(a,b){var c=function(a){r.event.simulate(b,a.target,r.event.fix(a))};r.event.special[b]={setup:function(){var d=this.ownerDocument||this,e=V.access(d,b);e||d.addEventListener(a,c,!0),V.access(d,b,(e||0)+1)},teardown:function(){var d=this.ownerDocument||this,e=V.access(d,b)-1;e?V.access(d,b,e):(d.removeEventListener(a,c,!0),V.remove(d,b))}}});var qb=a.location,rb=r.now(),sb=/\?/;r.parseXML=function(b){var c;if(!b||"string"!=typeof b)return null;try{c=(new a.DOMParser).parseFromString(b,"text/xml")}catch(d){c=void 0}return c&&!c.getElementsByTagName("parsererror").length||r.error("Invalid XML: "+b),c};var tb=/\[\]$/,ub=/\r?\n/g,vb=/^(?:submit|button|image|reset|file)$/i,wb=/^(?:input|select|textarea|keygen)/i;function xb(a,b,c,d){var e;if(r.isArray(b))r.each(b,function(b,e){c||tb.test(a)?d(a,e):xb(a+"["+("object"==typeof e&&null!=e?b:"")+"]",e,c,d)});else if(c||"object"!==r.type(b))d(a,b);else for(e in b)xb(a+"["+e+"]",b[e],c,d)}r.param=function(a,b){var c,d=[],e=function(a,b){var c=r.isFunction(b)?b():b;d[d.length]=encodeURIComponent(a)+"="+encodeURIComponent(null==c?"":c)};if(r.isArray(a)||a.jquery&&!r.isPlainObject(a))r.each(a,function(){e(this.name,this.value)});else for(c in a)xb(c,a[c],b,e);return d.join("&")},r.fn.extend({serialize:function(){return r.param(this.serializeArray())},serializeArray:function(){return this.map(function(){var a=r.prop(this,"elements");return a?r.makeArray(a):this}).filter(function(){var a=this.type;return this.name&&!r(this).is(":disabled")&&wb.test(this.nodeName)&&!vb.test(a)&&(this.checked||!ia.test(a))}).map(function(a,b){var c=r(this).val();return null==c?null:r.isArray(c)?r.map(c,function(a){return{name:b.name,value:a.replace(ub,"\r\n")}}):{name:b.name,value:c.replace(ub,"\r\n")}}).get()}});var yb=/%20/g,zb=/#.*$/,Ab=/([?&])_=[^&]*/,Bb=/^(.*?):[ \t]*([^\r\n]*)$/gm,Cb=/^(?:about|app|app-storage|.+-extension|file|res|widget):$/,Db=/^(?:GET|HEAD)$/,Eb=/^\/\//,Fb={},Gb={},Hb="*/".concat("*"),Ib=d.createElement("a");Ib.href=qb.href;function Jb(a){return function(b,c){"string"!=typeof b&&(c=b,b="*");var d,e=0,f=b.toLowerCase().match(K)||[];if(r.isFunction(c))while(d=f[e++])"+"===d[0]?(d=d.slice(1)||"*",(a[d]=a[d]||[]).unshift(c)):(a[d]=a[d]||[]).push(c)}}function Kb(a,b,c,d){var e={},f=a===Gb;function g(h){var i;return e[h]=!0,r.each(a[h]||[],function(a,h){var j=h(b,c,d);return"string"!=typeof j||f||e[j]?f?!(i=j):void 0:(b.dataTypes.unshift(j),g(j),!1)}),i}return g(b.dataTypes[0])||!e["*"]&&g("*")}function Lb(a,b){var c,d,e=r.ajaxSettings.flatOptions||{};for(c in b)void 0!==b[c]&&((e[c]?a:d||(d={}))[c]=b[c]);return d&&r.extend(!0,a,d),a}function Mb(a,b,c){var d,e,f,g,h=a.contents,i=a.dataTypes;while("*"===i[0])i.shift(),void 0===d&&(d=a.mimeType||b.getResponseHeader("Content-Type"));if(d)for(e in h)if(h[e]&&h[e].test(d)){i.unshift(e);break}if(i[0]in c)f=i[0];else{for(e in c){if(!i[0]||a.converters[e+" "+i[0]]){f=e;break}g||(g=e)}f=f||g}if(f)return f!==i[0]&&i.unshift(f),c[f]}function Nb(a,b,c,d){var e,f,g,h,i,j={},k=a.dataTypes.slice();if(k[1])for(g in a.converters)j[g.toLowerCase()]=a.converters[g];f=k.shift();while(f)if(a.responseFields[f]&&(c[a.responseFields[f]]=b),!i&&d&&a.dataFilter&&(b=a.dataFilter(b,a.dataType)),i=f,f=k.shift())if("*"===f)f=i;else if("*"!==i&&i!==f){if(g=j[i+" "+f]||j["* "+f],!g)for(e in j)if(h=e.split(" "),h[1]===f&&(g=j[i+" "+h[0]]||j["* "+h[0]])){g===!0?g=j[e]:j[e]!==!0&&(f=h[0],k.unshift(h[1]));break}if(g!==!0)if(g&&a["throws"])b=g(b);else try{b=g(b)}catch(l){return{state:"parsererror",error:g?l:"No conversion from "+i+" to "+f}}}return{state:"success",data:b}}r.extend({active:0,lastModified:{},etag:{},ajaxSettings:{url:qb.href,type:"GET",isLocal:Cb.test(qb.protocol),global:!0,processData:!0,async:!0,contentType:"application/x-www-form-urlencoded; charset=UTF-8",accepts:{"*":Hb,text:"text/plain",html:"text/html",xml:"application/xml, text/xml",json:"application/json, text/javascript"},contents:{xml:/\bxml\b/,html:/\bhtml/,json:/\bjson\b/},responseFields:{xml:"responseXML",text:"responseText",json:"responseJSON"},converters:{"* text":String,"text html":!0,"text json":JSON.parse,"text xml":r.parseXML},flatOptions:{url:!0,context:!0}},ajaxSetup:function(a,b){return b?Lb(Lb(a,r.ajaxSettings),b):Lb(r.ajaxSettings,a)},ajaxPrefilter:Jb(Fb),ajaxTransport:Jb(Gb),ajax:function(b,c){"object"==typeof b&&(c=b,b=void 0),c=c||{};var e,f,g,h,i,j,k,l,m,n,o=r.ajaxSetup({},c),p=o.context||o,q=o.context&&(p.nodeType||p.jquery)?r(p):r.event,s=r.Deferred(),t=r.Callbacks("once memory"),u=o.statusCode||{},v={},w={},x="canceled",y={readyState:0,getResponseHeader:function(a){var b;if(k){if(!h){h={};while(b=Bb.exec(g))h[b[1].toLowerCase()]=b[2]}b=h[a.toLowerCase()]}return null==b?null:b},getAllResponseHeaders:function(){return k?g:null},setRequestHeader:function(a,b){return null==k&&(a=w[a.toLowerCase()]=w[a.toLowerCase()]||a,v[a]=b),this},overrideMimeType:function(a){return null==k&&(o.mimeType=a),this},statusCode:function(a){var b;if(a)if(k)y.always(a[y.status]);else for(b in a)u[b]=[u[b],a[b]];return this},abort:function(a){var b=a||x;return e&&e.abort(b),A(0,b),this}};if(s.promise(y),o.url=((b||o.url||qb.href)+"").replace(Eb,qb.protocol+"//"),o.type=c.method||c.type||o.method||o.type,o.dataTypes=(o.dataType||"*").toLowerCase().match(K)||[""],null==o.crossDomain){j=d.createElement("a");try{j.href=o.url,j.href=j.href,o.crossDomain=Ib.protocol+"//"+Ib.host!=j.protocol+"//"+j.host}catch(z){o.crossDomain=!0}}if(o.data&&o.processData&&"string"!=typeof o.data&&(o.data=r.param(o.data,o.traditional)),Kb(Fb,o,c,y),k)return y;l=r.event&&o.global,l&&0===r.active++&&r.event.trigger("ajaxStart"),o.type=o.type.toUpperCase(),o.hasContent=!Db.test(o.type),f=o.url.replace(zb,""),o.hasContent?o.data&&o.processData&&0===(o.contentType||"").indexOf("application/x-www-form-urlencoded")&&(o.data=o.data.replace(yb,"+")):(n=o.url.slice(f.length),o.data&&(f+=(sb.test(f)?"&":"?")+o.data,delete o.data),o.cache===!1&&(f=f.replace(Ab,"$1"),n=(sb.test(f)?"&":"?")+"_="+rb++ +n),o.url=f+n),o.ifModified&&(r.lastModified[f]&&y.setRequestHeader("If-Modified-Since",r.lastModified[f]),r.etag[f]&&y.setRequestHeader("If-None-Match",r.etag[f])),(o.data&&o.hasContent&&o.contentType!==!1||c.contentType)&&y.setRequestHeader("Content-Type",o.contentType),y.setRequestHeader("Accept",o.dataTypes[0]&&o.accepts[o.dataTypes[0]]?o.accepts[o.dataTypes[0]]+("*"!==o.dataTypes[0]?", "+Hb+"; q=0.01":""):o.accepts["*"]);for(m in o.headers)y.setRequestHeader(m,o.headers[m]);if(o.beforeSend&&(o.beforeSend.call(p,y,o)===!1||k))return y.abort();if(x="abort",t.add(o.complete),y.done(o.success),y.fail(o.error),e=Kb(Gb,o,c,y)){if(y.readyState=1,l&&q.trigger("ajaxSend",[y,o]),k)return y;o.async&&o.timeout>0&&(i=a.setTimeout(function(){y.abort("timeout")},o.timeout));try{k=!1,e.send(v,A)}catch(z){if(k)throw z;A(-1,z)}}else A(-1,"No Transport");function A(b,c,d,h){var j,m,n,v,w,x=c;k||(k=!0,i&&a.clearTimeout(i),e=void 0,g=h||"",y.readyState=b>0?4:0,j=b>=200&&b<300||304===b,d&&(v=Mb(o,y,d)),v=Nb(o,v,y,j),j?(o.ifModified&&(w=y.getResponseHeader("Last-Modified"),w&&(r.lastModified[f]=w),w=y.getResponseHeader("etag"),w&&(r.etag[f]=w)),204===b||"HEAD"===o.type?x="nocontent":304===b?x="notmodified":(x=v.state,m=v.data,n=v.error,j=!n)):(n=x,!b&&x||(x="error",b<0&&(b=0))),y.status=b,y.statusText=(c||x)+"",j?s.resolveWith(p,[m,x,y]):s.rejectWith(p,[y,x,n]),y.statusCode(u),u=void 0,l&&q.trigger(j?"ajaxSuccess":"ajaxError",[y,o,j?m:n]),t.fireWith(p,[y,x]),l&&(q.trigger("ajaxComplete",[y,o]),--r.active||r.event.trigger("ajaxStop")))}return y},getJSON:function(a,b,c){return r.get(a,b,c,"json")},getScript:function(a,b){return r.get(a,void 0,b,"script")}}),r.each(["get","post"],function(a,b){r[b]=function(a,c,d,e){return r.isFunction(c)&&(e=e||d,d=c,c=void 0),r.ajax(r.extend({url:a,type:b,dataType:e,data:c,success:d},r.isPlainObject(a)&&a))}}),r._evalUrl=function(a){return r.ajax({url:a,type:"GET",dataType:"script",cache:!0,async:!1,global:!1,"throws":!0})},r.fn.extend({wrapAll:function(a){var b;return this[0]&&(r.isFunction(a)&&(a=a.call(this[0])),b=r(a,this[0].ownerDocument).eq(0).clone(!0),this[0].parentNode&&b.insertBefore(this[0]),b.map(function(){var a=this;while(a.firstElementChild)a=a.firstElementChild;return a}).append(this)),this},wrapInner:function(a){return r.isFunction(a)?this.each(function(b){r(this).wrapInner(a.call(this,b))}):this.each(function(){var b=r(this),c=b.contents();c.length?c.wrapAll(a):b.append(a)})},wrap:function(a){var b=r.isFunction(a);return this.each(function(c){r(this).wrapAll(b?a.call(this,c):a)})},unwrap:function(a){return this.parent(a).not("body").each(function(){r(this).replaceWith(this.childNodes)}),this}}),r.expr.pseudos.hidden=function(a){return!r.expr.pseudos.visible(a)},r.expr.pseudos.visible=function(a){return!!(a.offsetWidth||a.offsetHeight||a.getClientRects().length)},r.ajaxSettings.xhr=function(){try{return new a.XMLHttpRequest}catch(b){}};var Ob={0:200,1223:204},Pb=r.ajaxSettings.xhr();o.cors=!!Pb&&"withCredentials"in Pb,o.ajax=Pb=!!Pb,r.ajaxTransport(function(b){var c,d;if(o.cors||Pb&&!b.crossDomain)return{send:function(e,f){var g,h=b.xhr();if(h.open(b.type,b.url,b.async,b.username,b.password),b.xhrFields)for(g in b.xhrFields)h[g]=b.xhrFields[g];b.mimeType&&h.overrideMimeType&&h.overrideMimeType(b.mimeType),b.crossDomain||e["X-Requested-With"]||(e["X-Requested-With"]="XMLHttpRequest");for(g in e)h.setRequestHeader(g,e[g]);c=function(a){return function(){c&&(c=d=h.onload=h.onerror=h.onabort=h.onreadystatechange=null,"abort"===a?h.abort():"error"===a?"number"!=typeof h.status?f(0,"error"):f(h.status,h.statusText):f(Ob[h.status]||h.status,h.statusText,"text"!==(h.responseType||"text")||"string"!=typeof h.responseText?{binary:h.response}:{text:h.responseText},h.getAllResponseHeaders()))}},h.onload=c(),d=h.onerror=c("error"),void 0!==h.onabort?h.onabort=d:h.onreadystatechange=function(){4===h.readyState&&a.setTimeout(function(){c&&d()})},c=c("abort");try{h.send(b.hasContent&&b.data||null)}catch(i){if(c)throw i}},abort:function(){c&&c()}}}),r.ajaxPrefilter(function(a){a.crossDomain&&(a.contents.script=!1)}),r.ajaxSetup({accepts:{script:"text/javascript, application/javascript, application/ecmascript, application/x-ecmascript"},contents:{script:/\b(?:java|ecma)script\b/},converters:{"text script":function(a){return r.globalEval(a),a}}}),r.ajaxPrefilter("script",function(a){void 0===a.cache&&(a.cache=!1),a.crossDomain&&(a.type="GET")}),r.ajaxTransport("script",function(a){if(a.crossDomain){var b,c;return{send:function(e,f){b=r("<script>").prop({charset:a.scriptCharset,src:a.url}).on("load error",c=function(a){b.remove(),c=null,a&&f("error"===a.type?404:200,a.type)}),d.head.appendChild(b[0])},abort:function(){c&&c()}}}});var Qb=[],Rb=/(=)\?(?=&|$)|\?\?/;r.ajaxSetup({jsonp:"callback",jsonpCallback:function(){var a=Qb.pop()||r.expando+"_"+rb++;return this[a]=!0,a}}),r.ajaxPrefilter("json jsonp",function(b,c,d){var e,f,g,h=b.jsonp!==!1&&(Rb.test(b.url)?"url":"string"==typeof b.data&&0===(b.contentType||"").indexOf("application/x-www-form-urlencoded")&&Rb.test(b.data)&&"data");if(h||"jsonp"===b.dataTypes[0])return e=b.jsonpCallback=r.isFunction(b.jsonpCallback)?b.jsonpCallback():b.jsonpCallback,h?b[h]=b[h].replace(Rb,"$1"+e):b.jsonp!==!1&&(b.url+=(sb.test(b.url)?"&":"?")+b.jsonp+"="+e),b.converters["script json"]=function(){return g||r.error(e+" was not called"),g[0]},b.dataTypes[0]="json",f=a[e],a[e]=function(){g=arguments},d.always(function(){void 0===f?r(a).removeProp(e):a[e]=f,b[e]&&(b.jsonpCallback=c.jsonpCallback,Qb.push(e)),g&&r.isFunction(f)&&f(g[0]),g=f=void 0}),"script"}),o.createHTMLDocument=function(){var a=d.implementation.createHTMLDocument("").body;return a.innerHTML="<form></form><form></form>",2===a.childNodes.length}(),r.parseHTML=function(a,b,c){if("string"!=typeof a)return[];"boolean"==typeof b&&(c=b,b=!1);var e,f,g;return b||(o.createHTMLDocument?(b=d.implementation.createHTMLDocument(""),e=b.createElement("base"),e.href=d.location.href,b.head.appendChild(e)):b=d),f=B.exec(a),g=!c&&[],f?[b.createElement(f[1])]:(f=pa([a],b,g),g&&g.length&&r(g).remove(),r.merge([],f.childNodes))},r.fn.load=function(a,b,c){var d,e,f,g=this,h=a.indexOf(" ");return h>-1&&(d=mb(a.slice(h)),a=a.slice(0,h)),r.isFunction(b)?(c=b,b=void 0):b&&"object"==typeof b&&(e="POST"),g.length>0&&r.ajax({url:a,type:e||"GET",dataType:"html",data:b}).done(function(a){f=arguments,g.html(d?r("<div>").append(r.parseHTML(a)).find(d):a)}).always(c&&function(a,b){g.each(function(){c.apply(this,f||[a.responseText,b,a])})}),this},r.each(["ajaxStart","ajaxStop","ajaxComplete","ajaxError","ajaxSuccess","ajaxSend"],function(a,b){r.fn[b]=function(a){return this.on(b,a)}}),r.expr.pseudos.animated=function(a){return r.grep(r.timers,function(b){return a===b.elem}).length};function Sb(a){return r.isWindow(a)?a:9===a.nodeType&&a.defaultView}r.offset={setOffset:function(a,b,c){var d,e,f,g,h,i,j,k=r.css(a,"position"),l=r(a),m={};"static"===k&&(a.style.position="relative"),h=l.offset(),f=r.css(a,"top"),i=r.css(a,"left"),j=("absolute"===k||"fixed"===k)&&(f+i).indexOf("auto")>-1,j?(d=l.position(),g=d.top,e=d.left):(g=parseFloat(f)||0,e=parseFloat(i)||0),r.isFunction(b)&&(b=b.call(a,c,r.extend({},h))),null!=b.top&&(m.top=b.top-h.top+g),null!=b.left&&(m.left=b.left-h.left+e),"using"in b?b.using.call(a,m):l.css(m)}},r.fn.extend({offset:function(a){if(arguments.length)return void 0===a?this:this.each(function(b){r.offset.setOffset(this,a,b)});var b,c,d,e,f=this[0];if(f)return f.getClientRects().length?(d=f.getBoundingClientRect(),d.width||d.height?(e=f.ownerDocument,c=Sb(e),b=e.documentElement,{top:d.top+c.pageYOffset-b.clientTop,left:d.left+c.pageXOffset-b.clientLeft}):d):{top:0,left:0}},position:function(){if(this[0]){var a,b,c=this[0],d={top:0,left:0};return"fixed"===r.css(c,"position")?b=c.getBoundingClientRect():(a=this.offsetParent(),b=this.offset(),r.nodeName(a[0],"html")||(d=a.offset()),d={top:d.top+r.css(a[0],"borderTopWidth",!0),left:d.left+r.css(a[0],"borderLeftWidth",!0)}),{top:b.top-d.top-r.css(c,"marginTop",!0),left:b.left-d.left-r.css(c,"marginLeft",!0)}}},offsetParent:function(){return this.map(function(){var a=this.offsetParent;while(a&&"static"===r.css(a,"position"))a=a.offsetParent;return a||qa})}}),r.each({scrollLeft:"pageXOffset",scrollTop:"pageYOffset"},function(a,b){var c="pageYOffset"===b;r.fn[a]=function(d){return S(this,function(a,d,e){var f=Sb(a);return void 0===e?f?f[b]:a[d]:void(f?f.scrollTo(c?f.pageXOffset:e,c?e:f.pageYOffset):a[d]=e)},a,d,arguments.length)}}),r.each(["top","left"],function(a,b){r.cssHooks[b]=Oa(o.pixelPosition,function(a,c){if(c)return c=Na(a,b),La.test(c)?r(a).position()[b]+"px":c})}),r.each({Height:"height",Width:"width"},function(a,b){r.each({padding:"inner"+a,content:b,"":"outer"+a},function(c,d){r.fn[d]=function(e,f){var g=arguments.length&&(c||"boolean"!=typeof e),h=c||(e===!0||f===!0?"margin":"border");return S(this,function(b,c,e){var f;return r.isWindow(b)?0===d.indexOf("outer")?b["inner"+a]:b.document.documentElement["client"+a]:9===b.nodeType?(f=b.documentElement,Math.max(b.body["scroll"+a],f["scroll"+a],b.body["offset"+a],f["offset"+a],f["client"+a])):void 0===e?r.css(b,c,h):r.style(b,c,e,h)},b,g?e:void 0,g)}})}),r.fn.extend({bind:function(a,b,c){return this.on(a,null,b,c)},unbind:function(a,b){return this.off(a,null,b)},delegate:function(a,b,c,d){return this.on(b,a,c,d)},undelegate:function(a,b,c){return 1===arguments.length?this.off(a,"**"):this.off(b,a||"**",c)}}),r.parseJSON=JSON.parse,"function"=="function"&&__webpack_require__(109)&&!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function(){return r}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));var Tb=a.jQuery,Ub=a.$;return r.noConflict=function(b){return a.$===r&&(a.$=Ub),b&&a.jQuery===r&&(a.jQuery=Tb),r},b||(a.jQuery=a.$=r),r});
 
 
 /***/ },
@@ -293,7 +293,7 @@ module.exports = (__webpack_require__(0))(238);
 /* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(364);
+module.exports = (__webpack_require__(0))(365);
 
 /***/ },
 /* 14 */
@@ -341,13 +341,13 @@ module.exports = (__webpack_require__(0))(293);
 /* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(434);
+module.exports = (__webpack_require__(0))(435);
 
 /***/ },
 /* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(470);
+module.exports = (__webpack_require__(0))(471);
 
 /***/ },
 /* 23 */
@@ -357,68 +357,6 @@ module.exports = (__webpack_require__(0))(126);
 
 /***/ },
 /* 24 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var MulticastObservable_1 = __webpack_require__(71);
-var ConnectableObservable_1 = __webpack_require__(53);
-/**
- * Returns an Observable that emits the results of invoking a specified selector on items
- * emitted by a ConnectableObservable that shares a single subscription to the underlying stream.
- *
- * <img src="./img/multicast.png" width="100%">
- *
- * @param {Function|Subject} Factory function to create an intermediate subject through
- * which the source sequence's elements will be multicast to the selector function
- * or Subject to push source elements into.
- * @param {Function} Optional selector function that can use the multicasted source stream
- * as many times as needed, without causing multiple subscriptions to the source stream.
- * Subscribers to the given source will receive all notifications of the source from the
- * time of the subscription forward.
- * @return {Observable} an Observable that emits the results of invoking the selector
- * on the items emitted by a `ConnectableObservable` that shares a single subscription to
- * the underlying stream.
- * @method multicast
- * @owner Observable
- */
-function multicast(subjectOrSubjectFactory, selector) {
-    var subjectFactory;
-    if (typeof subjectOrSubjectFactory === 'function') {
-        subjectFactory = subjectOrSubjectFactory;
-    }
-    else {
-        subjectFactory = function subjectFactory() {
-            return subjectOrSubjectFactory;
-        };
-    }
-    return !selector ?
-        new ConnectableObservable_1.ConnectableObservable(this, subjectFactory) :
-        new MulticastObservable_1.MulticastObservable(this, subjectFactory, selector);
-}
-exports.multicast = multicast;
-//# sourceMappingURL=multicast.js.map
-
-/***/ },
-/* 25 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(367);
-
-/***/ },
-/* 26 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(449);
-
-/***/ },
-/* 27 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(54);
-
-/***/ },
-/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var require;var __WEBPACK_AMD_DEFINE_RESULT__;/*** IMPORTS FROM imports-loader ***/
@@ -554,7 +492,7 @@ module.exports = (__webpack_require__(0))(54);
     function lib$es6$promise$asap$$attemptVertx() {
       try {
         var r = require;
-        var vertx = __webpack_require__(475);
+        var vertx = __webpack_require__(505);
         lib$es6$promise$asap$$vertxNext = vertx.runOnLoop || vertx.runOnContext;
         return lib$es6$promise$asap$$useVertxTimer();
       } catch(e) {
@@ -1388,7 +1326,69 @@ module.exports = (__webpack_require__(0))(54);
 /*** EXPORTS FROM exports-loader ***/
 module.exports = global.Promise;
 }.call(global));
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(62)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(45)))
+
+/***/ },
+/* 25 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var ConnectableObservable_1 = __webpack_require__(92);
+/* tslint:disable:max-line-length */
+function multicast(subjectOrSubjectFactory, selector) {
+    var subjectFactory;
+    if (typeof subjectOrSubjectFactory === 'function') {
+        subjectFactory = subjectOrSubjectFactory;
+    }
+    else {
+        subjectFactory = function subjectFactory() {
+            return subjectOrSubjectFactory;
+        };
+    }
+    if (typeof selector === 'function') {
+        return this.lift(new MulticastOperator(subjectFactory, selector));
+    }
+    var connectable = Object.create(this, ConnectableObservable_1.connectableObservableDescriptor);
+    connectable.source = this;
+    connectable.subjectFactory = subjectFactory;
+    return connectable;
+}
+exports.multicast = multicast;
+var MulticastOperator = (function () {
+    function MulticastOperator(subjectFactory, selector) {
+        this.subjectFactory = subjectFactory;
+        this.selector = selector;
+    }
+    MulticastOperator.prototype.call = function (subscriber, self) {
+        var selector = this.selector;
+        var connectable = new ConnectableObservable_1.ConnectableObservable(self.source, this.subjectFactory);
+        var subscription = selector(connectable).subscribe(subscriber);
+        subscription.add(connectable.connect());
+        return subscription;
+    };
+    return MulticastOperator;
+}());
+exports.MulticastOperator = MulticastOperator;
+//# sourceMappingURL=multicast.js.map
+
+/***/ },
+/* 26 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(368);
+
+/***/ },
+/* 27 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(450);
+
+/***/ },
+/* 28 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(53);
 
 /***/ },
 /* 29 */
@@ -1405,8 +1405,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var http_1 = __webpack_require__(26);
-var core_1 = __webpack_require__(7);
+var http_1 = __webpack_require__(27);
+var core_1 = __webpack_require__(3);
 var DataService = (function () {
     function DataService(http) {
         this.http = http;
@@ -1472,6 +1472,12 @@ module.exports = (__webpack_require__(0))(229);
 /* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
+module.exports = (__webpack_require__(0))(199);
+
+/***/ },
+/* 34 */
+/***/ function(module, exports, __webpack_require__) {
+
 "use strict";
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1483,13 +1489,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = __webpack_require__(7);
-var common_1 = __webpack_require__(102);
+var core_1 = __webpack_require__(3);
+var common_1 = __webpack_require__(70);
 var Observable_1 = __webpack_require__(1);
-var utility_service_1 = __webpack_require__(5);
+var utility_service_1 = __webpack_require__(6);
 var authentication_service_1 = __webpack_require__(8);
-var appstate_service_1 = __webpack_require__(6);
-var utility_service_2 = __webpack_require__(5);
+var appstate_service_1 = __webpack_require__(7);
+var utility_service_2 = __webpack_require__(6);
 var RouteProtection = (function () {
     function RouteProtection(appState, utilityService, location, authService) {
         this.appState = appState;
@@ -1536,7 +1542,188 @@ exports.RouteProtection = RouteProtection;
 
 
 /***/ },
-/* 34 */
+/* 35 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__core__ = __webpack_require__(144);
+/* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__core__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__core__["b"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "c", function() { return __WEBPACK_IMPORTED_MODULE_0__core__["c"]; });
+
+
+//# sourceMappingURL=index.js.map
+
+
+/***/ },
+/* 36 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__portal_errors__ = __webpack_require__(87);
+/* unused harmony export Portal */
+/* unused harmony export ComponentPortal */
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return TemplatePortal; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return BasePortalHost; });
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+
+/**
+ * A `Portal` is something that you want to render somewhere else.
+ * It can be attach to / detached from a `PortalHost`.
+ */
+var Portal = (function () {
+    function Portal() {
+    }
+    /** Attach this portal to a host. */
+    Portal.prototype.attach = function (host) {
+        if (host == null) {
+            throw new __WEBPACK_IMPORTED_MODULE_0__portal_errors__["a" /* MdNullPortalHostError */]();
+        }
+        if (host.hasAttached()) {
+            throw new __WEBPACK_IMPORTED_MODULE_0__portal_errors__["b" /* MdPortalAlreadyAttachedError */]();
+        }
+        this._attachedHost = host;
+        return host.attach(this);
+    };
+    /** Detach this portal from its host */
+    Portal.prototype.detach = function () {
+        var host = this._attachedHost;
+        if (host == null) {
+            throw new __WEBPACK_IMPORTED_MODULE_0__portal_errors__["c" /* MdNoPortalAttachedError */]();
+        }
+        this._attachedHost = null;
+        return host.detach();
+    };
+    Object.defineProperty(Portal.prototype, "isAttached", {
+        /** Whether this portal is attached to a host. */
+        get: function () {
+            return this._attachedHost != null;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * Sets the PortalHost reference without performing `attach()`. This is used directly by
+     * the PortalHost when it is performing an `attach()` or `detatch()`.
+     */
+    Portal.prototype.setAttachedHost = function (host) {
+        this._attachedHost = host;
+    };
+    return Portal;
+}());
+/**
+ * A `ComponentPortal` is a portal that instantiates some Component upon attachment.
+ */
+var ComponentPortal = (function (_super) {
+    __extends(ComponentPortal, _super);
+    function ComponentPortal(component, viewContainerRef, injector) {
+        if (viewContainerRef === void 0) { viewContainerRef = null; }
+        if (injector === void 0) { injector = null; }
+        _super.call(this);
+        this.component = component;
+        this.viewContainerRef = viewContainerRef;
+        this.injector = injector;
+    }
+    return ComponentPortal;
+}(Portal));
+/**
+ * A `TemplatePortal` is a portal that represents some embedded template (TemplateRef).
+ */
+var TemplatePortal = (function (_super) {
+    __extends(TemplatePortal, _super);
+    function TemplatePortal(template, viewContainerRef) {
+        _super.call(this);
+        /**
+         * Additional locals for the instantiated embedded view.
+         * These locals can be seen as "exports" for the template, such as how ngFor has
+         * index / event / odd.
+         * See https://angular.io/docs/ts/latest/api/core/EmbeddedViewRef-class.html
+         */
+        this.locals = new Map();
+        this.templateRef = template;
+        this.viewContainerRef = viewContainerRef;
+    }
+    Object.defineProperty(TemplatePortal.prototype, "origin", {
+        get: function () {
+            return this.templateRef.elementRef;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    TemplatePortal.prototype.attach = function (host, locals) {
+        this.locals = locals == null ? new Map() : locals;
+        return _super.prototype.attach.call(this, host);
+    };
+    TemplatePortal.prototype.detach = function () {
+        this.locals = new Map();
+        return _super.prototype.detach.call(this);
+    };
+    return TemplatePortal;
+}(Portal));
+/**
+ * Partial implementation of PortalHost that only deals with attaching either a
+ * ComponentPortal or a TemplatePortal.
+ */
+var BasePortalHost = (function () {
+    function BasePortalHost() {
+        /** Whether this host has already been permanently disposed. */
+        this._isDisposed = false;
+    }
+    /** Whether this host has an attached portal. */
+    BasePortalHost.prototype.hasAttached = function () {
+        return this._attachedPortal != null;
+    };
+    BasePortalHost.prototype.attach = function (portal) {
+        if (portal == null) {
+            throw new __WEBPACK_IMPORTED_MODULE_0__portal_errors__["d" /* MdNullPortalError */]();
+        }
+        if (this.hasAttached()) {
+            throw new __WEBPACK_IMPORTED_MODULE_0__portal_errors__["b" /* MdPortalAlreadyAttachedError */]();
+        }
+        if (this._isDisposed) {
+            throw new __WEBPACK_IMPORTED_MODULE_0__portal_errors__["e" /* MdPortalHostAlreadyDisposedError */]();
+        }
+        if (portal instanceof ComponentPortal) {
+            this._attachedPortal = portal;
+            return this.attachComponentPortal(portal);
+        }
+        else if (portal instanceof TemplatePortal) {
+            this._attachedPortal = portal;
+            return this.attachTemplatePortal(portal);
+        }
+        throw new __WEBPACK_IMPORTED_MODULE_0__portal_errors__["f" /* MdUnknownPortalTypeError */]();
+    };
+    BasePortalHost.prototype.detach = function () {
+        if (this._attachedPortal) {
+            this._attachedPortal.setAttachedHost(null);
+        }
+        this._attachedPortal = null;
+        if (this._disposeFn != null) {
+            this._disposeFn();
+            this._disposeFn = null;
+        }
+    };
+    BasePortalHost.prototype.dispose = function () {
+        if (this.hasAttached()) {
+            this.detach();
+        }
+        this._isDisposed = true;
+    };
+    BasePortalHost.prototype.setDisposeFn = function (fn) {
+        this._disposeFn = fn;
+    };
+    return BasePortalHost;
+}());
+
+//# sourceMappingURL=portal.js.map
+
+
+/***/ },
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1554,13 +1741,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 /*
  * Angular 2 decorators and services
  */
-var core_1 = __webpack_require__(7);
+var core_1 = __webpack_require__(3);
 /*
  * Shared Utilities
  */
-var utility_service_1 = __webpack_require__(5);
+var utility_service_1 = __webpack_require__(6);
 var authentication_service_1 = __webpack_require__(8);
-var appstate_service_1 = __webpack_require__(6);
+var appstate_service_1 = __webpack_require__(7);
 /**
  * This is where CSS/SCSS files that the component depends on are required.
  *
@@ -1568,7 +1755,7 @@ var appstate_service_1 = __webpack_require__(6);
  * during development. During productions, all styles will be extracted into
  *  external stylesheets. Do NOT add styles the "Angular2 Way" in
  */
-__webpack_require__(142);
+__webpack_require__(173);
 var NotFound404Component = (function () {
     function NotFound404Component(appState, Authentication) {
         this.appState = appState;
@@ -1589,7 +1776,7 @@ var NotFound404Component = (function () {
     NotFound404Component = __decorate([
         core_1.Component({
             selector: 'NotFound404',
-            template: __webpack_require__(157)
+            template: __webpack_require__(188)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof appstate_service_1.AppState !== 'undefined' && appstate_service_1.AppState) === 'function' && _a) || Object, (typeof (_b = typeof authentication_service_1.Authentication !== 'undefined' && authentication_service_1.Authentication) === 'function' && _b) || Object])
     ], NotFound404Component);
@@ -1600,7 +1787,7 @@ exports.NotFound404Component = NotFound404Component;
 
 
 /***/ },
-/* 35 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1618,14 +1805,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 /*
  * Angular 2 decorators and services
  */
-var core_1 = __webpack_require__(7);
+var core_1 = __webpack_require__(3);
 var router_1 = __webpack_require__(22);
 /*
  * Shared Utilities
  */
-var utility_service_1 = __webpack_require__(5);
+var utility_service_1 = __webpack_require__(6);
 var authentication_service_1 = __webpack_require__(8);
-var appstate_service_1 = __webpack_require__(6);
+var appstate_service_1 = __webpack_require__(7);
 /**
  * This is where CSS/SCSS files that the component depends on are required.
  *
@@ -1633,7 +1820,7 @@ var appstate_service_1 = __webpack_require__(6);
  * during development. During productions, all styles will be extracted into
  *  external stylesheets. Do NOT add styles the "Angular2 Way" in
  */
-__webpack_require__(143);
+__webpack_require__(174);
 var AboutComponent = (function () {
     function AboutComponent(appState, authService, route) {
         this.appState = appState;
@@ -1667,7 +1854,7 @@ var AboutComponent = (function () {
         // you can also async load mock data with 'es6-promise-loader'
         // you would do this if you don't want the mock-data bundled
         // remember that 'es6-promise-loader' is a promise
-        var asyncMockDataPromiseFactory = __webpack_require__(140);
+        var asyncMockDataPromiseFactory = __webpack_require__(171);
         setTimeout(function () {
             // let asyncDataPromise = asyncMockDataPromiseFactory();
             asyncMockDataPromiseFactory()
@@ -1682,7 +1869,7 @@ var AboutComponent = (function () {
         // you would do this if you don't want the mock-data bundled
         // remember that 'es6-promise-loader' is a promise
         setTimeout(function () {
-            __webpack_require__.e/* System.import */(1/* duplicate */).then(__webpack_require__.bind(null, 67))
+            __webpack_require__.e/* System.import */(1/* duplicate */).then(__webpack_require__.bind(null, 73))
                 .then(function (json) {
                 console.log('async mockData', json);
                 _this.localState = json;
@@ -1692,7 +1879,7 @@ var AboutComponent = (function () {
     AboutComponent = __decorate([
         core_1.Component({
             selector: 'about',
-            template: __webpack_require__(158)
+            template: __webpack_require__(189)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof appstate_service_1.AppState !== 'undefined' && appstate_service_1.AppState) === 'function' && _a) || Object, (typeof (_b = typeof authentication_service_1.Authentication !== 'undefined' && authentication_service_1.Authentication) === 'function' && _b) || Object, (typeof (_c = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _c) || Object])
     ], AboutComponent);
@@ -1703,7 +1890,7 @@ exports.AboutComponent = AboutComponent;
 
 
 /***/ },
-/* 36 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1721,14 +1908,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 /*
  * Angular 2 decorators and services
  */
-var core_1 = __webpack_require__(7);
-var http_1 = __webpack_require__(26);
+var core_1 = __webpack_require__(3);
+var http_1 = __webpack_require__(27);
 var router_1 = __webpack_require__(22);
 /*
  * Shared Utilities
  */
-var utility_service_1 = __webpack_require__(5);
-var appstate_service_1 = __webpack_require__(6);
+var utility_service_1 = __webpack_require__(6);
+var appstate_service_1 = __webpack_require__(7);
 var authentication_service_1 = __webpack_require__(8);
 /**
  * This is where CSS/SCSS files that the component depends on are required.
@@ -1737,13 +1924,10 @@ var authentication_service_1 = __webpack_require__(8);
  * during development. During productions, all styles will be extracted into
  *  external stylesheets. Do NOT add styles the "Angular2 Way" in
  */
-__webpack_require__(145);
+__webpack_require__(176);
 var HomeComponent = (function () {
     // TypeScript public modifiers
     function HomeComponent(appState, router, http, authService) {
-        // if (Logging.isEnabled.light) {
-        //   console.log('%c Home Constructor Instantiated', Logging.normal.teal);
-        // }
         this.appState = appState;
         this.router = router;
         this.http = http;
@@ -1762,11 +1946,11 @@ var HomeComponent = (function () {
         __webpack_require__.e/* nsure */(0).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
             /** These are for the jQuery version of Kendo UI */
             // require('lib/kendoui/styles/kendo.material.min.css');
-            __webpack_require__(115);
-            __webpack_require__(116);
-            __webpack_require__(119);
-            __webpack_require__(118);
-            __webpack_require__(117); // must pass through "script-loader"
+            __webpack_require__(135);
+            __webpack_require__(136);
+            __webpack_require__(139);
+            __webpack_require__(138);
+            __webpack_require__(137); // must pass through "script-loader"
             // Must call the prototype function, because 'this' is undefined inside the require.ensure during runtime
             HomeComponent.prototype.loadKendoUIGrid();
         }).bind(null, __webpack_require__)); // 3rd parameter is the name of the chunk during compilation output - chunk.name.js
@@ -1876,7 +2060,7 @@ var HomeComponent = (function () {
             // We need to tell Angular's Dependency Injection which providers are in our app.
             providers: [authentication_service_1.Authentication],
             // Every Angular template is first compiled by the browser before Angular runs it's compiler
-            template: __webpack_require__(160)
+            template: __webpack_require__(191)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof appstate_service_1.AppState !== 'undefined' && appstate_service_1.AppState) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _c) || Object, (typeof (_d = typeof authentication_service_1.Authentication !== 'undefined' && authentication_service_1.Authentication) === 'function' && _d) || Object])
     ], HomeComponent);
@@ -1888,7 +2072,7 @@ exports.HomeComponent = HomeComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10)))
 
 /***/ },
-/* 37 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1906,15 +2090,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 /*
  * Angular 2 decorators and services
  */
-var core_1 = __webpack_require__(7);
+var core_1 = __webpack_require__(3);
 var router_1 = __webpack_require__(22);
 /*
  * Shared Utilities
  */
-var utility_service_1 = __webpack_require__(5);
-var appstate_service_1 = __webpack_require__(6);
+var utility_service_1 = __webpack_require__(6);
+var appstate_service_1 = __webpack_require__(7);
 var authentication_service_1 = __webpack_require__(8);
-var utility_service_2 = __webpack_require__(5);
+var utility_service_2 = __webpack_require__(6);
 /*
  * Imported Components
  */
@@ -1925,7 +2109,7 @@ var utility_service_2 = __webpack_require__(5);
  * during development. During productions, all styles will be extracted into
  *  external stylesheets. Do NOT add styles the "Angular2 Way" in
  */
-__webpack_require__(146);
+__webpack_require__(177);
 var LoginComponent = (function () {
     function LoginComponent(
         /** This is where we setup/construct all the constants and variables as well as inject
@@ -1969,7 +2153,7 @@ var LoginComponent = (function () {
             _this.loginSuccess(response);
         }, function (error) {
             // Manual override: Allow admin login even without Active Directory running
-            if (username === 'admin') {
+            if (username === 'admin' || username === 'Admin') {
                 // True or false
                 _this.authService.validAuth = true;
                 // Update the appState with the response
@@ -2030,7 +2214,7 @@ var LoginComponent = (function () {
     LoginComponent = __decorate([
         core_1.Component({
             selector: 'login',
-            template: __webpack_require__(161)
+            template: __webpack_require__(192)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof appstate_service_1.AppState !== 'undefined' && appstate_service_1.AppState) === 'function' && _a) || Object, (typeof (_b = typeof authentication_service_1.Authentication !== 'undefined' && authentication_service_1.Authentication) === 'function' && _b) || Object, (typeof (_c = typeof utility_service_2.UtilityService !== 'undefined' && utility_service_2.UtilityService) === 'function' && _c) || Object, (typeof (_d = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _d) || Object])
     ], LoginComponent);
@@ -2041,7 +2225,7 @@ exports.LoginComponent = LoginComponent;
 
 
 /***/ },
-/* 38 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2059,15 +2243,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 /*
  * Angular 2 decorators and services
  */
-var core_1 = __webpack_require__(7);
-var http_1 = __webpack_require__(26);
+var core_1 = __webpack_require__(3);
+var http_1 = __webpack_require__(27);
 var router_1 = __webpack_require__(22);
 // import { AuthHttp } from 'angular2-jwt';
 /*
  * Shared Utilities
  */
-var utility_service_1 = __webpack_require__(5);
-var appstate_service_1 = __webpack_require__(6);
+var utility_service_1 = __webpack_require__(6);
+var appstate_service_1 = __webpack_require__(7);
 var authentication_service_1 = __webpack_require__(8);
 // import { isLoggedIn } from '../common/isloggedIn';
 /**
@@ -2077,7 +2261,7 @@ var authentication_service_1 = __webpack_require__(8);
  * during development. During productions, all styles will be extracted into
  *  external stylesheets. Do NOT add styles the "Angular2 Way" in
  */
-__webpack_require__(150);
+__webpack_require__(181);
 var SubscriberComponent = (function () {
     // TypeScript public modifiers
     function SubscriberComponent(appState, router, http, authService) {
@@ -2099,15 +2283,15 @@ var SubscriberComponent = (function () {
         __webpack_require__.e/* nsure */(0).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
             /** These are for the jQuery version of Kendo UI */
             // require('lib/kendoui/styles/kendo.material.min.css');
-            __webpack_require__(115);
-            __webpack_require__(116);
-            __webpack_require__(119);
-            __webpack_require__(118);
-            __webpack_require__(117); // must pass through "script-loader"
+            __webpack_require__(135);
+            __webpack_require__(136);
+            __webpack_require__(139);
+            __webpack_require__(138);
+            __webpack_require__(137); // must pass through "script-loader"
             // Must call the prototype function, because 'this' is undefined inside the require.ensure during runtime
             SubscriberComponent.prototype.loadKendoUIGrid();
         }).bind(null, __webpack_require__)); // 3rd parameter is the name of the chunk during compilation output - chunk.name.js
-        // this.authService.redirectIfNotLoggedIn();
+        this.authService.redirectIfNotLoggedIn();
     };
     SubscriberComponent.prototype.ngAfterViewInit = function () {
         // The ngAfterViewInit lifecycle hook makes sure the view is rendered so jQuery can do it's thing
@@ -2200,7 +2384,7 @@ var SubscriberComponent = (function () {
             // We need to tell Angular's Dependency Injection which providers are in our app.
             providers: [authentication_service_1.Authentication],
             // Every Angular template is first compiled by the browser before Angular runs it's compiler
-            template: __webpack_require__(165)
+            template: __webpack_require__(196)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof appstate_service_1.AppState !== 'undefined' && appstate_service_1.AppState) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object, (typeof (_c = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _c) || Object, (typeof (_d = typeof authentication_service_1.Authentication !== 'undefined' && authentication_service_1.Authentication) === 'function' && _d) || Object])
     ], SubscriberComponent);
@@ -2212,7 +2396,7 @@ exports.SubscriberComponent = SubscriberComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10)))
 
 /***/ },
-/* 39 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2230,13 +2414,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 /*
  * Angular 2 decorators and services
  */
-var core_1 = __webpack_require__(7);
+var core_1 = __webpack_require__(3);
 var router_1 = __webpack_require__(22);
 /*
  * Shared Utilities
  */
-var utility_service_1 = __webpack_require__(5);
-var appstate_service_1 = __webpack_require__(6);
+var utility_service_1 = __webpack_require__(6);
+var appstate_service_1 = __webpack_require__(7);
 var authentication_service_1 = __webpack_require__(8);
 var data_service_1 = __webpack_require__(29);
 /**
@@ -2246,7 +2430,7 @@ var data_service_1 = __webpack_require__(29);
  * during development. During productions, all styles will be extracted into
  *  external stylesheets. Do NOT add styles the "Angular2 Way" in
  */
-__webpack_require__(151);
+__webpack_require__(182);
 var TicketComponent = (function () {
     // TypeScript public modifiers
     function TicketComponent(appState, 
@@ -2290,7 +2474,8 @@ var TicketComponent = (function () {
     };
     TicketComponent.prototype.searchSubscriberByID = function (subscriberID) {
         this.appState.set('searchSubscriberByID', subscriberID);
-        this._callApi('DataService', '/api/subscriber/' + subscriberID);
+        this._callApi('DataService', '/api/subscriber/' + subscriberID); // C# API controller
+        // this._callApi('DataService', 'http://localhost:52222/subscriber/v1/' + subscriberID) // Node API Controller
         // this._callApi('DataService', 'https://jsonplaceholder.typicode.com/users');
     };
     TicketComponent.prototype._callApi = function (type, url) {
@@ -2333,7 +2518,7 @@ var TicketComponent = (function () {
     TicketComponent = __decorate([
         core_1.Component({
             selector: 'ticket',
-            template: __webpack_require__(166)
+            template: __webpack_require__(197)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof appstate_service_1.AppState !== 'undefined' && appstate_service_1.AppState) === 'function' && _a) || Object, (typeof (_b = typeof data_service_1.DataService !== 'undefined' && data_service_1.DataService) === 'function' && _b) || Object, (typeof (_c = typeof authentication_service_1.Authentication !== 'undefined' && authentication_service_1.Authentication) === 'function' && _c) || Object, (typeof (_d = typeof router_1.ActivatedRoute !== 'undefined' && router_1.ActivatedRoute) === 'function' && _d) || Object])
     ], TicketComponent);
@@ -2342,10 +2527,10 @@ var TicketComponent = (function () {
 }());
 exports.TicketComponent = TicketComponent;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(68), __webpack_require__(10)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(74), __webpack_require__(10)))
 
 /***/ },
-/* 40 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2399,7 +2584,7 @@ exports.AsyncSubject = AsyncSubject;
 //# sourceMappingURL=AsyncSubject.js.map
 
 /***/ },
-/* 41 */
+/* 44 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -2411,43 +2596,402 @@ exports.isDate = isDate;
 //# sourceMappingURL=isDate.js.map
 
 /***/ },
-/* 42 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(634);
-
-/***/ },
-/* 43 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(636);
-
-/***/ },
-/* 44 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(79);
-
-/***/ },
 /* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(90);
+module.exports = (__webpack_require__(504))(54);
 
 /***/ },
 /* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(199);
+module.exports = (__webpack_require__(0))(634);
 
 /***/ },
 /* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(296);
+module.exports = (__webpack_require__(0))(79);
 
 /***/ },
 /* 48 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(90);
+
+/***/ },
+/* 49 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(296);
+
+/***/ },
+/* 50 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return OverlayState; });
+/**
+ * OverlayState is a bag of values for either the initial configuration or current state of an
+ * overlay.
+ */
+var OverlayState = (function () {
+    function OverlayState() {
+    }
+    return OverlayState;
+}());
+
+//# sourceMappingURL=overlay-state.js.map
+
+
+/***/ },
+/* 51 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ConnectionPositionPair; });
+/** The points of the origin element and the overlay element to connect. */
+var ConnectionPositionPair = (function () {
+    function ConnectionPositionPair(origin, overlay) {
+        this.originX = origin.originX;
+        this.originY = origin.originY;
+        this.overlayX = overlay.overlayX;
+        this.overlayY = overlay.overlayY;
+    }
+    return ConnectionPositionPair;
+}());
+
+//# sourceMappingURL=connected-position.js.map
+
+
+/***/ },
+/* 52 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__portal__ = __webpack_require__(36);
+/* unused harmony export TemplatePortalDirective */
+/* unused harmony export PortalHostDirective */
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return PortalModule; });
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Directive version of a `TemplatePortal`. Because the directive *is* a TemplatePortal,
+ * the directive instance itself can be attached to a host, enabling declarative use of portals.
+ *
+ * Usage:
+ * <template portal #greeting>
+ *   <p> Hello {{name}} </p>
+ * </template>
+ */
+var TemplatePortalDirective = (function (_super) {
+    __extends(TemplatePortalDirective, _super);
+    function TemplatePortalDirective(templateRef, viewContainerRef) {
+        _super.call(this, templateRef, viewContainerRef);
+    }
+    TemplatePortalDirective = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({
+            selector: '[portal]',
+            exportAs: 'portal',
+        }), 
+        __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_0__angular_core__["TemplateRef"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"]])
+    ], TemplatePortalDirective);
+    return TemplatePortalDirective;
+}(__WEBPACK_IMPORTED_MODULE_1__portal__["a" /* TemplatePortal */]));
+/**
+ * Directive version of a PortalHost. Because the directive *is* a PortalHost, portals can be
+ * directly attached to it, enabling declarative use.
+ *
+ * Usage:
+ * <template [portalHost]="greeting"></template>
+ */
+var PortalHostDirective = (function (_super) {
+    __extends(PortalHostDirective, _super);
+    function PortalHostDirective(_componentFactoryResolver, _viewContainerRef) {
+        _super.call(this);
+        this._componentFactoryResolver = _componentFactoryResolver;
+        this._viewContainerRef = _viewContainerRef;
+    }
+    Object.defineProperty(PortalHostDirective.prototype, "portal", {
+        get: function () {
+            return this._portal;
+        },
+        set: function (p) {
+            this._replaceAttachedPortal(p);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /** Attach the given ComponentPortal to this PortlHost using the ComponentFactoryResolver. */
+    PortalHostDirective.prototype.attachComponentPortal = function (portal) {
+        portal.setAttachedHost(this);
+        // If the portal specifies an origin, use that as the logical location of the component
+        // in the application tree. Otherwise use the location of this PortalHost.
+        var viewContainerRef = portal.viewContainerRef != null ?
+            portal.viewContainerRef :
+            this._viewContainerRef;
+        var componentFactory = this._componentFactoryResolver.resolveComponentFactory(portal.component);
+        var ref = viewContainerRef.createComponent(componentFactory, viewContainerRef.length, portal.injector || viewContainerRef.parentInjector);
+        this.setDisposeFn(function () { return ref.destroy(); });
+        return ref;
+    };
+    /** Attach the given TemplatePortal to this PortlHost as an embedded View. */
+    PortalHostDirective.prototype.attachTemplatePortal = function (portal) {
+        var _this = this;
+        portal.setAttachedHost(this);
+        this._viewContainerRef.createEmbeddedView(portal.templateRef);
+        this.setDisposeFn(function () { return _this._viewContainerRef.clear(); });
+        // TODO(jelbourn): return locals from view
+        return new Map();
+    };
+    /** Detatches the currently attached Portal (if there is one) and attaches the given Portal. */
+    PortalHostDirective.prototype._replaceAttachedPortal = function (p) {
+        if (this.hasAttached()) {
+            this.detach();
+        }
+        if (p) {
+            this.attach(p);
+            this._portal = p;
+        }
+    };
+    PortalHostDirective = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({
+            selector: '[portalHost]',
+            inputs: ['portal: portalHost']
+        }), 
+        __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_0__angular_core__["ComponentFactoryResolver"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"]])
+    ], PortalHostDirective);
+    return PortalHostDirective;
+}(__WEBPACK_IMPORTED_MODULE_1__portal__["b" /* BasePortalHost */]));
+var PortalModule = (function () {
+    function PortalModule() {
+    }
+    PortalModule.forRoot = function () {
+        return {
+            ngModule: PortalModule,
+            providers: []
+        };
+    };
+    PortalModule = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            exports: [TemplatePortalDirective, PortalHostDirective],
+            declarations: [TemplatePortalDirective, PortalHostDirective],
+        }), 
+        __metadata('design:paramtypes', [])
+    ], PortalModule);
+    return PortalModule;
+}());
+
+//# sourceMappingURL=portal-directives.js.map
+
+
+/***/ },
+/* 53 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ripple_renderer__ = __webpack_require__(149);
+/* harmony export (binding) */ __webpack_require__.d(exports, "MdRipple", function() { return MdRipple; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "MdRippleModule", function() { return MdRippleModule; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var MdRipple = (function () {
+    function MdRipple(_elementRef) {
+        var _this = this;
+        /**
+         * If set, the radius in pixels of foreground ripples when fully expanded. If unset, the radius
+         * will be the distance from the center of the ripple to the furthest corner of the host element's
+         * bounding rectangle.
+         */
+        this.maxRadius = 0;
+        /**
+         * If set, the normal duration of ripple animations is divided by this value. For example,
+         * setting it to 0.5 will cause the animations to take twice as long.
+         */
+        this.speedFactor = 1;
+        // These event handlers are attached to the element that triggers the ripple animations.
+        var eventHandlers = new Map();
+        eventHandlers.set('mousedown', function (event) { return _this._mouseDown(event); });
+        eventHandlers.set('click', function (event) { return _this._click(event); });
+        eventHandlers.set('mouseleave', function (event) { return _this._mouseLeave(event); });
+        this._rippleRenderer = new __WEBPACK_IMPORTED_MODULE_1__ripple_renderer__["a" /* RippleRenderer */](_elementRef, eventHandlers);
+    }
+    /** TODO: internal */
+    MdRipple.prototype.ngOnInit = function () {
+        // If no trigger element was explicity set, use the host element
+        if (!this.trigger) {
+            this._rippleRenderer.setTriggerElementToHost();
+        }
+    };
+    /** TODO: internal */
+    MdRipple.prototype.ngOnDestroy = function () {
+        // Remove event listeners on the trigger element.
+        this._rippleRenderer.clearTriggerElement();
+    };
+    /** TODO: internal */
+    MdRipple.prototype.ngOnChanges = function (changes) {
+        // If the trigger element changed (or is being initially set), add event listeners to it.
+        var changedInputs = Object.keys(changes);
+        if (changedInputs.indexOf('trigger') !== -1) {
+            this._rippleRenderer.setTriggerElement(this.trigger);
+        }
+    };
+    /**
+     * Responds to the start of a ripple animation trigger by fading the background in.
+     */
+    MdRipple.prototype.start = function () {
+        this._rippleRenderer.fadeInRippleBackground(this.backgroundColor);
+    };
+    /**
+     * Responds to the end of a ripple animation trigger by fading the background out, and creating a
+     * foreground ripple that expands from the event location (or from the center of the element if
+     * the "centered" property is set or forceCenter is true).
+     */
+    MdRipple.prototype.end = function (left, top, forceCenter) {
+        var _this = this;
+        if (forceCenter === void 0) { forceCenter = true; }
+        this._rippleRenderer.createForegroundRipple(left, top, this.color, this.centered || forceCenter, this.maxRadius, this.speedFactor, function (ripple, e) { return _this._rippleTransitionEnded(ripple, e); });
+        this._rippleRenderer.fadeOutRippleBackground();
+    };
+    MdRipple.prototype._rippleTransitionEnded = function (ripple, event) {
+        if (event.propertyName === 'opacity') {
+            // If the ripple finished expanding, start fading it out. If it finished fading out,
+            // remove it from the DOM.
+            switch (ripple.state) {
+                case __WEBPACK_IMPORTED_MODULE_1__ripple_renderer__["b" /* ForegroundRippleState */].EXPANDING:
+                    this._rippleRenderer.fadeOutForegroundRipple(ripple.rippleElement);
+                    ripple.state = __WEBPACK_IMPORTED_MODULE_1__ripple_renderer__["b" /* ForegroundRippleState */].FADING_OUT;
+                    break;
+                case __WEBPACK_IMPORTED_MODULE_1__ripple_renderer__["b" /* ForegroundRippleState */].FADING_OUT:
+                    this._rippleRenderer.removeRippleFromDom(ripple.rippleElement);
+                    break;
+            }
+        }
+    };
+    /**
+     * Called when the trigger element receives a mousedown event. Starts the ripple animation by
+     * fading in the background.
+     */
+    MdRipple.prototype._mouseDown = function (event) {
+        if (!this.disabled && event.button === 0) {
+            this.start();
+        }
+    };
+    /**
+     * Called when the trigger element receives a click event. Creates a foreground ripple and
+     * runs its animation.
+     */
+    MdRipple.prototype._click = function (event) {
+        if (!this.disabled && event.button === 0) {
+            // If screen and page positions are all 0, this was probably triggered by a keypress.
+            // In that case, use the center of the bounding rect as the ripple origin.
+            // FIXME: This fails on IE11, which still sets pageX/Y and screenX/Y on keyboard clicks.
+            var isKeyEvent = (event.screenX === 0 && event.screenY === 0 && event.pageX === 0 && event.pageY === 0);
+            this.end(event.pageX, event.pageY, isKeyEvent);
+        }
+    };
+    /**
+     * Called when the trigger element receives a mouseleave event. Fades out the background.
+     */
+    MdRipple.prototype._mouseLeave = function (event) {
+        // We can always fade out the background here; It's a no-op if it was already inactive.
+        this._rippleRenderer.fadeOutRippleBackground();
+    };
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('md-ripple-trigger'), 
+        __metadata('design:type', Object)
+    ], MdRipple.prototype, "trigger", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('md-ripple-centered'), 
+        __metadata('design:type', Boolean)
+    ], MdRipple.prototype, "centered", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('md-ripple-disabled'), 
+        __metadata('design:type', Boolean)
+    ], MdRipple.prototype, "disabled", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('md-ripple-max-radius'), 
+        __metadata('design:type', Number)
+    ], MdRipple.prototype, "maxRadius", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('md-ripple-speed-factor'), 
+        __metadata('design:type', Number)
+    ], MdRipple.prototype, "speedFactor", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('md-ripple-color'), 
+        __metadata('design:type', String)
+    ], MdRipple.prototype, "color", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('md-ripple-background-color'), 
+        __metadata('design:type', String)
+    ], MdRipple.prototype, "backgroundColor", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('class.md-ripple-focused'),
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('md-ripple-focused'), 
+        __metadata('design:type', Boolean)
+    ], MdRipple.prototype, "focused", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('class.md-ripple-unbounded'),
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('md-ripple-unbounded'), 
+        __metadata('design:type', Boolean)
+    ], MdRipple.prototype, "unbounded", void 0);
+    MdRipple = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({
+            selector: '[md-ripple]',
+        }), 
+        __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]])
+    ], MdRipple);
+    return MdRipple;
+}());
+var MdRippleModule = (function () {
+    function MdRippleModule() {
+    }
+    MdRippleModule.forRoot = function () {
+        return {
+            ngModule: MdRippleModule,
+            providers: []
+        };
+    };
+    MdRippleModule = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            exports: [MdRipple],
+            declarations: [MdRipple],
+        }), 
+        __metadata('design:paramtypes', [])
+    ], MdRippleModule);
+    return MdRippleModule;
+}());
+
+//# sourceMappingURL=ripple.js.map
+
+
+/***/ },
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2462,9 +3006,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = __webpack_require__(7);
+var core_1 = __webpack_require__(3);
 var Observable_1 = __webpack_require__(1);
-__webpack_require__(96);
+__webpack_require__(118);
 var DataResolver = (function () {
     function DataResolver() {
     }
@@ -2485,7 +3029,7 @@ exports.APP_RESOLVER_PROVIDERS = [
 
 
 /***/ },
-/* 49 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2499,9 +3043,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = __webpack_require__(7);
-var utility_service_1 = __webpack_require__(5);
-var loadScript = __webpack_require__(394);
+var core_1 = __webpack_require__(3);
+var utility_service_1 = __webpack_require__(6);
+var loadScript = __webpack_require__(423);
 var CKEditor = (function () {
     function CKEditor() {
     }
@@ -2557,7 +3101,7 @@ exports.CKEditor = CKEditor;
 
 
 /***/ },
-/* 50 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2575,13 +3119,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 /*
  * Angular 2 decorators and services
  */
-var core_1 = __webpack_require__(7);
+var core_1 = __webpack_require__(3);
 // import { } from '@angular/router';
 /*
  * Shared Utilities
  */
-var utility_service_1 = __webpack_require__(5);
-var appstate_service_1 = __webpack_require__(6);
+var utility_service_1 = __webpack_require__(6);
+var appstate_service_1 = __webpack_require__(7);
 var authentication_service_1 = __webpack_require__(8);
 /**
  * This is where CSS/SCSS files that the component depends on are required.
@@ -2590,7 +3134,7 @@ var authentication_service_1 = __webpack_require__(8);
  * during development. During productions, all styles will be extracted into
  *  external stylesheets. Do NOT add styles the "Angular2 Way" in
  */
-__webpack_require__(147);
+__webpack_require__(178);
 var NavFooterComponent = (function () {
     function NavFooterComponent(appState, authService) {
         this.appState = appState;
@@ -2607,7 +3151,7 @@ var NavFooterComponent = (function () {
     NavFooterComponent = __decorate([
         core_1.Component({
             selector: 'nav-footer',
-            template: __webpack_require__(162)
+            template: __webpack_require__(193)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof appstate_service_1.AppState !== 'undefined' && appstate_service_1.AppState) === 'function' && _a) || Object, (typeof (_b = typeof authentication_service_1.Authentication !== 'undefined' && authentication_service_1.Authentication) === 'function' && _b) || Object])
     ], NavFooterComponent);
@@ -2618,7 +3162,7 @@ exports.NavFooterComponent = NavFooterComponent;
 
 
 /***/ },
-/* 51 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2636,13 +3180,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 /*
  * Angular 2 decorators and services
  */
-var core_1 = __webpack_require__(7);
+var core_1 = __webpack_require__(3);
 // import { ToggleFullScreen } from '../../common/fullscreen.ts';
 /*
  * Shared Utilities
  */
-var utility_service_1 = __webpack_require__(5);
-var appstate_service_1 = __webpack_require__(6);
+var utility_service_1 = __webpack_require__(6);
+var appstate_service_1 = __webpack_require__(7);
 // import { Authentication } from '../../common/authentication.service';
 /**
  * This is where CSS/SCSS files that the component depends on are required.
@@ -2651,7 +3195,7 @@ var appstate_service_1 = __webpack_require__(6);
  * during development. During productions, all styles will be extracted into
  *  external stylesheets. Do NOT add styles the "Angular2 Way" in
  */
-__webpack_require__(148);
+__webpack_require__(179);
 var NavHeaderComponent = (function () {
     function NavHeaderComponent(appState) {
         this.appState = appState;
@@ -2668,7 +3212,7 @@ var NavHeaderComponent = (function () {
     NavHeaderComponent = __decorate([
         core_1.Component({
             selector: 'nav-header',
-            template: __webpack_require__(163)
+            template: __webpack_require__(194)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof appstate_service_1.AppState !== 'undefined' && appstate_service_1.AppState) === 'function' && _a) || Object])
     ], NavHeaderComponent);
@@ -2729,7 +3273,7 @@ exports.ToggleFullScreen = ToggleFullScreen;
 
 
 /***/ },
-/* 52 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2747,13 +3291,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 /*
  * Angular 2 decorators and services
  */
-var core_1 = __webpack_require__(7);
+var core_1 = __webpack_require__(3);
 // import { RouterLink } from '@angular/router/src/directives/router_link';
 /*
  * Shared Utilities
  */
-var utility_service_1 = __webpack_require__(5); // don't import jQuery's '$' alias in this component, or it breaks the javascript, not sure why
-var appstate_service_1 = __webpack_require__(6);
+var utility_service_1 = __webpack_require__(6); // don't import jQuery's '$' alias in this component, or it breaks the javascript, not sure why
+var appstate_service_1 = __webpack_require__(7);
 /**
  * This is where CSS/SCSS files that the component depends on are required.
  *
@@ -2761,7 +3305,7 @@ var appstate_service_1 = __webpack_require__(6);
  * during development. During productions, all styles will be extracted into
  *  external stylesheets. Do NOT add styles the "Angular2 Way" in
  */
-__webpack_require__(149);
+__webpack_require__(180);
 var NavSidebarComponent = (function () {
     function NavSidebarComponent(appState) {
         this.appState = appState;
@@ -2778,7 +3322,7 @@ var NavSidebarComponent = (function () {
     NavSidebarComponent = __decorate([
         core_1.Component({
             selector: 'nav-sidebar',
-            template: __webpack_require__(164)
+            template: __webpack_require__(195)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof appstate_service_1.AppState !== 'undefined' && appstate_service_1.AppState) === 'function' && _a) || Object])
     ], NavSidebarComponent);
@@ -2790,220 +3334,21 @@ exports.NavSidebarComponent = NavSidebarComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10)))
 
 /***/ },
-/* 53 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var Subject_1 = __webpack_require__(9);
-var Observable_1 = __webpack_require__(1);
-var Subscriber_1 = __webpack_require__(2);
-var Subscription_1 = __webpack_require__(14);
-/**
- * @class ConnectableObservable<T>
- */
-var ConnectableObservable = (function (_super) {
-    __extends(ConnectableObservable, _super);
-    function ConnectableObservable(source, subjectFactory) {
-        _super.call(this);
-        this.source = source;
-        this.subjectFactory = subjectFactory;
-        this._refCount = 0;
-    }
-    ConnectableObservable.prototype._subscribe = function (subscriber) {
-        return this.getSubject().subscribe(subscriber);
-    };
-    ConnectableObservable.prototype.getSubject = function () {
-        var subject = this._subject;
-        if (!subject || subject.isStopped) {
-            this._subject = this.subjectFactory();
-        }
-        return this._subject;
-    };
-    ConnectableObservable.prototype.connect = function () {
-        var connection = this._connection;
-        if (!connection) {
-            connection = this._connection = new Subscription_1.Subscription();
-            connection.add(this.source
-                .subscribe(new ConnectableSubscriber(this.getSubject(), this)));
-            if (connection.closed) {
-                this._connection = null;
-                connection = Subscription_1.Subscription.EMPTY;
-            }
-            else {
-                this._connection = connection;
-            }
-        }
-        return connection;
-    };
-    ConnectableObservable.prototype.refCount = function () {
-        return this.lift(new RefCountOperator(this));
-    };
-    return ConnectableObservable;
-}(Observable_1.Observable));
-exports.ConnectableObservable = ConnectableObservable;
-var ConnectableSubscriber = (function (_super) {
-    __extends(ConnectableSubscriber, _super);
-    function ConnectableSubscriber(destination, connectable) {
-        _super.call(this, destination);
-        this.connectable = connectable;
-    }
-    ConnectableSubscriber.prototype._error = function (err) {
-        this._unsubscribe();
-        _super.prototype._error.call(this, err);
-    };
-    ConnectableSubscriber.prototype._complete = function () {
-        this._unsubscribe();
-        _super.prototype._complete.call(this);
-    };
-    ConnectableSubscriber.prototype._unsubscribe = function () {
-        var connectable = this.connectable;
-        if (connectable) {
-            this.connectable = null;
-            var connection = connectable._connection;
-            connectable._refCount = 0;
-            connectable._subject = null;
-            connectable._connection = null;
-            if (connection) {
-                connection.unsubscribe();
-            }
-        }
-    };
-    return ConnectableSubscriber;
-}(Subject_1.SubjectSubscriber));
-var RefCountOperator = (function () {
-    function RefCountOperator(connectable) {
-        this.connectable = connectable;
-    }
-    RefCountOperator.prototype.call = function (subscriber, source) {
-        var connectable = this.connectable;
-        connectable._refCount++;
-        var refCounter = new RefCountSubscriber(subscriber, connectable);
-        var subscription = source._subscribe(refCounter);
-        if (!refCounter.closed) {
-            refCounter.connection = connectable.connect();
-        }
-        return subscription;
-    };
-    return RefCountOperator;
-}());
-var RefCountSubscriber = (function (_super) {
-    __extends(RefCountSubscriber, _super);
-    function RefCountSubscriber(destination, connectable) {
-        _super.call(this, destination);
-        this.connectable = connectable;
-    }
-    RefCountSubscriber.prototype._unsubscribe = function () {
-        var connectable = this.connectable;
-        if (!connectable) {
-            this.connection = null;
-            return;
-        }
-        this.connectable = null;
-        var refCount = connectable._refCount;
-        if (refCount <= 0) {
-            this.connection = null;
-            return;
-        }
-        connectable._refCount = refCount - 1;
-        if (refCount > 1) {
-            this.connection = null;
-            return;
-        }
-        ///
-        // Compare the local RefCountSubscriber's connection Subscription to the
-        // connection Subscription on the shared ConnectableObservable. In cases
-        // where the ConnectableObservable source synchronously emits values, and
-        // the RefCountSubscriber's dowstream Observers synchronously unsubscribe,
-        // execution continues to here before the RefCountOperator has a chance to
-        // supply the RefCountSubscriber with the shared connection Subscription.
-        // For example:
-        // ```
-        // Observable.range(0, 10)
-        //   .publish()
-        //   .refCount()
-        //   .take(5)
-        //   .subscribe();
-        // ```
-        // In order to account for this case, RefCountSubscriber should only dispose
-        // the ConnectableObservable's shared connection Subscription if the
-        // connection Subscription exists, *and* either:
-        //   a. RefCountSubscriber doesn't have a reference to the shared connection
-        //      Subscription yet, or,
-        //   b. RefCountSubscriber's connection Subscription reference is identical
-        //      to the shared connection Subscription
-        ///
-        var connection = this.connection;
-        var sharedConnection = connectable._connection;
-        this.connection = null;
-        if (sharedConnection && (!connection || sharedConnection === connection)) {
-            sharedConnection.unsubscribe();
-        }
-    };
-    return RefCountSubscriber;
-}(Subscriber_1.Subscriber));
-//# sourceMappingURL=ConnectableObservable.js.map
-
-/***/ },
-/* 54 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var isScheduler_1 = __webpack_require__(25);
+var isScheduler_1 = __webpack_require__(26);
 var ArrayObservable_1 = __webpack_require__(31);
-var mergeAll_1 = __webpack_require__(56);
-/**
- * Creates an output Observable which sequentially emits all values from every
- * given input Observable after the current Observable.
- *
- * <span class="informal">Concatenates multiple Observables together by
- * sequentially emitting their values, one Observable after the other.</span>
- *
- * <img src="./img/concat.png" width="100%">
- *
- * Joins this Observable with multiple other Observables by subscribing to them
- * one at a time, starting with the source, and merging their results into the
- * output Observable. Will wait for each Observable to complete before moving
- * on to the next.
- *
- * @example <caption>Concatenate a timer counting from 0 to 3 with a synchronous sequence from 1 to 10</caption>
- * var timer = Rx.Observable.interval(1000).take(4);
- * var sequence = Rx.Observable.range(1, 10);
- * var result = timer.concat(sequence);
- * result.subscribe(x => console.log(x));
- *
- * @example <caption>Concatenate 3 Observables</caption>
- * var timer1 = Rx.Observable.interval(1000).take(10);
- * var timer2 = Rx.Observable.interval(2000).take(6);
- * var timer3 = Rx.Observable.interval(500).take(10);
- * var result = timer1.concat(timer2, timer3);
- * result.subscribe(x => console.log(x));
- *
- * @see {@link concatAll}
- * @see {@link concatMap}
- * @see {@link concatMapTo}
- *
- * @param {Observable} other An input Observable to concatenate after the source
- * Observable. More than one input Observables may be given as argument.
- * @param {Scheduler} [scheduler=null] An optional Scheduler to schedule each
- * Observable subscription on.
- * @return {Observable} All values of each passed Observable merged into a
- * single Observable, in order, in serial fashion.
- * @method concat
- * @owner Observable
- */
+var mergeAll_1 = __webpack_require__(61);
+/* tslint:disable:max-line-length */
 function concat() {
     var observables = [];
     for (var _i = 0; _i < arguments.length; _i++) {
         observables[_i - 0] = arguments[_i];
     }
-    return concatStatic.apply(void 0, [this].concat(observables));
+    return this.lift.call(concatStatic.apply(void 0, [this].concat(observables)));
 }
 exports.concat = concat;
 /* tslint:enable:max-line-length */
@@ -3058,13 +3403,16 @@ function concatStatic() {
     if (isScheduler_1.isScheduler(args[observables.length - 1])) {
         scheduler = args.pop();
     }
+    if (scheduler === null && observables.length === 1) {
+        return observables[0];
+    }
     return new ArrayObservable_1.ArrayObservable(observables, scheduler).lift(new mergeAll_1.MergeAllOperator(1));
 }
 exports.concatStatic = concatStatic;
 //# sourceMappingURL=concat.js.map
 
 /***/ },
-/* 55 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3075,24 +3423,18 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var ArrayObservable_1 = __webpack_require__(31);
-var isArray_1 = __webpack_require__(45);
+var isArray_1 = __webpack_require__(48);
 var Subscriber_1 = __webpack_require__(2);
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
-var iterator_1 = __webpack_require__(90);
-/**
- * @param observables
- * @return {Observable<R>}
- * @method zip
- * @owner Observable
- */
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
+var iterator_1 = __webpack_require__(112);
+/* tslint:disable:max-line-length */
 function zipProto() {
     var observables = [];
     for (var _i = 0; _i < arguments.length; _i++) {
         observables[_i - 0] = arguments[_i];
     }
-    observables.unshift(this);
-    return zipStatic.apply(this, observables);
+    return this.lift.call(zipStatic.apply(void 0, [this].concat(observables)));
 }
 exports.zipProto = zipProto;
 /* tslint:enable:max-line-length */
@@ -3324,74 +3666,80 @@ var ZipBufferIterator = (function (_super) {
 //# sourceMappingURL=zip.js.map
 
 /***/ },
-/* 56 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(232);
 
 /***/ },
-/* 57 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(288);
 
 /***/ },
-/* 58 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(306);
 
 /***/ },
-/* 59 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(362);
-
-/***/ },
-/* 60 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(363);
 
 /***/ },
-/* 61 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(374);
-
-/***/ },
-/* 62 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(100))(40);
-
-/***/ },
-/* 63 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(676);
-
-/***/ },
-/* 64 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(686);
-
-/***/ },
 /* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(141);
+module.exports = (__webpack_require__(0))(364);
 
 /***/ },
 /* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
+module.exports = (__webpack_require__(0))(375);
+
+/***/ },
+/* 67 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(635);
+
+/***/ },
+/* 68 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(675);
+
+/***/ },
+/* 69 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(685);
+
+/***/ },
+/* 70 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(92);
+
+/***/ },
+/* 71 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(141);
+
+/***/ },
+/* 72 */
+/***/ function(module, exports, __webpack_require__) {
+
 module.exports = (__webpack_require__(0))(281);
 
 /***/ },
-/* 67 */,
-/* 68 */
+/* 73 */,
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module, _) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -20377,10 +20725,1402 @@ module.exports = (__webpack_require__(0))(281);
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(62), __webpack_require__(395)(module), __webpack_require__(68)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(45), __webpack_require__(424)(module), __webpack_require__(74)))
 
 /***/ },
-/* 69 */
+/* 75 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular2_material_core__ = __webpack_require__(35);
+/* harmony export (binding) */ __webpack_require__.d(exports, "MdButton", function() { return MdButton; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "MdAnchor", function() { return MdAnchor; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "MdButtonModule", function() { return MdButtonModule; });
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+// TODO(jelbourn): Make the `isMouseDown` stuff done with one global listener.
+// TODO(kara): Convert attribute selectors to classes when attr maps become available
+var MdButton = (function () {
+    function MdButton(_elementRef, _renderer) {
+        this._elementRef = _elementRef;
+        this._renderer = _renderer;
+        /** Whether the button has focus from the keyboard (not the mouse). Used for class binding. */
+        this._isKeyboardFocused = false;
+        /** Whether a mousedown has occurred on this element in the last 100ms. */
+        this._isMouseDown = false;
+        /** Whether the ripple effect on click should be disabled. */
+        this.disableRipple = false;
+    }
+    Object.defineProperty(MdButton.prototype, "color", {
+        get: function () {
+            return this._color;
+        },
+        set: function (value) {
+            this._updateColor(value);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    MdButton.prototype._setMousedown = function () {
+        var _this = this;
+        // We only *show* the focus style when focus has come to the button via the keyboard.
+        // The Material Design spec is silent on this topic, and without doing this, the
+        // button continues to look :active after clicking.
+        // @see http://marcysutton.com/button-focus-hell/
+        this._isMouseDown = true;
+        setTimeout(function () { _this._isMouseDown = false; }, 100);
+    };
+    MdButton.prototype._updateColor = function (newColor) {
+        this._setElementColor(this._color, false);
+        this._setElementColor(newColor, true);
+        this._color = newColor;
+    };
+    MdButton.prototype._setElementColor = function (color, isAdd) {
+        if (color != null && color != '') {
+            this._renderer.setElementClass(this._elementRef.nativeElement, "md-" + color, isAdd);
+        }
+    };
+    MdButton.prototype._setKeyboardFocus = function () {
+        this._isKeyboardFocused = !this._isMouseDown;
+    };
+    MdButton.prototype._removeKeyboardFocus = function () {
+        this._isKeyboardFocused = false;
+    };
+    /** TODO(hansl): e2e test this function. */
+    MdButton.prototype.focus = function () {
+        this._elementRef.nativeElement.focus();
+    };
+    MdButton.prototype.getHostElement = function () {
+        return this._elementRef.nativeElement;
+    };
+    MdButton.prototype.isRoundButton = function () {
+        var el = this._elementRef.nativeElement;
+        return el.hasAttribute('md-icon-button') ||
+            el.hasAttribute('md-fab') ||
+            el.hasAttribute('md-mini-fab');
+    };
+    MdButton.prototype.isRippleEnabled = function () {
+        return !this.disableRipple;
+    };
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular2_material_core__["b" /* BooleanFieldValue */])(), 
+        __metadata('design:type', Boolean)
+    ], MdButton.prototype, "disableRipple", void 0);
+    MdButton = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({selector: 'button[md-button], button[md-raised-button], button[md-icon-button], ' +
+                'button[md-fab], button[md-mini-fab]',
+            inputs: ['color'],
+            host: {
+                '[class.md-button-focus]': '_isKeyboardFocused',
+                '(mousedown)': '_setMousedown()',
+                '(focus)': '_setKeyboardFocus()',
+                '(blur)': '_removeKeyboardFocus()',
+            },
+            template: "<span class=\"md-button-wrapper\"><ng-content></ng-content></span> ",
+            styles: ["/** * A collection of mixins and CSS classes that can be used to apply elevation to a material * element. * See: https://www.google.com/design/spec/what-is-material/elevation-shadows.html * Examples: * * * .md-foo { *   @include $md-elevation(2); * *   &:active { *     @include $md-elevation(8); *   } * } * * <div id=\"external-card\" class=\"md-elevation-z2\"><p>Some content</p></div> * * For an explanation of the design behind how elevation is implemented, see the design doc at * https://goo.gl/Kq0k9Z. */ /** * The css property used for elevation. In most cases this should not be changed. It is exposed * as a variable for abstraction / easy use when needing to reference the property directly, for * example in a will-change rule. */ /** The default duration value for elevation transitions. */ /** The default easing value for elevation transitions. */ /** * Applies the correct css rules to an element to give it the elevation specified by $zValue. * The $zValue must be between 0 and 24. */ /** * Returns a string that can be used as the value for a transition property for elevation. * Calling this function directly is useful in situations where a component needs to transition * more than one property. * * .foo { *   transition: md-elevation-transition-property-value(), opacity 100ms ease; *   will-change: $md-elevation-property, opacity; * } */ /** * Applies the correct css rules needed to have an element transition between elevations. * This mixin should be applied to elements whose elevation values will change depending on their * context (e.g. when active or disabled). */ /** * This mixin overrides default button styles like the gray background, * the border, and the outline. */ /** Applies a property to an md-button element for each of the supported palettes. */ /** Applies a focus style to an md-button element for each of the supported palettes. */ [md-raised-button], [md-fab], [md-mini-fab], [md-button], [md-icon-button] { box-sizing: border-box; position: relative; background: transparent; cursor: pointer; user-select: none; outline: none; border: none; display: inline-block; white-space: nowrap; text-decoration: none; vertical-align: baseline; font-size: 14px; font-family: Roboto, \"Helvetica Neue\", sans-serif; font-weight: 500; color: currentColor; text-align: center; margin: 0; min-width: 88px; line-height: 36px; padding: 0 16px; border-radius: 3px; } .md-primary[md-raised-button], .md-primary[md-fab], .md-primary[md-mini-fab], .md-primary[md-button], .md-primary[md-icon-button] { color: #009688; } .md-accent[md-raised-button], .md-accent[md-fab], .md-accent[md-mini-fab], .md-accent[md-button], .md-accent[md-icon-button] { color: #9c27b0; } .md-warn[md-raised-button], .md-warn[md-fab], .md-warn[md-mini-fab], .md-warn[md-button], .md-warn[md-icon-button] { color: #f44336; } .md-primary[disabled][md-raised-button], .md-primary[disabled][md-fab], .md-primary[disabled][md-mini-fab], .md-primary[disabled][md-button], .md-primary[disabled][md-icon-button], .md-accent[disabled][md-raised-button], .md-accent[disabled][md-fab], .md-accent[disabled][md-mini-fab], .md-accent[disabled][md-button], .md-accent[disabled][md-icon-button], .md-warn[disabled][md-raised-button], .md-warn[disabled][md-fab], .md-warn[disabled][md-mini-fab], .md-warn[disabled][md-button], .md-warn[disabled][md-icon-button], [disabled][disabled][md-raised-button], [disabled][disabled][md-fab], [disabled][disabled][md-mini-fab], [disabled][disabled][md-button], [disabled][disabled][md-icon-button] { color: rgba(0, 0, 0, 0.38); } [disabled][md-raised-button], [disabled][md-fab], [disabled][md-mini-fab], [disabled][md-button], [disabled][md-icon-button] { cursor: default; } .md-button-focus[md-raised-button]::after, .md-button-focus[md-fab]::after, .md-button-focus[md-mini-fab]::after, .md-button-focus[md-button]::after, .md-button-focus[md-icon-button]::after { position: absolute; top: 0; left: 0; bottom: 0; right: 0; content: ''; background-color: rgba(0, 0, 0, 0.12); border-radius: inherit; pointer-events: none; } .md-button-focus.md-primary[md-raised-button]::after, .md-button-focus.md-primary[md-fab]::after, .md-button-focus.md-primary[md-mini-fab]::after, .md-button-focus.md-primary[md-button]::after, .md-button-focus.md-primary[md-icon-button]::after { background-color: rgba(0, 150, 136, 0.12); } .md-button-focus.md-accent[md-raised-button]::after, .md-button-focus.md-accent[md-fab]::after, .md-button-focus.md-accent[md-mini-fab]::after, .md-button-focus.md-accent[md-button]::after, .md-button-focus.md-accent[md-icon-button]::after { background-color: rgba(156, 39, 176, 0.12); } .md-button-focus.md-warn[md-raised-button]::after, .md-button-focus.md-warn[md-fab]::after, .md-button-focus.md-warn[md-mini-fab]::after, .md-button-focus.md-warn[md-button]::after, .md-button-focus.md-warn[md-icon-button]::after { background-color: rgba(244, 67, 54, 0.12); } [md-raised-button], [md-fab], [md-mini-fab] { box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12); background-color: #fafafa; transform: translate3d(0, 0, 0); transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1); } .md-primary[md-raised-button], .md-primary[md-fab], .md-primary[md-mini-fab] { color: white; } .md-accent[md-raised-button], .md-accent[md-fab], .md-accent[md-mini-fab] { color: rgba(255, 255, 255, 0.870588); } .md-warn[md-raised-button], .md-warn[md-fab], .md-warn[md-mini-fab] { color: white; } .md-primary[disabled][md-raised-button], .md-primary[disabled][md-fab], .md-primary[disabled][md-mini-fab], .md-accent[disabled][md-raised-button], .md-accent[disabled][md-fab], .md-accent[disabled][md-mini-fab], .md-warn[disabled][md-raised-button], .md-warn[disabled][md-fab], .md-warn[disabled][md-mini-fab], [disabled][disabled][md-raised-button], [disabled][disabled][md-fab], [disabled][disabled][md-mini-fab] { color: rgba(0, 0, 0, 0.38); } .md-primary[md-raised-button], .md-primary[md-fab], .md-primary[md-mini-fab] { background-color: #009688; } .md-accent[md-raised-button], .md-accent[md-fab], .md-accent[md-mini-fab] { background-color: #9c27b0; } .md-warn[md-raised-button], .md-warn[md-fab], .md-warn[md-mini-fab] { background-color: #f44336; } .md-primary[disabled][md-raised-button], .md-primary[disabled][md-fab], .md-primary[disabled][md-mini-fab], .md-accent[disabled][md-raised-button], .md-accent[disabled][md-fab], .md-accent[disabled][md-mini-fab], .md-warn[disabled][md-raised-button], .md-warn[disabled][md-fab], .md-warn[disabled][md-mini-fab], [disabled][disabled][md-raised-button], [disabled][disabled][md-fab], [disabled][disabled][md-mini-fab] { background-color: rgba(0, 0, 0, 0.12); } [md-raised-button]:active, [md-fab]:active, [md-mini-fab]:active { box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12); } [disabled][md-raised-button], [disabled][md-fab], [disabled][md-mini-fab] { box-shadow: none; } [md-button]:hover::after, [md-icon-button]:hover::after { position: absolute; top: 0; left: 0; bottom: 0; right: 0; content: ''; background-color: rgba(0, 0, 0, 0.12); border-radius: inherit; pointer-events: none; } [md-button]:hover.md-primary::after, [md-icon-button]:hover.md-primary::after { background-color: rgba(0, 150, 136, 0.12); } [md-button]:hover.md-accent::after, [md-icon-button]:hover.md-accent::after { background-color: rgba(156, 39, 176, 0.12); } [md-button]:hover.md-warn::after, [md-icon-button]:hover.md-warn::after { background-color: rgba(244, 67, 54, 0.12); } [md-button][disabled]:hover.md-primary, [md-button][disabled]:hover.md-accent, [md-button][disabled]:hover.md-warn, [md-button][disabled]:hover::after, [md-icon-button][disabled]:hover.md-primary, [md-icon-button][disabled]:hover.md-accent, [md-icon-button][disabled]:hover.md-warn, [md-icon-button][disabled]:hover::after { background-color: transparent; } [md-fab] { min-width: 0; border-radius: 50%; background-color: #9c27b0; color: rgba(255, 255, 255, 0.870588); width: 56px; height: 56px; padding: 0; } [md-fab] i, [md-fab] md-icon { padding: 16px 0; } [md-mini-fab] { min-width: 0; border-radius: 50%; background-color: #9c27b0; color: rgba(255, 255, 255, 0.870588); width: 40px; height: 40px; padding: 0; } [md-mini-fab] i, [md-mini-fab] md-icon { padding: 8px 0; } [md-icon-button] { min-width: 0; padding: 0; width: 40px; height: 40px; line-height: 24px; border-radius: 50%; } [md-icon-button] .md-button-wrapper > * { vertical-align: middle; } .md-button-ripple { position: absolute; top: 0; left: 0; bottom: 0; right: 0; } .md-button-ripple-round { border-radius: 50%; z-index: 1; } @media screen and (-ms-high-contrast: active) { .md-raised-button, .md-fab, .md-mini-fab { border: 1px solid #fff; } } /*# sourceMappingURL=button.css.map */ "],
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
+            changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectionStrategy"].OnPush,
+        }), 
+        __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer"]])
+    ], MdButton);
+    return MdButton;
+}());
+var MdAnchor = (function (_super) {
+    __extends(MdAnchor, _super);
+    function MdAnchor(elementRef, renderer) {
+        _super.call(this, elementRef, renderer);
+        this._disabled = null;
+    }
+    Object.defineProperty(MdAnchor.prototype, "tabIndex", {
+        get: function () {
+            return this.disabled ? -1 : 0;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(MdAnchor.prototype, "isAriaDisabled", {
+        get: function () {
+            return this.disabled ? 'true' : 'false';
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(MdAnchor.prototype, "disabled", {
+        get: function () { return this._disabled; },
+        set: function (value) {
+            // The presence of *any* disabled value makes the component disabled, *except* for false.
+            this._disabled = (value != null && value != false) ? true : null;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    MdAnchor.prototype._haltDisabledEvents = function (event) {
+        // A disabled button shouldn't apply any actions
+        if (this.disabled) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+        }
+    };
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('tabIndex'), 
+        __metadata('design:type', Number)
+    ], MdAnchor.prototype, "tabIndex", null);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('attr.aria-disabled'), 
+        __metadata('design:type', String)
+    ], MdAnchor.prototype, "isAriaDisabled", null);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('attr.disabled'),
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('disabled'), 
+        __metadata('design:type', Object)
+    ], MdAnchor.prototype, "disabled", null);
+    MdAnchor = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({selector: 'a[md-button], a[md-raised-button], a[md-icon-button], a[md-fab], a[md-mini-fab]',
+            inputs: ['color'],
+            host: {
+                '[class.md-button-focus]': '_isKeyboardFocused',
+                '(mousedown)': '_setMousedown()',
+                '(focus)': '_setKeyboardFocus()',
+                '(blur)': '_removeKeyboardFocus()',
+                '(click)': '_haltDisabledEvents($event)',
+            },
+            template: "<span class=\"md-button-wrapper\"><ng-content></ng-content></span> ",
+            styles: ["/** * A collection of mixins and CSS classes that can be used to apply elevation to a material * element. * See: https://www.google.com/design/spec/what-is-material/elevation-shadows.html * Examples: * * * .md-foo { *   @include $md-elevation(2); * *   &:active { *     @include $md-elevation(8); *   } * } * * <div id=\"external-card\" class=\"md-elevation-z2\"><p>Some content</p></div> * * For an explanation of the design behind how elevation is implemented, see the design doc at * https://goo.gl/Kq0k9Z. */ /** * The css property used for elevation. In most cases this should not be changed. It is exposed * as a variable for abstraction / easy use when needing to reference the property directly, for * example in a will-change rule. */ /** The default duration value for elevation transitions. */ /** The default easing value for elevation transitions. */ /** * Applies the correct css rules to an element to give it the elevation specified by $zValue. * The $zValue must be between 0 and 24. */ /** * Returns a string that can be used as the value for a transition property for elevation. * Calling this function directly is useful in situations where a component needs to transition * more than one property. * * .foo { *   transition: md-elevation-transition-property-value(), opacity 100ms ease; *   will-change: $md-elevation-property, opacity; * } */ /** * Applies the correct css rules needed to have an element transition between elevations. * This mixin should be applied to elements whose elevation values will change depending on their * context (e.g. when active or disabled). */ /** * This mixin overrides default button styles like the gray background, * the border, and the outline. */ /** Applies a property to an md-button element for each of the supported palettes. */ /** Applies a focus style to an md-button element for each of the supported palettes. */ [md-raised-button], [md-fab], [md-mini-fab], [md-button], [md-icon-button] { box-sizing: border-box; position: relative; background: transparent; cursor: pointer; user-select: none; outline: none; border: none; display: inline-block; white-space: nowrap; text-decoration: none; vertical-align: baseline; font-size: 14px; font-family: Roboto, \"Helvetica Neue\", sans-serif; font-weight: 500; color: currentColor; text-align: center; margin: 0; min-width: 88px; line-height: 36px; padding: 0 16px; border-radius: 3px; } .md-primary[md-raised-button], .md-primary[md-fab], .md-primary[md-mini-fab], .md-primary[md-button], .md-primary[md-icon-button] { color: #009688; } .md-accent[md-raised-button], .md-accent[md-fab], .md-accent[md-mini-fab], .md-accent[md-button], .md-accent[md-icon-button] { color: #9c27b0; } .md-warn[md-raised-button], .md-warn[md-fab], .md-warn[md-mini-fab], .md-warn[md-button], .md-warn[md-icon-button] { color: #f44336; } .md-primary[disabled][md-raised-button], .md-primary[disabled][md-fab], .md-primary[disabled][md-mini-fab], .md-primary[disabled][md-button], .md-primary[disabled][md-icon-button], .md-accent[disabled][md-raised-button], .md-accent[disabled][md-fab], .md-accent[disabled][md-mini-fab], .md-accent[disabled][md-button], .md-accent[disabled][md-icon-button], .md-warn[disabled][md-raised-button], .md-warn[disabled][md-fab], .md-warn[disabled][md-mini-fab], .md-warn[disabled][md-button], .md-warn[disabled][md-icon-button], [disabled][disabled][md-raised-button], [disabled][disabled][md-fab], [disabled][disabled][md-mini-fab], [disabled][disabled][md-button], [disabled][disabled][md-icon-button] { color: rgba(0, 0, 0, 0.38); } [disabled][md-raised-button], [disabled][md-fab], [disabled][md-mini-fab], [disabled][md-button], [disabled][md-icon-button] { cursor: default; } .md-button-focus[md-raised-button]::after, .md-button-focus[md-fab]::after, .md-button-focus[md-mini-fab]::after, .md-button-focus[md-button]::after, .md-button-focus[md-icon-button]::after { position: absolute; top: 0; left: 0; bottom: 0; right: 0; content: ''; background-color: rgba(0, 0, 0, 0.12); border-radius: inherit; pointer-events: none; } .md-button-focus.md-primary[md-raised-button]::after, .md-button-focus.md-primary[md-fab]::after, .md-button-focus.md-primary[md-mini-fab]::after, .md-button-focus.md-primary[md-button]::after, .md-button-focus.md-primary[md-icon-button]::after { background-color: rgba(0, 150, 136, 0.12); } .md-button-focus.md-accent[md-raised-button]::after, .md-button-focus.md-accent[md-fab]::after, .md-button-focus.md-accent[md-mini-fab]::after, .md-button-focus.md-accent[md-button]::after, .md-button-focus.md-accent[md-icon-button]::after { background-color: rgba(156, 39, 176, 0.12); } .md-button-focus.md-warn[md-raised-button]::after, .md-button-focus.md-warn[md-fab]::after, .md-button-focus.md-warn[md-mini-fab]::after, .md-button-focus.md-warn[md-button]::after, .md-button-focus.md-warn[md-icon-button]::after { background-color: rgba(244, 67, 54, 0.12); } [md-raised-button], [md-fab], [md-mini-fab] { box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12); background-color: #fafafa; transform: translate3d(0, 0, 0); transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1); } .md-primary[md-raised-button], .md-primary[md-fab], .md-primary[md-mini-fab] { color: white; } .md-accent[md-raised-button], .md-accent[md-fab], .md-accent[md-mini-fab] { color: rgba(255, 255, 255, 0.870588); } .md-warn[md-raised-button], .md-warn[md-fab], .md-warn[md-mini-fab] { color: white; } .md-primary[disabled][md-raised-button], .md-primary[disabled][md-fab], .md-primary[disabled][md-mini-fab], .md-accent[disabled][md-raised-button], .md-accent[disabled][md-fab], .md-accent[disabled][md-mini-fab], .md-warn[disabled][md-raised-button], .md-warn[disabled][md-fab], .md-warn[disabled][md-mini-fab], [disabled][disabled][md-raised-button], [disabled][disabled][md-fab], [disabled][disabled][md-mini-fab] { color: rgba(0, 0, 0, 0.38); } .md-primary[md-raised-button], .md-primary[md-fab], .md-primary[md-mini-fab] { background-color: #009688; } .md-accent[md-raised-button], .md-accent[md-fab], .md-accent[md-mini-fab] { background-color: #9c27b0; } .md-warn[md-raised-button], .md-warn[md-fab], .md-warn[md-mini-fab] { background-color: #f44336; } .md-primary[disabled][md-raised-button], .md-primary[disabled][md-fab], .md-primary[disabled][md-mini-fab], .md-accent[disabled][md-raised-button], .md-accent[disabled][md-fab], .md-accent[disabled][md-mini-fab], .md-warn[disabled][md-raised-button], .md-warn[disabled][md-fab], .md-warn[disabled][md-mini-fab], [disabled][disabled][md-raised-button], [disabled][disabled][md-fab], [disabled][disabled][md-mini-fab] { background-color: rgba(0, 0, 0, 0.12); } [md-raised-button]:active, [md-fab]:active, [md-mini-fab]:active { box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12); } [disabled][md-raised-button], [disabled][md-fab], [disabled][md-mini-fab] { box-shadow: none; } [md-button]:hover::after, [md-icon-button]:hover::after { position: absolute; top: 0; left: 0; bottom: 0; right: 0; content: ''; background-color: rgba(0, 0, 0, 0.12); border-radius: inherit; pointer-events: none; } [md-button]:hover.md-primary::after, [md-icon-button]:hover.md-primary::after { background-color: rgba(0, 150, 136, 0.12); } [md-button]:hover.md-accent::after, [md-icon-button]:hover.md-accent::after { background-color: rgba(156, 39, 176, 0.12); } [md-button]:hover.md-warn::after, [md-icon-button]:hover.md-warn::after { background-color: rgba(244, 67, 54, 0.12); } [md-button][disabled]:hover.md-primary, [md-button][disabled]:hover.md-accent, [md-button][disabled]:hover.md-warn, [md-button][disabled]:hover::after, [md-icon-button][disabled]:hover.md-primary, [md-icon-button][disabled]:hover.md-accent, [md-icon-button][disabled]:hover.md-warn, [md-icon-button][disabled]:hover::after { background-color: transparent; } [md-fab] { min-width: 0; border-radius: 50%; background-color: #9c27b0; color: rgba(255, 255, 255, 0.870588); width: 56px; height: 56px; padding: 0; } [md-fab] i, [md-fab] md-icon { padding: 16px 0; } [md-mini-fab] { min-width: 0; border-radius: 50%; background-color: #9c27b0; color: rgba(255, 255, 255, 0.870588); width: 40px; height: 40px; padding: 0; } [md-mini-fab] i, [md-mini-fab] md-icon { padding: 8px 0; } [md-icon-button] { min-width: 0; padding: 0; width: 40px; height: 40px; line-height: 24px; border-radius: 50%; } [md-icon-button] .md-button-wrapper > * { vertical-align: middle; } .md-button-ripple { position: absolute; top: 0; left: 0; bottom: 0; right: 0; } .md-button-ripple-round { border-radius: 50%; z-index: 1; } @media screen and (-ms-high-contrast: active) { .md-raised-button, .md-fab, .md-mini-fab { border: 1px solid #fff; } } /*# sourceMappingURL=button.css.map */ "],
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None
+        }), 
+        __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer"]])
+    ], MdAnchor);
+    return MdAnchor;
+}(MdButton));
+var MdButtonModule = (function () {
+    function MdButtonModule() {
+    }
+    MdButtonModule.forRoot = function () {
+        return {
+            ngModule: MdButtonModule,
+            providers: []
+        };
+    };
+    MdButtonModule = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["CommonModule"], __WEBPACK_IMPORTED_MODULE_2__angular2_material_core__["c" /* MdRippleModule */]],
+            exports: [MdButton, MdAnchor],
+            declarations: [MdButton, MdAnchor],
+        }), 
+        __metadata('design:paramtypes', [])
+    ], MdButtonModule);
+    return MdButtonModule;
+}());
+
+//# sourceMappingURL=button.js.map
+
+
+/***/ },
+/* 76 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony export (binding) */ __webpack_require__.d(exports, "MdCardContent", function() { return MdCardContent; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "MdCardTitle", function() { return MdCardTitle; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "MdCardSubtitle", function() { return MdCardSubtitle; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "MdCardActions", function() { return MdCardActions; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "MdCard", function() { return MdCard; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "MdCardHeader", function() { return MdCardHeader; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "MdCardTitleGroup", function() { return MdCardTitleGroup; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "MdCardModule", function() { return MdCardModule; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+/**
+ * Content of a card, needed as it's used as a selector in the API.
+ */
+var MdCardContent = (function () {
+    function MdCardContent() {
+    }
+    MdCardContent = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({
+            selector: 'md-card-content'
+        }), 
+        __metadata('design:paramtypes', [])
+    ], MdCardContent);
+    return MdCardContent;
+}());
+/**
+ * Title of a card, needed as it's used as a selector in the API.
+ */
+var MdCardTitle = (function () {
+    function MdCardTitle() {
+    }
+    MdCardTitle = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({
+            selector: 'md-card-title'
+        }), 
+        __metadata('design:paramtypes', [])
+    ], MdCardTitle);
+    return MdCardTitle;
+}());
+/**
+ * Sub-title of a card, needed as it's used as a selector in the API.
+ */
+var MdCardSubtitle = (function () {
+    function MdCardSubtitle() {
+    }
+    MdCardSubtitle = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({
+            selector: 'md-card-subtitle'
+        }), 
+        __metadata('design:paramtypes', [])
+    ], MdCardSubtitle);
+    return MdCardSubtitle;
+}());
+/**
+ * Action section of a card, needed as it's used as a selector in the API.
+ */
+var MdCardActions = (function () {
+    function MdCardActions() {
+    }
+    MdCardActions = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({
+            selector: 'md-card-actions'
+        }), 
+        __metadata('design:paramtypes', [])
+    ], MdCardActions);
+    return MdCardActions;
+}());
+/*
+
+<md-card> is a basic content container component that adds the styles of a material design card.
+
+While you can use this component alone,
+it also provides a number of preset styles for common card sections, including:
+ - md-card-title
+ - md-card-subtitle
+ - md-card-content
+ - md-card-actions
+ - md-card-footer
+
+ You can see some examples of cards here:
+ http://embed.plnkr.co/s5O4YcyvbLhIApSrIhtj/
+
+ TODO(kara): update link to demo site when it exists
+
+*/
+var MdCard = (function () {
+    function MdCard() {
+    }
+    MdCard = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({selector: 'md-card',
+            template: "<ng-content></ng-content> ",
+            styles: ["/** * A collection of mixins and CSS classes that can be used to apply elevation to a material * element. * See: https://www.google.com/design/spec/what-is-material/elevation-shadows.html * Examples: * * * .md-foo { *   @include $md-elevation(2); * *   &:active { *     @include $md-elevation(8); *   } * } * * <div id=\"external-card\" class=\"md-elevation-z2\"><p>Some content</p></div> * * For an explanation of the design behind how elevation is implemented, see the design doc at * https://goo.gl/Kq0k9Z. */ /** * The css property used for elevation. In most cases this should not be changed. It is exposed * as a variable for abstraction / easy use when needing to reference the property directly, for * example in a will-change rule. */ /** The default duration value for elevation transitions. */ /** The default easing value for elevation transitions. */ /** * Applies the correct css rules to an element to give it the elevation specified by $zValue. * The $zValue must be between 0 and 24. */ /** * Returns a string that can be used as the value for a transition property for elevation. * Calling this function directly is useful in situations where a component needs to transition * more than one property. * * .foo { *   transition: md-elevation-transition-property-value(), opacity 100ms ease; *   will-change: $md-elevation-property, opacity; * } */ /** * Applies the correct css rules needed to have an element transition between elevations. * This mixin should be applied to elements whose elevation values will change depending on their * context (e.g. when active or disabled). */ md-card { box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12); transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1); will-change: box-shadow; display: block; position: relative; padding: 24px; border-radius: 2px; font-family: Roboto, \"Helvetica Neue\", sans-serif; background: white; color: black; } md-card:hover { box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12); } .md-card-flat { box-shadow: none; } md-card-title, md-card-subtitle, md-card-content, md-card-actions { display: block; margin-bottom: 16px; } md-card-title { font-size: 24px; font-weight: 400; } md-card-subtitle { font-size: 14px; color: rgba(0, 0, 0, 0.54); } md-card-content { font-size: 14px; } md-card-actions { margin-left: -16px; margin-right: -16px; padding: 8px 0; } md-card-actions[align='end'] { display: flex; justify-content: flex-end; } [md-card-image] { width: calc(100% + 48px); margin: 0 -24px 16px -24px; } [md-card-xl-image] { width: 240px; height: 240px; margin: -8px; } md-card-footer { position: absolute; bottom: 0; } md-card-actions [md-button], md-card-actions [md-raised-button] { margin: 0 4px; } /* HEADER STYLES */ md-card-header { display: flex; flex-direction: row; height: 40px; margin: -8px 0 16px 0; } .md-card-header-text { height: 40px; margin: 0 8px; } [md-card-avatar] { height: 40px; width: 40px; border-radius: 50%; } md-card-header md-card-title { font-size: 14px; } /* TITLE-GROUP STYLES */ [md-card-sm-image], [md-card-md-image], [md-card-lg-image] { margin: -8px 0; } md-card-title-group { display: flex; justify-content: space-between; margin: 0 -8px; } [md-card-sm-image] { width: 80px; height: 80px; } [md-card-md-image] { width: 112px; height: 112px; } [md-card-lg-image] { width: 152px; height: 152px; } /* MEDIA QUERIES */ @media (max-width: 600px) { md-card { padding: 24px 16px; } [md-card-image] { width: calc(100% + 32px); margin: 16px -16px; } md-card-title-group { margin: 0; } [md-card-xl-image] { margin-left: 0; margin-right: 0; } md-card-header { margin: -8px 0 0 0; } } /* FIRST/LAST CHILD ADJUSTMENTS */ md-card > :first-child, md-card-content > :first-child { margin-top: 0; } md-card > :last-child, md-card-content > :last-child { margin-bottom: 0; } [md-card-image]:first-child { margin-top: -24px; } md-card > md-card-actions:last-child { margin-bottom: -16px; padding-bottom: 0; } md-card-actions [md-button]:first-child, md-card-actions [md-raised-button]:first-child { margin-left: 0; margin-right: 0; } md-card-title:not(:first-child), md-card-subtitle:not(:first-child) { margin-top: -4px; } md-card-header md-card-subtitle:not(:first-child) { margin-top: -8px; } md-card > [md-card-xl-image]:first-child { margin-top: -8px; } md-card > [md-card-xl-image]:last-child { margin-bottom: -8px; } /*# sourceMappingURL=card.css.map */ "],
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
+            changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectionStrategy"].OnPush,
+        }), 
+        __metadata('design:paramtypes', [])
+    ], MdCard);
+    return MdCard;
+}());
+/*  The following components don't have any behavior.
+ They simply use content projection to wrap user content
+ for flex layout purposes in <md-card> (and thus allow a cleaner, boilerplate-free API).
+
+
+<md-card-header> is a component intended to be used within the <md-card> component.
+It adds styles for a preset header section (i.e. a title, subtitle, and avatar layout).
+
+You can see an example of a card with a header here:
+http://embed.plnkr.co/tvJl19z3gZTQd6WmwkIa/
+
+TODO(kara): update link to demo site when it exists
+*/
+var MdCardHeader = (function () {
+    function MdCardHeader() {
+    }
+    MdCardHeader = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({selector: 'md-card-header',
+            template: "<ng-content select=\"[md-card-avatar]\"></ng-content> <div class=\"md-card-header-text\"> <ng-content select=\"md-card-title, md-card-subtitle\"></ng-content> </div> <ng-content></ng-content> ",
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
+            changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectionStrategy"].OnPush,
+        }), 
+        __metadata('design:paramtypes', [])
+    ], MdCardHeader);
+    return MdCardHeader;
+}());
+/*
+
+<md-card-title-group> is a component intended to be used within the <md-card> component.
+It adds styles for a preset layout that groups an image with a title section.
+
+You can see an example of a card with a title-group section here:
+http://embed.plnkr.co/EDfgCF9eKcXjini1WODm/
+
+TODO(kara): update link to demo site when it exists
+*/
+var MdCardTitleGroup = (function () {
+    function MdCardTitleGroup() {
+    }
+    MdCardTitleGroup = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({selector: 'md-card-title-group',
+            template: "<div> <ng-content select=\"md-card-title, md-card-subtitle\"></ng-content> </div> <ng-content select=\"img\"></ng-content> <ng-content></ng-content> ",
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
+            changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectionStrategy"].OnPush,
+        }), 
+        __metadata('design:paramtypes', [])
+    ], MdCardTitleGroup);
+    return MdCardTitleGroup;
+}());
+var MdCardModule = (function () {
+    function MdCardModule() {
+    }
+    MdCardModule.forRoot = function () {
+        return {
+            ngModule: MdCardModule,
+            providers: []
+        };
+    };
+    MdCardModule = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            exports: [
+                MdCard, MdCardHeader, MdCardTitleGroup, MdCardContent, MdCardTitle, MdCardSubtitle,
+                MdCardActions
+            ],
+            declarations: [
+                MdCard, MdCardHeader, MdCardTitleGroup, MdCardContent, MdCardTitle, MdCardSubtitle,
+                MdCardActions
+            ],
+        }), 
+        __metadata('design:paramtypes', [])
+    ], MdCardModule);
+    return MdCardModule;
+}());
+
+//# sourceMappingURL=card.js.map
+
+
+/***/ },
+/* 77 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* unused harmony export LIVE_ANNOUNCER_ELEMENT_TOKEN */
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return MdLiveAnnouncer; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+
+var LIVE_ANNOUNCER_ELEMENT_TOKEN = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["OpaqueToken"]('mdLiveAnnouncerElement');
+var MdLiveAnnouncer = (function () {
+    function MdLiveAnnouncer(elementToken) {
+        // We inject the live element as `any` because the constructor signature cannot reference
+        // browser globals (HTMLElement) on non-browser environments, since having a class decorator
+        // causes TypeScript to preserve the constructor signature types.
+        this._liveElement = elementToken || this._createLiveElement();
+    }
+    /**
+     * @param message Message to be announced to the screenreader
+     * @param politeness The politeness of the announcer element.
+     */
+    MdLiveAnnouncer.prototype.announce = function (message, politeness) {
+        var _this = this;
+        if (politeness === void 0) { politeness = 'polite'; }
+        this._liveElement.textContent = '';
+        // TODO: ensure changing the politeness works on all environments we support.
+        this._liveElement.setAttribute('aria-live', politeness);
+        // This 100ms timeout is necessary for some browser + screen-reader combinations:
+        // - Both JAWS and NVDA over IE11 will not announce anything without a non-zero timeout.
+        // - With Chrome and IE11 with NVDA or JAWS, a repeated (identical) message won't be read a
+        //   second time without clearing and then using a non-zero delay.
+        // (using JAWS 17 at time of this writing).
+        setTimeout(function () { return _this._liveElement.textContent = message; }, 100);
+    };
+    MdLiveAnnouncer.prototype._createLiveElement = function () {
+        var liveEl = document.createElement('div');
+        liveEl.classList.add('md-live-announcer');
+        liveEl.setAttribute('aria-atomic', 'true');
+        liveEl.setAttribute('aria-live', 'polite');
+        document.body.appendChild(liveEl);
+        return liveEl;
+    };
+    MdLiveAnnouncer = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+        __param(0, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Optional"])()),
+        __param(0, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(LIVE_ANNOUNCER_ELEMENT_TOKEN)), 
+        __metadata('design:paramtypes', [Object])
+    ], MdLiveAnnouncer);
+    return MdLiveAnnouncer;
+}());
+
+//# sourceMappingURL=live-announcer.js.map
+
+
+/***/ },
+/* 78 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return MdError; });
+// TODO(kara): Revisit why error messages are not being properly set.
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+/**
+ * Wrapper around Error that sets the error message.
+ */
+var MdError = (function (_super) {
+    __extends(MdError, _super);
+    function MdError(value) {
+        _super.call(this);
+        this.message = value;
+    }
+    return MdError;
+}(Error));
+
+//# sourceMappingURL=error.js.map
+
+
+/***/ },
+/* 79 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* unused harmony export MdLine */
+/* unused harmony export MdLineSetter */
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return MdLineModule; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+/**
+ * Shared directive to count lines inside a text area, such as a list item.
+ * Line elements can be extracted with a @ContentChildren(MdLine) query, then
+ * counted by checking the query list's length.
+ */
+var MdLine = (function () {
+    function MdLine() {
+    }
+    MdLine = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({ selector: '[md-line]' }), 
+        __metadata('design:paramtypes', [])
+    ], MdLine);
+    return MdLine;
+}());
+/* Helper that takes a query list of lines and sets the correct class on the host */
+var MdLineSetter = (function () {
+    function MdLineSetter(_lines, _renderer, _element) {
+        var _this = this;
+        this._lines = _lines;
+        this._renderer = _renderer;
+        this._element = _element;
+        this._setLineClass(this._lines.length);
+        this._lines.changes.subscribe(function () {
+            _this._setLineClass(_this._lines.length);
+        });
+    }
+    MdLineSetter.prototype._setLineClass = function (count) {
+        this._resetClasses();
+        if (count === 2 || count === 3) {
+            this._setClass("md-" + count + "-line", true);
+        }
+    };
+    MdLineSetter.prototype._resetClasses = function () {
+        this._setClass('md-2-line', false);
+        this._setClass('md-3-line', false);
+    };
+    MdLineSetter.prototype._setClass = function (className, bool) {
+        this._renderer.setElementClass(this._element.nativeElement, className, bool);
+    };
+    return MdLineSetter;
+}());
+var MdLineModule = (function () {
+    function MdLineModule() {
+    }
+    MdLineModule = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            exports: [MdLine],
+            declarations: [MdLine],
+        }), 
+        __metadata('design:paramtypes', [])
+    ], MdLineModule);
+    return MdLineModule;
+}());
+
+//# sourceMappingURL=line.js.map
+
+
+/***/ },
+/* 80 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return OverlayContainer; });
+/**
+ * The OverlayContainer is the container in which all overlays will load.
+ * It should be provided in the root component to ensure it is properly shared.
+ */
+var OverlayContainer = (function () {
+    function OverlayContainer() {
+    }
+    /**
+     * This method returns the overlay container element.  It will lazily
+     * create the element the first time  it is called to facilitate using
+     * the container in non-browser environments.
+     * @returns {HTMLElement} the container element
+     */
+    OverlayContainer.prototype.getContainerElement = function () {
+        if (!this._containerElement) {
+            this._createContainer();
+        }
+        return this._containerElement;
+    };
+    /**
+     * Create the overlay container element, which is simply a div
+     * with the 'md-overlay-container' class on the document body.
+     */
+    OverlayContainer.prototype._createContainer = function () {
+        var container = document.createElement('div');
+        container.classList.add('md-overlay-container');
+        document.body.appendChild(container);
+        this._containerElement = container;
+    };
+    return OverlayContainer;
+}());
+
+//# sourceMappingURL=overlay-container.js.map
+
+
+/***/ },
+/* 81 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__overlay__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__portal_portal__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__overlay_state__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__position_connected_position__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__portal_portal_directives__ = __webpack_require__(52);
+/* unused harmony export OverlayOrigin */
+/* unused harmony export ConnectedOverlayDirective */
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return OverlayModule; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+/** Default set of positions for the overlay. Follows the behavior of a dropdown. */
+var defaultPositionList = [
+    new __WEBPACK_IMPORTED_MODULE_4__position_connected_position__["a" /* ConnectionPositionPair */]({ originX: 'start', originY: 'bottom' }, { overlayX: 'start', overlayY: 'top' }),
+    new __WEBPACK_IMPORTED_MODULE_4__position_connected_position__["a" /* ConnectionPositionPair */]({ originX: 'start', originY: 'top' }, { overlayX: 'start', overlayY: 'bottom' }),
+];
+/**
+ * Directive applied to an element to make it usable as an origin for an Overlay using a
+ * ConnectedPositionStrategy.
+ */
+var OverlayOrigin = (function () {
+    function OverlayOrigin(_elementRef) {
+        this._elementRef = _elementRef;
+    }
+    Object.defineProperty(OverlayOrigin.prototype, "elementRef", {
+        get: function () {
+            return this._elementRef;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    OverlayOrigin = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({
+            selector: '[overlay-origin]',
+            exportAs: 'overlayOrigin',
+        }), 
+        __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]])
+    ], OverlayOrigin);
+    return OverlayOrigin;
+}());
+/**
+ * Directive to facilitate declarative creation of an Overlay using a ConnectedPositionStrategy.
+ */
+var ConnectedOverlayDirective = (function () {
+    // TODO(jelbourn): inputs for size, scroll behavior, animation, etc.
+    function ConnectedOverlayDirective(_overlay, templateRef, viewContainerRef) {
+        this._overlay = _overlay;
+        this._templatePortal = new __WEBPACK_IMPORTED_MODULE_2__portal_portal__["a" /* TemplatePortal */](templateRef, viewContainerRef);
+    }
+    Object.defineProperty(ConnectedOverlayDirective.prototype, "overlayRef", {
+        get: function () {
+            return this._overlayRef;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /** TODO: internal */
+    ConnectedOverlayDirective.prototype.ngOnInit = function () {
+        this._createOverlay();
+    };
+    /** TODO: internal */
+    ConnectedOverlayDirective.prototype.ngOnDestroy = function () {
+        this._destroyOverlay();
+    };
+    /** Creates an overlay and attaches this directive's template to it. */
+    ConnectedOverlayDirective.prototype._createOverlay = function () {
+        if (!this.positions || !this.positions.length) {
+            this.positions = defaultPositionList;
+        }
+        var overlayConfig = new __WEBPACK_IMPORTED_MODULE_3__overlay_state__["a" /* OverlayState */]();
+        overlayConfig.positionStrategy =
+            this._overlay.position().connectedTo(this.origin.elementRef, { originX: this.positions[0].overlayX, originY: this.positions[0].originY }, { overlayX: this.positions[0].overlayX, overlayY: this.positions[0].overlayY });
+        this._overlayRef = this._overlay.create(overlayConfig);
+        this._overlayRef.attach(this._templatePortal);
+    };
+    /** Destroys the overlay created by this directive. */
+    ConnectedOverlayDirective.prototype._destroyOverlay = function () {
+        this._overlayRef.dispose();
+    };
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
+        __metadata('design:type', OverlayOrigin)
+    ], ConnectedOverlayDirective.prototype, "origin", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(), 
+        __metadata('design:type', Array)
+    ], ConnectedOverlayDirective.prototype, "positions", void 0);
+    ConnectedOverlayDirective = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({
+            selector: '[connected-overlay]'
+        }), 
+        __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_1__overlay__["a" /* Overlay */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["TemplateRef"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"]])
+    ], ConnectedOverlayDirective);
+    return ConnectedOverlayDirective;
+}());
+var OverlayModule = (function () {
+    function OverlayModule() {
+    }
+    OverlayModule.forRoot = function () {
+        return {
+            ngModule: OverlayModule,
+            providers: __WEBPACK_IMPORTED_MODULE_1__overlay__["b" /* OVERLAY_PROVIDERS */],
+        };
+    };
+    OverlayModule = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            imports: [__WEBPACK_IMPORTED_MODULE_5__portal_portal_directives__["a" /* PortalModule */]],
+            exports: [ConnectedOverlayDirective, OverlayOrigin],
+            declarations: [ConnectedOverlayDirective, OverlayOrigin],
+        }), 
+        __metadata('design:paramtypes', [])
+    ], OverlayModule);
+    return OverlayModule;
+}());
+
+//# sourceMappingURL=overlay-directives.js.map
+
+
+/***/ },
+/* 82 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return OverlayRef; });
+/**
+ * Reference to an overlay that has been created with the Overlay service.
+ * Used to manipulate or dispose of said overlay.
+ */
+var OverlayRef = (function () {
+    function OverlayRef(_portalHost, _pane, _state) {
+        this._portalHost = _portalHost;
+        this._pane = _pane;
+        this._state = _state;
+    }
+    OverlayRef.prototype.attach = function (portal) {
+        var attachResult = this._portalHost.attach(portal);
+        this.updatePosition();
+        return attachResult;
+    };
+    OverlayRef.prototype.detach = function () {
+        return this._portalHost.detach();
+    };
+    OverlayRef.prototype.dispose = function () {
+        this._portalHost.dispose();
+    };
+    OverlayRef.prototype.hasAttached = function () {
+        return this._portalHost.hasAttached();
+    };
+    /** Gets the current state config of the overlay. */
+    OverlayRef.prototype.getState = function () {
+        return this._state;
+    };
+    /** Updates the position of the overlay based on the position strategy. */
+    OverlayRef.prototype.updatePosition = function () {
+        if (this._state.positionStrategy) {
+            this._state.positionStrategy.apply(this._pane);
+        }
+    };
+    return OverlayRef;
+}());
+
+//# sourceMappingURL=overlay-ref.js.map
+
+
+/***/ },
+/* 83 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__overlay_state__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__portal_dom_portal_host__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__overlay_ref__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__position_overlay_position_builder__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__position_viewport_ruler__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__overlay_container__ = __webpack_require__(80);
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Overlay; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return OVERLAY_PROVIDERS; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+/** Next overlay unique ID. */
+var nextUniqueId = 0;
+/** The default state for newly created overlays. */
+var defaultState = new __WEBPACK_IMPORTED_MODULE_1__overlay_state__["a" /* OverlayState */]();
+/**
+ * Service to create Overlays. Overlays are dynamically added pieces of floating UI, meant to be
+ * used as a low-level building building block for other components. Dialogs, tooltips, menus,
+ * selects, etc. can all be built using overlays. The service should primarily be used by authors
+ * of re-usable components rather than developers building end-user applications.
+ *
+ * An overlay *is* a PortalHost, so any kind of Portal can be loaded into one.
+ */
+var Overlay = (function () {
+    function Overlay(_overlayContainer, _componentFactoryResolver, _positionBuilder) {
+        this._overlayContainer = _overlayContainer;
+        this._componentFactoryResolver = _componentFactoryResolver;
+        this._positionBuilder = _positionBuilder;
+    }
+    /**
+     * Creates an overlay.
+     * @param state State to apply to the overlay.
+     * @returns A reference to the created overlay.
+     */
+    Overlay.prototype.create = function (state) {
+        if (state === void 0) { state = defaultState; }
+        return this._createOverlayRef(this._createPaneElement(), state);
+    };
+    /**
+     * Returns a position builder that can be used, via fluent API,
+     * to construct and configure a position strategy.
+     */
+    Overlay.prototype.position = function () {
+        return this._positionBuilder;
+    };
+    /**
+     * Creates the DOM element for an overlay and appends it to the overlay container.
+     * @returns Promise resolving to the created element.
+     */
+    Overlay.prototype._createPaneElement = function () {
+        var pane = document.createElement('div');
+        pane.id = "md-overlay-" + nextUniqueId++;
+        pane.classList.add('md-overlay-pane');
+        this._overlayContainer.getContainerElement().appendChild(pane);
+        return pane;
+    };
+    /**
+     * Create a DomPortalHost into which the overlay content can be loaded.
+     * @param pane The DOM element to turn into a portal host.
+     * @returns A portal host for the given DOM element.
+     */
+    Overlay.prototype._createPortalHost = function (pane) {
+        return new __WEBPACK_IMPORTED_MODULE_2__portal_dom_portal_host__["a" /* DomPortalHost */](pane, this._componentFactoryResolver);
+    };
+    /**
+     * Creates an OverlayRef for an overlay in the given DOM element.
+     * @param pane DOM element for the overlay
+     * @param state
+     * @returns {OverlayRef}
+     */
+    Overlay.prototype._createOverlayRef = function (pane, state) {
+        return new __WEBPACK_IMPORTED_MODULE_3__overlay_ref__["a" /* OverlayRef */](this._createPortalHost(pane), pane, state);
+    };
+    Overlay = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
+        __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_6__overlay_container__["a" /* OverlayContainer */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["ComponentFactoryResolver"], __WEBPACK_IMPORTED_MODULE_4__position_overlay_position_builder__["a" /* OverlayPositionBuilder */]])
+    ], Overlay);
+    return Overlay;
+}());
+/** Providers for Overlay and its related injectables. */
+var OVERLAY_PROVIDERS = [
+    __WEBPACK_IMPORTED_MODULE_5__position_viewport_ruler__["a" /* ViewportRuler */],
+    __WEBPACK_IMPORTED_MODULE_4__position_overlay_position_builder__["a" /* OverlayPositionBuilder */],
+    Overlay,
+    __WEBPACK_IMPORTED_MODULE_6__overlay_container__["a" /* OverlayContainer */],
+];
+
+//# sourceMappingURL=overlay.js.map
+
+
+/***/ },
+/* 84 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(Promise) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular2_material_core__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__connected_position__ = __webpack_require__(51);
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ConnectedPositionStrategy; });
+
+
+/**
+ * A strategy for positioning overlays. Using this strategy, an overlay is given an
+ * implict position relative some origin element. The relative position is defined in terms of
+ * a point on the origin element that is connected to a point on the overlay element. For example,
+ * a basic dropdown is connecting the bottom-left corner of the origin to the top-left corner
+ * of the overlay.
+ */
+var ConnectedPositionStrategy = (function () {
+    function ConnectedPositionStrategy(_connectedTo, _originPos, _overlayPos, _viewportRuler) {
+        this._connectedTo = _connectedTo;
+        this._originPos = _originPos;
+        this._overlayPos = _overlayPos;
+        this._viewportRuler = _viewportRuler;
+        // TODO(jelbourn): set RTL to the actual value from the app.
+        /** Whether the we're dealing with an RTL context */
+        this._isRtl = false;
+        /** Ordered list of preferred positions, from most to least desirable. */
+        this._preferredPositions = [];
+        this._origin = this._connectedTo.nativeElement;
+        this.withFallbackPosition(_originPos, _overlayPos);
+    }
+    Object.defineProperty(ConnectedPositionStrategy.prototype, "positions", {
+        get: function () {
+            return this._preferredPositions;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * Updates the position of the overlay element, using whichever preferred position relative
+     * to the origin fits on-screen.
+     * TODO: internal
+     */
+    ConnectedPositionStrategy.prototype.apply = function (element) {
+        // We need the bounding rects for the origin and the overlay to determine how to position
+        // the overlay relative to the origin.
+        var originRect = this._origin.getBoundingClientRect();
+        var overlayRect = element.getBoundingClientRect();
+        // We use the viewport rect to determine whether a position would go off-screen.
+        var viewportRect = this._viewportRuler.getViewportRect();
+        var firstOverlayPoint = null;
+        // We want to place the overlay in the first of the preferred positions such that the
+        // overlay fits on-screen.
+        for (var _i = 0, _a = this._preferredPositions; _i < _a.length; _i++) {
+            var pos = _a[_i];
+            // Get the (x, y) point of connection on the origin, and then use that to get the
+            // (top, left) coordinate for the overlay at `pos`.
+            var originPoint = this._getOriginConnectionPoint(originRect, pos);
+            var overlayPoint = this._getOverlayPoint(originPoint, overlayRect, pos);
+            firstOverlayPoint = firstOverlayPoint || overlayPoint;
+            // If the overlay in the calculated position fits on-screen, put it there and we're done.
+            if (this._willOverlayFitWithinViewport(overlayPoint, overlayRect, viewportRect)) {
+                this._setElementPosition(element, overlayPoint);
+                return Promise.resolve(null);
+            }
+        }
+        // TODO(jelbourn): fallback behavior for when none of the preferred positions fit on-screen.
+        // For now, just stick it in the first position and let it go off-screen.
+        this._setElementPosition(element, firstOverlayPoint);
+        return Promise.resolve(null);
+    };
+    ConnectedPositionStrategy.prototype.withFallbackPosition = function (originPos, overlayPos) {
+        this._preferredPositions.push(new __WEBPACK_IMPORTED_MODULE_1__connected_position__["a" /* ConnectionPositionPair */](originPos, overlayPos));
+        return this;
+    };
+    /**
+     * Gets the horizontal (x) "start" dimension based on whether the overlay is in an RTL context.
+     * @param rect
+     */
+    ConnectedPositionStrategy.prototype._getStartX = function (rect) {
+        return this._isRtl ? rect.right : rect.left;
+    };
+    /**
+     * Gets the horizontal (x) "end" dimension based on whether the overlay is in an RTL context.
+     * @param rect
+     */
+    ConnectedPositionStrategy.prototype._getEndX = function (rect) {
+        return this._isRtl ? rect.left : rect.right;
+    };
+    /**
+     * Gets the (x, y) coordinate of a connection point on the origin based on a relative position.
+     * @param originRect
+     * @param pos
+     */
+    ConnectedPositionStrategy.prototype._getOriginConnectionPoint = function (originRect, pos) {
+        var originStartX = this._getStartX(originRect);
+        var originEndX = this._getEndX(originRect);
+        var x;
+        if (pos.originX == 'center') {
+            x = originStartX + (originRect.width / 2);
+        }
+        else {
+            x = pos.originX == 'start' ? originStartX : originEndX;
+        }
+        var y;
+        if (pos.originY == 'center') {
+            y = originRect.top + (originRect.height / 2);
+        }
+        else {
+            y = pos.originY == 'top' ? originRect.top : originRect.bottom;
+        }
+        return { x: x, y: y };
+    };
+    /**
+     * Gets the (x, y) coordinate of the top-left corner of the overlay given a given position and
+     * origin point to which the overlay should be connected.
+     * @param originPoint
+     * @param overlayRect
+     * @param pos
+     */
+    ConnectedPositionStrategy.prototype._getOverlayPoint = function (originPoint, overlayRect, pos) {
+        // Calculate the (overlayStartX, overlayStartY), the start of the potential overlay position
+        // relative to the origin point.
+        var overlayStartX;
+        if (pos.overlayX == 'center') {
+            overlayStartX = -overlayRect.width / 2;
+        }
+        else {
+            overlayStartX = pos.overlayX == 'start' ? 0 : -overlayRect.width;
+        }
+        var overlayStartY;
+        if (pos.overlayY == 'center') {
+            overlayStartY = -overlayRect.height / 2;
+        }
+        else {
+            overlayStartY = pos.overlayY == 'top' ? 0 : -overlayRect.height;
+        }
+        return {
+            x: originPoint.x + overlayStartX,
+            y: originPoint.y + overlayStartY
+        };
+    };
+    /**
+     * Gets whether the overlay positioned at the given point will fit on-screen.
+     * @param overlayPoint The top-left coordinate of the overlay.
+     * @param overlayRect Bounding rect of the overlay, used to get its size.
+     * @param viewportRect The bounding viewport.
+     */
+    ConnectedPositionStrategy.prototype._willOverlayFitWithinViewport = function (overlayPoint, overlayRect, viewportRect) {
+        // TODO(jelbourn): probably also want some space between overlay edge and viewport edge.
+        return overlayPoint.x >= viewportRect.left &&
+            overlayPoint.x + overlayRect.width <= viewportRect.right &&
+            overlayPoint.y >= viewportRect.top &&
+            overlayPoint.y + overlayRect.height <= viewportRect.bottom;
+    };
+    /**
+     * Physically positions the overlay element to the given coordinate.
+     * @param element
+     * @param overlayPoint
+     */
+    ConnectedPositionStrategy.prototype._setElementPosition = function (element, overlayPoint) {
+        var scrollPos = this._viewportRuler.getViewportScrollPosition();
+        var x = overlayPoint.x + scrollPos.left;
+        var y = overlayPoint.y + scrollPos.top;
+        // TODO(jelbourn): we don't want to always overwrite the transform property here,
+        // because it will need to be used for animations.
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular2_material_core__["a" /* applyCssTransform */])(element, "translateX(" + x + "px) translateY(" + y + "px)");
+    };
+    return ConnectedPositionStrategy;
+}());
+
+//# sourceMappingURL=connected-position-strategy.js.map
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(24)))
+
+/***/ },
+/* 85 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ViewportRuler; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+/**
+ * Simple utility for getting the bounds of the browser viewport.
+ * TODO: internal
+ */
+var ViewportRuler = (function () {
+    function ViewportRuler() {
+    }
+    // TODO(jelbourn): cache the document's bounding rect and only update it when the window
+    // is resized (debounced).
+    /** Gets a ClientRect for the viewport's bounds. */
+    ViewportRuler.prototype.getViewportRect = function () {
+        // Use the document element's bounding rect rather than the window scroll properties
+        // (e.g. pageYOffset, scrollY) due to in issue in Chrome and IE where window scroll
+        // properties and client coordinates (boundingClientRect, clientX/Y, etc.) are in different
+        // conceptual viewports. Under most circumstances these viewports are equivalent, but they
+        // can disagree when the page is pinch-zoomed (on devices that support touch).
+        // See https://bugs.chromium.org/p/chromium/issues/detail?id=489206#c4
+        // We use the documentElement instead of the body because, by default (without a css reset)
+        // browsers typically give the document body an 8px margin, which is not included in
+        // getBoundingClientRect().
+        var documentRect = document.documentElement.getBoundingClientRect();
+        var scrollPosition = this.getViewportScrollPosition(documentRect);
+        var height = window.innerHeight;
+        var width = window.innerWidth;
+        return {
+            top: scrollPosition.top,
+            left: scrollPosition.left,
+            bottom: scrollPosition.top + height,
+            right: scrollPosition.left + width,
+            height: height,
+            width: width,
+        };
+    };
+    /**
+     * Gets the (top, left) scroll position of the viewport.
+     * @param documentRect
+     */
+    ViewportRuler.prototype.getViewportScrollPosition = function (documentRect) {
+        if (documentRect === void 0) { documentRect = document.documentElement.getBoundingClientRect(); }
+        // The top-left-corner of the viewport is determined by the scroll position of the document
+        // body, normally just (scrollLeft, scrollTop). However, Chrome and Firefox disagree about
+        // whether `document.body` or `document.documentElement` is the scrolled element, so reading
+        // `scrollTop` and `scrollLeft` is inconsistent. However, using the bounding rect of
+        // `document.documentElement` works consistently, where the `top` and `left` values will
+        // equal negative the scroll position.
+        var top = documentRect.top < 0 && document.body.scrollTop == 0 ?
+            -documentRect.top :
+            document.body.scrollTop;
+        var left = documentRect.left < 0 && document.body.scrollLeft == 0 ?
+            -documentRect.left :
+            document.body.scrollLeft;
+        return { top: top, left: left };
+    };
+    ViewportRuler = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
+        __metadata('design:paramtypes', [])
+    ], ViewportRuler);
+    return ViewportRuler;
+}());
+
+//# sourceMappingURL=viewport-ruler.js.map
+
+
+/***/ },
+/* 86 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__portal__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__portal_errors__ = __webpack_require__(87);
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DomPortalHost; });
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+
+
+/**
+ * A PortalHost for attaching portals to an arbitrary DOM element outside of the Angular
+ * application context.
+ *
+ * This is the only part of the portal core that directly touches the DOM.
+ */
+var DomPortalHost = (function (_super) {
+    __extends(DomPortalHost, _super);
+    function DomPortalHost(_hostDomElement, _componentFactoryResolver) {
+        _super.call(this);
+        this._hostDomElement = _hostDomElement;
+        this._componentFactoryResolver = _componentFactoryResolver;
+    }
+    /** Attach the given ComponentPortal to DOM element using the ComponentFactoryResolver. */
+    DomPortalHost.prototype.attachComponentPortal = function (portal) {
+        if (portal.viewContainerRef == null) {
+            throw new __WEBPACK_IMPORTED_MODULE_1__portal_errors__["g" /* MdComponentPortalAttachedToDomWithoutOriginError */]();
+        }
+        var componentFactory = this._componentFactoryResolver.resolveComponentFactory(portal.component);
+        var ref = portal.viewContainerRef.createComponent(componentFactory, portal.viewContainerRef.length, portal.injector || portal.viewContainerRef.parentInjector);
+        var hostView = ref.hostView;
+        this._hostDomElement.appendChild(hostView.rootNodes[0]);
+        this.setDisposeFn(function () { return ref.destroy(); });
+        return ref;
+    };
+    DomPortalHost.prototype.attachTemplatePortal = function (portal) {
+        var _this = this;
+        var viewContainer = portal.viewContainerRef;
+        var viewRef = viewContainer.createEmbeddedView(portal.templateRef);
+        viewRef.rootNodes.forEach(function (rootNode) { return _this._hostDomElement.appendChild(rootNode); });
+        this.setDisposeFn((function () {
+            var index = viewContainer.indexOf(viewRef);
+            if (index != -1) {
+                viewContainer.remove(index);
+            }
+        }));
+        // TODO(jelbourn): Return locals from view.
+        return new Map();
+    };
+    DomPortalHost.prototype.dispose = function () {
+        _super.prototype.dispose.call(this);
+        if (this._hostDomElement.parentNode != null) {
+            this._hostDomElement.parentNode.removeChild(this._hostDomElement);
+        }
+    };
+    return DomPortalHost;
+}(__WEBPACK_IMPORTED_MODULE_0__portal__["b" /* BasePortalHost */]));
+
+//# sourceMappingURL=dom-portal-host.js.map
+
+
+/***/ },
+/* 87 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__errors_error__ = __webpack_require__(78);
+/* harmony export (binding) */ __webpack_require__.d(exports, "g", function() { return MdComponentPortalAttachedToDomWithoutOriginError; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "d", function() { return MdNullPortalError; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return MdPortalAlreadyAttachedError; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "e", function() { return MdPortalHostAlreadyDisposedError; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "f", function() { return MdUnknownPortalTypeError; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return MdNullPortalHostError; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return MdNoPortalAttachedError; });
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+
+/** Exception thrown when a ComponentPortal is attached to a DomPortalHost without an origin. */
+var MdComponentPortalAttachedToDomWithoutOriginError = (function (_super) {
+    __extends(MdComponentPortalAttachedToDomWithoutOriginError, _super);
+    function MdComponentPortalAttachedToDomWithoutOriginError() {
+        _super.call(this, 'A ComponentPortal must have an origin set when attached to a DomPortalHost ' +
+            'because the DOM element is not part of the Angular application context.');
+    }
+    return MdComponentPortalAttachedToDomWithoutOriginError;
+}(__WEBPACK_IMPORTED_MODULE_0__errors_error__["a" /* MdError */]));
+/** Exception thrown when attempting to attach a null portal to a host. */
+var MdNullPortalError = (function (_super) {
+    __extends(MdNullPortalError, _super);
+    function MdNullPortalError() {
+        _super.call(this, 'Must provide a portal to attach');
+    }
+    return MdNullPortalError;
+}(__WEBPACK_IMPORTED_MODULE_0__errors_error__["a" /* MdError */]));
+/** Exception thrown when attempting to attach a portal to a host that is already attached. */
+var MdPortalAlreadyAttachedError = (function (_super) {
+    __extends(MdPortalAlreadyAttachedError, _super);
+    function MdPortalAlreadyAttachedError() {
+        _super.call(this, 'Host already has a portal attached');
+    }
+    return MdPortalAlreadyAttachedError;
+}(__WEBPACK_IMPORTED_MODULE_0__errors_error__["a" /* MdError */]));
+/** Exception thrown when attempting to attach a portal to an already-disposed host. */
+var MdPortalHostAlreadyDisposedError = (function (_super) {
+    __extends(MdPortalHostAlreadyDisposedError, _super);
+    function MdPortalHostAlreadyDisposedError() {
+        _super.call(this, 'This PortalHost has already been disposed');
+    }
+    return MdPortalHostAlreadyDisposedError;
+}(__WEBPACK_IMPORTED_MODULE_0__errors_error__["a" /* MdError */]));
+/** Exception thrown when attempting to attach an unknown portal type. */
+var MdUnknownPortalTypeError = (function (_super) {
+    __extends(MdUnknownPortalTypeError, _super);
+    function MdUnknownPortalTypeError() {
+        _super.call(this, 'Attempting to attach an unknown Portal type. ' +
+            'BasePortalHost accepts either a ComponentPortal or a TemplatePortal.');
+    }
+    return MdUnknownPortalTypeError;
+}(__WEBPACK_IMPORTED_MODULE_0__errors_error__["a" /* MdError */]));
+/** Exception thrown when attempting to attach a portal to a null host. */
+var MdNullPortalHostError = (function (_super) {
+    __extends(MdNullPortalHostError, _super);
+    function MdNullPortalHostError() {
+        _super.call(this, 'Attempting to attach a portal to a null PortalHost');
+    }
+    return MdNullPortalHostError;
+}(__WEBPACK_IMPORTED_MODULE_0__errors_error__["a" /* MdError */]));
+/** Exception thrown when attempting to detach a portal that is not attached. */
+var MdNoPortalAttachedError = (function (_super) {
+    __extends(MdNoPortalAttachedError, _super);
+    function MdNoPortalAttachedError() {
+        _super.call(this, 'Attempting to detach a portal that is not attached to a host');
+    }
+    return MdNoPortalAttachedError;
+}(__WEBPACK_IMPORTED_MODULE_0__errors_error__["a" /* MdError */]));
+
+//# sourceMappingURL=portal-errors.js.map
+
+
+/***/ },
+/* 88 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* unused harmony export Dir */
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return RtlModule; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+/**
+ * Directive to listen to changes of direction of part of the DOM.
+ *
+ * Applications should use this directive instead of the native attribute so that Material
+ * components can listen on changes of direction.
+ */
+var Dir = (function () {
+    function Dir() {
+        this._dir = 'ltr';
+        this.dirChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+    }
+    Object.defineProperty(Dir.prototype, "dir", {
+        get: function () {
+            return this._dir;
+        },
+        set: function (v) {
+            var old = this._dir;
+            this._dir = v;
+            if (old != this._dir) {
+                this.dirChange.emit(null);
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(Dir.prototype, "value", {
+        get: function () { return this.dir; },
+        set: function (v) { this.dir = v; },
+        enumerable: true,
+        configurable: true
+    });
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])('dir'), 
+        __metadata('design:type', String)
+    ], Dir.prototype, "_dir", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(), 
+        __metadata('design:type', Object)
+    ], Dir.prototype, "dirChange", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostBinding"])('attr.dir'), 
+        __metadata('design:type', String)
+    ], Dir.prototype, "dir", null);
+    Dir = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"])({
+            selector: '[dir]',
+            // TODO(hansl): maybe `$implicit` isn't the best option here, but for now that's the best we got.
+            exportAs: '$implicit'
+        }), 
+        __metadata('design:paramtypes', [])
+    ], Dir);
+    return Dir;
+}());
+var RtlModule = (function () {
+    function RtlModule() {
+    }
+    RtlModule.forRoot = function () {
+        return {
+            ngModule: RtlModule,
+            providers: []
+        };
+    };
+    RtlModule = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            exports: [Dir],
+            declarations: [Dir]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], RtlModule);
+    return RtlModule;
+}());
+
+//# sourceMappingURL=dir.js.map
+
+
+/***/ },
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20398,14 +22138,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 /**
  * Angular 2 decorators and services
  */
-var core_1 = __webpack_require__(7);
+var core_1 = __webpack_require__(3);
 /*
  * Shared Utilities
  */
-var utility_service_1 = __webpack_require__(5);
-var appstate_service_1 = __webpack_require__(6);
+var utility_service_1 = __webpack_require__(6);
+var appstate_service_1 = __webpack_require__(7);
 var authentication_service_1 = __webpack_require__(8);
-var forceChangeDetection_1 = __webpack_require__(134);
+var forceChangeDetection_1 = __webpack_require__(165);
 /** Materialize JS - needs to be required() here so its within the app.bundle.js - must use
  * "script-loader" or custom jQuery functions will be undefined within the  components
  *
@@ -20413,8 +22153,8 @@ var forceChangeDetection_1 = __webpack_require__(134);
  **/
 /** jQuery 3.1.0 */
 window.$ = window.jQuery = __webpack_require__(10);
-__webpack_require__(156); // must pass through "script-loader"
-__webpack_require__(141);
+__webpack_require__(187); // must pass through "script-loader"
+__webpack_require__(172);
 /**
  * THIS IS WHERE WE REQUIRE/IMPORT CSS/SCSS FILES THAT THIS COMPONENT NEEDS
  *
@@ -20422,7 +22162,7 @@ __webpack_require__(141);
  * during development. During productions, all styles will be extracted into
  *  external stylesheets. Do NOT add styles the "Angular2 Way" in
  */
-__webpack_require__(144);
+__webpack_require__(175);
 /**
  * AppComponent Component
  * Top Level Component
@@ -20463,7 +22203,7 @@ var AppComponent = (function () {
             selector: 'body',
             encapsulation: core_1.ViewEncapsulation.None,
             host: { '[class.authenticated]': 'appState.state.isAuthenticated' },
-            template: __webpack_require__(159)
+            template: __webpack_require__(190)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof appstate_service_1.AppState !== 'undefined' && appstate_service_1.AppState) === 'function' && _a) || Object, (typeof (_b = typeof authentication_service_1.Authentication !== 'undefined' && authentication_service_1.Authentication) === 'function' && _b) || Object])
     ], AppComponent);
@@ -20482,14 +22222,14 @@ exports.AppComponent = AppComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10)))
 
 /***/ },
-/* 70 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 // Angular 2
-var platform_browser_1 = __webpack_require__(46);
-var core_1 = __webpack_require__(7);
+var platform_browser_1 = __webpack_require__(33);
+var core_1 = __webpack_require__(3);
 // Environment Providers
 var PROVIDERS = [];
 // Angular debug tools in the dev console
@@ -20519,7 +22259,66 @@ exports.ENV_PROVIDERS = PROVIDERS.slice();
 
 
 /***/ },
-/* 71 */
+/* 91 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+/* This module is an example how you can package all services and components
+ from Angular2-Material into one Angular2 module, which you can import in other modules
+ */
+var core_1 = __webpack_require__(3);
+var button_1 = __webpack_require__(140);
+var card_1 = __webpack_require__(141);
+//import { MdButtonToggleModule }               from '@angular2-material/button-toggle';
+//import { MdCheckboxModule }                   from '@angular2-material/checkbox';
+//import { MdGridListModule }                   from '@angular2-material/grid-list';
+//import { MdIconModule }                       from '@angular2-material/icon';
+//import { MdInputModule }                      from '@angular2-material/input';
+//import { MdListModule }                       from '@angular2-material/list';
+//import { MdMenuModule }                       from '@angular2-material/menu';
+//import { MdProgressBarModule }                from '@angular2-material/progress-bar';
+//import { MdProgressCircleModule }             from '@angular2-material/progress-circle';
+//import { MdRadioModule }                      from '@angular2-material/radio';
+//import { MdSidenavModule }                    from '@angular2-material/sidenav';
+//import { MdSliderModule }                     from '@angular2-material/slider';
+//import { MdSlideToggleModule }                from '@angular2-material/slide-toggle';
+//import { MdTabsModule }                       from '@angular2-material/tabs';
+//import { MdToolbarModule }                    from '@angular2-material/toolbar';
+//import { MdTooltipModule }                    from '@angular2-material/tooltip';
+var MdModule = (function () {
+    function MdModule() {
+    }
+    MdModule.forRoot = function () {
+        return {
+            ngModule: MdModule
+        };
+    };
+    MdModule = __decorate([
+        core_1.NgModule({
+            exports: [
+                button_1.MdButtonModule,
+                card_1.MdCardModule
+            ]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], MdModule);
+    return MdModule;
+}());
+exports.MdModule = MdModule;
+
+
+/***/ },
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20529,30 +22328,165 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
+var Subject_1 = __webpack_require__(9);
 var Observable_1 = __webpack_require__(1);
-var ConnectableObservable_1 = __webpack_require__(53);
-var MulticastObservable = (function (_super) {
-    __extends(MulticastObservable, _super);
-    function MulticastObservable(source, subjectFactory, selector) {
+var Subscriber_1 = __webpack_require__(2);
+var Subscription_1 = __webpack_require__(14);
+/**
+ * @class ConnectableObservable<T>
+ */
+var ConnectableObservable = (function (_super) {
+    __extends(ConnectableObservable, _super);
+    function ConnectableObservable(source, subjectFactory) {
         _super.call(this);
         this.source = source;
         this.subjectFactory = subjectFactory;
-        this.selector = selector;
+        this._refCount = 0;
     }
-    MulticastObservable.prototype._subscribe = function (subscriber) {
-        var _a = this, selector = _a.selector, source = _a.source;
-        var connectable = new ConnectableObservable_1.ConnectableObservable(source, this.subjectFactory);
-        var subscription = selector(connectable).subscribe(subscriber);
-        subscription.add(connectable.connect());
+    ConnectableObservable.prototype._subscribe = function (subscriber) {
+        return this.getSubject().subscribe(subscriber);
+    };
+    ConnectableObservable.prototype.getSubject = function () {
+        var subject = this._subject;
+        if (!subject || subject.isStopped) {
+            this._subject = this.subjectFactory();
+        }
+        return this._subject;
+    };
+    ConnectableObservable.prototype.connect = function () {
+        var connection = this._connection;
+        if (!connection) {
+            connection = this._connection = new Subscription_1.Subscription();
+            connection.add(this.source
+                .subscribe(new ConnectableSubscriber(this.getSubject(), this)));
+            if (connection.closed) {
+                this._connection = null;
+                connection = Subscription_1.Subscription.EMPTY;
+            }
+            else {
+                this._connection = connection;
+            }
+        }
+        return connection;
+    };
+    ConnectableObservable.prototype.refCount = function () {
+        return this.lift(new RefCountOperator(this));
+    };
+    return ConnectableObservable;
+}(Observable_1.Observable));
+exports.ConnectableObservable = ConnectableObservable;
+exports.connectableObservableDescriptor = {
+    operator: { value: null },
+    _refCount: { value: 0, writable: true },
+    _subscribe: { value: ConnectableObservable.prototype._subscribe },
+    getSubject: { value: ConnectableObservable.prototype.getSubject },
+    connect: { value: ConnectableObservable.prototype.connect },
+    refCount: { value: ConnectableObservable.prototype.refCount }
+};
+var ConnectableSubscriber = (function (_super) {
+    __extends(ConnectableSubscriber, _super);
+    function ConnectableSubscriber(destination, connectable) {
+        _super.call(this, destination);
+        this.connectable = connectable;
+    }
+    ConnectableSubscriber.prototype._error = function (err) {
+        this._unsubscribe();
+        _super.prototype._error.call(this, err);
+    };
+    ConnectableSubscriber.prototype._complete = function () {
+        this._unsubscribe();
+        _super.prototype._complete.call(this);
+    };
+    ConnectableSubscriber.prototype._unsubscribe = function () {
+        var connectable = this.connectable;
+        if (connectable) {
+            this.connectable = null;
+            var connection = connectable._connection;
+            connectable._refCount = 0;
+            connectable._subject = null;
+            connectable._connection = null;
+            if (connection) {
+                connection.unsubscribe();
+            }
+        }
+    };
+    return ConnectableSubscriber;
+}(Subject_1.SubjectSubscriber));
+var RefCountOperator = (function () {
+    function RefCountOperator(connectable) {
+        this.connectable = connectable;
+    }
+    RefCountOperator.prototype.call = function (subscriber, source) {
+        var connectable = this.connectable;
+        connectable._refCount++;
+        var refCounter = new RefCountSubscriber(subscriber, connectable);
+        var subscription = source._subscribe(refCounter);
+        if (!refCounter.closed) {
+            refCounter.connection = connectable.connect();
+        }
         return subscription;
     };
-    return MulticastObservable;
-}(Observable_1.Observable));
-exports.MulticastObservable = MulticastObservable;
-//# sourceMappingURL=MulticastObservable.js.map
+    return RefCountOperator;
+}());
+var RefCountSubscriber = (function (_super) {
+    __extends(RefCountSubscriber, _super);
+    function RefCountSubscriber(destination, connectable) {
+        _super.call(this, destination);
+        this.connectable = connectable;
+    }
+    RefCountSubscriber.prototype._unsubscribe = function () {
+        var connectable = this.connectable;
+        if (!connectable) {
+            this.connection = null;
+            return;
+        }
+        this.connectable = null;
+        var refCount = connectable._refCount;
+        if (refCount <= 0) {
+            this.connection = null;
+            return;
+        }
+        connectable._refCount = refCount - 1;
+        if (refCount > 1) {
+            this.connection = null;
+            return;
+        }
+        ///
+        // Compare the local RefCountSubscriber's connection Subscription to the
+        // connection Subscription on the shared ConnectableObservable. In cases
+        // where the ConnectableObservable source synchronously emits values, and
+        // the RefCountSubscriber's dowstream Observers synchronously unsubscribe,
+        // execution continues to here before the RefCountOperator has a chance to
+        // supply the RefCountSubscriber with the shared connection Subscription.
+        // For example:
+        // ```
+        // Observable.range(0, 10)
+        //   .publish()
+        //   .refCount()
+        //   .take(5)
+        //   .subscribe();
+        // ```
+        // In order to account for this case, RefCountSubscriber should only dispose
+        // the ConnectableObservable's shared connection Subscription if the
+        // connection Subscription exists, *and* either:
+        //   a. RefCountSubscriber doesn't have a reference to the shared connection
+        //      Subscription yet, or,
+        //   b. RefCountSubscriber's connection Subscription reference is identical
+        //      to the shared connection Subscription
+        ///
+        var connection = this.connection;
+        var sharedConnection = connectable._connection;
+        this.connection = null;
+        if (sharedConnection && (!connection || sharedConnection === connection)) {
+            sharedConnection.unsubscribe();
+        }
+    };
+    return RefCountSubscriber;
+}(Subscriber_1.Subscriber));
+//# sourceMappingURL=ConnectableObservable.js.map
 
 /***/ },
-/* 72 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20562,12 +22496,12 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var root_1 = __webpack_require__(27);
+var root_1 = __webpack_require__(28);
 var tryCatch_1 = __webpack_require__(12);
 var errorObject_1 = __webpack_require__(11);
 var Observable_1 = __webpack_require__(1);
 var Subscriber_1 = __webpack_require__(2);
-var map_1 = __webpack_require__(473);
+var map_1 = __webpack_require__(502);
 function getCORSRequest() {
     if (root_1.root.XMLHttpRequest) {
         var xhr = new root_1.root.XMLHttpRequest();
@@ -20872,7 +22806,7 @@ var AjaxSubscriber = (function (_super) {
     };
     AjaxSubscriber.prototype.unsubscribe = function () {
         var _a = this, done = _a.done, xhr = _a.xhr;
-        if (!done && xhr && xhr.readyState !== 4) {
+        if (!done && xhr && xhr.readyState !== 4 && typeof xhr.abort === 'function') {
             xhr.abort();
         }
         _super.prototype.unsubscribe.call(this);
@@ -20951,7 +22885,7 @@ exports.AjaxTimeoutError = AjaxTimeoutError;
 //# sourceMappingURL=AjaxObservable.js.map
 
 /***/ },
-/* 73 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20961,8 +22895,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
 /**
  * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from previous items.
  * If a comparator function is provided, then it will be called for each item to test for whether or not that value should be emitted.
@@ -21040,7 +22974,7 @@ exports.DistinctSubscriber = DistinctSubscriber;
 //# sourceMappingURL=distinct.js.map
 
 /***/ },
-/* 74 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21051,39 +22985,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-/**
- * Emits only the first value emitted by the source Observable that meets some
- * condition.
- *
- * <span class="informal">Finds the first value that passes some test and emits
- * that.</span>
- *
- * <img src="./img/find.png" width="100%">
- *
- * `find` searches for the first item in the source Observable that matches the
- * specified condition embodied by the `predicate`, and returns the first
- * occurrence in the source. Unlike {@link first}, the `predicate` is required
- * in `find`, and does not emit an error if a valid value is not found.
- *
- * @example <caption>Find and emit the first click that happens on a DIV element</caption>
- * var clicks = Rx.Observable.fromEvent(document, 'click');
- * var result = clicks.find(ev => ev.target.tagName === 'DIV');
- * result.subscribe(x => console.log(x));
- *
- * @see {@link filter}
- * @see {@link first}
- * @see {@link findIndex}
- * @see {@link take}
- *
- * @param {function(value: T, index: number, source: Observable<T>): boolean} predicate
- * A function called with each item to test for condition matching.
- * @param {any} [thisArg] An optional argument to determine the value of `this`
- * in the `predicate` function.
- * @return {Observable<T>} An Observable of the first item that matches the
- * condition.
- * @method find
- * @owner Observable
- */
+/* tslint:disable:max-line-length */
 function find(predicate, thisArg) {
     if (typeof predicate !== 'function') {
         throw new TypeError('predicate is not a function');
@@ -21146,67 +23048,21 @@ exports.FindValueSubscriber = FindValueSubscriber;
 //# sourceMappingURL=find.js.map
 
 /***/ },
-/* 75 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var ArrayObservable_1 = __webpack_require__(31);
-var mergeAll_1 = __webpack_require__(56);
-var isScheduler_1 = __webpack_require__(25);
-/**
- * Creates an output Observable which concurrently emits all values from every
- * given input Observable.
- *
- * <span class="informal">Flattens multiple Observables together by blending
- * their values into one Observable.</span>
- *
- * <img src="./img/merge.png" width="100%">
- *
- * `merge` subscribes to each given input Observable (either the source or an
- * Observable given as argument), and simply forwards (without doing any
- * transformation) all the values from all the input Observables to the output
- * Observable. The output Observable only completes once all input Observables
- * have completed. Any error delivered by an input Observable will be immediately
- * emitted on the output Observable.
- *
- * @example <caption>Merge together two Observables: 1s interval and clicks</caption>
- * var clicks = Rx.Observable.fromEvent(document, 'click');
- * var timer = Rx.Observable.interval(1000);
- * var clicksOrTimer = clicks.merge(timer);
- * clicksOrTimer.subscribe(x => console.log(x));
- *
- * @example <caption>Merge together 3 Observables, but only 2 run concurrently</caption>
- * var timer1 = Rx.Observable.interval(1000).take(10);
- * var timer2 = Rx.Observable.interval(2000).take(6);
- * var timer3 = Rx.Observable.interval(500).take(10);
- * var concurrent = 2; // the argument
- * var merged = timer1.merge(timer2, timer3, concurrent);
- * merged.subscribe(x => console.log(x));
- *
- * @see {@link mergeAll}
- * @see {@link mergeMap}
- * @see {@link mergeMapTo}
- * @see {@link mergeScan}
- *
- * @param {Observable} other An input Observable to merge with the source
- * Observable. More than one input Observables may be given as argument.
- * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of input
- * Observables being subscribed to concurrently.
- * @param {Scheduler} [scheduler=null] The Scheduler to use for managing
- * concurrency of input Observables.
- * @return {Observable} an Observable that emits items that are the result of
- * every input Observable.
- * @method merge
- * @owner Observable
- */
+var mergeAll_1 = __webpack_require__(61);
+var isScheduler_1 = __webpack_require__(26);
+/* tslint:disable:max-line-length */
 function merge() {
     var observables = [];
     for (var _i = 0; _i < arguments.length; _i++) {
         observables[_i - 0] = arguments[_i];
     }
-    observables.unshift(this);
-    return mergeStatic.apply(this, observables);
+    return this.lift.call(mergeStatic.apply(void 0, [this].concat(observables)));
 }
 exports.merge = merge;
 /* tslint:enable:max-line-length */
@@ -21244,8 +23100,7 @@ exports.merge = merge;
  * @see {@link mergeMapTo}
  * @see {@link mergeScan}
  *
- * @param {Observable} input1 An input Observable to merge with others.
- * @param {Observable} input2 An input Observable to merge with others.
+ * @param {...Observable} observables Input Observables to merge together.
  * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of input
  * Observables being subscribed to concurrently.
  * @param {Scheduler} [scheduler=null] The Scheduler to use for managing
@@ -21273,7 +23128,7 @@ function mergeStatic() {
     else if (typeof last === 'number') {
         concurrent = observables.pop();
     }
-    if (observables.length === 1) {
+    if (scheduler === null && observables.length === 1) {
         return observables[0];
     }
     return new ArrayObservable_1.ArrayObservable(observables, scheduler).lift(new mergeAll_1.MergeAllOperator(concurrent));
@@ -21282,7 +23137,7 @@ exports.mergeStatic = mergeStatic;
 //# sourceMappingURL=merge.js.map
 
 /***/ },
-/* 76 */
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21292,51 +23147,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
-/**
- * Projects each source value to the same Observable which is merged multiple
- * times in the output Observable.
- *
- * <span class="informal">It's like {@link mergeMap}, but maps each value always
- * to the same inner Observable.</span>
- *
- * <img src="./img/mergeMapTo.png" width="100%">
- *
- * Maps each source value to the given Observable `innerObservable` regardless
- * of the source value, and then merges those resulting Observables into one
- * single Observable, which is the output Observable.
- *
- * @example <caption>For each click event, start an interval Observable ticking every 1 second</caption>
- * var clicks = Rx.Observable.fromEvent(document, 'click');
- * var result = clicks.mergeMapTo(Rx.Observable.interval(1000));
- * result.subscribe(x => console.log(x));
- *
- * @see {@link concatMapTo}
- * @see {@link merge}
- * @see {@link mergeAll}
- * @see {@link mergeMap}
- * @see {@link mergeScan}
- * @see {@link switchMapTo}
- *
- * @param {Observable} innerObservable An Observable to replace each value from
- * the source Observable.
- * @param {function(outerValue: T, innerValue: I, outerIndex: number, innerIndex: number): any} [resultSelector]
- * A function to produce the value on the output Observable based on the values
- * and the indices of the source (outer) emission and the inner Observable
- * emission. The arguments passed to this function are:
- * - `outerValue`: the value that came from the source
- * - `innerValue`: the value that came from the projected Observable
- * - `outerIndex`: the "index" of the value that came from the source
- * - `innerIndex`: the "index" of the value from the projected Observable
- * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of input
- * Observables being subscribed to concurrently.
- * @return {Observable} An Observable that emits items from the given
- * `innerObservable` (and optionally transformed through `resultSelector`) every
- * time a value is emitted on the source Observable.
- * @method mergeMapTo
- * @owner Observable
- */
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
+/* tslint:disable:max-line-length */
 function mergeMapTo(innerObservable, resultSelector, concurrent) {
     if (concurrent === void 0) { concurrent = Number.POSITIVE_INFINITY; }
     if (typeof resultSelector === 'number') {
@@ -21442,7 +23255,7 @@ exports.MergeMapToSubscriber = MergeMapToSubscriber;
 //# sourceMappingURL=mergeMapTo.js.map
 
 /***/ },
-/* 77 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21452,10 +23265,11 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var FromObservable_1 = __webpack_require__(462);
-var isArray_1 = __webpack_require__(45);
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
+var FromObservable_1 = __webpack_require__(492);
+var isArray_1 = __webpack_require__(48);
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
+/* tslint:disable:max-line-length */
 function onErrorResumeNext() {
     var nextSources = [];
     for (var _i = 0; _i < arguments.length; _i++) {
@@ -21523,7 +23337,7 @@ var OnErrorResumeNextSubscriber = (function (_super) {
 //# sourceMappingURL=onErrorResumeNext.js.map
 
 /***/ },
-/* 78 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21533,18 +23347,11 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var isArray_1 = __webpack_require__(45);
+var isArray_1 = __webpack_require__(48);
 var ArrayObservable_1 = __webpack_require__(31);
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
-/**
- * Returns an Observable that mirrors the first source Observable to emit an item
- * from the combination of this Observable and supplied Observables
- * @param {...Observables} ...observables sources used to race for which Observable emits first.
- * @return {Observable} an Observable that mirrors the output of the first Observable to emit an item.
- * @method race
- * @owner Observable
- */
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
+/* tslint:disable:max-line-length */
 function race() {
     var observables = [];
     for (var _i = 0; _i < arguments.length; _i++) {
@@ -21555,8 +23362,7 @@ function race() {
     if (observables.length === 1 && isArray_1.isArray(observables[0])) {
         observables = observables[0];
     }
-    observables.unshift(this);
-    return raceStatic.apply(this, observables);
+    return this.lift.call(raceStatic.apply(void 0, [this].concat(observables)));
 }
 exports.race = race;
 function raceStatic() {
@@ -21640,7 +23446,7 @@ exports.RaceSubscriber = RaceSubscriber;
 //# sourceMappingURL=race.js.map
 
 /***/ },
-/* 79 */
+/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21705,7 +23511,7 @@ var TimeIntervalSubscriber = (function (_super) {
 //# sourceMappingURL=timeInterval.js.map
 
 /***/ },
-/* 80 */
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21761,7 +23567,7 @@ var TimestampSubscriber = (function (_super) {
 //# sourceMappingURL=timestamp.js.map
 
 /***/ },
-/* 81 */
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21771,8 +23577,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var AsyncAction_1 = __webpack_require__(59);
-var AsyncScheduler_1 = __webpack_require__(60);
+var AsyncAction_1 = __webpack_require__(64);
+var AsyncScheduler_1 = __webpack_require__(65);
 var VirtualTimeScheduler = (function (_super) {
     __extends(VirtualTimeScheduler, _super);
     function VirtualTimeScheduler(SchedulerAction, maxFrames) {
@@ -21865,18 +23671,18 @@ exports.VirtualAction = VirtualAction;
 //# sourceMappingURL=VirtualTimeScheduler.js.map
 
 /***/ },
-/* 82 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var AsapAction_1 = __webpack_require__(381);
-var AsapScheduler_1 = __webpack_require__(382);
+var AsapAction_1 = __webpack_require__(410);
+var AsapScheduler_1 = __webpack_require__(411);
 exports.asap = new AsapScheduler_1.AsapScheduler(AsapAction_1.AsapAction);
 //# sourceMappingURL=asap.js.map
 
 /***/ },
-/* 83 */
+/* 104 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -21893,12 +23699,12 @@ exports.SubscriptionLog = SubscriptionLog;
 //# sourceMappingURL=SubscriptionLog.js.map
 
 /***/ },
-/* 84 */
+/* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var SubscriptionLog_1 = __webpack_require__(83);
+var SubscriptionLog_1 = __webpack_require__(104);
 var SubscriptionLoggable = (function () {
     function SubscriptionLoggable() {
         this.subscriptions = [];
@@ -21918,7 +23724,38 @@ exports.SubscriptionLoggable = SubscriptionLoggable;
 //# sourceMappingURL=SubscriptionLoggable.js.map
 
 /***/ },
-/* 85 */
+/* 106 */
+/***/ function(module, exports) {
+
+"use strict";
+"use strict";
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+/**
+ * An error thrown when duetime elapses.
+ *
+ * @see {@link timeout}
+ *
+ * @class TimeoutError
+ */
+var TimeoutError = (function (_super) {
+    __extends(TimeoutError, _super);
+    function TimeoutError() {
+        var err = _super.call(this, 'Timeout has occurred');
+        this.name = err.name = 'TimeoutError';
+        this.stack = err.stack;
+        this.message = err.message;
+    }
+    return TimeoutError;
+}(Error));
+exports.TimeoutError = TimeoutError;
+//# sourceMappingURL=TimeoutError.js.map
+
+/***/ },
+/* 107 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -21937,7 +23774,7 @@ exports.applyMixins = applyMixins;
 //# sourceMappingURL=applyMixins.js.map
 
 /***/ },
-/* 86 */
+/* 108 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -21948,7 +23785,7 @@ exports.noop = noop;
 //# sourceMappingURL=noop.js.map
 
 /***/ },
-/* 87 */
+/* 109 */
 /***/ function(module, exports) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {module.exports = __webpack_amd_options__;
@@ -21956,107 +23793,106 @@ exports.noop = noop;
 /* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ },
-/* 88 */
+/* 110 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(111);
 
 /***/ },
-/* 89 */
+/* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(190);
 
 /***/ },
-/* 90 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(233);
 
 /***/ },
-/* 91 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(236);
 
 /***/ },
-/* 92 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(354);
 
 /***/ },
-/* 93 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(386);
+module.exports = (__webpack_require__(0))(387);
 
 /***/ },
-/* 94 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(44);
+module.exports = (__webpack_require__(0))(43);
 
 /***/ },
-/* 95 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(479);
+module.exports = (__webpack_require__(0))(480);
 
 /***/ },
-/* 96 */
+/* 118 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(643);
+module.exports = (__webpack_require__(0))(642);
 
 /***/ },
-/* 97 */
+/* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(667);
+module.exports = (__webpack_require__(0))(666);
 
 /***/ },
-/* 98 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(688);
+module.exports = (__webpack_require__(0))(687);
 
 /***/ },
-/* 99 */
+/* 121 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(99);
 
 /***/ },
-/* 100 */
-/***/ function(module, exports) {
-
-module.exports = polyfills_lib;
-
-/***/ },
-/* 101 */
+/* 122 */
 /***/ function(module, exports, __webpack_require__) {
 
-"use strict";
 "use strict";
 /**
  * AOT Build
  * MAIN ANGULAR2 APP ENTRY POINT
  * This is where we bootstrap the Angular2 application
  */
-// These 2 imports are needed here first, or app throws errors during bootstrapping
-// import 'core-js/shim';
-__webpack_require__(471);
-__webpack_require__(167);
-var core_1 = __webpack_require__(7);
-var platform_browser_1 = __webpack_require__(46);
-var environment_1 = __webpack_require__(70);
-var hmr_1 = __webpack_require__(95);
-var utility_service_1 = __webpack_require__(5);
+"use strict";
+/**
+ * reflect-metadata needs to be imported here, in the app bundle, or app throws errors during bootstrapping
+ */
+__webpack_require__(198);
+var core_1 = __webpack_require__(3);
+var platform_browser_1 = __webpack_require__(33);
+var environment_1 = __webpack_require__(90);
+var hmr_1 = __webpack_require__(117);
+var utility_service_1 = __webpack_require__(6);
 /**
  * AppComponent and AppComponent Services
  */
-var app_module_ngfactory_1 = __webpack_require__(123);
+var app_module_ngfactory_1 = __webpack_require__(154);
+/**
+ * zone.js MUST be imported AFTER AppModule/AppModuleNgFactory, otherwise it will throw
+ * error * "ZoneAware promise has been overriden" during bootstrapping
+ */
+__webpack_require__(425);
 if (true) {
     core_1.enableProdMode();
 }
@@ -22083,70 +23919,773 @@ hmr_1.bootloader(main);
 
 
 /***/ },
-/* 102 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(92);
-
-/***/ },
-/* 103 */,
-/* 104 */,
-/* 105 */
+/* 123 */,
+/* 124 */,
+/* 125 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(124);
 
 /***/ },
-/* 106 */
+/* 126 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(322);
 
 /***/ },
-/* 107 */
+/* 127 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(110);
 
 /***/ },
-/* 108 */
+/* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(140);
 
 /***/ },
-/* 109 */
+/* 129 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(286);
 
 /***/ },
-/* 110 */
+/* 130 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(320);
 
 /***/ },
-/* 111 */
+/* 131 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = (__webpack_require__(0))(323);
 
 /***/ },
-/* 112 */
+/* 132 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(371);
+module.exports = (__webpack_require__(0))(372);
 
 /***/ },
-/* 113 */,
-/* 114 */,
-/* 115 */,
-/* 116 */,
-/* 117 */,
-/* 118 */,
-/* 119 */,
-/* 120 */
+/* 133 */,
+/* 134 */,
+/* 135 */,
+/* 136 */,
+/* 137 */,
+/* 138 */,
+/* 139 */,
+/* 140 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button__ = __webpack_require__(75);
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "MdButton", function() { return __WEBPACK_IMPORTED_MODULE_0__button__["MdButton"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "MdAnchor", function() { return __WEBPACK_IMPORTED_MODULE_0__button__["MdAnchor"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "MdButtonModule", function() { return __WEBPACK_IMPORTED_MODULE_0__button__["MdButtonModule"]; });
+
+
+//# sourceMappingURL=index.js.map
+
+
+/***/ },
+/* 141 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card__ = __webpack_require__(76);
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "MdCardContent", function() { return __WEBPACK_IMPORTED_MODULE_0__card__["MdCardContent"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "MdCardTitle", function() { return __WEBPACK_IMPORTED_MODULE_0__card__["MdCardTitle"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "MdCardSubtitle", function() { return __WEBPACK_IMPORTED_MODULE_0__card__["MdCardSubtitle"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "MdCardActions", function() { return __WEBPACK_IMPORTED_MODULE_0__card__["MdCardActions"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "MdCard", function() { return __WEBPACK_IMPORTED_MODULE_0__card__["MdCard"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "MdCardHeader", function() { return __WEBPACK_IMPORTED_MODULE_0__card__["MdCardHeader"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "MdCardTitleGroup", function() { return __WEBPACK_IMPORTED_MODULE_0__card__["MdCardTitleGroup"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(exports, "MdCardModule", function() { return __WEBPACK_IMPORTED_MODULE_0__card__["MdCardModule"]; });
+
+
+//# sourceMappingURL=index.js.map
+
+
+/***/ },
+/* 142 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return booleanFieldValueFactory; });
+/**
+ * Annotation Factory that allows HTML style boolean attributes. For example,
+ * a field declared like this:
+
+ * @Directive({ selector: 'component' }) class MyComponent {
+ *   @Input() @BooleanFieldValueFactory() myField: boolean;
+ * }
+ *
+ * You could set it up this way:
+ *   <component myField>
+ * or:
+ *   <component myField="">
+ * @deprecated
+ */
+function booleanFieldValueFactory() {
+    return function booleanFieldValueMetadata(target, key) {
+        var defaultValue = target[key];
+        var localKey = "__md_private_symbol_" + key;
+        target[localKey] = defaultValue;
+        Object.defineProperty(target, key, {
+            get: function () { return this[localKey]; },
+            set: function (value) {
+                this[localKey] = value != null && "" + value !== 'false';
+            }
+        });
+    };
+}
+
+
+//# sourceMappingURL=field-value.js.map
+
+
+/***/ },
+/* 143 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* unused harmony export MdUniqueSelectionDispatcher */
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+/**
+ * Class to coordinate unique selection based on name.
+ * Intended to be consumed as an Angular service.
+ * This service is needed because native radio change events are only fired on the item currently
+ * being selected, and we still need to uncheck the previous selection.
+ *
+ * This service does not *store* any IDs and names because they may change at any time, so it is
+ * less error-prone if they are simply passed through when the events occur.
+ */
+var MdUniqueSelectionDispatcher = (function () {
+    function MdUniqueSelectionDispatcher() {
+        this._listeners = [];
+    }
+    /** Notify other items that selection for the given name has been set. */
+    MdUniqueSelectionDispatcher.prototype.notify = function (id, name) {
+        for (var _i = 0, _a = this._listeners; _i < _a.length; _i++) {
+            var listener = _a[_i];
+            listener(id, name);
+        }
+    };
+    /** Listen for future changes to item selection. */
+    MdUniqueSelectionDispatcher.prototype.listen = function (listener) {
+        this._listeners.push(listener);
+    };
+    MdUniqueSelectionDispatcher = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
+        __metadata('design:paramtypes', [])
+    ], MdUniqueSelectionDispatcher);
+    return MdUniqueSelectionDispatcher;
+}());
+
+//# sourceMappingURL=unique-selection-dispatcher.js.map
+
+
+/***/ },
+/* 144 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__line_line__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__rtl_dir__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ripple_ripple__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__portal_portal_directives__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__overlay_overlay_directives__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__a11y_live_announcer__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__portal_portal__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__portal_dom_portal_host__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__overlay_overlay__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__overlay_overlay_container__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__overlay_overlay_ref__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__overlay_overlay_state__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__overlay_position_connected_position_strategy__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__overlay_position_connected_position__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__gestures_MdGestureConfig__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__coordination_unique_selection_dispatcher__ = __webpack_require__(143);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__style_apply_transform__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__errors_error__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__annotations_field_value__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__keyboard_keycodes__ = __webpack_require__(146);
+/* unused harmony export MdCoreModule */
+/* unused harmony reexport RtlModule */
+/* unused harmony reexport Dir */
+/* unused harmony reexport BasePortalHost */
+/* unused harmony reexport ComponentPortal */
+/* unused harmony reexport Portal */
+/* unused harmony reexport TemplatePortal */
+/* unused harmony reexport PortalHostDirective */
+/* unused harmony reexport TemplatePortalDirective */
+/* unused harmony reexport PortalModule */
+/* unused harmony reexport DomPortalHost */
+/* unused harmony reexport OVERLAY_PROVIDERS */
+/* unused harmony reexport Overlay */
+/* unused harmony reexport OverlayContainer */
+/* unused harmony reexport OverlayRef */
+/* unused harmony reexport OverlayState */
+/* unused harmony reexport OverlayOrigin */
+/* unused harmony reexport OverlayModule */
+/* unused harmony reexport ConnectedOverlayDirective */
+/* unused harmony namespace reexport */
+/* unused harmony namespace reexport */
+/* unused harmony reexport MdGestureConfig */
+/* unused harmony reexport MdRipple */
+/* harmony reexport (binding) */ __webpack_require__.d(exports, "c", function() { return __WEBPACK_IMPORTED_MODULE_3__ripple_ripple__["MdRippleModule"]; });
+/* unused harmony reexport MdLiveAnnouncer */
+/* unused harmony reexport LIVE_ANNOUNCER_ELEMENT_TOKEN */
+/* unused harmony reexport MdUniqueSelectionDispatcher */
+/* unused harmony reexport MdLine */
+/* unused harmony reexport MdLineSetter */
+/* unused harmony reexport MdLineModule */
+/* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_17__style_apply_transform__["a"]; });
+/* unused harmony reexport MdError */
+/* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_19__annotations_field_value__["a"]; });
+/* unused harmony namespace reexport */
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+// RTL
+
+// Portals
+
+
+
+// Overlay
+
+
+
+
+
+
+
+// Gestures
+
+// Ripple
+
+// a11y
+
+
+
+// Style
+
+// Error
+
+// Annotations.
+
+// Misc
+// Keybindings
+
+var MdCoreModule = (function () {
+    function MdCoreModule() {
+    }
+    MdCoreModule.forRoot = function () {
+        return {
+            ngModule: MdCoreModule,
+            providers: [__WEBPACK_IMPORTED_MODULE_6__a11y_live_announcer__["a" /* MdLiveAnnouncer */]]
+        };
+    };
+    MdCoreModule = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+            imports: [__WEBPACK_IMPORTED_MODULE_1__line_line__["a" /* MdLineModule */], __WEBPACK_IMPORTED_MODULE_2__rtl_dir__["a" /* RtlModule */], __WEBPACK_IMPORTED_MODULE_3__ripple_ripple__["MdRippleModule"], __WEBPACK_IMPORTED_MODULE_4__portal_portal_directives__["a" /* PortalModule */], __WEBPACK_IMPORTED_MODULE_5__overlay_overlay_directives__["a" /* OverlayModule */]],
+            exports: [__WEBPACK_IMPORTED_MODULE_1__line_line__["a" /* MdLineModule */], __WEBPACK_IMPORTED_MODULE_2__rtl_dir__["a" /* RtlModule */], __WEBPACK_IMPORTED_MODULE_3__ripple_ripple__["MdRippleModule"], __WEBPACK_IMPORTED_MODULE_4__portal_portal_directives__["a" /* PortalModule */], __WEBPACK_IMPORTED_MODULE_5__overlay_overlay_directives__["a" /* OverlayModule */]],
+        }), 
+        __metadata('design:paramtypes', [])
+    ], MdCoreModule);
+    return MdCoreModule;
+}());
+
+//# sourceMappingURL=core.js.map
+
+
+/***/ },
+/* 145 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(33);
+/* unused harmony export MdGestureConfig */
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/* Adjusts configuration of our gesture library, Hammer. */
+var MdGestureConfig = (function (_super) {
+    __extends(MdGestureConfig, _super);
+    function MdGestureConfig() {
+        _super.apply(this, arguments);
+        /* List of new event names to add to the gesture support list */
+        this.events = [
+            'drag',
+            'dragstart',
+            'dragend',
+            'dragright',
+            'dragleft',
+            'longpress',
+            'slide',
+            'slidestart',
+            'slideend',
+            'slideright',
+            'slideleft'
+        ];
+    }
+    /*
+     * Builds Hammer instance manually to add custom recognizers that match the Material Design spec.
+     *
+     * Our gesture names come from the Material Design gestures spec:
+     * https://www.google.com/design/spec/patterns/gestures.html#gestures-touch-mechanics
+     *
+     * More information on default recognizers can be found in Hammer docs:
+     * http://hammerjs.github.io/recognizer-pan/
+     * http://hammerjs.github.io/recognizer-press/
+     *
+     * TODO: Confirm threshold numbers with Material Design UX Team
+     * */
+    MdGestureConfig.prototype.buildHammer = function (element) {
+        var mc = new Hammer(element);
+        // Default Hammer Recognizers.
+        var pan = new Hammer.Pan();
+        var swipe = new Hammer.Swipe();
+        var press = new Hammer.Press();
+        // Notice that a HammerJS recognizer can only depend on one other recognizer once.
+        // Otherwise the previous `recognizeWith` will be dropped.
+        var slide = this._createRecognizer(pan, { event: 'slide', threshold: 0 }, swipe);
+        var drag = this._createRecognizer(slide, { event: 'drag', threshold: 6 }, swipe);
+        var longpress = this._createRecognizer(press, { event: 'longpress', time: 500 });
+        // Overwrite the default `pan` event to use the swipe event.
+        pan.recognizeWith(swipe);
+        // Add customized gestures to Hammer manager
+        mc.add([swipe, press, pan, drag, slide, longpress]);
+        return mc;
+    };
+    /** Creates a new recognizer, without affecting the default recognizers of HammerJS */
+    MdGestureConfig.prototype._createRecognizer = function (base, options) {
+        var inheritances = [];
+        for (var _i = 2; _i < arguments.length; _i++) {
+            inheritances[_i - 2] = arguments[_i];
+        }
+        var recognizer = new base.constructor(options);
+        inheritances.push(base);
+        inheritances.forEach(function (item) { return recognizer.recognizeWith(item); });
+        return recognizer;
+    };
+    MdGestureConfig = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
+        __metadata('design:paramtypes', [])
+    ], MdGestureConfig);
+    return MdGestureConfig;
+}(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["HammerGestureConfig"]));
+
+//# sourceMappingURL=MdGestureConfig.js.map
+
+
+/***/ },
+/* 146 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* unused harmony export UP_ARROW */
+/* unused harmony export DOWN_ARROW */
+/* unused harmony export RIGHT_ARROW */
+/* unused harmony export LEFT_ARROW */
+/* unused harmony export ENTER */
+/* unused harmony export TAB */
+// Due to a bug in the ChromeDriver, Angular 2 keyboard events are not triggered by `sendKeys`
+// during E2E tests when using dot notation such as `(keydown.rightArrow)`. To get around this,
+// we are temporarily using a single (keydown) handler.
+// See: https://github.com/angular/angular/issues/9419
+var UP_ARROW = 38;
+var DOWN_ARROW = 40;
+var RIGHT_ARROW = 39;
+var LEFT_ARROW = 37;
+var ENTER = 13;
+var TAB = 9;
+
+//# sourceMappingURL=keycodes.js.map
+
+
+/***/ },
+/* 147 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(Promise) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular2_material_core__ = __webpack_require__(35);
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return GlobalPositionStrategy; });
+
+/**
+ * A strategy for positioning overlays. Using this strategy, an overlay is given an
+ * explicit position relative to the browser's viewport.
+ */
+var GlobalPositionStrategy = (function () {
+    function GlobalPositionStrategy() {
+        this._cssPosition = 'absolute';
+        this._top = '';
+        this._bottom = '';
+        this._left = '';
+        this._right = '';
+        /** Array of individual applications of translateX(). Currently only for centering. */
+        this._translateX = [];
+        /** Array of individual applications of translateY(). Currently only for centering. */
+        this._translateY = [];
+    }
+    /** Sets the element to usee CSS position: fixed */
+    GlobalPositionStrategy.prototype.fixed = function () {
+        this._cssPosition = 'fixed';
+        return this;
+    };
+    /** Sets the element to usee CSS position: absolute. This is the default. */
+    GlobalPositionStrategy.prototype.absolute = function () {
+        this._cssPosition = 'absolute';
+        return this;
+    };
+    /** Sets the top position of the overlay. Clears any previously set vertical position. */
+    GlobalPositionStrategy.prototype.top = function (value) {
+        this._bottom = '';
+        this._translateY = [];
+        this._top = value;
+        return this;
+    };
+    /** Sets the left position of the overlay. Clears any previously set horizontal position. */
+    GlobalPositionStrategy.prototype.left = function (value) {
+        this._right = '';
+        this._translateX = [];
+        this._left = value;
+        return this;
+    };
+    /** Sets the bottom position of the overlay. Clears any previously set vertical position. */
+    GlobalPositionStrategy.prototype.bottom = function (value) {
+        this._top = '';
+        this._translateY = [];
+        this._bottom = value;
+        return this;
+    };
+    /** Sets the right position of the overlay. Clears any previously set horizontal position. */
+    GlobalPositionStrategy.prototype.right = function (value) {
+        this._left = '';
+        this._translateX = [];
+        this._right = value;
+        return this;
+    };
+    /**
+     * Centers the overlay horizontally with an optional offset.
+     * Clears any previously set horizontal position.
+     */
+    GlobalPositionStrategy.prototype.centerHorizontally = function (offset) {
+        if (offset === void 0) { offset = '0px'; }
+        this._left = '50%';
+        this._right = '';
+        this._translateX = ['-50%', offset];
+        return this;
+    };
+    /**
+     * Centers the overlay vertically with an optional offset.
+     * Clears any previously set vertical position.
+     */
+    GlobalPositionStrategy.prototype.centerVertically = function (offset) {
+        if (offset === void 0) { offset = '0px'; }
+        this._top = '50%';
+        this._bottom = '';
+        this._translateY = ['-50%', offset];
+        return this;
+    };
+    /**
+     * Apply the position to the element.
+     * TODO: internal
+     */
+    GlobalPositionStrategy.prototype.apply = function (element) {
+        element.style.position = this._cssPosition;
+        element.style.top = this._top;
+        element.style.left = this._left;
+        element.style.bottom = this._bottom;
+        element.style.right = this._right;
+        // TODO(jelbourn): we don't want to always overwrite the transform property here,
+        // because it will need to be used for animations.
+        var tranlateX = this._reduceTranslateValues('translateX', this._translateX);
+        var translateY = this._reduceTranslateValues('translateY', this._translateY);
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular2_material_core__["a" /* applyCssTransform */])(element, tranlateX + " " + translateY);
+        return Promise.resolve(null);
+    };
+    /** Reduce a list of translate values to a string that can be used in the transform property */
+    GlobalPositionStrategy.prototype._reduceTranslateValues = function (translateFn, values) {
+        return values.map(function (t) { return (translateFn + "(" + t + ")"); }).join(' ');
+    };
+    return GlobalPositionStrategy;
+}());
+
+//# sourceMappingURL=global-position-strategy.js.map
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(24)))
+
+/***/ },
+/* 148 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__viewport_ruler__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__connected_position_strategy__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global_position_strategy__ = __webpack_require__(147);
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return OverlayPositionBuilder; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/** Builder for overlay position strategy. */
+var OverlayPositionBuilder = (function () {
+    function OverlayPositionBuilder(_viewportRuler) {
+        this._viewportRuler = _viewportRuler;
+    }
+    /** Creates a global position strategy. */
+    OverlayPositionBuilder.prototype.global = function () {
+        return new __WEBPACK_IMPORTED_MODULE_3__global_position_strategy__["a" /* GlobalPositionStrategy */]();
+    };
+    /** Creates a relative position strategy. */
+    OverlayPositionBuilder.prototype.connectedTo = function (elementRef, originPos, overlayPos) {
+        return new __WEBPACK_IMPORTED_MODULE_1__connected_position_strategy__["a" /* ConnectedPositionStrategy */](elementRef, originPos, overlayPos, this._viewportRuler);
+    };
+    OverlayPositionBuilder = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["Injectable"])(), 
+        __metadata('design:paramtypes', [__WEBPACK_IMPORTED_MODULE_0__viewport_ruler__["a" /* ViewportRuler */]])
+    ], OverlayPositionBuilder);
+    return OverlayPositionBuilder;
+}());
+
+//# sourceMappingURL=overlay-position-builder.js.map
+
+
+/***/ },
+/* 149 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return ForegroundRippleState; });
+/* unused harmony export ForegroundRipple */
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return RippleRenderer; });
+/** TODO: internal */
+var ForegroundRippleState;
+(function (ForegroundRippleState) {
+    ForegroundRippleState[ForegroundRippleState["NEW"] = 0] = "NEW";
+    ForegroundRippleState[ForegroundRippleState["EXPANDING"] = 1] = "EXPANDING";
+    ForegroundRippleState[ForegroundRippleState["FADING_OUT"] = 2] = "FADING_OUT";
+})(ForegroundRippleState || (ForegroundRippleState = {}));
+/**
+ * Wrapper for a foreground ripple DOM element and its animation state.
+ * TODO: internal
+ */
+var ForegroundRipple = (function () {
+    function ForegroundRipple(rippleElement) {
+        this.rippleElement = rippleElement;
+        this.state = ForegroundRippleState.NEW;
+    }
+    return ForegroundRipple;
+}());
+var RIPPLE_SPEED_PX_PER_SECOND = 1000;
+var MIN_RIPPLE_FILL_TIME_SECONDS = 0.1;
+var MAX_RIPPLE_FILL_TIME_SECONDS = 0.3;
+/**
+ * Returns the distance from the point (x, y) to the furthest corner of a rectangle.
+ */
+var distanceToFurthestCorner = function (x, y, rect) {
+    var distX = Math.max(Math.abs(x - rect.left), Math.abs(x - rect.right));
+    var distY = Math.max(Math.abs(y - rect.top), Math.abs(y - rect.bottom));
+    return Math.sqrt(distX * distX + distY * distY);
+};
+/**
+ * Helper service that performs DOM manipulations. Not intended to be used outside this module.
+ * The constructor takes a reference to the ripple directive's host element and a map of DOM
+ * event handlers to be installed on the element that triggers ripple animations.
+ * This will eventually become a custom renderer once Angular support exists.
+ * TODO: internal
+ */
+var RippleRenderer = (function () {
+    function RippleRenderer(_elementRef, _eventHandlers) {
+        this._eventHandlers = _eventHandlers;
+        this._rippleElement = _elementRef.nativeElement;
+        // It might be nice to delay creating the background until it's needed, but doing this in
+        // fadeInRippleBackground causes the first click event to not be handled reliably.
+        this._backgroundDiv = document.createElement('div');
+        this._backgroundDiv.classList.add('md-ripple-background');
+        this._rippleElement.appendChild(this._backgroundDiv);
+    }
+    /**
+     * Installs event handlers on the given trigger element, and removes event handlers from the
+     * previous trigger if needed.
+     */
+    RippleRenderer.prototype.setTriggerElement = function (newTrigger) {
+        var _this = this;
+        if (this._triggerElement !== newTrigger) {
+            if (this._triggerElement) {
+                this._eventHandlers.forEach(function (eventHandler, eventName) {
+                    _this._triggerElement.removeEventListener(eventName, eventHandler);
+                });
+            }
+            this._triggerElement = newTrigger;
+            if (this._triggerElement) {
+                this._eventHandlers.forEach(function (eventHandler, eventName) {
+                    _this._triggerElement.addEventListener(eventName, eventHandler);
+                });
+            }
+        }
+    };
+    /**
+     * Installs event handlers on the host element of the md-ripple directive.
+     */
+    RippleRenderer.prototype.setTriggerElementToHost = function () {
+        this.setTriggerElement(this._rippleElement);
+    };
+    /**
+     * Removes event handlers from the current trigger element if needed.
+     */
+    RippleRenderer.prototype.clearTriggerElement = function () {
+        this.setTriggerElement(null);
+    };
+    /**
+     * Creates a foreground ripple and sets its animation to expand and fade in from the position
+     * given by rippleOriginLeft and rippleOriginTop (or from the center of the <md-ripple>
+     * bounding rect if centered is true).
+     */
+    RippleRenderer.prototype.createForegroundRipple = function (rippleOriginLeft, rippleOriginTop, color, centered, radius, speedFactor, transitionEndCallback) {
+        var parentRect = this._rippleElement.getBoundingClientRect();
+        // Create a foreground ripple div with the size and position of the fully expanded ripple.
+        // When the div is created, it's given a transform style that causes the ripple to be displayed
+        // small and centered on the event location (or the center of the bounding rect if the centered
+        // argument is true). Removing that transform causes the ripple to animate to its natural size.
+        var startX = centered ? (parentRect.left + parentRect.width / 2) : rippleOriginLeft;
+        var startY = centered ? (parentRect.top + parentRect.height / 2) : rippleOriginTop;
+        var offsetX = startX - parentRect.left;
+        var offsetY = startY - parentRect.top;
+        var maxRadius = radius > 0 ? radius : distanceToFurthestCorner(startX, startY, parentRect);
+        var rippleDiv = document.createElement('div');
+        this._rippleElement.appendChild(rippleDiv);
+        rippleDiv.classList.add('md-ripple-foreground');
+        rippleDiv.style.left = (offsetX - maxRadius) + "px";
+        rippleDiv.style.top = (offsetY - maxRadius) + "px";
+        rippleDiv.style.width = 2 * maxRadius + "px";
+        rippleDiv.style.height = rippleDiv.style.width;
+        // If color input is not set, this will default to the background color defined in CSS.
+        rippleDiv.style.backgroundColor = color;
+        // Start the ripple tiny.
+        rippleDiv.style.transform = "scale(0.001)";
+        var fadeInSeconds = (1 / (speedFactor || 1)) * Math.max(MIN_RIPPLE_FILL_TIME_SECONDS, Math.min(MAX_RIPPLE_FILL_TIME_SECONDS, maxRadius / RIPPLE_SPEED_PX_PER_SECOND));
+        rippleDiv.style.transitionDuration = fadeInSeconds + "s";
+        // https://timtaubert.de/blog/2012/09/css-transitions-for-dynamically-created-dom-elements/
+        window.getComputedStyle(rippleDiv).opacity;
+        rippleDiv.classList.add('md-ripple-fade-in');
+        // Clearing the transform property causes the ripple to animate to its full size.
+        rippleDiv.style.transform = '';
+        var ripple = new ForegroundRipple(rippleDiv);
+        ripple.state = ForegroundRippleState.EXPANDING;
+        rippleDiv.addEventListener('transitionend', function (event) { return transitionEndCallback(ripple, event); });
+    };
+    /**
+     * Fades out a foreground ripple after it has fully expanded and faded in.
+     */
+    RippleRenderer.prototype.fadeOutForegroundRipple = function (ripple) {
+        ripple.classList.remove('md-ripple-fade-in');
+        ripple.classList.add('md-ripple-fade-out');
+    };
+    /**
+     * Removes a foreground ripple from the DOM after it has faded out.
+     */
+    RippleRenderer.prototype.removeRippleFromDom = function (ripple) {
+        ripple.parentElement.removeChild(ripple);
+    };
+    /**
+     * Fades in the ripple background.
+     */
+    RippleRenderer.prototype.fadeInRippleBackground = function (color) {
+        this._backgroundDiv.classList.add('md-ripple-active');
+        // If color is not set, this will default to the background color defined in CSS.
+        this._backgroundDiv.style.backgroundColor = color;
+    };
+    /**
+     * Fades out the ripple background.
+     */
+    RippleRenderer.prototype.fadeOutRippleBackground = function () {
+        if (this._backgroundDiv) {
+            this._backgroundDiv.classList.remove('md-ripple-active');
+        }
+    };
+    return RippleRenderer;
+}());
+
+//# sourceMappingURL=ripple-renderer.js.map
+
+
+/***/ },
+/* 150 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ exports["a"] = applyCssTransform;
+/**
+ * Applies a CSS transform to an element, including browser-prefixed properties.
+ * @param element
+ * @param transformValue
+ */
+function applyCssTransform(element, transformValue) {
+    // It's important to trim the result, because the browser will ignore the set operation
+    // if the string contains only whitespace.
+    var value = transformValue.trim();
+    element.style.transform = value;
+    element.style.webkitTransform = value;
+}
+
+//# sourceMappingURL=apply-transform.js.map
+
+
+/***/ },
+/* 151 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22162,12 +24701,12 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var import0 = __webpack_require__(19);
-var import1 = __webpack_require__(34);
+var import1 = __webpack_require__(37);
 var import3 = __webpack_require__(21);
 var import4 = __webpack_require__(17);
 var import7 = __webpack_require__(16);
 var import8 = __webpack_require__(15);
-var import9 = __webpack_require__(6);
+var import9 = __webpack_require__(7);
 var import10 = __webpack_require__(8);
 var import11 = __webpack_require__(20);
 var import12 = __webpack_require__(18);
@@ -22271,7 +24810,7 @@ exports.viewFactory_NotFound404Component0 = viewFactory_NotFound404Component0;
 
 
 /***/ },
-/* 121 */
+/* 152 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22287,14 +24826,14 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var import0 = __webpack_require__(19);
-var import1 = __webpack_require__(35);
+var import1 = __webpack_require__(38);
 var import3 = __webpack_require__(21);
 var import4 = __webpack_require__(17);
 var import7 = __webpack_require__(16);
 var import8 = __webpack_require__(15);
-var import9 = __webpack_require__(6);
+var import9 = __webpack_require__(7);
 var import10 = __webpack_require__(8);
-var import11 = __webpack_require__(44);
+var import11 = __webpack_require__(47);
 var import12 = __webpack_require__(20);
 var import13 = __webpack_require__(18);
 var nodeDebugInfos_AboutComponent_Host0 = [new import0.StaticNodeDebugInfo([import1.AboutComponent], import1.AboutComponent, {})];
@@ -22378,7 +24917,7 @@ exports.viewFactory_AboutComponent0 = viewFactory_AboutComponent0;
 
 
 /***/ },
-/* 122 */
+/* 153 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22394,28 +24933,28 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var import0 = __webpack_require__(19);
-var import1 = __webpack_require__(69);
+var import1 = __webpack_require__(89);
 var import3 = __webpack_require__(21);
 var import4 = __webpack_require__(17);
 var import5 = __webpack_require__(23);
 var import7 = __webpack_require__(16);
 var import8 = __webpack_require__(15);
-var import9 = __webpack_require__(6);
+var import9 = __webpack_require__(7);
 var import10 = __webpack_require__(8);
 var import11 = __webpack_require__(20);
 var import12 = __webpack_require__(18);
-var import13 = __webpack_require__(57);
-var import14 = __webpack_require__(61);
-var import15 = __webpack_require__(106);
-var import16 = __webpack_require__(50);
-var import17 = __webpack_require__(93);
-var import18 = __webpack_require__(65);
-var import19 = __webpack_require__(105);
-var import20 = __webpack_require__(127);
-var import21 = __webpack_require__(51);
-var import22 = __webpack_require__(128);
-var import23 = __webpack_require__(52);
-var import24 = __webpack_require__(129);
+var import13 = __webpack_require__(62);
+var import14 = __webpack_require__(66);
+var import15 = __webpack_require__(126);
+var import16 = __webpack_require__(56);
+var import17 = __webpack_require__(115);
+var import18 = __webpack_require__(71);
+var import19 = __webpack_require__(125);
+var import20 = __webpack_require__(158);
+var import21 = __webpack_require__(57);
+var import22 = __webpack_require__(159);
+var import23 = __webpack_require__(58);
+var import24 = __webpack_require__(160);
 var nodeDebugInfos_AppComponent_Host0 = [new import0.StaticNodeDebugInfo([import1.AppComponent], import1.AppComponent, {})];
 var renderType_AppComponent_Host = null;
 var _View_AppComponent_Host0 = (function (_super) {
@@ -22746,7 +25285,7 @@ function viewFactory_AppComponent2(viewUtils, parentInjector, declarationEl) {
 
 
 /***/ },
-/* 123 */
+/* 154 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22761,578 +25300,582 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var import0 = __webpack_require__(109);
-var import1 = __webpack_require__(132);
-var import2 = __webpack_require__(112);
-var import3 = __webpack_require__(439);
-var import4 = __webpack_require__(429);
-var import5 = __webpack_require__(442);
-var import6 = __webpack_require__(443);
-var import7 = __webpack_require__(444);
-var import8 = __webpack_require__(111);
-var import9 = __webpack_require__(406);
-var import10 = __webpack_require__(410);
-var import11 = __webpack_require__(407);
-var import12 = __webpack_require__(6);
-var import13 = __webpack_require__(107);
-var import14 = __webpack_require__(474);
-var import15 = __webpack_require__(417);
-var import16 = __webpack_require__(472);
-var import17 = __webpack_require__(418);
-var import18 = __webpack_require__(416);
-var import19 = __webpack_require__(110);
-var import20 = __webpack_require__(23);
-var import21 = __webpack_require__(430);
-var import22 = __webpack_require__(396);
-var import23 = __webpack_require__(412);
-var import24 = __webpack_require__(401);
-var import25 = __webpack_require__(428);
-var import26 = __webpack_require__(413);
-var import27 = __webpack_require__(404);
-var import28 = __webpack_require__(467);
-var import29 = __webpack_require__(65);
-var import30 = __webpack_require__(440);
-var import31 = __webpack_require__(48);
-var import32 = __webpack_require__(5);
-var import33 = __webpack_require__(8);
-var import34 = __webpack_require__(29);
-var import35 = __webpack_require__(33);
-var import37 = __webpack_require__(126);
-var import38 = __webpack_require__(131);
-var import39 = __webpack_require__(125);
-var import40 = __webpack_require__(130);
-var import41 = __webpack_require__(121);
-var import42 = __webpack_require__(120);
-var import43 = __webpack_require__(122);
-var import44 = __webpack_require__(398);
-var import45 = __webpack_require__(431);
-var import46 = __webpack_require__(432);
-var import47 = __webpack_require__(411);
-var import48 = __webpack_require__(415);
-var import49 = __webpack_require__(405);
-var import50 = __webpack_require__(88);
-var import51 = __webpack_require__(37);
-var import52 = __webpack_require__(39);
-var import53 = __webpack_require__(36);
-var import54 = __webpack_require__(38);
-var import55 = __webpack_require__(35);
-var import56 = __webpack_require__(34);
-var import57 = __webpack_require__(30);
-var import58 = __webpack_require__(408);
-var import59 = __webpack_require__(425);
-var import60 = __webpack_require__(66);
-var import61 = __webpack_require__(402);
-var import62 = __webpack_require__(414);
-var import63 = __webpack_require__(409);
-var import64 = __webpack_require__(47);
-var import65 = __webpack_require__(423);
-var import66 = __webpack_require__(424);
-var import67 = __webpack_require__(397);
-var import68 = __webpack_require__(58);
-var import69 = __webpack_require__(427);
-var import70 = __webpack_require__(108);
-var import71 = __webpack_require__(44);
-var import72 = __webpack_require__(66);
+var import0 = __webpack_require__(129);
+var import1 = __webpack_require__(163);
+var import2 = __webpack_require__(132);
+var import3 = __webpack_require__(469);
+var import4 = __webpack_require__(459);
+var import5 = __webpack_require__(472);
+var import6 = __webpack_require__(473);
+var import7 = __webpack_require__(474);
+var import8 = __webpack_require__(131);
+var import9 = __webpack_require__(53);
+var import10 = __webpack_require__(75);
+var import11 = __webpack_require__(76);
+var import12 = __webpack_require__(91);
+var import13 = __webpack_require__(436);
+var import14 = __webpack_require__(440);
+var import15 = __webpack_require__(437);
+var import16 = __webpack_require__(7);
+var import17 = __webpack_require__(127);
+var import18 = __webpack_require__(503);
+var import19 = __webpack_require__(447);
+var import20 = __webpack_require__(501);
+var import21 = __webpack_require__(448);
+var import22 = __webpack_require__(446);
+var import23 = __webpack_require__(130);
+var import24 = __webpack_require__(23);
+var import25 = __webpack_require__(460);
+var import26 = __webpack_require__(426);
+var import27 = __webpack_require__(442);
+var import28 = __webpack_require__(431);
+var import29 = __webpack_require__(458);
+var import30 = __webpack_require__(443);
+var import31 = __webpack_require__(434);
+var import32 = __webpack_require__(495);
+var import33 = __webpack_require__(71);
+var import34 = __webpack_require__(470);
+var import35 = __webpack_require__(54);
+var import36 = __webpack_require__(6);
+var import37 = __webpack_require__(8);
+var import38 = __webpack_require__(29);
+var import39 = __webpack_require__(34);
+var import41 = __webpack_require__(157);
+var import42 = __webpack_require__(162);
+var import43 = __webpack_require__(156);
+var import44 = __webpack_require__(161);
+var import45 = __webpack_require__(152);
+var import46 = __webpack_require__(151);
+var import47 = __webpack_require__(153);
+var import48 = __webpack_require__(428);
+var import49 = __webpack_require__(461);
+var import50 = __webpack_require__(462);
+var import51 = __webpack_require__(441);
+var import52 = __webpack_require__(445);
+var import53 = __webpack_require__(435);
+var import54 = __webpack_require__(110);
+var import55 = __webpack_require__(40);
+var import56 = __webpack_require__(42);
+var import57 = __webpack_require__(39);
+var import58 = __webpack_require__(41);
+var import59 = __webpack_require__(38);
+var import60 = __webpack_require__(37);
+var import61 = __webpack_require__(30);
+var import62 = __webpack_require__(438);
+var import63 = __webpack_require__(455);
+var import64 = __webpack_require__(72);
+var import65 = __webpack_require__(432);
+var import66 = __webpack_require__(444);
+var import67 = __webpack_require__(439);
+var import68 = __webpack_require__(49);
+var import69 = __webpack_require__(453);
+var import70 = __webpack_require__(454);
+var import71 = __webpack_require__(427);
+var import72 = __webpack_require__(63);
+var import73 = __webpack_require__(457);
+var import74 = __webpack_require__(128);
+var import75 = __webpack_require__(47);
+var import76 = __webpack_require__(72);
 var AppModuleInjector = (function (_super) {
     __extends(AppModuleInjector, _super);
     function AppModuleInjector(parent) {
         _super.call(this, parent, [
-            import37.LoginComponentNgFactory,
-            import38.TicketComponentNgFactory,
-            import38.TicketComponentNgFactory,
-            import39.HomeComponentNgFactory,
-            import40.SubscriberComponentNgFactory,
-            import37.LoginComponentNgFactory,
-            import41.AboutComponentNgFactory,
-            import42.NotFound404ComponentNgFactory,
-            import42.NotFound404ComponentNgFactory,
-            import43.AppComponentNgFactory
-        ], [import43.AppComponentNgFactory]);
+            import41.LoginComponentNgFactory,
+            import42.TicketComponentNgFactory,
+            import42.TicketComponentNgFactory,
+            import43.HomeComponentNgFactory,
+            import44.SubscriberComponentNgFactory,
+            import41.LoginComponentNgFactory,
+            import45.AboutComponentNgFactory,
+            import46.NotFound404ComponentNgFactory,
+            import46.NotFound404ComponentNgFactory,
+            import47.AppComponentNgFactory
+        ], [import47.AppComponentNgFactory]);
     }
-    Object.defineProperty(AppModuleInjector.prototype, "_LOCALE_ID_15", {
+    Object.defineProperty(AppModuleInjector.prototype, "_LOCALE_ID_19", {
         get: function () {
-            if ((this.__LOCALE_ID_15 == null)) {
-                (this.__LOCALE_ID_15 = null);
+            if ((this.__LOCALE_ID_19 == null)) {
+                (this.__LOCALE_ID_19 = null);
             }
-            return this.__LOCALE_ID_15;
+            return this.__LOCALE_ID_19;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_NgLocalization_16", {
+    Object.defineProperty(AppModuleInjector.prototype, "_NgLocalization_20", {
         get: function () {
-            if ((this.__NgLocalization_16 == null)) {
-                (this.__NgLocalization_16 = new import13.NgLocaleLocalization(this._LOCALE_ID_15));
+            if ((this.__NgLocalization_20 == null)) {
+                (this.__NgLocalization_20 = new import17.NgLocaleLocalization(this._LOCALE_ID_19));
             }
-            return this.__NgLocalization_16;
+            return this.__NgLocalization_20;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_Compiler_17", {
+    Object.defineProperty(AppModuleInjector.prototype, "_Compiler_21", {
         get: function () {
-            if ((this.__Compiler_17 == null)) {
-                (this.__Compiler_17 = new import14.Compiler());
+            if ((this.__Compiler_21 == null)) {
+                (this.__Compiler_21 = new import18.Compiler());
             }
-            return this.__Compiler_17;
+            return this.__Compiler_21;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_APP_ID_18", {
+    Object.defineProperty(AppModuleInjector.prototype, "_APP_ID_22", {
         get: function () {
-            if ((this.__APP_ID_18 == null)) {
-                (this.__APP_ID_18 = import44._appIdRandomProviderFactory());
+            if ((this.__APP_ID_22 == null)) {
+                (this.__APP_ID_22 = import48._appIdRandomProviderFactory());
             }
-            return this.__APP_ID_18;
+            return this.__APP_ID_22;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_DOCUMENT_19", {
+    Object.defineProperty(AppModuleInjector.prototype, "_DOCUMENT_23", {
         get: function () {
-            if ((this.__DOCUMENT_19 == null)) {
-                (this.__DOCUMENT_19 = import4._document());
+            if ((this.__DOCUMENT_23 == null)) {
+                (this.__DOCUMENT_23 = import4._document());
             }
-            return this.__DOCUMENT_19;
+            return this.__DOCUMENT_23;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_HAMMER_GESTURE_CONFIG_20", {
+    Object.defineProperty(AppModuleInjector.prototype, "_HAMMER_GESTURE_CONFIG_24", {
         get: function () {
-            if ((this.__HAMMER_GESTURE_CONFIG_20 == null)) {
-                (this.__HAMMER_GESTURE_CONFIG_20 = new import15.HammerGestureConfig());
+            if ((this.__HAMMER_GESTURE_CONFIG_24 == null)) {
+                (this.__HAMMER_GESTURE_CONFIG_24 = new import19.HammerGestureConfig());
             }
-            return this.__HAMMER_GESTURE_CONFIG_20;
+            return this.__HAMMER_GESTURE_CONFIG_24;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_EVENT_MANAGER_PLUGINS_21", {
+    Object.defineProperty(AppModuleInjector.prototype, "_EVENT_MANAGER_PLUGINS_25", {
         get: function () {
-            if ((this.__EVENT_MANAGER_PLUGINS_21 == null)) {
-                (this.__EVENT_MANAGER_PLUGINS_21 = [
-                    new import45.DomEventsPlugin(),
-                    new import46.KeyEventsPlugin(),
-                    new import15.HammerGesturesPlugin(this._HAMMER_GESTURE_CONFIG_20)
+            if ((this.__EVENT_MANAGER_PLUGINS_25 == null)) {
+                (this.__EVENT_MANAGER_PLUGINS_25 = [
+                    new import49.DomEventsPlugin(),
+                    new import50.KeyEventsPlugin(),
+                    new import19.HammerGesturesPlugin(this._HAMMER_GESTURE_CONFIG_24)
                 ]);
             }
-            return this.__EVENT_MANAGER_PLUGINS_21;
+            return this.__EVENT_MANAGER_PLUGINS_25;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_EventManager_22", {
+    Object.defineProperty(AppModuleInjector.prototype, "_EventManager_26", {
         get: function () {
-            if ((this.__EventManager_22 == null)) {
-                (this.__EventManager_22 = new import16.EventManager(this._EVENT_MANAGER_PLUGINS_21, this.parent.get(import47.NgZone)));
+            if ((this.__EventManager_26 == null)) {
+                (this.__EventManager_26 = new import20.EventManager(this._EVENT_MANAGER_PLUGINS_25, this.parent.get(import51.NgZone)));
             }
-            return this.__EventManager_22;
+            return this.__EventManager_26;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_DomSharedStylesHost_23", {
+    Object.defineProperty(AppModuleInjector.prototype, "_DomSharedStylesHost_27", {
         get: function () {
-            if ((this.__DomSharedStylesHost_23 == null)) {
-                (this.__DomSharedStylesHost_23 = new import17.DomSharedStylesHost(this._DOCUMENT_19));
+            if ((this.__DomSharedStylesHost_27 == null)) {
+                (this.__DomSharedStylesHost_27 = new import21.DomSharedStylesHost(this._DOCUMENT_23));
             }
-            return this.__DomSharedStylesHost_23;
+            return this.__DomSharedStylesHost_27;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_AnimationDriver_24", {
+    Object.defineProperty(AppModuleInjector.prototype, "_AnimationDriver_28", {
         get: function () {
-            if ((this.__AnimationDriver_24 == null)) {
-                (this.__AnimationDriver_24 = import4._resolveDefaultAnimationDriver());
+            if ((this.__AnimationDriver_28 == null)) {
+                (this.__AnimationDriver_28 = import4._resolveDefaultAnimationDriver());
             }
-            return this.__AnimationDriver_24;
+            return this.__AnimationDriver_28;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_DomRootRenderer_25", {
+    Object.defineProperty(AppModuleInjector.prototype, "_DomRootRenderer_29", {
         get: function () {
-            if ((this.__DomRootRenderer_25 == null)) {
-                (this.__DomRootRenderer_25 = new import18.DomRootRenderer_(this._DOCUMENT_19, this._EventManager_22, this._DomSharedStylesHost_23, this._AnimationDriver_24));
+            if ((this.__DomRootRenderer_29 == null)) {
+                (this.__DomRootRenderer_29 = new import22.DomRootRenderer_(this._DOCUMENT_23, this._EventManager_26, this._DomSharedStylesHost_27, this._AnimationDriver_28));
             }
-            return this.__DomRootRenderer_25;
+            return this.__DomRootRenderer_29;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_RootRenderer_26", {
+    Object.defineProperty(AppModuleInjector.prototype, "_RootRenderer_30", {
         get: function () {
-            if ((this.__RootRenderer_26 == null)) {
-                (this.__RootRenderer_26 = import48._createConditionalRootRenderer(this._DomRootRenderer_25, this.parent.get(import48.NgProbeToken, null)));
+            if ((this.__RootRenderer_30 == null)) {
+                (this.__RootRenderer_30 = import52._createConditionalRootRenderer(this._DomRootRenderer_29, this.parent.get(import52.NgProbeToken, null)));
             }
-            return this.__RootRenderer_26;
+            return this.__RootRenderer_30;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_DomSanitizer_27", {
+    Object.defineProperty(AppModuleInjector.prototype, "_DomSanitizer_31", {
         get: function () {
-            if ((this.__DomSanitizer_27 == null)) {
-                (this.__DomSanitizer_27 = new import19.DomSanitizerImpl());
+            if ((this.__DomSanitizer_31 == null)) {
+                (this.__DomSanitizer_31 = new import23.DomSanitizerImpl());
             }
-            return this.__DomSanitizer_27;
+            return this.__DomSanitizer_31;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_Sanitizer_28", {
+    Object.defineProperty(AppModuleInjector.prototype, "_Sanitizer_32", {
         get: function () {
-            if ((this.__Sanitizer_28 == null)) {
-                (this.__Sanitizer_28 = this._DomSanitizer_27);
+            if ((this.__Sanitizer_32 == null)) {
+                (this.__Sanitizer_32 = this._DomSanitizer_31);
             }
-            return this.__Sanitizer_28;
+            return this.__Sanitizer_32;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_ViewUtils_29", {
+    Object.defineProperty(AppModuleInjector.prototype, "_ViewUtils_33", {
         get: function () {
-            if ((this.__ViewUtils_29 == null)) {
-                (this.__ViewUtils_29 = new import20.ViewUtils(this._RootRenderer_26, this._APP_ID_18, this._Sanitizer_28));
+            if ((this.__ViewUtils_33 == null)) {
+                (this.__ViewUtils_33 = new import24.ViewUtils(this._RootRenderer_30, this._APP_ID_22, this._Sanitizer_32));
             }
-            return this.__ViewUtils_29;
+            return this.__ViewUtils_33;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_IterableDiffers_30", {
+    Object.defineProperty(AppModuleInjector.prototype, "_IterableDiffers_34", {
         get: function () {
-            if ((this.__IterableDiffers_30 == null)) {
-                (this.__IterableDiffers_30 = import3._iterableDiffersFactory());
+            if ((this.__IterableDiffers_34 == null)) {
+                (this.__IterableDiffers_34 = import3._iterableDiffersFactory());
             }
-            return this.__IterableDiffers_30;
+            return this.__IterableDiffers_34;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_KeyValueDiffers_31", {
+    Object.defineProperty(AppModuleInjector.prototype, "_KeyValueDiffers_35", {
         get: function () {
-            if ((this.__KeyValueDiffers_31 == null)) {
-                (this.__KeyValueDiffers_31 = import3._keyValueDiffersFactory());
+            if ((this.__KeyValueDiffers_35 == null)) {
+                (this.__KeyValueDiffers_35 = import3._keyValueDiffersFactory());
             }
-            return this.__KeyValueDiffers_31;
+            return this.__KeyValueDiffers_35;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_SharedStylesHost_32", {
+    Object.defineProperty(AppModuleInjector.prototype, "_SharedStylesHost_36", {
         get: function () {
-            if ((this.__SharedStylesHost_32 == null)) {
-                (this.__SharedStylesHost_32 = this._DomSharedStylesHost_23);
+            if ((this.__SharedStylesHost_36 == null)) {
+                (this.__SharedStylesHost_36 = this._DomSharedStylesHost_27);
             }
-            return this.__SharedStylesHost_32;
+            return this.__SharedStylesHost_36;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_Title_33", {
+    Object.defineProperty(AppModuleInjector.prototype, "_Title_37", {
         get: function () {
-            if ((this.__Title_33 == null)) {
-                (this.__Title_33 = new import21.Title());
+            if ((this.__Title_37 == null)) {
+                (this.__Title_37 = new import25.Title());
             }
-            return this.__Title_33;
+            return this.__Title_37;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_RadioControlRegistry_34", {
+    Object.defineProperty(AppModuleInjector.prototype, "_RadioControlRegistry_38", {
         get: function () {
-            if ((this.__RadioControlRegistry_34 == null)) {
-                (this.__RadioControlRegistry_34 = new import22.RadioControlRegistry());
+            if ((this.__RadioControlRegistry_38 == null)) {
+                (this.__RadioControlRegistry_38 = new import26.RadioControlRegistry());
             }
-            return this.__RadioControlRegistry_34;
+            return this.__RadioControlRegistry_38;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_BrowserXhr_35", {
+    Object.defineProperty(AppModuleInjector.prototype, "_BrowserXhr_39", {
         get: function () {
-            if ((this.__BrowserXhr_35 == null)) {
-                (this.__BrowserXhr_35 = new import23.BrowserXhr());
+            if ((this.__BrowserXhr_39 == null)) {
+                (this.__BrowserXhr_39 = new import27.BrowserXhr());
             }
-            return this.__BrowserXhr_35;
+            return this.__BrowserXhr_39;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_ResponseOptions_36", {
+    Object.defineProperty(AppModuleInjector.prototype, "_ResponseOptions_40", {
         get: function () {
-            if ((this.__ResponseOptions_36 == null)) {
-                (this.__ResponseOptions_36 = new import24.BaseResponseOptions());
+            if ((this.__ResponseOptions_40 == null)) {
+                (this.__ResponseOptions_40 = new import28.BaseResponseOptions());
             }
-            return this.__ResponseOptions_36;
+            return this.__ResponseOptions_40;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_XSRFStrategy_37", {
+    Object.defineProperty(AppModuleInjector.prototype, "_XSRFStrategy_41", {
         get: function () {
-            if ((this.__XSRFStrategy_37 == null)) {
-                (this.__XSRFStrategy_37 = import7._createDefaultCookieXSRFStrategy());
+            if ((this.__XSRFStrategy_41 == null)) {
+                (this.__XSRFStrategy_41 = import7._createDefaultCookieXSRFStrategy());
             }
-            return this.__XSRFStrategy_37;
+            return this.__XSRFStrategy_41;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_XHRBackend_38", {
+    Object.defineProperty(AppModuleInjector.prototype, "_XHRBackend_42", {
         get: function () {
-            if ((this.__XHRBackend_38 == null)) {
-                (this.__XHRBackend_38 = new import25.XHRBackend(this._BrowserXhr_35, this._ResponseOptions_36, this._XSRFStrategy_37));
+            if ((this.__XHRBackend_42 == null)) {
+                (this.__XHRBackend_42 = new import29.XHRBackend(this._BrowserXhr_39, this._ResponseOptions_40, this._XSRFStrategy_41));
             }
-            return this.__XHRBackend_38;
+            return this.__XHRBackend_42;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_RequestOptions_39", {
+    Object.defineProperty(AppModuleInjector.prototype, "_RequestOptions_43", {
         get: function () {
-            if ((this.__RequestOptions_39 == null)) {
-                (this.__RequestOptions_39 = new import26.BaseRequestOptions());
+            if ((this.__RequestOptions_43 == null)) {
+                (this.__RequestOptions_43 = new import30.BaseRequestOptions());
             }
-            return this.__RequestOptions_39;
+            return this.__RequestOptions_43;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_Http_40", {
+    Object.defineProperty(AppModuleInjector.prototype, "_Http_44", {
         get: function () {
-            if ((this.__Http_40 == null)) {
-                (this.__Http_40 = import7.httpFactory(this._XHRBackend_38, this._RequestOptions_39));
+            if ((this.__Http_44 == null)) {
+                (this.__Http_44 = import7.httpFactory(this._XHRBackend_42, this._RequestOptions_43));
             }
-            return this.__Http_40;
+            return this.__Http_44;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_ROUTER_CONFIGURATION_41", {
+    Object.defineProperty(AppModuleInjector.prototype, "_ROUTER_CONFIGURATION_45", {
         get: function () {
-            if ((this.__ROUTER_CONFIGURATION_41 == null)) {
-                (this.__ROUTER_CONFIGURATION_41 = { useHash: true });
+            if ((this.__ROUTER_CONFIGURATION_45 == null)) {
+                (this.__ROUTER_CONFIGURATION_45 = { useHash: true });
             }
-            return this.__ROUTER_CONFIGURATION_41;
+            return this.__ROUTER_CONFIGURATION_45;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_LocationStrategy_42", {
+    Object.defineProperty(AppModuleInjector.prototype, "_LocationStrategy_46", {
         get: function () {
-            if ((this.__LocationStrategy_42 == null)) {
-                (this.__LocationStrategy_42 = import8.provideLocationStrategy(this.parent.get(import49.PlatformLocation), this.parent.get(import50.APP_BASE_HREF, null), this._ROUTER_CONFIGURATION_41));
+            if ((this.__LocationStrategy_46 == null)) {
+                (this.__LocationStrategy_46 = import8.provideLocationStrategy(this.parent.get(import53.PlatformLocation), this.parent.get(import54.APP_BASE_HREF, null), this._ROUTER_CONFIGURATION_45));
             }
-            return this.__LocationStrategy_42;
+            return this.__LocationStrategy_46;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_Location_43", {
+    Object.defineProperty(AppModuleInjector.prototype, "_Location_47", {
         get: function () {
-            if ((this.__Location_43 == null)) {
-                (this.__Location_43 = new import27.Location(this._LocationStrategy_42));
+            if ((this.__Location_47 == null)) {
+                (this.__Location_47 = new import31.Location(this._LocationStrategy_46));
             }
-            return this.__Location_43;
+            return this.__Location_47;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_UrlSerializer_44", {
+    Object.defineProperty(AppModuleInjector.prototype, "_UrlSerializer_48", {
         get: function () {
-            if ((this.__UrlSerializer_44 == null)) {
-                (this.__UrlSerializer_44 = new import28.DefaultUrlSerializer());
+            if ((this.__UrlSerializer_48 == null)) {
+                (this.__UrlSerializer_48 = new import32.DefaultUrlSerializer());
             }
-            return this.__UrlSerializer_44;
+            return this.__UrlSerializer_48;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_RouterOutletMap_45", {
+    Object.defineProperty(AppModuleInjector.prototype, "_RouterOutletMap_49", {
         get: function () {
-            if ((this.__RouterOutletMap_45 == null)) {
-                (this.__RouterOutletMap_45 = new import29.RouterOutletMap());
+            if ((this.__RouterOutletMap_49 == null)) {
+                (this.__RouterOutletMap_49 = new import33.RouterOutletMap());
             }
-            return this.__RouterOutletMap_45;
+            return this.__RouterOutletMap_49;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_NgModuleFactoryLoader_46", {
+    Object.defineProperty(AppModuleInjector.prototype, "_NgModuleFactoryLoader_50", {
         get: function () {
-            if ((this.__NgModuleFactoryLoader_46 == null)) {
-                (this.__NgModuleFactoryLoader_46 = new import30.SystemJsNgModuleLoader(this._Compiler_17, this.parent.get(import30.SystemJsNgModuleLoaderConfig, null)));
+            if ((this.__NgModuleFactoryLoader_50 == null)) {
+                (this.__NgModuleFactoryLoader_50 = new import34.SystemJsNgModuleLoader(this._Compiler_21, this.parent.get(import34.SystemJsNgModuleLoaderConfig, null)));
             }
-            return this.__NgModuleFactoryLoader_46;
+            return this.__NgModuleFactoryLoader_50;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_ROUTES_47", {
+    Object.defineProperty(AppModuleInjector.prototype, "_ROUTES_51", {
         get: function () {
-            if ((this.__ROUTES_47 == null)) {
-                (this.__ROUTES_47 = [[
+            if ((this.__ROUTES_51 == null)) {
+                (this.__ROUTES_51 = [[
                         {
                             path: '',
-                            component: import51.LoginComponent
+                            component: import55.LoginComponent
                         },
                         {
                             path: 'detail',
-                            loadChildren: function () { return __webpack_require__(136)("DetailModuleNgFactory"); },
-                            canActivate: [import35.RouteProtection]
+                            loadChildren: function () { return __webpack_require__(167)("DetailModuleNgFactory"); },
+                            canActivate: [import39.RouteProtection]
                         },
                         {
                             path: 'iframe',
-                            loadChildren: function () { return __webpack_require__(137)("IframeModuleNgFactory"); },
-                            canActivate: [import35.RouteProtection]
+                            loadChildren: function () { return __webpack_require__(168)("IframeModuleNgFactory"); },
+                            canActivate: [import39.RouteProtection]
                         },
                         {
                             path: 'ticket',
-                            component: import52.TicketComponent,
-                            canActivate: [import35.RouteProtection]
+                            component: import56.TicketComponent,
+                            canActivate: [import39.RouteProtection]
                         },
                         {
                             path: 'ticket/:ticketID',
-                            component: import52.TicketComponent,
-                            canActivate: [import35.RouteProtection]
+                            component: import56.TicketComponent,
+                            canActivate: [import39.RouteProtection]
                         },
                         {
                             path: 'grid1',
-                            component: import53.HomeComponent,
-                            canActivate: [import35.RouteProtection]
+                            component: import57.HomeComponent,
+                            canActivate: [import39.RouteProtection]
                         },
                         {
                             path: 'grid2',
-                            component: import54.SubscriberComponent,
-                            canActivate: [import35.RouteProtection]
+                            component: import58.SubscriberComponent,
+                            canActivate: [import39.RouteProtection]
                         },
                         {
                             path: 'login',
-                            component: import51.LoginComponent
+                            component: import55.LoginComponent
                         },
                         {
                             path: 'about',
-                            component: import55.AboutComponent,
-                            canActivate: [import35.RouteProtection],
-                            resolve: { dataBroughtToComponent: import31.DataResolver }
+                            component: import59.AboutComponent,
+                            canActivate: [import39.RouteProtection],
+                            resolve: { dataBroughtToComponent: import35.DataResolver }
                         },
                         {
                             path: '**',
-                            component: import56.NotFound404Component
+                            component: import60.NotFound404Component
                         },
                         {
                             path: '404',
-                            component: import56.NotFound404Component
+                            component: import60.NotFound404Component
                         }
                     ]
                 ]);
             }
-            return this.__ROUTES_47;
+            return this.__ROUTES_51;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_Router_48", {
+    Object.defineProperty(AppModuleInjector.prototype, "_Router_52", {
         get: function () {
-            if ((this.__Router_48 == null)) {
-                (this.__Router_48 = import8.setupRouter(this._ApplicationRef_12, this._UrlSerializer_44, this._RouterOutletMap_45, this._Location_43, this, this._NgModuleFactoryLoader_46, this._Compiler_17, this._ROUTES_47, this._ROUTER_CONFIGURATION_41));
+            if ((this.__Router_52 == null)) {
+                (this.__Router_52 = import8.setupRouter(this._ApplicationRef_16, this._UrlSerializer_48, this._RouterOutletMap_49, this._Location_47, this, this._NgModuleFactoryLoader_50, this._Compiler_21, this._ROUTES_51, this._ROUTER_CONFIGURATION_45));
             }
-            return this.__Router_48;
+            return this.__Router_52;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_ActivatedRoute_49", {
+    Object.defineProperty(AppModuleInjector.prototype, "_ActivatedRoute_53", {
         get: function () {
-            if ((this.__ActivatedRoute_49 == null)) {
-                (this.__ActivatedRoute_49 = import8.rootRoute(this._Router_48));
+            if ((this.__ActivatedRoute_53 == null)) {
+                (this.__ActivatedRoute_53 = import8.rootRoute(this._Router_52));
             }
-            return this.__ActivatedRoute_49;
+            return this.__ActivatedRoute_53;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_APP_BOOTSTRAP_LISTENER_50", {
+    Object.defineProperty(AppModuleInjector.prototype, "_APP_BOOTSTRAP_LISTENER_54", {
         get: function () {
-            if ((this.__APP_BOOTSTRAP_LISTENER_50 == null)) {
-                (this.__APP_BOOTSTRAP_LISTENER_50 = [import8.initialRouterNavigation(this._Router_48, this._ROUTER_CONFIGURATION_41)]);
+            if ((this.__APP_BOOTSTRAP_LISTENER_54 == null)) {
+                (this.__APP_BOOTSTRAP_LISTENER_54 = [import8.initialRouterNavigation(this._Router_52, this._ROUTER_CONFIGURATION_45)]);
             }
-            return this.__APP_BOOTSTRAP_LISTENER_50;
+            return this.__APP_BOOTSTRAP_LISTENER_54;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_DataResolver_51", {
+    Object.defineProperty(AppModuleInjector.prototype, "_DataResolver_55", {
         get: function () {
-            if ((this.__DataResolver_51 == null)) {
-                (this.__DataResolver_51 = new import31.DataResolver());
+            if ((this.__DataResolver_55 == null)) {
+                (this.__DataResolver_55 = new import35.DataResolver());
             }
-            return this.__DataResolver_51;
+            return this.__DataResolver_55;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_Logging_52", {
+    Object.defineProperty(AppModuleInjector.prototype, "_Logging_56", {
         get: function () {
-            if ((this.__Logging_52 == null)) {
-                (this.__Logging_52 = new import32.Logging());
+            if ((this.__Logging_56 == null)) {
+                (this.__Logging_56 = new import36.Logging());
             }
-            return this.__Logging_52;
+            return this.__Logging_56;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_UtilityService_53", {
+    Object.defineProperty(AppModuleInjector.prototype, "_UtilityService_57", {
         get: function () {
-            if ((this.__UtilityService_53 == null)) {
-                (this.__UtilityService_53 = new import32.UtilityService(this._Router_48));
+            if ((this.__UtilityService_57 == null)) {
+                (this.__UtilityService_57 = new import36.UtilityService(this._Router_52));
             }
-            return this.__UtilityService_53;
+            return this.__UtilityService_57;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_Authentication_54", {
+    Object.defineProperty(AppModuleInjector.prototype, "_Authentication_58", {
         get: function () {
-            if ((this.__Authentication_54 == null)) {
-                (this.__Authentication_54 = new import33.Authentication(this._AppState_13, this._Router_48, this._Http_40, this._UtilityService_53));
+            if ((this.__Authentication_58 == null)) {
+                (this.__Authentication_58 = new import37.Authentication(this._AppState_17, this._Router_52, this._Http_44, this._UtilityService_57));
             }
-            return this.__Authentication_54;
+            return this.__Authentication_58;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_DataService_55", {
+    Object.defineProperty(AppModuleInjector.prototype, "_DataService_59", {
         get: function () {
-            if ((this.__DataService_55 == null)) {
-                (this.__DataService_55 = new import34.DataService(this._Http_40));
+            if ((this.__DataService_59 == null)) {
+                (this.__DataService_59 = new import38.DataService(this._Http_44));
             }
-            return this.__DataService_55;
+            return this.__DataService_59;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_RouteProtection_56", {
+    Object.defineProperty(AppModuleInjector.prototype, "_RouteProtection_60", {
         get: function () {
-            if ((this.__RouteProtection_56 == null)) {
-                (this.__RouteProtection_56 = new import35.RouteProtection(this._AppState_13, this._UtilityService_53, this._Location_43, this._Authentication_54));
+            if ((this.__RouteProtection_60 == null)) {
+                (this.__RouteProtection_60 = new import39.RouteProtection(this._AppState_17, this._UtilityService_57, this._Location_47, this._Authentication_58));
             }
-            return this.__RouteProtection_56;
+            return this.__RouteProtection_60;
         },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AppModuleInjector.prototype, "_TRANSLATIONS_FORMAT_57", {
+    Object.defineProperty(AppModuleInjector.prototype, "_TRANSLATIONS_FORMAT_61", {
         get: function () {
-            if ((this.__TRANSLATIONS_FORMAT_57 == null)) {
-                (this.__TRANSLATIONS_FORMAT_57 = null);
+            if ((this.__TRANSLATIONS_FORMAT_61 == null)) {
+                (this.__TRANSLATIONS_FORMAT_61 = null);
             }
-            return this.__TRANSLATIONS_FORMAT_57;
+            return this.__TRANSLATIONS_FORMAT_61;
         },
         enumerable: true,
         configurable: true
@@ -23344,16 +25887,20 @@ var AppModuleInjector = (function (_super) {
         this._InternalFormsSharedModule_3 = new import5.InternalFormsSharedModule();
         this._FormsModule_4 = new import6.FormsModule();
         this._HttpModule_5 = new import7.HttpModule();
-        this._ROUTER_FORROOT_GUARD_6 = import8.provideForRootGuard(this.parent.get(import57.Router, null));
+        this._ROUTER_FORROOT_GUARD_6 = import8.provideForRootGuard(this.parent.get(import61.Router, null));
         this._RouterModule_7 = new import8.RouterModule(this._ROUTER_FORROOT_GUARD_6);
-        this._ErrorHandler_8 = import4.errorHandler();
-        this._ApplicationInitStatus_9 = new import9.ApplicationInitStatus(this.parent.get(import9.APP_INITIALIZER, null));
-        this._Testability_10 = new import10.Testability(this.parent.get(import47.NgZone));
-        this._ApplicationRef__11 = new import11.ApplicationRef_(this.parent.get(import47.NgZone), this.parent.get(import58.Console), this, this._ErrorHandler_8, this, this._ApplicationInitStatus_9, this.parent.get(import10.TestabilityRegistry, null), this._Testability_10);
-        this._ApplicationRef_12 = this._ApplicationRef__11;
-        this._AppState_13 = new import12.AppState();
-        this._AppModule_14 = new import1.AppModule(this._ApplicationRef_12, this._AppState_13);
-        return this._AppModule_14;
+        this._MdRippleModule_8 = new import9.MdRippleModule();
+        this._MdButtonModule_9 = new import10.MdButtonModule();
+        this._MdCardModule_10 = new import11.MdCardModule();
+        this._MdModule_11 = new import12.MdModule();
+        this._ErrorHandler_12 = import4.errorHandler();
+        this._ApplicationInitStatus_13 = new import13.ApplicationInitStatus(this.parent.get(import13.APP_INITIALIZER, null));
+        this._Testability_14 = new import14.Testability(this.parent.get(import51.NgZone));
+        this._ApplicationRef__15 = new import15.ApplicationRef_(this.parent.get(import51.NgZone), this.parent.get(import62.Console), this, this._ErrorHandler_12, this, this._ApplicationInitStatus_13, this.parent.get(import14.TestabilityRegistry, null), this._Testability_14);
+        this._ApplicationRef_16 = this._ApplicationRef__15;
+        this._AppState_17 = new import16.AppState();
+        this._AppModule_18 = new import1.AppModule(this._ApplicationRef_16, this._AppState_17);
+        return this._AppModule_18;
     };
     AppModuleInjector.prototype.getInternal = function (token, notFoundResult) {
         if ((token === import2.CommonModule)) {
@@ -23380,160 +25927,172 @@ var AppModuleInjector = (function (_super) {
         if ((token === import8.RouterModule)) {
             return this._RouterModule_7;
         }
-        if ((token === import59.ErrorHandler)) {
-            return this._ErrorHandler_8;
+        if ((token === import9.MdRippleModule)) {
+            return this._MdRippleModule_8;
         }
-        if ((token === import9.ApplicationInitStatus)) {
-            return this._ApplicationInitStatus_9;
+        if ((token === import10.MdButtonModule)) {
+            return this._MdButtonModule_9;
         }
-        if ((token === import10.Testability)) {
-            return this._Testability_10;
+        if ((token === import11.MdCardModule)) {
+            return this._MdCardModule_10;
         }
-        if ((token === import11.ApplicationRef_)) {
-            return this._ApplicationRef__11;
+        if ((token === import12.MdModule)) {
+            return this._MdModule_11;
         }
-        if ((token === import11.ApplicationRef)) {
-            return this._ApplicationRef_12;
+        if ((token === import63.ErrorHandler)) {
+            return this._ErrorHandler_12;
         }
-        if ((token === import12.AppState)) {
-            return this._AppState_13;
+        if ((token === import13.ApplicationInitStatus)) {
+            return this._ApplicationInitStatus_13;
+        }
+        if ((token === import14.Testability)) {
+            return this._Testability_14;
+        }
+        if ((token === import15.ApplicationRef_)) {
+            return this._ApplicationRef__15;
+        }
+        if ((token === import15.ApplicationRef)) {
+            return this._ApplicationRef_16;
+        }
+        if ((token === import16.AppState)) {
+            return this._AppState_17;
         }
         if ((token === import1.AppModule)) {
-            return this._AppModule_14;
+            return this._AppModule_18;
         }
-        if ((token === import60.LOCALE_ID)) {
-            return this._LOCALE_ID_15;
+        if ((token === import64.LOCALE_ID)) {
+            return this._LOCALE_ID_19;
         }
-        if ((token === import13.NgLocalization)) {
-            return this._NgLocalization_16;
+        if ((token === import17.NgLocalization)) {
+            return this._NgLocalization_20;
         }
-        if ((token === import14.Compiler)) {
-            return this._Compiler_17;
+        if ((token === import18.Compiler)) {
+            return this._Compiler_21;
         }
-        if ((token === import44.APP_ID)) {
-            return this._APP_ID_18;
+        if ((token === import48.APP_ID)) {
+            return this._APP_ID_22;
         }
-        if ((token === import61.DOCUMENT)) {
-            return this._DOCUMENT_19;
+        if ((token === import65.DOCUMENT)) {
+            return this._DOCUMENT_23;
         }
-        if ((token === import15.HAMMER_GESTURE_CONFIG)) {
-            return this._HAMMER_GESTURE_CONFIG_20;
+        if ((token === import19.HAMMER_GESTURE_CONFIG)) {
+            return this._HAMMER_GESTURE_CONFIG_24;
         }
-        if ((token === import16.EVENT_MANAGER_PLUGINS)) {
-            return this._EVENT_MANAGER_PLUGINS_21;
+        if ((token === import20.EVENT_MANAGER_PLUGINS)) {
+            return this._EVENT_MANAGER_PLUGINS_25;
         }
-        if ((token === import16.EventManager)) {
-            return this._EventManager_22;
+        if ((token === import20.EventManager)) {
+            return this._EventManager_26;
         }
-        if ((token === import17.DomSharedStylesHost)) {
-            return this._DomSharedStylesHost_23;
+        if ((token === import21.DomSharedStylesHost)) {
+            return this._DomSharedStylesHost_27;
         }
-        if ((token === import62.AnimationDriver)) {
-            return this._AnimationDriver_24;
+        if ((token === import66.AnimationDriver)) {
+            return this._AnimationDriver_28;
         }
-        if ((token === import18.DomRootRenderer)) {
-            return this._DomRootRenderer_25;
+        if ((token === import22.DomRootRenderer)) {
+            return this._DomRootRenderer_29;
         }
-        if ((token === import63.RootRenderer)) {
-            return this._RootRenderer_26;
+        if ((token === import67.RootRenderer)) {
+            return this._RootRenderer_30;
         }
-        if ((token === import19.DomSanitizer)) {
-            return this._DomSanitizer_27;
+        if ((token === import23.DomSanitizer)) {
+            return this._DomSanitizer_31;
         }
-        if ((token === import64.Sanitizer)) {
-            return this._Sanitizer_28;
+        if ((token === import68.Sanitizer)) {
+            return this._Sanitizer_32;
         }
-        if ((token === import20.ViewUtils)) {
-            return this._ViewUtils_29;
+        if ((token === import24.ViewUtils)) {
+            return this._ViewUtils_33;
         }
-        if ((token === import65.IterableDiffers)) {
-            return this._IterableDiffers_30;
+        if ((token === import69.IterableDiffers)) {
+            return this._IterableDiffers_34;
         }
-        if ((token === import66.KeyValueDiffers)) {
-            return this._KeyValueDiffers_31;
+        if ((token === import70.KeyValueDiffers)) {
+            return this._KeyValueDiffers_35;
         }
-        if ((token === import17.SharedStylesHost)) {
-            return this._SharedStylesHost_32;
+        if ((token === import21.SharedStylesHost)) {
+            return this._SharedStylesHost_36;
         }
-        if ((token === import21.Title)) {
-            return this._Title_33;
+        if ((token === import25.Title)) {
+            return this._Title_37;
         }
-        if ((token === import22.RadioControlRegistry)) {
-            return this._RadioControlRegistry_34;
+        if ((token === import26.RadioControlRegistry)) {
+            return this._RadioControlRegistry_38;
         }
-        if ((token === import23.BrowserXhr)) {
-            return this._BrowserXhr_35;
+        if ((token === import27.BrowserXhr)) {
+            return this._BrowserXhr_39;
         }
-        if ((token === import24.ResponseOptions)) {
-            return this._ResponseOptions_36;
+        if ((token === import28.ResponseOptions)) {
+            return this._ResponseOptions_40;
         }
-        if ((token === import67.XSRFStrategy)) {
-            return this._XSRFStrategy_37;
+        if ((token === import71.XSRFStrategy)) {
+            return this._XSRFStrategy_41;
         }
-        if ((token === import25.XHRBackend)) {
-            return this._XHRBackend_38;
+        if ((token === import29.XHRBackend)) {
+            return this._XHRBackend_42;
         }
-        if ((token === import26.RequestOptions)) {
-            return this._RequestOptions_39;
+        if ((token === import30.RequestOptions)) {
+            return this._RequestOptions_43;
         }
-        if ((token === import68.Http)) {
-            return this._Http_40;
+        if ((token === import72.Http)) {
+            return this._Http_44;
         }
         if ((token === import8.ROUTER_CONFIGURATION)) {
-            return this._ROUTER_CONFIGURATION_41;
+            return this._ROUTER_CONFIGURATION_45;
         }
-        if ((token === import50.LocationStrategy)) {
-            return this._LocationStrategy_42;
+        if ((token === import54.LocationStrategy)) {
+            return this._LocationStrategy_46;
         }
-        if ((token === import27.Location)) {
-            return this._Location_43;
+        if ((token === import31.Location)) {
+            return this._Location_47;
         }
-        if ((token === import28.UrlSerializer)) {
-            return this._UrlSerializer_44;
+        if ((token === import32.UrlSerializer)) {
+            return this._UrlSerializer_48;
         }
-        if ((token === import29.RouterOutletMap)) {
-            return this._RouterOutletMap_45;
+        if ((token === import33.RouterOutletMap)) {
+            return this._RouterOutletMap_49;
         }
-        if ((token === import69.NgModuleFactoryLoader)) {
-            return this._NgModuleFactoryLoader_46;
+        if ((token === import73.NgModuleFactoryLoader)) {
+            return this._NgModuleFactoryLoader_50;
         }
-        if ((token === import70.ROUTES)) {
-            return this._ROUTES_47;
+        if ((token === import74.ROUTES)) {
+            return this._ROUTES_51;
         }
-        if ((token === import57.Router)) {
-            return this._Router_48;
+        if ((token === import61.Router)) {
+            return this._Router_52;
         }
-        if ((token === import71.ActivatedRoute)) {
-            return this._ActivatedRoute_49;
+        if ((token === import75.ActivatedRoute)) {
+            return this._ActivatedRoute_53;
         }
-        if ((token === import44.APP_BOOTSTRAP_LISTENER)) {
-            return this._APP_BOOTSTRAP_LISTENER_50;
+        if ((token === import48.APP_BOOTSTRAP_LISTENER)) {
+            return this._APP_BOOTSTRAP_LISTENER_54;
         }
-        if ((token === import31.DataResolver)) {
-            return this._DataResolver_51;
+        if ((token === import35.DataResolver)) {
+            return this._DataResolver_55;
         }
-        if ((token === import32.Logging)) {
-            return this._Logging_52;
+        if ((token === import36.Logging)) {
+            return this._Logging_56;
         }
-        if ((token === import32.UtilityService)) {
-            return this._UtilityService_53;
+        if ((token === import36.UtilityService)) {
+            return this._UtilityService_57;
         }
-        if ((token === import33.Authentication)) {
-            return this._Authentication_54;
+        if ((token === import37.Authentication)) {
+            return this._Authentication_58;
         }
-        if ((token === import34.DataService)) {
-            return this._DataService_55;
+        if ((token === import38.DataService)) {
+            return this._DataService_59;
         }
-        if ((token === import35.RouteProtection)) {
-            return this._RouteProtection_56;
+        if ((token === import39.RouteProtection)) {
+            return this._RouteProtection_60;
         }
-        if ((token === import72.TRANSLATIONS_FORMAT)) {
-            return this._TRANSLATIONS_FORMAT_57;
+        if ((token === import76.TRANSLATIONS_FORMAT)) {
+            return this._TRANSLATIONS_FORMAT_61;
         }
         return notFoundResult;
     };
     AppModuleInjector.prototype.destroyInternal = function () {
-        this._ApplicationRef__11.ngOnDestroy();
+        this._ApplicationRef__15.ngOnDestroy();
     };
     return AppModuleInjector;
 }(import0.NgModuleInjector));
@@ -23541,7 +26100,7 @@ exports.AppModuleNgFactory = new import0.NgModuleFactory(AppModuleInjector, impo
 
 
 /***/ },
-/* 124 */
+/* 155 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23557,7 +26116,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var import0 = __webpack_require__(19);
-var import1 = __webpack_require__(49);
+var import1 = __webpack_require__(55);
 var import3 = __webpack_require__(21);
 var import4 = __webpack_require__(17);
 var import5 = __webpack_require__(23);
@@ -23663,7 +26222,7 @@ exports.viewFactory_CKEditor0 = viewFactory_CKEditor0;
 
 
 /***/ },
-/* 125 */
+/* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23680,15 +26239,15 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var import0 = __webpack_require__(19);
 var import1 = __webpack_require__(8);
-var import2 = __webpack_require__(36);
+var import2 = __webpack_require__(39);
 var import4 = __webpack_require__(21);
 var import5 = __webpack_require__(17);
 var import8 = __webpack_require__(16);
 var import9 = __webpack_require__(15);
-var import10 = __webpack_require__(6);
+var import10 = __webpack_require__(7);
 var import11 = __webpack_require__(30);
-var import12 = __webpack_require__(58);
-var import13 = __webpack_require__(5);
+var import12 = __webpack_require__(63);
+var import13 = __webpack_require__(6);
 var import14 = __webpack_require__(20);
 var import15 = __webpack_require__(18);
 var nodeDebugInfos_HomeComponent_Host0 = [new import0.StaticNodeDebugInfo([
@@ -23798,7 +26357,7 @@ exports.viewFactory_HomeComponent0 = viewFactory_HomeComponent0;
 
 
 /***/ },
-/* 126 */
+/* 157 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23814,21 +26373,21 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var import0 = __webpack_require__(19);
-var import1 = __webpack_require__(37);
+var import1 = __webpack_require__(40);
 var import3 = __webpack_require__(21);
 var import4 = __webpack_require__(17);
 var import5 = __webpack_require__(23);
 var import7 = __webpack_require__(16);
 var import8 = __webpack_require__(15);
-var import9 = __webpack_require__(6);
+var import9 = __webpack_require__(7);
 var import10 = __webpack_require__(8);
-var import11 = __webpack_require__(5);
+var import11 = __webpack_require__(6);
 var import12 = __webpack_require__(30);
 var import13 = __webpack_require__(20);
 var import14 = __webpack_require__(18);
-var import15 = __webpack_require__(99);
-var import16 = __webpack_require__(94);
-var import17 = __webpack_require__(89);
+var import15 = __webpack_require__(121);
+var import16 = __webpack_require__(116);
+var import17 = __webpack_require__(111);
 var nodeDebugInfos_LoginComponent_Host0 = [new import0.StaticNodeDebugInfo([import1.LoginComponent], import1.LoginComponent, {})];
 var renderType_LoginComponent_Host = null;
 var _View_LoginComponent_Host0 = (function (_super) {
@@ -23870,6 +26429,10 @@ function viewFactory_LoginComponent_Host0(viewUtils, parentInjector, declaration
 exports.LoginComponentNgFactory = new import14.ComponentFactory('login', viewFactory_LoginComponent_Host0, import1.LoginComponent);
 var styles_LoginComponent = [];
 var nodeDebugInfos_LoginComponent0 = [
+    new import0.StaticNodeDebugInfo([], null, {}),
+    new import0.StaticNodeDebugInfo([], null, {}),
+    new import0.StaticNodeDebugInfo([], null, {}),
+    new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
@@ -23943,6 +26506,9 @@ var nodeDebugInfos_LoginComponent0 = [
     new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
+    new import0.StaticNodeDebugInfo([], null, {}),
+    new import0.StaticNodeDebugInfo([], null, {}),
+    new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {})
 ];
 var renderType_LoginComponent = null;
@@ -23955,112 +26521,122 @@ var _View_LoginComponent0 = (function (_super) {
         var parentRenderNode = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
         this._el_0 = this.renderer.createElement(parentRenderNode, 'div', this.debug(0, 0, 0));
         this.renderer.setElementAttribute(this._el_0, 'class', 'card-container login-form');
-        this._text_1 = this.renderer.createText(this._el_0, '\n  ', this.debug(1, 0, 39));
-        this._el_2 = this.renderer.createElement(this._el_0, 'h1', this.debug(2, 1, 2));
-        this.renderer.setElementAttribute(this._el_2, 'class', 'text-align-center');
-        this._text_3 = this.renderer.createText(this._el_2, '\n    ', this.debug(3, 1, 32));
-        this._el_4 = this.renderer.createElement(this._el_2, 'img', this.debug(4, 2, 4));
-        this.renderer.setElementAttribute(this._el_4, 'alt', 'HELIOS');
-        this.renderer.setElementAttribute(this._el_4, 'src', '/assets/images/logo-helios-login.png');
-        this._text_5 = this.renderer.createText(this._el_2, '\n  ', this.debug(5, 2, 66));
-        this._text_6 = this.renderer.createText(this._el_0, '\n\n  ', this.debug(6, 3, 7));
-        this._text_7 = this.renderer.createText(this._el_0, '\n  ', this.debug(7, 5, 48));
-        this._text_8 = this.renderer.createText(this._el_0, '\n\n  ', this.debug(8, 24, 17));
-        this._text_9 = this.renderer.createText(this._el_0, '\n  ', this.debug(9, 26, 28));
-        this._el_10 = this.renderer.createElement(this._el_0, 'div', this.debug(10, 27, 2));
-        this.renderer.setElementAttribute(this._el_10, 'class', 'card');
-        this._text_11 = this.renderer.createText(this._el_10, '\n    ', this.debug(11, 27, 20));
-        this._el_12 = this.renderer.createElement(this._el_10, 'div', this.debug(12, 28, 4));
-        this.renderer.setElementAttribute(this._el_12, 'class', 'card-content');
-        this._text_13 = this.renderer.createText(this._el_12, '\n      ', this.debug(13, 28, 30));
-        this._el_14 = this.renderer.createElement(this._el_12, 'form', this.debug(14, 29, 6));
-        this.renderer.setElementAttribute(this._el_14, 'role', 'form');
-        this._NgForm_14_3 = new import15.NgForm(null, null);
-        this._ControlContainer_14_4 = this._NgForm_14_3;
-        this._NgControlStatusGroup_14_5 = new import17.NgControlStatusGroup(this._ControlContainer_14_4);
-        this._text_15 = this.renderer.createText(this._el_14, '\n        ', this.debug(15, 29, 81));
-        this._el_16 = this.renderer.createElement(this._el_14, 'div', this.debug(16, 30, 8));
-        this.renderer.setElementAttribute(this._el_16, 'class', 'row');
-        this._text_17 = this.renderer.createText(this._el_16, '\n          ', this.debug(17, 30, 25));
-        this._el_18 = this.renderer.createElement(this._el_16, 'div', this.debug(18, 31, 10));
-        this.renderer.setElementAttribute(this._el_18, 'class', 'input-field');
-        this._text_19 = this.renderer.createText(this._el_18, '\n            ', this.debug(19, 31, 35));
-        this._el_20 = this.renderer.createElement(this._el_18, 'i', this.debug(20, 32, 12));
-        this.renderer.setElementAttribute(this._el_20, 'class', 'material-icons suffix');
-        this._text_21 = this.renderer.createText(this._el_20, 'account_circle', this.debug(21, 32, 45));
-        this._text_22 = this.renderer.createText(this._el_18, '\n            ', this.debug(22, 32, 63));
-        this._el_23 = this.renderer.createElement(this._el_18, 'input', this.debug(23, 33, 12));
-        this.renderer.setElementAttribute(this._el_23, 'class', '');
-        this.renderer.setElementAttribute(this._el_23, 'id', 'username1');
-        this.renderer.setElementAttribute(this._el_23, 'type', 'text');
-        this._text_24 = this.renderer.createText(this._el_18, '\n            ', this.debug(24, 33, 65));
-        this._el_25 = this.renderer.createElement(this._el_18, 'label', this.debug(25, 34, 12));
-        this.renderer.setElementAttribute(this._el_25, 'for', 'username1');
-        this._text_26 = this.renderer.createText(this._el_25, 'Username', this.debug(26, 34, 35));
-        this._text_27 = this.renderer.createText(this._el_18, '\n\n          ', this.debug(27, 34, 51));
-        this._text_28 = this.renderer.createText(this._el_16, '\n        ', this.debug(28, 36, 16));
-        this._text_29 = this.renderer.createText(this._el_14, '\n        ', this.debug(29, 37, 14));
-        this._el_30 = this.renderer.createElement(this._el_14, 'div', this.debug(30, 38, 8));
-        this.renderer.setElementAttribute(this._el_30, 'class', 'row');
-        this._text_31 = this.renderer.createText(this._el_30, '\n          ', this.debug(31, 38, 25));
-        this._el_32 = this.renderer.createElement(this._el_30, 'div', this.debug(32, 39, 10));
-        this.renderer.setElementAttribute(this._el_32, 'class', 'input-field');
-        this._text_33 = this.renderer.createText(this._el_32, '\n            ', this.debug(33, 39, 35));
-        this._el_34 = this.renderer.createElement(this._el_32, 'i', this.debug(34, 40, 12));
-        this.renderer.setElementAttribute(this._el_34, 'class', 'material-icons suffix');
-        this._text_35 = this.renderer.createText(this._el_34, 'lock_outline', this.debug(35, 40, 45));
-        this._text_36 = this.renderer.createText(this._el_32, '\n            ', this.debug(36, 40, 61));
-        this._el_37 = this.renderer.createElement(this._el_32, 'input', this.debug(37, 41, 12));
-        this.renderer.setElementAttribute(this._el_37, 'class', '');
-        this.renderer.setElementAttribute(this._el_37, 'id', 'password1');
-        this.renderer.setElementAttribute(this._el_37, 'type', 'password');
-        this._text_38 = this.renderer.createText(this._el_32, '\n            ', this.debug(38, 41, 69));
-        this._el_39 = this.renderer.createElement(this._el_32, 'label', this.debug(39, 42, 12));
-        this.renderer.setElementAttribute(this._el_39, 'for', 'password1');
-        this._text_40 = this.renderer.createText(this._el_39, 'Password', this.debug(40, 42, 35));
-        this._text_41 = this.renderer.createText(this._el_32, '\n          ', this.debug(41, 42, 51));
-        this._text_42 = this.renderer.createText(this._el_30, '\n        ', this.debug(42, 43, 16));
-        this._text_43 = this.renderer.createText(this._el_14, '\n\n        ', this.debug(43, 44, 14));
-        this._el_44 = this.renderer.createElement(this._el_14, 'div', this.debug(44, 46, 8));
-        this.renderer.setElementAttribute(this._el_44, 'class', 'row');
-        this._text_45 = this.renderer.createText(this._el_44, '\n          ', this.debug(45, 46, 25));
-        this._el_46 = this.renderer.createElement(this._el_44, 'div', this.debug(46, 47, 10));
-        this.renderer.setElementAttribute(this._el_46, 'class', 'input-field');
-        this._text_47 = this.renderer.createText(this._el_46, '\n            ', this.debug(47, 47, 35));
-        this._text_48 = this.renderer.createText(this._el_46, '\n\n            ', this.debug(48, 49, 59));
-        this._el_49 = this.renderer.createElement(this._el_46, 'input', this.debug(49, 51, 12));
-        this.renderer.setElementAttribute(this._el_49, 'class', 'filled-in rememberMe');
-        this.renderer.setElementAttribute(this._el_49, 'id', 'filled-in-box1');
-        this.renderer.setElementAttribute(this._el_49, 'type', 'checkbox');
-        this._text_50 = this.renderer.createText(this._el_46, '\n            ', this.debug(50, 51, 85));
-        this._el_51 = this.renderer.createElement(this._el_46, 'label', this.debug(51, 52, 12));
-        this.renderer.setElementAttribute(this._el_51, 'for', 'filled-in-box1');
-        this._text_52 = this.renderer.createText(this._el_51, 'Remember me', this.debug(52, 52, 40));
-        this._text_53 = this.renderer.createText(this._el_46, '\n\n            ', this.debug(53, 52, 59));
-        this._el_54 = this.renderer.createElement(this._el_46, 'span', this.debug(54, 54, 12));
-        this.renderer.setElementAttribute(this._el_54, 'class', 'float-right');
-        this._el_55 = this.renderer.createElement(this._el_54, 'a', this.debug(55, 54, 38));
-        this.renderer.setElementAttribute(this._el_55, 'href', '/forgotpassword');
-        this._text_56 = this.renderer.createText(this._el_55, 'Forgot password?', this.debug(56, 54, 64));
-        this._text_57 = this.renderer.createText(this._el_46, '\n            ', this.debug(57, 54, 91));
-        this._text_58 = this.renderer.createText(this._el_46, '\n\n          ', this.debug(58, 55, 89));
-        this._text_59 = this.renderer.createText(this._el_44, '\n        ', this.debug(59, 57, 16));
-        this._text_60 = this.renderer.createText(this._el_14, '\n\n        ', this.debug(60, 58, 14));
-        this._el_61 = this.renderer.createElement(this._el_14, 'button', this.debug(61, 60, 8));
-        this.renderer.setElementAttribute(this._el_61, 'class', 'btn btn-block btn-large waves-effect waves-light login-submit');
-        this.renderer.setElementAttribute(this._el_61, 'name', 'action');
-        this.renderer.setElementAttribute(this._el_61, 'type', 'submit');
-        this._text_62 = this.renderer.createText(this._el_61, '\n          Login', this.debug(62, 60, 114));
-        this._el_63 = this.renderer.createElement(this._el_61, 'i', this.debug(63, 61, 15));
-        this.renderer.setElementAttribute(this._el_63, 'class', 'material-icons right');
-        this._text_64 = this.renderer.createText(this._el_63, 'send', this.debug(64, 61, 47));
-        this._text_65 = this.renderer.createText(this._el_14, '\n      ', this.debug(65, 61, 64));
-        this._text_66 = this.renderer.createText(this._el_12, '\n    ', this.debug(66, 62, 13));
-        this._text_67 = this.renderer.createText(this._el_10, '\n  ', this.debug(67, 63, 10));
-        this._text_68 = this.renderer.createText(this._el_0, '\n', this.debug(68, 64, 8));
-        this._text_69 = this.renderer.createText(parentRenderNode, '\n\n', this.debug(69, 65, 6));
-        var disposable_0 = this.renderer.listen(this._el_14, 'submit', this.eventHandler(this._handle_submit_14_0.bind(this)));
-        var disposable_1 = this.renderer.listen(this._el_14, 'reset', this.eventHandler(this._handle_reset_14_1.bind(this)));
+        this._text_1 = this.renderer.createText(this._el_0, '\n    ', this.debug(1, 0, 39));
+        this._el_2 = this.renderer.createElement(this._el_0, 'div', this.debug(2, 1, 4));
+        this.renderer.setElementAttribute(this._el_2, 'class', 'welcome-message text-align-center');
+        this._text_3 = this.renderer.createText(this._el_2, '\n        ', this.debug(3, 1, 51));
+        this._el_4 = this.renderer.createElement(this._el_2, 'h5', this.debug(4, 2, 8));
+        this._text_5 = this.renderer.createText(this._el_4, 'Angular2 Webpack2 DotNET Starter', this.debug(5, 2, 12));
+        this._text_6 = this.renderer.createText(this._el_2, '\n        ', this.debug(6, 2, 49));
+        this._el_7 = this.renderer.createElement(this._el_2, 'h3', this.debug(7, 3, 8));
+        this._text_8 = this.renderer.createText(this._el_7, 'By IAMtheIAM', this.debug(8, 3, 12));
+        this._text_9 = this.renderer.createText(this._el_2, '\n    ', this.debug(9, 3, 29));
+        this._text_10 = this.renderer.createText(this._el_0, '\n\n    ', this.debug(10, 4, 10));
+        this._text_11 = this.renderer.createText(this._el_0, '\n    ', this.debug(11, 6, 50));
+        this._text_12 = this.renderer.createText(this._el_0, '\n    ', this.debug(12, 25, 17));
+        this._text_13 = this.renderer.createText(this._el_0, '\n    ', this.debug(13, 26, 30));
+        this._el_14 = this.renderer.createElement(this._el_0, 'div', this.debug(14, 27, 4));
+        this.renderer.setElementAttribute(this._el_14, 'class', 'card');
+        this._text_15 = this.renderer.createText(this._el_14, '\n        ', this.debug(15, 27, 22));
+        this._el_16 = this.renderer.createElement(this._el_14, 'div', this.debug(16, 28, 8));
+        this.renderer.setElementAttribute(this._el_16, 'class', 'card-content');
+        this._text_17 = this.renderer.createText(this._el_16, '\n            ', this.debug(17, 28, 34));
+        this._el_18 = this.renderer.createElement(this._el_16, 'form', this.debug(18, 29, 12));
+        this.renderer.setElementAttribute(this._el_18, 'role', 'form');
+        this._NgForm_18_3 = new import15.NgForm(null, null);
+        this._ControlContainer_18_4 = this._NgForm_18_3;
+        this._NgControlStatusGroup_18_5 = new import17.NgControlStatusGroup(this._ControlContainer_18_4);
+        this._text_19 = this.renderer.createText(this._el_18, '\n                ', this.debug(19, 29, 87));
+        this._el_20 = this.renderer.createElement(this._el_18, 'div', this.debug(20, 30, 16));
+        this.renderer.setElementAttribute(this._el_20, 'class', 'row');
+        this._text_21 = this.renderer.createText(this._el_20, '\n                    ', this.debug(21, 30, 33));
+        this._el_22 = this.renderer.createElement(this._el_20, 'div', this.debug(22, 31, 20));
+        this.renderer.setElementAttribute(this._el_22, 'class', 'input-field');
+        this._text_23 = this.renderer.createText(this._el_22, '\n                        ', this.debug(23, 31, 45));
+        this._el_24 = this.renderer.createElement(this._el_22, 'i', this.debug(24, 32, 24));
+        this.renderer.setElementAttribute(this._el_24, 'class', 'material-icons suffix');
+        this._text_25 = this.renderer.createText(this._el_24, 'account_circle', this.debug(25, 32, 57));
+        this._text_26 = this.renderer.createText(this._el_22, '\n                        ', this.debug(26, 32, 75));
+        this._el_27 = this.renderer.createElement(this._el_22, 'input', this.debug(27, 33, 24));
+        this.renderer.setElementAttribute(this._el_27, 'class', '');
+        this.renderer.setElementAttribute(this._el_27, 'id', 'username1');
+        this.renderer.setElementAttribute(this._el_27, 'type', 'text');
+        this.renderer.setElementAttribute(this._el_27, 'value', 'admin');
+        this._text_28 = this.renderer.createText(this._el_22, '\n                        ', this.debug(28, 33, 91));
+        this._el_29 = this.renderer.createElement(this._el_22, 'label', this.debug(29, 34, 24));
+        this.renderer.setElementAttribute(this._el_29, 'for', 'username1');
+        this._text_30 = this.renderer.createText(this._el_29, 'Username', this.debug(30, 34, 47));
+        this._text_31 = this.renderer.createText(this._el_22, '\n\n                    ', this.debug(31, 34, 63));
+        this._text_32 = this.renderer.createText(this._el_20, '\n                ', this.debug(32, 36, 26));
+        this._text_33 = this.renderer.createText(this._el_18, '\n                ', this.debug(33, 37, 22));
+        this._el_34 = this.renderer.createElement(this._el_18, 'div', this.debug(34, 38, 16));
+        this.renderer.setElementAttribute(this._el_34, 'class', 'row');
+        this._text_35 = this.renderer.createText(this._el_34, '\n                    ', this.debug(35, 38, 33));
+        this._el_36 = this.renderer.createElement(this._el_34, 'div', this.debug(36, 39, 20));
+        this.renderer.setElementAttribute(this._el_36, 'class', 'input-field');
+        this._text_37 = this.renderer.createText(this._el_36, '\n                        ', this.debug(37, 39, 45));
+        this._el_38 = this.renderer.createElement(this._el_36, 'i', this.debug(38, 40, 24));
+        this.renderer.setElementAttribute(this._el_38, 'class', 'material-icons suffix');
+        this._text_39 = this.renderer.createText(this._el_38, 'lock_outline', this.debug(39, 40, 57));
+        this._text_40 = this.renderer.createText(this._el_36, '\n                        ', this.debug(40, 40, 73));
+        this._el_41 = this.renderer.createElement(this._el_36, 'input', this.debug(41, 41, 24));
+        this.renderer.setElementAttribute(this._el_41, 'class', '');
+        this.renderer.setElementAttribute(this._el_41, 'id', 'password1');
+        this.renderer.setElementAttribute(this._el_41, 'type', 'password');
+        this._text_42 = this.renderer.createText(this._el_36, '\n                        ', this.debug(42, 41, 81));
+        this._el_43 = this.renderer.createElement(this._el_36, 'label', this.debug(43, 42, 24));
+        this.renderer.setElementAttribute(this._el_43, 'for', 'password1');
+        this._text_44 = this.renderer.createText(this._el_43, 'Password', this.debug(44, 42, 47));
+        this._text_45 = this.renderer.createText(this._el_36, '\n                    ', this.debug(45, 42, 63));
+        this._text_46 = this.renderer.createText(this._el_34, '\n                ', this.debug(46, 43, 26));
+        this._text_47 = this.renderer.createText(this._el_18, '\n\n                ', this.debug(47, 44, 22));
+        this._el_48 = this.renderer.createElement(this._el_18, 'div', this.debug(48, 46, 16));
+        this.renderer.setElementAttribute(this._el_48, 'class', 'row');
+        this._text_49 = this.renderer.createText(this._el_48, '\n                    ', this.debug(49, 46, 33));
+        this._el_50 = this.renderer.createElement(this._el_48, 'div', this.debug(50, 47, 20));
+        this.renderer.setElementAttribute(this._el_50, 'class', 'input-field');
+        this._text_51 = this.renderer.createText(this._el_50, '\n                        ', this.debug(51, 47, 45));
+        this._el_52 = this.renderer.createElement(this._el_50, 'input', this.debug(52, 48, 24));
+        this.renderer.setElementAttribute(this._el_52, 'class', 'rememberMe');
+        this.renderer.setElementAttribute(this._el_52, 'id', 'rememberMe1');
+        this.renderer.setElementAttribute(this._el_52, 'type', 'checkbox');
+        this.renderer.setElementAttribute(this._el_52, 'value', '');
+        this._text_53 = this.renderer.createText(this._el_50, '\n\n                        ', this.debug(53, 48, 145));
+        this._el_54 = this.renderer.createElement(this._el_50, 'input', this.debug(54, 50, 24));
+        this.renderer.setElementAttribute(this._el_54, 'class', 'filled-in rememberMe');
+        this.renderer.setElementAttribute(this._el_54, 'id', 'filled-in-box1');
+        this.renderer.setElementAttribute(this._el_54, 'type', 'checkbox');
+        this._text_55 = this.renderer.createText(this._el_50, '\n                        ', this.debug(55, 50, 98));
+        this._el_56 = this.renderer.createElement(this._el_50, 'label', this.debug(56, 51, 24));
+        this.renderer.setElementAttribute(this._el_56, 'for', 'filled-in-box1');
+        this._text_57 = this.renderer.createText(this._el_56, 'Remember me', this.debug(57, 51, 52));
+        this._text_58 = this.renderer.createText(this._el_50, '\n\n                        ', this.debug(58, 51, 71));
+        this._el_59 = this.renderer.createElement(this._el_50, 'span', this.debug(59, 53, 24));
+        this.renderer.setElementAttribute(this._el_59, 'class', 'float-right');
+        this._el_60 = this.renderer.createElement(this._el_59, 'a', this.debug(60, 53, 50));
+        this.renderer.setElementAttribute(this._el_60, 'href', '/forgotpassword');
+        this._text_61 = this.renderer.createText(this._el_60, 'Forgot password?', this.debug(61, 53, 76));
+        this._el_62 = this.renderer.createElement(this._el_50, 'br', this.debug(62, 53, 103));
+        this._text_63 = this.renderer.createText(this._el_50, '\n                        ', this.debug(63, 53, 107));
+        this._text_64 = this.renderer.createText(this._el_50, '\n\n                    ', this.debug(64, 54, 96));
+        this._text_65 = this.renderer.createText(this._el_48, '\n                ', this.debug(65, 56, 26));
+        this._text_66 = this.renderer.createText(this._el_18, '\n\n                ', this.debug(66, 57, 22));
+        this._el_67 = this.renderer.createElement(this._el_18, 'button', this.debug(67, 59, 16));
+        this.renderer.setElementAttribute(this._el_67, 'class', 'btn btn-block btn-large waves-effect waves-light login-submit');
+        this.renderer.setElementAttribute(this._el_67, 'name', 'action');
+        this.renderer.setElementAttribute(this._el_67, 'type', 'submit');
+        this._text_68 = this.renderer.createText(this._el_67, '\n                    Login', this.debug(68, 59, 122));
+        this._el_69 = this.renderer.createElement(this._el_67, 'i', this.debug(69, 60, 25));
+        this.renderer.setElementAttribute(this._el_69, 'class', 'material-icons right');
+        this._text_70 = this.renderer.createText(this._el_69, 'send', this.debug(70, 60, 57));
+        this._text_71 = this.renderer.createText(this._el_67, '\n                ', this.debug(71, 60, 65));
+        this._text_72 = this.renderer.createText(this._el_18, '\n            ', this.debug(72, 61, 25));
+        this._text_73 = this.renderer.createText(this._el_16, '\n        ', this.debug(73, 62, 19));
+        this._text_74 = this.renderer.createText(this._el_14, '\n    ', this.debug(74, 63, 14));
+        this._text_75 = this.renderer.createText(this._el_0, '\n', this.debug(75, 64, 10));
+        this._text_76 = this.renderer.createText(parentRenderNode, '\n', this.debug(76, 65, 6));
+        var disposable_0 = this.renderer.listen(this._el_18, 'submit', this.eventHandler(this._handle_submit_18_0.bind(this)));
+        var disposable_1 = this.renderer.listen(this._el_18, 'reset', this.eventHandler(this._handle_reset_18_1.bind(this)));
         this._expr_3 = import8.UNINITIALIZED;
         this._expr_4 = import8.UNINITIALIZED;
         this._expr_5 = import8.UNINITIALIZED;
@@ -24075,12 +26651,12 @@ var _View_LoginComponent0 = (function (_super) {
             this._el_4,
             this._text_5,
             this._text_6,
-            this._text_7,
+            this._el_7,
             this._text_8,
             this._text_9,
-            this._el_10,
+            this._text_10,
             this._text_11,
-            this._el_12,
+            this._text_12,
             this._text_13,
             this._el_14,
             this._text_15,
@@ -24090,54 +26666,61 @@ var _View_LoginComponent0 = (function (_super) {
             this._text_19,
             this._el_20,
             this._text_21,
-            this._text_22,
-            this._el_23,
-            this._text_24,
-            this._el_25,
+            this._el_22,
+            this._text_23,
+            this._el_24,
+            this._text_25,
             this._text_26,
-            this._text_27,
+            this._el_27,
             this._text_28,
-            this._text_29,
-            this._el_30,
+            this._el_29,
+            this._text_30,
             this._text_31,
-            this._el_32,
+            this._text_32,
             this._text_33,
             this._el_34,
             this._text_35,
-            this._text_36,
-            this._el_37,
-            this._text_38,
-            this._el_39,
+            this._el_36,
+            this._text_37,
+            this._el_38,
+            this._text_39,
             this._text_40,
-            this._text_41,
+            this._el_41,
             this._text_42,
-            this._text_43,
-            this._el_44,
+            this._el_43,
+            this._text_44,
             this._text_45,
-            this._el_46,
+            this._text_46,
             this._text_47,
-            this._text_48,
-            this._el_49,
-            this._text_50,
-            this._el_51,
-            this._text_52,
+            this._el_48,
+            this._text_49,
+            this._el_50,
+            this._text_51,
+            this._el_52,
             this._text_53,
             this._el_54,
-            this._el_55,
-            this._text_56,
+            this._text_55,
+            this._el_56,
             this._text_57,
             this._text_58,
-            this._text_59,
-            this._text_60,
-            this._el_61,
-            this._text_62,
-            this._el_63,
+            this._el_59,
+            this._el_60,
+            this._text_61,
+            this._el_62,
+            this._text_63,
             this._text_64,
             this._text_65,
             this._text_66,
-            this._text_67,
+            this._el_67,
             this._text_68,
-            this._text_69
+            this._el_69,
+            this._text_70,
+            this._text_71,
+            this._text_72,
+            this._text_73,
+            this._text_74,
+            this._text_75,
+            this._text_76
         ], [
             disposable_0,
             disposable_1
@@ -24145,69 +26728,69 @@ var _View_LoginComponent0 = (function (_super) {
         return null;
     };
     _View_LoginComponent0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
-        if (((token === import15.NgForm) && ((14 <= requestNodeIndex) && (requestNodeIndex <= 65)))) {
-            return this._NgForm_14_3;
+        if (((token === import15.NgForm) && ((18 <= requestNodeIndex) && (requestNodeIndex <= 72)))) {
+            return this._NgForm_18_3;
         }
-        if (((token === import16.ControlContainer) && ((14 <= requestNodeIndex) && (requestNodeIndex <= 65)))) {
-            return this._ControlContainer_14_4;
+        if (((token === import16.ControlContainer) && ((18 <= requestNodeIndex) && (requestNodeIndex <= 72)))) {
+            return this._ControlContainer_18_4;
         }
-        if (((token === import17.NgControlStatusGroup) && ((14 <= requestNodeIndex) && (requestNodeIndex <= 65)))) {
-            return this._NgControlStatusGroup_14_5;
+        if (((token === import17.NgControlStatusGroup) && ((18 <= requestNodeIndex) && (requestNodeIndex <= 72)))) {
+            return this._NgControlStatusGroup_18_5;
         }
         return notFoundResult;
     };
     _View_LoginComponent0.prototype.detectChangesInternal = function (throwOnChange) {
         this.detectContentChildrenChanges(throwOnChange);
-        this.debug(14, 29, 6);
-        var currVal_3 = this._NgControlStatusGroup_14_5.ngClassUntouched;
+        this.debug(18, 29, 12);
+        var currVal_3 = this._NgControlStatusGroup_18_5.ngClassUntouched;
         if (import5.checkBinding(throwOnChange, this._expr_3, currVal_3)) {
-            this.renderer.setElementClass(this._el_14, 'ng-untouched', currVal_3);
+            this.renderer.setElementClass(this._el_18, 'ng-untouched', currVal_3);
             this._expr_3 = currVal_3;
         }
-        this.debug(14, 29, 6);
-        var currVal_4 = this._NgControlStatusGroup_14_5.ngClassTouched;
+        this.debug(18, 29, 12);
+        var currVal_4 = this._NgControlStatusGroup_18_5.ngClassTouched;
         if (import5.checkBinding(throwOnChange, this._expr_4, currVal_4)) {
-            this.renderer.setElementClass(this._el_14, 'ng-touched', currVal_4);
+            this.renderer.setElementClass(this._el_18, 'ng-touched', currVal_4);
             this._expr_4 = currVal_4;
         }
-        this.debug(14, 29, 6);
-        var currVal_5 = this._NgControlStatusGroup_14_5.ngClassPristine;
+        this.debug(18, 29, 12);
+        var currVal_5 = this._NgControlStatusGroup_18_5.ngClassPristine;
         if (import5.checkBinding(throwOnChange, this._expr_5, currVal_5)) {
-            this.renderer.setElementClass(this._el_14, 'ng-pristine', currVal_5);
+            this.renderer.setElementClass(this._el_18, 'ng-pristine', currVal_5);
             this._expr_5 = currVal_5;
         }
-        this.debug(14, 29, 6);
-        var currVal_6 = this._NgControlStatusGroup_14_5.ngClassDirty;
+        this.debug(18, 29, 12);
+        var currVal_6 = this._NgControlStatusGroup_18_5.ngClassDirty;
         if (import5.checkBinding(throwOnChange, this._expr_6, currVal_6)) {
-            this.renderer.setElementClass(this._el_14, 'ng-dirty', currVal_6);
+            this.renderer.setElementClass(this._el_18, 'ng-dirty', currVal_6);
             this._expr_6 = currVal_6;
         }
-        this.debug(14, 29, 6);
-        var currVal_7 = this._NgControlStatusGroup_14_5.ngClassValid;
+        this.debug(18, 29, 12);
+        var currVal_7 = this._NgControlStatusGroup_18_5.ngClassValid;
         if (import5.checkBinding(throwOnChange, this._expr_7, currVal_7)) {
-            this.renderer.setElementClass(this._el_14, 'ng-valid', currVal_7);
+            this.renderer.setElementClass(this._el_18, 'ng-valid', currVal_7);
             this._expr_7 = currVal_7;
         }
-        this.debug(14, 29, 6);
-        var currVal_8 = this._NgControlStatusGroup_14_5.ngClassInvalid;
+        this.debug(18, 29, 12);
+        var currVal_8 = this._NgControlStatusGroup_18_5.ngClassInvalid;
         if (import5.checkBinding(throwOnChange, this._expr_8, currVal_8)) {
-            this.renderer.setElementClass(this._el_14, 'ng-invalid', currVal_8);
+            this.renderer.setElementClass(this._el_18, 'ng-invalid', currVal_8);
             this._expr_8 = currVal_8;
         }
         this.detectViewChildrenChanges(throwOnChange);
     };
-    _View_LoginComponent0.prototype._handle_submit_14_0 = function ($event) {
+    _View_LoginComponent0.prototype._handle_submit_18_0 = function ($event) {
         this.markPathToRootAsCheckOnce();
-        this.debug(14, 29, 24);
-        var pd_0 = (this.context.login($event, this._el_23.value, this._el_37.value) !== false);
-        this.debug(14, 29, 6);
-        var pd_1 = (this._NgForm_14_3.onSubmit() !== false);
+        this.debug(18, 29, 30);
+        var pd_0 = (this.context.login($event, this._el_27.value, this._el_41.value) !== false);
+        this.debug(18, 29, 12);
+        var pd_1 = (this._NgForm_18_3.onSubmit($event) !== false);
         return ((true && pd_0) && pd_1);
     };
-    _View_LoginComponent0.prototype._handle_reset_14_1 = function ($event) {
+    _View_LoginComponent0.prototype._handle_reset_18_1 = function ($event) {
         this.markPathToRootAsCheckOnce();
-        this.debug(14, 29, 6);
-        var pd_0 = (this._NgForm_14_3.onReset() !== false);
+        this.debug(18, 29, 12);
+        var pd_0 = (this._NgForm_18_3.onReset() !== false);
         return (true && pd_0);
     };
     return _View_LoginComponent0;
@@ -24222,7 +26805,7 @@ exports.viewFactory_LoginComponent0 = viewFactory_LoginComponent0;
 
 
 /***/ },
-/* 127 */
+/* 158 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24238,18 +26821,18 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var import0 = __webpack_require__(19);
-var import1 = __webpack_require__(50);
+var import1 = __webpack_require__(56);
 var import3 = __webpack_require__(21);
 var import4 = __webpack_require__(17);
 var import5 = __webpack_require__(23);
 var import7 = __webpack_require__(16);
 var import8 = __webpack_require__(15);
-var import9 = __webpack_require__(6);
+var import9 = __webpack_require__(7);
 var import10 = __webpack_require__(8);
 var import11 = __webpack_require__(20);
 var import12 = __webpack_require__(18);
-var import13 = __webpack_require__(57);
-var import14 = __webpack_require__(61);
+var import13 = __webpack_require__(62);
+var import14 = __webpack_require__(66);
 var nodeDebugInfos_NavFooterComponent_Host0 = [new import0.StaticNodeDebugInfo([import1.NavFooterComponent], import1.NavFooterComponent, {})];
 var renderType_NavFooterComponent_Host = null;
 var _View_NavFooterComponent_Host0 = (function (_super) {
@@ -24318,8 +26901,8 @@ var _View_NavFooterComponent0 = (function (_super) {
         this._text_2 = this.renderer.createText(this._el_1, '\n   ', this.debug(2, 1, 31));
         this._el_3 = this.renderer.createElement(this._el_1, 'p', this.debug(3, 2, 3));
         this.renderer.setElementAttribute(this._el_3, 'class', 'copyright');
-        this._text_4 = this.renderer.createText(this._el_3, 'Copyright © 2016 Helios. All rights reserved.', this.debug(4, 2, 24));
-        this._text_5 = this.renderer.createText(this._el_1, '\n   ', this.debug(5, 2, 78));
+        this._text_4 = this.renderer.createText(this._el_3, 'Copyright © 2016 IAMtheIAM. All rights reserved.', this.debug(4, 2, 24));
+        this._text_5 = this.renderer.createText(this._el_1, '\n   ', this.debug(5, 2, 81));
         this._anchor_6 = this.renderer.createTemplateAnchor(this._el_1, this.debug(6, 3, 3));
         this._appEl_6 = new import4.AppElement(6, 1, this, this._anchor_6);
         this._TemplateRef_6_5 = new import13.TemplateRef_(this._appEl_6, viewFactory_NavFooterComponent1);
@@ -24406,7 +26989,7 @@ function viewFactory_NavFooterComponent1(viewUtils, parentInjector, declarationE
 
 
 /***/ },
-/* 128 */
+/* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24422,16 +27005,16 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var import0 = __webpack_require__(19);
-var import1 = __webpack_require__(51);
+var import1 = __webpack_require__(57);
 var import3 = __webpack_require__(21);
 var import4 = __webpack_require__(17);
 var import5 = __webpack_require__(23);
 var import7 = __webpack_require__(16);
 var import8 = __webpack_require__(15);
-var import9 = __webpack_require__(6);
+var import9 = __webpack_require__(7);
 var import10 = __webpack_require__(20);
 var import11 = __webpack_require__(18);
-var import12 = __webpack_require__(47);
+var import12 = __webpack_require__(49);
 var nodeDebugInfos_NavHeaderComponent_Host0 = [new import0.StaticNodeDebugInfo([import1.NavHeaderComponent], import1.NavHeaderComponent, {})];
 var renderType_NavHeaderComponent_Host = null;
 var _View_NavHeaderComponent_Host0 = (function (_super) {
@@ -24604,9 +27187,9 @@ var _View_NavHeaderComponent0 = (function (_super) {
         this.renderer.setElementAttribute(this._el_35, 'placeholder', 'Search');
         this.renderer.setElementAttribute(this._el_35, 'type', 'text');
         this._el_36 = this.renderer.createElement(this._el_33, 'i', this.debug(36, 15, 101));
-        this.renderer.setElementAttribute(this._el_36, 'class', 'material-icons');
-        this._text_37 = this.renderer.createText(this._el_36, 'search', this.debug(37, 16, 41));
-        this._text_38 = this.renderer.createText(this._el_33, '\n                  ', this.debug(38, 16, 51));
+        this.renderer.setElementAttribute(this._el_36, 'class', 'material-icons align-right');
+        this._text_37 = this.renderer.createText(this._el_36, 'search', this.debug(37, 16, 53));
+        this._text_38 = this.renderer.createText(this._el_33, '\n                  ', this.debug(38, 16, 63));
         this._el_39 = this.renderer.createElement(this._el_33, 'div', this.debug(39, 17, 18));
         this.renderer.setElementAttribute(this._el_39, 'class', 'search-results');
         this._text_40 = this.renderer.createText(this._el_33, '\n               ', this.debug(40, 17, 52));
@@ -24762,7 +27345,7 @@ exports.viewFactory_NavHeaderComponent0 = viewFactory_NavHeaderComponent0;
 
 
 /***/ },
-/* 129 */
+/* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24778,20 +27361,20 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var import0 = __webpack_require__(19);
-var import1 = __webpack_require__(52);
+var import1 = __webpack_require__(58);
 var import3 = __webpack_require__(21);
 var import4 = __webpack_require__(17);
 var import5 = __webpack_require__(23);
 var import7 = __webpack_require__(16);
 var import8 = __webpack_require__(15);
-var import9 = __webpack_require__(6);
+var import9 = __webpack_require__(7);
 var import10 = __webpack_require__(20);
 var import11 = __webpack_require__(18);
-var import12 = __webpack_require__(419);
+var import12 = __webpack_require__(449);
 var import13 = __webpack_require__(30);
-var import14 = __webpack_require__(44);
-var import15 = __webpack_require__(88);
-var import16 = __webpack_require__(47);
+var import14 = __webpack_require__(47);
+var import15 = __webpack_require__(110);
+var import16 = __webpack_require__(49);
 var nodeDebugInfos_NavSidebarComponent_Host0 = [new import0.StaticNodeDebugInfo([import1.NavSidebarComponent], import1.NavSidebarComponent, {})];
 var renderType_NavSidebarComponent_Host = null;
 var _View_NavSidebarComponent_Host0 = (function (_super) {
@@ -24994,15 +27577,15 @@ var _View_NavSidebarComponent0 = (function (_super) {
         this.renderer.setElementAttribute(this._el_45, 'class', 'waves-effect waves-darkblue');
         this.renderer.setElementAttribute(this._el_45, 'router-active', '');
         this._RouterLinkWithHref_45_3 = new import12.RouterLinkWithHref(this.parentInjector.get(import13.Router), this.parentInjector.get(import14.ActivatedRoute), this.parentInjector.get(import15.LocationStrategy));
-        this._text_46 = this.renderer.createText(this._el_45, 'Webpage 1', this.debug(46, 15, 111));
-        this._text_47 = this.renderer.createText(this._el_42, '\n                  ', this.debug(47, 15, 129));
+        this._text_46 = this.renderer.createText(this._el_45, 'Bing Images', this.debug(46, 15, 111));
+        this._text_47 = this.renderer.createText(this._el_42, '\n                  ', this.debug(47, 15, 131));
         this._el_48 = this.renderer.createElement(this._el_42, 'li', this.debug(48, 16, 18));
         this._el_49 = this.renderer.createElement(this._el_48, 'a', this.debug(49, 16, 22));
         this.renderer.setElementAttribute(this._el_49, 'class', 'waves-effect waves-darkblue');
         this.renderer.setElementAttribute(this._el_49, 'router-active', '');
         this._RouterLinkWithHref_49_3 = new import12.RouterLinkWithHref(this.parentInjector.get(import13.Router), this.parentInjector.get(import14.ActivatedRoute), this.parentInjector.get(import15.LocationStrategy));
-        this._text_50 = this.renderer.createText(this._el_49, 'Webpage 2', this.debug(50, 16, 111));
-        this._text_51 = this.renderer.createText(this._el_42, '\n               ', this.debug(51, 16, 129));
+        this._text_50 = this.renderer.createText(this._el_49, 'Bing Search', this.debug(50, 16, 111));
+        this._text_51 = this.renderer.createText(this._el_42, '\n               ', this.debug(51, 16, 131));
         this._text_52 = this.renderer.createText(this._el_40, '\n            ', this.debug(52, 17, 20));
         this._text_53 = this.renderer.createText(this._el_34, '\n         ', this.debug(53, 18, 18));
         this._text_54 = this.renderer.createText(this._el_32, '\n      ', this.debug(54, 19, 14));
@@ -25481,7 +28064,7 @@ exports.viewFactory_NavSidebarComponent0 = viewFactory_NavSidebarComponent0;
 
 
 /***/ },
-/* 130 */
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25498,15 +28081,15 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var import0 = __webpack_require__(19);
 var import1 = __webpack_require__(8);
-var import2 = __webpack_require__(38);
+var import2 = __webpack_require__(41);
 var import4 = __webpack_require__(21);
 var import5 = __webpack_require__(17);
 var import8 = __webpack_require__(16);
 var import9 = __webpack_require__(15);
-var import10 = __webpack_require__(6);
+var import10 = __webpack_require__(7);
 var import11 = __webpack_require__(30);
-var import12 = __webpack_require__(58);
-var import13 = __webpack_require__(5);
+var import12 = __webpack_require__(63);
+var import13 = __webpack_require__(6);
 var import14 = __webpack_require__(20);
 var import15 = __webpack_require__(18);
 var nodeDebugInfos_SubscriberComponent_Host0 = [new import0.StaticNodeDebugInfo([
@@ -25604,7 +28187,7 @@ exports.viewFactory_SubscriberComponent0 = viewFactory_SubscriberComponent0;
 
 
 /***/ },
-/* 131 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25620,29 +28203,29 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var import0 = __webpack_require__(19);
-var import1 = __webpack_require__(39);
+var import1 = __webpack_require__(42);
 var import3 = __webpack_require__(21);
 var import4 = __webpack_require__(17);
 var import5 = __webpack_require__(23);
 var import7 = __webpack_require__(16);
 var import8 = __webpack_require__(15);
-var import9 = __webpack_require__(6);
+var import9 = __webpack_require__(7);
 var import10 = __webpack_require__(29);
 var import11 = __webpack_require__(8);
-var import12 = __webpack_require__(44);
+var import12 = __webpack_require__(47);
 var import13 = __webpack_require__(20);
 var import14 = __webpack_require__(18);
-var import15 = __webpack_require__(99);
-var import16 = __webpack_require__(94);
-var import17 = __webpack_require__(89);
-var import18 = __webpack_require__(399);
-var import19 = __webpack_require__(400);
-var import20 = __webpack_require__(49);
-var import21 = __webpack_require__(57);
-var import22 = __webpack_require__(61);
-var import23 = __webpack_require__(426);
-var import24 = __webpack_require__(124);
-var import25 = __webpack_require__(93);
+var import15 = __webpack_require__(121);
+var import16 = __webpack_require__(116);
+var import17 = __webpack_require__(111);
+var import18 = __webpack_require__(429);
+var import19 = __webpack_require__(430);
+var import20 = __webpack_require__(55);
+var import21 = __webpack_require__(62);
+var import22 = __webpack_require__(66);
+var import23 = __webpack_require__(456);
+var import24 = __webpack_require__(155);
+var import25 = __webpack_require__(115);
 var nodeDebugInfos_TicketComponent_Host0 = [new import0.StaticNodeDebugInfo([import1.TicketComponent], import1.TicketComponent, {})];
 var renderType_TicketComponent_Host = null;
 var _View_TicketComponent_Host0 = (function (_super) {
@@ -25756,100 +28339,6 @@ var nodeDebugInfos_TicketComponent0 = [
     new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([
-        import18.NgSelectOption,
-        import19.NgSelectMultipleOption
-    ], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([
-        import18.NgSelectOption,
-        import19.NgSelectMultipleOption
-    ], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([
-        import18.NgSelectOption,
-        import19.NgSelectMultipleOption
-    ], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([
-        import18.NgSelectOption,
-        import19.NgSelectMultipleOption
-    ], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([
-        import18.NgSelectOption,
-        import19.NgSelectMultipleOption
-    ], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([
-        import18.NgSelectOption,
-        import19.NgSelectMultipleOption
-    ], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([
-        import18.NgSelectOption,
-        import19.NgSelectMultipleOption
-    ], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([
-        import18.NgSelectOption,
-        import19.NgSelectMultipleOption
-    ], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([
-        import18.NgSelectOption,
-        import19.NgSelectMultipleOption
-    ], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([
-        import18.NgSelectOption,
-        import19.NgSelectMultipleOption
-    ], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([
-        import18.NgSelectOption,
-        import19.NgSelectMultipleOption
-    ], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([
-        import18.NgSelectOption,
-        import19.NgSelectMultipleOption
-    ], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
-    new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([import20.CKEditor], import20.CKEditor, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
@@ -25941,6 +28430,10 @@ var nodeDebugInfos_TicketComponent0 = [
     new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([], null, {}),
+    new import0.StaticNodeDebugInfo([], null, {}),
+    new import0.StaticNodeDebugInfo([], null, {}),
+    new import0.StaticNodeDebugInfo([], null, {}),
+    new import0.StaticNodeDebugInfo([], null, {}),
     new import0.StaticNodeDebugInfo([
         import21.TemplateRef,
         import22.NgIf
@@ -25978,337 +28471,236 @@ var _View_TicketComponent0 = (function (_super) {
         var parentRenderNode = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
         this._el_0 = this.renderer.createElement(parentRenderNode, 'div', this.debug(0, 0, 0));
         this.renderer.setElementAttribute(this._el_0, 'class', 'row');
-        this._text_1 = this.renderer.createText(this._el_0, '\n   ', this.debug(1, 0, 17));
-        this._el_2 = this.renderer.createElement(this._el_0, 'div', this.debug(2, 1, 3));
+        this._text_1 = this.renderer.createText(this._el_0, '\n    ', this.debug(1, 0, 17));
+        this._el_2 = this.renderer.createElement(this._el_0, 'div', this.debug(2, 1, 4));
         this.renderer.setElementAttribute(this._el_2, 'class', 'ticket-action-container card-panel');
-        this._text_3 = this.renderer.createText(this._el_2, '\n\n      ', this.debug(3, 1, 51));
-        this._el_4 = this.renderer.createElement(this._el_2, 'div', this.debug(4, 3, 6));
+        this._text_3 = this.renderer.createText(this._el_2, '\n        ', this.debug(3, 1, 52));
+        this._el_4 = this.renderer.createElement(this._el_2, 'div', this.debug(4, 2, 8));
         this.renderer.setElementAttribute(this._el_4, 'class', 'col_subscriber-search input-field');
-        this._text_5 = this.renderer.createText(this._el_4, '\n         ', this.debug(5, 3, 53));
-        this._el_6 = this.renderer.createElement(this._el_4, 'form', this.debug(6, 4, 9));
+        this._text_5 = this.renderer.createText(this._el_4, '\n            ', this.debug(5, 2, 55));
+        this._el_6 = this.renderer.createElement(this._el_4, 'form', this.debug(6, 3, 12));
         this.renderer.setElementAttribute(this._el_6, 'autocomplete', 'off');
         this._NgForm_6_3 = new import15.NgForm(null, null);
         this._ControlContainer_6_4 = this._NgForm_6_3;
         this._NgControlStatusGroup_6_5 = new import17.NgControlStatusGroup(this._ControlContainer_6_4);
-        this._text_7 = this.renderer.createText(this._el_6, '\n            ', this.debug(7, 4, 124));
-        this._el_8 = this.renderer.createElement(this._el_6, 'input', this.debug(8, 5, 12));
+        this._text_7 = this.renderer.createText(this._el_6, '\n                ', this.debug(7, 3, 127));
+        this._el_8 = this.renderer.createElement(this._el_6, 'input', this.debug(8, 4, 16));
         this.renderer.setElementAttribute(this._el_8, 'autofocus', '');
         this.renderer.setElementAttribute(this._el_8, 'class', 'validate');
         this.renderer.setElementAttribute(this._el_8, 'id', 'subscriberID');
         this.renderer.setElementAttribute(this._el_8, 'placeholder', 'Subscriber ID');
         this.renderer.setElementAttribute(this._el_8, 'type', 'text');
-        this._text_9 = this.renderer.createText(this._el_6, '\n            ', this.debug(9, 9, 43));
-        this._text_10 = this.renderer.createText(this._el_6, '\n\n            ', this.debug(10, 10, 66));
-        this._el_11 = this.renderer.createElement(this._el_6, 'button', this.debug(11, 12, 12));
-        this.renderer.setElementAttribute(this._el_11, 'class', 'btn waves-effect waves-light');
+        this._text_9 = this.renderer.createText(this._el_6, '\n                ', this.debug(9, 8, 51));
+        this._text_10 = this.renderer.createText(this._el_6, '\n                ', this.debug(10, 9, 70));
+        this._el_11 = this.renderer.createElement(this._el_6, 'i', this.debug(11, 10, 16));
+        this.renderer.setElementAttribute(this._el_11, 'class', 'material-icons align-right');
         this.renderer.setElementAttribute(this._el_11, 'name', 'action');
         this.renderer.setElementAttribute(this._el_11, 'type', 'submit');
-        this._text_12 = this.renderer.createText(this._el_11, 'Search\n               ', this.debug(12, 12, 85));
-        this._el_13 = this.renderer.createElement(this._el_11, 'i', this.debug(13, 13, 15));
-        this.renderer.setElementAttribute(this._el_13, 'class', 'material-icons right');
-        this._text_14 = this.renderer.createText(this._el_13, 'search', this.debug(14, 13, 47));
-        this._text_15 = this.renderer.createText(this._el_11, '\n            ', this.debug(15, 13, 57));
-        this._text_16 = this.renderer.createText(this._el_6, '\n         ', this.debug(16, 14, 21));
-        this._text_17 = this.renderer.createText(this._el_4, '\n\n         ', this.debug(17, 15, 16));
-        this._el_18 = this.renderer.createElement(this._el_4, 'div', this.debug(18, 17, 9));
+        this._text_12 = this.renderer.createText(this._el_11, 'search', this.debug(12, 10, 82));
+        this._text_13 = this.renderer.createText(this._el_6, '\n                ', this.debug(13, 10, 92));
+        this._text_14 = this.renderer.createText(this._el_6, '\n                ', this.debug(14, 11, 102));
+        this._text_15 = this.renderer.createText(this._el_6, '\n                ', this.debug(15, 12, 65));
+        this._text_16 = this.renderer.createText(this._el_6, '\n            ', this.debug(16, 13, 32));
+        this._text_17 = this.renderer.createText(this._el_4, '\n            ', this.debug(17, 14, 19));
+        this._el_18 = this.renderer.createElement(this._el_4, 'div', this.debug(18, 15, 12));
         this.renderer.setElementAttribute(this._el_18, 'class', 'input-field');
-        this._text_19 = this.renderer.createText(this._el_18, '\n            ', this.debug(19, 17, 34));
-        this._el_20 = this.renderer.createElement(this._el_18, 'select', this.debug(20, 18, 12));
-        this._text_21 = this.renderer.createText(this._el_20, '\n               ', this.debug(21, 18, 20));
-        this._el_22 = this.renderer.createElement(this._el_20, 'option', this.debug(22, 19, 15));
+        this._text_19 = this.renderer.createText(this._el_18, '\n                ', this.debug(19, 15, 37));
+        this._el_20 = this.renderer.createElement(this._el_18, 'select', this.debug(20, 16, 16));
+        this._text_21 = this.renderer.createText(this._el_20, '\n                    ', this.debug(21, 16, 24));
+        this._el_22 = this.renderer.createElement(this._el_20, 'option', this.debug(22, 17, 20));
         this.renderer.setElementAttribute(this._el_22, 'disabled', '');
         this.renderer.setElementAttribute(this._el_22, 'selected', '');
         this.renderer.setElementAttribute(this._el_22, 'value', '');
         this._NgSelectOption_22_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_22), this.renderer, null);
         this._NgSelectMultipleOption_22_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_22), this.renderer, null);
-        this._text_23 = this.renderer.createText(this._el_22, 'Contact Type', this.debug(23, 19, 50));
-        this._text_24 = this.renderer.createText(this._el_20, '\n               ', this.debug(24, 19, 71));
-        this._el_25 = this.renderer.createElement(this._el_20, 'option', this.debug(25, 20, 15));
+        this._text_23 = this.renderer.createText(this._el_22, 'Contact Type', this.debug(23, 17, 55));
+        this._text_24 = this.renderer.createText(this._el_20, '\n                    ', this.debug(24, 17, 76));
+        this._el_25 = this.renderer.createElement(this._el_20, 'option', this.debug(25, 18, 20));
         this.renderer.setElementAttribute(this._el_25, 'value', '1');
         this._NgSelectOption_25_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_25), this.renderer, null);
         this._NgSelectMultipleOption_25_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_25), this.renderer, null);
-        this._text_26 = this.renderer.createText(this._el_25, 'Phone Call', this.debug(26, 20, 33));
-        this._text_27 = this.renderer.createText(this._el_20, '\n               ', this.debug(27, 20, 52));
-        this._el_28 = this.renderer.createElement(this._el_20, 'option', this.debug(28, 21, 15));
+        this._text_26 = this.renderer.createText(this._el_25, 'Phone Call', this.debug(26, 18, 38));
+        this._text_27 = this.renderer.createText(this._el_20, '\n                    ', this.debug(27, 18, 57));
+        this._el_28 = this.renderer.createElement(this._el_20, 'option', this.debug(28, 19, 20));
         this.renderer.setElementAttribute(this._el_28, 'value', '2');
         this._NgSelectOption_28_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_28), this.renderer, null);
         this._NgSelectMultipleOption_28_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_28), this.renderer, null);
-        this._text_29 = this.renderer.createText(this._el_28, 'Email', this.debug(29, 21, 33));
-        this._text_30 = this.renderer.createText(this._el_20, '\n               ', this.debug(30, 21, 47));
-        this._el_31 = this.renderer.createElement(this._el_20, 'option', this.debug(31, 22, 15));
+        this._text_29 = this.renderer.createText(this._el_28, 'Email', this.debug(29, 19, 38));
+        this._text_30 = this.renderer.createText(this._el_20, '\n                    ', this.debug(30, 19, 52));
+        this._el_31 = this.renderer.createElement(this._el_20, 'option', this.debug(31, 20, 20));
         this.renderer.setElementAttribute(this._el_31, 'value', '3');
         this._NgSelectOption_31_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_31), this.renderer, null);
         this._NgSelectMultipleOption_31_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_31), this.renderer, null);
-        this._text_32 = this.renderer.createText(this._el_31, 'Walk In', this.debug(32, 22, 33));
-        this._text_33 = this.renderer.createText(this._el_20, '\n            ', this.debug(33, 22, 49));
-        this._text_34 = this.renderer.createText(this._el_18, '\n         ', this.debug(34, 23, 21));
-        this._text_35 = this.renderer.createText(this._el_4, '\n      ', this.debug(35, 24, 15));
-        this._text_36 = this.renderer.createText(this._el_2, ' ', this.debug(36, 25, 12));
-        this._text_37 = this.renderer.createText(this._el_2, '\n\n      ', this.debug(37, 25, 42));
-        this._el_38 = this.renderer.createElement(this._el_2, 'div', this.debug(38, 27, 6));
+        this._text_32 = this.renderer.createText(this._el_31, 'Walk In', this.debug(32, 20, 38));
+        this._text_33 = this.renderer.createText(this._el_20, '\n                ', this.debug(33, 20, 54));
+        this._text_34 = this.renderer.createText(this._el_18, '\n            ', this.debug(34, 21, 25));
+        this._text_35 = this.renderer.createText(this._el_4, '\n        ', this.debug(35, 22, 18));
+        this._text_36 = this.renderer.createText(this._el_2, ' ', this.debug(36, 23, 14));
+        this._text_37 = this.renderer.createText(this._el_2, '\n        ', this.debug(37, 23, 44));
+        this._el_38 = this.renderer.createElement(this._el_2, 'div', this.debug(38, 24, 8));
         this.renderer.setElementAttribute(this._el_38, 'class', 'col_problem-statement');
-        this._text_39 = this.renderer.createText(this._el_38, '\n         ', this.debug(39, 27, 41));
-        this._el_40 = this.renderer.createElement(this._el_38, 'ckeditor', this.debug(40, 28, 9));
+        this._text_39 = this.renderer.createText(this._el_38, '\n            ', this.debug(39, 24, 43));
+        this._el_40 = this.renderer.createElement(this._el_38, 'ckeditor', this.debug(40, 25, 12));
         this._appEl_40 = new import4.AppElement(40, 38, this, this._el_40);
         var compView_40 = import24.viewFactory_CKEditor0(this.viewUtils, this.injector(40), this._appEl_40);
         this._CKEditor_40_4 = new import20.CKEditor();
         this._appEl_40.initComponent(this._CKEditor_40_4, [], compView_40);
         compView_40.create(this._CKEditor_40_4, [], null);
-        this._text_41 = this.renderer.createText(this._el_38, '\n      ', this.debug(41, 28, 82));
-        this._text_42 = this.renderer.createText(this._el_2, ' ', this.debug(42, 29, 12));
-        this._text_43 = this.renderer.createText(this._el_2, '\n\n      ', this.debug(43, 29, 31));
-        this._el_44 = this.renderer.createElement(this._el_2, 'div', this.debug(44, 31, 6));
-        this.renderer.setElementAttribute(this._el_44, 'class', 'col_support-info');
-        this._text_45 = this.renderer.createText(this._el_44, '\n\n\n         ', this.debug(45, 31, 36));
-        this._el_46 = this.renderer.createElement(this._el_44, 'div', this.debug(46, 34, 9));
-        this.renderer.setElementAttribute(this._el_46, 'class', 'input-field');
-        this._text_47 = this.renderer.createText(this._el_46, '\n            ', this.debug(47, 34, 34));
-        this._el_48 = this.renderer.createElement(this._el_46, 'select', this.debug(48, 35, 12));
-        this._text_49 = this.renderer.createText(this._el_48, '\n               ', this.debug(49, 35, 20));
-        this._el_50 = this.renderer.createElement(this._el_48, 'option', this.debug(50, 36, 15));
-        this.renderer.setElementAttribute(this._el_50, 'disabled', '');
-        this.renderer.setElementAttribute(this._el_50, 'selected', '');
-        this.renderer.setElementAttribute(this._el_50, 'value', '');
-        this._NgSelectOption_50_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_50), this.renderer, null);
-        this._NgSelectMultipleOption_50_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_50), this.renderer, null);
-        this._text_51 = this.renderer.createText(this._el_50, 'Support Type', this.debug(51, 36, 50));
-        this._text_52 = this.renderer.createText(this._el_48, '\n               ', this.debug(52, 36, 71));
-        this._el_53 = this.renderer.createElement(this._el_48, 'option', this.debug(53, 37, 15));
-        this.renderer.setElementAttribute(this._el_53, 'value', '1');
-        this._NgSelectOption_53_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_53), this.renderer, null);
-        this._NgSelectMultipleOption_53_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_53), this.renderer, null);
-        this._text_54 = this.renderer.createText(this._el_53, 'Phone Call', this.debug(54, 37, 33));
-        this._text_55 = this.renderer.createText(this._el_48, '\n               ', this.debug(55, 37, 52));
-        this._el_56 = this.renderer.createElement(this._el_48, 'option', this.debug(56, 38, 15));
-        this.renderer.setElementAttribute(this._el_56, 'value', '2');
+        this._text_41 = this.renderer.createText(this._el_38, '\n        ', this.debug(41, 25, 85));
+        this._text_42 = this.renderer.createText(this._el_2, ' ', this.debug(42, 26, 14));
+        this._text_43 = this.renderer.createText(this._el_2, '\n\n        ', this.debug(43, 26, 33));
+        this._el_44 = this.renderer.createElement(this._el_2, 'div', this.debug(44, 28, 8));
+        this.renderer.setElementAttribute(this._el_44, 'class', 'col_solution');
+        this._text_45 = this.renderer.createText(this._el_44, '\n            ', this.debug(45, 28, 34));
+        this._el_46 = this.renderer.createElement(this._el_44, 'ckeditor', this.debug(46, 29, 12));
+        this._appEl_46 = new import4.AppElement(46, 44, this, this._el_46);
+        var compView_46 = import24.viewFactory_CKEditor0(this.viewUtils, this.injector(46), this._appEl_46);
+        this._CKEditor_46_4 = new import20.CKEditor();
+        this._appEl_46.initComponent(this._CKEditor_46_4, [], compView_46);
+        compView_46.create(this._CKEditor_46_4, [], null);
+        this._text_47 = this.renderer.createText(this._el_44, '\n\n        ', this.debug(47, 29, 76));
+        this._text_48 = this.renderer.createText(this._el_2, ' ', this.debug(48, 31, 14));
+        this._text_49 = this.renderer.createText(this._el_2, '\n        ', this.debug(49, 31, 33));
+        this._el_50 = this.renderer.createElement(this._el_2, 'div', this.debug(50, 32, 8));
+        this.renderer.setElementAttribute(this._el_50, 'class', 'col_action-buttons');
+        this._text_51 = this.renderer.createText(this._el_50, '\n            ', this.debug(51, 32, 40));
+        this._el_52 = this.renderer.createElement(this._el_50, 'div', this.debug(52, 33, 12));
+        this.renderer.setElementAttribute(this._el_52, 'class', 'input-field');
+        this._text_53 = this.renderer.createText(this._el_52, '\n                ', this.debug(53, 33, 37));
+        this._el_54 = this.renderer.createElement(this._el_52, 'select', this.debug(54, 34, 16));
+        this._text_55 = this.renderer.createText(this._el_54, '\n                    ', this.debug(55, 34, 24));
+        this._el_56 = this.renderer.createElement(this._el_54, 'option', this.debug(56, 35, 20));
+        this.renderer.setElementAttribute(this._el_56, 'disabled', '');
+        this.renderer.setElementAttribute(this._el_56, 'selected', '');
+        this.renderer.setElementAttribute(this._el_56, 'value', '');
         this._NgSelectOption_56_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_56), this.renderer, null);
         this._NgSelectMultipleOption_56_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_56), this.renderer, null);
-        this._text_57 = this.renderer.createText(this._el_56, 'Email', this.debug(57, 38, 33));
-        this._text_58 = this.renderer.createText(this._el_48, '\n               ', this.debug(58, 38, 47));
-        this._el_59 = this.renderer.createElement(this._el_48, 'option', this.debug(59, 39, 15));
-        this.renderer.setElementAttribute(this._el_59, 'value', '3');
+        this._text_57 = this.renderer.createText(this._el_56, 'Status', this.debug(57, 35, 55));
+        this._text_58 = this.renderer.createText(this._el_54, '\n                    ', this.debug(58, 35, 70));
+        this._el_59 = this.renderer.createElement(this._el_54, 'option', this.debug(59, 36, 20));
+        this.renderer.setElementAttribute(this._el_59, 'value', '1');
         this._NgSelectOption_59_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_59), this.renderer, null);
         this._NgSelectMultipleOption_59_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_59), this.renderer, null);
-        this._text_60 = this.renderer.createText(this._el_59, 'Walk In', this.debug(60, 39, 33));
-        this._text_61 = this.renderer.createText(this._el_48, '\n            ', this.debug(61, 39, 49));
-        this._text_62 = this.renderer.createText(this._el_46, '\n         ', this.debug(62, 40, 21));
-        this._text_63 = this.renderer.createText(this._el_44, '\n         ', this.debug(63, 41, 15));
-        this._el_64 = this.renderer.createElement(this._el_44, 'div', this.debug(64, 42, 9));
-        this.renderer.setElementAttribute(this._el_64, 'class', 'input-field');
-        this._text_65 = this.renderer.createText(this._el_64, '\n            ', this.debug(65, 42, 34));
-        this._el_66 = this.renderer.createElement(this._el_64, 'select', this.debug(66, 43, 12));
-        this._text_67 = this.renderer.createText(this._el_66, '\n               ', this.debug(67, 43, 20));
-        this._el_68 = this.renderer.createElement(this._el_66, 'option', this.debug(68, 44, 15));
-        this.renderer.setElementAttribute(this._el_68, 'disabled', '');
-        this.renderer.setElementAttribute(this._el_68, 'selected', '');
-        this.renderer.setElementAttribute(this._el_68, 'value', '');
-        this._NgSelectOption_68_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_68), this.renderer, null);
-        this._NgSelectMultipleOption_68_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_68), this.renderer, null);
-        this._text_69 = this.renderer.createText(this._el_68, 'Product', this.debug(69, 44, 50));
-        this._text_70 = this.renderer.createText(this._el_66, '\n               ', this.debug(70, 44, 66));
-        this._el_71 = this.renderer.createElement(this._el_66, 'option', this.debug(71, 45, 15));
-        this.renderer.setElementAttribute(this._el_71, 'value', '1');
-        this._NgSelectOption_71_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_71), this.renderer, null);
-        this._NgSelectMultipleOption_71_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_71), this.renderer, null);
-        this._text_72 = this.renderer.createText(this._el_71, 'Phone Call', this.debug(72, 45, 33));
-        this._text_73 = this.renderer.createText(this._el_66, '\n               ', this.debug(73, 45, 52));
-        this._el_74 = this.renderer.createElement(this._el_66, 'option', this.debug(74, 46, 15));
-        this.renderer.setElementAttribute(this._el_74, 'value', '2');
+        this._text_60 = this.renderer.createText(this._el_59, 'Phone Call', this.debug(60, 36, 38));
+        this._text_61 = this.renderer.createText(this._el_54, '\n                    ', this.debug(61, 36, 57));
+        this._el_62 = this.renderer.createElement(this._el_54, 'option', this.debug(62, 37, 20));
+        this.renderer.setElementAttribute(this._el_62, 'value', '2');
+        this._NgSelectOption_62_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_62), this.renderer, null);
+        this._NgSelectMultipleOption_62_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_62), this.renderer, null);
+        this._text_63 = this.renderer.createText(this._el_62, 'Email', this.debug(63, 37, 38));
+        this._text_64 = this.renderer.createText(this._el_54, '\n                    ', this.debug(64, 37, 52));
+        this._el_65 = this.renderer.createElement(this._el_54, 'option', this.debug(65, 38, 20));
+        this.renderer.setElementAttribute(this._el_65, 'value', '3');
+        this._NgSelectOption_65_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_65), this.renderer, null);
+        this._NgSelectMultipleOption_65_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_65), this.renderer, null);
+        this._text_66 = this.renderer.createText(this._el_65, 'Walk In', this.debug(66, 38, 38));
+        this._text_67 = this.renderer.createText(this._el_54, '\n                ', this.debug(67, 38, 54));
+        this._text_68 = this.renderer.createText(this._el_52, '\n            ', this.debug(68, 39, 25));
+        this._text_69 = this.renderer.createText(this._el_50, '\n            ', this.debug(69, 40, 18));
+        this._el_70 = this.renderer.createElement(this._el_50, 'div', this.debug(70, 41, 12));
+        this.renderer.setElementAttribute(this._el_70, 'class', 'input-field');
+        this._text_71 = this.renderer.createText(this._el_70, '\n                ', this.debug(71, 41, 37));
+        this._el_72 = this.renderer.createElement(this._el_70, 'select', this.debug(72, 42, 16));
+        this._text_73 = this.renderer.createText(this._el_72, '\n                    ', this.debug(73, 42, 24));
+        this._el_74 = this.renderer.createElement(this._el_72, 'option', this.debug(74, 43, 20));
+        this.renderer.setElementAttribute(this._el_74, 'disabled', '');
+        this.renderer.setElementAttribute(this._el_74, 'selected', '');
+        this.renderer.setElementAttribute(this._el_74, 'value', '');
         this._NgSelectOption_74_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_74), this.renderer, null);
         this._NgSelectMultipleOption_74_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_74), this.renderer, null);
-        this._text_75 = this.renderer.createText(this._el_74, 'Email', this.debug(75, 46, 33));
-        this._text_76 = this.renderer.createText(this._el_66, '\n               ', this.debug(76, 46, 47));
-        this._el_77 = this.renderer.createElement(this._el_66, 'option', this.debug(77, 47, 15));
-        this.renderer.setElementAttribute(this._el_77, 'value', '3');
+        this._text_75 = this.renderer.createText(this._el_74, 'Assignee', this.debug(75, 43, 55));
+        this._text_76 = this.renderer.createText(this._el_72, '\n                    ', this.debug(76, 43, 72));
+        this._el_77 = this.renderer.createElement(this._el_72, 'option', this.debug(77, 44, 20));
+        this.renderer.setElementAttribute(this._el_77, 'value', '1');
         this._NgSelectOption_77_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_77), this.renderer, null);
         this._NgSelectMultipleOption_77_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_77), this.renderer, null);
-        this._text_78 = this.renderer.createText(this._el_77, 'Walk In', this.debug(78, 47, 33));
-        this._text_79 = this.renderer.createText(this._el_66, '\n            ', this.debug(79, 47, 49));
-        this._text_80 = this.renderer.createText(this._el_64, '\n         ', this.debug(80, 48, 21));
-        this._text_81 = this.renderer.createText(this._el_44, '\n\n         ', this.debug(81, 49, 15));
-        this._el_82 = this.renderer.createElement(this._el_44, 'div', this.debug(82, 51, 9));
-        this.renderer.setElementAttribute(this._el_82, 'class', 'input-field');
-        this._text_83 = this.renderer.createText(this._el_82, '\n            ', this.debug(83, 51, 34));
-        this._el_84 = this.renderer.createElement(this._el_82, 'select', this.debug(84, 52, 12));
-        this._text_85 = this.renderer.createText(this._el_84, '\n               ', this.debug(85, 52, 20));
-        this._el_86 = this.renderer.createElement(this._el_84, 'option', this.debug(86, 53, 15));
-        this.renderer.setElementAttribute(this._el_86, 'disabled', '');
-        this.renderer.setElementAttribute(this._el_86, 'selected', '');
-        this.renderer.setElementAttribute(this._el_86, 'value', '');
-        this._NgSelectOption_86_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_86), this.renderer, null);
-        this._NgSelectMultipleOption_86_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_86), this.renderer, null);
-        this._text_87 = this.renderer.createText(this._el_86, 'Environment', this.debug(87, 53, 50));
-        this._text_88 = this.renderer.createText(this._el_84, '\n               ', this.debug(88, 53, 70));
-        this._el_89 = this.renderer.createElement(this._el_84, 'option', this.debug(89, 54, 15));
-        this.renderer.setElementAttribute(this._el_89, 'value', '1');
-        this._NgSelectOption_89_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_89), this.renderer, null);
-        this._NgSelectMultipleOption_89_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_89), this.renderer, null);
-        this._text_90 = this.renderer.createText(this._el_89, 'Phone Call', this.debug(90, 54, 33));
-        this._text_91 = this.renderer.createText(this._el_84, '\n               ', this.debug(91, 54, 52));
-        this._el_92 = this.renderer.createElement(this._el_84, 'option', this.debug(92, 55, 15));
-        this.renderer.setElementAttribute(this._el_92, 'value', '2');
-        this._NgSelectOption_92_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_92), this.renderer, null);
-        this._NgSelectMultipleOption_92_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_92), this.renderer, null);
-        this._text_93 = this.renderer.createText(this._el_92, 'Email', this.debug(93, 55, 33));
-        this._text_94 = this.renderer.createText(this._el_84, '\n               ', this.debug(94, 55, 47));
-        this._el_95 = this.renderer.createElement(this._el_84, 'option', this.debug(95, 56, 15));
-        this.renderer.setElementAttribute(this._el_95, 'value', '3');
-        this._NgSelectOption_95_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_95), this.renderer, null);
-        this._NgSelectMultipleOption_95_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_95), this.renderer, null);
-        this._text_96 = this.renderer.createText(this._el_95, 'Walk In', this.debug(96, 56, 33));
-        this._text_97 = this.renderer.createText(this._el_84, '\n            ', this.debug(97, 56, 49));
-        this._text_98 = this.renderer.createText(this._el_82, '\n         ', this.debug(98, 57, 21));
-        this._text_99 = this.renderer.createText(this._el_44, '\n\n      ', this.debug(99, 58, 15));
-        this._text_100 = this.renderer.createText(this._el_2, ' ', this.debug(100, 60, 12));
-        this._text_101 = this.renderer.createText(this._el_2, '\n\n      ', this.debug(101, 60, 31));
-        this._el_102 = this.renderer.createElement(this._el_2, 'div', this.debug(102, 62, 6));
-        this.renderer.setElementAttribute(this._el_102, 'class', 'col_solution');
-        this._text_103 = this.renderer.createText(this._el_102, '\n         ', this.debug(103, 62, 32));
-        this._el_104 = this.renderer.createElement(this._el_102, 'ckeditor', this.debug(104, 63, 9));
-        this._appEl_104 = new import4.AppElement(104, 102, this, this._el_104);
-        var compView_104 = import24.viewFactory_CKEditor0(this.viewUtils, this.injector(104), this._appEl_104);
-        this._CKEditor_104_4 = new import20.CKEditor();
-        this._appEl_104.initComponent(this._CKEditor_104_4, [], compView_104);
-        compView_104.create(this._CKEditor_104_4, [], null);
-        this._text_105 = this.renderer.createText(this._el_102, '\n\n\n      ', this.debug(105, 63, 73));
-        this._text_106 = this.renderer.createText(this._el_2, ' ', this.debug(106, 66, 12));
-        this._text_107 = this.renderer.createText(this._el_2, '\n\n      ', this.debug(107, 66, 31));
-        this._el_108 = this.renderer.createElement(this._el_2, 'div', this.debug(108, 68, 6));
-        this.renderer.setElementAttribute(this._el_108, 'class', 'col_action-buttons');
-        this._text_109 = this.renderer.createText(this._el_108, '\n\n         ', this.debug(109, 68, 38));
-        this._el_110 = this.renderer.createElement(this._el_108, 'div', this.debug(110, 70, 9));
-        this.renderer.setElementAttribute(this._el_110, 'class', 'input-field');
-        this._text_111 = this.renderer.createText(this._el_110, '\n            ', this.debug(111, 70, 34));
-        this._el_112 = this.renderer.createElement(this._el_110, 'select', this.debug(112, 71, 12));
-        this._text_113 = this.renderer.createText(this._el_112, '\n               ', this.debug(113, 71, 20));
-        this._el_114 = this.renderer.createElement(this._el_112, 'option', this.debug(114, 72, 15));
-        this.renderer.setElementAttribute(this._el_114, 'disabled', '');
-        this.renderer.setElementAttribute(this._el_114, 'selected', '');
-        this.renderer.setElementAttribute(this._el_114, 'value', '');
-        this._NgSelectOption_114_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_114), this.renderer, null);
-        this._NgSelectMultipleOption_114_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_114), this.renderer, null);
-        this._text_115 = this.renderer.createText(this._el_114, 'Status', this.debug(115, 72, 50));
-        this._text_116 = this.renderer.createText(this._el_112, '\n               ', this.debug(116, 72, 65));
-        this._el_117 = this.renderer.createElement(this._el_112, 'option', this.debug(117, 73, 15));
-        this.renderer.setElementAttribute(this._el_117, 'value', '1');
-        this._NgSelectOption_117_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_117), this.renderer, null);
-        this._NgSelectMultipleOption_117_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_117), this.renderer, null);
-        this._text_118 = this.renderer.createText(this._el_117, 'Phone Call', this.debug(118, 73, 33));
-        this._text_119 = this.renderer.createText(this._el_112, '\n               ', this.debug(119, 73, 52));
-        this._el_120 = this.renderer.createElement(this._el_112, 'option', this.debug(120, 74, 15));
-        this.renderer.setElementAttribute(this._el_120, 'value', '2');
-        this._NgSelectOption_120_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_120), this.renderer, null);
-        this._NgSelectMultipleOption_120_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_120), this.renderer, null);
-        this._text_121 = this.renderer.createText(this._el_120, 'Email', this.debug(121, 74, 33));
-        this._text_122 = this.renderer.createText(this._el_112, '\n               ', this.debug(122, 74, 47));
-        this._el_123 = this.renderer.createElement(this._el_112, 'option', this.debug(123, 75, 15));
-        this.renderer.setElementAttribute(this._el_123, 'value', '3');
-        this._NgSelectOption_123_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_123), this.renderer, null);
-        this._NgSelectMultipleOption_123_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_123), this.renderer, null);
-        this._text_124 = this.renderer.createText(this._el_123, 'Walk In', this.debug(124, 75, 33));
-        this._text_125 = this.renderer.createText(this._el_112, '\n            ', this.debug(125, 75, 49));
-        this._text_126 = this.renderer.createText(this._el_110, '\n         ', this.debug(126, 76, 21));
-        this._text_127 = this.renderer.createText(this._el_108, '\n         ', this.debug(127, 77, 15));
-        this._el_128 = this.renderer.createElement(this._el_108, 'div', this.debug(128, 78, 9));
-        this.renderer.setElementAttribute(this._el_128, 'class', 'input-field');
-        this._text_129 = this.renderer.createText(this._el_128, '\n            ', this.debug(129, 78, 34));
-        this._el_130 = this.renderer.createElement(this._el_128, 'select', this.debug(130, 79, 12));
-        this._text_131 = this.renderer.createText(this._el_130, '\n               ', this.debug(131, 79, 20));
-        this._el_132 = this.renderer.createElement(this._el_130, 'option', this.debug(132, 80, 15));
-        this.renderer.setElementAttribute(this._el_132, 'disabled', '');
-        this.renderer.setElementAttribute(this._el_132, 'selected', '');
-        this.renderer.setElementAttribute(this._el_132, 'value', '');
-        this._NgSelectOption_132_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_132), this.renderer, null);
-        this._NgSelectMultipleOption_132_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_132), this.renderer, null);
-        this._text_133 = this.renderer.createText(this._el_132, 'Assignee', this.debug(133, 80, 50));
-        this._text_134 = this.renderer.createText(this._el_130, '\n               ', this.debug(134, 80, 67));
-        this._el_135 = this.renderer.createElement(this._el_130, 'option', this.debug(135, 81, 15));
-        this.renderer.setElementAttribute(this._el_135, 'value', '1');
-        this._NgSelectOption_135_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_135), this.renderer, null);
-        this._NgSelectMultipleOption_135_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_135), this.renderer, null);
-        this._text_136 = this.renderer.createText(this._el_135, 'Phone Call', this.debug(136, 81, 33));
-        this._text_137 = this.renderer.createText(this._el_130, '\n               ', this.debug(137, 81, 52));
-        this._el_138 = this.renderer.createElement(this._el_130, 'option', this.debug(138, 82, 15));
-        this.renderer.setElementAttribute(this._el_138, 'value', '2');
-        this._NgSelectOption_138_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_138), this.renderer, null);
-        this._NgSelectMultipleOption_138_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_138), this.renderer, null);
-        this._text_139 = this.renderer.createText(this._el_138, 'Email', this.debug(139, 82, 33));
-        this._text_140 = this.renderer.createText(this._el_130, '\n               ', this.debug(140, 82, 47));
-        this._el_141 = this.renderer.createElement(this._el_130, 'option', this.debug(141, 83, 15));
-        this.renderer.setElementAttribute(this._el_141, 'value', '3');
-        this._NgSelectOption_141_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_141), this.renderer, null);
-        this._NgSelectMultipleOption_141_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_141), this.renderer, null);
-        this._text_142 = this.renderer.createText(this._el_141, 'Walk In', this.debug(142, 83, 33));
-        this._text_143 = this.renderer.createText(this._el_130, '\n            ', this.debug(143, 83, 49));
-        this._text_144 = this.renderer.createText(this._el_128, '\n         ', this.debug(144, 84, 21));
-        this._text_145 = this.renderer.createText(this._el_108, '\n         ', this.debug(145, 85, 15));
-        this._el_146 = this.renderer.createElement(this._el_108, 'div', this.debug(146, 86, 9));
-        this.renderer.setElementAttribute(this._el_146, 'class', 'action-buttons_container');
-        this._text_147 = this.renderer.createText(this._el_146, '\n\n            ', this.debug(147, 86, 47));
-        this._el_148 = this.renderer.createElement(this._el_146, 'button', this.debug(148, 88, 12));
-        this.renderer.setElementAttribute(this._el_148, 'class', 'green btn waves-effect waves-light action-button');
-        this.renderer.setElementAttribute(this._el_148, 'name', 'action');
-        this.renderer.setElementAttribute(this._el_148, 'type', 'submit');
-        this._text_149 = this.renderer.createText(this._el_148, 'Resolve\n               ', this.debug(149, 88, 105));
-        this._el_150 = this.renderer.createElement(this._el_148, 'i', this.debug(150, 89, 15));
-        this.renderer.setElementAttribute(this._el_150, 'class', 'material-icons right');
-        this._text_151 = this.renderer.createText(this._el_150, 'check', this.debug(151, 89, 47));
-        this._text_152 = this.renderer.createText(this._el_148, '\n            ', this.debug(152, 89, 56));
-        this._text_153 = this.renderer.createText(this._el_146, '\n\n            ', this.debug(153, 90, 21));
-        this._el_154 = this.renderer.createElement(this._el_146, 'button', this.debug(154, 92, 12));
-        this.renderer.setElementAttribute(this._el_154, 'class', 'orange btn waves-effect waves-light action-button');
-        this.renderer.setElementAttribute(this._el_154, 'name', 'action');
-        this.renderer.setElementAttribute(this._el_154, 'type', 'submit');
-        this._text_155 = this.renderer.createText(this._el_154, 'Hold\n               ', this.debug(155, 92, 106));
-        this._el_156 = this.renderer.createElement(this._el_154, 'i', this.debug(156, 93, 15));
-        this.renderer.setElementAttribute(this._el_156, 'class', 'material-icons right');
-        this._text_157 = this.renderer.createText(this._el_156, 'pause', this.debug(157, 93, 47));
-        this._text_158 = this.renderer.createText(this._el_154, '\n            ', this.debug(158, 93, 56));
-        this._text_159 = this.renderer.createText(this._el_146, '\n\n\n         ', this.debug(159, 94, 21));
-        this._text_160 = this.renderer.createText(this._el_108, '\n\n      ', this.debug(160, 97, 15));
-        this._text_161 = this.renderer.createText(this._el_2, ' ', this.debug(161, 99, 12));
-        this._text_162 = this.renderer.createText(this._el_2, '\n\n   ', this.debug(162, 99, 31));
-        this._text_163 = this.renderer.createText(this._el_0, ' ', this.debug(163, 101, 9));
-        this._text_164 = this.renderer.createText(parentRenderNode, '\n\n\n', this.debug(164, 101, 62));
-        this._el_165 = this.renderer.createElement(parentRenderNode, 'div', this.debug(165, 104, 0));
-        this.renderer.setElementAttribute(this._el_165, 'class', 'row');
-        this._text_166 = this.renderer.createText(this._el_165, '\n   ', this.debug(166, 104, 17));
-        this._el_167 = this.renderer.createElement(this._el_165, 'div', this.debug(167, 105, 3));
-        this.renderer.setElementAttribute(this._el_167, 'class', 'col s3');
-        this._text_168 = this.renderer.createText(this._el_167, '\n      ', this.debug(168, 105, 23));
-        this._el_169 = this.renderer.createElement(this._el_167, 'div', this.debug(169, 106, 6));
-        this.renderer.setElementAttribute(this._el_169, 'class', 'card-panel');
-        this._text_170 = this.renderer.createText(this._el_169, '\n         ', this.debug(170, 106, 30));
-        this._anchor_171 = this.renderer.createTemplateAnchor(this._el_169, this.debug(171, 107, 9));
-        this._appEl_171 = new import4.AppElement(171, 169, this, this._anchor_171);
-        this._TemplateRef_171_5 = new import21.TemplateRef_(this._appEl_171, viewFactory_TicketComponent1);
-        this._NgIf_171_6 = new import22.NgIf(this._appEl_171.vcRef, this._TemplateRef_171_5);
-        this._text_172 = this.renderer.createText(this._el_169, '\n      ', this.debug(172, 107, 93));
-        this._text_173 = this.renderer.createText(this._el_167, '\n   ', this.debug(173, 108, 12));
-        this._text_174 = this.renderer.createText(this._el_165, '\n   ', this.debug(174, 109, 9));
-        this._el_175 = this.renderer.createElement(this._el_165, 'div', this.debug(175, 110, 3));
-        this.renderer.setElementAttribute(this._el_175, 'class', 'col s3');
-        this._text_176 = this.renderer.createText(this._el_175, '\n      ', this.debug(176, 110, 23));
-        this._el_177 = this.renderer.createElement(this._el_175, 'div', this.debug(177, 111, 6));
-        this.renderer.setElementAttribute(this._el_177, 'class', 'card-panel');
-        this._text_178 = this.renderer.createText(this._el_177, '\n          ', this.debug(178, 111, 30));
-        this._el_179 = this.renderer.createElement(this._el_177, 'span', this.debug(179, 112, 10));
-        this._text_180 = this.renderer.createText(this._el_179, 'I am a very simple card. I am good at containing small bits of information.\n          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\n          ', this.debug(180, 112, 16));
-        this._text_181 = this.renderer.createText(this._el_177, '\n      ', this.debug(181, 114, 17));
-        this._text_182 = this.renderer.createText(this._el_175, '\n   ', this.debug(182, 115, 12));
-        this._text_183 = this.renderer.createText(this._el_165, '\n   ', this.debug(183, 116, 9));
-        this._el_184 = this.renderer.createElement(this._el_165, 'div', this.debug(184, 117, 3));
-        this.renderer.setElementAttribute(this._el_184, 'class', 'col s6');
-        this._text_185 = this.renderer.createText(this._el_184, '\n      ', this.debug(185, 117, 23));
-        this._el_186 = this.renderer.createElement(this._el_184, 'div', this.debug(186, 118, 6));
-        this.renderer.setElementAttribute(this._el_186, 'class', 'card-panel');
-        this._text_187 = this.renderer.createText(this._el_186, '\n          ', this.debug(187, 118, 30));
-        this._el_188 = this.renderer.createElement(this._el_186, 'span', this.debug(188, 119, 10));
-        this._text_189 = this.renderer.createText(this._el_188, 'I am a very simple card. I am good at containing small bits of information.\n          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\n          ', this.debug(189, 119, 16));
-        this._text_190 = this.renderer.createText(this._el_186, '\n      ', this.debug(190, 121, 17));
-        this._text_191 = this.renderer.createText(this._el_184, '\n   ', this.debug(191, 122, 12));
-        this._text_192 = this.renderer.createText(this._el_165, '\n', this.debug(192, 123, 9));
-        this._text_193 = this.renderer.createText(parentRenderNode, '\n\n', this.debug(193, 124, 6));
+        this._text_78 = this.renderer.createText(this._el_77, 'Phone Call', this.debug(78, 44, 38));
+        this._text_79 = this.renderer.createText(this._el_72, '\n                    ', this.debug(79, 44, 57));
+        this._el_80 = this.renderer.createElement(this._el_72, 'option', this.debug(80, 45, 20));
+        this.renderer.setElementAttribute(this._el_80, 'value', '2');
+        this._NgSelectOption_80_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_80), this.renderer, null);
+        this._NgSelectMultipleOption_80_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_80), this.renderer, null);
+        this._text_81 = this.renderer.createText(this._el_80, 'Email', this.debug(81, 45, 38));
+        this._text_82 = this.renderer.createText(this._el_72, '\n                    ', this.debug(82, 45, 52));
+        this._el_83 = this.renderer.createElement(this._el_72, 'option', this.debug(83, 46, 20));
+        this.renderer.setElementAttribute(this._el_83, 'value', '3');
+        this._NgSelectOption_83_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_83), this.renderer, null);
+        this._NgSelectMultipleOption_83_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_83), this.renderer, null);
+        this._text_84 = this.renderer.createText(this._el_83, 'Walk In', this.debug(84, 46, 38));
+        this._text_85 = this.renderer.createText(this._el_72, '\n                ', this.debug(85, 46, 54));
+        this._text_86 = this.renderer.createText(this._el_70, '\n            ', this.debug(86, 47, 25));
+        this._text_87 = this.renderer.createText(this._el_50, '\n            ', this.debug(87, 48, 18));
+        this._el_88 = this.renderer.createElement(this._el_50, 'div', this.debug(88, 49, 12));
+        this.renderer.setElementAttribute(this._el_88, 'class', 'action-buttons_container');
+        this._text_89 = this.renderer.createText(this._el_88, '\n                ', this.debug(89, 49, 50));
+        this._el_90 = this.renderer.createElement(this._el_88, 'button', this.debug(90, 50, 16));
+        this.renderer.setElementAttribute(this._el_90, 'class', 'green btn waves-effect waves-light action-button');
+        this.renderer.setElementAttribute(this._el_90, 'name', 'action');
+        this.renderer.setElementAttribute(this._el_90, 'type', 'submit');
+        this._text_91 = this.renderer.createText(this._el_90, '\n                    Resolve\n                    ', this.debug(91, 50, 109));
+        this._el_92 = this.renderer.createElement(this._el_90, 'i', this.debug(92, 52, 20));
+        this.renderer.setElementAttribute(this._el_92, 'class', 'material-icons right');
+        this._text_93 = this.renderer.createText(this._el_92, 'check', this.debug(93, 52, 52));
+        this._text_94 = this.renderer.createText(this._el_90, '\n                ', this.debug(94, 52, 61));
+        this._text_95 = this.renderer.createText(this._el_88, '\n                ', this.debug(95, 53, 25));
+        this._el_96 = this.renderer.createElement(this._el_88, 'button', this.debug(96, 54, 16));
+        this.renderer.setElementAttribute(this._el_96, 'class', 'orange btn waves-effect waves-light action-button');
+        this.renderer.setElementAttribute(this._el_96, 'name', 'action');
+        this.renderer.setElementAttribute(this._el_96, 'type', 'submit');
+        this._text_97 = this.renderer.createText(this._el_96, '\n                    Hold\n                    ', this.debug(97, 54, 110));
+        this._el_98 = this.renderer.createElement(this._el_96, 'i', this.debug(98, 56, 20));
+        this.renderer.setElementAttribute(this._el_98, 'class', 'material-icons right');
+        this._text_99 = this.renderer.createText(this._el_98, 'pause', this.debug(99, 56, 52));
+        this._text_100 = this.renderer.createText(this._el_96, '\n                ', this.debug(100, 56, 61));
+        this._text_101 = this.renderer.createText(this._el_88, '\n\n            ', this.debug(101, 57, 25));
+        this._text_102 = this.renderer.createText(this._el_50, '\n        ', this.debug(102, 59, 18));
+        this._text_103 = this.renderer.createText(this._el_2, ' ', this.debug(103, 60, 14));
+        this._text_104 = this.renderer.createText(this._el_2, '\n    ', this.debug(104, 60, 33));
+        this._text_105 = this.renderer.createText(this._el_0, ' ', this.debug(105, 61, 10));
+        this._text_106 = this.renderer.createText(this._el_0, '\n', this.debug(106, 61, 57));
+        this._text_107 = this.renderer.createText(parentRenderNode, '\n\n', this.debug(107, 62, 6));
+        this._el_108 = this.renderer.createElement(parentRenderNode, 'div', this.debug(108, 64, 0));
+        this.renderer.setElementAttribute(this._el_108, 'class', 'row');
+        this._text_109 = this.renderer.createText(this._el_108, '\n    ', this.debug(109, 64, 17));
+        this._el_110 = this.renderer.createElement(this._el_108, 'div', this.debug(110, 65, 4));
+        this.renderer.setElementAttribute(this._el_110, 'class', 'col s4');
+        this._text_111 = this.renderer.createText(this._el_110, '\n        ', this.debug(111, 65, 24));
+        this._el_112 = this.renderer.createElement(this._el_110, 'div', this.debug(112, 66, 8));
+        this.renderer.setElementAttribute(this._el_112, 'class', 'card-panel');
+        this._text_113 = this.renderer.createText(this._el_112, '\n            ', this.debug(113, 66, 32));
+        this._el_114 = this.renderer.createElement(this._el_112, 'span', this.debug(114, 67, 12));
+        this._text_115 = this.renderer.createText(this._el_114, '\n                I am a very simple card. I am good at containing small bits of information.\n                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\n            ', this.debug(115, 67, 18));
+        this._text_116 = this.renderer.createText(this._el_112, '\n            ', this.debug(116, 70, 19));
+        this._anchor_117 = this.renderer.createTemplateAnchor(this._el_112, this.debug(117, 71, 12));
+        this._appEl_117 = new import4.AppElement(117, 112, this, this._anchor_117);
+        this._TemplateRef_117_5 = new import21.TemplateRef_(this._appEl_117, viewFactory_TicketComponent1);
+        this._NgIf_117_6 = new import22.NgIf(this._appEl_117.vcRef, this._TemplateRef_117_5);
+        this._text_118 = this.renderer.createText(this._el_112, '\n        ', this.debug(118, 71, 96));
+        this._text_119 = this.renderer.createText(this._el_110, '\n    ', this.debug(119, 72, 14));
+        this._text_120 = this.renderer.createText(this._el_108, '\n    ', this.debug(120, 73, 10));
+        this._el_121 = this.renderer.createElement(this._el_108, 'div', this.debug(121, 74, 4));
+        this.renderer.setElementAttribute(this._el_121, 'class', 'col s4');
+        this._text_122 = this.renderer.createText(this._el_121, '\n        ', this.debug(122, 74, 24));
+        this._el_123 = this.renderer.createElement(this._el_121, 'div', this.debug(123, 75, 8));
+        this.renderer.setElementAttribute(this._el_123, 'class', 'card-panel');
+        this._text_124 = this.renderer.createText(this._el_123, '\n            ', this.debug(124, 75, 32));
+        this._el_125 = this.renderer.createElement(this._el_123, 'span', this.debug(125, 76, 12));
+        this._text_126 = this.renderer.createText(this._el_125, '\n                I am a very simple card. I am good at containing small bits of information.\n                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\n            ', this.debug(126, 76, 18));
+        this._text_127 = this.renderer.createText(this._el_123, '\n        ', this.debug(127, 79, 19));
+        this._text_128 = this.renderer.createText(this._el_121, '\n    ', this.debug(128, 80, 14));
+        this._text_129 = this.renderer.createText(this._el_108, '\n    ', this.debug(129, 81, 10));
+        this._el_130 = this.renderer.createElement(this._el_108, 'div', this.debug(130, 82, 4));
+        this.renderer.setElementAttribute(this._el_130, 'class', 'col s4');
+        this._text_131 = this.renderer.createText(this._el_130, '\n        ', this.debug(131, 82, 24));
+        this._el_132 = this.renderer.createElement(this._el_130, 'div', this.debug(132, 83, 8));
+        this.renderer.setElementAttribute(this._el_132, 'class', 'card-panel');
+        this._text_133 = this.renderer.createText(this._el_132, '\n            ', this.debug(133, 83, 32));
+        this._el_134 = this.renderer.createElement(this._el_132, 'span', this.debug(134, 84, 12));
+        this._text_135 = this.renderer.createText(this._el_134, '\n                I am a very simple card. I am good at containing small bits of information.\n                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\n            ', this.debug(135, 84, 18));
+        this._text_136 = this.renderer.createText(this._el_132, '\n        ', this.debug(136, 87, 19));
+        this._text_137 = this.renderer.createText(this._el_130, '\n    ', this.debug(137, 88, 14));
+        this._text_138 = this.renderer.createText(this._el_108, '\n', this.debug(138, 89, 10));
+        this._text_139 = this.renderer.createText(parentRenderNode, '\n', this.debug(139, 90, 6));
         var disposable_0 = this.renderer.listen(this._el_6, 'ngSubmit', this.eventHandler(this._handle_ngSubmit_6_0.bind(this)));
         var disposable_1 = this.renderer.listen(this._el_6, 'submit', this.eventHandler(this._handle_submit_6_1.bind(this)));
         var disposable_2 = this.renderer.listen(this._el_6, 'reset', this.eventHandler(this._handle_reset_6_2.bind(this)));
@@ -26348,30 +28740,6 @@ var _View_TicketComponent0 = (function (_super) {
         this._expr_35 = import8.UNINITIALIZED;
         this._expr_36 = import8.UNINITIALIZED;
         this._expr_37 = import8.UNINITIALIZED;
-        this._expr_38 = import8.UNINITIALIZED;
-        this._expr_39 = import8.UNINITIALIZED;
-        this._expr_40 = import8.UNINITIALIZED;
-        this._expr_41 = import8.UNINITIALIZED;
-        this._expr_42 = import8.UNINITIALIZED;
-        this._expr_43 = import8.UNINITIALIZED;
-        this._expr_44 = import8.UNINITIALIZED;
-        this._expr_45 = import8.UNINITIALIZED;
-        this._expr_46 = import8.UNINITIALIZED;
-        this._expr_47 = import8.UNINITIALIZED;
-        this._expr_48 = import8.UNINITIALIZED;
-        this._expr_49 = import8.UNINITIALIZED;
-        this._expr_50 = import8.UNINITIALIZED;
-        this._expr_51 = import8.UNINITIALIZED;
-        this._expr_52 = import8.UNINITIALIZED;
-        this._expr_53 = import8.UNINITIALIZED;
-        this._expr_54 = import8.UNINITIALIZED;
-        this._expr_55 = import8.UNINITIALIZED;
-        this._expr_56 = import8.UNINITIALIZED;
-        this._expr_57 = import8.UNINITIALIZED;
-        this._expr_58 = import8.UNINITIALIZED;
-        this._expr_59 = import8.UNINITIALIZED;
-        this._expr_60 = import8.UNINITIALIZED;
-        this._expr_61 = import8.UNINITIALIZED;
         this.init([], [
             this._el_0,
             this._text_1,
@@ -26386,7 +28754,7 @@ var _View_TicketComponent0 = (function (_super) {
             this._text_10,
             this._el_11,
             this._text_12,
-            this._el_13,
+            this._text_13,
             this._text_14,
             this._text_15,
             this._text_16,
@@ -26421,13 +28789,13 @@ var _View_TicketComponent0 = (function (_super) {
             this._text_45,
             this._el_46,
             this._text_47,
-            this._el_48,
+            this._text_48,
             this._text_49,
             this._el_50,
             this._text_51,
-            this._text_52,
-            this._el_53,
-            this._text_54,
+            this._el_52,
+            this._text_53,
+            this._el_54,
             this._text_55,
             this._el_56,
             this._text_57,
@@ -26435,17 +28803,17 @@ var _View_TicketComponent0 = (function (_super) {
             this._el_59,
             this._text_60,
             this._text_61,
-            this._text_62,
+            this._el_62,
             this._text_63,
-            this._el_64,
-            this._text_65,
-            this._el_66,
+            this._text_64,
+            this._el_65,
+            this._text_66,
             this._text_67,
-            this._el_68,
+            this._text_68,
             this._text_69,
-            this._text_70,
-            this._el_71,
-            this._text_72,
+            this._el_70,
+            this._text_71,
+            this._el_72,
             this._text_73,
             this._el_74,
             this._text_75,
@@ -26453,31 +28821,31 @@ var _View_TicketComponent0 = (function (_super) {
             this._el_77,
             this._text_78,
             this._text_79,
-            this._text_80,
+            this._el_80,
             this._text_81,
-            this._el_82,
-            this._text_83,
-            this._el_84,
+            this._text_82,
+            this._el_83,
+            this._text_84,
             this._text_85,
-            this._el_86,
+            this._text_86,
             this._text_87,
-            this._text_88,
-            this._el_89,
-            this._text_90,
+            this._el_88,
+            this._text_89,
+            this._el_90,
             this._text_91,
             this._el_92,
             this._text_93,
             this._text_94,
-            this._el_95,
-            this._text_96,
+            this._text_95,
+            this._el_96,
             this._text_97,
-            this._text_98,
+            this._el_98,
             this._text_99,
             this._text_100,
             this._text_101,
-            this._el_102,
+            this._text_102,
             this._text_103,
-            this._el_104,
+            this._text_104,
             this._text_105,
             this._text_106,
             this._text_107,
@@ -26490,83 +28858,29 @@ var _View_TicketComponent0 = (function (_super) {
             this._el_114,
             this._text_115,
             this._text_116,
-            this._el_117,
+            this._anchor_117,
             this._text_118,
             this._text_119,
-            this._el_120,
-            this._text_121,
+            this._text_120,
+            this._el_121,
             this._text_122,
             this._el_123,
             this._text_124,
-            this._text_125,
+            this._el_125,
             this._text_126,
             this._text_127,
-            this._el_128,
+            this._text_128,
             this._text_129,
             this._el_130,
             this._text_131,
             this._el_132,
             this._text_133,
-            this._text_134,
-            this._el_135,
+            this._el_134,
+            this._text_135,
             this._text_136,
             this._text_137,
-            this._el_138,
-            this._text_139,
-            this._text_140,
-            this._el_141,
-            this._text_142,
-            this._text_143,
-            this._text_144,
-            this._text_145,
-            this._el_146,
-            this._text_147,
-            this._el_148,
-            this._text_149,
-            this._el_150,
-            this._text_151,
-            this._text_152,
-            this._text_153,
-            this._el_154,
-            this._text_155,
-            this._el_156,
-            this._text_157,
-            this._text_158,
-            this._text_159,
-            this._text_160,
-            this._text_161,
-            this._text_162,
-            this._text_163,
-            this._text_164,
-            this._el_165,
-            this._text_166,
-            this._el_167,
-            this._text_168,
-            this._el_169,
-            this._text_170,
-            this._anchor_171,
-            this._text_172,
-            this._text_173,
-            this._text_174,
-            this._el_175,
-            this._text_176,
-            this._el_177,
-            this._text_178,
-            this._el_179,
-            this._text_180,
-            this._text_181,
-            this._text_182,
-            this._text_183,
-            this._el_184,
-            this._text_185,
-            this._el_186,
-            this._text_187,
-            this._el_188,
-            this._text_189,
-            this._text_190,
-            this._text_191,
-            this._text_192,
-            this._text_193
+            this._text_138,
+            this._text_139
         ], [
             disposable_0,
             disposable_1,
@@ -26612,17 +28926,8 @@ var _View_TicketComponent0 = (function (_super) {
         if (((token === import20.CKEditor) && (40 === requestNodeIndex))) {
             return this._CKEditor_40_4;
         }
-        if (((token === import18.NgSelectOption) && ((50 <= requestNodeIndex) && (requestNodeIndex <= 51)))) {
-            return this._NgSelectOption_50_3;
-        }
-        if (((token === import19.NgSelectMultipleOption) && ((50 <= requestNodeIndex) && (requestNodeIndex <= 51)))) {
-            return this._NgSelectMultipleOption_50_4;
-        }
-        if (((token === import18.NgSelectOption) && ((53 <= requestNodeIndex) && (requestNodeIndex <= 54)))) {
-            return this._NgSelectOption_53_3;
-        }
-        if (((token === import19.NgSelectMultipleOption) && ((53 <= requestNodeIndex) && (requestNodeIndex <= 54)))) {
-            return this._NgSelectMultipleOption_53_4;
+        if (((token === import20.CKEditor) && (46 === requestNodeIndex))) {
+            return this._CKEditor_46_4;
         }
         if (((token === import18.NgSelectOption) && ((56 <= requestNodeIndex) && (requestNodeIndex <= 57)))) {
             return this._NgSelectOption_56_3;
@@ -26636,17 +28941,17 @@ var _View_TicketComponent0 = (function (_super) {
         if (((token === import19.NgSelectMultipleOption) && ((59 <= requestNodeIndex) && (requestNodeIndex <= 60)))) {
             return this._NgSelectMultipleOption_59_4;
         }
-        if (((token === import18.NgSelectOption) && ((68 <= requestNodeIndex) && (requestNodeIndex <= 69)))) {
-            return this._NgSelectOption_68_3;
+        if (((token === import18.NgSelectOption) && ((62 <= requestNodeIndex) && (requestNodeIndex <= 63)))) {
+            return this._NgSelectOption_62_3;
         }
-        if (((token === import19.NgSelectMultipleOption) && ((68 <= requestNodeIndex) && (requestNodeIndex <= 69)))) {
-            return this._NgSelectMultipleOption_68_4;
+        if (((token === import19.NgSelectMultipleOption) && ((62 <= requestNodeIndex) && (requestNodeIndex <= 63)))) {
+            return this._NgSelectMultipleOption_62_4;
         }
-        if (((token === import18.NgSelectOption) && ((71 <= requestNodeIndex) && (requestNodeIndex <= 72)))) {
-            return this._NgSelectOption_71_3;
+        if (((token === import18.NgSelectOption) && ((65 <= requestNodeIndex) && (requestNodeIndex <= 66)))) {
+            return this._NgSelectOption_65_3;
         }
-        if (((token === import19.NgSelectMultipleOption) && ((71 <= requestNodeIndex) && (requestNodeIndex <= 72)))) {
-            return this._NgSelectMultipleOption_71_4;
+        if (((token === import19.NgSelectMultipleOption) && ((65 <= requestNodeIndex) && (requestNodeIndex <= 66)))) {
+            return this._NgSelectMultipleOption_65_4;
         }
         if (((token === import18.NgSelectOption) && ((74 <= requestNodeIndex) && (requestNodeIndex <= 75)))) {
             return this._NgSelectOption_74_3;
@@ -26660,139 +28965,76 @@ var _View_TicketComponent0 = (function (_super) {
         if (((token === import19.NgSelectMultipleOption) && ((77 <= requestNodeIndex) && (requestNodeIndex <= 78)))) {
             return this._NgSelectMultipleOption_77_4;
         }
-        if (((token === import18.NgSelectOption) && ((86 <= requestNodeIndex) && (requestNodeIndex <= 87)))) {
-            return this._NgSelectOption_86_3;
+        if (((token === import18.NgSelectOption) && ((80 <= requestNodeIndex) && (requestNodeIndex <= 81)))) {
+            return this._NgSelectOption_80_3;
         }
-        if (((token === import19.NgSelectMultipleOption) && ((86 <= requestNodeIndex) && (requestNodeIndex <= 87)))) {
-            return this._NgSelectMultipleOption_86_4;
+        if (((token === import19.NgSelectMultipleOption) && ((80 <= requestNodeIndex) && (requestNodeIndex <= 81)))) {
+            return this._NgSelectMultipleOption_80_4;
         }
-        if (((token === import18.NgSelectOption) && ((89 <= requestNodeIndex) && (requestNodeIndex <= 90)))) {
-            return this._NgSelectOption_89_3;
+        if (((token === import18.NgSelectOption) && ((83 <= requestNodeIndex) && (requestNodeIndex <= 84)))) {
+            return this._NgSelectOption_83_3;
         }
-        if (((token === import19.NgSelectMultipleOption) && ((89 <= requestNodeIndex) && (requestNodeIndex <= 90)))) {
-            return this._NgSelectMultipleOption_89_4;
+        if (((token === import19.NgSelectMultipleOption) && ((83 <= requestNodeIndex) && (requestNodeIndex <= 84)))) {
+            return this._NgSelectMultipleOption_83_4;
         }
-        if (((token === import18.NgSelectOption) && ((92 <= requestNodeIndex) && (requestNodeIndex <= 93)))) {
-            return this._NgSelectOption_92_3;
+        if (((token === import21.TemplateRef) && (117 === requestNodeIndex))) {
+            return this._TemplateRef_117_5;
         }
-        if (((token === import19.NgSelectMultipleOption) && ((92 <= requestNodeIndex) && (requestNodeIndex <= 93)))) {
-            return this._NgSelectMultipleOption_92_4;
-        }
-        if (((token === import18.NgSelectOption) && ((95 <= requestNodeIndex) && (requestNodeIndex <= 96)))) {
-            return this._NgSelectOption_95_3;
-        }
-        if (((token === import19.NgSelectMultipleOption) && ((95 <= requestNodeIndex) && (requestNodeIndex <= 96)))) {
-            return this._NgSelectMultipleOption_95_4;
-        }
-        if (((token === import20.CKEditor) && (104 === requestNodeIndex))) {
-            return this._CKEditor_104_4;
-        }
-        if (((token === import18.NgSelectOption) && ((114 <= requestNodeIndex) && (requestNodeIndex <= 115)))) {
-            return this._NgSelectOption_114_3;
-        }
-        if (((token === import19.NgSelectMultipleOption) && ((114 <= requestNodeIndex) && (requestNodeIndex <= 115)))) {
-            return this._NgSelectMultipleOption_114_4;
-        }
-        if (((token === import18.NgSelectOption) && ((117 <= requestNodeIndex) && (requestNodeIndex <= 118)))) {
-            return this._NgSelectOption_117_3;
-        }
-        if (((token === import19.NgSelectMultipleOption) && ((117 <= requestNodeIndex) && (requestNodeIndex <= 118)))) {
-            return this._NgSelectMultipleOption_117_4;
-        }
-        if (((token === import18.NgSelectOption) && ((120 <= requestNodeIndex) && (requestNodeIndex <= 121)))) {
-            return this._NgSelectOption_120_3;
-        }
-        if (((token === import19.NgSelectMultipleOption) && ((120 <= requestNodeIndex) && (requestNodeIndex <= 121)))) {
-            return this._NgSelectMultipleOption_120_4;
-        }
-        if (((token === import18.NgSelectOption) && ((123 <= requestNodeIndex) && (requestNodeIndex <= 124)))) {
-            return this._NgSelectOption_123_3;
-        }
-        if (((token === import19.NgSelectMultipleOption) && ((123 <= requestNodeIndex) && (requestNodeIndex <= 124)))) {
-            return this._NgSelectMultipleOption_123_4;
-        }
-        if (((token === import18.NgSelectOption) && ((132 <= requestNodeIndex) && (requestNodeIndex <= 133)))) {
-            return this._NgSelectOption_132_3;
-        }
-        if (((token === import19.NgSelectMultipleOption) && ((132 <= requestNodeIndex) && (requestNodeIndex <= 133)))) {
-            return this._NgSelectMultipleOption_132_4;
-        }
-        if (((token === import18.NgSelectOption) && ((135 <= requestNodeIndex) && (requestNodeIndex <= 136)))) {
-            return this._NgSelectOption_135_3;
-        }
-        if (((token === import19.NgSelectMultipleOption) && ((135 <= requestNodeIndex) && (requestNodeIndex <= 136)))) {
-            return this._NgSelectMultipleOption_135_4;
-        }
-        if (((token === import18.NgSelectOption) && ((138 <= requestNodeIndex) && (requestNodeIndex <= 139)))) {
-            return this._NgSelectOption_138_3;
-        }
-        if (((token === import19.NgSelectMultipleOption) && ((138 <= requestNodeIndex) && (requestNodeIndex <= 139)))) {
-            return this._NgSelectMultipleOption_138_4;
-        }
-        if (((token === import18.NgSelectOption) && ((141 <= requestNodeIndex) && (requestNodeIndex <= 142)))) {
-            return this._NgSelectOption_141_3;
-        }
-        if (((token === import19.NgSelectMultipleOption) && ((141 <= requestNodeIndex) && (requestNodeIndex <= 142)))) {
-            return this._NgSelectMultipleOption_141_4;
-        }
-        if (((token === import21.TemplateRef) && (171 === requestNodeIndex))) {
-            return this._TemplateRef_171_5;
-        }
-        if (((token === import22.NgIf) && (171 === requestNodeIndex))) {
-            return this._NgIf_171_6;
+        if (((token === import22.NgIf) && (117 === requestNodeIndex))) {
+            return this._NgIf_117_6;
         }
         return notFoundResult;
     };
     _View_TicketComponent0.prototype.detectChangesInternal = function (throwOnChange) {
-        this.debug(22, 19, 23);
+        this.debug(22, 17, 28);
         var currVal_11 = '';
         if (import5.checkBinding(throwOnChange, this._expr_11, currVal_11)) {
             this._NgSelectOption_22_3.value = currVal_11;
             this._expr_11 = currVal_11;
         }
-        this.debug(22, 19, 23);
+        this.debug(22, 17, 28);
         var currVal_12 = '';
         if (import5.checkBinding(throwOnChange, this._expr_12, currVal_12)) {
             this._NgSelectMultipleOption_22_4.value = currVal_12;
             this._expr_12 = currVal_12;
         }
-        this.debug(25, 20, 23);
+        this.debug(25, 18, 28);
         var currVal_13 = '1';
         if (import5.checkBinding(throwOnChange, this._expr_13, currVal_13)) {
             this._NgSelectOption_25_3.value = currVal_13;
             this._expr_13 = currVal_13;
         }
-        this.debug(25, 20, 23);
+        this.debug(25, 18, 28);
         var currVal_14 = '1';
         if (import5.checkBinding(throwOnChange, this._expr_14, currVal_14)) {
             this._NgSelectMultipleOption_25_4.value = currVal_14;
             this._expr_14 = currVal_14;
         }
-        this.debug(28, 21, 23);
+        this.debug(28, 19, 28);
         var currVal_15 = '2';
         if (import5.checkBinding(throwOnChange, this._expr_15, currVal_15)) {
             this._NgSelectOption_28_3.value = currVal_15;
             this._expr_15 = currVal_15;
         }
-        this.debug(28, 21, 23);
+        this.debug(28, 19, 28);
         var currVal_16 = '2';
         if (import5.checkBinding(throwOnChange, this._expr_16, currVal_16)) {
             this._NgSelectMultipleOption_28_4.value = currVal_16;
             this._expr_16 = currVal_16;
         }
-        this.debug(31, 22, 23);
+        this.debug(31, 20, 28);
         var currVal_17 = '3';
         if (import5.checkBinding(throwOnChange, this._expr_17, currVal_17)) {
             this._NgSelectOption_31_3.value = currVal_17;
             this._expr_17 = currVal_17;
         }
-        this.debug(31, 22, 23);
+        this.debug(31, 20, 28);
         var currVal_18 = '3';
         if (import5.checkBinding(throwOnChange, this._expr_18, currVal_18)) {
             this._NgSelectMultipleOption_31_4.value = currVal_18;
             this._expr_18 = currVal_18;
         }
-        this.debug(40, 28, 19);
+        this.debug(40, 25, 22);
         var currVal_19 = 'ckeditor_problem-statement';
         if (import5.checkBinding(throwOnChange, this._expr_19, currVal_19)) {
             this._CKEditor_40_4.ckEditorInstanceID = currVal_19;
@@ -26801,299 +29043,155 @@ var _View_TicketComponent0 = (function (_super) {
         if (((this.numberOfChecks === 0) && !throwOnChange)) {
             this._CKEditor_40_4.ngOnInit();
         }
-        this.debug(50, 36, 23);
-        var currVal_20 = '';
+        this.debug(46, 29, 22);
+        var currVal_20 = 'ckeditor_solution';
         if (import5.checkBinding(throwOnChange, this._expr_20, currVal_20)) {
-            this._NgSelectOption_50_3.value = currVal_20;
+            this._CKEditor_46_4.ckEditorInstanceID = currVal_20;
             this._expr_20 = currVal_20;
         }
-        this.debug(50, 36, 23);
+        if (((this.numberOfChecks === 0) && !throwOnChange)) {
+            this._CKEditor_46_4.ngOnInit();
+        }
+        this.debug(56, 35, 28);
         var currVal_21 = '';
         if (import5.checkBinding(throwOnChange, this._expr_21, currVal_21)) {
-            this._NgSelectMultipleOption_50_4.value = currVal_21;
+            this._NgSelectOption_56_3.value = currVal_21;
             this._expr_21 = currVal_21;
         }
-        this.debug(53, 37, 23);
-        var currVal_22 = '1';
+        this.debug(56, 35, 28);
+        var currVal_22 = '';
         if (import5.checkBinding(throwOnChange, this._expr_22, currVal_22)) {
-            this._NgSelectOption_53_3.value = currVal_22;
+            this._NgSelectMultipleOption_56_4.value = currVal_22;
             this._expr_22 = currVal_22;
         }
-        this.debug(53, 37, 23);
+        this.debug(59, 36, 28);
         var currVal_23 = '1';
         if (import5.checkBinding(throwOnChange, this._expr_23, currVal_23)) {
-            this._NgSelectMultipleOption_53_4.value = currVal_23;
+            this._NgSelectOption_59_3.value = currVal_23;
             this._expr_23 = currVal_23;
         }
-        this.debug(56, 38, 23);
-        var currVal_24 = '2';
+        this.debug(59, 36, 28);
+        var currVal_24 = '1';
         if (import5.checkBinding(throwOnChange, this._expr_24, currVal_24)) {
-            this._NgSelectOption_56_3.value = currVal_24;
+            this._NgSelectMultipleOption_59_4.value = currVal_24;
             this._expr_24 = currVal_24;
         }
-        this.debug(56, 38, 23);
+        this.debug(62, 37, 28);
         var currVal_25 = '2';
         if (import5.checkBinding(throwOnChange, this._expr_25, currVal_25)) {
-            this._NgSelectMultipleOption_56_4.value = currVal_25;
+            this._NgSelectOption_62_3.value = currVal_25;
             this._expr_25 = currVal_25;
         }
-        this.debug(59, 39, 23);
-        var currVal_26 = '3';
+        this.debug(62, 37, 28);
+        var currVal_26 = '2';
         if (import5.checkBinding(throwOnChange, this._expr_26, currVal_26)) {
-            this._NgSelectOption_59_3.value = currVal_26;
+            this._NgSelectMultipleOption_62_4.value = currVal_26;
             this._expr_26 = currVal_26;
         }
-        this.debug(59, 39, 23);
+        this.debug(65, 38, 28);
         var currVal_27 = '3';
         if (import5.checkBinding(throwOnChange, this._expr_27, currVal_27)) {
-            this._NgSelectMultipleOption_59_4.value = currVal_27;
+            this._NgSelectOption_65_3.value = currVal_27;
             this._expr_27 = currVal_27;
         }
-        this.debug(68, 44, 23);
-        var currVal_28 = '';
+        this.debug(65, 38, 28);
+        var currVal_28 = '3';
         if (import5.checkBinding(throwOnChange, this._expr_28, currVal_28)) {
-            this._NgSelectOption_68_3.value = currVal_28;
+            this._NgSelectMultipleOption_65_4.value = currVal_28;
             this._expr_28 = currVal_28;
         }
-        this.debug(68, 44, 23);
+        this.debug(74, 43, 28);
         var currVal_29 = '';
         if (import5.checkBinding(throwOnChange, this._expr_29, currVal_29)) {
-            this._NgSelectMultipleOption_68_4.value = currVal_29;
+            this._NgSelectOption_74_3.value = currVal_29;
             this._expr_29 = currVal_29;
         }
-        this.debug(71, 45, 23);
-        var currVal_30 = '1';
+        this.debug(74, 43, 28);
+        var currVal_30 = '';
         if (import5.checkBinding(throwOnChange, this._expr_30, currVal_30)) {
-            this._NgSelectOption_71_3.value = currVal_30;
+            this._NgSelectMultipleOption_74_4.value = currVal_30;
             this._expr_30 = currVal_30;
         }
-        this.debug(71, 45, 23);
+        this.debug(77, 44, 28);
         var currVal_31 = '1';
         if (import5.checkBinding(throwOnChange, this._expr_31, currVal_31)) {
-            this._NgSelectMultipleOption_71_4.value = currVal_31;
+            this._NgSelectOption_77_3.value = currVal_31;
             this._expr_31 = currVal_31;
         }
-        this.debug(74, 46, 23);
-        var currVal_32 = '2';
+        this.debug(77, 44, 28);
+        var currVal_32 = '1';
         if (import5.checkBinding(throwOnChange, this._expr_32, currVal_32)) {
-            this._NgSelectOption_74_3.value = currVal_32;
+            this._NgSelectMultipleOption_77_4.value = currVal_32;
             this._expr_32 = currVal_32;
         }
-        this.debug(74, 46, 23);
+        this.debug(80, 45, 28);
         var currVal_33 = '2';
         if (import5.checkBinding(throwOnChange, this._expr_33, currVal_33)) {
-            this._NgSelectMultipleOption_74_4.value = currVal_33;
+            this._NgSelectOption_80_3.value = currVal_33;
             this._expr_33 = currVal_33;
         }
-        this.debug(77, 47, 23);
-        var currVal_34 = '3';
+        this.debug(80, 45, 28);
+        var currVal_34 = '2';
         if (import5.checkBinding(throwOnChange, this._expr_34, currVal_34)) {
-            this._NgSelectOption_77_3.value = currVal_34;
+            this._NgSelectMultipleOption_80_4.value = currVal_34;
             this._expr_34 = currVal_34;
         }
-        this.debug(77, 47, 23);
+        this.debug(83, 46, 28);
         var currVal_35 = '3';
         if (import5.checkBinding(throwOnChange, this._expr_35, currVal_35)) {
-            this._NgSelectMultipleOption_77_4.value = currVal_35;
+            this._NgSelectOption_83_3.value = currVal_35;
             this._expr_35 = currVal_35;
         }
-        this.debug(86, 53, 23);
-        var currVal_36 = '';
+        this.debug(83, 46, 28);
+        var currVal_36 = '3';
         if (import5.checkBinding(throwOnChange, this._expr_36, currVal_36)) {
-            this._NgSelectOption_86_3.value = currVal_36;
+            this._NgSelectMultipleOption_83_4.value = currVal_36;
             this._expr_36 = currVal_36;
         }
-        this.debug(86, 53, 23);
-        var currVal_37 = '';
+        this.debug(117, 71, 17);
+        var currVal_37 = this.context.subscriberFoundByID;
         if (import5.checkBinding(throwOnChange, this._expr_37, currVal_37)) {
-            this._NgSelectMultipleOption_86_4.value = currVal_37;
+            this._NgIf_117_6.ngIf = currVal_37;
             this._expr_37 = currVal_37;
         }
-        this.debug(89, 54, 23);
-        var currVal_38 = '1';
-        if (import5.checkBinding(throwOnChange, this._expr_38, currVal_38)) {
-            this._NgSelectOption_89_3.value = currVal_38;
-            this._expr_38 = currVal_38;
-        }
-        this.debug(89, 54, 23);
-        var currVal_39 = '1';
-        if (import5.checkBinding(throwOnChange, this._expr_39, currVal_39)) {
-            this._NgSelectMultipleOption_89_4.value = currVal_39;
-            this._expr_39 = currVal_39;
-        }
-        this.debug(92, 55, 23);
-        var currVal_40 = '2';
-        if (import5.checkBinding(throwOnChange, this._expr_40, currVal_40)) {
-            this._NgSelectOption_92_3.value = currVal_40;
-            this._expr_40 = currVal_40;
-        }
-        this.debug(92, 55, 23);
-        var currVal_41 = '2';
-        if (import5.checkBinding(throwOnChange, this._expr_41, currVal_41)) {
-            this._NgSelectMultipleOption_92_4.value = currVal_41;
-            this._expr_41 = currVal_41;
-        }
-        this.debug(95, 56, 23);
-        var currVal_42 = '3';
-        if (import5.checkBinding(throwOnChange, this._expr_42, currVal_42)) {
-            this._NgSelectOption_95_3.value = currVal_42;
-            this._expr_42 = currVal_42;
-        }
-        this.debug(95, 56, 23);
-        var currVal_43 = '3';
-        if (import5.checkBinding(throwOnChange, this._expr_43, currVal_43)) {
-            this._NgSelectMultipleOption_95_4.value = currVal_43;
-            this._expr_43 = currVal_43;
-        }
-        this.debug(104, 63, 19);
-        var currVal_44 = 'ckeditor_solution';
-        if (import5.checkBinding(throwOnChange, this._expr_44, currVal_44)) {
-            this._CKEditor_104_4.ckEditorInstanceID = currVal_44;
-            this._expr_44 = currVal_44;
-        }
-        if (((this.numberOfChecks === 0) && !throwOnChange)) {
-            this._CKEditor_104_4.ngOnInit();
-        }
-        this.debug(114, 72, 23);
-        var currVal_45 = '';
-        if (import5.checkBinding(throwOnChange, this._expr_45, currVal_45)) {
-            this._NgSelectOption_114_3.value = currVal_45;
-            this._expr_45 = currVal_45;
-        }
-        this.debug(114, 72, 23);
-        var currVal_46 = '';
-        if (import5.checkBinding(throwOnChange, this._expr_46, currVal_46)) {
-            this._NgSelectMultipleOption_114_4.value = currVal_46;
-            this._expr_46 = currVal_46;
-        }
-        this.debug(117, 73, 23);
-        var currVal_47 = '1';
-        if (import5.checkBinding(throwOnChange, this._expr_47, currVal_47)) {
-            this._NgSelectOption_117_3.value = currVal_47;
-            this._expr_47 = currVal_47;
-        }
-        this.debug(117, 73, 23);
-        var currVal_48 = '1';
-        if (import5.checkBinding(throwOnChange, this._expr_48, currVal_48)) {
-            this._NgSelectMultipleOption_117_4.value = currVal_48;
-            this._expr_48 = currVal_48;
-        }
-        this.debug(120, 74, 23);
-        var currVal_49 = '2';
-        if (import5.checkBinding(throwOnChange, this._expr_49, currVal_49)) {
-            this._NgSelectOption_120_3.value = currVal_49;
-            this._expr_49 = currVal_49;
-        }
-        this.debug(120, 74, 23);
-        var currVal_50 = '2';
-        if (import5.checkBinding(throwOnChange, this._expr_50, currVal_50)) {
-            this._NgSelectMultipleOption_120_4.value = currVal_50;
-            this._expr_50 = currVal_50;
-        }
-        this.debug(123, 75, 23);
-        var currVal_51 = '3';
-        if (import5.checkBinding(throwOnChange, this._expr_51, currVal_51)) {
-            this._NgSelectOption_123_3.value = currVal_51;
-            this._expr_51 = currVal_51;
-        }
-        this.debug(123, 75, 23);
-        var currVal_52 = '3';
-        if (import5.checkBinding(throwOnChange, this._expr_52, currVal_52)) {
-            this._NgSelectMultipleOption_123_4.value = currVal_52;
-            this._expr_52 = currVal_52;
-        }
-        this.debug(132, 80, 23);
-        var currVal_53 = '';
-        if (import5.checkBinding(throwOnChange, this._expr_53, currVal_53)) {
-            this._NgSelectOption_132_3.value = currVal_53;
-            this._expr_53 = currVal_53;
-        }
-        this.debug(132, 80, 23);
-        var currVal_54 = '';
-        if (import5.checkBinding(throwOnChange, this._expr_54, currVal_54)) {
-            this._NgSelectMultipleOption_132_4.value = currVal_54;
-            this._expr_54 = currVal_54;
-        }
-        this.debug(135, 81, 23);
-        var currVal_55 = '1';
-        if (import5.checkBinding(throwOnChange, this._expr_55, currVal_55)) {
-            this._NgSelectOption_135_3.value = currVal_55;
-            this._expr_55 = currVal_55;
-        }
-        this.debug(135, 81, 23);
-        var currVal_56 = '1';
-        if (import5.checkBinding(throwOnChange, this._expr_56, currVal_56)) {
-            this._NgSelectMultipleOption_135_4.value = currVal_56;
-            this._expr_56 = currVal_56;
-        }
-        this.debug(138, 82, 23);
-        var currVal_57 = '2';
-        if (import5.checkBinding(throwOnChange, this._expr_57, currVal_57)) {
-            this._NgSelectOption_138_3.value = currVal_57;
-            this._expr_57 = currVal_57;
-        }
-        this.debug(138, 82, 23);
-        var currVal_58 = '2';
-        if (import5.checkBinding(throwOnChange, this._expr_58, currVal_58)) {
-            this._NgSelectMultipleOption_138_4.value = currVal_58;
-            this._expr_58 = currVal_58;
-        }
-        this.debug(141, 83, 23);
-        var currVal_59 = '3';
-        if (import5.checkBinding(throwOnChange, this._expr_59, currVal_59)) {
-            this._NgSelectOption_141_3.value = currVal_59;
-            this._expr_59 = currVal_59;
-        }
-        this.debug(141, 83, 23);
-        var currVal_60 = '3';
-        if (import5.checkBinding(throwOnChange, this._expr_60, currVal_60)) {
-            this._NgSelectMultipleOption_141_4.value = currVal_60;
-            this._expr_60 = currVal_60;
-        }
-        this.debug(171, 107, 14);
-        var currVal_61 = this.context.subscriberFoundByID;
-        if (import5.checkBinding(throwOnChange, this._expr_61, currVal_61)) {
-            this._NgIf_171_6.ngIf = currVal_61;
-            this._expr_61 = currVal_61;
-        }
         this.detectContentChildrenChanges(throwOnChange);
-        this.debug(6, 4, 9);
+        this.debug(6, 3, 12);
         var currVal_3 = this._NgControlStatusGroup_6_5.ngClassUntouched;
         if (import5.checkBinding(throwOnChange, this._expr_3, currVal_3)) {
             this.renderer.setElementClass(this._el_6, 'ng-untouched', currVal_3);
             this._expr_3 = currVal_3;
         }
-        this.debug(6, 4, 9);
+        this.debug(6, 3, 12);
         var currVal_4 = this._NgControlStatusGroup_6_5.ngClassTouched;
         if (import5.checkBinding(throwOnChange, this._expr_4, currVal_4)) {
             this.renderer.setElementClass(this._el_6, 'ng-touched', currVal_4);
             this._expr_4 = currVal_4;
         }
-        this.debug(6, 4, 9);
+        this.debug(6, 3, 12);
         var currVal_5 = this._NgControlStatusGroup_6_5.ngClassPristine;
         if (import5.checkBinding(throwOnChange, this._expr_5, currVal_5)) {
             this.renderer.setElementClass(this._el_6, 'ng-pristine', currVal_5);
             this._expr_5 = currVal_5;
         }
-        this.debug(6, 4, 9);
+        this.debug(6, 3, 12);
         var currVal_6 = this._NgControlStatusGroup_6_5.ngClassDirty;
         if (import5.checkBinding(throwOnChange, this._expr_6, currVal_6)) {
             this.renderer.setElementClass(this._el_6, 'ng-dirty', currVal_6);
             this._expr_6 = currVal_6;
         }
-        this.debug(6, 4, 9);
+        this.debug(6, 3, 12);
         var currVal_7 = this._NgControlStatusGroup_6_5.ngClassValid;
         if (import5.checkBinding(throwOnChange, this._expr_7, currVal_7)) {
             this.renderer.setElementClass(this._el_6, 'ng-valid', currVal_7);
             this._expr_7 = currVal_7;
         }
-        this.debug(6, 4, 9);
+        this.debug(6, 3, 12);
         var currVal_8 = this._NgControlStatusGroup_6_5.ngClassInvalid;
         if (import5.checkBinding(throwOnChange, this._expr_8, currVal_8)) {
             this.renderer.setElementClass(this._el_6, 'ng-invalid', currVal_8);
             this._expr_8 = currVal_8;
         }
-        this.debug(8, 7, 15);
+        this.debug(8, 6, 23);
         var currVal_10 = this.context.ticketID;
         if (import5.checkBinding(throwOnChange, this._expr_10, currVal_10)) {
             this.renderer.setElementProperty(this._el_8, 'value', currVal_10);
@@ -27101,111 +29199,75 @@ var _View_TicketComponent0 = (function (_super) {
         }
         this.detectViewChildrenChanges(throwOnChange);
         if (!throwOnChange) {
-            this.debug(40, 28, 9);
+            this.debug(40, 25, 12);
             if ((this.numberOfChecks === 0)) {
                 this._CKEditor_40_4.ngAfterViewInit();
             }
-            this.debug(104, 63, 9);
+            this.debug(46, 29, 12);
             if ((this.numberOfChecks === 0)) {
-                this._CKEditor_104_4.ngAfterViewInit();
+                this._CKEditor_46_4.ngAfterViewInit();
             }
         }
     };
     _View_TicketComponent0.prototype.destroyInternal = function () {
-        this.debug(22, 19, 15);
+        this.debug(22, 17, 20);
         this._NgSelectOption_22_3.ngOnDestroy();
         this._NgSelectMultipleOption_22_4.ngOnDestroy();
-        this.debug(25, 20, 15);
+        this.debug(25, 18, 20);
         this._NgSelectOption_25_3.ngOnDestroy();
         this._NgSelectMultipleOption_25_4.ngOnDestroy();
-        this.debug(28, 21, 15);
+        this.debug(28, 19, 20);
         this._NgSelectOption_28_3.ngOnDestroy();
         this._NgSelectMultipleOption_28_4.ngOnDestroy();
-        this.debug(31, 22, 15);
+        this.debug(31, 20, 20);
         this._NgSelectOption_31_3.ngOnDestroy();
         this._NgSelectMultipleOption_31_4.ngOnDestroy();
-        this.debug(50, 36, 15);
-        this._NgSelectOption_50_3.ngOnDestroy();
-        this._NgSelectMultipleOption_50_4.ngOnDestroy();
-        this.debug(53, 37, 15);
-        this._NgSelectOption_53_3.ngOnDestroy();
-        this._NgSelectMultipleOption_53_4.ngOnDestroy();
-        this.debug(56, 38, 15);
+        this.debug(56, 35, 20);
         this._NgSelectOption_56_3.ngOnDestroy();
         this._NgSelectMultipleOption_56_4.ngOnDestroy();
-        this.debug(59, 39, 15);
+        this.debug(59, 36, 20);
         this._NgSelectOption_59_3.ngOnDestroy();
         this._NgSelectMultipleOption_59_4.ngOnDestroy();
-        this.debug(68, 44, 15);
-        this._NgSelectOption_68_3.ngOnDestroy();
-        this._NgSelectMultipleOption_68_4.ngOnDestroy();
-        this.debug(71, 45, 15);
-        this._NgSelectOption_71_3.ngOnDestroy();
-        this._NgSelectMultipleOption_71_4.ngOnDestroy();
-        this.debug(74, 46, 15);
+        this.debug(62, 37, 20);
+        this._NgSelectOption_62_3.ngOnDestroy();
+        this._NgSelectMultipleOption_62_4.ngOnDestroy();
+        this.debug(65, 38, 20);
+        this._NgSelectOption_65_3.ngOnDestroy();
+        this._NgSelectMultipleOption_65_4.ngOnDestroy();
+        this.debug(74, 43, 20);
         this._NgSelectOption_74_3.ngOnDestroy();
         this._NgSelectMultipleOption_74_4.ngOnDestroy();
-        this.debug(77, 47, 15);
+        this.debug(77, 44, 20);
         this._NgSelectOption_77_3.ngOnDestroy();
         this._NgSelectMultipleOption_77_4.ngOnDestroy();
-        this.debug(86, 53, 15);
-        this._NgSelectOption_86_3.ngOnDestroy();
-        this._NgSelectMultipleOption_86_4.ngOnDestroy();
-        this.debug(89, 54, 15);
-        this._NgSelectOption_89_3.ngOnDestroy();
-        this._NgSelectMultipleOption_89_4.ngOnDestroy();
-        this.debug(92, 55, 15);
-        this._NgSelectOption_92_3.ngOnDestroy();
-        this._NgSelectMultipleOption_92_4.ngOnDestroy();
-        this.debug(95, 56, 15);
-        this._NgSelectOption_95_3.ngOnDestroy();
-        this._NgSelectMultipleOption_95_4.ngOnDestroy();
-        this.debug(114, 72, 15);
-        this._NgSelectOption_114_3.ngOnDestroy();
-        this._NgSelectMultipleOption_114_4.ngOnDestroy();
-        this.debug(117, 73, 15);
-        this._NgSelectOption_117_3.ngOnDestroy();
-        this._NgSelectMultipleOption_117_4.ngOnDestroy();
-        this.debug(120, 74, 15);
-        this._NgSelectOption_120_3.ngOnDestroy();
-        this._NgSelectMultipleOption_120_4.ngOnDestroy();
-        this.debug(123, 75, 15);
-        this._NgSelectOption_123_3.ngOnDestroy();
-        this._NgSelectMultipleOption_123_4.ngOnDestroy();
-        this.debug(132, 80, 15);
-        this._NgSelectOption_132_3.ngOnDestroy();
-        this._NgSelectMultipleOption_132_4.ngOnDestroy();
-        this.debug(135, 81, 15);
-        this._NgSelectOption_135_3.ngOnDestroy();
-        this._NgSelectMultipleOption_135_4.ngOnDestroy();
-        this.debug(138, 82, 15);
-        this._NgSelectOption_138_3.ngOnDestroy();
-        this._NgSelectMultipleOption_138_4.ngOnDestroy();
-        this.debug(141, 83, 15);
-        this._NgSelectOption_141_3.ngOnDestroy();
-        this._NgSelectMultipleOption_141_4.ngOnDestroy();
+        this.debug(80, 45, 20);
+        this._NgSelectOption_80_3.ngOnDestroy();
+        this._NgSelectMultipleOption_80_4.ngOnDestroy();
+        this.debug(83, 46, 20);
+        this._NgSelectOption_83_3.ngOnDestroy();
+        this._NgSelectMultipleOption_83_4.ngOnDestroy();
     };
     _View_TicketComponent0.prototype._handle_ngSubmit_6_0 = function ($event) {
         this.markPathToRootAsCheckOnce();
-        this.debug(6, 4, 46);
+        this.debug(6, 3, 49);
         var pd_0 = (this.context.searchSubscriberByID(this._el_8.value) !== false);
         return (true && pd_0);
     };
     _View_TicketComponent0.prototype._handle_submit_6_1 = function ($event) {
         this.markPathToRootAsCheckOnce();
-        this.debug(6, 4, 9);
-        var pd_0 = (this._NgForm_6_3.onSubmit() !== false);
+        this.debug(6, 3, 12);
+        var pd_0 = (this._NgForm_6_3.onSubmit($event) !== false);
         return (true && pd_0);
     };
     _View_TicketComponent0.prototype._handle_reset_6_2 = function ($event) {
         this.markPathToRootAsCheckOnce();
-        this.debug(6, 4, 9);
+        this.debug(6, 3, 12);
         var pd_0 = (this._NgForm_6_3.onReset() !== false);
         return (true && pd_0);
     };
     _View_TicketComponent0.prototype._handle_input_8_0 = function ($event) {
         this.markPathToRootAsCheckOnce();
-        this.debug(8, 8, 15);
+        this.debug(8, 7, 23);
         var pd_0 = ((this.context.subscriberID = $event.target.value) !== false);
         return (true && pd_0);
     };
@@ -27229,9 +29291,9 @@ var _View_TicketComponent1 = (function (_super) {
         _super.call(this, _View_TicketComponent1, renderType_TicketComponent, import7.ViewType.EMBEDDED, viewUtils, parentInjector, declarationEl, import8.ChangeDetectorStatus.CheckAlways, nodeDebugInfos_TicketComponent1);
     }
     _View_TicketComponent1.prototype.createInternal = function (rootSelector) {
-        this._el_0 = this.renderer.createElement(null, 'pre', this.debug(0, 107, 9));
-        this._el_1 = this.renderer.createElement(this._el_0, 'code', this.debug(1, 107, 42));
-        this._text_2 = this.renderer.createText(this._el_1, '', this.debug(2, 107, 48));
+        this._el_0 = this.renderer.createElement(null, 'pre', this.debug(0, 71, 12));
+        this._el_1 = this.renderer.createElement(this._el_0, 'code', this.debug(1, 71, 45));
+        this._text_2 = this.renderer.createText(this._el_1, '', this.debug(2, 71, 51));
         this.debug(null, null, null);
         this._pipe_json_0 = new import25.JsonPipe();
         this._expr_0 = import8.UNINITIALIZED;
@@ -27245,7 +29307,7 @@ var _View_TicketComponent1 = (function (_super) {
     _View_TicketComponent1.prototype.detectChangesInternal = function (throwOnChange) {
         var valUnwrapper = new import8.ValueUnwrapper();
         this.detectContentChildrenChanges(throwOnChange);
-        this.debug(2, 107, 48);
+        this.debug(2, 71, 51);
         valUnwrapper.reset();
         var currVal_0 = import5.interpolate(1, '', valUnwrapper.unwrap(this._pipe_json_0.transform(this.parent.context.subscriberFoundByID)), '');
         if ((valUnwrapper.hasWrappedValue || import5.checkBinding(throwOnChange, this._expr_0, currVal_0))) {
@@ -27262,7 +29324,7 @@ function viewFactory_TicketComponent1(viewUtils, parentInjector, declarationEl) 
 
 
 /***/ },
-/* 132 */
+/* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27279,12 +29341,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
-var core_1 = __webpack_require__(7);
-var platform_browser_1 = __webpack_require__(46);
-var forms_1 = __webpack_require__(441);
-var http_1 = __webpack_require__(26);
+var core_1 = __webpack_require__(3);
+var platform_browser_1 = __webpack_require__(33);
+var forms_1 = __webpack_require__(471);
+var http_1 = __webpack_require__(27);
 var router_1 = __webpack_require__(22);
-var hmr_1 = __webpack_require__(95);
+var hmr_1 = __webpack_require__(117);
+/*
+ * Angular2 Material Components
+ */
+//import { MaterialModule } from '@angular/material';
+//import '@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+var md_module_1 = __webpack_require__(91);
+//import { MdCard } from '@angular2-material/card';
+//import { MdButton } from '@angular2-material/button';
 /*
  * Kendo UI For Angular 2 Components
  */
@@ -27293,39 +29363,39 @@ var hmr_1 = __webpack_require__(95);
 /*
  * Platform and Environment providers/directives/pipes
  */
-var environment_1 = __webpack_require__(70);
-var app_routes_1 = __webpack_require__(133);
-var app_resolver_1 = __webpack_require__(48);
+var environment_1 = __webpack_require__(90);
+var app_routes_1 = __webpack_require__(164);
+var app_resolver_1 = __webpack_require__(54);
 // AppComponent is our top level component
-var app_component_1 = __webpack_require__(69);
+var app_component_1 = __webpack_require__(89);
 /**
  * Imported Components
  */
-var home_component_1 = __webpack_require__(36);
-var about_component_ts_1 = __webpack_require__(35);
-var login_component_1 = __webpack_require__(37);
-var subscriber_component_ts_1 = __webpack_require__(38);
-var ticket_component_ts_1 = __webpack_require__(39);
-var notfound404_component_1 = __webpack_require__(34);
-var nav_header_component_1 = __webpack_require__(51);
-var nav_sidebar_component_1 = __webpack_require__(52);
-var nav_footer_component_1 = __webpack_require__(50);
-var ckeditor_component_1 = __webpack_require__(49);
+var home_component_1 = __webpack_require__(39);
+var about_component_ts_1 = __webpack_require__(38);
+var login_component_1 = __webpack_require__(40);
+var subscriber_component_ts_1 = __webpack_require__(41);
+var ticket_component_ts_1 = __webpack_require__(42);
+var notfound404_component_1 = __webpack_require__(37);
+var nav_header_component_1 = __webpack_require__(57);
+var nav_sidebar_component_1 = __webpack_require__(58);
+var nav_footer_component_1 = __webpack_require__(56);
+var ckeditor_component_1 = __webpack_require__(55);
 /*
  * AppComponent Wide Services & Utilities
  */
-__export(__webpack_require__(5));
 __export(__webpack_require__(6));
+__export(__webpack_require__(7));
 __export(__webpack_require__(8));
 __export(__webpack_require__(29));
-__export(__webpack_require__(5));
-__export(__webpack_require__(33));
-var utility_service_3 = __webpack_require__(5);
-var appstate_service_2 = __webpack_require__(6);
+__export(__webpack_require__(6));
+__export(__webpack_require__(34));
+var utility_service_3 = __webpack_require__(6);
+var appstate_service_2 = __webpack_require__(7);
 var authentication_service_2 = __webpack_require__(8);
 var data_service_2 = __webpack_require__(29);
-var utility_service_4 = __webpack_require__(5);
-var route_protection_service_2 = __webpack_require__(33);
+var utility_service_4 = __webpack_require__(6);
+var route_protection_service_2 = __webpack_require__(34);
 // import { AuthHttp } from "angular2-jwt";
 // Declare Services & Utilities as AppComponent Providers
 // Application wide providers
@@ -27385,7 +29455,7 @@ var AppModule = (function () {
                 nav_sidebar_component_1.NavSidebarComponent, nav_header_component_1.NavHeaderComponent, nav_footer_component_1.NavFooterComponent, ckeditor_component_1.CKEditor
             ],
             imports: [
-                /** ButtonsModule, GridModule,*/ platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule, router_1.RouterModule.forRoot(app_routes_1.ROUTES, { useHash: true }),
+                /** ButtonsModule, GridModule,*/ platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule, router_1.RouterModule.forRoot(app_routes_1.ROUTES, { useHash: true }), md_module_1.MdModule.forRoot()
             ],
             providers: [
                 environment_1.ENV_PROVIDERS, APP_PROVIDERS]
@@ -27399,7 +29469,7 @@ exports.AppModule = AppModule;
 
 
 /***/ },
-/* 133 */
+/* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27411,27 +29481,27 @@ exports.AppModule = AppModule;
 /**
  * Other services
  */
-var route_protection_service_1 = __webpack_require__(33);
-var app_resolver_1 = __webpack_require__(48);
+var route_protection_service_1 = __webpack_require__(34);
+var app_resolver_1 = __webpack_require__(54);
 /**
  * Imported Components
  */
-var home_component_1 = __webpack_require__(36);
-var about_component_1 = __webpack_require__(35);
-var login_component_1 = __webpack_require__(37);
-var subscriber_component_ts_1 = __webpack_require__(38);
-var ticket_component_ts_1 = __webpack_require__(39);
-var notfound404_component_1 = __webpack_require__(34);
+var home_component_1 = __webpack_require__(39);
+var about_component_1 = __webpack_require__(38);
+var login_component_1 = __webpack_require__(40);
+var subscriber_component_ts_1 = __webpack_require__(41);
+var ticket_component_ts_1 = __webpack_require__(42);
+var notfound404_component_1 = __webpack_require__(37);
 exports.ROUTES = [{
         path: '',
         component: login_component_1.LoginComponent
     }, {
         path: 'detail',
-        loadChildren: function () { return __webpack_require__(138)("DetailModule"); },
+        loadChildren: function () { return __webpack_require__(169)("DetailModule"); },
         canActivate: [route_protection_service_1.RouteProtection]
     }, {
         path: 'iframe',
-        loadChildren: function () { return __webpack_require__(139)("IframeModule"); },
+        loadChildren: function () { return __webpack_require__(170)("IframeModule"); },
         canActivate: [route_protection_service_1.RouteProtection]
     }, {
         path: 'ticket',
@@ -27470,13 +29540,13 @@ exports.ROUTES = [{
 
 
 /***/ },
-/* 134 */
+/* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 // forceChangeDetection.ts
 "use strict";
-var utility_service_1 = __webpack_require__(5);
+var utility_service_1 = __webpack_require__(6);
 /* TODO: Find out why angular2 is not detecting changes on component load when navigating via "this.router.navigate(['/route'])"
  *  This file is the hack to force angular2 to detect changes on component load. Otherwise template syntax bindings don't load.
  * */
@@ -27506,175 +29576,175 @@ exports.autoForceChangeDetection = autoForceChangeDetection;
 
 
 /***/ },
-/* 135 */
+/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var http_1 = __webpack_require__(26);
+var http_1 = __webpack_require__(27);
 exports.contentHeaders = new http_1.Headers();
 exports.contentHeaders.append('Accept', 'application/json');
 exports.contentHeaders.append('Content-Type', 'application/json');
 
 
 /***/ },
-/* 136 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Promise) {module.exports = function (namespace) {
   return new Promise(function (resolve) {
     __webpack_require__.e/* nsure */(4).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
       if (namespace) {
-        resolve(__webpack_require__(113)[namespace]);
+        resolve(__webpack_require__(133)[namespace]);
       } else {
-        var mod = __webpack_require__(113);
+        var mod = __webpack_require__(133);
         resolve(mod.__esModule ? mod.default : mod)
       }
     }).bind(null, __webpack_require__));
   });
 }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(28)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(24)))
 
 /***/ },
-/* 137 */
+/* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Promise) {module.exports = function (namespace) {
   return new Promise(function (resolve) {
     __webpack_require__.e/* nsure */(2).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
       if (namespace) {
-        resolve(__webpack_require__(114)[namespace]);
+        resolve(__webpack_require__(134)[namespace]);
       } else {
-        var mod = __webpack_require__(114);
+        var mod = __webpack_require__(134);
         resolve(mod.__esModule ? mod.default : mod)
       }
     }).bind(null, __webpack_require__));
   });
 }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(28)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(24)))
 
 /***/ },
-/* 138 */
+/* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Promise) {module.exports = function (namespace) {
   return new Promise(function (resolve) {
     __webpack_require__.e/* nsure */(5).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
       if (namespace) {
-        resolve(__webpack_require__(103)[namespace]);
+        resolve(__webpack_require__(123)[namespace]);
       } else {
-        var mod = __webpack_require__(103);
+        var mod = __webpack_require__(123);
         resolve(mod.__esModule ? mod.default : mod)
       }
     }).bind(null, __webpack_require__));
   });
 }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(28)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(24)))
 
 /***/ },
-/* 139 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Promise) {module.exports = function (namespace) {
   return new Promise(function (resolve) {
     __webpack_require__.e/* nsure */(3).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
       if (namespace) {
-        resolve(__webpack_require__(104)[namespace]);
+        resolve(__webpack_require__(124)[namespace]);
       } else {
-        var mod = __webpack_require__(104);
+        var mod = __webpack_require__(124);
         resolve(mod.__esModule ? mod.default : mod)
       }
     }).bind(null, __webpack_require__));
   });
 }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(28)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(24)))
 
 /***/ },
-/* 140 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Promise) {module.exports = function (namespace) {
   return new Promise(function (resolve) {
     __webpack_require__.e/* nsure */(1).catch(function(err) { __webpack_require__.oe(err); }).then((function (require) {
       if (namespace) {
-        resolve(__webpack_require__(67)[namespace]);
+        resolve(__webpack_require__(73)[namespace]);
       } else {
-        var mod = __webpack_require__(67);
+        var mod = __webpack_require__(73);
         resolve(mod.__esModule ? mod.default : mod)
       }
     }).bind(null, __webpack_require__));
   });
 }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(28)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(24)))
 
 /***/ },
-/* 141 */
+/* 172 */
 /***/ function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ },
-/* 142 */
+/* 173 */
 /***/ function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ },
-/* 143 */
+/* 174 */
 /***/ function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ },
-/* 144 */
+/* 175 */
 /***/ function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ },
-/* 145 */
+/* 176 */
 /***/ function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ },
-/* 146 */
+/* 177 */
 /***/ function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ },
-/* 147 */
+/* 178 */
 /***/ function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ },
-/* 148 */
+/* 179 */
 /***/ function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ },
-/* 149 */
+/* 180 */
 /***/ function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ },
-/* 150 */
+/* 181 */
 /***/ function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ },
-/* 151 */
+/* 182 */
 /***/ function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ },
-/* 152 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;/*! Hammer.JS - v2.0.7 - 2016-04-22
@@ -30323,7 +32393,7 @@ if (true) {
 
 
 /***/ },
-/* 153 */
+/* 184 */
 /***/ function(module, exports) {
 
 /**
@@ -30367,10 +32437,10 @@ module.exports = typeof window !== 'undefined' && window.atob && window.atob.bin
 
 
 /***/ },
-/* 154 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
-var atob = __webpack_require__(153);
+var atob = __webpack_require__(184);
 
 function b64DecodeUnicode(str) {
   return decodeURIComponent(atob(str).replace(/(.)/g, function (m, p) {
@@ -30406,13 +32476,13 @@ module.exports = function(str) {
 
 
 /***/ },
-/* 155 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 'use strict';
 
-var base64_url_decode = __webpack_require__(154);
+var base64_url_decode = __webpack_require__(185);
 
 module.exports = function (token) {
   if (typeof token !== 'string') {
@@ -30424,7 +32494,7 @@ module.exports = function (token) {
 
 
 /***/ },
-/* 156 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery, $) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var __WEBPACK_AMD_DEFINE_RESULT__;var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_LOCAL_MODULE_0__;var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -30433,74 +32503,74 @@ module.exports = function (token) {
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
 if("undefined"==typeof jQuery){var jQuery;jQuery= true?$=__webpack_require__(10):$}jQuery.easing.jswing=jQuery.easing.swing,jQuery.extend(jQuery.easing,{def:"easeOutQuad",swing:function(a,b,c,d,e){return jQuery.easing[jQuery.easing.def](a,b,c,d,e)},easeInQuad:function(a,b,c,d,e){return d*(b/=e)*b+c},easeOutQuad:function(a,b,c,d,e){return-d*(b/=e)*(b-2)+c},easeInOutQuad:function(a,b,c,d,e){return(b/=e/2)<1?d/2*b*b+c:-d/2*(--b*(b-2)-1)+c},easeInCubic:function(a,b,c,d,e){return d*(b/=e)*b*b+c},easeOutCubic:function(a,b,c,d,e){return d*((b=b/e-1)*b*b+1)+c},easeInOutCubic:function(a,b,c,d,e){return(b/=e/2)<1?d/2*b*b*b+c:d/2*((b-=2)*b*b+2)+c},easeInQuart:function(a,b,c,d,e){return d*(b/=e)*b*b*b+c},easeOutQuart:function(a,b,c,d,e){return-d*((b=b/e-1)*b*b*b-1)+c},easeInOutQuart:function(a,b,c,d,e){return(b/=e/2)<1?d/2*b*b*b*b+c:-d/2*((b-=2)*b*b*b-2)+c},easeInQuint:function(a,b,c,d,e){return d*(b/=e)*b*b*b*b+c},easeOutQuint:function(a,b,c,d,e){return d*((b=b/e-1)*b*b*b*b+1)+c},easeInOutQuint:function(a,b,c,d,e){return(b/=e/2)<1?d/2*b*b*b*b*b+c:d/2*((b-=2)*b*b*b*b+2)+c},easeInSine:function(a,b,c,d,e){return-d*Math.cos(b/e*(Math.PI/2))+d+c},easeOutSine:function(a,b,c,d,e){return d*Math.sin(b/e*(Math.PI/2))+c},easeInOutSine:function(a,b,c,d,e){return-d/2*(Math.cos(Math.PI*b/e)-1)+c},easeInExpo:function(a,b,c,d,e){return 0==b?c:d*Math.pow(2,10*(b/e-1))+c},easeOutExpo:function(a,b,c,d,e){return b==e?c+d:d*(-Math.pow(2,-10*b/e)+1)+c},easeInOutExpo:function(a,b,c,d,e){return 0==b?c:b==e?c+d:(b/=e/2)<1?d/2*Math.pow(2,10*(b-1))+c:d/2*(-Math.pow(2,-10*--b)+2)+c},easeInCirc:function(a,b,c,d,e){return-d*(Math.sqrt(1-(b/=e)*b)-1)+c},easeOutCirc:function(a,b,c,d,e){return d*Math.sqrt(1-(b=b/e-1)*b)+c},easeInOutCirc:function(a,b,c,d,e){return(b/=e/2)<1?-d/2*(Math.sqrt(1-b*b)-1)+c:d/2*(Math.sqrt(1-(b-=2)*b)+1)+c},easeInElastic:function(a,b,c,d,e){var f=1.70158,g=0,h=d;if(0==b)return c;if(1==(b/=e))return c+d;if(g||(g=.3*e),h<Math.abs(d)){h=d;var f=g/4}else var f=g/(2*Math.PI)*Math.asin(d/h);return-(h*Math.pow(2,10*(b-=1))*Math.sin((b*e-f)*(2*Math.PI)/g))+c},easeOutElastic:function(a,b,c,d,e){var f=1.70158,g=0,h=d;if(0==b)return c;if(1==(b/=e))return c+d;if(g||(g=.3*e),h<Math.abs(d)){h=d;var f=g/4}else var f=g/(2*Math.PI)*Math.asin(d/h);return h*Math.pow(2,-10*b)*Math.sin((b*e-f)*(2*Math.PI)/g)+d+c},easeInOutElastic:function(a,b,c,d,e){var f=1.70158,g=0,h=d;if(0==b)return c;if(2==(b/=e/2))return c+d;if(g||(g=e*(.3*1.5)),h<Math.abs(d)){h=d;var f=g/4}else var f=g/(2*Math.PI)*Math.asin(d/h);return 1>b?-.5*(h*Math.pow(2,10*(b-=1))*Math.sin((b*e-f)*(2*Math.PI)/g))+c:h*Math.pow(2,-10*(b-=1))*Math.sin((b*e-f)*(2*Math.PI)/g)*.5+d+c},easeInBack:function(a,b,c,d,e,f){return void 0==f&&(f=1.70158),d*(b/=e)*b*((f+1)*b-f)+c},easeOutBack:function(a,b,c,d,e,f){return void 0==f&&(f=1.70158),d*((b=b/e-1)*b*((f+1)*b+f)+1)+c},easeInOutBack:function(a,b,c,d,e,f){return void 0==f&&(f=1.70158),(b/=e/2)<1?d/2*(b*b*(((f*=1.525)+1)*b-f))+c:d/2*((b-=2)*b*(((f*=1.525)+1)*b+f)+2)+c},easeInBounce:function(a,b,c,d,e){return d-jQuery.easing.easeOutBounce(a,e-b,0,d,e)+c},easeOutBounce:function(a,b,c,d,e){return(b/=e)<1/2.75?d*(7.5625*b*b)+c:2/2.75>b?d*(7.5625*(b-=1.5/2.75)*b+.75)+c:2.5/2.75>b?d*(7.5625*(b-=2.25/2.75)*b+.9375)+c:d*(7.5625*(b-=2.625/2.75)*b+.984375)+c},easeInOutBounce:function(a,b,c,d,e){return e/2>b?.5*jQuery.easing.easeInBounce(a,2*b,0,d,e)+c:.5*jQuery.easing.easeOutBounce(a,2*b-e,0,d,e)+.5*d+c}}),jQuery.extend(jQuery.easing,{easeInOutMaterial:function(a,b,c,d,e){return(b/=e/2)<1?d/2*b*b+c:d/4*((b-=2)*b*b+2)+c}}),jQuery.Velocity?console.log("Velocity is already loaded. You may be needlessly importing Velocity again; note that Materialize includes Velocity."):(!function(a){function b(a){var b=a.length,d=c.type(a);return"function"===d||c.isWindow(a)?!1:1===a.nodeType&&b?!0:"array"===d||0===b||"number"==typeof b&&b>0&&b-1 in a}if(!a.jQuery){var c=function(a,b){return new c.fn.init(a,b)};c.isWindow=function(a){return null!=a&&a==a.window},c.type=function(a){return null==a?a+"":"object"==typeof a||"function"==typeof a?e[g.call(a)]||"object":typeof a},c.isArray=Array.isArray||function(a){return"array"===c.type(a)},c.isPlainObject=function(a){var b;if(!a||"object"!==c.type(a)||a.nodeType||c.isWindow(a))return!1;try{if(a.constructor&&!f.call(a,"constructor")&&!f.call(a.constructor.prototype,"isPrototypeOf"))return!1}catch(d){return!1}for(b in a);return void 0===b||f.call(a,b)},c.each=function(a,c,d){var e,f=0,g=a.length,h=b(a);if(d){if(h)for(;g>f&&(e=c.apply(a[f],d),e!==!1);f++);else for(f in a)if(e=c.apply(a[f],d),e===!1)break}else if(h)for(;g>f&&(e=c.call(a[f],f,a[f]),e!==!1);f++);else for(f in a)if(e=c.call(a[f],f,a[f]),e===!1)break;return a},c.data=function(a,b,e){if(void 0===e){var f=a[c.expando],g=f&&d[f];if(void 0===b)return g;if(g&&b in g)return g[b]}else if(void 0!==b){var f=a[c.expando]||(a[c.expando]=++c.uuid);return d[f]=d[f]||{},d[f][b]=e,e}},c.removeData=function(a,b){var e=a[c.expando],f=e&&d[e];f&&c.each(b,function(a,b){delete f[b]})},c.extend=function(){var a,b,d,e,f,g,h=arguments[0]||{},i=1,j=arguments.length,k=!1;for("boolean"==typeof h&&(k=h,h=arguments[i]||{},i++),"object"!=typeof h&&"function"!==c.type(h)&&(h={}),i===j&&(h=this,i--);j>i;i++)if(null!=(f=arguments[i]))for(e in f)a=h[e],d=f[e],h!==d&&(k&&d&&(c.isPlainObject(d)||(b=c.isArray(d)))?(b?(b=!1,g=a&&c.isArray(a)?a:[]):g=a&&c.isPlainObject(a)?a:{},h[e]=c.extend(k,g,d)):void 0!==d&&(h[e]=d));return h},c.queue=function(a,d,e){function f(a,c){var d=c||[];return null!=a&&(b(Object(a))?!function(a,b){for(var c=+b.length,d=0,e=a.length;c>d;)a[e++]=b[d++];if(c!==c)for(;void 0!==b[d];)a[e++]=b[d++];return a.length=e,a}(d,"string"==typeof a?[a]:a):[].push.call(d,a)),d}if(a){d=(d||"fx")+"queue";var g=c.data(a,d);return e?(!g||c.isArray(e)?g=c.data(a,d,f(e)):g.push(e),g):g||[]}},c.dequeue=function(a,b){c.each(a.nodeType?[a]:a,function(a,d){b=b||"fx";var e=c.queue(d,b),f=e.shift();"inprogress"===f&&(f=e.shift()),f&&("fx"===b&&e.unshift("inprogress"),f.call(d,function(){c.dequeue(d,b)}))})},c.fn=c.prototype={init:function(a){if(a.nodeType)return this[0]=a,this;throw new Error("Not a DOM node.")},offset:function(){var b=this[0].getBoundingClientRect?this[0].getBoundingClientRect():{top:0,left:0};return{top:b.top+(a.pageYOffset||document.scrollTop||0)-(document.clientTop||0),left:b.left+(a.pageXOffset||document.scrollLeft||0)-(document.clientLeft||0)}},position:function(){function a(){for(var a=this.offsetParent||document;a&&"html"===!a.nodeType.toLowerCase&&"static"===a.style.position;)a=a.offsetParent;return a||document}var b=this[0],a=a.apply(b),d=this.offset(),e=/^(?:body|html)$/i.test(a.nodeName)?{top:0,left:0}:c(a).offset();return d.top-=parseFloat(b.style.marginTop)||0,d.left-=parseFloat(b.style.marginLeft)||0,a.style&&(e.top+=parseFloat(a.style.borderTopWidth)||0,e.left+=parseFloat(a.style.borderLeftWidth)||0),{top:d.top-e.top,left:d.left-e.left}}};var d={};c.expando="velocity"+(new Date).getTime(),c.uuid=0;for(var e={},f=e.hasOwnProperty,g=e.toString,h="Boolean Number String Function Array Date RegExp Object Error".split(" "),i=0;i<h.length;i++)e["[object "+h[i]+"]"]=h[i].toLowerCase();c.fn.init.prototype=c.fn,a.Velocity={Utilities:c}}}(window),function(a){"object"==typeof module&&"object"==typeof module.exports?module.exports=a(): true?!(__WEBPACK_AMD_DEFINE_FACTORY__ = (a), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):a()}(function(){return function(a,b,c,d){function e(a){for(var b=-1,c=a?a.length:0,d=[];++b<c;){var e=a[b];e&&d.push(e)}return d}function f(a){return p.isWrapped(a)?a=[].slice.call(a):p.isNode(a)&&(a=[a]),a}function g(a){var b=m.data(a,"velocity");return null===b?d:b}function h(a){return function(b){return Math.round(b*a)*(1/a)}}function i(a,c,d,e){function f(a,b){return 1-3*b+3*a}function g(a,b){return 3*b-6*a}function h(a){return 3*a}function i(a,b,c){return((f(b,c)*a+g(b,c))*a+h(b))*a}function j(a,b,c){return 3*f(b,c)*a*a+2*g(b,c)*a+h(b)}function k(b,c){for(var e=0;p>e;++e){var f=j(c,a,d);if(0===f)return c;var g=i(c,a,d)-b;c-=g/f}return c}function l(){for(var b=0;t>b;++b)x[b]=i(b*u,a,d)}function m(b,c,e){var f,g,h=0;do g=c+(e-c)/2,f=i(g,a,d)-b,f>0?e=g:c=g;while(Math.abs(f)>r&&++h<s);return g}function n(b){for(var c=0,e=1,f=t-1;e!=f&&x[e]<=b;++e)c+=u;--e;var g=(b-x[e])/(x[e+1]-x[e]),h=c+g*u,i=j(h,a,d);return i>=q?k(b,h):0==i?h:m(b,c,c+u)}function o(){y=!0,(a!=c||d!=e)&&l()}var p=4,q=.001,r=1e-7,s=10,t=11,u=1/(t-1),v="Float32Array"in b;if(4!==arguments.length)return!1;for(var w=0;4>w;++w)if("number"!=typeof arguments[w]||isNaN(arguments[w])||!isFinite(arguments[w]))return!1;a=Math.min(a,1),d=Math.min(d,1),a=Math.max(a,0),d=Math.max(d,0);var x=v?new Float32Array(t):new Array(t),y=!1,z=function(b){return y||o(),a===c&&d===e?b:0===b?0:1===b?1:i(n(b),c,e)};z.getControlPoints=function(){return[{x:a,y:c},{x:d,y:e}]};var A="generateBezier("+[a,c,d,e]+")";return z.toString=function(){return A},z}function j(a,b){var c=a;return p.isString(a)?t.Easings[a]||(c=!1):c=p.isArray(a)&&1===a.length?h.apply(null,a):p.isArray(a)&&2===a.length?u.apply(null,a.concat([b])):p.isArray(a)&&4===a.length?i.apply(null,a):!1,c===!1&&(c=t.Easings[t.defaults.easing]?t.defaults.easing:s),c}function k(a){if(a){var b=(new Date).getTime(),c=t.State.calls.length;c>1e4&&(t.State.calls=e(t.State.calls));for(var f=0;c>f;f++)if(t.State.calls[f]){var h=t.State.calls[f],i=h[0],j=h[2],n=h[3],o=!!n,q=null;n||(n=t.State.calls[f][3]=b-16);for(var r=Math.min((b-n)/j.duration,1),s=0,u=i.length;u>s;s++){var w=i[s],y=w.element;if(g(y)){var z=!1;if(j.display!==d&&null!==j.display&&"none"!==j.display){if("flex"===j.display){var A=["-webkit-box","-moz-box","-ms-flexbox","-webkit-flex"];m.each(A,function(a,b){v.setPropertyValue(y,"display",b)})}v.setPropertyValue(y,"display",j.display)}j.visibility!==d&&"hidden"!==j.visibility&&v.setPropertyValue(y,"visibility",j.visibility);for(var B in w)if("element"!==B){var C,D=w[B],E=p.isString(D.easing)?t.Easings[D.easing]:D.easing;if(1===r)C=D.endValue;else{var F=D.endValue-D.startValue;if(C=D.startValue+F*E(r,j,F),!o&&C===D.currentValue)continue}if(D.currentValue=C,"tween"===B)q=C;else{if(v.Hooks.registered[B]){var G=v.Hooks.getRoot(B),H=g(y).rootPropertyValueCache[G];H&&(D.rootPropertyValue=H)}var I=v.setPropertyValue(y,B,D.currentValue+(0===parseFloat(C)?"":D.unitType),D.rootPropertyValue,D.scrollData);v.Hooks.registered[B]&&(g(y).rootPropertyValueCache[G]=v.Normalizations.registered[G]?v.Normalizations.registered[G]("extract",null,I[1]):I[1]),"transform"===I[0]&&(z=!0)}}j.mobileHA&&g(y).transformCache.translate3d===d&&(g(y).transformCache.translate3d="(0px, 0px, 0px)",z=!0),z&&v.flushTransformCache(y)}}j.display!==d&&"none"!==j.display&&(t.State.calls[f][2].display=!1),j.visibility!==d&&"hidden"!==j.visibility&&(t.State.calls[f][2].visibility=!1),j.progress&&j.progress.call(h[1],h[1],r,Math.max(0,n+j.duration-b),n,q),1===r&&l(f)}}t.State.isTicking&&x(k)}function l(a,b){if(!t.State.calls[a])return!1;for(var c=t.State.calls[a][0],e=t.State.calls[a][1],f=t.State.calls[a][2],h=t.State.calls[a][4],i=!1,j=0,k=c.length;k>j;j++){var l=c[j].element;if(b||f.loop||("none"===f.display&&v.setPropertyValue(l,"display",f.display),"hidden"===f.visibility&&v.setPropertyValue(l,"visibility",f.visibility)),f.loop!==!0&&(m.queue(l)[1]===d||!/\.velocityQueueEntryFlag/i.test(m.queue(l)[1]))&&g(l)){g(l).isAnimating=!1,g(l).rootPropertyValueCache={};var n=!1;m.each(v.Lists.transforms3D,function(a,b){var c=/^scale/.test(b)?1:0,e=g(l).transformCache[b];g(l).transformCache[b]!==d&&new RegExp("^\\("+c+"[^.]").test(e)&&(n=!0,delete g(l).transformCache[b])}),f.mobileHA&&(n=!0,delete g(l).transformCache.translate3d),n&&v.flushTransformCache(l),v.Values.removeClass(l,"velocity-animating")}if(!b&&f.complete&&!f.loop&&j===k-1)try{f.complete.call(e,e)}catch(o){setTimeout(function(){throw o},1)}h&&f.loop!==!0&&h(e),g(l)&&f.loop===!0&&!b&&(m.each(g(l).tweensContainer,function(a,b){/^rotate/.test(a)&&360===parseFloat(b.endValue)&&(b.endValue=0,b.startValue=360),/^backgroundPosition/.test(a)&&100===parseFloat(b.endValue)&&"%"===b.unitType&&(b.endValue=0,b.startValue=100)}),t(l,"reverse",{loop:!0,delay:f.delay})),f.queue!==!1&&m.dequeue(l,f.queue)}t.State.calls[a]=!1;for(var p=0,q=t.State.calls.length;q>p;p++)if(t.State.calls[p]!==!1){i=!0;break}i===!1&&(t.State.isTicking=!1,delete t.State.calls,t.State.calls=[])}var m,n=function(){if(c.documentMode)return c.documentMode;for(var a=7;a>4;a--){var b=c.createElement("div");if(b.innerHTML="<!--[if IE "+a+"]><span></span><![endif]-->",b.getElementsByTagName("span").length)return b=null,a}return d}(),o=function(){var a=0;return b.webkitRequestAnimationFrame||b.mozRequestAnimationFrame||function(b){var c,d=(new Date).getTime();return c=Math.max(0,16-(d-a)),a=d+c,setTimeout(function(){b(d+c)},c)}}(),p={isString:function(a){return"string"==typeof a},isArray:Array.isArray||function(a){return"[object Array]"===Object.prototype.toString.call(a)},isFunction:function(a){return"[object Function]"===Object.prototype.toString.call(a)},isNode:function(a){return a&&a.nodeType},isNodeList:function(a){return"object"==typeof a&&/^\[object (HTMLCollection|NodeList|Object)\]$/.test(Object.prototype.toString.call(a))&&a.length!==d&&(0===a.length||"object"==typeof a[0]&&a[0].nodeType>0)},isWrapped:function(a){return a&&(a.jquery||b.Zepto&&b.Zepto.zepto.isZ(a))},isSVG:function(a){return b.SVGElement&&a instanceof b.SVGElement},isEmptyObject:function(a){for(var b in a)return!1;return!0}},q=!1;if(a.fn&&a.fn.jquery?(m=a,q=!0):m=b.Velocity.Utilities,8>=n&&!q)throw new Error("Velocity: IE8 and below require jQuery to be loaded before Velocity.");if(7>=n)return void(jQuery.fn.velocity=jQuery.fn.animate);var r=400,s="swing",t={State:{isMobile:/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),isAndroid:/Android/i.test(navigator.userAgent),isGingerbread:/Android 2\.3\.[3-7]/i.test(navigator.userAgent),isChrome:b.chrome,isFirefox:/Firefox/i.test(navigator.userAgent),prefixElement:c.createElement("div"),prefixMatches:{},scrollAnchor:null,scrollPropertyLeft:null,scrollPropertyTop:null,isTicking:!1,calls:[]},CSS:{},Utilities:m,Redirects:{},Easings:{},Promise:b.Promise,defaults:{queue:"",duration:r,easing:s,begin:d,complete:d,progress:d,display:d,visibility:d,loop:!1,delay:!1,mobileHA:!0,_cacheValues:!0},init:function(a){m.data(a,"velocity",{isSVG:p.isSVG(a),isAnimating:!1,computedStyle:null,tweensContainer:null,rootPropertyValueCache:{},transformCache:{}})},hook:null,mock:!1,version:{major:1,minor:2,patch:2},debug:!1};b.pageYOffset!==d?(t.State.scrollAnchor=b,t.State.scrollPropertyLeft="pageXOffset",t.State.scrollPropertyTop="pageYOffset"):(t.State.scrollAnchor=c.documentElement||c.body.parentNode||c.body,t.State.scrollPropertyLeft="scrollLeft",t.State.scrollPropertyTop="scrollTop");var u=function(){function a(a){return-a.tension*a.x-a.friction*a.v}function b(b,c,d){var e={x:b.x+d.dx*c,v:b.v+d.dv*c,tension:b.tension,friction:b.friction};return{dx:e.v,dv:a(e)}}function c(c,d){var e={dx:c.v,dv:a(c)},f=b(c,.5*d,e),g=b(c,.5*d,f),h=b(c,d,g),i=1/6*(e.dx+2*(f.dx+g.dx)+h.dx),j=1/6*(e.dv+2*(f.dv+g.dv)+h.dv);return c.x=c.x+i*d,c.v=c.v+j*d,c}return function d(a,b,e){var f,g,h,i={x:-1,v:0,tension:null,friction:null},j=[0],k=0,l=1e-4,m=.016;for(a=parseFloat(a)||500,b=parseFloat(b)||20,e=e||null,i.tension=a,i.friction=b,f=null!==e,f?(k=d(a,b),g=k/e*m):g=m;h=c(h||i,g),j.push(1+h.x),k+=16,Math.abs(h.x)>l&&Math.abs(h.v)>l;);return f?function(a){return j[a*(j.length-1)|0]}:k}}();t.Easings={linear:function(a){return a},swing:function(a){return.5-Math.cos(a*Math.PI)/2},spring:function(a){return 1-Math.cos(4.5*a*Math.PI)*Math.exp(6*-a)}},m.each([["ease",[.25,.1,.25,1]],["ease-in",[.42,0,1,1]],["ease-out",[0,0,.58,1]],["ease-in-out",[.42,0,.58,1]],["easeInSine",[.47,0,.745,.715]],["easeOutSine",[.39,.575,.565,1]],["easeInOutSine",[.445,.05,.55,.95]],["easeInQuad",[.55,.085,.68,.53]],["easeOutQuad",[.25,.46,.45,.94]],["easeInOutQuad",[.455,.03,.515,.955]],["easeInCubic",[.55,.055,.675,.19]],["easeOutCubic",[.215,.61,.355,1]],["easeInOutCubic",[.645,.045,.355,1]],["easeInQuart",[.895,.03,.685,.22]],["easeOutQuart",[.165,.84,.44,1]],["easeInOutQuart",[.77,0,.175,1]],["easeInQuint",[.755,.05,.855,.06]],["easeOutQuint",[.23,1,.32,1]],["easeInOutQuint",[.86,0,.07,1]],["easeInExpo",[.95,.05,.795,.035]],["easeOutExpo",[.19,1,.22,1]],["easeInOutExpo",[1,0,0,1]],["easeInCirc",[.6,.04,.98,.335]],["easeOutCirc",[.075,.82,.165,1]],["easeInOutCirc",[.785,.135,.15,.86]]],function(a,b){t.Easings[b[0]]=i.apply(null,b[1])});var v=t.CSS={RegEx:{isHex:/^#([A-f\d]{3}){1,2}$/i,valueUnwrap:/^[A-z]+\((.*)\)$/i,wrappedValueAlreadyExtracted:/[0-9.]+ [0-9.]+ [0-9.]+( [0-9.]+)?/,valueSplit:/([A-z]+\(.+\))|(([A-z0-9#-.]+?)(?=\s|$))/gi},Lists:{colors:["fill","stroke","stopColor","color","backgroundColor","borderColor","borderTopColor","borderRightColor","borderBottomColor","borderLeftColor","outlineColor"],transformsBase:["translateX","translateY","scale","scaleX","scaleY","skewX","skewY","rotateZ"],transforms3D:["transformPerspective","translateZ","scaleZ","rotateX","rotateY"]},Hooks:{templates:{textShadow:["Color X Y Blur","black 0px 0px 0px"],boxShadow:["Color X Y Blur Spread","black 0px 0px 0px 0px"],clip:["Top Right Bottom Left","0px 0px 0px 0px"],backgroundPosition:["X Y","0% 0%"],transformOrigin:["X Y Z","50% 50% 0px"],perspectiveOrigin:["X Y","50% 50%"]},registered:{},register:function(){for(var a=0;a<v.Lists.colors.length;a++){var b="color"===v.Lists.colors[a]?"0 0 0 1":"255 255 255 1";v.Hooks.templates[v.Lists.colors[a]]=["Red Green Blue Alpha",b]}var c,d,e;if(n)for(c in v.Hooks.templates){d=v.Hooks.templates[c],e=d[0].split(" ");var f=d[1].match(v.RegEx.valueSplit);"Color"===e[0]&&(e.push(e.shift()),f.push(f.shift()),v.Hooks.templates[c]=[e.join(" "),f.join(" ")])}for(c in v.Hooks.templates){d=v.Hooks.templates[c],e=d[0].split(" ");for(var a in e){var g=c+e[a],h=a;v.Hooks.registered[g]=[c,h]}}},getRoot:function(a){var b=v.Hooks.registered[a];return b?b[0]:a},cleanRootPropertyValue:function(a,b){return v.RegEx.valueUnwrap.test(b)&&(b=b.match(v.RegEx.valueUnwrap)[1]),v.Values.isCSSNullValue(b)&&(b=v.Hooks.templates[a][1]),b},extractValue:function(a,b){var c=v.Hooks.registered[a];if(c){var d=c[0],e=c[1];return b=v.Hooks.cleanRootPropertyValue(d,b),b.toString().match(v.RegEx.valueSplit)[e]}return b},injectValue:function(a,b,c){var d=v.Hooks.registered[a];if(d){var e,f,g=d[0],h=d[1];return c=v.Hooks.cleanRootPropertyValue(g,c),e=c.toString().match(v.RegEx.valueSplit),e[h]=b,f=e.join(" ")}return c}},Normalizations:{registered:{clip:function(a,b,c){switch(a){case"name":return"clip";case"extract":var d;return v.RegEx.wrappedValueAlreadyExtracted.test(c)?d=c:(d=c.toString().match(v.RegEx.valueUnwrap),d=d?d[1].replace(/,(\s+)?/g," "):c),d;case"inject":return"rect("+c+")"}},blur:function(a,b,c){switch(a){case"name":return t.State.isFirefox?"filter":"-webkit-filter";case"extract":var d=parseFloat(c);if(!d&&0!==d){var e=c.toString().match(/blur\(([0-9]+[A-z]+)\)/i);d=e?e[1]:0}return d;case"inject":return parseFloat(c)?"blur("+c+")":"none"}},opacity:function(a,b,c){if(8>=n)switch(a){case"name":return"filter";case"extract":var d=c.toString().match(/alpha\(opacity=(.*)\)/i);return c=d?d[1]/100:1;case"inject":return b.style.zoom=1,parseFloat(c)>=1?"":"alpha(opacity="+parseInt(100*parseFloat(c),10)+")"}else switch(a){case"name":return"opacity";case"extract":return c;case"inject":return c}}},register:function(){9>=n||t.State.isGingerbread||(v.Lists.transformsBase=v.Lists.transformsBase.concat(v.Lists.transforms3D));for(var a=0;a<v.Lists.transformsBase.length;a++)!function(){var b=v.Lists.transformsBase[a];v.Normalizations.registered[b]=function(a,c,e){switch(a){case"name":return"transform";case"extract":return g(c)===d||g(c).transformCache[b]===d?/^scale/i.test(b)?1:0:g(c).transformCache[b].replace(/[()]/g,"");case"inject":var f=!1;switch(b.substr(0,b.length-1)){case"translate":f=!/(%|px|em|rem|vw|vh|\d)$/i.test(e);break;case"scal":case"scale":t.State.isAndroid&&g(c).transformCache[b]===d&&1>e&&(e=1),f=!/(\d)$/i.test(e);break;case"skew":f=!/(deg|\d)$/i.test(e);break;case"rotate":f=!/(deg|\d)$/i.test(e)}return f||(g(c).transformCache[b]="("+e+")"),g(c).transformCache[b]}}}();for(var a=0;a<v.Lists.colors.length;a++)!function(){var b=v.Lists.colors[a];v.Normalizations.registered[b]=function(a,c,e){switch(a){case"name":return b;case"extract":var f;if(v.RegEx.wrappedValueAlreadyExtracted.test(e))f=e;else{var g,h={black:"rgb(0, 0, 0)",blue:"rgb(0, 0, 255)",gray:"rgb(128, 128, 128)",green:"rgb(0, 128, 0)",red:"rgb(255, 0, 0)",white:"rgb(255, 255, 255)"};/^[A-z]+$/i.test(e)?g=h[e]!==d?h[e]:h.black:v.RegEx.isHex.test(e)?g="rgb("+v.Values.hexToRgb(e).join(" ")+")":/^rgba?\(/i.test(e)||(g=h.black),f=(g||e).toString().match(v.RegEx.valueUnwrap)[1].replace(/,(\s+)?/g," ")}return 8>=n||3!==f.split(" ").length||(f+=" 1"),f;case"inject":return 8>=n?4===e.split(" ").length&&(e=e.split(/\s+/).slice(0,3).join(" ")):3===e.split(" ").length&&(e+=" 1"),(8>=n?"rgb":"rgba")+"("+e.replace(/\s+/g,",").replace(/\.(\d)+(?=,)/g,"")+")"}}}()}},Names:{camelCase:function(a){return a.replace(/-(\w)/g,function(a,b){return b.toUpperCase()})},SVGAttribute:function(a){var b="width|height|x|y|cx|cy|r|rx|ry|x1|x2|y1|y2";return(n||t.State.isAndroid&&!t.State.isChrome)&&(b+="|transform"),new RegExp("^("+b+")$","i").test(a)},prefixCheck:function(a){if(t.State.prefixMatches[a])return[t.State.prefixMatches[a],!0];for(var b=["","Webkit","Moz","ms","O"],c=0,d=b.length;d>c;c++){var e;if(e=0===c?a:b[c]+a.replace(/^\w/,function(a){return a.toUpperCase()}),p.isString(t.State.prefixElement.style[e]))return t.State.prefixMatches[a]=e,[e,!0]}return[a,!1]}},Values:{hexToRgb:function(a){var b,c=/^#?([a-f\d])([a-f\d])([a-f\d])$/i,d=/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i;return a=a.replace(c,function(a,b,c,d){return b+b+c+c+d+d}),b=d.exec(a),b?[parseInt(b[1],16),parseInt(b[2],16),parseInt(b[3],16)]:[0,0,0]},isCSSNullValue:function(a){return 0==a||/^(none|auto|transparent|(rgba\(0, ?0, ?0, ?0\)))$/i.test(a)},getUnitType:function(a){return/^(rotate|skew)/i.test(a)?"deg":/(^(scale|scaleX|scaleY|scaleZ|alpha|flexGrow|flexHeight|zIndex|fontWeight)$)|((opacity|red|green|blue|alpha)$)/i.test(a)?"":"px"},getDisplayType:function(a){var b=a&&a.tagName.toString().toLowerCase();return/^(b|big|i|small|tt|abbr|acronym|cite|code|dfn|em|kbd|strong|samp|var|a|bdo|br|img|map|object|q|script|span|sub|sup|button|input|label|select|textarea)$/i.test(b)?"inline":/^(li)$/i.test(b)?"list-item":/^(tr)$/i.test(b)?"table-row":/^(table)$/i.test(b)?"table":/^(tbody)$/i.test(b)?"table-row-group":"block"},addClass:function(a,b){a.classList?a.classList.add(b):a.className+=(a.className.length?" ":"")+b},removeClass:function(a,b){a.classList?a.classList.remove(b):a.className=a.className.toString().replace(new RegExp("(^|\\s)"+b.split(" ").join("|")+"(\\s|$)","gi")," ")}},getPropertyValue:function(a,c,e,f){function h(a,c){function e(){j&&v.setPropertyValue(a,"display","none")}var i=0;if(8>=n)i=m.css(a,c);else{var j=!1;if(/^(width|height)$/.test(c)&&0===v.getPropertyValue(a,"display")&&(j=!0,v.setPropertyValue(a,"display",v.Values.getDisplayType(a))),!f){if("height"===c&&"border-box"!==v.getPropertyValue(a,"boxSizing").toString().toLowerCase()){var k=a.offsetHeight-(parseFloat(v.getPropertyValue(a,"borderTopWidth"))||0)-(parseFloat(v.getPropertyValue(a,"borderBottomWidth"))||0)-(parseFloat(v.getPropertyValue(a,"paddingTop"))||0)-(parseFloat(v.getPropertyValue(a,"paddingBottom"))||0);return e(),k}if("width"===c&&"border-box"!==v.getPropertyValue(a,"boxSizing").toString().toLowerCase()){var l=a.offsetWidth-(parseFloat(v.getPropertyValue(a,"borderLeftWidth"))||0)-(parseFloat(v.getPropertyValue(a,"borderRightWidth"))||0)-(parseFloat(v.getPropertyValue(a,"paddingLeft"))||0)-(parseFloat(v.getPropertyValue(a,"paddingRight"))||0);return e(),l}}var o;o=g(a)===d?b.getComputedStyle(a,null):g(a).computedStyle?g(a).computedStyle:g(a).computedStyle=b.getComputedStyle(a,null),"borderColor"===c&&(c="borderTopColor"),i=9===n&&"filter"===c?o.getPropertyValue(c):o[c],(""===i||null===i)&&(i=a.style[c]),e()}if("auto"===i&&/^(top|right|bottom|left)$/i.test(c)){var p=h(a,"position");("fixed"===p||"absolute"===p&&/top|left/i.test(c))&&(i=m(a).position()[c]+"px")}return i}var i;if(v.Hooks.registered[c]){var j=c,k=v.Hooks.getRoot(j);e===d&&(e=v.getPropertyValue(a,v.Names.prefixCheck(k)[0])),v.Normalizations.registered[k]&&(e=v.Normalizations.registered[k]("extract",a,e)),i=v.Hooks.extractValue(j,e)}else if(v.Normalizations.registered[c]){var l,o;l=v.Normalizations.registered[c]("name",a),"transform"!==l&&(o=h(a,v.Names.prefixCheck(l)[0]),v.Values.isCSSNullValue(o)&&v.Hooks.templates[c]&&(o=v.Hooks.templates[c][1])),i=v.Normalizations.registered[c]("extract",a,o)}if(!/^[\d-]/.test(i))if(g(a)&&g(a).isSVG&&v.Names.SVGAttribute(c))if(/^(height|width)$/i.test(c))try{i=a.getBBox()[c]}catch(p){i=0}else i=a.getAttribute(c);else i=h(a,v.Names.prefixCheck(c)[0]);return v.Values.isCSSNullValue(i)&&(i=0),t.debug>=2&&console.log("Get "+c+": "+i),i},setPropertyValue:function(a,c,d,e,f){var h=c;if("scroll"===c)f.container?f.container["scroll"+f.direction]=d:"Left"===f.direction?b.scrollTo(d,f.alternateValue):b.scrollTo(f.alternateValue,d);else if(v.Normalizations.registered[c]&&"transform"===v.Normalizations.registered[c]("name",a))v.Normalizations.registered[c]("inject",a,d),h="transform",d=g(a).transformCache[c];else{if(v.Hooks.registered[c]){var i=c,j=v.Hooks.getRoot(c);e=e||v.getPropertyValue(a,j),d=v.Hooks.injectValue(i,d,e),c=j}if(v.Normalizations.registered[c]&&(d=v.Normalizations.registered[c]("inject",a,d),c=v.Normalizations.registered[c]("name",a)),h=v.Names.prefixCheck(c)[0],8>=n)try{a.style[h]=d}catch(k){t.debug&&console.log("Browser does not support ["+d+"] for ["+h+"]")}else g(a)&&g(a).isSVG&&v.Names.SVGAttribute(c)?a.setAttribute(c,d):a.style[h]=d;t.debug>=2&&console.log("Set "+c+" ("+h+"): "+d)}return[h,d]},flushTransformCache:function(a){function b(b){return parseFloat(v.getPropertyValue(a,b))}var c="";if((n||t.State.isAndroid&&!t.State.isChrome)&&g(a).isSVG){var d={translate:[b("translateX"),b("translateY")],skewX:[b("skewX")],skewY:[b("skewY")],scale:1!==b("scale")?[b("scale"),b("scale")]:[b("scaleX"),b("scaleY")],rotate:[b("rotateZ"),0,0]};m.each(g(a).transformCache,function(a){/^translate/i.test(a)?a="translate":/^scale/i.test(a)?a="scale":/^rotate/i.test(a)&&(a="rotate"),d[a]&&(c+=a+"("+d[a].join(" ")+") ",delete d[a])})}else{var e,f;m.each(g(a).transformCache,function(b){return e=g(a).transformCache[b],"transformPerspective"===b?(f=e,!0):(9===n&&"rotateZ"===b&&(b="rotate"),void(c+=b+e+" "))}),f&&(c="perspective"+f+" "+c)}v.setPropertyValue(a,"transform",c)}};v.Hooks.register(),v.Normalizations.register(),t.hook=function(a,b,c){var e=d;return a=f(a),m.each(a,function(a,f){if(g(f)===d&&t.init(f),c===d)e===d&&(e=t.CSS.getPropertyValue(f,b));else{var h=t.CSS.setPropertyValue(f,b,c);"transform"===h[0]&&t.CSS.flushTransformCache(f),e=h}}),e};var w=function(){function a(){return h?B.promise||null:i}function e(){function a(a){function l(a,b){var c=d,e=d,g=d;return p.isArray(a)?(c=a[0],!p.isArray(a[1])&&/^[\d-]/.test(a[1])||p.isFunction(a[1])||v.RegEx.isHex.test(a[1])?g=a[1]:(p.isString(a[1])&&!v.RegEx.isHex.test(a[1])||p.isArray(a[1]))&&(e=b?a[1]:j(a[1],h.duration),a[2]!==d&&(g=a[2]))):c=a,b||(e=e||h.easing),p.isFunction(c)&&(c=c.call(f,y,x)),p.isFunction(g)&&(g=g.call(f,y,x)),[c||0,e,g]}function n(a,b){var c,d;return d=(b||"0").toString().toLowerCase().replace(/[%A-z]+$/,function(a){return c=a,""}),c||(c=v.Values.getUnitType(a)),[d,c]}function r(){var a={myParent:f.parentNode||c.body,position:v.getPropertyValue(f,"position"),fontSize:v.getPropertyValue(f,"fontSize")},d=a.position===I.lastPosition&&a.myParent===I.lastParent,e=a.fontSize===I.lastFontSize;I.lastParent=a.myParent,I.lastPosition=a.position,I.lastFontSize=a.fontSize;var h=100,i={};if(e&&d)i.emToPx=I.lastEmToPx,i.percentToPxWidth=I.lastPercentToPxWidth,i.percentToPxHeight=I.lastPercentToPxHeight;else{var j=g(f).isSVG?c.createElementNS("http://www.w3.org/2000/svg","rect"):c.createElement("div");t.init(j),a.myParent.appendChild(j),m.each(["overflow","overflowX","overflowY"],function(a,b){t.CSS.setPropertyValue(j,b,"hidden")}),t.CSS.setPropertyValue(j,"position",a.position),t.CSS.setPropertyValue(j,"fontSize",a.fontSize),t.CSS.setPropertyValue(j,"boxSizing","content-box"),m.each(["minWidth","maxWidth","width","minHeight","maxHeight","height"],function(a,b){t.CSS.setPropertyValue(j,b,h+"%")}),t.CSS.setPropertyValue(j,"paddingLeft",h+"em"),i.percentToPxWidth=I.lastPercentToPxWidth=(parseFloat(v.getPropertyValue(j,"width",null,!0))||1)/h,i.percentToPxHeight=I.lastPercentToPxHeight=(parseFloat(v.getPropertyValue(j,"height",null,!0))||1)/h,i.emToPx=I.lastEmToPx=(parseFloat(v.getPropertyValue(j,"paddingLeft"))||1)/h,a.myParent.removeChild(j)}return null===I.remToPx&&(I.remToPx=parseFloat(v.getPropertyValue(c.body,"fontSize"))||16),null===I.vwToPx&&(I.vwToPx=parseFloat(b.innerWidth)/100,I.vhToPx=parseFloat(b.innerHeight)/100),i.remToPx=I.remToPx,i.vwToPx=I.vwToPx,i.vhToPx=I.vhToPx,t.debug>=1&&console.log("Unit ratios: "+JSON.stringify(i),f),i}if(h.begin&&0===y)try{h.begin.call(o,o)}catch(u){setTimeout(function(){throw u},1)}if("scroll"===C){var w,z,A,D=/^x$/i.test(h.axis)?"Left":"Top",E=parseFloat(h.offset)||0;h.container?p.isWrapped(h.container)||p.isNode(h.container)?(h.container=h.container[0]||h.container,w=h.container["scroll"+D],A=w+m(f).position()[D.toLowerCase()]+E):h.container=null:(w=t.State.scrollAnchor[t.State["scrollProperty"+D]],z=t.State.scrollAnchor[t.State["scrollProperty"+("Left"===D?"Top":"Left")]],A=m(f).offset()[D.toLowerCase()]+E),i={scroll:{rootPropertyValue:!1,startValue:w,currentValue:w,endValue:A,unitType:"",easing:h.easing,scrollData:{container:h.container,direction:D,alternateValue:z}},element:f},t.debug&&console.log("tweensContainer (scroll): ",i.scroll,f)}else if("reverse"===C){if(!g(f).tweensContainer)return void m.dequeue(f,h.queue);"none"===g(f).opts.display&&(g(f).opts.display="auto"),"hidden"===g(f).opts.visibility&&(g(f).opts.visibility="visible"),g(f).opts.loop=!1,g(f).opts.begin=null,g(f).opts.complete=null,s.easing||delete h.easing,s.duration||delete h.duration,h=m.extend({},g(f).opts,h);var F=m.extend(!0,{},g(f).tweensContainer);for(var G in F)if("element"!==G){var H=F[G].startValue;F[G].startValue=F[G].currentValue=F[G].endValue,F[G].endValue=H,p.isEmptyObject(s)||(F[G].easing=h.easing),t.debug&&console.log("reverse tweensContainer ("+G+"): "+JSON.stringify(F[G]),f)}i=F}else if("start"===C){var F;g(f).tweensContainer&&g(f).isAnimating===!0&&(F=g(f).tweensContainer),m.each(q,function(a,b){if(RegExp("^"+v.Lists.colors.join("$|^")+"$").test(a)){var c=l(b,!0),e=c[0],f=c[1],g=c[2];if(v.RegEx.isHex.test(e)){for(var h=["Red","Green","Blue"],i=v.Values.hexToRgb(e),j=g?v.Values.hexToRgb(g):d,k=0;k<h.length;k++){var m=[i[k]];f&&m.push(f),j!==d&&m.push(j[k]),q[a+h[k]]=m}delete q[a]}}});for(var K in q){var L=l(q[K]),M=L[0],N=L[1],O=L[2];K=v.Names.camelCase(K);var P=v.Hooks.getRoot(K),Q=!1;if(g(f).isSVG||"tween"===P||v.Names.prefixCheck(P)[1]!==!1||v.Normalizations.registered[P]!==d){(h.display!==d&&null!==h.display&&"none"!==h.display||h.visibility!==d&&"hidden"!==h.visibility)&&/opacity|filter/.test(K)&&!O&&0!==M&&(O=0),h._cacheValues&&F&&F[K]?(O===d&&(O=F[K].endValue+F[K].unitType),Q=g(f).rootPropertyValueCache[P]):v.Hooks.registered[K]?O===d?(Q=v.getPropertyValue(f,P),O=v.getPropertyValue(f,K,Q)):Q=v.Hooks.templates[P][1]:O===d&&(O=v.getPropertyValue(f,K));var R,S,T,U=!1;if(R=n(K,O),O=R[0],T=R[1],R=n(K,M),M=R[0].replace(/^([+-\/*])=/,function(a,b){return U=b,""}),S=R[1],O=parseFloat(O)||0,M=parseFloat(M)||0,"%"===S&&(/^(fontSize|lineHeight)$/.test(K)?(M/=100,S="em"):/^scale/.test(K)?(M/=100,S=""):/(Red|Green|Blue)$/i.test(K)&&(M=M/100*255,S="")),/[\/*]/.test(U))S=T;else if(T!==S&&0!==O)if(0===M)S=T;else{e=e||r();var V=/margin|padding|left|right|width|text|word|letter/i.test(K)||/X$/.test(K)||"x"===K?"x":"y";
-switch(T){case"%":O*="x"===V?e.percentToPxWidth:e.percentToPxHeight;break;case"px":break;default:O*=e[T+"ToPx"]}switch(S){case"%":O*=1/("x"===V?e.percentToPxWidth:e.percentToPxHeight);break;case"px":break;default:O*=1/e[S+"ToPx"]}}switch(U){case"+":M=O+M;break;case"-":M=O-M;break;case"*":M=O*M;break;case"/":M=O/M}i[K]={rootPropertyValue:Q,startValue:O,currentValue:O,endValue:M,unitType:S,easing:N},t.debug&&console.log("tweensContainer ("+K+"): "+JSON.stringify(i[K]),f)}else t.debug&&console.log("Skipping ["+P+"] due to a lack of browser support.")}i.element=f}i.element&&(v.Values.addClass(f,"velocity-animating"),J.push(i),""===h.queue&&(g(f).tweensContainer=i,g(f).opts=h),g(f).isAnimating=!0,y===x-1?(t.State.calls.push([J,o,h,null,B.resolver]),t.State.isTicking===!1&&(t.State.isTicking=!0,k())):y++)}var e,f=this,h=m.extend({},t.defaults,s),i={};switch(g(f)===d&&t.init(f),parseFloat(h.delay)&&h.queue!==!1&&m.queue(f,h.queue,function(a){t.velocityQueueEntryFlag=!0,g(f).delayTimer={setTimeout:setTimeout(a,parseFloat(h.delay)),next:a}}),h.duration.toString().toLowerCase()){case"fast":h.duration=200;break;case"normal":h.duration=r;break;case"slow":h.duration=600;break;default:h.duration=parseFloat(h.duration)||1}t.mock!==!1&&(t.mock===!0?h.duration=h.delay=1:(h.duration*=parseFloat(t.mock)||1,h.delay*=parseFloat(t.mock)||1)),h.easing=j(h.easing,h.duration),h.begin&&!p.isFunction(h.begin)&&(h.begin=null),h.progress&&!p.isFunction(h.progress)&&(h.progress=null),h.complete&&!p.isFunction(h.complete)&&(h.complete=null),h.display!==d&&null!==h.display&&(h.display=h.display.toString().toLowerCase(),"auto"===h.display&&(h.display=t.CSS.Values.getDisplayType(f))),h.visibility!==d&&null!==h.visibility&&(h.visibility=h.visibility.toString().toLowerCase()),h.mobileHA=h.mobileHA&&t.State.isMobile&&!t.State.isGingerbread,h.queue===!1?h.delay?setTimeout(a,h.delay):a():m.queue(f,h.queue,function(b,c){return c===!0?(B.promise&&B.resolver(o),!0):(t.velocityQueueEntryFlag=!0,void a(b))}),""!==h.queue&&"fx"!==h.queue||"inprogress"===m.queue(f)[0]||m.dequeue(f)}var h,i,n,o,q,s,u=arguments[0]&&(arguments[0].p||m.isPlainObject(arguments[0].properties)&&!arguments[0].properties.names||p.isString(arguments[0].properties));if(p.isWrapped(this)?(h=!1,n=0,o=this,i=this):(h=!0,n=1,o=u?arguments[0].elements||arguments[0].e:arguments[0]),o=f(o)){u?(q=arguments[0].properties||arguments[0].p,s=arguments[0].options||arguments[0].o):(q=arguments[n],s=arguments[n+1]);var x=o.length,y=0;if(!/^(stop|finish)$/i.test(q)&&!m.isPlainObject(s)){var z=n+1;s={};for(var A=z;A<arguments.length;A++)p.isArray(arguments[A])||!/^(fast|normal|slow)$/i.test(arguments[A])&&!/^\d/.test(arguments[A])?p.isString(arguments[A])||p.isArray(arguments[A])?s.easing=arguments[A]:p.isFunction(arguments[A])&&(s.complete=arguments[A]):s.duration=arguments[A]}var B={promise:null,resolver:null,rejecter:null};h&&t.Promise&&(B.promise=new t.Promise(function(a,b){B.resolver=a,B.rejecter=b}));var C;switch(q){case"scroll":C="scroll";break;case"reverse":C="reverse";break;case"finish":case"stop":m.each(o,function(a,b){g(b)&&g(b).delayTimer&&(clearTimeout(g(b).delayTimer.setTimeout),g(b).delayTimer.next&&g(b).delayTimer.next(),delete g(b).delayTimer)});var D=[];return m.each(t.State.calls,function(a,b){b&&m.each(b[1],function(c,e){var f=s===d?"":s;return f===!0||b[2].queue===f||s===d&&b[2].queue===!1?void m.each(o,function(c,d){d===e&&((s===!0||p.isString(s))&&(m.each(m.queue(d,p.isString(s)?s:""),function(a,b){p.isFunction(b)&&b(null,!0)}),m.queue(d,p.isString(s)?s:"",[])),"stop"===q?(g(d)&&g(d).tweensContainer&&f!==!1&&m.each(g(d).tweensContainer,function(a,b){b.endValue=b.currentValue}),D.push(a)):"finish"===q&&(b[2].duration=1))}):!0})}),"stop"===q&&(m.each(D,function(a,b){l(b,!0)}),B.promise&&B.resolver(o)),a();default:if(!m.isPlainObject(q)||p.isEmptyObject(q)){if(p.isString(q)&&t.Redirects[q]){var E=m.extend({},s),F=E.duration,G=E.delay||0;return E.backwards===!0&&(o=m.extend(!0,[],o).reverse()),m.each(o,function(a,b){parseFloat(E.stagger)?E.delay=G+parseFloat(E.stagger)*a:p.isFunction(E.stagger)&&(E.delay=G+E.stagger.call(b,a,x)),E.drag&&(E.duration=parseFloat(F)||(/^(callout|transition)/.test(q)?1e3:r),E.duration=Math.max(E.duration*(E.backwards?1-a/x:(a+1)/x),.75*E.duration,200)),t.Redirects[q].call(b,b,E||{},a,x,o,B.promise?B:d)}),a()}var H="Velocity: First argument ("+q+") was not a property map, a known action, or a registered redirect. Aborting.";return B.promise?B.rejecter(new Error(H)):console.log(H),a()}C="start"}var I={lastParent:null,lastPosition:null,lastFontSize:null,lastPercentToPxWidth:null,lastPercentToPxHeight:null,lastEmToPx:null,remToPx:null,vwToPx:null,vhToPx:null},J=[];m.each(o,function(a,b){p.isNode(b)&&e.call(b)});var K,E=m.extend({},t.defaults,s);if(E.loop=parseInt(E.loop),K=2*E.loop-1,E.loop)for(var L=0;K>L;L++){var M={delay:E.delay,progress:E.progress};L===K-1&&(M.display=E.display,M.visibility=E.visibility,M.complete=E.complete),w(o,"reverse",M)}return a()}};t=m.extend(w,t),t.animate=w;var x=b.requestAnimationFrame||o;return t.State.isMobile||c.hidden===d||c.addEventListener("visibilitychange",function(){c.hidden?(x=function(a){return setTimeout(function(){a(!0)},16)},k()):x=b.requestAnimationFrame||o}),a.Velocity=t,a!==b&&(a.fn.velocity=w,a.fn.velocity.defaults=t.defaults),m.each(["Down","Up"],function(a,b){t.Redirects["slide"+b]=function(a,c,e,f,g,h){var i=m.extend({},c),j=i.begin,k=i.complete,l={height:"",marginTop:"",marginBottom:"",paddingTop:"",paddingBottom:""},n={};i.display===d&&(i.display="Down"===b?"inline"===t.CSS.Values.getDisplayType(a)?"inline-block":"block":"none"),i.begin=function(){j&&j.call(g,g);for(var c in l){n[c]=a.style[c];var d=t.CSS.getPropertyValue(a,c);l[c]="Down"===b?[d,0]:[0,d]}n.overflow=a.style.overflow,a.style.overflow="hidden"},i.complete=function(){for(var b in n)a.style[b]=n[b];k&&k.call(g,g),h&&h.resolver(g)},t(a,l,i)}}),m.each(["In","Out"],function(a,b){t.Redirects["fade"+b]=function(a,c,e,f,g,h){var i=m.extend({},c),j={opacity:"In"===b?1:0},k=i.complete;i.complete=e!==f-1?i.begin=null:function(){k&&k.call(g,g),h&&h.resolver(g)},i.display===d&&(i.display="In"===b?"auto":"none"),t(this,j,i)}}),t}(window.jQuery||window.Zepto||window,window,document)})),!function(a,b,c,d){"use strict";function e(a,b,c){return setTimeout(k(a,c),b)}function f(a,b,c){return Array.isArray(a)?(g(a,c[b],c),!0):!1}function g(a,b,c){var e;if(a)if(a.forEach)a.forEach(b,c);else if(a.length!==d)for(e=0;e<a.length;)b.call(c,a[e],e,a),e++;else for(e in a)a.hasOwnProperty(e)&&b.call(c,a[e],e,a)}function h(a,b,c){for(var e=Object.keys(b),f=0;f<e.length;)(!c||c&&a[e[f]]===d)&&(a[e[f]]=b[e[f]]),f++;return a}function i(a,b){return h(a,b,!0)}function j(a,b,c){var d,e=b.prototype;d=a.prototype=Object.create(e),d.constructor=a,d._super=e,c&&h(d,c)}function k(a,b){return function(){return a.apply(b,arguments)}}function l(a,b){return typeof a==ka?a.apply(b?b[0]||d:d,b):a}function m(a,b){return a===d?b:a}function n(a,b,c){g(r(b),function(b){a.addEventListener(b,c,!1)})}function o(a,b,c){g(r(b),function(b){a.removeEventListener(b,c,!1)})}function p(a,b){for(;a;){if(a==b)return!0;a=a.parentNode}return!1}function q(a,b){return a.indexOf(b)>-1}function r(a){return a.trim().split(/\s+/g)}function s(a,b,c){if(a.indexOf&&!c)return a.indexOf(b);for(var d=0;d<a.length;){if(c&&a[d][c]==b||!c&&a[d]===b)return d;d++}return-1}function t(a){return Array.prototype.slice.call(a,0)}function u(a,b,c){for(var d=[],e=[],f=0;f<a.length;){var g=b?a[f][b]:a[f];s(e,g)<0&&d.push(a[f]),e[f]=g,f++}return c&&(d=b?d.sort(function(a,c){return a[b]>c[b]}):d.sort()),d}function v(a,b){for(var c,e,f=b[0].toUpperCase()+b.slice(1),g=0;g<ia.length;){if(c=ia[g],e=c?c+f:b,e in a)return e;g++}return d}function w(){return oa++}function x(a){var b=a.ownerDocument;return b.defaultView||b.parentWindow}function y(a,b){var c=this;this.manager=a,this.callback=b,this.element=a.element,this.target=a.options.inputTarget,this.domHandler=function(b){l(a.options.enable,[a])&&c.handler(b)},this.init()}function z(a){var b,c=a.options.inputClass;return new(b=c?c:ra?N:sa?Q:qa?S:M)(a,A)}function A(a,b,c){var d=c.pointers.length,e=c.changedPointers.length,f=b&ya&&0===d-e,g=b&(Aa|Ba)&&0===d-e;c.isFirst=!!f,c.isFinal=!!g,f&&(a.session={}),c.eventType=b,B(a,c),a.emit("hammer.input",c),a.recognize(c),a.session.prevInput=c}function B(a,b){var c=a.session,d=b.pointers,e=d.length;c.firstInput||(c.firstInput=E(b)),e>1&&!c.firstMultiple?c.firstMultiple=E(b):1===e&&(c.firstMultiple=!1);var f=c.firstInput,g=c.firstMultiple,h=g?g.center:f.center,i=b.center=F(d);b.timeStamp=na(),b.deltaTime=b.timeStamp-f.timeStamp,b.angle=J(h,i),b.distance=I(h,i),C(c,b),b.offsetDirection=H(b.deltaX,b.deltaY),b.scale=g?L(g.pointers,d):1,b.rotation=g?K(g.pointers,d):0,D(c,b);var j=a.element;p(b.srcEvent.target,j)&&(j=b.srcEvent.target),b.target=j}function C(a,b){var c=b.center,d=a.offsetDelta||{},e=a.prevDelta||{},f=a.prevInput||{};(b.eventType===ya||f.eventType===Aa)&&(e=a.prevDelta={x:f.deltaX||0,y:f.deltaY||0},d=a.offsetDelta={x:c.x,y:c.y}),b.deltaX=e.x+(c.x-d.x),b.deltaY=e.y+(c.y-d.y)}function D(a,b){var c,e,f,g,h=a.lastInterval||b,i=b.timeStamp-h.timeStamp;if(b.eventType!=Ba&&(i>xa||h.velocity===d)){var j=h.deltaX-b.deltaX,k=h.deltaY-b.deltaY,l=G(i,j,k);e=l.x,f=l.y,c=ma(l.x)>ma(l.y)?l.x:l.y,g=H(j,k),a.lastInterval=b}else c=h.velocity,e=h.velocityX,f=h.velocityY,g=h.direction;b.velocity=c,b.velocityX=e,b.velocityY=f,b.direction=g}function E(a){for(var b=[],c=0;c<a.pointers.length;)b[c]={clientX:la(a.pointers[c].clientX),clientY:la(a.pointers[c].clientY)},c++;return{timeStamp:na(),pointers:b,center:F(b),deltaX:a.deltaX,deltaY:a.deltaY}}function F(a){var b=a.length;if(1===b)return{x:la(a[0].clientX),y:la(a[0].clientY)};for(var c=0,d=0,e=0;b>e;)c+=a[e].clientX,d+=a[e].clientY,e++;return{x:la(c/b),y:la(d/b)}}function G(a,b,c){return{x:b/a||0,y:c/a||0}}function H(a,b){return a===b?Ca:ma(a)>=ma(b)?a>0?Da:Ea:b>0?Fa:Ga}function I(a,b,c){c||(c=Ka);var d=b[c[0]]-a[c[0]],e=b[c[1]]-a[c[1]];return Math.sqrt(d*d+e*e)}function J(a,b,c){c||(c=Ka);var d=b[c[0]]-a[c[0]],e=b[c[1]]-a[c[1]];return 180*Math.atan2(e,d)/Math.PI}function K(a,b){return J(b[1],b[0],La)-J(a[1],a[0],La)}function L(a,b){return I(b[0],b[1],La)/I(a[0],a[1],La)}function M(){this.evEl=Na,this.evWin=Oa,this.allow=!0,this.pressed=!1,y.apply(this,arguments)}function N(){this.evEl=Ra,this.evWin=Sa,y.apply(this,arguments),this.store=this.manager.session.pointerEvents=[]}function O(){this.evTarget=Ua,this.evWin=Va,this.started=!1,y.apply(this,arguments)}function P(a,b){var c=t(a.touches),d=t(a.changedTouches);return b&(Aa|Ba)&&(c=u(c.concat(d),"identifier",!0)),[c,d]}function Q(){this.evTarget=Xa,this.targetIds={},y.apply(this,arguments)}function R(a,b){var c=t(a.touches),d=this.targetIds;if(b&(ya|za)&&1===c.length)return d[c[0].identifier]=!0,[c,c];var e,f,g=t(a.changedTouches),h=[],i=this.target;if(f=c.filter(function(a){return p(a.target,i)}),b===ya)for(e=0;e<f.length;)d[f[e].identifier]=!0,e++;for(e=0;e<g.length;)d[g[e].identifier]&&h.push(g[e]),b&(Aa|Ba)&&delete d[g[e].identifier],e++;return h.length?[u(f.concat(h),"identifier",!0),h]:void 0}function S(){y.apply(this,arguments);var a=k(this.handler,this);this.touch=new Q(this.manager,a),this.mouse=new M(this.manager,a)}function T(a,b){this.manager=a,this.set(b)}function U(a){if(q(a,bb))return bb;var b=q(a,cb),c=q(a,db);return b&&c?cb+" "+db:b||c?b?cb:db:q(a,ab)?ab:_a}function V(a){this.id=w(),this.manager=null,this.options=i(a||{},this.defaults),this.options.enable=m(this.options.enable,!0),this.state=eb,this.simultaneous={},this.requireFail=[]}function W(a){return a&jb?"cancel":a&hb?"end":a&gb?"move":a&fb?"start":""}function X(a){return a==Ga?"down":a==Fa?"up":a==Da?"left":a==Ea?"right":""}function Y(a,b){var c=b.manager;return c?c.get(a):a}function Z(){V.apply(this,arguments)}function $(){Z.apply(this,arguments),this.pX=null,this.pY=null}function _(){Z.apply(this,arguments)}function aa(){V.apply(this,arguments),this._timer=null,this._input=null}function ba(){Z.apply(this,arguments)}function ca(){Z.apply(this,arguments)}function da(){V.apply(this,arguments),this.pTime=!1,this.pCenter=!1,this._timer=null,this._input=null,this.count=0}function ea(a,b){return b=b||{},b.recognizers=m(b.recognizers,ea.defaults.preset),new fa(a,b)}function fa(a,b){b=b||{},this.options=i(b,ea.defaults),this.options.inputTarget=this.options.inputTarget||a,this.handlers={},this.session={},this.recognizers=[],this.element=a,this.input=z(this),this.touchAction=new T(this,this.options.touchAction),ga(this,!0),g(b.recognizers,function(a){var b=this.add(new a[0](a[1]));a[2]&&b.recognizeWith(a[2]),a[3]&&b.requireFailure(a[3])},this)}function ga(a,b){var c=a.element;g(a.options.cssProps,function(a,d){c.style[v(c.style,d)]=b?a:""})}function ha(a,c){var d=b.createEvent("Event");d.initEvent(a,!0,!0),d.gesture=c,c.target.dispatchEvent(d)}var ia=["","webkit","moz","MS","ms","o"],ja=b.createElement("div"),ka="function",la=Math.round,ma=Math.abs,na=Date.now,oa=1,pa=/mobile|tablet|ip(ad|hone|od)|android/i,qa="ontouchstart"in a,ra=v(a,"PointerEvent")!==d,sa=qa&&pa.test(navigator.userAgent),ta="touch",ua="pen",va="mouse",wa="kinect",xa=25,ya=1,za=2,Aa=4,Ba=8,Ca=1,Da=2,Ea=4,Fa=8,Ga=16,Ha=Da|Ea,Ia=Fa|Ga,Ja=Ha|Ia,Ka=["x","y"],La=["clientX","clientY"];y.prototype={handler:function(){},init:function(){this.evEl&&n(this.element,this.evEl,this.domHandler),this.evTarget&&n(this.target,this.evTarget,this.domHandler),this.evWin&&n(x(this.element),this.evWin,this.domHandler)},destroy:function(){this.evEl&&o(this.element,this.evEl,this.domHandler),this.evTarget&&o(this.target,this.evTarget,this.domHandler),this.evWin&&o(x(this.element),this.evWin,this.domHandler)}};var Ma={mousedown:ya,mousemove:za,mouseup:Aa},Na="mousedown",Oa="mousemove mouseup";j(M,y,{handler:function(a){var b=Ma[a.type];b&ya&&0===a.button&&(this.pressed=!0),b&za&&1!==a.which&&(b=Aa),this.pressed&&this.allow&&(b&Aa&&(this.pressed=!1),this.callback(this.manager,b,{pointers:[a],changedPointers:[a],pointerType:va,srcEvent:a}))}});var Pa={pointerdown:ya,pointermove:za,pointerup:Aa,pointercancel:Ba,pointerout:Ba},Qa={2:ta,3:ua,4:va,5:wa},Ra="pointerdown",Sa="pointermove pointerup pointercancel";a.MSPointerEvent&&(Ra="MSPointerDown",Sa="MSPointerMove MSPointerUp MSPointerCancel"),j(N,y,{handler:function(a){var b=this.store,c=!1,d=a.type.toLowerCase().replace("ms",""),e=Pa[d],f=Qa[a.pointerType]||a.pointerType,g=f==ta,h=s(b,a.pointerId,"pointerId");e&ya&&(0===a.button||g)?0>h&&(b.push(a),h=b.length-1):e&(Aa|Ba)&&(c=!0),0>h||(b[h]=a,this.callback(this.manager,e,{pointers:b,changedPointers:[a],pointerType:f,srcEvent:a}),c&&b.splice(h,1))}});var Ta={touchstart:ya,touchmove:za,touchend:Aa,touchcancel:Ba},Ua="touchstart",Va="touchstart touchmove touchend touchcancel";j(O,y,{handler:function(a){var b=Ta[a.type];if(b===ya&&(this.started=!0),this.started){var c=P.call(this,a,b);b&(Aa|Ba)&&0===c[0].length-c[1].length&&(this.started=!1),this.callback(this.manager,b,{pointers:c[0],changedPointers:c[1],pointerType:ta,srcEvent:a})}}});var Wa={touchstart:ya,touchmove:za,touchend:Aa,touchcancel:Ba},Xa="touchstart touchmove touchend touchcancel";j(Q,y,{handler:function(a){var b=Wa[a.type],c=R.call(this,a,b);c&&this.callback(this.manager,b,{pointers:c[0],changedPointers:c[1],pointerType:ta,srcEvent:a})}}),j(S,y,{handler:function(a,b,c){var d=c.pointerType==ta,e=c.pointerType==va;if(d)this.mouse.allow=!1;else if(e&&!this.mouse.allow)return;b&(Aa|Ba)&&(this.mouse.allow=!0),this.callback(a,b,c)},destroy:function(){this.touch.destroy(),this.mouse.destroy()}});var Ya=v(ja.style,"touchAction"),Za=Ya!==d,$a="compute",_a="auto",ab="manipulation",bb="none",cb="pan-x",db="pan-y";T.prototype={set:function(a){a==$a&&(a=this.compute()),Za&&(this.manager.element.style[Ya]=a),this.actions=a.toLowerCase().trim()},update:function(){this.set(this.manager.options.touchAction)},compute:function(){var a=[];return g(this.manager.recognizers,function(b){l(b.options.enable,[b])&&(a=a.concat(b.getTouchAction()))}),U(a.join(" "))},preventDefaults:function(a){if(!Za){var b=a.srcEvent,c=a.offsetDirection;if(this.manager.session.prevented)return void b.preventDefault();var d=this.actions,e=q(d,bb),f=q(d,db),g=q(d,cb);return e||f&&c&Ha||g&&c&Ia?this.preventSrc(b):void 0}},preventSrc:function(a){this.manager.session.prevented=!0,a.preventDefault()}};var eb=1,fb=2,gb=4,hb=8,ib=hb,jb=16,kb=32;V.prototype={defaults:{},set:function(a){return h(this.options,a),this.manager&&this.manager.touchAction.update(),this},recognizeWith:function(a){if(f(a,"recognizeWith",this))return this;var b=this.simultaneous;return a=Y(a,this),b[a.id]||(b[a.id]=a,a.recognizeWith(this)),this},dropRecognizeWith:function(a){return f(a,"dropRecognizeWith",this)?this:(a=Y(a,this),delete this.simultaneous[a.id],this)},requireFailure:function(a){if(f(a,"requireFailure",this))return this;var b=this.requireFail;return a=Y(a,this),-1===s(b,a)&&(b.push(a),a.requireFailure(this)),this},dropRequireFailure:function(a){if(f(a,"dropRequireFailure",this))return this;a=Y(a,this);var b=s(this.requireFail,a);return b>-1&&this.requireFail.splice(b,1),this},hasRequireFailures:function(){return this.requireFail.length>0},canRecognizeWith:function(a){return!!this.simultaneous[a.id]},emit:function(a){function b(b){c.manager.emit(c.options.event+(b?W(d):""),a)}var c=this,d=this.state;hb>d&&b(!0),b(),d>=hb&&b(!0)},tryEmit:function(a){return this.canEmit()?this.emit(a):void(this.state=kb)},canEmit:function(){for(var a=0;a<this.requireFail.length;){if(!(this.requireFail[a].state&(kb|eb)))return!1;a++}return!0},recognize:function(a){var b=h({},a);return l(this.options.enable,[this,b])?(this.state&(ib|jb|kb)&&(this.state=eb),this.state=this.process(b),void(this.state&(fb|gb|hb|jb)&&this.tryEmit(b))):(this.reset(),void(this.state=kb))},process:function(){},getTouchAction:function(){},reset:function(){}},j(Z,V,{defaults:{pointers:1},attrTest:function(a){var b=this.options.pointers;return 0===b||a.pointers.length===b},process:function(a){var b=this.state,c=a.eventType,d=b&(fb|gb),e=this.attrTest(a);return d&&(c&Ba||!e)?b|jb:d||e?c&Aa?b|hb:b&fb?b|gb:fb:kb}}),j($,Z,{defaults:{event:"pan",threshold:10,pointers:1,direction:Ja},getTouchAction:function(){var a=this.options.direction,b=[];return a&Ha&&b.push(db),a&Ia&&b.push(cb),b},directionTest:function(a){var b=this.options,c=!0,d=a.distance,e=a.direction,f=a.deltaX,g=a.deltaY;return e&b.direction||(b.direction&Ha?(e=0===f?Ca:0>f?Da:Ea,c=f!=this.pX,d=Math.abs(a.deltaX)):(e=0===g?Ca:0>g?Fa:Ga,c=g!=this.pY,d=Math.abs(a.deltaY))),a.direction=e,c&&d>b.threshold&&e&b.direction},attrTest:function(a){return Z.prototype.attrTest.call(this,a)&&(this.state&fb||!(this.state&fb)&&this.directionTest(a))},emit:function(a){this.pX=a.deltaX,this.pY=a.deltaY;var b=X(a.direction);b&&this.manager.emit(this.options.event+b,a),this._super.emit.call(this,a)}}),j(_,Z,{defaults:{event:"pinch",threshold:0,pointers:2},getTouchAction:function(){return[bb]},attrTest:function(a){return this._super.attrTest.call(this,a)&&(Math.abs(a.scale-1)>this.options.threshold||this.state&fb)},emit:function(a){if(this._super.emit.call(this,a),1!==a.scale){var b=a.scale<1?"in":"out";this.manager.emit(this.options.event+b,a)}}}),j(aa,V,{defaults:{event:"press",pointers:1,time:500,threshold:5},getTouchAction:function(){return[_a]},process:function(a){var b=this.options,c=a.pointers.length===b.pointers,d=a.distance<b.threshold,f=a.deltaTime>b.time;if(this._input=a,!d||!c||a.eventType&(Aa|Ba)&&!f)this.reset();else if(a.eventType&ya)this.reset(),this._timer=e(function(){this.state=ib,this.tryEmit()},b.time,this);else if(a.eventType&Aa)return ib;return kb},reset:function(){clearTimeout(this._timer)},emit:function(a){this.state===ib&&(a&&a.eventType&Aa?this.manager.emit(this.options.event+"up",a):(this._input.timeStamp=na(),this.manager.emit(this.options.event,this._input)))}}),j(ba,Z,{defaults:{event:"rotate",threshold:0,pointers:2},getTouchAction:function(){return[bb]},attrTest:function(a){return this._super.attrTest.call(this,a)&&(Math.abs(a.rotation)>this.options.threshold||this.state&fb)}}),j(ca,Z,{defaults:{event:"swipe",threshold:10,velocity:.65,direction:Ha|Ia,pointers:1},getTouchAction:function(){return $.prototype.getTouchAction.call(this)},attrTest:function(a){var b,c=this.options.direction;return c&(Ha|Ia)?b=a.velocity:c&Ha?b=a.velocityX:c&Ia&&(b=a.velocityY),this._super.attrTest.call(this,a)&&c&a.direction&&a.distance>this.options.threshold&&ma(b)>this.options.velocity&&a.eventType&Aa},emit:function(a){var b=X(a.direction);b&&this.manager.emit(this.options.event+b,a),this.manager.emit(this.options.event,a)}}),j(da,V,{defaults:{event:"tap",pointers:1,taps:1,interval:300,time:250,threshold:2,posThreshold:10},getTouchAction:function(){return[ab]},process:function(a){var b=this.options,c=a.pointers.length===b.pointers,d=a.distance<b.threshold,f=a.deltaTime<b.time;if(this.reset(),a.eventType&ya&&0===this.count)return this.failTimeout();if(d&&f&&c){if(a.eventType!=Aa)return this.failTimeout();var g=this.pTime?a.timeStamp-this.pTime<b.interval:!0,h=!this.pCenter||I(this.pCenter,a.center)<b.posThreshold;this.pTime=a.timeStamp,this.pCenter=a.center,h&&g?this.count+=1:this.count=1,this._input=a;var i=this.count%b.taps;if(0===i)return this.hasRequireFailures()?(this._timer=e(function(){this.state=ib,this.tryEmit()},b.interval,this),fb):ib}return kb},failTimeout:function(){return this._timer=e(function(){this.state=kb},this.options.interval,this),kb},reset:function(){clearTimeout(this._timer)},emit:function(){this.state==ib&&(this._input.tapCount=this.count,this.manager.emit(this.options.event,this._input))}}),ea.VERSION="2.0.4",ea.defaults={domEvents:!1,touchAction:$a,enable:!0,inputTarget:null,inputClass:null,preset:[[ba,{enable:!1}],[_,{enable:!1},["rotate"]],[ca,{direction:Ha}],[$,{direction:Ha},["swipe"]],[da],[da,{event:"doubletap",taps:2},["tap"]],[aa]],cssProps:{userSelect:"default",touchSelect:"none",touchCallout:"none",contentZooming:"none",userDrag:"none",tapHighlightColor:"rgba(0,0,0,0)"}};var lb=1,mb=2;fa.prototype={set:function(a){return h(this.options,a),a.touchAction&&this.touchAction.update(),a.inputTarget&&(this.input.destroy(),this.input.target=a.inputTarget,this.input.init()),this},stop:function(a){this.session.stopped=a?mb:lb},recognize:function(a){var b=this.session;if(!b.stopped){this.touchAction.preventDefaults(a);var c,d=this.recognizers,e=b.curRecognizer;(!e||e&&e.state&ib)&&(e=b.curRecognizer=null);for(var f=0;f<d.length;)c=d[f],b.stopped===mb||e&&c!=e&&!c.canRecognizeWith(e)?c.reset():c.recognize(a),!e&&c.state&(fb|gb|hb)&&(e=b.curRecognizer=c),f++}},get:function(a){if(a instanceof V)return a;for(var b=this.recognizers,c=0;c<b.length;c++)if(b[c].options.event==a)return b[c];return null},add:function(a){if(f(a,"add",this))return this;var b=this.get(a.options.event);return b&&this.remove(b),this.recognizers.push(a),a.manager=this,this.touchAction.update(),a},remove:function(a){if(f(a,"remove",this))return this;var b=this.recognizers;return a=this.get(a),b.splice(s(b,a),1),this.touchAction.update(),this},on:function(a,b){var c=this.handlers;return g(r(a),function(a){c[a]=c[a]||[],c[a].push(b)}),this},off:function(a,b){var c=this.handlers;return g(r(a),function(a){b?c[a].splice(s(c[a],b),1):delete c[a]}),this},emit:function(a,b){this.options.domEvents&&ha(a,b);var c=this.handlers[a]&&this.handlers[a].slice();if(c&&c.length){b.type=a,b.preventDefault=function(){b.srcEvent.preventDefault()};for(var d=0;d<c.length;)c[d](b),d++}},destroy:function(){this.element&&ga(this,!1),this.handlers={},this.session={},this.input.destroy(),this.element=null}},h(ea,{INPUT_START:ya,INPUT_MOVE:za,INPUT_END:Aa,INPUT_CANCEL:Ba,STATE_POSSIBLE:eb,STATE_BEGAN:fb,STATE_CHANGED:gb,STATE_ENDED:hb,STATE_RECOGNIZED:ib,STATE_CANCELLED:jb,STATE_FAILED:kb,DIRECTION_NONE:Ca,DIRECTION_LEFT:Da,DIRECTION_RIGHT:Ea,DIRECTION_UP:Fa,DIRECTION_DOWN:Ga,DIRECTION_HORIZONTAL:Ha,DIRECTION_VERTICAL:Ia,DIRECTION_ALL:Ja,Manager:fa,Input:y,TouchAction:T,TouchInput:Q,MouseInput:M,PointerEventInput:N,TouchMouseInput:S,SingleTouchInput:O,Recognizer:V,AttrRecognizer:Z,Tap:da,Pan:$,Swipe:ca,Pinch:_,Rotate:ba,Press:aa,on:n,off:o,each:g,merge:i,extend:h,inherit:j,bindFn:k,prefixed:v}),"function"==ka&&__webpack_require__(87)?!(__WEBPACK_AMD_DEFINE_RESULT__ = function(){return ea}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):"undefined"!=typeof module&&module.exports?module.exports=ea:a[c]=ea}(window,document,"Hammer"),function(a){ true?!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(10),__webpack_require__(152)], __WEBPACK_AMD_DEFINE_FACTORY__ = (a), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):"object"==typeof exports?a(require("jquery"),require("hammerjs")):a(jQuery,Hammer)}(function(a,b){function c(c,d){var e=a(c);e.data("hammer")||e.data("hammer",new b(e[0],d))}a.fn.hammer=function(a){return this.each(function(){c(this,a)})},b.Manager.prototype.emit=function(b){return function(c,d){b.call(this,c,d),a(this.element).trigger({type:c,gesture:d})}}(b.Manager.prototype.emit)}),function(a){a.Package?Materialize={}:a.Materialize={}}(window),Materialize.guid=function(){function a(){return Math.floor(65536*(1+Math.random())).toString(16).substring(1)}return function(){return a()+a()+"-"+a()+"-"+a()+"-"+a()+"-"+a()+a()+a()}}(),Materialize.elementOrParentIsFixed=function(a){var b=$(a),c=b.add(b.parents()),d=!1;return c.each(function(){return"fixed"===$(this).css("position")?(d=!0,!1):void 0}),d};var Vel;Vel=$?$.Velocity:jQuery?jQuery.Velocity:Velocity,function(a){a.fn.collapsible=function(b){var c={accordion:void 0};return b=a.extend(c,b),this.each(function(){function c(b){h=g.find("> li > .collapsible-header"),b.hasClass("active")?b.parent().addClass("active"):b.parent().removeClass("active"),b.parent().hasClass("active")?b.siblings(".collapsible-body").stop(!0,!1).slideDown({duration:350,easing:"easeOutQuart",queue:!1,complete:function(){a(this).css("height","")}}):b.siblings(".collapsible-body").stop(!0,!1).slideUp({duration:350,easing:"easeOutQuart",queue:!1,complete:function(){a(this).css("height","")}}),h.not(b).removeClass("active").parent().removeClass("active"),h.not(b).parent().children(".collapsible-body").stop(!0,!1).slideUp({duration:350,easing:"easeOutQuart",queue:!1,complete:function(){a(this).css("height","")}})}function d(b){b.hasClass("active")?b.parent().addClass("active"):b.parent().removeClass("active"),b.parent().hasClass("active")?b.siblings(".collapsible-body").stop(!0,!1).slideDown({duration:350,easing:"easeOutQuart",queue:!1,complete:function(){a(this).css("height","")}}):b.siblings(".collapsible-body").stop(!0,!1).slideUp({duration:350,easing:"easeOutQuart",queue:!1,complete:function(){a(this).css("height","")}})}function e(a){var b=f(a);return b.length>0}function f(a){return a.closest("li > .collapsible-header")}var g=a(this),h=a(this).find("> li > .collapsible-header"),i=g.data("collapsible");g.off("click.collapse","> li > .collapsible-header"),h.off("click.collapse"),g.on("click.collapse","> li > .collapsible-header",function(g){var h=a(this),j=a(g.target);e(j)&&(j=f(j)),j.toggleClass("active"),b.accordion||"accordion"===i||void 0===i?c(j):(d(j),h.hasClass("active")&&d(h))});var h=g.find("> li > .collapsible-header");b.accordion||"accordion"===i||void 0===i?c(h.filter(".active").first()):h.filter(".active").each(function(){d(a(this))})})},a(document).ready(function(){a(".collapsible").collapsible()})}(jQuery),function(a){a.fn.scrollTo=function(b){return a(this).scrollTop(a(this).scrollTop()-a(this).offset().top+a(b).offset().top),this},a.fn.dropdown=function(b){var c={inDuration:300,outDuration:225,constrain_width:!0,hover:!1,gutter:0,belowOrigin:!1,alignment:"left",stopPropagation:!1};return"open"===b?(this.each(function(){a(this).trigger("open")}),!1):"close"===b?(this.each(function(){a(this).trigger("close")}),!1):void this.each(function(){function b(){void 0!==f.data("induration")&&(g.inDuration=f.data("induration")),void 0!==f.data("outduration")&&(g.outDuration=f.data("outduration")),void 0!==f.data("constrainwidth")&&(g.constrain_width=f.data("constrainwidth")),void 0!==f.data("hover")&&(g.hover=f.data("hover")),void 0!==f.data("gutter")&&(g.gutter=f.data("gutter")),void 0!==f.data("beloworigin")&&(g.belowOrigin=f.data("beloworigin")),void 0!==f.data("alignment")&&(g.alignment=f.data("alignment")),void 0!==f.data("stoppropagation")&&(g.stopPropagation=f.data("stoppropagation"))}function d(c){"focus"===c&&(h=!0),b(),i.addClass("active"),f.addClass("active"),g.constrain_width===!0?i.css("width",f.outerWidth()):i.css("white-space","nowrap");var d=window.innerHeight,e=f.innerHeight(),j=f.offset().left,k=f.offset().top-a(window).scrollTop(),l=g.alignment,m=0,n=0,o=0;g.belowOrigin===!0&&(o=e);var p=0,q=0,r=f.parent();if(r.is("body")||(r[0].scrollHeight>r[0].clientHeight&&(p=r[0].scrollTop),r[0].scrollWidth>r[0].clientWidth&&(q=r[0].scrollLeft)),j+i.innerWidth()>a(window).width()?l="right":j-i.innerWidth()+f.innerWidth()<0&&(l="left"),k+i.innerHeight()>d)if(k+e-i.innerHeight()<0){var s=d-k-o;i.css("max-height",s)}else o||(o+=e),o-=i.innerHeight();if("left"===l)m=g.gutter,n=f.position().left+m;else if("right"===l){var t=f.position().left+f.outerWidth()-i.outerWidth();m=-g.gutter,n=t+m}i.css({position:"absolute",top:f.position().top+o+p,left:n+q}),i.stop(!0,!0).css("opacity",0).slideDown({queue:!1,duration:g.inDuration,easing:"easeOutCubic",complete:function(){a(this).css("height","")}}).animate({opacity:1},{queue:!1,duration:g.inDuration,easing:"easeOutSine"})}function e(){h=!1,i.fadeOut(g.outDuration),i.removeClass("active"),f.removeClass("active"),setTimeout(function(){i.css("max-height","")},g.outDuration)}var f=a(this),g=a.extend({},c,g),h=!1,i=a("#"+f.attr("data-activates"));if(b(),f.after(i),g.hover){var j=!1;f.unbind("click."+f.attr("id")),f.on("mouseenter",function(a){j===!1&&(d(),j=!0)}),f.on("mouseleave",function(b){var c=b.toElement||b.relatedTarget;a(c).closest(".dropdown-content").is(i)||(i.stop(!0,!0),e(),j=!1)}),i.on("mouseleave",function(b){var c=b.toElement||b.relatedTarget;a(c).closest(".dropdown-button").is(f)||(i.stop(!0,!0),e(),j=!1)})}else f.unbind("click."+f.attr("id")),f.bind("click."+f.attr("id"),function(b){h||(f[0]!=b.currentTarget||f.hasClass("active")||0!==a(b.target).closest(".dropdown-content").length?f.hasClass("active")&&(e(),a(document).unbind("click."+i.attr("id")+" touchstart."+i.attr("id"))):(b.preventDefault(),g.stopPropagation&&b.stopPropagation(),d("click")),i.hasClass("active")&&a(document).bind("click."+i.attr("id")+" touchstart."+i.attr("id"),function(b){i.is(b.target)||f.is(b.target)||f.find(b.target).length||(e(),a(document).unbind("click."+i.attr("id")+" touchstart."+i.attr("id")))}))});f.on("open",function(a,b){d(b)}),f.on("close",e)})},a(document).ready(function(){a(".dropdown-button").dropdown()})}(jQuery),function(a){var b=0,c=0,d=function(){return c++,"materialize-lean-overlay-"+c};a.fn.extend({openModal:function(c){var e=a("body"),f=e.innerWidth();e.css("overflow","hidden"),e.width(f);var g={opacity:.5,in_duration:350,out_duration:250,ready:void 0,complete:void 0,dismissible:!0,starting_top:"4%",ending_top:"10%"},h=a(this);if(!h.hasClass("open")){var i=d(),j=a('<div class="lean-overlay"></div>');lStack=++b,j.attr("id",i).css("z-index",1e3+2*lStack),h.data("overlay-id",i).css("z-index",1e3+2*lStack+1),h.addClass("open"),a("body").append(j),c=a.extend(g,c),c.dismissible&&(j.click(function(){h.closeModal(c)}),a(document).on("keyup.leanModal"+i,function(a){27===a.keyCode&&h.closeModal(c)})),h.find(".modal-close").on("click.close",function(a){h.closeModal(c)}),j.css({display:"block",opacity:0}),h.css({display:"block",opacity:0}),j.velocity({opacity:c.opacity},{duration:c.in_duration,queue:!1,ease:"easeOutCubic"}),h.data("associated-overlay",j[0]),h.hasClass("bottom-sheet")?h.velocity({bottom:"0",opacity:1},{duration:c.in_duration,queue:!1,ease:"easeOutCubic",complete:function(){"function"==typeof c.ready&&c.ready()}}):(a.Velocity.hook(h,"scaleX",.7),h.css({top:c.starting_top}),h.velocity({top:c.ending_top,opacity:1,scaleX:"1"},{duration:c.in_duration,queue:!1,ease:"easeOutCubic",
+switch(T){case"%":O*="x"===V?e.percentToPxWidth:e.percentToPxHeight;break;case"px":break;default:O*=e[T+"ToPx"]}switch(S){case"%":O*=1/("x"===V?e.percentToPxWidth:e.percentToPxHeight);break;case"px":break;default:O*=1/e[S+"ToPx"]}}switch(U){case"+":M=O+M;break;case"-":M=O-M;break;case"*":M=O*M;break;case"/":M=O/M}i[K]={rootPropertyValue:Q,startValue:O,currentValue:O,endValue:M,unitType:S,easing:N},t.debug&&console.log("tweensContainer ("+K+"): "+JSON.stringify(i[K]),f)}else t.debug&&console.log("Skipping ["+P+"] due to a lack of browser support.")}i.element=f}i.element&&(v.Values.addClass(f,"velocity-animating"),J.push(i),""===h.queue&&(g(f).tweensContainer=i,g(f).opts=h),g(f).isAnimating=!0,y===x-1?(t.State.calls.push([J,o,h,null,B.resolver]),t.State.isTicking===!1&&(t.State.isTicking=!0,k())):y++)}var e,f=this,h=m.extend({},t.defaults,s),i={};switch(g(f)===d&&t.init(f),parseFloat(h.delay)&&h.queue!==!1&&m.queue(f,h.queue,function(a){t.velocityQueueEntryFlag=!0,g(f).delayTimer={setTimeout:setTimeout(a,parseFloat(h.delay)),next:a}}),h.duration.toString().toLowerCase()){case"fast":h.duration=200;break;case"normal":h.duration=r;break;case"slow":h.duration=600;break;default:h.duration=parseFloat(h.duration)||1}t.mock!==!1&&(t.mock===!0?h.duration=h.delay=1:(h.duration*=parseFloat(t.mock)||1,h.delay*=parseFloat(t.mock)||1)),h.easing=j(h.easing,h.duration),h.begin&&!p.isFunction(h.begin)&&(h.begin=null),h.progress&&!p.isFunction(h.progress)&&(h.progress=null),h.complete&&!p.isFunction(h.complete)&&(h.complete=null),h.display!==d&&null!==h.display&&(h.display=h.display.toString().toLowerCase(),"auto"===h.display&&(h.display=t.CSS.Values.getDisplayType(f))),h.visibility!==d&&null!==h.visibility&&(h.visibility=h.visibility.toString().toLowerCase()),h.mobileHA=h.mobileHA&&t.State.isMobile&&!t.State.isGingerbread,h.queue===!1?h.delay?setTimeout(a,h.delay):a():m.queue(f,h.queue,function(b,c){return c===!0?(B.promise&&B.resolver(o),!0):(t.velocityQueueEntryFlag=!0,void a(b))}),""!==h.queue&&"fx"!==h.queue||"inprogress"===m.queue(f)[0]||m.dequeue(f)}var h,i,n,o,q,s,u=arguments[0]&&(arguments[0].p||m.isPlainObject(arguments[0].properties)&&!arguments[0].properties.names||p.isString(arguments[0].properties));if(p.isWrapped(this)?(h=!1,n=0,o=this,i=this):(h=!0,n=1,o=u?arguments[0].elements||arguments[0].e:arguments[0]),o=f(o)){u?(q=arguments[0].properties||arguments[0].p,s=arguments[0].options||arguments[0].o):(q=arguments[n],s=arguments[n+1]);var x=o.length,y=0;if(!/^(stop|finish)$/i.test(q)&&!m.isPlainObject(s)){var z=n+1;s={};for(var A=z;A<arguments.length;A++)p.isArray(arguments[A])||!/^(fast|normal|slow)$/i.test(arguments[A])&&!/^\d/.test(arguments[A])?p.isString(arguments[A])||p.isArray(arguments[A])?s.easing=arguments[A]:p.isFunction(arguments[A])&&(s.complete=arguments[A]):s.duration=arguments[A]}var B={promise:null,resolver:null,rejecter:null};h&&t.Promise&&(B.promise=new t.Promise(function(a,b){B.resolver=a,B.rejecter=b}));var C;switch(q){case"scroll":C="scroll";break;case"reverse":C="reverse";break;case"finish":case"stop":m.each(o,function(a,b){g(b)&&g(b).delayTimer&&(clearTimeout(g(b).delayTimer.setTimeout),g(b).delayTimer.next&&g(b).delayTimer.next(),delete g(b).delayTimer)});var D=[];return m.each(t.State.calls,function(a,b){b&&m.each(b[1],function(c,e){var f=s===d?"":s;return f===!0||b[2].queue===f||s===d&&b[2].queue===!1?void m.each(o,function(c,d){d===e&&((s===!0||p.isString(s))&&(m.each(m.queue(d,p.isString(s)?s:""),function(a,b){p.isFunction(b)&&b(null,!0)}),m.queue(d,p.isString(s)?s:"",[])),"stop"===q?(g(d)&&g(d).tweensContainer&&f!==!1&&m.each(g(d).tweensContainer,function(a,b){b.endValue=b.currentValue}),D.push(a)):"finish"===q&&(b[2].duration=1))}):!0})}),"stop"===q&&(m.each(D,function(a,b){l(b,!0)}),B.promise&&B.resolver(o)),a();default:if(!m.isPlainObject(q)||p.isEmptyObject(q)){if(p.isString(q)&&t.Redirects[q]){var E=m.extend({},s),F=E.duration,G=E.delay||0;return E.backwards===!0&&(o=m.extend(!0,[],o).reverse()),m.each(o,function(a,b){parseFloat(E.stagger)?E.delay=G+parseFloat(E.stagger)*a:p.isFunction(E.stagger)&&(E.delay=G+E.stagger.call(b,a,x)),E.drag&&(E.duration=parseFloat(F)||(/^(callout|transition)/.test(q)?1e3:r),E.duration=Math.max(E.duration*(E.backwards?1-a/x:(a+1)/x),.75*E.duration,200)),t.Redirects[q].call(b,b,E||{},a,x,o,B.promise?B:d)}),a()}var H="Velocity: First argument ("+q+") was not a property map, a known action, or a registered redirect. Aborting.";return B.promise?B.rejecter(new Error(H)):console.log(H),a()}C="start"}var I={lastParent:null,lastPosition:null,lastFontSize:null,lastPercentToPxWidth:null,lastPercentToPxHeight:null,lastEmToPx:null,remToPx:null,vwToPx:null,vhToPx:null},J=[];m.each(o,function(a,b){p.isNode(b)&&e.call(b)});var K,E=m.extend({},t.defaults,s);if(E.loop=parseInt(E.loop),K=2*E.loop-1,E.loop)for(var L=0;K>L;L++){var M={delay:E.delay,progress:E.progress};L===K-1&&(M.display=E.display,M.visibility=E.visibility,M.complete=E.complete),w(o,"reverse",M)}return a()}};t=m.extend(w,t),t.animate=w;var x=b.requestAnimationFrame||o;return t.State.isMobile||c.hidden===d||c.addEventListener("visibilitychange",function(){c.hidden?(x=function(a){return setTimeout(function(){a(!0)},16)},k()):x=b.requestAnimationFrame||o}),a.Velocity=t,a!==b&&(a.fn.velocity=w,a.fn.velocity.defaults=t.defaults),m.each(["Down","Up"],function(a,b){t.Redirects["slide"+b]=function(a,c,e,f,g,h){var i=m.extend({},c),j=i.begin,k=i.complete,l={height:"",marginTop:"",marginBottom:"",paddingTop:"",paddingBottom:""},n={};i.display===d&&(i.display="Down"===b?"inline"===t.CSS.Values.getDisplayType(a)?"inline-block":"block":"none"),i.begin=function(){j&&j.call(g,g);for(var c in l){n[c]=a.style[c];var d=t.CSS.getPropertyValue(a,c);l[c]="Down"===b?[d,0]:[0,d]}n.overflow=a.style.overflow,a.style.overflow="hidden"},i.complete=function(){for(var b in n)a.style[b]=n[b];k&&k.call(g,g),h&&h.resolver(g)},t(a,l,i)}}),m.each(["In","Out"],function(a,b){t.Redirects["fade"+b]=function(a,c,e,f,g,h){var i=m.extend({},c),j={opacity:"In"===b?1:0},k=i.complete;i.complete=e!==f-1?i.begin=null:function(){k&&k.call(g,g),h&&h.resolver(g)},i.display===d&&(i.display="In"===b?"auto":"none"),t(this,j,i)}}),t}(window.jQuery||window.Zepto||window,window,document)})),!function(a,b,c,d){"use strict";function e(a,b,c){return setTimeout(k(a,c),b)}function f(a,b,c){return Array.isArray(a)?(g(a,c[b],c),!0):!1}function g(a,b,c){var e;if(a)if(a.forEach)a.forEach(b,c);else if(a.length!==d)for(e=0;e<a.length;)b.call(c,a[e],e,a),e++;else for(e in a)a.hasOwnProperty(e)&&b.call(c,a[e],e,a)}function h(a,b,c){for(var e=Object.keys(b),f=0;f<e.length;)(!c||c&&a[e[f]]===d)&&(a[e[f]]=b[e[f]]),f++;return a}function i(a,b){return h(a,b,!0)}function j(a,b,c){var d,e=b.prototype;d=a.prototype=Object.create(e),d.constructor=a,d._super=e,c&&h(d,c)}function k(a,b){return function(){return a.apply(b,arguments)}}function l(a,b){return typeof a==ka?a.apply(b?b[0]||d:d,b):a}function m(a,b){return a===d?b:a}function n(a,b,c){g(r(b),function(b){a.addEventListener(b,c,!1)})}function o(a,b,c){g(r(b),function(b){a.removeEventListener(b,c,!1)})}function p(a,b){for(;a;){if(a==b)return!0;a=a.parentNode}return!1}function q(a,b){return a.indexOf(b)>-1}function r(a){return a.trim().split(/\s+/g)}function s(a,b,c){if(a.indexOf&&!c)return a.indexOf(b);for(var d=0;d<a.length;){if(c&&a[d][c]==b||!c&&a[d]===b)return d;d++}return-1}function t(a){return Array.prototype.slice.call(a,0)}function u(a,b,c){for(var d=[],e=[],f=0;f<a.length;){var g=b?a[f][b]:a[f];s(e,g)<0&&d.push(a[f]),e[f]=g,f++}return c&&(d=b?d.sort(function(a,c){return a[b]>c[b]}):d.sort()),d}function v(a,b){for(var c,e,f=b[0].toUpperCase()+b.slice(1),g=0;g<ia.length;){if(c=ia[g],e=c?c+f:b,e in a)return e;g++}return d}function w(){return oa++}function x(a){var b=a.ownerDocument;return b.defaultView||b.parentWindow}function y(a,b){var c=this;this.manager=a,this.callback=b,this.element=a.element,this.target=a.options.inputTarget,this.domHandler=function(b){l(a.options.enable,[a])&&c.handler(b)},this.init()}function z(a){var b,c=a.options.inputClass;return new(b=c?c:ra?N:sa?Q:qa?S:M)(a,A)}function A(a,b,c){var d=c.pointers.length,e=c.changedPointers.length,f=b&ya&&0===d-e,g=b&(Aa|Ba)&&0===d-e;c.isFirst=!!f,c.isFinal=!!g,f&&(a.session={}),c.eventType=b,B(a,c),a.emit("hammer.input",c),a.recognize(c),a.session.prevInput=c}function B(a,b){var c=a.session,d=b.pointers,e=d.length;c.firstInput||(c.firstInput=E(b)),e>1&&!c.firstMultiple?c.firstMultiple=E(b):1===e&&(c.firstMultiple=!1);var f=c.firstInput,g=c.firstMultiple,h=g?g.center:f.center,i=b.center=F(d);b.timeStamp=na(),b.deltaTime=b.timeStamp-f.timeStamp,b.angle=J(h,i),b.distance=I(h,i),C(c,b),b.offsetDirection=H(b.deltaX,b.deltaY),b.scale=g?L(g.pointers,d):1,b.rotation=g?K(g.pointers,d):0,D(c,b);var j=a.element;p(b.srcEvent.target,j)&&(j=b.srcEvent.target),b.target=j}function C(a,b){var c=b.center,d=a.offsetDelta||{},e=a.prevDelta||{},f=a.prevInput||{};(b.eventType===ya||f.eventType===Aa)&&(e=a.prevDelta={x:f.deltaX||0,y:f.deltaY||0},d=a.offsetDelta={x:c.x,y:c.y}),b.deltaX=e.x+(c.x-d.x),b.deltaY=e.y+(c.y-d.y)}function D(a,b){var c,e,f,g,h=a.lastInterval||b,i=b.timeStamp-h.timeStamp;if(b.eventType!=Ba&&(i>xa||h.velocity===d)){var j=h.deltaX-b.deltaX,k=h.deltaY-b.deltaY,l=G(i,j,k);e=l.x,f=l.y,c=ma(l.x)>ma(l.y)?l.x:l.y,g=H(j,k),a.lastInterval=b}else c=h.velocity,e=h.velocityX,f=h.velocityY,g=h.direction;b.velocity=c,b.velocityX=e,b.velocityY=f,b.direction=g}function E(a){for(var b=[],c=0;c<a.pointers.length;)b[c]={clientX:la(a.pointers[c].clientX),clientY:la(a.pointers[c].clientY)},c++;return{timeStamp:na(),pointers:b,center:F(b),deltaX:a.deltaX,deltaY:a.deltaY}}function F(a){var b=a.length;if(1===b)return{x:la(a[0].clientX),y:la(a[0].clientY)};for(var c=0,d=0,e=0;b>e;)c+=a[e].clientX,d+=a[e].clientY,e++;return{x:la(c/b),y:la(d/b)}}function G(a,b,c){return{x:b/a||0,y:c/a||0}}function H(a,b){return a===b?Ca:ma(a)>=ma(b)?a>0?Da:Ea:b>0?Fa:Ga}function I(a,b,c){c||(c=Ka);var d=b[c[0]]-a[c[0]],e=b[c[1]]-a[c[1]];return Math.sqrt(d*d+e*e)}function J(a,b,c){c||(c=Ka);var d=b[c[0]]-a[c[0]],e=b[c[1]]-a[c[1]];return 180*Math.atan2(e,d)/Math.PI}function K(a,b){return J(b[1],b[0],La)-J(a[1],a[0],La)}function L(a,b){return I(b[0],b[1],La)/I(a[0],a[1],La)}function M(){this.evEl=Na,this.evWin=Oa,this.allow=!0,this.pressed=!1,y.apply(this,arguments)}function N(){this.evEl=Ra,this.evWin=Sa,y.apply(this,arguments),this.store=this.manager.session.pointerEvents=[]}function O(){this.evTarget=Ua,this.evWin=Va,this.started=!1,y.apply(this,arguments)}function P(a,b){var c=t(a.touches),d=t(a.changedTouches);return b&(Aa|Ba)&&(c=u(c.concat(d),"identifier",!0)),[c,d]}function Q(){this.evTarget=Xa,this.targetIds={},y.apply(this,arguments)}function R(a,b){var c=t(a.touches),d=this.targetIds;if(b&(ya|za)&&1===c.length)return d[c[0].identifier]=!0,[c,c];var e,f,g=t(a.changedTouches),h=[],i=this.target;if(f=c.filter(function(a){return p(a.target,i)}),b===ya)for(e=0;e<f.length;)d[f[e].identifier]=!0,e++;for(e=0;e<g.length;)d[g[e].identifier]&&h.push(g[e]),b&(Aa|Ba)&&delete d[g[e].identifier],e++;return h.length?[u(f.concat(h),"identifier",!0),h]:void 0}function S(){y.apply(this,arguments);var a=k(this.handler,this);this.touch=new Q(this.manager,a),this.mouse=new M(this.manager,a)}function T(a,b){this.manager=a,this.set(b)}function U(a){if(q(a,bb))return bb;var b=q(a,cb),c=q(a,db);return b&&c?cb+" "+db:b||c?b?cb:db:q(a,ab)?ab:_a}function V(a){this.id=w(),this.manager=null,this.options=i(a||{},this.defaults),this.options.enable=m(this.options.enable,!0),this.state=eb,this.simultaneous={},this.requireFail=[]}function W(a){return a&jb?"cancel":a&hb?"end":a&gb?"move":a&fb?"start":""}function X(a){return a==Ga?"down":a==Fa?"up":a==Da?"left":a==Ea?"right":""}function Y(a,b){var c=b.manager;return c?c.get(a):a}function Z(){V.apply(this,arguments)}function $(){Z.apply(this,arguments),this.pX=null,this.pY=null}function _(){Z.apply(this,arguments)}function aa(){V.apply(this,arguments),this._timer=null,this._input=null}function ba(){Z.apply(this,arguments)}function ca(){Z.apply(this,arguments)}function da(){V.apply(this,arguments),this.pTime=!1,this.pCenter=!1,this._timer=null,this._input=null,this.count=0}function ea(a,b){return b=b||{},b.recognizers=m(b.recognizers,ea.defaults.preset),new fa(a,b)}function fa(a,b){b=b||{},this.options=i(b,ea.defaults),this.options.inputTarget=this.options.inputTarget||a,this.handlers={},this.session={},this.recognizers=[],this.element=a,this.input=z(this),this.touchAction=new T(this,this.options.touchAction),ga(this,!0),g(b.recognizers,function(a){var b=this.add(new a[0](a[1]));a[2]&&b.recognizeWith(a[2]),a[3]&&b.requireFailure(a[3])},this)}function ga(a,b){var c=a.element;g(a.options.cssProps,function(a,d){c.style[v(c.style,d)]=b?a:""})}function ha(a,c){var d=b.createEvent("Event");d.initEvent(a,!0,!0),d.gesture=c,c.target.dispatchEvent(d)}var ia=["","webkit","moz","MS","ms","o"],ja=b.createElement("div"),ka="function",la=Math.round,ma=Math.abs,na=Date.now,oa=1,pa=/mobile|tablet|ip(ad|hone|od)|android/i,qa="ontouchstart"in a,ra=v(a,"PointerEvent")!==d,sa=qa&&pa.test(navigator.userAgent),ta="touch",ua="pen",va="mouse",wa="kinect",xa=25,ya=1,za=2,Aa=4,Ba=8,Ca=1,Da=2,Ea=4,Fa=8,Ga=16,Ha=Da|Ea,Ia=Fa|Ga,Ja=Ha|Ia,Ka=["x","y"],La=["clientX","clientY"];y.prototype={handler:function(){},init:function(){this.evEl&&n(this.element,this.evEl,this.domHandler),this.evTarget&&n(this.target,this.evTarget,this.domHandler),this.evWin&&n(x(this.element),this.evWin,this.domHandler)},destroy:function(){this.evEl&&o(this.element,this.evEl,this.domHandler),this.evTarget&&o(this.target,this.evTarget,this.domHandler),this.evWin&&o(x(this.element),this.evWin,this.domHandler)}};var Ma={mousedown:ya,mousemove:za,mouseup:Aa},Na="mousedown",Oa="mousemove mouseup";j(M,y,{handler:function(a){var b=Ma[a.type];b&ya&&0===a.button&&(this.pressed=!0),b&za&&1!==a.which&&(b=Aa),this.pressed&&this.allow&&(b&Aa&&(this.pressed=!1),this.callback(this.manager,b,{pointers:[a],changedPointers:[a],pointerType:va,srcEvent:a}))}});var Pa={pointerdown:ya,pointermove:za,pointerup:Aa,pointercancel:Ba,pointerout:Ba},Qa={2:ta,3:ua,4:va,5:wa},Ra="pointerdown",Sa="pointermove pointerup pointercancel";a.MSPointerEvent&&(Ra="MSPointerDown",Sa="MSPointerMove MSPointerUp MSPointerCancel"),j(N,y,{handler:function(a){var b=this.store,c=!1,d=a.type.toLowerCase().replace("ms",""),e=Pa[d],f=Qa[a.pointerType]||a.pointerType,g=f==ta,h=s(b,a.pointerId,"pointerId");e&ya&&(0===a.button||g)?0>h&&(b.push(a),h=b.length-1):e&(Aa|Ba)&&(c=!0),0>h||(b[h]=a,this.callback(this.manager,e,{pointers:b,changedPointers:[a],pointerType:f,srcEvent:a}),c&&b.splice(h,1))}});var Ta={touchstart:ya,touchmove:za,touchend:Aa,touchcancel:Ba},Ua="touchstart",Va="touchstart touchmove touchend touchcancel";j(O,y,{handler:function(a){var b=Ta[a.type];if(b===ya&&(this.started=!0),this.started){var c=P.call(this,a,b);b&(Aa|Ba)&&0===c[0].length-c[1].length&&(this.started=!1),this.callback(this.manager,b,{pointers:c[0],changedPointers:c[1],pointerType:ta,srcEvent:a})}}});var Wa={touchstart:ya,touchmove:za,touchend:Aa,touchcancel:Ba},Xa="touchstart touchmove touchend touchcancel";j(Q,y,{handler:function(a){var b=Wa[a.type],c=R.call(this,a,b);c&&this.callback(this.manager,b,{pointers:c[0],changedPointers:c[1],pointerType:ta,srcEvent:a})}}),j(S,y,{handler:function(a,b,c){var d=c.pointerType==ta,e=c.pointerType==va;if(d)this.mouse.allow=!1;else if(e&&!this.mouse.allow)return;b&(Aa|Ba)&&(this.mouse.allow=!0),this.callback(a,b,c)},destroy:function(){this.touch.destroy(),this.mouse.destroy()}});var Ya=v(ja.style,"touchAction"),Za=Ya!==d,$a="compute",_a="auto",ab="manipulation",bb="none",cb="pan-x",db="pan-y";T.prototype={set:function(a){a==$a&&(a=this.compute()),Za&&(this.manager.element.style[Ya]=a),this.actions=a.toLowerCase().trim()},update:function(){this.set(this.manager.options.touchAction)},compute:function(){var a=[];return g(this.manager.recognizers,function(b){l(b.options.enable,[b])&&(a=a.concat(b.getTouchAction()))}),U(a.join(" "))},preventDefaults:function(a){if(!Za){var b=a.srcEvent,c=a.offsetDirection;if(this.manager.session.prevented)return void b.preventDefault();var d=this.actions,e=q(d,bb),f=q(d,db),g=q(d,cb);return e||f&&c&Ha||g&&c&Ia?this.preventSrc(b):void 0}},preventSrc:function(a){this.manager.session.prevented=!0,a.preventDefault()}};var eb=1,fb=2,gb=4,hb=8,ib=hb,jb=16,kb=32;V.prototype={defaults:{},set:function(a){return h(this.options,a),this.manager&&this.manager.touchAction.update(),this},recognizeWith:function(a){if(f(a,"recognizeWith",this))return this;var b=this.simultaneous;return a=Y(a,this),b[a.id]||(b[a.id]=a,a.recognizeWith(this)),this},dropRecognizeWith:function(a){return f(a,"dropRecognizeWith",this)?this:(a=Y(a,this),delete this.simultaneous[a.id],this)},requireFailure:function(a){if(f(a,"requireFailure",this))return this;var b=this.requireFail;return a=Y(a,this),-1===s(b,a)&&(b.push(a),a.requireFailure(this)),this},dropRequireFailure:function(a){if(f(a,"dropRequireFailure",this))return this;a=Y(a,this);var b=s(this.requireFail,a);return b>-1&&this.requireFail.splice(b,1),this},hasRequireFailures:function(){return this.requireFail.length>0},canRecognizeWith:function(a){return!!this.simultaneous[a.id]},emit:function(a){function b(b){c.manager.emit(c.options.event+(b?W(d):""),a)}var c=this,d=this.state;hb>d&&b(!0),b(),d>=hb&&b(!0)},tryEmit:function(a){return this.canEmit()?this.emit(a):void(this.state=kb)},canEmit:function(){for(var a=0;a<this.requireFail.length;){if(!(this.requireFail[a].state&(kb|eb)))return!1;a++}return!0},recognize:function(a){var b=h({},a);return l(this.options.enable,[this,b])?(this.state&(ib|jb|kb)&&(this.state=eb),this.state=this.process(b),void(this.state&(fb|gb|hb|jb)&&this.tryEmit(b))):(this.reset(),void(this.state=kb))},process:function(){},getTouchAction:function(){},reset:function(){}},j(Z,V,{defaults:{pointers:1},attrTest:function(a){var b=this.options.pointers;return 0===b||a.pointers.length===b},process:function(a){var b=this.state,c=a.eventType,d=b&(fb|gb),e=this.attrTest(a);return d&&(c&Ba||!e)?b|jb:d||e?c&Aa?b|hb:b&fb?b|gb:fb:kb}}),j($,Z,{defaults:{event:"pan",threshold:10,pointers:1,direction:Ja},getTouchAction:function(){var a=this.options.direction,b=[];return a&Ha&&b.push(db),a&Ia&&b.push(cb),b},directionTest:function(a){var b=this.options,c=!0,d=a.distance,e=a.direction,f=a.deltaX,g=a.deltaY;return e&b.direction||(b.direction&Ha?(e=0===f?Ca:0>f?Da:Ea,c=f!=this.pX,d=Math.abs(a.deltaX)):(e=0===g?Ca:0>g?Fa:Ga,c=g!=this.pY,d=Math.abs(a.deltaY))),a.direction=e,c&&d>b.threshold&&e&b.direction},attrTest:function(a){return Z.prototype.attrTest.call(this,a)&&(this.state&fb||!(this.state&fb)&&this.directionTest(a))},emit:function(a){this.pX=a.deltaX,this.pY=a.deltaY;var b=X(a.direction);b&&this.manager.emit(this.options.event+b,a),this._super.emit.call(this,a)}}),j(_,Z,{defaults:{event:"pinch",threshold:0,pointers:2},getTouchAction:function(){return[bb]},attrTest:function(a){return this._super.attrTest.call(this,a)&&(Math.abs(a.scale-1)>this.options.threshold||this.state&fb)},emit:function(a){if(this._super.emit.call(this,a),1!==a.scale){var b=a.scale<1?"in":"out";this.manager.emit(this.options.event+b,a)}}}),j(aa,V,{defaults:{event:"press",pointers:1,time:500,threshold:5},getTouchAction:function(){return[_a]},process:function(a){var b=this.options,c=a.pointers.length===b.pointers,d=a.distance<b.threshold,f=a.deltaTime>b.time;if(this._input=a,!d||!c||a.eventType&(Aa|Ba)&&!f)this.reset();else if(a.eventType&ya)this.reset(),this._timer=e(function(){this.state=ib,this.tryEmit()},b.time,this);else if(a.eventType&Aa)return ib;return kb},reset:function(){clearTimeout(this._timer)},emit:function(a){this.state===ib&&(a&&a.eventType&Aa?this.manager.emit(this.options.event+"up",a):(this._input.timeStamp=na(),this.manager.emit(this.options.event,this._input)))}}),j(ba,Z,{defaults:{event:"rotate",threshold:0,pointers:2},getTouchAction:function(){return[bb]},attrTest:function(a){return this._super.attrTest.call(this,a)&&(Math.abs(a.rotation)>this.options.threshold||this.state&fb)}}),j(ca,Z,{defaults:{event:"swipe",threshold:10,velocity:.65,direction:Ha|Ia,pointers:1},getTouchAction:function(){return $.prototype.getTouchAction.call(this)},attrTest:function(a){var b,c=this.options.direction;return c&(Ha|Ia)?b=a.velocity:c&Ha?b=a.velocityX:c&Ia&&(b=a.velocityY),this._super.attrTest.call(this,a)&&c&a.direction&&a.distance>this.options.threshold&&ma(b)>this.options.velocity&&a.eventType&Aa},emit:function(a){var b=X(a.direction);b&&this.manager.emit(this.options.event+b,a),this.manager.emit(this.options.event,a)}}),j(da,V,{defaults:{event:"tap",pointers:1,taps:1,interval:300,time:250,threshold:2,posThreshold:10},getTouchAction:function(){return[ab]},process:function(a){var b=this.options,c=a.pointers.length===b.pointers,d=a.distance<b.threshold,f=a.deltaTime<b.time;if(this.reset(),a.eventType&ya&&0===this.count)return this.failTimeout();if(d&&f&&c){if(a.eventType!=Aa)return this.failTimeout();var g=this.pTime?a.timeStamp-this.pTime<b.interval:!0,h=!this.pCenter||I(this.pCenter,a.center)<b.posThreshold;this.pTime=a.timeStamp,this.pCenter=a.center,h&&g?this.count+=1:this.count=1,this._input=a;var i=this.count%b.taps;if(0===i)return this.hasRequireFailures()?(this._timer=e(function(){this.state=ib,this.tryEmit()},b.interval,this),fb):ib}return kb},failTimeout:function(){return this._timer=e(function(){this.state=kb},this.options.interval,this),kb},reset:function(){clearTimeout(this._timer)},emit:function(){this.state==ib&&(this._input.tapCount=this.count,this.manager.emit(this.options.event,this._input))}}),ea.VERSION="2.0.4",ea.defaults={domEvents:!1,touchAction:$a,enable:!0,inputTarget:null,inputClass:null,preset:[[ba,{enable:!1}],[_,{enable:!1},["rotate"]],[ca,{direction:Ha}],[$,{direction:Ha},["swipe"]],[da],[da,{event:"doubletap",taps:2},["tap"]],[aa]],cssProps:{userSelect:"default",touchSelect:"none",touchCallout:"none",contentZooming:"none",userDrag:"none",tapHighlightColor:"rgba(0,0,0,0)"}};var lb=1,mb=2;fa.prototype={set:function(a){return h(this.options,a),a.touchAction&&this.touchAction.update(),a.inputTarget&&(this.input.destroy(),this.input.target=a.inputTarget,this.input.init()),this},stop:function(a){this.session.stopped=a?mb:lb},recognize:function(a){var b=this.session;if(!b.stopped){this.touchAction.preventDefaults(a);var c,d=this.recognizers,e=b.curRecognizer;(!e||e&&e.state&ib)&&(e=b.curRecognizer=null);for(var f=0;f<d.length;)c=d[f],b.stopped===mb||e&&c!=e&&!c.canRecognizeWith(e)?c.reset():c.recognize(a),!e&&c.state&(fb|gb|hb)&&(e=b.curRecognizer=c),f++}},get:function(a){if(a instanceof V)return a;for(var b=this.recognizers,c=0;c<b.length;c++)if(b[c].options.event==a)return b[c];return null},add:function(a){if(f(a,"add",this))return this;var b=this.get(a.options.event);return b&&this.remove(b),this.recognizers.push(a),a.manager=this,this.touchAction.update(),a},remove:function(a){if(f(a,"remove",this))return this;var b=this.recognizers;return a=this.get(a),b.splice(s(b,a),1),this.touchAction.update(),this},on:function(a,b){var c=this.handlers;return g(r(a),function(a){c[a]=c[a]||[],c[a].push(b)}),this},off:function(a,b){var c=this.handlers;return g(r(a),function(a){b?c[a].splice(s(c[a],b),1):delete c[a]}),this},emit:function(a,b){this.options.domEvents&&ha(a,b);var c=this.handlers[a]&&this.handlers[a].slice();if(c&&c.length){b.type=a,b.preventDefault=function(){b.srcEvent.preventDefault()};for(var d=0;d<c.length;)c[d](b),d++}},destroy:function(){this.element&&ga(this,!1),this.handlers={},this.session={},this.input.destroy(),this.element=null}},h(ea,{INPUT_START:ya,INPUT_MOVE:za,INPUT_END:Aa,INPUT_CANCEL:Ba,STATE_POSSIBLE:eb,STATE_BEGAN:fb,STATE_CHANGED:gb,STATE_ENDED:hb,STATE_RECOGNIZED:ib,STATE_CANCELLED:jb,STATE_FAILED:kb,DIRECTION_NONE:Ca,DIRECTION_LEFT:Da,DIRECTION_RIGHT:Ea,DIRECTION_UP:Fa,DIRECTION_DOWN:Ga,DIRECTION_HORIZONTAL:Ha,DIRECTION_VERTICAL:Ia,DIRECTION_ALL:Ja,Manager:fa,Input:y,TouchAction:T,TouchInput:Q,MouseInput:M,PointerEventInput:N,TouchMouseInput:S,SingleTouchInput:O,Recognizer:V,AttrRecognizer:Z,Tap:da,Pan:$,Swipe:ca,Pinch:_,Rotate:ba,Press:aa,on:n,off:o,each:g,merge:i,extend:h,inherit:j,bindFn:k,prefixed:v}),"function"==ka&&__webpack_require__(109)?!(__WEBPACK_AMD_DEFINE_RESULT__ = function(){return ea}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):"undefined"!=typeof module&&module.exports?module.exports=ea:a[c]=ea}(window,document,"Hammer"),function(a){ true?!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(10),__webpack_require__(183)], __WEBPACK_AMD_DEFINE_FACTORY__ = (a), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):"object"==typeof exports?a(require("jquery"),require("hammerjs")):a(jQuery,Hammer)}(function(a,b){function c(c,d){var e=a(c);e.data("hammer")||e.data("hammer",new b(e[0],d))}a.fn.hammer=function(a){return this.each(function(){c(this,a)})},b.Manager.prototype.emit=function(b){return function(c,d){b.call(this,c,d),a(this.element).trigger({type:c,gesture:d})}}(b.Manager.prototype.emit)}),function(a){a.Package?Materialize={}:a.Materialize={}}(window),Materialize.guid=function(){function a(){return Math.floor(65536*(1+Math.random())).toString(16).substring(1)}return function(){return a()+a()+"-"+a()+"-"+a()+"-"+a()+"-"+a()+a()+a()}}(),Materialize.elementOrParentIsFixed=function(a){var b=$(a),c=b.add(b.parents()),d=!1;return c.each(function(){return"fixed"===$(this).css("position")?(d=!0,!1):void 0}),d};var Vel;Vel=$?$.Velocity:jQuery?jQuery.Velocity:Velocity,function(a){a.fn.collapsible=function(b){var c={accordion:void 0};return b=a.extend(c,b),this.each(function(){function c(b){h=g.find("> li > .collapsible-header"),b.hasClass("active")?b.parent().addClass("active"):b.parent().removeClass("active"),b.parent().hasClass("active")?b.siblings(".collapsible-body").stop(!0,!1).slideDown({duration:350,easing:"easeOutQuart",queue:!1,complete:function(){a(this).css("height","")}}):b.siblings(".collapsible-body").stop(!0,!1).slideUp({duration:350,easing:"easeOutQuart",queue:!1,complete:function(){a(this).css("height","")}}),h.not(b).removeClass("active").parent().removeClass("active"),h.not(b).parent().children(".collapsible-body").stop(!0,!1).slideUp({duration:350,easing:"easeOutQuart",queue:!1,complete:function(){a(this).css("height","")}})}function d(b){b.hasClass("active")?b.parent().addClass("active"):b.parent().removeClass("active"),b.parent().hasClass("active")?b.siblings(".collapsible-body").stop(!0,!1).slideDown({duration:350,easing:"easeOutQuart",queue:!1,complete:function(){a(this).css("height","")}}):b.siblings(".collapsible-body").stop(!0,!1).slideUp({duration:350,easing:"easeOutQuart",queue:!1,complete:function(){a(this).css("height","")}})}function e(a){var b=f(a);return b.length>0}function f(a){return a.closest("li > .collapsible-header")}var g=a(this),h=a(this).find("> li > .collapsible-header"),i=g.data("collapsible");g.off("click.collapse","> li > .collapsible-header"),h.off("click.collapse"),g.on("click.collapse","> li > .collapsible-header",function(g){var h=a(this),j=a(g.target);e(j)&&(j=f(j)),j.toggleClass("active"),b.accordion||"accordion"===i||void 0===i?c(j):(d(j),h.hasClass("active")&&d(h))});var h=g.find("> li > .collapsible-header");b.accordion||"accordion"===i||void 0===i?c(h.filter(".active").first()):h.filter(".active").each(function(){d(a(this))})})},a(document).ready(function(){a(".collapsible").collapsible()})}(jQuery),function(a){a.fn.scrollTo=function(b){return a(this).scrollTop(a(this).scrollTop()-a(this).offset().top+a(b).offset().top),this},a.fn.dropdown=function(b){var c={inDuration:300,outDuration:225,constrain_width:!0,hover:!1,gutter:0,belowOrigin:!1,alignment:"left",stopPropagation:!1};return"open"===b?(this.each(function(){a(this).trigger("open")}),!1):"close"===b?(this.each(function(){a(this).trigger("close")}),!1):void this.each(function(){function b(){void 0!==f.data("induration")&&(g.inDuration=f.data("induration")),void 0!==f.data("outduration")&&(g.outDuration=f.data("outduration")),void 0!==f.data("constrainwidth")&&(g.constrain_width=f.data("constrainwidth")),void 0!==f.data("hover")&&(g.hover=f.data("hover")),void 0!==f.data("gutter")&&(g.gutter=f.data("gutter")),void 0!==f.data("beloworigin")&&(g.belowOrigin=f.data("beloworigin")),void 0!==f.data("alignment")&&(g.alignment=f.data("alignment")),void 0!==f.data("stoppropagation")&&(g.stopPropagation=f.data("stoppropagation"))}function d(c){"focus"===c&&(h=!0),b(),i.addClass("active"),f.addClass("active"),g.constrain_width===!0?i.css("width",f.outerWidth()):i.css("white-space","nowrap");var d=window.innerHeight,e=f.innerHeight(),j=f.offset().left,k=f.offset().top-a(window).scrollTop(),l=g.alignment,m=0,n=0,o=0;g.belowOrigin===!0&&(o=e);var p=0,q=0,r=f.parent();if(r.is("body")||(r[0].scrollHeight>r[0].clientHeight&&(p=r[0].scrollTop),r[0].scrollWidth>r[0].clientWidth&&(q=r[0].scrollLeft)),j+i.innerWidth()>a(window).width()?l="right":j-i.innerWidth()+f.innerWidth()<0&&(l="left"),k+i.innerHeight()>d)if(k+e-i.innerHeight()<0){var s=d-k-o;i.css("max-height",s)}else o||(o+=e),o-=i.innerHeight();if("left"===l)m=g.gutter,n=f.position().left+m;else if("right"===l){var t=f.position().left+f.outerWidth()-i.outerWidth();m=-g.gutter,n=t+m}i.css({position:"absolute",top:f.position().top+o+p,left:n+q}),i.stop(!0,!0).css("opacity",0).slideDown({queue:!1,duration:g.inDuration,easing:"easeOutCubic",complete:function(){a(this).css("height","")}}).animate({opacity:1},{queue:!1,duration:g.inDuration,easing:"easeOutSine"})}function e(){h=!1,i.fadeOut(g.outDuration),i.removeClass("active"),f.removeClass("active"),setTimeout(function(){i.css("max-height","")},g.outDuration)}var f=a(this),g=a.extend({},c,g),h=!1,i=a("#"+f.attr("data-activates"));if(b(),f.after(i),g.hover){var j=!1;f.unbind("click."+f.attr("id")),f.on("mouseenter",function(a){j===!1&&(d(),j=!0)}),f.on("mouseleave",function(b){var c=b.toElement||b.relatedTarget;a(c).closest(".dropdown-content").is(i)||(i.stop(!0,!0),e(),j=!1)}),i.on("mouseleave",function(b){var c=b.toElement||b.relatedTarget;a(c).closest(".dropdown-button").is(f)||(i.stop(!0,!0),e(),j=!1)})}else f.unbind("click."+f.attr("id")),f.bind("click."+f.attr("id"),function(b){h||(f[0]!=b.currentTarget||f.hasClass("active")||0!==a(b.target).closest(".dropdown-content").length?f.hasClass("active")&&(e(),a(document).unbind("click."+i.attr("id")+" touchstart."+i.attr("id"))):(b.preventDefault(),g.stopPropagation&&b.stopPropagation(),d("click")),i.hasClass("active")&&a(document).bind("click."+i.attr("id")+" touchstart."+i.attr("id"),function(b){i.is(b.target)||f.is(b.target)||f.find(b.target).length||(e(),a(document).unbind("click."+i.attr("id")+" touchstart."+i.attr("id")))}))});f.on("open",function(a,b){d(b)}),f.on("close",e)})},a(document).ready(function(){a(".dropdown-button").dropdown()})}(jQuery),function(a){var b=0,c=0,d=function(){return c++,"materialize-lean-overlay-"+c};a.fn.extend({openModal:function(c){var e=a("body"),f=e.innerWidth();e.css("overflow","hidden"),e.width(f);var g={opacity:.5,in_duration:350,out_duration:250,ready:void 0,complete:void 0,dismissible:!0,starting_top:"4%",ending_top:"10%"},h=a(this);if(!h.hasClass("open")){var i=d(),j=a('<div class="lean-overlay"></div>');lStack=++b,j.attr("id",i).css("z-index",1e3+2*lStack),h.data("overlay-id",i).css("z-index",1e3+2*lStack+1),h.addClass("open"),a("body").append(j),c=a.extend(g,c),c.dismissible&&(j.click(function(){h.closeModal(c)}),a(document).on("keyup.leanModal"+i,function(a){27===a.keyCode&&h.closeModal(c)})),h.find(".modal-close").on("click.close",function(a){h.closeModal(c)}),j.css({display:"block",opacity:0}),h.css({display:"block",opacity:0}),j.velocity({opacity:c.opacity},{duration:c.in_duration,queue:!1,ease:"easeOutCubic"}),h.data("associated-overlay",j[0]),h.hasClass("bottom-sheet")?h.velocity({bottom:"0",opacity:1},{duration:c.in_duration,queue:!1,ease:"easeOutCubic",complete:function(){"function"==typeof c.ready&&c.ready()}}):(a.Velocity.hook(h,"scaleX",.7),h.css({top:c.starting_top}),h.velocity({top:c.ending_top,opacity:1,scaleX:"1"},{duration:c.in_duration,queue:!1,ease:"easeOutCubic",
 complete:function(){"function"==typeof c.ready&&c.ready()}}))}}}),a.fn.extend({closeModal:function(c){var d={out_duration:250,complete:void 0},e=a(this),f=e.data("overlay-id"),g=a("#"+f);e.removeClass("open"),c=a.extend(d,c),a("body").css({overflow:"",width:""}),e.find(".modal-close").off("click.close"),a(document).off("keyup.leanModal"+f),g.velocity({opacity:0},{duration:c.out_duration,queue:!1,ease:"easeOutQuart"}),e.hasClass("bottom-sheet")?e.velocity({bottom:"-100%",opacity:0},{duration:c.out_duration,queue:!1,ease:"easeOutCubic",complete:function(){g.css({display:"none"}),"function"==typeof c.complete&&c.complete(),g.remove(),b--}}):e.velocity({top:c.starting_top,opacity:0,scaleX:.7},{duration:c.out_duration,complete:function(){a(this).css("display","none"),"function"==typeof c.complete&&c.complete(),g.remove(),b--}})}}),a.fn.extend({leanModal:function(b){return this.each(function(){var c={starting_top:"4%"},d=a.extend(c,b);a(this).click(function(b){d.starting_top=(a(this).offset().top-a(window).scrollTop())/1.15;var c=a(this).attr("href")||"#"+a(this).data("target");a(c).openModal(d),b.preventDefault()})})}})}(jQuery),function(a){a.fn.materialbox=function(){return this.each(function(){function b(){f=!1;var b=i.parent(".material-placeholder"),d=(window.innerWidth,window.innerHeight,i.data("width")),g=i.data("height");i.velocity("stop",!0),a("#materialbox-overlay").velocity("stop",!0),a(".materialbox-caption").velocity("stop",!0),a("#materialbox-overlay").velocity({opacity:0},{duration:h,queue:!1,easing:"easeOutQuad",complete:function(){e=!1,a(this).remove()}}),i.velocity({width:d,height:g,left:0,top:0},{duration:h,queue:!1,easing:"easeOutQuad"}),a(".materialbox-caption").velocity({opacity:0},{duration:h,queue:!1,easing:"easeOutQuad",complete:function(){b.css({height:"",width:"",position:"",top:"",left:""}),i.css({height:"",top:"",left:"",width:"","max-width":"",position:"","z-index":""}),i.removeClass("active"),f=!0,a(this).remove(),c&&c.css("overflow","")}})}if(!a(this).hasClass("initialized")){a(this).addClass("initialized");var c,d,e=!1,f=!0,g=275,h=200,i=a(this),j=a("<div></div>").addClass("material-placeholder");i.wrap(j),i.on("click",function(){var h=i.parent(".material-placeholder"),j=window.innerWidth,k=window.innerHeight,l=i.width(),m=i.height();if(f===!1)return b(),!1;if(e&&f===!0)return b(),!1;f=!1,i.addClass("active"),e=!0,h.css({width:h[0].getBoundingClientRect().width,height:h[0].getBoundingClientRect().height,position:"relative",top:0,left:0}),c=void 0,d=h[0].parentNode;for(;null!==d&&!a(d).is(document);){var n=a(d);"visible"!==n.css("overflow")&&(n.css("overflow","visible"),c=void 0===c?n:c.add(n)),d=d.parentNode}i.css({position:"absolute","z-index":1e3}).data("width",l).data("height",m);var o=a('<div id="materialbox-overlay"></div>').css({opacity:0}).click(function(){f===!0&&b()});if(i.before(o),o.velocity({opacity:1},{duration:g,queue:!1,easing:"easeOutQuad"}),""!==i.data("caption")){var p=a('<div class="materialbox-caption"></div>');p.text(i.data("caption")),a("body").append(p),p.css({display:"inline"}),p.velocity({opacity:1},{duration:g,queue:!1,easing:"easeOutQuad"})}var q=0,r=l/j,s=m/k,t=0,u=0;r>s?(q=m/l,t=.9*j,u=.9*j*q):(q=l/m,t=.9*k*q,u=.9*k),i.hasClass("responsive-img")?i.velocity({"max-width":t,width:l},{duration:0,queue:!1,complete:function(){i.css({left:0,top:0}).velocity({height:u,width:t,left:a(document).scrollLeft()+j/2-i.parent(".material-placeholder").offset().left-t/2,top:a(document).scrollTop()+k/2-i.parent(".material-placeholder").offset().top-u/2},{duration:g,queue:!1,easing:"easeOutQuad",complete:function(){f=!0}})}}):i.css("left",0).css("top",0).velocity({height:u,width:t,left:a(document).scrollLeft()+j/2-i.parent(".material-placeholder").offset().left-t/2,top:a(document).scrollTop()+k/2-i.parent(".material-placeholder").offset().top-u/2},{duration:g,queue:!1,easing:"easeOutQuad",complete:function(){f=!0}})}),a(window).scroll(function(){e&&b()}),a(document).keyup(function(a){27===a.keyCode&&f===!0&&e&&b()})}})},a(document).ready(function(){a(".materialboxed").materialbox()})}(jQuery),function(a){a.fn.parallax=function(){var b=a(window).width();return this.each(function(c){function d(c){var d;d=601>b?e.height()>0?e.height():e.children("img").height():e.height()>0?e.height():500;var f=e.children("img").first(),g=f.height(),h=g-d,i=e.offset().top+d,j=e.offset().top,k=a(window).scrollTop(),l=window.innerHeight,m=k+l,n=(m-j)/(d+l),o=Math.round(h*n);c&&f.css("display","block"),i>k&&k+l>j&&f.css("transform","translate3D(-50%,"+o+"px, 0)")}var e=a(this);e.addClass("parallax"),e.children("img").one("load",function(){d(!0)}).each(function(){this.complete&&a(this).load()}),a(window).scroll(function(){b=a(window).width(),d(!1)}),a(window).resize(function(){b=a(window).width(),d(!1)})})}}(jQuery),function(a){var b={init:function(b){var c={onShow:null};return b=a.extend(c,b),this.each(function(){var c=a(this);a(window).width();c.width("100%");var d,e,f=c.find("li.tab a"),g=c.width(),h=Math.max(g,c[0].scrollWidth)/f.length,i=0;d=a(f.filter('[href="'+location.hash+'"]')),0===d.length&&(d=a(this).find("li.tab a.active").first()),0===d.length&&(d=a(this).find("li.tab a").first()),d.addClass("active"),i=f.index(d),0>i&&(i=0),void 0!==d[0]&&(e=a(d[0].hash)),c.append('<div class="indicator"></div>');var j=c.find(".indicator");c.is(":visible")&&(j.css({right:g-(i+1)*h}),j.css({left:i*h})),a(window).resize(function(){g=c.width(),h=Math.max(g,c[0].scrollWidth)/f.length,0>i&&(i=0),0!==h&&0!==g&&(j.css({right:g-(i+1)*h}),j.css({left:i*h}))}),f.not(d).each(function(){a(this.hash).hide()}),c.on("click","a",function(k){if(a(this).parent().hasClass("disabled"))return void k.preventDefault();if(!a(this).attr("target")){g=c.width(),h=Math.max(g,c[0].scrollWidth)/f.length,d.removeClass("active"),void 0!==e&&e.hide(),d=a(this),e=a(this.hash),f=c.find("li.tab a"),d.addClass("active");var l=i;i=f.index(a(this)),0>i&&(i=0),void 0!==e&&(e.show(),"function"==typeof b.onShow&&b.onShow.call(this,e)),i-l>=0?(j.velocity({right:g-(i+1)*h},{duration:300,queue:!1,easing:"easeOutQuad"}),j.velocity({left:i*h},{duration:300,queue:!1,easing:"easeOutQuad",delay:90})):(j.velocity({left:i*h},{duration:300,queue:!1,easing:"easeOutQuad"}),j.velocity({right:g-(i+1)*h},{duration:300,queue:!1,easing:"easeOutQuad",delay:90})),k.preventDefault()}})})},select_tab:function(a){this.find('a[href="#'+a+'"]').trigger("click")}};a.fn.tabs=function(c){return b[c]?b[c].apply(this,Array.prototype.slice.call(arguments,1)):"object"!=typeof c&&c?void a.error("Method "+c+" does not exist on jQuery.tooltip"):b.init.apply(this,arguments)},a(document).ready(function(){a("ul.tabs").tabs()})}(jQuery),function(a){a.fn.tooltip=function(c){var d=5,e={delay:350,tooltip:"",position:"bottom",html:!1};return"remove"===c?(this.each(function(){a("#"+a(this).attr("data-tooltip-id")).remove(),a(this).off("mouseenter.tooltip mouseleave.tooltip")}),!1):(c=a.extend(e,c),this.each(function(){var e=Materialize.guid(),f=a(this);f.attr("data-tooltip-id",e);var g,h,i,j,k,l,m=function(){g=f.attr("data-html")?"true"===f.attr("data-html"):c.html,h=f.attr("data-delay"),h=void 0===h||""===h?c.delay:h,i=f.attr("data-position"),i=void 0===i||""===i?c.position:i,j=f.attr("data-tooltip"),j=void 0===j||""===j?c.tooltip:j};m();var n=function(){var b=a('<div class="material-tooltip"></div>');return j=g?a("<span></span>").html(j):a("<span></span>").text(j),b.append(j).appendTo(a("body")).attr("id",e),l=a('<div class="backdrop"></div>'),l.appendTo(b),b};k=n(),f.off("mouseenter.tooltip mouseleave.tooltip");var o,p=!1;f.on({"mouseenter.tooltip":function(a){var c=function(){m(),p=!0,k.velocity("stop"),l.velocity("stop"),k.css({display:"block",left:"0px",top:"0px"});var a,c,e,g=f.outerWidth(),h=f.outerHeight(),j=k.outerHeight(),n=k.outerWidth(),o="0px",q="0px",r=8,s=8;"top"===i?(a=f.offset().top-j-d,c=f.offset().left+g/2-n/2,e=b(c,a,n,j),o="-10px",l.css({bottom:0,left:0,borderRadius:"14px 14px 0 0",transformOrigin:"50% 100%",marginTop:j,marginLeft:n/2-l.width()/2})):"left"===i?(a=f.offset().top+h/2-j/2,c=f.offset().left-n-d,e=b(c,a,n,j),q="-10px",l.css({top:"-7px",right:0,width:"14px",height:"14px",borderRadius:"14px 0 0 14px",transformOrigin:"95% 50%",marginTop:j/2,marginLeft:n})):"right"===i?(a=f.offset().top+h/2-j/2,c=f.offset().left+g+d,e=b(c,a,n,j),q="+10px",l.css({top:"-7px",left:0,width:"14px",height:"14px",borderRadius:"0 14px 14px 0",transformOrigin:"5% 50%",marginTop:j/2,marginLeft:"0px"})):(a=f.offset().top+f.outerHeight()+d,c=f.offset().left+g/2-n/2,e=b(c,a,n,j),o="+10px",l.css({top:0,left:0,marginLeft:n/2-l.width()/2})),k.css({top:e.y,left:e.x}),r=Math.SQRT2*n/parseInt(l.css("width")),s=Math.SQRT2*j/parseInt(l.css("height")),k.velocity({marginTop:o,marginLeft:q},{duration:350,queue:!1}).velocity({opacity:1},{duration:300,delay:50,queue:!1}),l.css({display:"block"}).velocity({opacity:1},{duration:55,delay:0,queue:!1}).velocity({scaleX:r,scaleY:s},{duration:300,delay:0,queue:!1,easing:"easeInOutQuad"})};o=setTimeout(c,h)},"mouseleave.tooltip":function(){p=!1,clearTimeout(o),setTimeout(function(){p!==!0&&(k.velocity({opacity:0,marginTop:0,marginLeft:0},{duration:225,queue:!1}),l.velocity({opacity:0,scaleX:1,scaleY:1},{duration:225,queue:!1,complete:function(){l.css("display","none"),k.css("display","none"),p=!1}}))},225)}})}))};var b=function(b,c,d,e){var f=b,g=c;return 0>f?f=4:f+d>window.innerWidth&&(f-=f+d-window.innerWidth),0>g?g=4:g+e>window.innerHeight+a(window).scrollTop&&(g-=g+e-window.innerHeight),{x:f,y:g}};a(document).ready(function(){a(".tooltipped").tooltip()})}(jQuery),function(a){"use strict";function b(a){return null!==a&&a===a.window}function c(a){return b(a)?a:9===a.nodeType&&a.defaultView}function d(a){var b,d,e={top:0,left:0},f=a&&a.ownerDocument;return b=f.documentElement,"undefined"!=typeof a.getBoundingClientRect&&(e=a.getBoundingClientRect()),d=c(f),{top:e.top+d.pageYOffset-b.clientTop,left:e.left+d.pageXOffset-b.clientLeft}}function e(a){var b="";for(var c in a)a.hasOwnProperty(c)&&(b+=c+":"+a[c]+";");return b}function f(a){if(k.allowEvent(a)===!1)return null;for(var b=null,c=a.target||a.srcElement;null!==c.parentElement;){if(!(c instanceof SVGElement||-1===c.className.indexOf("waves-effect"))){b=c;break}if(c.classList.contains("waves-effect")){b=c;break}c=c.parentElement}return b}function g(b){var c=f(b);null!==c&&(j.show(b,c),"ontouchstart"in a&&(c.addEventListener("touchend",j.hide,!1),c.addEventListener("touchcancel",j.hide,!1)),c.addEventListener("mouseup",j.hide,!1),c.addEventListener("mouseleave",j.hide,!1))}var h=h||{},i=document.querySelectorAll.bind(document),j={duration:750,show:function(a,b){if(2===a.button)return!1;var c=b||this,f=document.createElement("div");f.className="waves-ripple",c.appendChild(f);var g=d(c),h=a.pageY-g.top,i=a.pageX-g.left,k="scale("+c.clientWidth/100*10+")";"touches"in a&&(h=a.touches[0].pageY-g.top,i=a.touches[0].pageX-g.left),f.setAttribute("data-hold",Date.now()),f.setAttribute("data-scale",k),f.setAttribute("data-x",i),f.setAttribute("data-y",h);var l={top:h+"px",left:i+"px"};f.className=f.className+" waves-notransition",f.setAttribute("style",e(l)),f.className=f.className.replace("waves-notransition",""),l["-webkit-transform"]=k,l["-moz-transform"]=k,l["-ms-transform"]=k,l["-o-transform"]=k,l.transform=k,l.opacity="1",l["-webkit-transition-duration"]=j.duration+"ms",l["-moz-transition-duration"]=j.duration+"ms",l["-o-transition-duration"]=j.duration+"ms",l["transition-duration"]=j.duration+"ms",l["-webkit-transition-timing-function"]="cubic-bezier(0.250, 0.460, 0.450, 0.940)",l["-moz-transition-timing-function"]="cubic-bezier(0.250, 0.460, 0.450, 0.940)",l["-o-transition-timing-function"]="cubic-bezier(0.250, 0.460, 0.450, 0.940)",l["transition-timing-function"]="cubic-bezier(0.250, 0.460, 0.450, 0.940)",f.setAttribute("style",e(l))},hide:function(a){k.touchup(a);var b=this,c=(1.4*b.clientWidth,null),d=b.getElementsByClassName("waves-ripple");if(!(d.length>0))return!1;c=d[d.length-1];var f=c.getAttribute("data-x"),g=c.getAttribute("data-y"),h=c.getAttribute("data-scale"),i=Date.now()-Number(c.getAttribute("data-hold")),l=350-i;0>l&&(l=0),setTimeout(function(){var a={top:g+"px",left:f+"px",opacity:"0","-webkit-transition-duration":j.duration+"ms","-moz-transition-duration":j.duration+"ms","-o-transition-duration":j.duration+"ms","transition-duration":j.duration+"ms","-webkit-transform":h,"-moz-transform":h,"-ms-transform":h,"-o-transform":h,transform:h};c.setAttribute("style",e(a)),setTimeout(function(){try{b.removeChild(c)}catch(a){return!1}},j.duration)},l)},wrapInput:function(a){for(var b=0;b<a.length;b++){var c=a[b];if("input"===c.tagName.toLowerCase()){var d=c.parentNode;if("i"===d.tagName.toLowerCase()&&-1!==d.className.indexOf("waves-effect"))continue;var e=document.createElement("i");e.className=c.className+" waves-input-wrapper";var f=c.getAttribute("style");f||(f=""),e.setAttribute("style",f),c.className="waves-button-input",c.removeAttribute("style"),d.replaceChild(e,c),e.appendChild(c)}}}},k={touches:0,allowEvent:function(a){var b=!0;return"touchstart"===a.type?k.touches+=1:"touchend"===a.type||"touchcancel"===a.type?setTimeout(function(){k.touches>0&&(k.touches-=1)},500):"mousedown"===a.type&&k.touches>0&&(b=!1),b},touchup:function(a){k.allowEvent(a)}};h.displayEffect=function(b){b=b||{},"duration"in b&&(j.duration=b.duration),j.wrapInput(i(".waves-effect")),"ontouchstart"in a&&document.body.addEventListener("touchstart",g,!1),document.body.addEventListener("mousedown",g,!1)},h.attach=function(b){"input"===b.tagName.toLowerCase()&&(j.wrapInput([b]),b=b.parentElement),"ontouchstart"in a&&b.addEventListener("touchstart",g,!1),b.addEventListener("mousedown",g,!1)},a.Waves=h,document.addEventListener("DOMContentLoaded",function(){h.displayEffect()},!1)}(window),Materialize.toast=function(a,b,c,d){function e(a){var b=document.createElement("div");if(b.classList.add("toast"),c)for(var e=c.split(" "),f=0,g=e.length;g>f;f++)b.classList.add(e[f]);("object"==typeof HTMLElement?a instanceof HTMLElement:a&&"object"==typeof a&&null!==a&&1===a.nodeType&&"string"==typeof a.nodeName)?b.appendChild(a):a instanceof jQuery?b.appendChild(a[0]):b.innerHTML=a;var h=new Hammer(b,{prevent_default:!1});return h.on("pan",function(a){var c=a.deltaX,d=80;b.classList.contains("panning")||b.classList.add("panning");var e=1-Math.abs(c/d);0>e&&(e=0),Vel(b,{left:c,opacity:e},{duration:50,queue:!1,easing:"easeOutQuad"})}),h.on("panend",function(a){var c=a.deltaX,e=80;Math.abs(c)>e?Vel(b,{marginTop:"-40px"},{duration:375,easing:"easeOutExpo",queue:!1,complete:function(){"function"==typeof d&&d(),b.parentNode.removeChild(b)}}):(b.classList.remove("panning"),Vel(b,{left:0,opacity:1},{duration:300,easing:"easeOutExpo",queue:!1}))}),b}c=c||"";var f=document.getElementById("toast-container");null===f&&(f=document.createElement("div"),f.id="toast-container",document.body.appendChild(f));var g=e(a);a&&f.appendChild(g),g.style.top="35px",g.style.opacity=0,Vel(g,{top:"0px",opacity:1},{duration:300,easing:"easeOutCubic",queue:!1});var h=b,i=setInterval(function(){null===g.parentNode&&window.clearInterval(i),g.classList.contains("panning")||(h-=20),0>=h&&(Vel(g,{opacity:0,marginTop:"-40px"},{duration:375,easing:"easeOutExpo",queue:!1,complete:function(){"function"==typeof d&&d(),this[0].parentNode.removeChild(this[0])}}),window.clearInterval(i))},20)},function(a){var b={init:function(b){var c={menuWidth:300,edge:"left",closeOnClick:!1};b=a.extend(c,b),a(this).each(function(){function c(c){g=!1,h=!1,a("body").css({overflow:"",width:""}),a("#sidenav-overlay").velocity({opacity:0},{duration:200,queue:!1,easing:"easeOutQuad",complete:function(){a(this).remove()}}),"left"===b.edge?(f.css({width:"",right:"",left:"0"}),e.velocity({translateX:"-100%"},{duration:200,queue:!1,easing:"easeOutCubic",complete:function(){c===!0&&(e.removeAttr("style"),e.css("width",b.menuWidth))}})):(f.css({width:"",right:"0",left:""}),e.velocity({translateX:"100%"},{duration:200,queue:!1,easing:"easeOutCubic",complete:function(){c===!0&&(e.removeAttr("style"),e.css("width",b.menuWidth))}}))}var d=a(this),e=a("#"+d.attr("data-activates"));300!=b.menuWidth&&e.css("width",b.menuWidth);var f=a('<div class="drag-target"></div>');a("body").append(f),"left"==b.edge?(e.css("transform","translateX(-100%)"),f.css({left:0})):(e.addClass("right-aligned").css("transform","translateX(100%)"),f.css({right:0})),e.hasClass("fixed")&&window.innerWidth>992&&e.css("transform","translateX(0)"),e.hasClass("fixed")&&a(window).resize(function(){window.innerWidth>992?0!==a("#sidenav-overlay").length&&h?c(!0):e.css("transform","translateX(0%)"):h===!1&&("left"===b.edge?e.css("transform","translateX(-100%)"):e.css("transform","translateX(100%)"))}),b.closeOnClick===!0&&e.on("click.itemclick","a:not(.collapsible-header)",function(){c()});var g=!1,h=!1;f.on("click",function(){h&&c()}),f.hammer({prevent_default:!1}).bind("pan",function(d){if("touch"==d.gesture.pointerType){var f=(d.gesture.direction,d.gesture.center.x),g=(d.gesture.center.y,d.gesture.velocityX,a("body")),i=g.innerWidth();if(g.css("overflow","hidden"),g.width(i),0===a("#sidenav-overlay").length){var j=a('<div id="sidenav-overlay"></div>');j.css("opacity",0).click(function(){c()}),a("body").append(j)}if("left"===b.edge&&(f>b.menuWidth?f=b.menuWidth:0>f&&(f=0)),"left"===b.edge)f<b.menuWidth/2?h=!1:f>=b.menuWidth/2&&(h=!0),e.css("transform","translateX("+(f-b.menuWidth)+"px)");else{f<window.innerWidth-b.menuWidth/2?h=!0:f>=window.innerWidth-b.menuWidth/2&&(h=!1);var k=f-b.menuWidth/2;0>k&&(k=0),e.css("transform","translateX("+k+"px)")}var l;"left"===b.edge?(l=f/b.menuWidth,a("#sidenav-overlay").velocity({opacity:l},{duration:10,queue:!1,easing:"easeOutQuad"})):(l=Math.abs((f-window.innerWidth)/b.menuWidth),a("#sidenav-overlay").velocity({opacity:l},{duration:10,queue:!1,easing:"easeOutQuad"}))}}).bind("panend",function(c){if("touch"==c.gesture.pointerType){var d=c.gesture.velocityX,i=c.gesture.center.x,j=i-b.menuWidth,k=i-b.menuWidth/2;j>0&&(j=0),0>k&&(k=0),g=!1,"left"===b.edge?h&&.3>=d||-.5>d?(0!==j&&e.velocity({translateX:[0,j]},{duration:300,queue:!1,easing:"easeOutQuad"}),a("#sidenav-overlay").velocity({opacity:1},{duration:50,queue:!1,easing:"easeOutQuad"}),f.css({width:"50%",right:0,left:""}),h=!0):(!h||d>.3)&&(a("body").css({overflow:"",width:""}),e.velocity({translateX:[-1*b.menuWidth-10,j]},{duration:200,queue:!1,easing:"easeOutQuad"}),a("#sidenav-overlay").velocity({opacity:0},{duration:200,queue:!1,easing:"easeOutQuad",complete:function(){a(this).remove()}}),f.css({width:"10px",right:"",left:0})):h&&d>=-.3||d>.5?(0!==k&&e.velocity({translateX:[0,k]},{duration:300,queue:!1,easing:"easeOutQuad"}),a("#sidenav-overlay").velocity({opacity:1},{duration:50,queue:!1,easing:"easeOutQuad"}),f.css({width:"50%",right:"",left:0}),h=!0):(!h||-.3>d)&&(a("body").css({overflow:"",width:""}),e.velocity({translateX:[b.menuWidth+10,k]},{duration:200,queue:!1,easing:"easeOutQuad"}),a("#sidenav-overlay").velocity({opacity:0},{duration:200,queue:!1,easing:"easeOutQuad",complete:function(){a(this).remove()}}),f.css({width:"10px",right:0,left:""}))}}),d.click(function(){if(h===!0)h=!1,g=!1,c();else{var d=a("body"),i=d.innerWidth();d.css("overflow","hidden"),d.width(i),a("body").append(f),"left"===b.edge?(f.css({width:"50%",right:0,left:""}),e.velocity({translateX:[0,-1*b.menuWidth]},{duration:300,queue:!1,easing:"easeOutQuad"})):(f.css({width:"50%",right:"",left:0}),e.velocity({translateX:[0,b.menuWidth]},{duration:300,queue:!1,easing:"easeOutQuad"}));var j=a('<div id="sidenav-overlay"></div>');j.css("opacity",0).click(function(){h=!1,g=!1,c(),j.velocity({opacity:0},{duration:300,queue:!1,easing:"easeOutQuad",complete:function(){a(this).remove()}})}),a("body").append(j),j.velocity({opacity:1},{duration:300,queue:!1,easing:"easeOutQuad",complete:function(){h=!0,g=!1}})}return!1})})},show:function(){this.trigger("click")},hide:function(){a("#sidenav-overlay").trigger("click")}};a.fn.sideNav=function(c){return b[c]?b[c].apply(this,Array.prototype.slice.call(arguments,1)):"object"!=typeof c&&c?void a.error("Method "+c+" does not exist on jQuery.sideNav"):b.init.apply(this,arguments)}}(jQuery),function(a){function b(b,c,d,e){var f=a();return a.each(g,function(a,g){if(g.height()>0){var h=g.offset().top,i=g.offset().left,j=i+g.width(),k=h+g.height(),l=!(i>c||e>j||h>d||b>k);l&&f.push(g)}}),f}function c(){++j;var c=f.scrollTop(),d=f.scrollLeft(),e=d+f.width(),g=c+f.height(),i=b(c+k.top+200,e+k.right,g+k.bottom,d+k.left);a.each(i,function(a,b){var c=b.data("scrollSpy:ticks");"number"!=typeof c&&b.triggerHandler("scrollSpy:enter"),b.data("scrollSpy:ticks",j)}),a.each(h,function(a,b){var c=b.data("scrollSpy:ticks");"number"==typeof c&&c!==j&&(b.triggerHandler("scrollSpy:exit"),b.data("scrollSpy:ticks",null))}),h=i}function d(){f.trigger("scrollSpy:winSize")}function e(a,b,c){var d,e,f,g=null,h=0;c||(c={});var i=function(){h=c.leading===!1?0:l(),g=null,f=a.apply(d,e),d=e=null};return function(){var j=l();h||c.leading!==!1||(h=j);var k=b-(j-h);return d=this,e=arguments,0>=k?(clearTimeout(g),g=null,h=j,f=a.apply(d,e),d=e=null):g||c.trailing===!1||(g=setTimeout(i,k)),f}}var f=a(window),g=[],h=[],i=!1,j=0,k={top:0,right:0,bottom:0,left:0},l=Date.now||function(){return(new Date).getTime()};a.scrollSpy=function(b,d){var h={throttle:100,scrollOffset:200};d=a.extend(h,d);var j=[];b=a(b),b.each(function(b,c){g.push(a(c)),a(c).data("scrollSpy:id",b),a('a[href="#'+a(c).attr("id")+'"]').click(function(b){b.preventDefault();var c=a(this.hash).offset().top+1;a("html, body").animate({scrollTop:c-d.scrollOffset},{duration:400,queue:!1,easing:"easeOutCubic"})})}),k.top=d.offsetTop||0,k.right=d.offsetRight||0,k.bottom=d.offsetBottom||0,k.left=d.offsetLeft||0;var l=e(c,d.throttle||100),m=function(){a(document).ready(l)};return i||(f.on("scroll",m),f.on("resize",m),i=!0),setTimeout(m,0),b.on("scrollSpy:enter",function(){j=a.grep(j,function(a){return 0!=a.height()});var b=a(this);j[0]?(a('a[href="#'+j[0].attr("id")+'"]').removeClass("active"),b.data("scrollSpy:id")<j[0].data("scrollSpy:id")?j.unshift(a(this)):j.push(a(this))):j.push(a(this)),a('a[href="#'+j[0].attr("id")+'"]').addClass("active")}),b.on("scrollSpy:exit",function(){if(j=a.grep(j,function(a){return 0!=a.height()}),j[0]){a('a[href="#'+j[0].attr("id")+'"]').removeClass("active");var b=a(this);j=a.grep(j,function(a){return a.attr("id")!=b.attr("id")}),j[0]&&a('a[href="#'+j[0].attr("id")+'"]').addClass("active")}}),b},a.winSizeSpy=function(b){return a.winSizeSpy=function(){return f},b=b||{throttle:100},f.on("resize",e(d,b.throttle||100))},a.fn.scrollSpy=function(b){return a.scrollSpy(a(this),b)}}(jQuery),function(a){a(document).ready(function(){function b(b){var c=b.css("font-family"),d=b.css("font-size"),f=b.css("line-height");d&&e.css("font-size",d),c&&e.css("font-family",c),f&&e.css("line-height",f),"off"===b.attr("wrap")&&e.css("overflow-wrap","normal").css("white-space","pre"),e.text(b.val()+"\n");var g=e.html().replace(/\n/g,"<br>");e.html(g),b.is(":visible")?e.css("width",b.width()):e.css("width",a(window).width()/2),b.css("height",e.height())}Materialize.updateTextFields=function(){var b="input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=number], input[type=search], textarea";a(b).each(function(b,c){a(c).val().length>0||c.autofocus||void 0!==a(this).attr("placeholder")||a(c)[0].validity.badInput===!0?a(this).siblings("label").addClass("active"):a(this).siblings("label").removeClass("active")})};var c="input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=number], input[type=search], textarea";a(document).on("change",c,function(){(0!==a(this).val().length||void 0!==a(this).attr("placeholder"))&&a(this).siblings("label").addClass("active"),validate_field(a(this))}),a(document).ready(function(){Materialize.updateTextFields()}),a(document).on("reset",function(b){var d=a(b.target);d.is("form")&&(d.find(c).removeClass("valid").removeClass("invalid"),d.find(c).each(function(){""===a(this).attr("value")&&a(this).siblings("label").removeClass("active")}),d.find("select.initialized").each(function(){var a=d.find("option[selected]").text();d.siblings("input.select-dropdown").val(a)}))}),a(document).on("focus",c,function(){a(this).siblings("label, .prefix").addClass("active")}),a(document).on("blur",c,function(){var b=a(this),c=".prefix";0===b.val().length&&b[0].validity.badInput!==!0&&void 0===b.attr("placeholder")&&(c+=", label"),b.siblings(c).removeClass("active"),validate_field(b)}),window.validate_field=function(a){var b=void 0!==a.attr("length"),c=parseInt(a.attr("length")),d=a.val().length;0===a.val().length&&a[0].validity.badInput===!1?a.hasClass("validate")&&(a.removeClass("valid"),a.removeClass("invalid")):a.hasClass("validate")&&(a.is(":valid")&&b&&c>=d||a.is(":valid")&&!b?(a.removeClass("invalid"),a.addClass("valid")):(a.removeClass("valid"),a.addClass("invalid")))};var d="input[type=radio], input[type=checkbox]";a(document).on("keyup.radio",d,function(b){if(9===b.which){a(this).addClass("tabbed");var c=a(this);return void c.one("blur",function(b){a(this).removeClass("tabbed")})}});var e=a(".hiddendiv").first();e.length||(e=a('<div class="hiddendiv common"></div>'),a("body").append(e));var f=".materialize-textarea";a(f).each(function(){var c=a(this);c.val().length&&b(c)}),a("body").on("keyup keydown autoresize",f,function(){b(a(this))}),a(document).on("change",'.file-field input[type="file"]',function(){for(var b=a(this).closest(".file-field"),c=b.find("input.file-path"),d=a(this)[0].files,e=[],f=0;f<d.length;f++)e.push(d[f].name);c.val(e.join(", ")),c.trigger("change")});var g,h="input[type=range]",i=!1;a(h).each(function(){var b=a('<span class="thumb"><span class="value"></span></span>');a(this).after(b)});var j=".range-field";a(document).on("change",h,function(b){var c=a(this).siblings(".thumb");c.find(".value").html(a(this).val())}),a(document).on("input mousedown touchstart",h,function(b){var c=a(this).siblings(".thumb"),d=a(this).outerWidth();c.length<=0&&(c=a('<span class="thumb"><span class="value"></span></span>'),a(this).after(c)),c.find(".value").html(a(this).val()),i=!0,a(this).addClass("active"),c.hasClass("active")||c.velocity({height:"30px",width:"30px",top:"-20px",marginLeft:"-15px"},{duration:300,easing:"easeOutExpo"}),"input"!==b.type&&(g=void 0===b.pageX||null===b.pageX?b.originalEvent.touches[0].pageX-a(this).offset().left:b.pageX-a(this).offset().left,0>g?g=0:g>d&&(g=d),c.addClass("active").css("left",g)),c.find(".value").html(a(this).val())}),a(document).on("mouseup touchend",j,function(){i=!1,a(this).removeClass("active")}),a(document).on("mousemove touchmove",j,function(b){var c,d=a(this).children(".thumb");if(i){d.hasClass("active")||d.velocity({height:"30px",width:"30px",top:"-20px",marginLeft:"-15px"},{duration:300,easing:"easeOutExpo"}),c=void 0===b.pageX||null===b.pageX?b.originalEvent.touches[0].pageX-a(this).offset().left:b.pageX-a(this).offset().left;var e=a(this).outerWidth();0>c?c=0:c>e&&(c=e),d.addClass("active").css("left",c),d.find(".value").html(d.siblings(h).val())}}),a(document).on("mouseout touchleave",j,function(){if(!i){var b=a(this).children(".thumb");b.hasClass("active")&&b.velocity({height:"0",width:"0",top:"10px",marginLeft:"-6px"},{duration:100}),b.removeClass("active")}}),a.fn.autocomplete=function(b){var c={data:{}};return b=a.extend(c,b),this.each(function(){var c=a(this),d=b.data,e=c.closest(".input-field");if(!a.isEmptyObject(d)){var f=a('<ul class="autocomplete-content dropdown-content"></ul>');e.length?e.append(f):c.after(f);var g=function(a,b){var c=b.find("img"),d=b.text().toLowerCase().indexOf(""+a.toLowerCase()),e=d+a.length-1,f=b.text().slice(0,d),g=b.text().slice(d,e+1),h=b.text().slice(e+1);b.html("<span>"+f+"<span class='highlight'>"+g+"</span>"+h+"</span>"),c.length&&b.prepend(c)};c.on("keyup",function(b){if(13===b.which)return void f.find("li").first().click();var e=c.val().toLowerCase();if(f.empty(),""!==e)for(var h in d)if(d.hasOwnProperty(h)&&-1!==h.toLowerCase().indexOf(e)&&h.toLowerCase()!==e){var i=a("<li></li>");d[h]?i.append('<img src="'+d[h]+'" class="right circle"><span>'+h+"</span>"):i.append("<span>"+h+"</span>"),f.append(i),g(e,i)}}),f.on("click","li",function(){c.val(a(this).text().trim()),f.empty()})}})}}),a.fn.material_select=function(b){function c(a,b,c){var e=a.indexOf(b),f=-1===e;return f?a.push(b):a.splice(e,1),c.siblings("ul.dropdown-content").find("li").eq(b).toggleClass("active"),c.find("option").eq(b).prop("selected",f),d(a,c),f}function d(a,b){for(var c="",d=0,e=a.length;e>d;d++){var f=b.find("option").eq(a[d]).text();c+=0===d?f:", "+f}""===c&&(c=b.find("option:disabled").eq(0).text()),b.siblings("input.select-dropdown").val(c)}a(this).each(function(){var d=a(this);if(!d.hasClass("browser-default")){var e=d.attr("multiple")?!0:!1,f=d.data("select-id");if(f&&(d.parent().find("span.caret").remove(),d.parent().find("input").remove(),d.unwrap(),a("ul#select-options-"+f).remove()),"destroy"===b)return void d.data("select-id",null).removeClass("initialized");var g=Materialize.guid();d.data("select-id",g);var h=a('<div class="select-wrapper"></div>');h.addClass(d.attr("class"));var i=a('<ul id="select-options-'+g+'" class="dropdown-content select-dropdown '+(e?"multiple-select-dropdown":"")+'"></ul>'),j=d.children("option, optgroup"),k=[],l=!1,m=d.find("option:selected").html()||d.find("option:first").html()||"",n=function(b,c,d){var e=c.is(":disabled")?"disabled ":"",f="optgroup-option"===d?"optgroup-option ":"",g=c.data("icon"),h=c.attr("class");if(g){var j="";return h&&(j=' class="'+h+'"'),"multiple"===d?i.append(a('<li class="'+e+'"><img src="'+g+'"'+j+'><span><input type="checkbox"'+e+"/><label></label>"+c.html()+"</span></li>")):i.append(a('<li class="'+e+f+'"><img src="'+g+'"'+j+"><span>"+c.html()+"</span></li>")),!0}"multiple"===d?i.append(a('<li class="'+e+'"><span><input type="checkbox"'+e+"/><label></label>"+c.html()+"</span></li>")):i.append(a('<li class="'+e+f+'"><span>'+c.html()+"</span></li>"))};j.length&&j.each(function(){if(a(this).is("option"))e?n(d,a(this),"multiple"):n(d,a(this));else if(a(this).is("optgroup")){var b=a(this).children("option");i.append(a('<li class="optgroup"><span>'+a(this).attr("label")+"</span></li>")),b.each(function(){n(d,a(this),"optgroup-option")})}}),i.find("li:not(.optgroup)").each(function(f){a(this).click(function(g){if(!a(this).hasClass("disabled")&&!a(this).hasClass("optgroup")){var h=!0;e?(a('input[type="checkbox"]',this).prop("checked",function(a,b){return!b}),h=c(k,a(this).index(),d),q.trigger("focus")):(i.find("li").removeClass("active"),a(this).toggleClass("active"),q.val(a(this).text())),r(i,a(this)),d.find("option").eq(f).prop("selected",h),d.trigger("change"),"undefined"!=typeof b&&b()}g.stopPropagation()})}),d.wrap(h);var o=a('<span class="caret">&#9660;</span>');d.is(":disabled")&&o.addClass("disabled");var p=m.replace(/"/g,"&quot;"),q=a('<input type="text" class="select-dropdown" readonly="true" '+(d.is(":disabled")?"disabled":"")+' data-activates="select-options-'+g+'" value="'+p+'"/>');d.before(q),q.before(o),q.after(i),d.is(":disabled")||q.dropdown({hover:!1,closeOnClick:!1}),d.attr("tabindex")&&a(q[0]).attr("tabindex",d.attr("tabindex")),d.addClass("initialized"),q.on({focus:function(){if(a("ul.select-dropdown").not(i[0]).is(":visible")&&a("input.select-dropdown").trigger("close"),!i.is(":visible")){a(this).trigger("open",["focus"]);var b=a(this).val(),c=i.find("li").filter(function(){return a(this).text().toLowerCase()===b.toLowerCase()})[0];r(i,c)}},click:function(a){a.stopPropagation()}}),q.on("blur",function(){e||a(this).trigger("close"),i.find("li.selected").removeClass("selected")}),i.hover(function(){l=!0},function(){l=!1}),a(window).on({click:function(){e&&(l||q.trigger("close"))}}),e&&d.find("option:selected:not(:disabled)").each(function(){
 var b=a(this).index();c(k,b,d),i.find("li").eq(b).find(":checkbox").prop("checked",!0)});var r=function(b,c){if(c){b.find("li.selected").removeClass("selected");var d=a(c);d.addClass("selected"),i.scrollTo(d)}},s=[],t=function(b){if(9==b.which)return void q.trigger("close");if(40==b.which&&!i.is(":visible"))return void q.trigger("open");if(13!=b.which||i.is(":visible")){b.preventDefault();var c=String.fromCharCode(b.which).toLowerCase(),d=[9,13,27,38,40];if(c&&-1===d.indexOf(b.which)){s.push(c);var f=s.join(""),g=i.find("li").filter(function(){return 0===a(this).text().toLowerCase().indexOf(f)})[0];g&&r(i,g)}if(13==b.which){var h=i.find("li.selected:not(.disabled)")[0];h&&(a(h).trigger("click"),e||q.trigger("close"))}40==b.which&&(g=i.find("li.selected").length?i.find("li.selected").next("li:not(.disabled)")[0]:i.find("li:not(.disabled)")[0],r(i,g)),27==b.which&&q.trigger("close"),38==b.which&&(g=i.find("li.selected").prev("li:not(.disabled)")[0],g&&r(i,g)),setTimeout(function(){s=[]},1e3)}};q.on("keydown",t)}})}}(jQuery),function(a){var b={init:function(b){var c={indicators:!0,height:400,transition:500,interval:6e3};return b=a.extend(c,b),this.each(function(){function c(a,b){a.hasClass("center-align")?a.velocity({opacity:0,translateY:-100},{duration:b,queue:!1}):a.hasClass("right-align")?a.velocity({opacity:0,translateX:100},{duration:b,queue:!1}):a.hasClass("left-align")&&a.velocity({opacity:0,translateX:-100},{duration:b,queue:!1})}function d(a){a>=j.length?a=0:0>a&&(a=j.length-1),k=i.find(".active").index(),k!=a&&(e=j.eq(k),$caption=e.find(".caption"),e.removeClass("active"),e.velocity({opacity:0},{duration:b.transition,queue:!1,easing:"easeOutQuad",complete:function(){j.not(".active").velocity({opacity:0,translateX:0,translateY:0},{duration:0,queue:!1})}}),c($caption,b.transition),b.indicators&&f.eq(k).removeClass("active"),j.eq(a).velocity({opacity:1},{duration:b.transition,queue:!1,easing:"easeOutQuad"}),j.eq(a).find(".caption").velocity({opacity:1,translateX:0,translateY:0},{duration:b.transition,delay:b.transition,queue:!1,easing:"easeOutQuad"}),j.eq(a).addClass("active"),b.indicators&&f.eq(a).addClass("active"))}var e,f,g,h=a(this),i=h.find("ul.slides").first(),j=i.find("> li"),k=i.find(".active").index();-1!=k&&(e=j.eq(k)),h.hasClass("fullscreen")||(b.indicators?h.height(b.height+40):h.height(b.height),i.height(b.height)),j.find(".caption").each(function(){c(a(this),0)}),j.find("img").each(function(){var b="data:image/gif;base64,R0lGODlhAQABAIABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";a(this).attr("src")!==b&&(a(this).css("background-image","url("+a(this).attr("src")+")"),a(this).attr("src",b))}),b.indicators&&(f=a('<ul class="indicators"></ul>'),j.each(function(c){var e=a('<li class="indicator-item"></li>');e.click(function(){var c=i.parent(),e=c.find(a(this)).index();d(e),clearInterval(g),g=setInterval(function(){k=i.find(".active").index(),j.length==k+1?k=0:k+=1,d(k)},b.transition+b.interval)}),f.append(e)}),h.append(f),f=h.find("ul.indicators").find("li.indicator-item")),e?e.show():(j.first().addClass("active").velocity({opacity:1},{duration:b.transition,queue:!1,easing:"easeOutQuad"}),k=0,e=j.eq(k),b.indicators&&f.eq(k).addClass("active")),e.find("img").each(function(){e.find(".caption").velocity({opacity:1,translateX:0,translateY:0},{duration:b.transition,queue:!1,easing:"easeOutQuad"})}),g=setInterval(function(){k=i.find(".active").index(),d(k+1)},b.transition+b.interval);var l=!1,m=!1,n=!1;h.hammer({prevent_default:!1}).bind("pan",function(a){if("touch"===a.gesture.pointerType){clearInterval(g);var b=a.gesture.direction,c=a.gesture.deltaX,d=a.gesture.velocityX;$curr_slide=i.find(".active"),$curr_slide.velocity({translateX:c},{duration:50,queue:!1,easing:"easeOutQuad"}),4===b&&(c>h.innerWidth()/2||-.65>d)?n=!0:2===b&&(c<-1*h.innerWidth()/2||d>.65)&&(m=!0);var e;m&&(e=$curr_slide.next(),0===e.length&&(e=j.first()),e.velocity({opacity:1},{duration:300,queue:!1,easing:"easeOutQuad"})),n&&(e=$curr_slide.prev(),0===e.length&&(e=j.last()),e.velocity({opacity:1},{duration:300,queue:!1,easing:"easeOutQuad"}))}}).bind("panend",function(a){"touch"===a.gesture.pointerType&&($curr_slide=i.find(".active"),l=!1,curr_index=i.find(".active").index(),!n&&!m||j.length<=1?$curr_slide.velocity({translateX:0},{duration:300,queue:!1,easing:"easeOutQuad"}):m?(d(curr_index+1),$curr_slide.velocity({translateX:-1*h.innerWidth()},{duration:300,queue:!1,easing:"easeOutQuad",complete:function(){$curr_slide.velocity({opacity:0,translateX:0},{duration:0,queue:!1})}})):n&&(d(curr_index-1),$curr_slide.velocity({translateX:h.innerWidth()},{duration:300,queue:!1,easing:"easeOutQuad",complete:function(){$curr_slide.velocity({opacity:0,translateX:0},{duration:0,queue:!1})}})),m=!1,n=!1,clearInterval(g),g=setInterval(function(){k=i.find(".active").index(),j.length==k+1?k=0:k+=1,d(k)},b.transition+b.interval))}),h.on("sliderPause",function(){clearInterval(g)}),h.on("sliderStart",function(){clearInterval(g),g=setInterval(function(){k=i.find(".active").index(),j.length==k+1?k=0:k+=1,d(k)},b.transition+b.interval)}),h.on("sliderNext",function(){k=i.find(".active").index(),d(k+1)}),h.on("sliderPrev",function(){k=i.find(".active").index(),d(k-1)})})},pause:function(){a(this).trigger("sliderPause")},start:function(){a(this).trigger("sliderStart")},next:function(){a(this).trigger("sliderNext")},prev:function(){a(this).trigger("sliderPrev")}};a.fn.slider=function(c){return b[c]?b[c].apply(this,Array.prototype.slice.call(arguments,1)):"object"!=typeof c&&c?void a.error("Method "+c+" does not exist on jQuery.tooltip"):b.init.apply(this,arguments)}}(jQuery),function(a){a(document).ready(function(){a(document).on("click.card",".card",function(b){a(this).find("> .card-reveal").length&&(a(b.target).is(a(".card-reveal .card-title"))||a(b.target).is(a(".card-reveal .card-title i"))?a(this).find(".card-reveal").velocity({translateY:0},{duration:225,queue:!1,easing:"easeInOutQuad",complete:function(){a(this).css({display:"none"})}}):(a(b.target).is(a(".card .activator"))||a(b.target).is(a(".card .activator i")))&&(a(b.target).closest(".card").css("overflow","hidden"),a(this).find(".card-reveal").css({display:"block"}).velocity("stop",!1).velocity({translateY:"-100%"},{duration:300,queue:!1,easing:"easeInOutQuad"})))})})}(jQuery),function(a){var b=!1,c={data:[],placeholder:"",secondaryPlaceholder:""};a(document).ready(function(){a(document).on("click",".chip .close",function(b){var c=a(this).closest(".chips");c.data("initialized")||a(this).closest(".chip").remove()})}),a.fn.material_chip=function(d){var e=this;return this.$el=a(this),this.$document=a(document),this.SELS={CHIPS:".chips",CHIP:".chip",INPUT:"input",DELETE:".material-icons",SELECTED_CHIP:".selected"},"data"===d?this.$el.data("chips"):"options"===d?this.$el.data("options"):(this.$el.data("options",a.extend({},c,d)),this.init=function(){var b=0;e.$el.each(function(){var c=a(this);if(!c.data("initialized")){var d=c.data("options");(!d.data||!d.data instanceof Array)&&(d.data=[]),c.data("chips",d.data),c.data("index",b),c.data("initialized",!0),c.hasClass(e.SELS.CHIPS)||c.addClass("chips"),e.chips(c),b++}})},this.handleEvents=function(){var b=e.SELS;e.$document.on("click",b.CHIPS,function(c){a(c.target).find(b.INPUT).focus()}),e.$document.on("click",b.CHIP,function(c){a(b.CHIP).removeClass("selected"),a(this).toggleClass("selected")}),e.$document.on("keydown",function(c){if(!a(c.target).is("input, textarea")){var d,f=e.$document.find(b.CHIP+b.SELECTED_CHIP),g=f.closest(b.CHIPS),h=f.siblings(b.CHIP).length;if(f.length)if(8===c.which||46===c.which){c.preventDefault();var i=g.data("index");d=f.index(),e.deleteChip(i,d,g);var j=null;h>d+1?j=d:(d===h||d+1===h)&&(j=h-1),0>j&&(j=null),null!==j&&e.selectChip(i,j,g),h||g.find("input").focus()}else if(37===c.which){if(d=f.index()-1,0>d)return;a(b.CHIP).removeClass("selected"),e.selectChip(g.data("index"),d,g)}else if(39===c.which){if(d=f.index()+1,a(b.CHIP).removeClass("selected"),d>h)return void g.find("input").focus();e.selectChip(g.data("index"),d,g)}}}),e.$document.on("focusin",b.CHIPS+" "+b.INPUT,function(c){a(c.target).closest(b.CHIPS).addClass("focus"),a(b.CHIP).removeClass("selected")}),e.$document.on("focusout",b.CHIPS+" "+b.INPUT,function(c){a(c.target).closest(b.CHIPS).removeClass("focus")}),e.$document.on("keydown",b.CHIPS+" "+b.INPUT,function(c){var d=a(c.target),f=d.closest(b.CHIPS),g=f.data("index"),h=f.children(b.CHIP).length;return 13===c.which?(c.preventDefault(),e.addChip(g,{tag:d.val()},f),void d.val("")):8!==c.keyCode&&37!==c.keyCode||""!==d.val()||!h?void 0:(e.selectChip(g,h-1,f),void d.blur())}),e.$document.on("click",b.CHIPS+" "+b.DELETE,function(c){var d=a(c.target),f=d.closest(b.CHIPS),g=d.closest(b.CHIP);c.stopPropagation(),e.deleteChip(f.data("index"),g.index(),f),f.find("input").focus()})},this.chips=function(a){var b="";a.data("options");a.data("chips").forEach(function(a){b+=e.renderChip(a)}),b+='<input class="input" placeholder="">',a.html(b),e.setPlaceholder(a)},this.renderChip=function(a){if(a.tag){var b='<div class="chip">'+a.tag;return a.image&&(b+=' <img src="'+a.image+'"> '),b+='<i class="material-icons close">close</i>',b+="</div>"}},this.setPlaceholder=function(a){var b=a.data("options");a.data("chips").length&&b.placeholder?a.find("input").prop("placeholder",b.placeholder):!a.data("chips").length&&b.secondaryPlaceholder&&a.find("input").prop("placeholder",b.secondaryPlaceholder)},this.isValid=function(a,b){for(var c=a.data("chips"),d=!1,e=0;e<c.length;e++)if(c[e].tag===b.tag)return void(d=!0);return""!==b.tag&&!d},this.addChip=function(b,c,d){if(e.isValid(d,c)){var f=(d.data("options"),e.renderChip(c));d.data("chips").push(c),a(f).insertBefore(d.find("input")),d.trigger("chip.add",c),e.setPlaceholder(d)}},this.deleteChip=function(a,b,c){var d=c.data("chips")[b];c.find(".chip").eq(b).remove(),c.data("chips").splice(b,1),c.trigger("chip.delete",d),e.setPlaceholder(c)},this.selectChip=function(a,b,c){var d=c.find(".chip").eq(b);d&&!1===d.hasClass("selected")&&(d.addClass("selected"),c.trigger("chip.select",c.data("chips")[b]))},this.getChipsElement=function(a,b){return b.eq(a)},this.init(),void(b||(this.handleEvents(),b=!0)))}}(jQuery),function(a){a.fn.pushpin=function(b){var c={top:0,bottom:1/0,offset:0};return"remove"===b?(this.each(function(){(id=a(this).data("pushpin-id"))&&(a(window).off("scroll."+id),a(this).removeData("pushpin-id").removeClass("pin-top pinned pin-bottom").removeAttr("style"))}),!1):(b=a.extend(c,b),$index=0,this.each(function(){function c(a){a.removeClass("pin-top"),a.removeClass("pinned"),a.removeClass("pin-bottom")}function d(d,e){d.each(function(){b.top<=e&&b.bottom>=e&&!a(this).hasClass("pinned")&&(c(a(this)),a(this).css("top",b.offset),a(this).addClass("pinned")),e<b.top&&!a(this).hasClass("pin-top")&&(c(a(this)),a(this).css("top",0),a(this).addClass("pin-top")),e>b.bottom&&!a(this).hasClass("pin-bottom")&&(c(a(this)),a(this).addClass("pin-bottom"),a(this).css("top",b.bottom-g))})}var e=Materialize.guid(),f=a(this),g=a(this).offset().top;a(this).data("pushpin-id",e),d(f,a(window).scrollTop()),a(window).on("scroll."+e,function(){var c=a(window).scrollTop()+b.offset;d(f,c)})}))}}(jQuery),function(a){a(document).ready(function(){a.fn.reverse=[].reverse,a(document).on("mouseenter.fixedActionBtn",".fixed-action-btn:not(.click-to-toggle)",function(c){var d=a(this);b(d)}),a(document).on("mouseleave.fixedActionBtn",".fixed-action-btn:not(.click-to-toggle)",function(b){var d=a(this);c(d)}),a(document).on("click.fixedActionBtn",".fixed-action-btn.click-to-toggle > a",function(d){var e=a(this),f=e.parent();f.hasClass("active")?c(f):b(f)})}),a.fn.extend({openFAB:function(){b(a(this))},closeFAB:function(){c(a(this))}});var b=function(b){if($this=b,$this.hasClass("active")===!1){var c,d,e=$this.hasClass("horizontal");e===!0?d=40:c=40,$this.addClass("active"),$this.find("ul .btn-floating").velocity({scaleY:".4",scaleX:".4",translateY:c+"px",translateX:d+"px"},{duration:0});var f=0;$this.find("ul .btn-floating").reverse().each(function(){a(this).velocity({opacity:"1",scaleX:"1",scaleY:"1",translateY:"0",translateX:"0"},{duration:80,delay:f}),f+=40})}},c=function(a){$this=a;var b,c,d=$this.hasClass("horizontal");d===!0?c=40:b=40,$this.removeClass("active");$this.find("ul .btn-floating").velocity("stop",!0),$this.find("ul .btn-floating").velocity({opacity:"0",scaleX:".4",scaleY:".4",translateY:b+"px",translateX:c+"px"},{duration:80})}}(jQuery),function(a){Materialize.fadeInImage=function(b){var c;if("string"==typeof b)c=a(b);else{if("object"!=typeof b)return;c=b}c.css({opacity:0}),a(c).velocity({opacity:1},{duration:650,queue:!1,easing:"easeOutSine"}),a(c).velocity({opacity:1},{duration:1300,queue:!1,easing:"swing",step:function(b,c){c.start=100;var d=b/100,e=150-(100-b)/1.75;100>e&&(e=100),b>=0&&a(this).css({"-webkit-filter":"grayscale("+d+")brightness("+e+"%)",filter:"grayscale("+d+")brightness("+e+"%)"})}})},Materialize.showStaggeredList=function(b){var c;if("string"==typeof b)c=a(b);else{if("object"!=typeof b)return;c=b}var d=0;c.find("li").velocity({translateX:"-100px"},{duration:0}),c.find("li").each(function(){a(this).velocity({opacity:"1",translateX:"0"},{duration:800,delay:d,easing:[60,10]}),d+=120})},a(document).ready(function(){var b=!1,c=!1;a(".dismissable").each(function(){a(this).hammer({prevent_default:!1}).bind("pan",function(d){if("touch"===d.gesture.pointerType){var e=a(this),f=d.gesture.direction,g=d.gesture.deltaX,h=d.gesture.velocityX;e.velocity({translateX:g},{duration:50,queue:!1,easing:"easeOutQuad"}),4===f&&(g>e.innerWidth()/2||-.75>h)&&(b=!0),2===f&&(g<-1*e.innerWidth()/2||h>.75)&&(c=!0)}}).bind("panend",function(d){if(Math.abs(d.gesture.deltaX)<a(this).innerWidth()/2&&(c=!1,b=!1),"touch"===d.gesture.pointerType){var e=a(this);if(b||c){var f;f=b?e.innerWidth():-1*e.innerWidth(),e.velocity({translateX:f},{duration:100,queue:!1,easing:"easeOutQuad",complete:function(){e.css("border","none"),e.velocity({height:0,padding:0},{duration:200,queue:!1,easing:"easeOutQuad",complete:function(){e.remove()}})}})}else e.velocity({translateX:0},{duration:100,queue:!1,easing:"easeOutQuad"});b=!1,c=!1}})})})}(jQuery),function(a){Materialize.scrollFire=function(a){var b=!1;window.addEventListener("scroll",function(){b=!0}),setInterval(function(){if(b){b=!1;for(var c=window.pageYOffset+window.innerHeight,d=0;d<a.length;d++){var e=a[d],f=e.selector,g=e.offset,h=e.callback,i=document.querySelector(f);if(null!==i){var j=i.getBoundingClientRect().top+window.pageYOffset;if(c>j+g&&e.done!==!0){if("function"==typeof h)h.call(this,i);else if("string"==typeof h){var k=new Function(h);k(i)}e.done=!0}}}}},100)}}(jQuery),function(a){ true?!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(10)], __WEBPACK_AMD_DEFINE_FACTORY__ = (a), __WEBPACK_LOCAL_MODULE_0__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__)):"object"==typeof exports?module.exports=a(require("jquery")):this.Picker=a(jQuery)}(function(a){function b(f,g,i,l){function m(){return b._.node("div",b._.node("div",b._.node("div",b._.node("div",y.component.nodes(t.open),v.box),v.wrap),v.frame),v.holder)}function n(){w.data(g,y).addClass(v.input).attr("tabindex",-1).val(w.data("value")?y.get("select",u.format):f.value),u.editable||w.on("focus."+t.id+" click."+t.id,function(a){a.preventDefault(),y.$root.eq(0).focus()}).on("keydown."+t.id,q),e(f,{haspopup:!0,expanded:!1,readonly:!1,owns:f.id+"_root"})}function o(){y.$root.on({keydown:q,focusin:function(a){y.$root.removeClass(v.focused),a.stopPropagation()},"mousedown click":function(b){var c=b.target;c!=y.$root.children()[0]&&(b.stopPropagation(),"mousedown"!=b.type||a(c).is("input, select, textarea, button, option")||(b.preventDefault(),y.$root.eq(0).focus()))}}).on({focus:function(){w.addClass(v.target)},blur:function(){w.removeClass(v.target)}}).on("focus.toOpen",r).on("click","[data-pick], [data-nav], [data-clear], [data-close]",function(){var b=a(this),c=b.data(),d=b.hasClass(v.navDisabled)||b.hasClass(v.disabled),e=h();e=e&&(e.type||e.href),(d||e&&!a.contains(y.$root[0],e))&&y.$root.eq(0).focus(),!d&&c.nav?y.set("highlight",y.component.item.highlight,{nav:c.nav}):!d&&"pick"in c?y.set("select",c.pick):c.clear?y.clear().close(!0):c.close&&y.close(!0)}),e(y.$root[0],"hidden",!0)}function p(){var b;u.hiddenName===!0?(b=f.name,f.name=""):(b=["string"==typeof u.hiddenPrefix?u.hiddenPrefix:"","string"==typeof u.hiddenSuffix?u.hiddenSuffix:"_submit"],b=b[0]+f.name+b[1]),y._hidden=a('<input type=hidden name="'+b+'"'+(w.data("value")||f.value?' value="'+y.get("select",u.formatSubmit)+'"':"")+">")[0],w.on("change."+t.id,function(){y._hidden.value=f.value?y.get("select",u.formatSubmit):""}),u.container?a(u.container).append(y._hidden):w.after(y._hidden)}function q(a){var b=a.keyCode,c=/^(8|46)$/.test(b);return 27==b?(y.close(),!1):void((32==b||c||!t.open&&y.component.key[b])&&(a.preventDefault(),a.stopPropagation(),c?y.clear().close():y.open()))}function r(a){a.stopPropagation(),"focus"==a.type&&y.$root.addClass(v.focused),y.open()}if(!f)return b;var s=!1,t={id:f.id||"P"+Math.abs(~~(Math.random()*new Date))},u=i?a.extend(!0,{},i.defaults,l):l||{},v=a.extend({},b.klasses(),u.klass),w=a(f),x=function(){return this.start()},y=x.prototype={constructor:x,$node:w,start:function(){return t&&t.start?y:(t.methods={},t.start=!0,t.open=!1,t.type=f.type,f.autofocus=f==h(),f.readOnly=!u.editable,f.id=f.id||t.id,"text"!=f.type&&(f.type="text"),y.component=new i(y,u),y.$root=a(b._.node("div",m(),v.picker,'id="'+f.id+'_root" tabindex="0"')),o(),u.formatSubmit&&p(),n(),u.container?a(u.container).append(y.$root):w.after(y.$root),y.on({start:y.component.onStart,render:y.component.onRender,stop:y.component.onStop,open:y.component.onOpen,close:y.component.onClose,set:y.component.onSet}).on({start:u.onStart,render:u.onRender,stop:u.onStop,open:u.onOpen,close:u.onClose,set:u.onSet}),s=c(y.$root.children()[0]),f.autofocus&&y.open(),y.trigger("start").trigger("render"))},render:function(a){return a?y.$root.html(m()):y.$root.find("."+v.box).html(y.component.nodes(t.open)),y.trigger("render")},stop:function(){return t.start?(y.close(),y._hidden&&y._hidden.parentNode.removeChild(y._hidden),y.$root.remove(),w.removeClass(v.input).removeData(g),setTimeout(function(){w.off("."+t.id)},0),f.type=t.type,f.readOnly=!1,y.trigger("stop"),t.methods={},t.start=!1,y):y},open:function(c){return t.open?y:(w.addClass(v.active),e(f,"expanded",!0),setTimeout(function(){y.$root.addClass(v.opened),e(y.$root[0],"hidden",!1)},0),c!==!1&&(t.open=!0,s&&k.css("overflow","hidden").css("padding-right","+="+d()),y.$root.eq(0).focus(),j.on("click."+t.id+" focusin."+t.id,function(a){var b=a.target;b!=f&&b!=document&&3!=a.which&&y.close(b===y.$root.children()[0])}).on("keydown."+t.id,function(c){var d=c.keyCode,e=y.component.key[d],f=c.target;27==d?y.close(!0):f!=y.$root[0]||!e&&13!=d?a.contains(y.$root[0],f)&&13==d&&(c.preventDefault(),f.click()):(c.preventDefault(),e?b._.trigger(y.component.key.go,y,[b._.trigger(e)]):y.$root.find("."+v.highlighted).hasClass(v.disabled)||y.set("select",y.component.item.highlight).close())})),y.trigger("open"))},close:function(a){return a&&(y.$root.off("focus.toOpen").eq(0).focus(),setTimeout(function(){y.$root.on("focus.toOpen",r)},0)),w.removeClass(v.active),e(f,"expanded",!1),setTimeout(function(){y.$root.removeClass(v.opened+" "+v.focused),e(y.$root[0],"hidden",!0)},0),t.open?(t.open=!1,s&&k.css("overflow","").css("padding-right","-="+d()),j.off("."+t.id),y.trigger("close")):y},clear:function(a){return y.set("clear",null,a)},set:function(b,c,d){var e,f,g=a.isPlainObject(b),h=g?b:{};if(d=g&&a.isPlainObject(c)?c:d||{},b){g||(h[b]=c);for(e in h)f=h[e],e in y.component.item&&(void 0===f&&(f=null),y.component.set(e,f,d)),("select"==e||"clear"==e)&&w.val("clear"==e?"":y.get(e,u.format)).trigger("change");y.render()}return d.muted?y:y.trigger("set",h)},get:function(a,c){if(a=a||"value",null!=t[a])return t[a];if("valueSubmit"==a){if(y._hidden)return y._hidden.value;a="value"}if("value"==a)return f.value;if(a in y.component.item){if("string"==typeof c){var d=y.component.get(a);return d?b._.trigger(y.component.formats.toString,y.component,[c,d]):""}return y.component.get(a)}},on:function(b,c,d){var e,f,g=a.isPlainObject(b),h=g?b:{};if(b){g||(h[b]=c);for(e in h)f=h[e],d&&(e="_"+e),t.methods[e]=t.methods[e]||[],t.methods[e].push(f)}return y},off:function(){var a,b,c=arguments;for(a=0,namesCount=c.length;a<namesCount;a+=1)b=c[a],b in t.methods&&delete t.methods[b];return y},trigger:function(a,c){var d=function(a){var d=t.methods[a];d&&d.map(function(a){b._.trigger(a,y,[c])})};return d("_"+a),d(a),y}};return new x}function c(a){var b,c="position";return a.currentStyle?b=a.currentStyle[c]:window.getComputedStyle&&(b=getComputedStyle(a)[c]),"fixed"==b}function d(){if(k.height()<=i.height())return 0;var b=a('<div style="visibility:hidden;width:100px" />').appendTo("body"),c=b[0].offsetWidth;b.css("overflow","scroll");var d=a('<div style="width:100%" />').appendTo(b),e=d[0].offsetWidth;return b.remove(),c-e}function e(b,c,d){if(a.isPlainObject(c))for(var e in c)f(b,e,c[e]);else f(b,c,d)}function f(a,b,c){a.setAttribute(("role"==b?"":"aria-")+b,c)}function g(b,c){a.isPlainObject(b)||(b={attribute:c}),c="";for(var d in b){var e=("role"==d?"":"aria-")+d,f=b[d];c+=null==f?"":e+'="'+b[d]+'"'}return c}function h(){try{return document.activeElement}catch(a){}}var i=a(window),j=a(document),k=a(document.documentElement);return b.klasses=function(a){return a=a||"picker",{picker:a,opened:a+"--opened",focused:a+"--focused",input:a+"__input",active:a+"__input--active",target:a+"__input--target",holder:a+"__holder",frame:a+"__frame",wrap:a+"__wrap",box:a+"__box"}},b._={group:function(a){for(var c,d="",e=b._.trigger(a.min,a);e<=b._.trigger(a.max,a,[e]);e+=a.i)c=b._.trigger(a.item,a,[e]),d+=b._.node(a.node,c[0],c[1],c[2]);return d},node:function(b,c,d,e){return c?(c=a.isArray(c)?c.join(""):c,d=d?' class="'+d+'"':"",e=e?" "+e:"","<"+b+d+e+">"+c+"</"+b+">"):""},lead:function(a){return(10>a?"0":"")+a},trigger:function(a,b,c){return"function"==typeof a?a.apply(b,c||[]):a},digits:function(a){return/\d/.test(a[1])?2:1},isDate:function(a){return{}.toString.call(a).indexOf("Date")>-1&&this.isInteger(a.getDate())},isInteger:function(a){return{}.toString.call(a).indexOf("Number")>-1&&a%1===0},ariaAttr:g},b.extend=function(c,d){a.fn[c]=function(e,f){var g=this.data(c);return"picker"==e?g:g&&"string"==typeof e?b._.trigger(g[e],g,[f]):this.each(function(){var f=a(this);f.data(c)||new b(this,c,d,e)})},a.fn[c].defaults=d.defaults},b}),function(a){ true?!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__WEBPACK_LOCAL_MODULE_0__,__webpack_require__(10)], __WEBPACK_AMD_DEFINE_FACTORY__ = (a), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):"object"==typeof exports?module.exports=a(require("./picker.js"),require("jquery")):a(Picker,jQuery)}(function(a,b){function c(a,b){var c=this,d=a.$node[0],e=d.value,f=a.$node.data("value"),g=f||e,h=f?b.formatSubmit:b.format,i=function(){return d.currentStyle?"rtl"==d.currentStyle.direction:"rtl"==getComputedStyle(a.$root[0]).direction};c.settings=b,c.$node=a.$node,c.queue={min:"measure create",max:"measure create",now:"now create",select:"parse create validate",highlight:"parse navigate create validate",view:"parse create validate viewset",disable:"deactivate",enable:"activate"},c.item={},c.item.clear=null,c.item.disable=(b.disable||[]).slice(0),c.item.enable=-function(a){return a[0]===!0?a.shift():-1}(c.item.disable),c.set("min",b.min).set("max",b.max).set("now"),g?c.set("select",g,{format:h}):c.set("select",null).set("highlight",c.item.now),c.key={40:7,38:-7,39:function(){return i()?-1:1},37:function(){return i()?1:-1},go:function(a){var b=c.item.highlight,d=new Date(b.year,b.month,b.date+a);c.set("highlight",d,{interval:a}),this.render()}},a.on("render",function(){a.$root.find("."+b.klass.selectMonth).on("change",function(){var c=this.value;c&&(a.set("highlight",[a.get("view").year,c,a.get("highlight").date]),a.$root.find("."+b.klass.selectMonth).trigger("focus"))}),a.$root.find("."+b.klass.selectYear).on("change",function(){var c=this.value;c&&(a.set("highlight",[c,a.get("view").month,a.get("highlight").date]),a.$root.find("."+b.klass.selectYear).trigger("focus"))})},1).on("open",function(){var d="";c.disabled(c.get("now"))&&(d=":not(."+b.klass.buttonToday+")"),a.$root.find("button"+d+", select").attr("disabled",!1)},1).on("close",function(){a.$root.find("button, select").attr("disabled",!0)},1)}var d=7,e=6,f=a._;c.prototype.set=function(a,b,c){var d=this,e=d.item;return null===b?("clear"==a&&(a="select"),e[a]=b,d):(e["enable"==a?"disable":"flip"==a?"enable":a]=d.queue[a].split(" ").map(function(e){return b=d[e](a,b,c)}).pop(),"select"==a?d.set("highlight",e.select,c):"highlight"==a?d.set("view",e.highlight,c):a.match(/^(flip|min|max|disable|enable)$/)&&(e.select&&d.disabled(e.select)&&d.set("select",e.select,c),e.highlight&&d.disabled(e.highlight)&&d.set("highlight",e.highlight,c)),d)},c.prototype.get=function(a){return this.item[a]},c.prototype.create=function(a,c,d){var e,g=this;return c=void 0===c?a:c,c==-(1/0)||c==1/0?e=c:b.isPlainObject(c)&&f.isInteger(c.pick)?c=c.obj:b.isArray(c)?(c=new Date(c[0],c[1],c[2]),c=f.isDate(c)?c:g.create().obj):c=f.isInteger(c)||f.isDate(c)?g.normalize(new Date(c),d):g.now(a,c,d),{year:e||c.getFullYear(),month:e||c.getMonth(),date:e||c.getDate(),day:e||c.getDay(),obj:e||c,pick:e||c.getTime()}},c.prototype.createRange=function(a,c){var d=this,e=function(a){return a===!0||b.isArray(a)||f.isDate(a)?d.create(a):a};return f.isInteger(a)||(a=e(a)),f.isInteger(c)||(c=e(c)),f.isInteger(a)&&b.isPlainObject(c)?a=[c.year,c.month,c.date+a]:f.isInteger(c)&&b.isPlainObject(a)&&(c=[a.year,a.month,a.date+c]),{from:e(a),to:e(c)}},c.prototype.withinRange=function(a,b){return a=this.createRange(a.from,a.to),b.pick>=a.from.pick&&b.pick<=a.to.pick},c.prototype.overlapRanges=function(a,b){var c=this;return a=c.createRange(a.from,a.to),b=c.createRange(b.from,b.to),c.withinRange(a,b.from)||c.withinRange(a,b.to)||c.withinRange(b,a.from)||c.withinRange(b,a.to)},c.prototype.now=function(a,b,c){return b=new Date,c&&c.rel&&b.setDate(b.getDate()+c.rel),this.normalize(b,c)},c.prototype.navigate=function(a,c,d){var e,f,g,h,i=b.isArray(c),j=b.isPlainObject(c),k=this.item.view;if(i||j){for(j?(f=c.year,g=c.month,h=c.date):(f=+c[0],g=+c[1],h=+c[2]),d&&d.nav&&k&&k.month!==g&&(f=k.year,g=k.month),e=new Date(f,g+(d&&d.nav?d.nav:0),1),f=e.getFullYear(),g=e.getMonth();new Date(f,g,h).getMonth()!==g;)h-=1;c=[f,g,h]}return c},c.prototype.normalize=function(a){return a.setHours(0,0,0,0),a},c.prototype.measure=function(a,b){var c=this;return b?"string"==typeof b?b=c.parse(a,b):f.isInteger(b)&&(b=c.now(a,b,{rel:b})):b="min"==a?-(1/0):1/0,b},c.prototype.viewset=function(a,b){return this.create([b.year,b.month,1])},c.prototype.validate=function(a,c,d){var e,g,h,i,j=this,k=c,l=d&&d.interval?d.interval:1,m=-1===j.item.enable,n=j.item.min,o=j.item.max,p=m&&j.item.disable.filter(function(a){if(b.isArray(a)){var d=j.create(a).pick;d<c.pick?e=!0:d>c.pick&&(g=!0)}return f.isInteger(a)}).length;if((!d||!d.nav)&&(!m&&j.disabled(c)||m&&j.disabled(c)&&(p||e||g)||!m&&(c.pick<=n.pick||c.pick>=o.pick)))for(m&&!p&&(!g&&l>0||!e&&0>l)&&(l*=-1);j.disabled(c)&&(Math.abs(l)>1&&(c.month<k.month||c.month>k.month)&&(c=k,l=l>0?1:-1),c.pick<=n.pick?(h=!0,l=1,c=j.create([n.year,n.month,n.date+(c.pick===n.pick?0:-1)])):c.pick>=o.pick&&(i=!0,l=-1,c=j.create([o.year,o.month,o.date+(c.pick===o.pick?0:1)])),!h||!i);)c=j.create([c.year,c.month,c.date+l]);return c},c.prototype.disabled=function(a){var c=this,d=c.item.disable.filter(function(d){return f.isInteger(d)?a.day===(c.settings.firstDay?d:d-1)%7:b.isArray(d)||f.isDate(d)?a.pick===c.create(d).pick:b.isPlainObject(d)?c.withinRange(d,a):void 0});return d=d.length&&!d.filter(function(a){return b.isArray(a)&&"inverted"==a[3]||b.isPlainObject(a)&&a.inverted}).length,-1===c.item.enable?!d:d||a.pick<c.item.min.pick||a.pick>c.item.max.pick},c.prototype.parse=function(a,b,c){var d=this,e={};return b&&"string"==typeof b?(c&&c.format||(c=c||{},c.format=d.settings.format),d.formats.toArray(c.format).map(function(a){var c=d.formats[a],g=c?f.trigger(c,d,[b,e]):a.replace(/^!/,"").length;c&&(e[a]=b.substr(0,g)),b=b.substr(g)}),[e.yyyy||e.yy,+(e.mm||e.m)-1,e.dd||e.d]):b},c.prototype.formats=function(){function a(a,b,c){var d=a.match(/\w+/)[0];return c.mm||c.m||(c.m=b.indexOf(d)+1),d.length}function b(a){return a.match(/\w+/)[0].length}return{d:function(a,b){return a?f.digits(a):b.date},dd:function(a,b){return a?2:f.lead(b.date)},ddd:function(a,c){return a?b(a):this.settings.weekdaysShort[c.day]},dddd:function(a,c){return a?b(a):this.settings.weekdaysFull[c.day]},m:function(a,b){return a?f.digits(a):b.month+1},mm:function(a,b){return a?2:f.lead(b.month+1)},mmm:function(b,c){var d=this.settings.monthsShort;return b?a(b,d,c):d[c.month]},mmmm:function(b,c){var d=this.settings.monthsFull;return b?a(b,d,c):d[c.month]},yy:function(a,b){return a?2:(""+b.year).slice(2)},yyyy:function(a,b){return a?4:b.year},toArray:function(a){return a.split(/(d{1,4}|m{1,4}|y{4}|yy|!.)/g)},toString:function(a,b){var c=this;return c.formats.toArray(a).map(function(a){return f.trigger(c.formats[a],c,[0,b])||a.replace(/^!/,"")}).join("")}}}(),c.prototype.isDateExact=function(a,c){var d=this;return f.isInteger(a)&&f.isInteger(c)||"boolean"==typeof a&&"boolean"==typeof c?a===c:(f.isDate(a)||b.isArray(a))&&(f.isDate(c)||b.isArray(c))?d.create(a).pick===d.create(c).pick:b.isPlainObject(a)&&b.isPlainObject(c)?d.isDateExact(a.from,c.from)&&d.isDateExact(a.to,c.to):!1},c.prototype.isDateOverlap=function(a,c){var d=this,e=d.settings.firstDay?1:0;return f.isInteger(a)&&(f.isDate(c)||b.isArray(c))?(a=a%7+e,a===d.create(c).day+1):f.isInteger(c)&&(f.isDate(a)||b.isArray(a))?(c=c%7+e,c===d.create(a).day+1):b.isPlainObject(a)&&b.isPlainObject(c)?d.overlapRanges(a,c):!1},c.prototype.flipEnable=function(a){var b=this.item;b.enable=a||(-1==b.enable?1:-1)},c.prototype.deactivate=function(a,c){var d=this,e=d.item.disable.slice(0);return"flip"==c?d.flipEnable():c===!1?(d.flipEnable(1),e=[]):c===!0?(d.flipEnable(-1),e=[]):c.map(function(a){for(var c,g=0;g<e.length;g+=1)if(d.isDateExact(a,e[g])){c=!0;break}c||(f.isInteger(a)||f.isDate(a)||b.isArray(a)||b.isPlainObject(a)&&a.from&&a.to)&&e.push(a)}),e},c.prototype.activate=function(a,c){var d=this,e=d.item.disable,g=e.length;return"flip"==c?d.flipEnable():c===!0?(d.flipEnable(1),e=[]):c===!1?(d.flipEnable(-1),e=[]):c.map(function(a){var c,h,i,j;for(i=0;g>i;i+=1){if(h=e[i],d.isDateExact(h,a)){c=e[i]=null,j=!0;break}if(d.isDateOverlap(h,a)){b.isPlainObject(a)?(a.inverted=!0,c=a):b.isArray(a)?(c=a,c[3]||c.push("inverted")):f.isDate(a)&&(c=[a.getFullYear(),a.getMonth(),a.getDate(),"inverted"]);break}}if(c)for(i=0;g>i;i+=1)if(d.isDateExact(e[i],a)){e[i]=null;break}if(j)for(i=0;g>i;i+=1)if(d.isDateOverlap(e[i],a)){e[i]=null;break}c&&e.push(c)}),e.filter(function(a){return null!=a})},c.prototype.nodes=function(a){var b=this,c=b.settings,g=b.item,h=g.now,i=g.select,j=g.highlight,k=g.view,l=g.disable,m=g.min,n=g.max,o=function(a,b){return c.firstDay&&(a.push(a.shift()),b.push(b.shift())),f.node("thead",f.node("tr",f.group({min:0,max:d-1,i:1,node:"th",item:function(d){return[a[d],c.klass.weekdays,'scope=col title="'+b[d]+'"']}})))}((c.showWeekdaysFull?c.weekdaysFull:c.weekdaysLetter).slice(0),c.weekdaysFull.slice(0)),p=function(a){return f.node("div"," ",c.klass["nav"+(a?"Next":"Prev")]+(a&&k.year>=n.year&&k.month>=n.month||!a&&k.year<=m.year&&k.month<=m.month?" "+c.klass.navDisabled:""),"data-nav="+(a||-1)+" "+f.ariaAttr({role:"button",controls:b.$node[0].id+"_table"})+' title="'+(a?c.labelMonthNext:c.labelMonthPrev)+'"')},q=function(d){var e=c.showMonthsShort?c.monthsShort:c.monthsFull;return"short_months"==d&&(e=c.monthsShort),c.selectMonths&&void 0==d?f.node("select",f.group({min:0,max:11,i:1,node:"option",item:function(a){return[e[a],0,"value="+a+(k.month==a?" selected":"")+(k.year==m.year&&a<m.month||k.year==n.year&&a>n.month?" disabled":"")]}}),c.klass.selectMonth+" browser-default",(a?"":"disabled")+" "+f.ariaAttr({controls:b.$node[0].id+"_table"
 })+' title="'+c.labelMonthSelect+'"'):"short_months"==d?null!=i?f.node("div",e[i.month]):f.node("div",e[k.month]):f.node("div",e[k.month],c.klass.month)},r=function(d){var e=k.year,g=c.selectYears===!0?5:~~(c.selectYears/2);if(g){var h=m.year,i=n.year,j=e-g,l=e+g;if(h>j&&(l+=h-j,j=h),l>i){var o=j-h,p=l-i;j-=o>p?p:o,l=i}if(c.selectYears&&void 0==d)return f.node("select",f.group({min:j,max:l,i:1,node:"option",item:function(a){return[a,0,"value="+a+(e==a?" selected":"")]}}),c.klass.selectYear+" browser-default",(a?"":"disabled")+" "+f.ariaAttr({controls:b.$node[0].id+"_table"})+' title="'+c.labelYearSelect+'"')}return"raw"==d?f.node("div",e):f.node("div",e,c.klass.year)};return createDayLabel=function(){return null!=i?f.node("div",i.date):f.node("div",h.date)},createWeekdayLabel=function(){var a;a=null!=i?i.day:h.day;var b=c.weekdaysFull[a];return b},f.node("div",f.node("div",createWeekdayLabel(),"picker__weekday-display")+f.node("div",q("short_months"),c.klass.month_display)+f.node("div",createDayLabel(),c.klass.day_display)+f.node("div",r("raw"),c.klass.year_display),c.klass.date_display)+f.node("div",f.node("div",(c.selectYears?q()+r():q()+r())+p()+p(1),c.klass.header)+f.node("table",o+f.node("tbody",f.group({min:0,max:e-1,i:1,node:"tr",item:function(a){var e=c.firstDay&&0===b.create([k.year,k.month,1]).day?-7:0;return[f.group({min:d*a-k.day+e+1,max:function(){return this.min+d-1},i:1,node:"td",item:function(a){a=b.create([k.year,k.month,a+(c.firstDay?1:0)]);var d=i&&i.pick==a.pick,e=j&&j.pick==a.pick,g=l&&b.disabled(a)||a.pick<m.pick||a.pick>n.pick,o=f.trigger(b.formats.toString,b,[c.format,a]);return[f.node("div",a.date,function(b){return b.push(k.month==a.month?c.klass.infocus:c.klass.outfocus),h.pick==a.pick&&b.push(c.klass.now),d&&b.push(c.klass.selected),e&&b.push(c.klass.highlighted),g&&b.push(c.klass.disabled),b.join(" ")}([c.klass.day]),"data-pick="+a.pick+" "+f.ariaAttr({role:"gridcell",label:o,selected:d&&b.$node.val()===o?!0:null,activedescendant:e?!0:null,disabled:g?!0:null})),"",f.ariaAttr({role:"presentation"})]}})]}})),c.klass.table,'id="'+b.$node[0].id+'_table" '+f.ariaAttr({role:"grid",controls:b.$node[0].id,readonly:!0})),c.klass.calendar_container)+f.node("div",f.node("button",c.today,"btn-flat picker__today","type=button data-pick="+h.pick+(a&&!b.disabled(h)?"":" disabled")+" "+f.ariaAttr({controls:b.$node[0].id}))+f.node("button",c.clear,"btn-flat picker__clear","type=button data-clear=1"+(a?"":" disabled")+" "+f.ariaAttr({controls:b.$node[0].id}))+f.node("button",c.close,"btn-flat picker__close","type=button data-close=true "+(a?"":" disabled")+" "+f.ariaAttr({controls:b.$node[0].id})),c.klass.footer)},c.defaults=function(a){return{labelMonthNext:"Next month",labelMonthPrev:"Previous month",labelMonthSelect:"Select a month",labelYearSelect:"Select a year",monthsFull:["January","February","March","April","May","June","July","August","September","October","November","December"],monthsShort:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],weekdaysFull:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],weekdaysShort:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],weekdaysLetter:["S","M","T","W","T","F","S"],today:"Today",clear:"Clear",close:"Close",format:"d mmmm, yyyy",klass:{table:a+"table",header:a+"header",date_display:a+"date-display",day_display:a+"day-display",month_display:a+"month-display",year_display:a+"year-display",calendar_container:a+"calendar-container",navPrev:a+"nav--prev",navNext:a+"nav--next",navDisabled:a+"nav--disabled",month:a+"month",year:a+"year",selectMonth:a+"select--month",selectYear:a+"select--year",weekdays:a+"weekday",day:a+"day",disabled:a+"day--disabled",selected:a+"day--selected",highlighted:a+"day--highlighted",now:a+"day--today",infocus:a+"day--infocus",outfocus:a+"day--outfocus",footer:a+"footer",buttonClear:a+"button--clear",buttonToday:a+"button--today",buttonClose:a+"button--close"}}}(a.klasses().picker+"__"),a.extend("pickadate",c)}),function(a){function b(){var b=+a(this).attr("length"),c=+a(this).val().length,d=b>=c;a(this).parent().find('span[class="character-counter"]').html(c+"/"+b),e(d,a(this))}function c(b){var c=b.parent().find('span[class="character-counter"]');c.length||(c=a("<span/>").addClass("character-counter").css("float","right").css("font-size","12px").css("height",1),b.parent().append(c))}function d(){a(this).parent().find('span[class="character-counter"]').html("")}function e(a,b){var c=b.hasClass("invalid");a&&c?b.removeClass("invalid"):a||c||(b.removeClass("valid"),b.addClass("invalid"))}a.fn.characterCounter=function(){return this.each(function(){var e=a(this),f=e.parent().find('span[class="character-counter"]');if(!f.length){var g=void 0!==e.attr("length");g&&(e.on("input",b),e.on("focus",b),e.on("blur",d),c(e))}})},a(document).ready(function(){a("input, textarea").characterCounter()})}(jQuery),function(a){var b={init:function(b){var c={time_constant:200,dist:-100,shift:0,padding:0,full_width:!1,indicators:!1,no_wrap:!1};return b=a.extend(c,b),this.each(function(){function c(){"undefined"!=typeof window.ontouchstart&&(H[0].addEventListener("touchstart",l),H[0].addEventListener("touchmove",m),H[0].addEventListener("touchend",n)),H[0].addEventListener("mousedown",l),H[0].addEventListener("mousemove",m),H[0].addEventListener("mouseup",n),H[0].addEventListener("mouseleave",n),H[0].addEventListener("click",j)}function d(a){return a.targetTouches&&a.targetTouches.length>=1?a.targetTouches[0].clientX:a.clientX}function e(a){return a.targetTouches&&a.targetTouches.length>=1?a.targetTouches[0].clientY:a.clientY}function f(a){return a>=t?a%t:0>a?f(t+a%t):a}function g(a){var c,d,e,g,h,i,j;if(p="number"==typeof a?a:p,q=Math.floor((p+s/2)/s),e=p-q*s,g=0>e?1:-1,h=-g*e*2/s,d=t>>1,b.full_width?j="translateX(0)":(j="translateX("+(H[0].clientWidth-item_width)/2+"px) ",j+="translateY("+(H[0].clientHeight-item_width)/2+"px)"),I){var k=q%t,l=G.find(".indicator-item.active");l.index()!==k&&(l.removeClass("active"),G.find(".indicator-item").eq(k).addClass("active"))}for((!b.no_wrap||q>=0&&t>q)&&(i=o[f(q)],i.style[A]=j+" translateX("+-e/2+"px) translateX("+g*b.shift*h*c+"px) translateZ("+b.dist*h+"px)",i.style.zIndex=0,b.full_width?tweenedOpacity=1:tweenedOpacity=1-.2*h,i.style.opacity=tweenedOpacity,i.style.display="block"),c=1;d>=c;++c)b.full_width?(zTranslation=b.dist,tweenedOpacity=c===d&&0>e?1-h:1):(zTranslation=b.dist*(2*c+h*g),tweenedOpacity=1-.2*(2*c+h*g)),(!b.no_wrap||t>q+c)&&(i=o[f(q+c)],i.style[A]=j+" translateX("+(b.shift+(s*c-e)/2)+"px) translateZ("+zTranslation+"px)",i.style.zIndex=-c,i.style.opacity=tweenedOpacity,i.style.display="block"),b.full_width?(zTranslation=b.dist,tweenedOpacity=c===d&&e>0?1-h:1):(zTranslation=b.dist*(2*c-h*g),tweenedOpacity=1-.2*(2*c-h*g)),(!b.no_wrap||q-c>=0)&&(i=o[f(q-c)],i.style[A]=j+" translateX("+(-b.shift+(-s*c-e)/2)+"px) translateZ("+zTranslation+"px)",i.style.zIndex=-c,i.style.opacity=tweenedOpacity,i.style.display="block");(!b.no_wrap||q>=0&&t>q)&&(i=o[f(q)],i.style[A]=j+" translateX("+-e/2+"px) translateX("+g*b.shift*h+"px) translateZ("+b.dist*h+"px)",i.style.zIndex=0,b.full_width?tweenedOpacity=1:tweenedOpacity=1-.2*h,i.style.opacity=tweenedOpacity,i.style.display="block")}function h(){var a,b,c,d;a=Date.now(),b=a-C,C=a,c=p-B,B=p,d=1e3*c/(1+b),z=.8*d+.2*z}function i(){var a,c;w&&(a=Date.now()-C,c=w*Math.exp(-a/b.time_constant),c>2||-2>c?(g(x-c),requestAnimationFrame(i)):g(x))}function j(c){if(E)return c.preventDefault(),c.stopPropagation(),!1;if(!b.full_width){var d=a(c.target).closest(".carousel-item").index(),e=q%t-d;0!==e&&(c.preventDefault(),c.stopPropagation()),k(d)}}function k(a){var c=q%t-a;b.no_wrap||(0>c?Math.abs(c+t)<Math.abs(c)&&(c+=t):c>0&&Math.abs(c-t)<c&&(c-=t)),0>c?H.trigger("carouselNext",[Math.abs(c)]):c>0&&H.trigger("carouselPrev",[c])}function l(a){r=!0,E=!1,F=!1,u=d(a),v=e(a),z=w=0,B=p,C=Date.now(),clearInterval(D),D=setInterval(h,100)}function m(a){var b,c,f;if(r)if(b=d(a),y=e(a),c=u-b,f=Math.abs(v-y),30>f&&!F)(c>2||-2>c)&&(E=!0,u=b,g(p+c));else{if(E)return a.preventDefault(),a.stopPropagation(),!1;F=!0}return E?(a.preventDefault(),a.stopPropagation(),!1):void 0}function n(a){return r?(r=!1,clearInterval(D),x=p,(z>10||-10>z)&&(w=.9*z,x=p+w),x=Math.round(x/s)*s,b.no_wrap&&(x>=s*(t-1)?x=s*(t-1):0>x&&(x=0)),w=x-p,C=Date.now(),requestAnimationFrame(i),E&&(a.preventDefault(),a.stopPropagation()),!1):void 0}var o,p,q,r,s,t,u,v,w,x,z,A,B,C,D,E,F,G=a('<ul class="indicators"></ul>'),H=a(this),I=H.attr("data-indicators")||b.indicators;if(H.hasClass("initialized"))return a(this).trigger("carouselNext",[1e-6]),!0;if(b.full_width){b.dist=0;var J=H.find(".carousel-item img").first();J.length?imageHeight=J.load(function(){H.css("height",a(this).height())}):(imageHeight=H.find(".carousel-item").first().height(),H.css("height",imageHeight)),I&&H.find(".carousel-fixed-item").addClass("with-indicators")}H.addClass("initialized"),r=!1,p=x=0,o=[],item_width=H.find(".carousel-item").first().innerWidth(),s=2*item_width+b.padding,H.find(".carousel-item").each(function(b){if(o.push(a(this)[0]),I){var c=a('<li class="indicator-item"></li>');0===b&&c.addClass("active"),c.click(function(){var b=a(this).index();k(b)}),G.append(c)}}),I&&H.append(G),t=o.length,A="transform",["webkit","Moz","O","ms"].every(function(a){var b=a+"Transform";return"undefined"!=typeof document.body.style[b]?(A=b,!1):!0}),window.onresize=g,c(),g(p),a(this).on("carouselNext",function(a,b){void 0===b&&(b=1),x=p+s*b,p!==x&&(w=x-p,C=Date.now(),requestAnimationFrame(i))}),a(this).on("carouselPrev",function(a,b){void 0===b&&(b=1),x=p-s*b,p!==x&&(w=x-p,C=Date.now(),requestAnimationFrame(i))}),a(this).on("carouselSet",function(a,b){void 0===b&&(b=0),k(b)})})},next:function(b){a(this).trigger("carouselNext",[b])},prev:function(b){a(this).trigger("carouselPrev",[b])},set:function(b){a(this).trigger("carouselSet",[b])}};a.fn.carousel=function(c){return b[c]?b[c].apply(this,Array.prototype.slice.call(arguments,1)):"object"!=typeof c&&c?void a.error("Method "+c+" does not exist on jQuery.carousel"):b.init.apply(this,arguments)}}(jQuery);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10), __webpack_require__(10)))
 
 /***/ },
-/* 157 */
+/* 188 */
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"card-panel\">\n   <h1>404 Page Not Found!</h1>\n   <p>Check the website address and try again</p>\n</div>\n"
 
 /***/ },
-/* 158 */
+/* 189 */
 /***/ function(module, exports) {
 
 module.exports = "<h1>Hello about page!</h1>\n"
 
 /***/ },
-/* 159 */
+/* 190 */
 /***/ function(module, exports) {
 
 module.exports = "<!-- App Container -->\n<div class=\"app-container\">\n  <nav-header *ngIf=\"appState.state.isAuthenticated\" class=\"clearfix\"></nav-header>\n  <nav-sidebar *ngIf=\"appState.state.isAuthenticated\"></nav-sidebar>\n\n  <div class=\"content-container\">\n    <div class=\"content\">\n      <router-outlet></router-outlet>\n      <pre class=\"app-state center-block\">this.appState.state = {{ appState.state | json }}</pre>\n    </div>\n    <nav-footer></nav-footer>\n  </div>\n</div>\n<a class=\"hidden\" id=\"manualForceChangeDetection\" (click)=\"manualDetectChanges()\">Manual Detect Changes</a>\n<a class=\"hidden\" id=\"autoForceChangeDetection\" (click)=\"autoDetectChanges()\">Auto Detect Changes</a>\n\n"
 
 /***/ },
-/* 160 */
+/* 191 */
 /***/ function(module, exports) {
 
 module.exports = "<h1>Grid (Editing, Lazy loaded)</h1>\n<div id=\"kendoUI\"></div>\n\n\n<!--<h3>Progress: {{progress}}</h3>-->\n<!--<button md-raised-button color=\"primary\" (click)=\"processInsideAngularZone()\">Process within Angular zone</button>-->\n<!--<button md-raised-button color=\"accent\" (click)=\"processOutsideAngularZone()\">Process outside Angular zone-->\n<!--</button>-->\n"
 
 /***/ },
-/* 161 */
+/* 192 */
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"card-container login-form\">\n  <h1 class=\"text-align-center\">\n    <img src=\"/assets/images/logo-helios-login.png\" alt=\"HELIOS\"/>\n  </h1>\n\n  <!-- The Bootstrap + Angular2 Material way -->\n  <!--  <md-card>\n      <form role=\"form\" (submit)=\"login($event, username.value, password.value)\">\n        <div class=\"form-group\">\n          <input type=\"text\" #username class=\"form-control\" id=\"username\">\n          <label for=\"username\">Username</label>\n        </div>\n        <div class=\"form-group\">\n          <input type=\"password\" #password class=\"form-control\" id=\"password\">\n          <label for=\"password\">Password</label>\n        </div>\n        <div class=\"form-group\">\n          <input type=\"checkbox\" name=\"rememberMe\" id=\"rememberMe\" value=\"\" class=\"rememberMe\" />\n          <label for=\"rememberMe\">Remember me</label>\n          <span class=\"float-right\"><a href=\"/forgotpassword\">Forgot password?</a></span>\n        </div>\n        <button type=\"submit\" class=\"btn btn-primary btn-block login-submit\">Login</button>\n        <button class=\"btn btn-large btn-block waves-effect waves-light login-submit\" type=\"submit\" name=\"action\">Login<i class=\"material-icons right\">send</i></button>\n      </form>\n    </md-card>-->\n\n  <!--The Materialize way-->\n  <div class=\"card\">\n    <div class=\"card-content\">\n      <form role=\"form\" (submit)=\"login($event, username.value, password.value)\">\n        <div class=\"row\">\n          <div class=\"input-field\">\n            <i class=\"material-icons suffix\">account_circle</i>\n            <input type=\"text\" #username class=\"\" id=\"username1\">\n            <label for=\"username1\">Username</label>\n\n          </div>\n        </div>\n        <div class=\"row\">\n          <div class=\"input-field\">\n            <i class=\"material-icons suffix\">lock_outline</i>\n            <input type=\"password\" #password class=\"\" id=\"password1\">\n            <label for=\"password1\">Password</label>\n          </div>\n        </div>\n\n        <div class=\"row\">\n          <div class=\"input-field\">\n            <!--<input type=\"checkbox\" id=\"rememberMe1\" value=\"\" class=\"rememberMe\" />\n            <label for=\"rememberMe1\">Remember me</label>-->\n\n            <input type=\"checkbox\" id=\"filled-in-box1\" class=\"filled-in rememberMe\"/>\n            <label for=\"filled-in-box1\">Remember me</label>\n\n            <span class=\"float-right\"><a href=\"/forgotpassword\">Forgot password?</a></span>\n            <!--<br> <span class=\"float-right\"><a (click)=\"logout()\">Logout</a></span>-->\n\n          </div>\n        </div>\n\n        <button class=\"btn btn-block btn-large waves-effect waves-light login-submit\" type=\"submit\" name=\"action\">\n          Login<i class=\"material-icons right\">send</i></button>\n      </form>\n    </div>\n  </div>\n</div>\n\n"
+module.exports = "<div class=\"card-container login-form\">\r\n    <div class=\"welcome-message text-align-center\">\r\n        <h5>Angular2 Webpack2 DotNET Starter</h5>\r\n        <h3>By IAMtheIAM</h3>\r\n    </div>\r\n\r\n    <!-- The Bootstrap + Angular2 Material way -->\r\n    <!--<md-card>\r\n        <form role=\"form\" (submit)=\"login($event, username.value, password.value)\">\r\n            <div class=\"form-group\">\r\n                <input type=\"text\" #username class=\"form-control\" id=\"username\" value=\"admin\">\r\n                <label for=\"username\">Username</label>\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <input type=\"password\" #password class=\"form-control\" id=\"password\">\r\n                <label for=\"password\">Password</label>\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <input type=\"checkbox\" name=\"rememberMe\" id=\"rememberMe\" value=\"\" class=\"rememberMe\"/>\r\n                <label for=\"rememberMe\">Remember me</label>\r\n                <span class=\"float-right\"><a href=\"/forgotpassword\">Forgot password?</a></span>\r\n            </div>\r\n\r\n            <button md-raised-button color=\"primary\" class=\"btn btn-large btn-block waves-effect waves-light login-submit\" ype=\"submit\">Login<i class=\"material-icons right\">send</i></button>\r\n        </form>\r\n    </md-card>-->\r\n    <!--The Materialize way-->\r\n    <div class=\"card\">\r\n        <div class=\"card-content\">\r\n            <form role=\"form\" (submit)=\"login($event, username.value, password.value)\">\r\n                <div class=\"row\">\r\n                    <div class=\"input-field\">\r\n                        <i class=\"material-icons suffix\">account_circle</i>\r\n                        <input type=\"text\" #username class=\"\" id=\"username1\" value=\"admin\">\r\n                        <label for=\"username1\">Username</label>\r\n\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"input-field\">\r\n                        <i class=\"material-icons suffix\">lock_outline</i>\r\n                        <input type=\"password\" #password class=\"\" id=\"password1\">\r\n                        <label for=\"password1\">Password</label>\r\n                    </div>\r\n                </div>\r\n\r\n                <div class=\"row\">\r\n                    <div class=\"input-field\">\r\n                        <input type=\"checkbox\" id=\"rememberMe1\" value=\"\" class=\"rememberMe\" /><!--<label for=\"rememberMe1\">Remember me</label>-->\r\n\r\n                        <input type=\"checkbox\" id=\"filled-in-box1\" class=\"filled-in rememberMe\" />\r\n                        <label for=\"filled-in-box1\">Remember me</label>\r\n\r\n                        <span class=\"float-right\"><a href=\"/forgotpassword\">Forgot password?</a></span><br>\r\n                        <!--<span class=\"float-right\"><a (click)=\"logout()\">Logout</a></span>-->\r\n\r\n                    </div>\r\n                </div>\r\n\r\n                <button class=\"btn btn-block btn-large waves-effect waves-light login-submit\" type=\"submit\" name=\"action\">\r\n                    Login<i class=\"material-icons right\">send</i>\r\n                </button>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>\r\n"
 
 /***/ },
-/* 162 */
+/* 193 */
 /***/ function(module, exports) {
 
-module.exports = "<!--<img [src]=\"angularclassLogo\" width=\"6%\">-->\n<div class=\"text-align-center\">\n   <p class=\"copyright\">Copyright &copy; 2016 Helios. All rights reserved.</p>\n   <p *ngIf=\"appState.state.isAuthenticated\"><a class=\"btn btn-primary btn-lg\" role=\"button\" (click)=\"logout()\">Logout\n   </a></p>\n</div>\n"
+module.exports = "<!--<img [src]=\"angularclassLogo\" width=\"6%\">-->\n<div class=\"text-align-center\">\n   <p class=\"copyright\">Copyright &copy; 2016 IAMtheIAM. All rights reserved.</p>\n   <p *ngIf=\"appState.state.isAuthenticated\"><a class=\"btn btn-primary btn-lg\" role=\"button\" (click)=\"logout()\">Logout\n   </a></p>\n</div>\n"
 
 /***/ },
-/* 163 */
+/* 194 */
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"navbar-fixed\">\n   <!-- Dropdown Structure -->\n   <ul id=\"dropdown1\" class=\"dropdown-content\">\n      <li><a>one</a></li>\n      <li><a>two</a></li>\n      <li class=\"divider\"></li>\n      <li><a>three</a></li>\n   </ul>\n   <nav>\n      <div class=\"nav-wrapper\">\n         <ul class=\"hide-on-med-and-down\">\n            <li class=\"brand-logo\"><a>IAMtheIAM</a>\n            </li>\n            <li class=\"search\">\n               <div class=\"search-wrapper\">\n                  <input id=\"search-sidenav\" class=\"search-sidenav\" type=\"text\" placeholder=\"Search\"><i\n                  class=\"material-icons\">search</i>\n                  <div class=\"search-results\"></div>\n               </div>\n            </li>\n         </ul>\n         <ul class=\"right hide-on-med-and-down\">\n\n            <li class=\"notifications-alert\"><a><img src=\"/assets/icons/alert-notifications.png\" alt=\"\"></a></li>\n            <li class=\"profile-picture\"><a class=\"dropdown-button\" href=\"\" data-activates=\"dropdown1\"><img\n               src=\"/assets/icons/profile-picture.png\" alt=\"\">Rose Mendez<i\n               class=\"material-icons right\">arrow_drop_down</i></a>\n            </li>\n            <!-- Dropdown Trigger -->\n            <li>\n            </li>\n            <li>\n               <a (click)=\"toggleFullScreen()\"><img [src]=\"fullscreen.activeIcon\" id=\"fullScreenTrigger\"\n                  class=\"not-fullscreen\" width=\"30\" height=\"30\" /></a>\n            </li>\n         </ul>\n      </div>\n   </nav>\n</div>\n\n"
+module.exports = "<div class=\"navbar-fixed\">\n   <!-- Dropdown Structure -->\n   <ul id=\"dropdown1\" class=\"dropdown-content\">\n      <li><a>one</a></li>\n      <li><a>two</a></li>\n      <li class=\"divider\"></li>\n      <li><a>three</a></li>\n   </ul>\n   <nav>\n      <div class=\"nav-wrapper\">\n         <ul class=\"hide-on-med-and-down\">\n            <li class=\"brand-logo\"><a>IAMtheIAM</a>\n            </li>\n            <li class=\"search\">\n               <div class=\"search-wrapper\">\n                  <input id=\"search-sidenav\" class=\"search-sidenav\" type=\"text\" placeholder=\"Search\"><i\n                  class=\"material-icons align-right\">search</i>\n                  <div class=\"search-results\"></div>\n               </div>\n            </li>\n         </ul>\n         <ul class=\"right hide-on-med-and-down\">\n\n            <li class=\"notifications-alert\"><a><img src=\"/assets/icons/alert-notifications.png\" alt=\"\"></a></li>\n            <li class=\"profile-picture\"><a class=\"dropdown-button\" href=\"\" data-activates=\"dropdown1\"><img\n               src=\"/assets/icons/profile-picture.png\" alt=\"\">Rose Mendez<i\n               class=\"material-icons right\">arrow_drop_down</i></a>\n            </li>\n            <!-- Dropdown Trigger -->\n            <li>\n            </li>\n            <li>\n               <a (click)=\"toggleFullScreen()\"><img [src]=\"fullscreen.activeIcon\" id=\"fullScreenTrigger\"\n                  class=\"not-fullscreen\" width=\"30\" height=\"30\" /></a>\n            </li>\n         </ul>\n      </div>\n   </nav>\n</div>\n\n"
 
 /***/ },
-/* 164 */
+/* 195 */
 /***/ function(module, exports) {
 
-module.exports = "<ul id=\"slide-out\" class=\"side-nav fixed\">\n   <li><a class=\"waves-effect waves-darkblue\" router-active [routerLink]=\"['/']\">Index</a></li>\n   <li><a class=\"waves-effect waves-darkblue\" router-active [routerLink]=\"['/ticket']\">Ticket</a></li>\n   <li><a class=\"waves-effect waves-darkblue\" router-active [routerLink]=\"['/grid1']\">Grid (Editing)</a></li>\n   <li><a class=\"waves-effect waves-darkblue\" router-active [routerLink]=\"['/grid2']\">Grid (Nested)</a></li>\n   <li><a class=\"waves-effect waves-darkblue\" router-active [routerLink]=\"['/about']\">About</a></li>\n   <li><a class=\"waves-effect waves-darkblue\" router-active [routerLink]=\"['/login']\">Login</a></li>\n   <li><a class=\"waves-effect waves-darkblue\" router-active [routerLink]=\"['/detail']\">Detail (Sub Module)</a></li>\n\n   <li class=\"no-padding\">\n      <ul class=\"collapsible\" data-collapsible=\"expandable\">\n         <li>\n            <a class=\"waves-effect waves-darkblue\" class=\"collapsible-header\">Iframe Module<i class=\"mdi-navigation-arrow-drop-down\"></i></a>\n            <div class=\"collapsible-body\">\n               <ul>\n                  <li><a class=\"waves-effect waves-darkblue\" router-active [routerLink]=\"['/iframe/webpage1']\">Webpage 1</a></li>\n                  <li><a class=\"waves-effect waves-darkblue\" router-active [routerLink]=\"['/iframe/webpage2']\">Webpage 2</a></li>\n               </ul>\n            </div>\n         </li>\n      </ul>\n   </li>\n</ul>\n<a class=\"waves-effect waves-darkblue button-collapse\" href=\"#\" data-activates=\"slide-out\"><i class=\"mdi-navigation-menu\"></i></a>\n\n<!--<md-toolbar-row>-->\n<!--<a class=\"waves-effect waves-darkblue\" class=\"waves-effect waves-darkblue waves-light btn\"><i class=\"material-icons left\">cloud</i>button</a>-->\n\n<!--<button md-button router-active [routerLink]=\"['/']\">Index</button>-->\n<!--</md-toolbar-row>-->\n\n<!--<md-toolbar-row>-->\n<!--<button md-button router-active [routerLink]=\"['/home']\">Home</button>-->\n<!--</md-toolbar-row>-->\n\n<!--<md-toolbar-row>-->\n<!--<button md-button router-active [routerLink]=\"['/about']\">About</button>-->\n<!--</md-toolbar-row>-->\n\n<!--<md-toolbar-row>-->\n<!--<button md-button router-active [routerLink]=\"['/login']\">Login</button>-->\n<!--</md-toolbar-row>-->\n\n"
+module.exports = "<ul id=\"slide-out\" class=\"side-nav fixed\">\n   <li><a class=\"waves-effect waves-darkblue\" router-active [routerLink]=\"['/']\">Index</a></li>\n   <li><a class=\"waves-effect waves-darkblue\" router-active [routerLink]=\"['/ticket']\">Ticket</a></li>\n   <li><a class=\"waves-effect waves-darkblue\" router-active [routerLink]=\"['/grid1']\">Grid (Editing)</a></li>\n   <li><a class=\"waves-effect waves-darkblue\" router-active [routerLink]=\"['/grid2']\">Grid (Nested)</a></li>\n   <li><a class=\"waves-effect waves-darkblue\" router-active [routerLink]=\"['/about']\">About</a></li>\n   <li><a class=\"waves-effect waves-darkblue\" router-active [routerLink]=\"['/login']\">Login</a></li>\n   <li><a class=\"waves-effect waves-darkblue\" router-active [routerLink]=\"['/detail']\">Detail (Sub Module)</a></li>\n\n   <li class=\"no-padding\">\n      <ul class=\"collapsible\" data-collapsible=\"expandable\">\n         <li>\n            <a class=\"waves-effect waves-darkblue\" class=\"collapsible-header\">Iframe Module<i class=\"mdi-navigation-arrow-drop-down\"></i></a>\n            <div class=\"collapsible-body\">\n               <ul>\n                  <li><a class=\"waves-effect waves-darkblue\" router-active [routerLink]=\"['/iframe/webpage1']\">Bing Images</a></li>\n                  <li><a class=\"waves-effect waves-darkblue\" router-active [routerLink]=\"['/iframe/webpage2']\">Bing Search</a></li>\n               </ul>\n            </div>\n         </li>\n      </ul>\n   </li>\n</ul>\n<a class=\"waves-effect waves-darkblue button-collapse\" href=\"#\" data-activates=\"slide-out\"><i class=\"mdi-navigation-menu\"></i></a>\n\n<!--<md-toolbar-row>-->\n<!--<a class=\"waves-effect waves-darkblue\" class=\"waves-effect waves-darkblue waves-light btn\"><i class=\"material-icons left\">cloud</i>button</a>-->\n\n<!--<button md-button router-active [routerLink]=\"['/']\">Index</button>-->\n<!--</md-toolbar-row>-->\n\n<!--<md-toolbar-row>-->\n<!--<button md-button router-active [routerLink]=\"['/home']\">Home</button>-->\n<!--</md-toolbar-row>-->\n\n<!--<md-toolbar-row>-->\n<!--<button md-button router-active [routerLink]=\"['/about']\">About</button>-->\n<!--</md-toolbar-row>-->\n\n<!--<md-toolbar-row>-->\n<!--<button md-button router-active [routerLink]=\"['/login']\">Login</button>-->\n<!--</md-toolbar-row>-->\n\n"
 
 /***/ },
-/* 165 */
+/* 196 */
 /***/ function(module, exports) {
 
 module.exports = "<h1>Grid (Nested, Lazy loaded)</h1>\n<div id=\"kendoUI-nested\"></div>\n"
 
 /***/ },
-/* 166 */
+/* 197 */
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"row\">\n   <div class=\"ticket-action-container card-panel\">\n\n      <div class=\"col_subscriber-search input-field\">\n         <form #subscriberSearchForm=\"ngForm\" (ngSubmit)=\"searchSubscriberByID(inputSubscriberID.value)\" autocomplete=\"off\">\n            <input #inputSubscriberID\n               id=\"subscriberID\" type=\"text\" class=\"validate\" autofocus\n               [value]=\"ticketID\"\n               (input)=\"subscriberID = $event.target.value\"\n               placeholder=\"Subscriber ID\">\n            <!--<label for=\"subscriberID\">Subscriber ID</label>-->\n\n            <button class=\"btn waves-effect waves-light\" type=\"submit\" name=\"action\">Search\n               <i class=\"material-icons right\">search</i>\n            </button>\n         </form>\n\n         <div class=\"input-field\">\n            <select>\n               <option value=\"\" disabled selected>Contact Type</option>\n               <option value=\"1\">Phone Call</option>\n               <option value=\"2\">Email</option>\n               <option value=\"3\">Walk In</option>\n            </select>\n         </div>\n      </div> <!--end .inputfield.col.s2-->\n\n      <div class=\"col_problem-statement\">\n         <ckeditor [ckEditorInstanceID]=\"'ckeditor_problem-statement'\"></ckeditor>\n      </div> <!--end .col.s4-->\n\n      <div class=\"col_support-info\">\n\n\n         <div class=\"input-field\">\n            <select>\n               <option value=\"\" disabled selected>Support Type</option>\n               <option value=\"1\">Phone Call</option>\n               <option value=\"2\">Email</option>\n               <option value=\"3\">Walk In</option>\n            </select>\n         </div>\n         <div class=\"input-field\">\n            <select>\n               <option value=\"\" disabled selected>Product</option>\n               <option value=\"1\">Phone Call</option>\n               <option value=\"2\">Email</option>\n               <option value=\"3\">Walk In</option>\n            </select>\n         </div>\n\n         <div class=\"input-field\">\n            <select>\n               <option value=\"\" disabled selected>Environment</option>\n               <option value=\"1\">Phone Call</option>\n               <option value=\"2\">Email</option>\n               <option value=\"3\">Walk In</option>\n            </select>\n         </div>\n\n      </div> <!--end .col.s2-->\n\n      <div class=\"col_solution\">\n         <ckeditor [ckEditorInstanceID]=\"'ckeditor_solution'\"></ckeditor>\n\n\n      </div> <!--end .col.s3-->\n\n      <div class=\"col_action-buttons\">\n\n         <div class=\"input-field\">\n            <select>\n               <option value=\"\" disabled selected>Status</option>\n               <option value=\"1\">Phone Call</option>\n               <option value=\"2\">Email</option>\n               <option value=\"3\">Walk In</option>\n            </select>\n         </div>\n         <div class=\"input-field\">\n            <select>\n               <option value=\"\" disabled selected>Assignee</option>\n               <option value=\"1\">Phone Call</option>\n               <option value=\"2\">Email</option>\n               <option value=\"3\">Walk In</option>\n            </select>\n         </div>\n         <div class=\"action-buttons_container\">\n\n            <button class=\"green btn waves-effect waves-light action-button\" type=\"submit\" name=\"action\">Resolve\n               <i class=\"material-icons right\">check</i>\n            </button>\n\n            <button class=\"orange btn waves-effect waves-light action-button\" type=\"submit\" name=\"action\">Hold\n               <i class=\"material-icons right\">pause</i>\n            </button>\n\n\n         </div>\n\n      </div> <!--end .col.s2-->\n\n   </div> <!--end .ticket-action-container.card-panel--></div>\n\n\n<div class=\"row\">\n   <div class=\"col s3\">\n      <div class=\"card-panel\">\n         <pre *ngIf=\"subscriberFoundByID\"><code>{{ subscriberFoundByID | json }}</code></pre>\n      </div>\n   </div>\n   <div class=\"col s3\">\n      <div class=\"card-panel\">\n          <span>I am a very simple card. I am good at containing small bits of information.\n          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\n          </span>\n      </div>\n   </div>\n   <div class=\"col s6\">\n      <div class=\"card-panel\">\n          <span>I am a very simple card. I am good at containing small bits of information.\n          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\n          </span>\n      </div>\n   </div>\n</div>\n\n"
+module.exports = "<div class=\"row\">\r\n    <div class=\"ticket-action-container card-panel\">\r\n        <div class=\"col_subscriber-search input-field\">\r\n            <form #subscriberSearchForm=\"ngForm\" (ngSubmit)=\"searchSubscriberByID(inputSubscriberID.value)\" autocomplete=\"off\">\r\n                <input #inputSubscriberID\r\n                       id=\"subscriberID\" type=\"text\" class=\"validate\" autofocus\r\n                       [value]=\"ticketID\"\r\n                       (input)=\"subscriberID = $event.target.value\"\r\n                       placeholder=\"Subscriber ID\">\r\n                <!--<label for=\"subscriberID\">Subscriber ID</label>-->\r\n                <i class=\"material-icons align-right\" type=\"submit\" name=\"action\">search</i>\r\n                <!--<button class=\"btn waves-effect waves-light\" type=\"submit\" name=\"action\">Search-->\r\n                <!--<i class=\"material-icons right\">search</i>-->\r\n                <!--</button>-->\r\n            </form>\r\n            <div class=\"input-field\">\r\n                <select>\r\n                    <option value=\"\" disabled selected>Contact Type</option>\r\n                    <option value=\"1\">Phone Call</option>\r\n                    <option value=\"2\">Email</option>\r\n                    <option value=\"3\">Walk In</option>\r\n                </select>\r\n            </div>\r\n        </div> <!--end .inputfield.col.s2-->\r\n        <div class=\"col_problem-statement\">\r\n            <ckeditor [ckEditorInstanceID]=\"'ckeditor_problem-statement'\"></ckeditor>\r\n        </div> <!--end .col.s4-->\r\n\r\n        <div class=\"col_solution\">\r\n            <ckeditor [ckEditorInstanceID]=\"'ckeditor_solution'\"></ckeditor>\r\n\r\n        </div> <!--end .col.s3-->\r\n        <div class=\"col_action-buttons\">\r\n            <div class=\"input-field\">\r\n                <select>\r\n                    <option value=\"\" disabled selected>Status</option>\r\n                    <option value=\"1\">Phone Call</option>\r\n                    <option value=\"2\">Email</option>\r\n                    <option value=\"3\">Walk In</option>\r\n                </select>\r\n            </div>\r\n            <div class=\"input-field\">\r\n                <select>\r\n                    <option value=\"\" disabled selected>Assignee</option>\r\n                    <option value=\"1\">Phone Call</option>\r\n                    <option value=\"2\">Email</option>\r\n                    <option value=\"3\">Walk In</option>\r\n                </select>\r\n            </div>\r\n            <div class=\"action-buttons_container\">\r\n                <button class=\"green btn waves-effect waves-light action-button\" type=\"submit\" name=\"action\">\r\n                    Resolve\r\n                    <i class=\"material-icons right\">check</i>\r\n                </button>\r\n                <button class=\"orange btn waves-effect waves-light action-button\" type=\"submit\" name=\"action\">\r\n                    Hold\r\n                    <i class=\"material-icons right\">pause</i>\r\n                </button>\r\n\r\n            </div>\r\n        </div> <!--end .col.s2-->\r\n    </div> <!--end .ticket-action-container.card-panel-->\r\n</div>\r\n\r\n<div class=\"row\">\r\n    <div class=\"col s4\">\r\n        <div class=\"card-panel\">\r\n            <span>\r\n                I am a very simple card. I am good at containing small bits of information.\r\n                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\r\n            </span>\r\n            <pre *ngIf=\"subscriberFoundByID\"><code>{{ subscriberFoundByID | json }}</code></pre>\r\n        </div>\r\n    </div>\r\n    <div class=\"col s4\">\r\n        <div class=\"card-panel\">\r\n            <span>\r\n                I am a very simple card. I am good at containing small bits of information.\r\n                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\r\n            </span>\r\n        </div>\r\n    </div>\r\n    <div class=\"col s4\">\r\n        <div class=\"card-panel\">\r\n            <span>\r\n                I am a very simple card. I am good at containing small bits of information.\r\n                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\r\n            </span>\r\n        </div>\r\n    </div>\r\n</div>\r\n"
 
 /***/ },
-/* 167 */
+/* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/*! *****************************************************************************
@@ -31452,10 +33522,10 @@ var Reflect;
                 Function("return this;")());
 })(Reflect || (Reflect = {}));
 //# sourceMappingURL=Reflect.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(62)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(45)))
 
 /***/ },
-/* 168 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31466,109 +33536,70 @@ var Reflect;
 // definition
 var Subject_1 = __webpack_require__(9);
 exports.Subject = Subject_1.Subject;
+exports.AnonymousSubject = Subject_1.AnonymousSubject;
 /* tslint:enable:no-unused-variable */
 var Observable_1 = __webpack_require__(1);
 exports.Observable = Observable_1.Observable;
 // statics
 /* tslint:disable:no-use-before-declare */
-__webpack_require__(169);
-__webpack_require__(170);
-__webpack_require__(445);
-__webpack_require__(171);
-__webpack_require__(172);
-__webpack_require__(175);
-__webpack_require__(176);
-__webpack_require__(446);
-__webpack_require__(447);
-__webpack_require__(177);
-__webpack_require__(178);
-__webpack_require__(179);
-__webpack_require__(180);
-__webpack_require__(448);
-__webpack_require__(181);
-__webpack_require__(185);
-__webpack_require__(182);
-__webpack_require__(96);
-__webpack_require__(183);
-__webpack_require__(184);
-__webpack_require__(186);
-__webpack_require__(188);
-__webpack_require__(449);
-__webpack_require__(187);
-__webpack_require__(189);
-//dom
-__webpack_require__(173);
-__webpack_require__(174);
-//operators
-__webpack_require__(192);
-__webpack_require__(193);
-__webpack_require__(194);
-__webpack_require__(195);
-__webpack_require__(196);
-__webpack_require__(197);
-__webpack_require__(450);
-__webpack_require__(198);
-__webpack_require__(199);
 __webpack_require__(200);
 __webpack_require__(201);
+__webpack_require__(475);
 __webpack_require__(202);
 __webpack_require__(203);
-__webpack_require__(204);
-__webpack_require__(209);
-__webpack_require__(205);
-__webpack_require__(433);
 __webpack_require__(206);
 __webpack_require__(207);
+__webpack_require__(476);
+__webpack_require__(477);
 __webpack_require__(208);
+__webpack_require__(209);
 __webpack_require__(210);
 __webpack_require__(211);
-__webpack_require__(451);
+__webpack_require__(478);
 __webpack_require__(212);
-__webpack_require__(213);
 __webpack_require__(216);
-__webpack_require__(217);
-__webpack_require__(218);
+__webpack_require__(213);
+__webpack_require__(118);
 __webpack_require__(214);
-__webpack_require__(452);
+__webpack_require__(215);
+__webpack_require__(217);
 __webpack_require__(219);
+__webpack_require__(479);
+__webpack_require__(218);
 __webpack_require__(220);
-__webpack_require__(221);
-__webpack_require__(222);
+//dom
+__webpack_require__(204);
+__webpack_require__(205);
+//operators
 __webpack_require__(223);
 __webpack_require__(224);
 __webpack_require__(225);
-__webpack_require__(190);
-__webpack_require__(191);
 __webpack_require__(226);
-__webpack_require__(453);
-__webpack_require__(215);
-__webpack_require__(454);
-__webpack_require__(455);
 __webpack_require__(227);
+__webpack_require__(480);
 __webpack_require__(228);
 __webpack_require__(229);
 __webpack_require__(230);
-__webpack_require__(456);
 __webpack_require__(231);
 __webpack_require__(232);
 __webpack_require__(233);
 __webpack_require__(234);
+__webpack_require__(239);
 __webpack_require__(235);
+__webpack_require__(463);
 __webpack_require__(236);
 __webpack_require__(237);
 __webpack_require__(238);
-__webpack_require__(457);
-__webpack_require__(239);
 __webpack_require__(240);
-__webpack_require__(242);
 __webpack_require__(241);
+__webpack_require__(481);
+__webpack_require__(242);
 __webpack_require__(243);
-__webpack_require__(244);
-__webpack_require__(245);
 __webpack_require__(246);
 __webpack_require__(247);
 __webpack_require__(248);
-__webpack_require__(458);
+__webpack_require__(244);
+__webpack_require__(482);
 __webpack_require__(249);
 __webpack_require__(250);
 __webpack_require__(251);
@@ -31576,13 +33607,18 @@ __webpack_require__(252);
 __webpack_require__(253);
 __webpack_require__(254);
 __webpack_require__(255);
+__webpack_require__(221);
+__webpack_require__(222);
 __webpack_require__(256);
+__webpack_require__(483);
+__webpack_require__(245);
+__webpack_require__(484);
+__webpack_require__(485);
 __webpack_require__(257);
 __webpack_require__(258);
 __webpack_require__(259);
-__webpack_require__(459);
 __webpack_require__(260);
-__webpack_require__(460);
+__webpack_require__(486);
 __webpack_require__(261);
 __webpack_require__(262);
 __webpack_require__(263);
@@ -31591,61 +33627,95 @@ __webpack_require__(265);
 __webpack_require__(266);
 __webpack_require__(267);
 __webpack_require__(268);
+__webpack_require__(487);
 __webpack_require__(269);
-__webpack_require__(461);
 __webpack_require__(270);
-__webpack_require__(271);
 __webpack_require__(272);
+__webpack_require__(271);
 __webpack_require__(273);
 __webpack_require__(274);
 __webpack_require__(275);
 __webpack_require__(276);
 __webpack_require__(277);
 __webpack_require__(278);
+__webpack_require__(488);
+__webpack_require__(279);
+__webpack_require__(280);
+__webpack_require__(281);
+__webpack_require__(282);
+__webpack_require__(283);
+__webpack_require__(284);
+__webpack_require__(285);
+__webpack_require__(286);
+__webpack_require__(287);
+__webpack_require__(288);
+__webpack_require__(289);
+__webpack_require__(489);
+__webpack_require__(290);
+__webpack_require__(490);
+__webpack_require__(291);
+__webpack_require__(292);
+__webpack_require__(293);
+__webpack_require__(294);
+__webpack_require__(295);
+__webpack_require__(296);
+__webpack_require__(297);
+__webpack_require__(298);
+__webpack_require__(299);
+__webpack_require__(491);
+__webpack_require__(300);
+__webpack_require__(301);
+__webpack_require__(302);
+__webpack_require__(303);
+__webpack_require__(304);
+__webpack_require__(305);
+__webpack_require__(306);
+__webpack_require__(307);
+__webpack_require__(308);
 /* tslint:disable:no-unused-variable */
 var Subscription_1 = __webpack_require__(14);
 exports.Subscription = Subscription_1.Subscription;
 var Subscriber_1 = __webpack_require__(2);
 exports.Subscriber = Subscriber_1.Subscriber;
-var AsyncSubject_1 = __webpack_require__(40);
+var AsyncSubject_1 = __webpack_require__(43);
 exports.AsyncSubject = AsyncSubject_1.AsyncSubject;
-var ReplaySubject_1 = __webpack_require__(43);
+var ReplaySubject_1 = __webpack_require__(67);
 exports.ReplaySubject = ReplaySubject_1.ReplaySubject;
-var BehaviorSubject_1 = __webpack_require__(92);
+var BehaviorSubject_1 = __webpack_require__(114);
 exports.BehaviorSubject = BehaviorSubject_1.BehaviorSubject;
-var MulticastObservable_1 = __webpack_require__(71);
-exports.MulticastObservable = MulticastObservable_1.MulticastObservable;
-var ConnectableObservable_1 = __webpack_require__(53);
+var ConnectableObservable_1 = __webpack_require__(92);
 exports.ConnectableObservable = ConnectableObservable_1.ConnectableObservable;
-var Notification_1 = __webpack_require__(42);
+var Notification_1 = __webpack_require__(46);
 exports.Notification = Notification_1.Notification;
-var EmptyError_1 = __webpack_require__(91);
+var EmptyError_1 = __webpack_require__(113);
 exports.EmptyError = EmptyError_1.EmptyError;
-var ArgumentOutOfRangeError_1 = __webpack_require__(64);
+var ArgumentOutOfRangeError_1 = __webpack_require__(69);
 exports.ArgumentOutOfRangeError = ArgumentOutOfRangeError_1.ArgumentOutOfRangeError;
-var ObjectUnsubscribedError_1 = __webpack_require__(438);
+var ObjectUnsubscribedError_1 = __webpack_require__(468);
 exports.ObjectUnsubscribedError = ObjectUnsubscribedError_1.ObjectUnsubscribedError;
-var UnsubscriptionError_1 = __webpack_require__(470);
+var TimeoutError_1 = __webpack_require__(106);
+exports.TimeoutError = TimeoutError_1.TimeoutError;
+var UnsubscriptionError_1 = __webpack_require__(500);
 exports.UnsubscriptionError = UnsubscriptionError_1.UnsubscriptionError;
-var timeInterval_1 = __webpack_require__(79);
+var timeInterval_1 = __webpack_require__(100);
 exports.TimeInterval = timeInterval_1.TimeInterval;
-var timestamp_1 = __webpack_require__(80);
+var timestamp_1 = __webpack_require__(101);
 exports.Timestamp = timestamp_1.Timestamp;
-var TestScheduler_1 = __webpack_require__(386);
+var TestScheduler_1 = __webpack_require__(415);
 exports.TestScheduler = TestScheduler_1.TestScheduler;
-var VirtualTimeScheduler_1 = __webpack_require__(81);
+var VirtualTimeScheduler_1 = __webpack_require__(102);
 exports.VirtualTimeScheduler = VirtualTimeScheduler_1.VirtualTimeScheduler;
-var AjaxObservable_1 = __webpack_require__(72);
+var AjaxObservable_1 = __webpack_require__(93);
 exports.AjaxResponse = AjaxObservable_1.AjaxResponse;
 exports.AjaxError = AjaxObservable_1.AjaxError;
 exports.AjaxTimeoutError = AjaxObservable_1.AjaxTimeoutError;
-var asap_1 = __webpack_require__(82);
+var asap_1 = __webpack_require__(103);
 var async_1 = __webpack_require__(13);
-var queue_1 = __webpack_require__(469);
-var animationFrame_1 = __webpack_require__(383);
-var rxSubscriber_1 = __webpack_require__(422);
-var iterator_1 = __webpack_require__(90);
-var observable_1 = __webpack_require__(421);
+var queue_1 = __webpack_require__(499);
+var animationFrame_1 = __webpack_require__(412);
+var rxSubscriber_1 = __webpack_require__(452);
+var iterator_1 = __webpack_require__(112);
+var observable_1 = __webpack_require__(451);
 /* tslint:enable:no-unused-variable */
 /**
  * @typedef {Object} Rx.Scheduler
@@ -31689,356 +33759,15 @@ exports.Symbol = Symbol;
 //# sourceMappingURL=Rx.js.map
 
 /***/ },
-/* 169 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var bindCallback_1 = __webpack_require__(292);
-Observable_1.Observable.bindCallback = bindCallback_1.bindCallback;
-//# sourceMappingURL=bindCallback.js.map
-
-/***/ },
-/* 170 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var bindNodeCallback_1 = __webpack_require__(293);
-Observable_1.Observable.bindNodeCallback = bindNodeCallback_1.bindNodeCallback;
-//# sourceMappingURL=bindNodeCallback.js.map
-
-/***/ },
-/* 171 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var concat_1 = __webpack_require__(294);
-Observable_1.Observable.concat = concat_1.concat;
-//# sourceMappingURL=concat.js.map
-
-/***/ },
-/* 172 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var defer_1 = __webpack_require__(295);
-Observable_1.Observable.defer = defer_1.defer;
-//# sourceMappingURL=defer.js.map
-
-/***/ },
-/* 173 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var ajax_1 = __webpack_require__(297);
-Observable_1.Observable.ajax = ajax_1.ajax;
-//# sourceMappingURL=ajax.js.map
-
-/***/ },
-/* 174 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var webSocket_1 = __webpack_require__(298);
-Observable_1.Observable.webSocket = webSocket_1.webSocket;
-//# sourceMappingURL=webSocket.js.map
-
-/***/ },
-/* 175 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var empty_1 = __webpack_require__(299);
-Observable_1.Observable.empty = empty_1.empty;
-//# sourceMappingURL=empty.js.map
-
-/***/ },
-/* 176 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var forkJoin_1 = __webpack_require__(300);
-Observable_1.Observable.forkJoin = forkJoin_1.forkJoin;
-//# sourceMappingURL=forkJoin.js.map
-
-/***/ },
-/* 177 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var fromEventPattern_1 = __webpack_require__(301);
-Observable_1.Observable.fromEventPattern = fromEventPattern_1.fromEventPattern;
-//# sourceMappingURL=fromEventPattern.js.map
-
-/***/ },
-/* 178 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var fromPromise_1 = __webpack_require__(420);
-Observable_1.Observable.fromPromise = fromPromise_1.fromPromise;
-//# sourceMappingURL=fromPromise.js.map
-
-/***/ },
-/* 179 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var GenerateObservable_1 = __webpack_require__(284);
-Observable_1.Observable.generate = GenerateObservable_1.GenerateObservable.create;
-//# sourceMappingURL=generate.js.map
-
-/***/ },
-/* 180 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var if_1 = __webpack_require__(302);
-Observable_1.Observable.if = if_1._if;
-//# sourceMappingURL=if.js.map
-
-/***/ },
-/* 181 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var merge_1 = __webpack_require__(303);
-Observable_1.Observable.merge = merge_1.merge;
-//# sourceMappingURL=merge.js.map
-
-/***/ },
-/* 182 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var never_1 = __webpack_require__(304);
-Observable_1.Observable.never = never_1.never;
-//# sourceMappingURL=never.js.map
-
-/***/ },
-/* 183 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var onErrorResumeNext_1 = __webpack_require__(77);
-Observable_1.Observable.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNextStatic;
-//# sourceMappingURL=onErrorResumeNext.js.map
-
-/***/ },
-/* 184 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var pairs_1 = __webpack_require__(305);
-Observable_1.Observable.pairs = pairs_1.pairs;
-//# sourceMappingURL=pairs.js.map
-
-/***/ },
-/* 185 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var race_1 = __webpack_require__(78);
-Observable_1.Observable.race = race_1.raceStatic;
-//# sourceMappingURL=race.js.map
-
-/***/ },
-/* 186 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var range_1 = __webpack_require__(306);
-Observable_1.Observable.range = range_1.range;
-//# sourceMappingURL=range.js.map
-
-/***/ },
-/* 187 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var timer_1 = __webpack_require__(307);
-Observable_1.Observable.timer = timer_1.timer;
-//# sourceMappingURL=timer.js.map
-
-/***/ },
-/* 188 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var using_1 = __webpack_require__(308);
-Observable_1.Observable.using = using_1.using;
-//# sourceMappingURL=using.js.map
-
-/***/ },
-/* 189 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var zip_1 = __webpack_require__(309);
-Observable_1.Observable.zip = zip_1.zip;
-//# sourceMappingURL=zip.js.map
-
-/***/ },
-/* 190 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var audit_1 = __webpack_require__(310);
-Observable_1.Observable.prototype.audit = audit_1.audit;
-//# sourceMappingURL=audit.js.map
-
-/***/ },
-/* 191 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var auditTime_1 = __webpack_require__(311);
-Observable_1.Observable.prototype.auditTime = auditTime_1.auditTime;
-//# sourceMappingURL=auditTime.js.map
-
-/***/ },
-/* 192 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var buffer_1 = __webpack_require__(312);
-Observable_1.Observable.prototype.buffer = buffer_1.buffer;
-//# sourceMappingURL=buffer.js.map
-
-/***/ },
-/* 193 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var bufferCount_1 = __webpack_require__(313);
-Observable_1.Observable.prototype.bufferCount = bufferCount_1.bufferCount;
-//# sourceMappingURL=bufferCount.js.map
-
-/***/ },
-/* 194 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var bufferTime_1 = __webpack_require__(314);
-Observable_1.Observable.prototype.bufferTime = bufferTime_1.bufferTime;
-//# sourceMappingURL=bufferTime.js.map
-
-/***/ },
-/* 195 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var bufferToggle_1 = __webpack_require__(315);
-Observable_1.Observable.prototype.bufferToggle = bufferToggle_1.bufferToggle;
-//# sourceMappingURL=bufferToggle.js.map
-
-/***/ },
-/* 196 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var bufferWhen_1 = __webpack_require__(316);
-Observable_1.Observable.prototype.bufferWhen = bufferWhen_1.bufferWhen;
-//# sourceMappingURL=bufferWhen.js.map
-
-/***/ },
-/* 197 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var cache_1 = __webpack_require__(317);
-Observable_1.Observable.prototype.cache = cache_1.cache;
-//# sourceMappingURL=cache.js.map
-
-/***/ },
-/* 198 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var combineAll_1 = __webpack_require__(318);
-Observable_1.Observable.prototype.combineAll = combineAll_1.combineAll;
-//# sourceMappingURL=combineAll.js.map
-
-/***/ },
-/* 199 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(1);
-var combineLatest_1 = __webpack_require__(97);
-Observable_1.Observable.prototype.combineLatest = combineLatest_1.combineLatest;
-//# sourceMappingURL=combineLatest.js.map
-
-/***/ },
 /* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var concat_1 = __webpack_require__(54);
-Observable_1.Observable.prototype.concat = concat_1.concat;
-//# sourceMappingURL=concat.js.map
+var bindCallback_1 = __webpack_require__(322);
+Observable_1.Observable.bindCallback = bindCallback_1.bindCallback;
+//# sourceMappingURL=bindCallback.js.map
 
 /***/ },
 /* 201 */
@@ -32047,9 +33776,9 @@ Observable_1.Observable.prototype.concat = concat_1.concat;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var concatAll_1 = __webpack_require__(435);
-Observable_1.Observable.prototype.concatAll = concatAll_1.concatAll;
-//# sourceMappingURL=concatAll.js.map
+var bindNodeCallback_1 = __webpack_require__(323);
+Observable_1.Observable.bindNodeCallback = bindNodeCallback_1.bindNodeCallback;
+//# sourceMappingURL=bindNodeCallback.js.map
 
 /***/ },
 /* 202 */
@@ -32058,9 +33787,9 @@ Observable_1.Observable.prototype.concatAll = concatAll_1.concatAll;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var concatMap_1 = __webpack_require__(319);
-Observable_1.Observable.prototype.concatMap = concatMap_1.concatMap;
-//# sourceMappingURL=concatMap.js.map
+var concat_1 = __webpack_require__(324);
+Observable_1.Observable.concat = concat_1.concat;
+//# sourceMappingURL=concat.js.map
 
 /***/ },
 /* 203 */
@@ -32069,9 +33798,9 @@ Observable_1.Observable.prototype.concatMap = concatMap_1.concatMap;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var concatMapTo_1 = __webpack_require__(320);
-Observable_1.Observable.prototype.concatMapTo = concatMapTo_1.concatMapTo;
-//# sourceMappingURL=concatMapTo.js.map
+var defer_1 = __webpack_require__(325);
+Observable_1.Observable.defer = defer_1.defer;
+//# sourceMappingURL=defer.js.map
 
 /***/ },
 /* 204 */
@@ -32080,9 +33809,9 @@ Observable_1.Observable.prototype.concatMapTo = concatMapTo_1.concatMapTo;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var count_1 = __webpack_require__(321);
-Observable_1.Observable.prototype.count = count_1.count;
-//# sourceMappingURL=count.js.map
+var ajax_1 = __webpack_require__(327);
+Observable_1.Observable.ajax = ajax_1.ajax;
+//# sourceMappingURL=ajax.js.map
 
 /***/ },
 /* 205 */
@@ -32091,9 +33820,9 @@ Observable_1.Observable.prototype.count = count_1.count;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var debounce_1 = __webpack_require__(322);
-Observable_1.Observable.prototype.debounce = debounce_1.debounce;
-//# sourceMappingURL=debounce.js.map
+var webSocket_1 = __webpack_require__(328);
+Observable_1.Observable.webSocket = webSocket_1.webSocket;
+//# sourceMappingURL=webSocket.js.map
 
 /***/ },
 /* 206 */
@@ -32102,9 +33831,9 @@ Observable_1.Observable.prototype.debounce = debounce_1.debounce;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var defaultIfEmpty_1 = __webpack_require__(323);
-Observable_1.Observable.prototype.defaultIfEmpty = defaultIfEmpty_1.defaultIfEmpty;
-//# sourceMappingURL=defaultIfEmpty.js.map
+var empty_1 = __webpack_require__(329);
+Observable_1.Observable.empty = empty_1.empty;
+//# sourceMappingURL=empty.js.map
 
 /***/ },
 /* 207 */
@@ -32113,9 +33842,9 @@ Observable_1.Observable.prototype.defaultIfEmpty = defaultIfEmpty_1.defaultIfEmp
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var delay_1 = __webpack_require__(324);
-Observable_1.Observable.prototype.delay = delay_1.delay;
-//# sourceMappingURL=delay.js.map
+var forkJoin_1 = __webpack_require__(330);
+Observable_1.Observable.forkJoin = forkJoin_1.forkJoin;
+//# sourceMappingURL=forkJoin.js.map
 
 /***/ },
 /* 208 */
@@ -32124,9 +33853,9 @@ Observable_1.Observable.prototype.delay = delay_1.delay;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var delayWhen_1 = __webpack_require__(325);
-Observable_1.Observable.prototype.delayWhen = delayWhen_1.delayWhen;
-//# sourceMappingURL=delayWhen.js.map
+var fromEventPattern_1 = __webpack_require__(331);
+Observable_1.Observable.fromEventPattern = fromEventPattern_1.fromEventPattern;
+//# sourceMappingURL=fromEventPattern.js.map
 
 /***/ },
 /* 209 */
@@ -32135,9 +33864,9 @@ Observable_1.Observable.prototype.delayWhen = delayWhen_1.delayWhen;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var dematerialize_1 = __webpack_require__(326);
-Observable_1.Observable.prototype.dematerialize = dematerialize_1.dematerialize;
-//# sourceMappingURL=dematerialize.js.map
+var fromPromise_1 = __webpack_require__(450);
+Observable_1.Observable.fromPromise = fromPromise_1.fromPromise;
+//# sourceMappingURL=fromPromise.js.map
 
 /***/ },
 /* 210 */
@@ -32146,9 +33875,9 @@ Observable_1.Observable.prototype.dematerialize = dematerialize_1.dematerialize;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var distinct_1 = __webpack_require__(73);
-Observable_1.Observable.prototype.distinct = distinct_1.distinct;
-//# sourceMappingURL=distinct.js.map
+var GenerateObservable_1 = __webpack_require__(314);
+Observable_1.Observable.generate = GenerateObservable_1.GenerateObservable.create;
+//# sourceMappingURL=generate.js.map
 
 /***/ },
 /* 211 */
@@ -32157,9 +33886,9 @@ Observable_1.Observable.prototype.distinct = distinct_1.distinct;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var distinctKey_1 = __webpack_require__(327);
-Observable_1.Observable.prototype.distinctKey = distinctKey_1.distinctKey;
-//# sourceMappingURL=distinctKey.js.map
+var if_1 = __webpack_require__(332);
+Observable_1.Observable.if = if_1._if;
+//# sourceMappingURL=if.js.map
 
 /***/ },
 /* 212 */
@@ -32168,9 +33897,9 @@ Observable_1.Observable.prototype.distinctKey = distinctKey_1.distinctKey;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var distinctUntilKeyChanged_1 = __webpack_require__(328);
-Observable_1.Observable.prototype.distinctUntilKeyChanged = distinctUntilKeyChanged_1.distinctUntilKeyChanged;
-//# sourceMappingURL=distinctUntilKeyChanged.js.map
+var merge_1 = __webpack_require__(333);
+Observable_1.Observable.merge = merge_1.merge;
+//# sourceMappingURL=merge.js.map
 
 /***/ },
 /* 213 */
@@ -32179,10 +33908,9 @@ Observable_1.Observable.prototype.distinctUntilKeyChanged = distinctUntilKeyChan
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var do_1 = __webpack_require__(329);
-Observable_1.Observable.prototype.do = do_1._do;
-Observable_1.Observable.prototype._do = do_1._do;
-//# sourceMappingURL=do.js.map
+var never_1 = __webpack_require__(334);
+Observable_1.Observable.never = never_1.never;
+//# sourceMappingURL=never.js.map
 
 /***/ },
 /* 214 */
@@ -32191,9 +33919,9 @@ Observable_1.Observable.prototype._do = do_1._do;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var elementAt_1 = __webpack_require__(330);
-Observable_1.Observable.prototype.elementAt = elementAt_1.elementAt;
-//# sourceMappingURL=elementAt.js.map
+var onErrorResumeNext_1 = __webpack_require__(98);
+Observable_1.Observable.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNextStatic;
+//# sourceMappingURL=onErrorResumeNext.js.map
 
 /***/ },
 /* 215 */
@@ -32202,9 +33930,9 @@ Observable_1.Observable.prototype.elementAt = elementAt_1.elementAt;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var every_1 = __webpack_require__(436);
-Observable_1.Observable.prototype.every = every_1.every;
-//# sourceMappingURL=every.js.map
+var pairs_1 = __webpack_require__(335);
+Observable_1.Observable.pairs = pairs_1.pairs;
+//# sourceMappingURL=pairs.js.map
 
 /***/ },
 /* 216 */
@@ -32213,9 +33941,9 @@ Observable_1.Observable.prototype.every = every_1.every;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var exhaust_1 = __webpack_require__(331);
-Observable_1.Observable.prototype.exhaust = exhaust_1.exhaust;
-//# sourceMappingURL=exhaust.js.map
+var race_1 = __webpack_require__(99);
+Observable_1.Observable.race = race_1.raceStatic;
+//# sourceMappingURL=race.js.map
 
 /***/ },
 /* 217 */
@@ -32224,9 +33952,9 @@ Observable_1.Observable.prototype.exhaust = exhaust_1.exhaust;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var exhaustMap_1 = __webpack_require__(332);
-Observable_1.Observable.prototype.exhaustMap = exhaustMap_1.exhaustMap;
-//# sourceMappingURL=exhaustMap.js.map
+var range_1 = __webpack_require__(336);
+Observable_1.Observable.range = range_1.range;
+//# sourceMappingURL=range.js.map
 
 /***/ },
 /* 218 */
@@ -32235,9 +33963,9 @@ Observable_1.Observable.prototype.exhaustMap = exhaustMap_1.exhaustMap;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var expand_1 = __webpack_require__(333);
-Observable_1.Observable.prototype.expand = expand_1.expand;
-//# sourceMappingURL=expand.js.map
+var timer_1 = __webpack_require__(337);
+Observable_1.Observable.timer = timer_1.timer;
+//# sourceMappingURL=timer.js.map
 
 /***/ },
 /* 219 */
@@ -32246,10 +33974,9 @@ Observable_1.Observable.prototype.expand = expand_1.expand;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var finally_1 = __webpack_require__(334);
-Observable_1.Observable.prototype.finally = finally_1._finally;
-Observable_1.Observable.prototype._finally = finally_1._finally;
-//# sourceMappingURL=finally.js.map
+var using_1 = __webpack_require__(338);
+Observable_1.Observable.using = using_1.using;
+//# sourceMappingURL=using.js.map
 
 /***/ },
 /* 220 */
@@ -32258,9 +33985,9 @@ Observable_1.Observable.prototype._finally = finally_1._finally;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var find_1 = __webpack_require__(74);
-Observable_1.Observable.prototype.find = find_1.find;
-//# sourceMappingURL=find.js.map
+var zip_1 = __webpack_require__(339);
+Observable_1.Observable.zip = zip_1.zip;
+//# sourceMappingURL=zip.js.map
 
 /***/ },
 /* 221 */
@@ -32269,9 +33996,9 @@ Observable_1.Observable.prototype.find = find_1.find;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var findIndex_1 = __webpack_require__(335);
-Observable_1.Observable.prototype.findIndex = findIndex_1.findIndex;
-//# sourceMappingURL=findIndex.js.map
+var audit_1 = __webpack_require__(340);
+Observable_1.Observable.prototype.audit = audit_1.audit;
+//# sourceMappingURL=audit.js.map
 
 /***/ },
 /* 222 */
@@ -32280,9 +34007,9 @@ Observable_1.Observable.prototype.findIndex = findIndex_1.findIndex;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var first_1 = __webpack_require__(465);
-Observable_1.Observable.prototype.first = first_1.first;
-//# sourceMappingURL=first.js.map
+var auditTime_1 = __webpack_require__(341);
+Observable_1.Observable.prototype.auditTime = auditTime_1.auditTime;
+//# sourceMappingURL=auditTime.js.map
 
 /***/ },
 /* 223 */
@@ -32291,9 +34018,9 @@ Observable_1.Observable.prototype.first = first_1.first;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var groupBy_1 = __webpack_require__(336);
-Observable_1.Observable.prototype.groupBy = groupBy_1.groupBy;
-//# sourceMappingURL=groupBy.js.map
+var buffer_1 = __webpack_require__(342);
+Observable_1.Observable.prototype.buffer = buffer_1.buffer;
+//# sourceMappingURL=buffer.js.map
 
 /***/ },
 /* 224 */
@@ -32302,9 +34029,9 @@ Observable_1.Observable.prototype.groupBy = groupBy_1.groupBy;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var ignoreElements_1 = __webpack_require__(337);
-Observable_1.Observable.prototype.ignoreElements = ignoreElements_1.ignoreElements;
-//# sourceMappingURL=ignoreElements.js.map
+var bufferCount_1 = __webpack_require__(343);
+Observable_1.Observable.prototype.bufferCount = bufferCount_1.bufferCount;
+//# sourceMappingURL=bufferCount.js.map
 
 /***/ },
 /* 225 */
@@ -32313,9 +34040,9 @@ Observable_1.Observable.prototype.ignoreElements = ignoreElements_1.ignoreElemen
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var isEmpty_1 = __webpack_require__(338);
-Observable_1.Observable.prototype.isEmpty = isEmpty_1.isEmpty;
-//# sourceMappingURL=isEmpty.js.map
+var bufferTime_1 = __webpack_require__(344);
+Observable_1.Observable.prototype.bufferTime = bufferTime_1.bufferTime;
+//# sourceMappingURL=bufferTime.js.map
 
 /***/ },
 /* 226 */
@@ -32324,9 +34051,9 @@ Observable_1.Observable.prototype.isEmpty = isEmpty_1.isEmpty;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var last_1 = __webpack_require__(466);
-Observable_1.Observable.prototype.last = last_1.last;
-//# sourceMappingURL=last.js.map
+var bufferToggle_1 = __webpack_require__(345);
+Observable_1.Observable.prototype.bufferToggle = bufferToggle_1.bufferToggle;
+//# sourceMappingURL=bufferToggle.js.map
 
 /***/ },
 /* 227 */
@@ -32335,9 +34062,9 @@ Observable_1.Observable.prototype.last = last_1.last;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var materialize_1 = __webpack_require__(339);
-Observable_1.Observable.prototype.materialize = materialize_1.materialize;
-//# sourceMappingURL=materialize.js.map
+var bufferWhen_1 = __webpack_require__(346);
+Observable_1.Observable.prototype.bufferWhen = bufferWhen_1.bufferWhen;
+//# sourceMappingURL=bufferWhen.js.map
 
 /***/ },
 /* 228 */
@@ -32346,9 +34073,9 @@ Observable_1.Observable.prototype.materialize = materialize_1.materialize;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var max_1 = __webpack_require__(340);
-Observable_1.Observable.prototype.max = max_1.max;
-//# sourceMappingURL=max.js.map
+var combineAll_1 = __webpack_require__(347);
+Observable_1.Observable.prototype.combineAll = combineAll_1.combineAll;
+//# sourceMappingURL=combineAll.js.map
 
 /***/ },
 /* 229 */
@@ -32357,9 +34084,9 @@ Observable_1.Observable.prototype.max = max_1.max;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var merge_1 = __webpack_require__(75);
-Observable_1.Observable.prototype.merge = merge_1.merge;
-//# sourceMappingURL=merge.js.map
+var combineLatest_1 = __webpack_require__(119);
+Observable_1.Observable.prototype.combineLatest = combineLatest_1.combineLatest;
+//# sourceMappingURL=combineLatest.js.map
 
 /***/ },
 /* 230 */
@@ -32368,9 +34095,9 @@ Observable_1.Observable.prototype.merge = merge_1.merge;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var mergeAll_1 = __webpack_require__(56);
-Observable_1.Observable.prototype.mergeAll = mergeAll_1.mergeAll;
-//# sourceMappingURL=mergeAll.js.map
+var concat_1 = __webpack_require__(59);
+Observable_1.Observable.prototype.concat = concat_1.concat;
+//# sourceMappingURL=concat.js.map
 
 /***/ },
 /* 231 */
@@ -32379,10 +34106,9 @@ Observable_1.Observable.prototype.mergeAll = mergeAll_1.mergeAll;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var mergeMapTo_1 = __webpack_require__(76);
-Observable_1.Observable.prototype.flatMapTo = mergeMapTo_1.mergeMapTo;
-Observable_1.Observable.prototype.mergeMapTo = mergeMapTo_1.mergeMapTo;
-//# sourceMappingURL=mergeMapTo.js.map
+var concatAll_1 = __webpack_require__(465);
+Observable_1.Observable.prototype.concatAll = concatAll_1.concatAll;
+//# sourceMappingURL=concatAll.js.map
 
 /***/ },
 /* 232 */
@@ -32391,9 +34117,9 @@ Observable_1.Observable.prototype.mergeMapTo = mergeMapTo_1.mergeMapTo;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var mergeScan_1 = __webpack_require__(341);
-Observable_1.Observable.prototype.mergeScan = mergeScan_1.mergeScan;
-//# sourceMappingURL=mergeScan.js.map
+var concatMap_1 = __webpack_require__(348);
+Observable_1.Observable.prototype.concatMap = concatMap_1.concatMap;
+//# sourceMappingURL=concatMap.js.map
 
 /***/ },
 /* 233 */
@@ -32402,9 +34128,9 @@ Observable_1.Observable.prototype.mergeScan = mergeScan_1.mergeScan;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var min_1 = __webpack_require__(342);
-Observable_1.Observable.prototype.min = min_1.min;
-//# sourceMappingURL=min.js.map
+var concatMapTo_1 = __webpack_require__(349);
+Observable_1.Observable.prototype.concatMapTo = concatMapTo_1.concatMapTo;
+//# sourceMappingURL=concatMapTo.js.map
 
 /***/ },
 /* 234 */
@@ -32413,9 +34139,9 @@ Observable_1.Observable.prototype.min = min_1.min;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var multicast_1 = __webpack_require__(24);
-Observable_1.Observable.prototype.multicast = multicast_1.multicast;
-//# sourceMappingURL=multicast.js.map
+var count_1 = __webpack_require__(350);
+Observable_1.Observable.prototype.count = count_1.count;
+//# sourceMappingURL=count.js.map
 
 /***/ },
 /* 235 */
@@ -32424,9 +34150,9 @@ Observable_1.Observable.prototype.multicast = multicast_1.multicast;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var observeOn_1 = __webpack_require__(437);
-Observable_1.Observable.prototype.observeOn = observeOn_1.observeOn;
-//# sourceMappingURL=observeOn.js.map
+var debounce_1 = __webpack_require__(351);
+Observable_1.Observable.prototype.debounce = debounce_1.debounce;
+//# sourceMappingURL=debounce.js.map
 
 /***/ },
 /* 236 */
@@ -32435,9 +34161,9 @@ Observable_1.Observable.prototype.observeOn = observeOn_1.observeOn;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var onErrorResumeNext_1 = __webpack_require__(77);
-Observable_1.Observable.prototype.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNext;
-//# sourceMappingURL=onErrorResumeNext.js.map
+var defaultIfEmpty_1 = __webpack_require__(352);
+Observable_1.Observable.prototype.defaultIfEmpty = defaultIfEmpty_1.defaultIfEmpty;
+//# sourceMappingURL=defaultIfEmpty.js.map
 
 /***/ },
 /* 237 */
@@ -32446,9 +34172,9 @@ Observable_1.Observable.prototype.onErrorResumeNext = onErrorResumeNext_1.onErro
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var pairwise_1 = __webpack_require__(343);
-Observable_1.Observable.prototype.pairwise = pairwise_1.pairwise;
-//# sourceMappingURL=pairwise.js.map
+var delay_1 = __webpack_require__(353);
+Observable_1.Observable.prototype.delay = delay_1.delay;
+//# sourceMappingURL=delay.js.map
 
 /***/ },
 /* 238 */
@@ -32457,9 +34183,9 @@ Observable_1.Observable.prototype.pairwise = pairwise_1.pairwise;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var partition_1 = __webpack_require__(344);
-Observable_1.Observable.prototype.partition = partition_1.partition;
-//# sourceMappingURL=partition.js.map
+var delayWhen_1 = __webpack_require__(354);
+Observable_1.Observable.prototype.delayWhen = delayWhen_1.delayWhen;
+//# sourceMappingURL=delayWhen.js.map
 
 /***/ },
 /* 239 */
@@ -32468,9 +34194,9 @@ Observable_1.Observable.prototype.partition = partition_1.partition;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var publish_1 = __webpack_require__(345);
-Observable_1.Observable.prototype.publish = publish_1.publish;
-//# sourceMappingURL=publish.js.map
+var dematerialize_1 = __webpack_require__(355);
+Observable_1.Observable.prototype.dematerialize = dematerialize_1.dematerialize;
+//# sourceMappingURL=dematerialize.js.map
 
 /***/ },
 /* 240 */
@@ -32479,9 +34205,9 @@ Observable_1.Observable.prototype.publish = publish_1.publish;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var publishBehavior_1 = __webpack_require__(346);
-Observable_1.Observable.prototype.publishBehavior = publishBehavior_1.publishBehavior;
-//# sourceMappingURL=publishBehavior.js.map
+var distinct_1 = __webpack_require__(94);
+Observable_1.Observable.prototype.distinct = distinct_1.distinct;
+//# sourceMappingURL=distinct.js.map
 
 /***/ },
 /* 241 */
@@ -32490,9 +34216,9 @@ Observable_1.Observable.prototype.publishBehavior = publishBehavior_1.publishBeh
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var publishLast_1 = __webpack_require__(347);
-Observable_1.Observable.prototype.publishLast = publishLast_1.publishLast;
-//# sourceMappingURL=publishLast.js.map
+var distinctKey_1 = __webpack_require__(356);
+Observable_1.Observable.prototype.distinctKey = distinctKey_1.distinctKey;
+//# sourceMappingURL=distinctKey.js.map
 
 /***/ },
 /* 242 */
@@ -32501,9 +34227,9 @@ Observable_1.Observable.prototype.publishLast = publishLast_1.publishLast;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var publishReplay_1 = __webpack_require__(348);
-Observable_1.Observable.prototype.publishReplay = publishReplay_1.publishReplay;
-//# sourceMappingURL=publishReplay.js.map
+var distinctUntilKeyChanged_1 = __webpack_require__(357);
+Observable_1.Observable.prototype.distinctUntilKeyChanged = distinctUntilKeyChanged_1.distinctUntilKeyChanged;
+//# sourceMappingURL=distinctUntilKeyChanged.js.map
 
 /***/ },
 /* 243 */
@@ -32512,9 +34238,10 @@ Observable_1.Observable.prototype.publishReplay = publishReplay_1.publishReplay;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var race_1 = __webpack_require__(78);
-Observable_1.Observable.prototype.race = race_1.race;
-//# sourceMappingURL=race.js.map
+var do_1 = __webpack_require__(358);
+Observable_1.Observable.prototype.do = do_1._do;
+Observable_1.Observable.prototype._do = do_1._do;
+//# sourceMappingURL=do.js.map
 
 /***/ },
 /* 244 */
@@ -32523,9 +34250,9 @@ Observable_1.Observable.prototype.race = race_1.race;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var reduce_1 = __webpack_require__(63);
-Observable_1.Observable.prototype.reduce = reduce_1.reduce;
-//# sourceMappingURL=reduce.js.map
+var elementAt_1 = __webpack_require__(359);
+Observable_1.Observable.prototype.elementAt = elementAt_1.elementAt;
+//# sourceMappingURL=elementAt.js.map
 
 /***/ },
 /* 245 */
@@ -32534,9 +34261,9 @@ Observable_1.Observable.prototype.reduce = reduce_1.reduce;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var repeat_1 = __webpack_require__(349);
-Observable_1.Observable.prototype.repeat = repeat_1.repeat;
-//# sourceMappingURL=repeat.js.map
+var every_1 = __webpack_require__(466);
+Observable_1.Observable.prototype.every = every_1.every;
+//# sourceMappingURL=every.js.map
 
 /***/ },
 /* 246 */
@@ -32545,9 +34272,9 @@ Observable_1.Observable.prototype.repeat = repeat_1.repeat;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var repeatWhen_1 = __webpack_require__(350);
-Observable_1.Observable.prototype.repeatWhen = repeatWhen_1.repeatWhen;
-//# sourceMappingURL=repeatWhen.js.map
+var exhaust_1 = __webpack_require__(360);
+Observable_1.Observable.prototype.exhaust = exhaust_1.exhaust;
+//# sourceMappingURL=exhaust.js.map
 
 /***/ },
 /* 247 */
@@ -32556,9 +34283,9 @@ Observable_1.Observable.prototype.repeatWhen = repeatWhen_1.repeatWhen;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var retry_1 = __webpack_require__(351);
-Observable_1.Observable.prototype.retry = retry_1.retry;
-//# sourceMappingURL=retry.js.map
+var exhaustMap_1 = __webpack_require__(361);
+Observable_1.Observable.prototype.exhaustMap = exhaustMap_1.exhaustMap;
+//# sourceMappingURL=exhaustMap.js.map
 
 /***/ },
 /* 248 */
@@ -32567,9 +34294,9 @@ Observable_1.Observable.prototype.retry = retry_1.retry;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var retryWhen_1 = __webpack_require__(352);
-Observable_1.Observable.prototype.retryWhen = retryWhen_1.retryWhen;
-//# sourceMappingURL=retryWhen.js.map
+var expand_1 = __webpack_require__(362);
+Observable_1.Observable.prototype.expand = expand_1.expand;
+//# sourceMappingURL=expand.js.map
 
 /***/ },
 /* 249 */
@@ -32578,9 +34305,10 @@ Observable_1.Observable.prototype.retryWhen = retryWhen_1.retryWhen;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var sampleTime_1 = __webpack_require__(353);
-Observable_1.Observable.prototype.sampleTime = sampleTime_1.sampleTime;
-//# sourceMappingURL=sampleTime.js.map
+var finally_1 = __webpack_require__(363);
+Observable_1.Observable.prototype.finally = finally_1._finally;
+Observable_1.Observable.prototype._finally = finally_1._finally;
+//# sourceMappingURL=finally.js.map
 
 /***/ },
 /* 250 */
@@ -32589,9 +34317,9 @@ Observable_1.Observable.prototype.sampleTime = sampleTime_1.sampleTime;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var scan_1 = __webpack_require__(354);
-Observable_1.Observable.prototype.scan = scan_1.scan;
-//# sourceMappingURL=scan.js.map
+var find_1 = __webpack_require__(95);
+Observable_1.Observable.prototype.find = find_1.find;
+//# sourceMappingURL=find.js.map
 
 /***/ },
 /* 251 */
@@ -32600,9 +34328,9 @@ Observable_1.Observable.prototype.scan = scan_1.scan;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var sequenceEqual_1 = __webpack_require__(355);
-Observable_1.Observable.prototype.sequenceEqual = sequenceEqual_1.sequenceEqual;
-//# sourceMappingURL=sequenceEqual.js.map
+var findIndex_1 = __webpack_require__(364);
+Observable_1.Observable.prototype.findIndex = findIndex_1.findIndex;
+//# sourceMappingURL=findIndex.js.map
 
 /***/ },
 /* 252 */
@@ -32611,9 +34339,9 @@ Observable_1.Observable.prototype.sequenceEqual = sequenceEqual_1.sequenceEqual;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var share_1 = __webpack_require__(356);
-Observable_1.Observable.prototype.share = share_1.share;
-//# sourceMappingURL=share.js.map
+var first_1 = __webpack_require__(496);
+Observable_1.Observable.prototype.first = first_1.first;
+//# sourceMappingURL=first.js.map
 
 /***/ },
 /* 253 */
@@ -32622,9 +34350,9 @@ Observable_1.Observable.prototype.share = share_1.share;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var single_1 = __webpack_require__(357);
-Observable_1.Observable.prototype.single = single_1.single;
-//# sourceMappingURL=single.js.map
+var groupBy_1 = __webpack_require__(365);
+Observable_1.Observable.prototype.groupBy = groupBy_1.groupBy;
+//# sourceMappingURL=groupBy.js.map
 
 /***/ },
 /* 254 */
@@ -32633,9 +34361,9 @@ Observable_1.Observable.prototype.single = single_1.single;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var skip_1 = __webpack_require__(358);
-Observable_1.Observable.prototype.skip = skip_1.skip;
-//# sourceMappingURL=skip.js.map
+var ignoreElements_1 = __webpack_require__(366);
+Observable_1.Observable.prototype.ignoreElements = ignoreElements_1.ignoreElements;
+//# sourceMappingURL=ignoreElements.js.map
 
 /***/ },
 /* 255 */
@@ -32644,9 +34372,9 @@ Observable_1.Observable.prototype.skip = skip_1.skip;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var skipUntil_1 = __webpack_require__(359);
-Observable_1.Observable.prototype.skipUntil = skipUntil_1.skipUntil;
-//# sourceMappingURL=skipUntil.js.map
+var isEmpty_1 = __webpack_require__(367);
+Observable_1.Observable.prototype.isEmpty = isEmpty_1.isEmpty;
+//# sourceMappingURL=isEmpty.js.map
 
 /***/ },
 /* 256 */
@@ -32655,9 +34383,9 @@ Observable_1.Observable.prototype.skipUntil = skipUntil_1.skipUntil;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var skipWhile_1 = __webpack_require__(360);
-Observable_1.Observable.prototype.skipWhile = skipWhile_1.skipWhile;
-//# sourceMappingURL=skipWhile.js.map
+var last_1 = __webpack_require__(497);
+Observable_1.Observable.prototype.last = last_1.last;
+//# sourceMappingURL=last.js.map
 
 /***/ },
 /* 257 */
@@ -32666,9 +34394,9 @@ Observable_1.Observable.prototype.skipWhile = skipWhile_1.skipWhile;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var startWith_1 = __webpack_require__(361);
-Observable_1.Observable.prototype.startWith = startWith_1.startWith;
-//# sourceMappingURL=startWith.js.map
+var materialize_1 = __webpack_require__(368);
+Observable_1.Observable.prototype.materialize = materialize_1.materialize;
+//# sourceMappingURL=materialize.js.map
 
 /***/ },
 /* 258 */
@@ -32677,9 +34405,9 @@ Observable_1.Observable.prototype.startWith = startWith_1.startWith;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var subscribeOn_1 = __webpack_require__(362);
-Observable_1.Observable.prototype.subscribeOn = subscribeOn_1.subscribeOn;
-//# sourceMappingURL=subscribeOn.js.map
+var max_1 = __webpack_require__(369);
+Observable_1.Observable.prototype.max = max_1.max;
+//# sourceMappingURL=max.js.map
 
 /***/ },
 /* 259 */
@@ -32688,10 +34416,9 @@ Observable_1.Observable.prototype.subscribeOn = subscribeOn_1.subscribeOn;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var switch_1 = __webpack_require__(363);
-Observable_1.Observable.prototype.switch = switch_1._switch;
-Observable_1.Observable.prototype._switch = switch_1._switch;
-//# sourceMappingURL=switch.js.map
+var merge_1 = __webpack_require__(96);
+Observable_1.Observable.prototype.merge = merge_1.merge;
+//# sourceMappingURL=merge.js.map
 
 /***/ },
 /* 260 */
@@ -32700,9 +34427,9 @@ Observable_1.Observable.prototype._switch = switch_1._switch;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var switchMapTo_1 = __webpack_require__(364);
-Observable_1.Observable.prototype.switchMapTo = switchMapTo_1.switchMapTo;
-//# sourceMappingURL=switchMapTo.js.map
+var mergeAll_1 = __webpack_require__(61);
+Observable_1.Observable.prototype.mergeAll = mergeAll_1.mergeAll;
+//# sourceMappingURL=mergeAll.js.map
 
 /***/ },
 /* 261 */
@@ -32711,9 +34438,10 @@ Observable_1.Observable.prototype.switchMapTo = switchMapTo_1.switchMapTo;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var takeLast_1 = __webpack_require__(365);
-Observable_1.Observable.prototype.takeLast = takeLast_1.takeLast;
-//# sourceMappingURL=takeLast.js.map
+var mergeMapTo_1 = __webpack_require__(97);
+Observable_1.Observable.prototype.flatMapTo = mergeMapTo_1.mergeMapTo;
+Observable_1.Observable.prototype.mergeMapTo = mergeMapTo_1.mergeMapTo;
+//# sourceMappingURL=mergeMapTo.js.map
 
 /***/ },
 /* 262 */
@@ -32722,9 +34450,9 @@ Observable_1.Observable.prototype.takeLast = takeLast_1.takeLast;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var takeUntil_1 = __webpack_require__(366);
-Observable_1.Observable.prototype.takeUntil = takeUntil_1.takeUntil;
-//# sourceMappingURL=takeUntil.js.map
+var mergeScan_1 = __webpack_require__(370);
+Observable_1.Observable.prototype.mergeScan = mergeScan_1.mergeScan;
+//# sourceMappingURL=mergeScan.js.map
 
 /***/ },
 /* 263 */
@@ -32733,9 +34461,9 @@ Observable_1.Observable.prototype.takeUntil = takeUntil_1.takeUntil;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var takeWhile_1 = __webpack_require__(367);
-Observable_1.Observable.prototype.takeWhile = takeWhile_1.takeWhile;
-//# sourceMappingURL=takeWhile.js.map
+var min_1 = __webpack_require__(371);
+Observable_1.Observable.prototype.min = min_1.min;
+//# sourceMappingURL=min.js.map
 
 /***/ },
 /* 264 */
@@ -32744,9 +34472,9 @@ Observable_1.Observable.prototype.takeWhile = takeWhile_1.takeWhile;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var throttle_1 = __webpack_require__(368);
-Observable_1.Observable.prototype.throttle = throttle_1.throttle;
-//# sourceMappingURL=throttle.js.map
+var multicast_1 = __webpack_require__(25);
+Observable_1.Observable.prototype.multicast = multicast_1.multicast;
+//# sourceMappingURL=multicast.js.map
 
 /***/ },
 /* 265 */
@@ -32755,9 +34483,9 @@ Observable_1.Observable.prototype.throttle = throttle_1.throttle;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var throttleTime_1 = __webpack_require__(369);
-Observable_1.Observable.prototype.throttleTime = throttleTime_1.throttleTime;
-//# sourceMappingURL=throttleTime.js.map
+var observeOn_1 = __webpack_require__(467);
+Observable_1.Observable.prototype.observeOn = observeOn_1.observeOn;
+//# sourceMappingURL=observeOn.js.map
 
 /***/ },
 /* 266 */
@@ -32766,9 +34494,9 @@ Observable_1.Observable.prototype.throttleTime = throttleTime_1.throttleTime;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var timeInterval_1 = __webpack_require__(79);
-Observable_1.Observable.prototype.timeInterval = timeInterval_1.timeInterval;
-//# sourceMappingURL=timeInterval.js.map
+var onErrorResumeNext_1 = __webpack_require__(98);
+Observable_1.Observable.prototype.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNext;
+//# sourceMappingURL=onErrorResumeNext.js.map
 
 /***/ },
 /* 267 */
@@ -32777,9 +34505,9 @@ Observable_1.Observable.prototype.timeInterval = timeInterval_1.timeInterval;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var timeout_1 = __webpack_require__(370);
-Observable_1.Observable.prototype.timeout = timeout_1.timeout;
-//# sourceMappingURL=timeout.js.map
+var pairwise_1 = __webpack_require__(372);
+Observable_1.Observable.prototype.pairwise = pairwise_1.pairwise;
+//# sourceMappingURL=pairwise.js.map
 
 /***/ },
 /* 268 */
@@ -32788,9 +34516,9 @@ Observable_1.Observable.prototype.timeout = timeout_1.timeout;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var timeoutWith_1 = __webpack_require__(371);
-Observable_1.Observable.prototype.timeoutWith = timeoutWith_1.timeoutWith;
-//# sourceMappingURL=timeoutWith.js.map
+var partition_1 = __webpack_require__(373);
+Observable_1.Observable.prototype.partition = partition_1.partition;
+//# sourceMappingURL=partition.js.map
 
 /***/ },
 /* 269 */
@@ -32799,9 +34527,9 @@ Observable_1.Observable.prototype.timeoutWith = timeoutWith_1.timeoutWith;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var timestamp_1 = __webpack_require__(80);
-Observable_1.Observable.prototype.timestamp = timestamp_1.timestamp;
-//# sourceMappingURL=timestamp.js.map
+var publish_1 = __webpack_require__(374);
+Observable_1.Observable.prototype.publish = publish_1.publish;
+//# sourceMappingURL=publish.js.map
 
 /***/ },
 /* 270 */
@@ -32810,9 +34538,9 @@ Observable_1.Observable.prototype.timestamp = timestamp_1.timestamp;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var toPromise_1 = __webpack_require__(468);
-Observable_1.Observable.prototype.toPromise = toPromise_1.toPromise;
-//# sourceMappingURL=toPromise.js.map
+var publishBehavior_1 = __webpack_require__(375);
+Observable_1.Observable.prototype.publishBehavior = publishBehavior_1.publishBehavior;
+//# sourceMappingURL=publishBehavior.js.map
 
 /***/ },
 /* 271 */
@@ -32821,9 +34549,9 @@ Observable_1.Observable.prototype.toPromise = toPromise_1.toPromise;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var window_1 = __webpack_require__(372);
-Observable_1.Observable.prototype.window = window_1.window;
-//# sourceMappingURL=window.js.map
+var publishLast_1 = __webpack_require__(376);
+Observable_1.Observable.prototype.publishLast = publishLast_1.publishLast;
+//# sourceMappingURL=publishLast.js.map
 
 /***/ },
 /* 272 */
@@ -32832,9 +34560,9 @@ Observable_1.Observable.prototype.window = window_1.window;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var windowCount_1 = __webpack_require__(373);
-Observable_1.Observable.prototype.windowCount = windowCount_1.windowCount;
-//# sourceMappingURL=windowCount.js.map
+var publishReplay_1 = __webpack_require__(377);
+Observable_1.Observable.prototype.publishReplay = publishReplay_1.publishReplay;
+//# sourceMappingURL=publishReplay.js.map
 
 /***/ },
 /* 273 */
@@ -32843,9 +34571,9 @@ Observable_1.Observable.prototype.windowCount = windowCount_1.windowCount;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var windowTime_1 = __webpack_require__(374);
-Observable_1.Observable.prototype.windowTime = windowTime_1.windowTime;
-//# sourceMappingURL=windowTime.js.map
+var race_1 = __webpack_require__(99);
+Observable_1.Observable.prototype.race = race_1.race;
+//# sourceMappingURL=race.js.map
 
 /***/ },
 /* 274 */
@@ -32854,9 +34582,9 @@ Observable_1.Observable.prototype.windowTime = windowTime_1.windowTime;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var windowToggle_1 = __webpack_require__(375);
-Observable_1.Observable.prototype.windowToggle = windowToggle_1.windowToggle;
-//# sourceMappingURL=windowToggle.js.map
+var reduce_1 = __webpack_require__(68);
+Observable_1.Observable.prototype.reduce = reduce_1.reduce;
+//# sourceMappingURL=reduce.js.map
 
 /***/ },
 /* 275 */
@@ -32865,9 +34593,9 @@ Observable_1.Observable.prototype.windowToggle = windowToggle_1.windowToggle;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var windowWhen_1 = __webpack_require__(376);
-Observable_1.Observable.prototype.windowWhen = windowWhen_1.windowWhen;
-//# sourceMappingURL=windowWhen.js.map
+var repeat_1 = __webpack_require__(378);
+Observable_1.Observable.prototype.repeat = repeat_1.repeat;
+//# sourceMappingURL=repeat.js.map
 
 /***/ },
 /* 276 */
@@ -32876,9 +34604,9 @@ Observable_1.Observable.prototype.windowWhen = windowWhen_1.windowWhen;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var withLatestFrom_1 = __webpack_require__(377);
-Observable_1.Observable.prototype.withLatestFrom = withLatestFrom_1.withLatestFrom;
-//# sourceMappingURL=withLatestFrom.js.map
+var repeatWhen_1 = __webpack_require__(379);
+Observable_1.Observable.prototype.repeatWhen = repeatWhen_1.repeatWhen;
+//# sourceMappingURL=repeatWhen.js.map
 
 /***/ },
 /* 277 */
@@ -32887,9 +34615,9 @@ Observable_1.Observable.prototype.withLatestFrom = withLatestFrom_1.withLatestFr
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var zip_1 = __webpack_require__(55);
-Observable_1.Observable.prototype.zip = zip_1.zipProto;
-//# sourceMappingURL=zip.js.map
+var retry_1 = __webpack_require__(380);
+Observable_1.Observable.prototype.retry = retry_1.retry;
+//# sourceMappingURL=retry.js.map
 
 /***/ },
 /* 278 */
@@ -32898,12 +34626,343 @@ Observable_1.Observable.prototype.zip = zip_1.zipProto;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(1);
-var zipAll_1 = __webpack_require__(378);
+var retryWhen_1 = __webpack_require__(381);
+Observable_1.Observable.prototype.retryWhen = retryWhen_1.retryWhen;
+//# sourceMappingURL=retryWhen.js.map
+
+/***/ },
+/* 279 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var sampleTime_1 = __webpack_require__(382);
+Observable_1.Observable.prototype.sampleTime = sampleTime_1.sampleTime;
+//# sourceMappingURL=sampleTime.js.map
+
+/***/ },
+/* 280 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var scan_1 = __webpack_require__(383);
+Observable_1.Observable.prototype.scan = scan_1.scan;
+//# sourceMappingURL=scan.js.map
+
+/***/ },
+/* 281 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var sequenceEqual_1 = __webpack_require__(384);
+Observable_1.Observable.prototype.sequenceEqual = sequenceEqual_1.sequenceEqual;
+//# sourceMappingURL=sequenceEqual.js.map
+
+/***/ },
+/* 282 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var share_1 = __webpack_require__(385);
+Observable_1.Observable.prototype.share = share_1.share;
+//# sourceMappingURL=share.js.map
+
+/***/ },
+/* 283 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var single_1 = __webpack_require__(386);
+Observable_1.Observable.prototype.single = single_1.single;
+//# sourceMappingURL=single.js.map
+
+/***/ },
+/* 284 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var skip_1 = __webpack_require__(387);
+Observable_1.Observable.prototype.skip = skip_1.skip;
+//# sourceMappingURL=skip.js.map
+
+/***/ },
+/* 285 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var skipUntil_1 = __webpack_require__(388);
+Observable_1.Observable.prototype.skipUntil = skipUntil_1.skipUntil;
+//# sourceMappingURL=skipUntil.js.map
+
+/***/ },
+/* 286 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var skipWhile_1 = __webpack_require__(389);
+Observable_1.Observable.prototype.skipWhile = skipWhile_1.skipWhile;
+//# sourceMappingURL=skipWhile.js.map
+
+/***/ },
+/* 287 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var startWith_1 = __webpack_require__(390);
+Observable_1.Observable.prototype.startWith = startWith_1.startWith;
+//# sourceMappingURL=startWith.js.map
+
+/***/ },
+/* 288 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var subscribeOn_1 = __webpack_require__(391);
+Observable_1.Observable.prototype.subscribeOn = subscribeOn_1.subscribeOn;
+//# sourceMappingURL=subscribeOn.js.map
+
+/***/ },
+/* 289 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var switch_1 = __webpack_require__(392);
+Observable_1.Observable.prototype.switch = switch_1._switch;
+Observable_1.Observable.prototype._switch = switch_1._switch;
+//# sourceMappingURL=switch.js.map
+
+/***/ },
+/* 290 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var switchMapTo_1 = __webpack_require__(393);
+Observable_1.Observable.prototype.switchMapTo = switchMapTo_1.switchMapTo;
+//# sourceMappingURL=switchMapTo.js.map
+
+/***/ },
+/* 291 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var takeLast_1 = __webpack_require__(394);
+Observable_1.Observable.prototype.takeLast = takeLast_1.takeLast;
+//# sourceMappingURL=takeLast.js.map
+
+/***/ },
+/* 292 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var takeUntil_1 = __webpack_require__(395);
+Observable_1.Observable.prototype.takeUntil = takeUntil_1.takeUntil;
+//# sourceMappingURL=takeUntil.js.map
+
+/***/ },
+/* 293 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var takeWhile_1 = __webpack_require__(396);
+Observable_1.Observable.prototype.takeWhile = takeWhile_1.takeWhile;
+//# sourceMappingURL=takeWhile.js.map
+
+/***/ },
+/* 294 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var throttle_1 = __webpack_require__(397);
+Observable_1.Observable.prototype.throttle = throttle_1.throttle;
+//# sourceMappingURL=throttle.js.map
+
+/***/ },
+/* 295 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var throttleTime_1 = __webpack_require__(398);
+Observable_1.Observable.prototype.throttleTime = throttleTime_1.throttleTime;
+//# sourceMappingURL=throttleTime.js.map
+
+/***/ },
+/* 296 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var timeInterval_1 = __webpack_require__(100);
+Observable_1.Observable.prototype.timeInterval = timeInterval_1.timeInterval;
+//# sourceMappingURL=timeInterval.js.map
+
+/***/ },
+/* 297 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var timeout_1 = __webpack_require__(399);
+Observable_1.Observable.prototype.timeout = timeout_1.timeout;
+//# sourceMappingURL=timeout.js.map
+
+/***/ },
+/* 298 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var timeoutWith_1 = __webpack_require__(400);
+Observable_1.Observable.prototype.timeoutWith = timeoutWith_1.timeoutWith;
+//# sourceMappingURL=timeoutWith.js.map
+
+/***/ },
+/* 299 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var timestamp_1 = __webpack_require__(101);
+Observable_1.Observable.prototype.timestamp = timestamp_1.timestamp;
+//# sourceMappingURL=timestamp.js.map
+
+/***/ },
+/* 300 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var toPromise_1 = __webpack_require__(498);
+Observable_1.Observable.prototype.toPromise = toPromise_1.toPromise;
+//# sourceMappingURL=toPromise.js.map
+
+/***/ },
+/* 301 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var window_1 = __webpack_require__(401);
+Observable_1.Observable.prototype.window = window_1.window;
+//# sourceMappingURL=window.js.map
+
+/***/ },
+/* 302 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var windowCount_1 = __webpack_require__(402);
+Observable_1.Observable.prototype.windowCount = windowCount_1.windowCount;
+//# sourceMappingURL=windowCount.js.map
+
+/***/ },
+/* 303 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var windowTime_1 = __webpack_require__(403);
+Observable_1.Observable.prototype.windowTime = windowTime_1.windowTime;
+//# sourceMappingURL=windowTime.js.map
+
+/***/ },
+/* 304 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var windowToggle_1 = __webpack_require__(404);
+Observable_1.Observable.prototype.windowToggle = windowToggle_1.windowToggle;
+//# sourceMappingURL=windowToggle.js.map
+
+/***/ },
+/* 305 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var windowWhen_1 = __webpack_require__(405);
+Observable_1.Observable.prototype.windowWhen = windowWhen_1.windowWhen;
+//# sourceMappingURL=windowWhen.js.map
+
+/***/ },
+/* 306 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var withLatestFrom_1 = __webpack_require__(406);
+Observable_1.Observable.prototype.withLatestFrom = withLatestFrom_1.withLatestFrom;
+//# sourceMappingURL=withLatestFrom.js.map
+
+/***/ },
+/* 307 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var zip_1 = __webpack_require__(60);
+Observable_1.Observable.prototype.zip = zip_1.zipProto;
+//# sourceMappingURL=zip.js.map
+
+/***/ },
+/* 308 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(1);
+var zipAll_1 = __webpack_require__(407);
 Observable_1.Observable.prototype.zipAll = zipAll_1.zipAll;
 //# sourceMappingURL=zipAll.js.map
 
 /***/ },
-/* 279 */
+/* 309 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32916,7 +34975,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Observable_1 = __webpack_require__(1);
 var tryCatch_1 = __webpack_require__(12);
 var errorObject_1 = __webpack_require__(11);
-var AsyncSubject_1 = __webpack_require__(40);
+var AsyncSubject_1 = __webpack_require__(43);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -32958,7 +35017,7 @@ var BoundCallbackObservable = (function (_super) {
      * @see {@link fromPromise}
      *
      * @param {function} func Function with a callback as the last parameter.
-     * @param {function} selector A function which takes the arguments from the
+     * @param {function} [selector] A function which takes the arguments from the
      * callback and maps those a value to emit on the output Observable.
      * @param {Scheduler} [scheduler] The scheduler on which to schedule the
      * callbacks.
@@ -33073,7 +35132,7 @@ function dispatchError(arg) {
 //# sourceMappingURL=BoundCallbackObservable.js.map
 
 /***/ },
-/* 280 */
+/* 310 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33086,7 +35145,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Observable_1 = __webpack_require__(1);
 var tryCatch_1 = __webpack_require__(12);
 var errorObject_1 = __webpack_require__(11);
-var AsyncSubject_1 = __webpack_require__(40);
+var AsyncSubject_1 = __webpack_require__(43);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -33130,7 +35189,7 @@ var BoundNodeCallbackObservable = (function (_super) {
      * @see {@link fromPromise}
      *
      * @param {function} func Function with a callback as the last parameter.
-     * @param {function} selector A function which takes the arguments from the
+     * @param {function} [selector] A function which takes the arguments from the
      * callback and maps those a value to emit on the output Observable.
      * @param {Scheduler} [scheduler] The scheduler on which to schedule the
      * callbacks.
@@ -33255,7 +35314,7 @@ function dispatchError(arg) {
 //# sourceMappingURL=BoundNodeCallbackObservable.js.map
 
 /***/ },
-/* 281 */
+/* 311 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33266,8 +35325,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(1);
-var subscribeToResult_1 = __webpack_require__(4);
-var OuterSubscriber_1 = __webpack_require__(3);
+var subscribeToResult_1 = __webpack_require__(5);
+var OuterSubscriber_1 = __webpack_require__(4);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -33354,7 +35413,7 @@ var DeferSubscriber = (function (_super) {
 //# sourceMappingURL=DeferObservable.js.map
 
 /***/ },
-/* 282 */
+/* 312 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33366,9 +35425,9 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Observable_1 = __webpack_require__(1);
 var EmptyObservable_1 = __webpack_require__(32);
-var isArray_1 = __webpack_require__(45);
-var subscribeToResult_1 = __webpack_require__(4);
-var OuterSubscriber_1 = __webpack_require__(3);
+var isArray_1 = __webpack_require__(48);
+var subscribeToResult_1 = __webpack_require__(5);
+var OuterSubscriber_1 = __webpack_require__(4);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -33472,7 +35531,7 @@ var ForkJoinSubscriber = (function (_super) {
 //# sourceMappingURL=ForkJoinObservable.js.map
 
 /***/ },
-/* 283 */
+/* 313 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33586,7 +35645,7 @@ exports.FromEventPatternObservable = FromEventPatternObservable;
 //# sourceMappingURL=FromEventPatternObservable.js.map
 
 /***/ },
-/* 284 */
+/* 314 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33597,7 +35656,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(1);
-var isScheduler_1 = __webpack_require__(25);
+var isScheduler_1 = __webpack_require__(26);
 var selfSelector = function (value) { return value; };
 /**
  * We need this JSDoc comment for affecting ESDoc.
@@ -33727,7 +35786,7 @@ exports.GenerateObservable = GenerateObservable;
 //# sourceMappingURL=GenerateObservable.js.map
 
 /***/ },
-/* 285 */
+/* 315 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33738,8 +35797,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(1);
-var subscribeToResult_1 = __webpack_require__(4);
-var OuterSubscriber_1 = __webpack_require__(3);
+var subscribeToResult_1 = __webpack_require__(5);
+var OuterSubscriber_1 = __webpack_require__(4);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -33794,7 +35853,7 @@ var IfSubscriber = (function (_super) {
 //# sourceMappingURL=IfObservable.js.map
 
 /***/ },
-/* 286 */
+/* 316 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33805,7 +35864,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(1);
-var noop_1 = __webpack_require__(86);
+var noop_1 = __webpack_require__(108);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -33859,7 +35918,7 @@ exports.NeverObservable = NeverObservable;
 //# sourceMappingURL=NeverObservable.js.map
 
 /***/ },
-/* 287 */
+/* 317 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33950,7 +36009,7 @@ exports.PairsObservable = PairsObservable;
 //# sourceMappingURL=PairsObservable.js.map
 
 /***/ },
-/* 288 */
+/* 318 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34052,7 +36111,7 @@ exports.RangeObservable = RangeObservable;
 //# sourceMappingURL=RangeObservable.js.map
 
 /***/ },
-/* 289 */
+/* 319 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34063,8 +36122,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(1);
-var asap_1 = __webpack_require__(82);
-var isNumeric_1 = __webpack_require__(98);
+var asap_1 = __webpack_require__(103);
+var isNumeric_1 = __webpack_require__(120);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -34109,7 +36168,7 @@ exports.SubscribeOnObservable = SubscribeOnObservable;
 //# sourceMappingURL=SubscribeOnObservable.js.map
 
 /***/ },
-/* 290 */
+/* 320 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34119,11 +36178,11 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var isNumeric_1 = __webpack_require__(98);
+var isNumeric_1 = __webpack_require__(120);
 var Observable_1 = __webpack_require__(1);
 var async_1 = __webpack_require__(13);
-var isScheduler_1 = __webpack_require__(25);
-var isDate_1 = __webpack_require__(41);
+var isScheduler_1 = __webpack_require__(26);
+var isDate_1 = __webpack_require__(44);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -34222,7 +36281,7 @@ exports.TimerObservable = TimerObservable;
 //# sourceMappingURL=TimerObservable.js.map
 
 /***/ },
-/* 291 */
+/* 321 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34233,8 +36292,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(1);
-var subscribeToResult_1 = __webpack_require__(4);
-var OuterSubscriber_1 = __webpack_require__(3);
+var subscribeToResult_1 = __webpack_require__(5);
+var OuterSubscriber_1 = __webpack_require__(4);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -34289,47 +36348,47 @@ var UsingSubscriber = (function (_super) {
 //# sourceMappingURL=UsingObservable.js.map
 
 /***/ },
-/* 292 */
+/* 322 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var BoundCallbackObservable_1 = __webpack_require__(279);
+var BoundCallbackObservable_1 = __webpack_require__(309);
 exports.bindCallback = BoundCallbackObservable_1.BoundCallbackObservable.create;
 //# sourceMappingURL=bindCallback.js.map
 
 /***/ },
-/* 293 */
+/* 323 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var BoundNodeCallbackObservable_1 = __webpack_require__(280);
+var BoundNodeCallbackObservable_1 = __webpack_require__(310);
 exports.bindNodeCallback = BoundNodeCallbackObservable_1.BoundNodeCallbackObservable.create;
 //# sourceMappingURL=bindNodeCallback.js.map
 
 /***/ },
-/* 294 */
+/* 324 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var concat_1 = __webpack_require__(54);
+var concat_1 = __webpack_require__(59);
 exports.concat = concat_1.concatStatic;
 //# sourceMappingURL=concat.js.map
 
 /***/ },
-/* 295 */
+/* 325 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var DeferObservable_1 = __webpack_require__(281);
+var DeferObservable_1 = __webpack_require__(311);
 exports.defer = DeferObservable_1.DeferObservable.create;
 //# sourceMappingURL=defer.js.map
 
 /***/ },
-/* 296 */
+/* 326 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34343,11 +36402,11 @@ var Subject_1 = __webpack_require__(9);
 var Subscriber_1 = __webpack_require__(2);
 var Observable_1 = __webpack_require__(1);
 var Subscription_1 = __webpack_require__(14);
-var root_1 = __webpack_require__(27);
-var ReplaySubject_1 = __webpack_require__(43);
+var root_1 = __webpack_require__(28);
+var ReplaySubject_1 = __webpack_require__(67);
 var tryCatch_1 = __webpack_require__(12);
 var errorObject_1 = __webpack_require__(11);
-var assign_1 = __webpack_require__(392);
+var assign_1 = __webpack_require__(421);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -34393,6 +36452,13 @@ var WebSocketSubject = (function (_super) {
         var sock = new WebSocketSubject(this, this.destination);
         sock.operator = operator;
         return sock;
+    };
+    WebSocketSubject.prototype._resetState = function () {
+        this.socket = null;
+        if (!this.source) {
+            this.destination = new ReplaySubject_1.ReplaySubject();
+        }
+        this._output = new Subject_1.Subject();
     };
     // TODO: factor this out to be a proper Operator/Subscriber implementation and eliminate closures
     WebSocketSubject.prototype.multiplex = function (subMsg, unsubMsg, messageFilter) {
@@ -34465,23 +36531,25 @@ var WebSocketSubject = (function (_super) {
                     observer.error(new TypeError('WebSocketSubject.error must be called with an object with an error code, ' +
                         'and an optional reason: { code: number, reason: string }'));
                 }
-                _this.destination = new ReplaySubject_1.ReplaySubject();
-                _this.socket = null;
+                _this._resetState();
             }, function () {
                 var closingObserver = _this.closingObserver;
                 if (closingObserver) {
                     closingObserver.next(undefined);
                 }
                 socket.close();
-                _this.destination = new ReplaySubject_1.ReplaySubject();
-                _this.socket = null;
+                _this._resetState();
             });
             if (queue && queue instanceof ReplaySubject_1.ReplaySubject) {
                 subscription.add(queue.subscribe(_this.destination));
             }
         };
-        socket.onerror = function (e) { return observer.error(e); };
+        socket.onerror = function (e) {
+            _this._resetState();
+            observer.error(e);
+        };
         socket.onclose = function (e) {
+            _this._resetState();
             var closeObserver = _this.closeObserver;
             if (closeObserver) {
                 closeObserver.next(e);
@@ -34518,8 +36586,8 @@ var WebSocketSubject = (function (_super) {
             var socket = _this.socket;
             if (_this._output.observers.length === 0 && socket && socket.readyState === 1) {
                 socket.close();
-                _this.socket = null;
             }
+            _this._resetState();
         });
         return subscription;
     };
@@ -34527,7 +36595,7 @@ var WebSocketSubject = (function (_super) {
         var _a = this, source = _a.source, socket = _a.socket;
         if (socket && socket.readyState === 1) {
             socket.close();
-            this.socket = null;
+            this._resetState();
         }
         _super.prototype.unsubscribe.call(this);
         if (!source) {
@@ -34540,27 +36608,27 @@ exports.WebSocketSubject = WebSocketSubject;
 //# sourceMappingURL=WebSocketSubject.js.map
 
 /***/ },
-/* 297 */
+/* 327 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var AjaxObservable_1 = __webpack_require__(72);
+var AjaxObservable_1 = __webpack_require__(93);
 exports.ajax = AjaxObservable_1.AjaxObservable.create;
 //# sourceMappingURL=ajax.js.map
 
 /***/ },
-/* 298 */
+/* 328 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var WebSocketSubject_1 = __webpack_require__(296);
+var WebSocketSubject_1 = __webpack_require__(326);
 exports.webSocket = WebSocketSubject_1.WebSocketSubject.create;
 //# sourceMappingURL=webSocket.js.map
 
 /***/ },
-/* 299 */
+/* 329 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34570,107 +36638,107 @@ exports.empty = EmptyObservable_1.EmptyObservable.create;
 //# sourceMappingURL=empty.js.map
 
 /***/ },
-/* 300 */
+/* 330 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var ForkJoinObservable_1 = __webpack_require__(282);
+var ForkJoinObservable_1 = __webpack_require__(312);
 exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
 //# sourceMappingURL=forkJoin.js.map
 
 /***/ },
-/* 301 */
+/* 331 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var FromEventPatternObservable_1 = __webpack_require__(283);
+var FromEventPatternObservable_1 = __webpack_require__(313);
 exports.fromEventPattern = FromEventPatternObservable_1.FromEventPatternObservable.create;
 //# sourceMappingURL=fromEventPattern.js.map
 
 /***/ },
-/* 302 */
+/* 332 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var IfObservable_1 = __webpack_require__(285);
+var IfObservable_1 = __webpack_require__(315);
 exports._if = IfObservable_1.IfObservable.create;
 //# sourceMappingURL=if.js.map
 
 /***/ },
-/* 303 */
+/* 333 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var merge_1 = __webpack_require__(75);
+var merge_1 = __webpack_require__(96);
 exports.merge = merge_1.mergeStatic;
 //# sourceMappingURL=merge.js.map
 
 /***/ },
-/* 304 */
+/* 334 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var NeverObservable_1 = __webpack_require__(286);
+var NeverObservable_1 = __webpack_require__(316);
 exports.never = NeverObservable_1.NeverObservable.create;
 //# sourceMappingURL=never.js.map
 
 /***/ },
-/* 305 */
+/* 335 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var PairsObservable_1 = __webpack_require__(287);
+var PairsObservable_1 = __webpack_require__(317);
 exports.pairs = PairsObservable_1.PairsObservable.create;
 //# sourceMappingURL=pairs.js.map
 
 /***/ },
-/* 306 */
+/* 336 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var RangeObservable_1 = __webpack_require__(288);
+var RangeObservable_1 = __webpack_require__(318);
 exports.range = RangeObservable_1.RangeObservable.create;
 //# sourceMappingURL=range.js.map
 
 /***/ },
-/* 307 */
+/* 337 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var TimerObservable_1 = __webpack_require__(290);
+var TimerObservable_1 = __webpack_require__(320);
 exports.timer = TimerObservable_1.TimerObservable.create;
 //# sourceMappingURL=timer.js.map
 
 /***/ },
-/* 308 */
+/* 338 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var UsingObservable_1 = __webpack_require__(291);
+var UsingObservable_1 = __webpack_require__(321);
 exports.using = UsingObservable_1.UsingObservable.create;
 //# sourceMappingURL=using.js.map
 
 /***/ },
-/* 309 */
+/* 339 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var zip_1 = __webpack_require__(55);
+var zip_1 = __webpack_require__(60);
 exports.zip = zip_1.zipStatic;
 //# sourceMappingURL=zip.js.map
 
 /***/ },
-/* 310 */
+/* 340 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34682,8 +36750,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var tryCatch_1 = __webpack_require__(12);
 var errorObject_1 = __webpack_require__(11);
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
 /**
  * Ignores source values for a duration determined by another Observable, then
  * emits the most recent value from the source Observable, then repeats this
@@ -34786,7 +36854,7 @@ var AuditSubscriber = (function (_super) {
 //# sourceMappingURL=audit.js.map
 
 /***/ },
-/* 311 */
+/* 341 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34896,7 +36964,7 @@ function dispatchNext(subscriber) {
 //# sourceMappingURL=auditTime.js.map
 
 /***/ },
-/* 312 */
+/* 342 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34906,8 +36974,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
 /**
  * Buffers the source Observable values until `closingNotifier` emits.
  *
@@ -34978,7 +37046,7 @@ var BufferSubscriber = (function (_super) {
 //# sourceMappingURL=buffer.js.map
 
 /***/ },
-/* 313 */
+/* 343 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35098,7 +37166,7 @@ var BufferCountSubscriber = (function (_super) {
 //# sourceMappingURL=bufferCount.js.map
 
 /***/ },
-/* 314 */
+/* 344 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35110,50 +37178,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var async_1 = __webpack_require__(13);
 var Subscriber_1 = __webpack_require__(2);
-var isScheduler_1 = __webpack_require__(25);
-/**
- * Buffers the source Observable values for a specific time period.
- *
- * <span class="informal">Collects values from the past as an array, and emits
- * those arrays periodically in time.</span>
- *
- * <img src="./img/bufferTime.png" width="100%">
- *
- * Buffers values from the source for a specific time duration `bufferTimeSpan`.
- * Unless the optional argument `bufferCreationInterval` is given, it emits and
- * resets the buffer every `bufferTimeSpan` milliseconds. If
- * `bufferCreationInterval` is given, this operator opens the buffer every
- * `bufferCreationInterval` milliseconds and closes (emits and resets) the
- * buffer every `bufferTimeSpan` milliseconds. When the optional argument
- * `maxBufferSize` is specified, the buffer will be closed either after
- * `bufferTimeSpan` milliseconds or when it contains `maxBufferSize` elements.
- *
- * @example <caption>Every second, emit an array of the recent click events</caption>
- * var clicks = Rx.Observable.fromEvent(document, 'click');
- * var buffered = clicks.bufferTime(1000);
- * buffered.subscribe(x => console.log(x));
- *
- * @example <caption>Every 5 seconds, emit the click events from the next 2 seconds</caption>
- * var clicks = Rx.Observable.fromEvent(document, 'click');
- * var buffered = clicks.bufferTime(2000, 5000);
- * buffered.subscribe(x => console.log(x));
- *
- * @see {@link buffer}
- * @see {@link bufferCount}
- * @see {@link bufferToggle}
- * @see {@link bufferWhen}
- * @see {@link windowTime}
- *
- * @param {number} bufferTimeSpan The amount of time to fill each buffer array.
- * @param {number} [bufferCreationInterval] The interval at which to start new
- * buffers.
- * @param {number} [maxBufferSize] The maximum buffer size.
- * @param {Scheduler} [scheduler=async] The scheduler on which to schedule the
- * intervals that determine buffer boundaries.
- * @return {Observable<T[]>} An observable of arrays of buffered values.
- * @method bufferTime
- * @owner Observable
- */
+var isScheduler_1 = __webpack_require__(26);
+/* tslint:disable:max-line-length */
 function bufferTime(bufferTimeSpan) {
     var length = arguments.length;
     var scheduler = async_1.async;
@@ -35253,7 +37279,7 @@ var BufferTimeSubscriber = (function (_super) {
         var closeAction = context.closeAction;
         closeAction.unsubscribe();
         this.remove(closeAction);
-        if (this.timespanOnly) {
+        if (!this.closed && this.timespanOnly) {
             context = this.openContext();
             var bufferTimeSpan = this.bufferTimeSpan;
             var timeSpanOnlyState = { subscriber: this, context: context, bufferTimeSpan: bufferTimeSpan };
@@ -35302,7 +37328,7 @@ function dispatchBufferClose(arg) {
 //# sourceMappingURL=bufferTime.js.map
 
 /***/ },
-/* 315 */
+/* 345 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35313,8 +37339,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscription_1 = __webpack_require__(14);
-var subscribeToResult_1 = __webpack_require__(4);
-var OuterSubscriber_1 = __webpack_require__(3);
+var subscribeToResult_1 = __webpack_require__(5);
+var OuterSubscriber_1 = __webpack_require__(4);
 /**
  * Buffers the source Observable values starting from an emission from
  * `openings` and ending when the output of `closingSelector` emits.
@@ -35460,7 +37486,7 @@ var BufferToggleSubscriber = (function (_super) {
 //# sourceMappingURL=bufferToggle.js.map
 
 /***/ },
-/* 316 */
+/* 346 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35473,8 +37499,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Subscription_1 = __webpack_require__(14);
 var tryCatch_1 = __webpack_require__(12);
 var errorObject_1 = __webpack_require__(11);
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
 /**
  * Buffers the source Observable values, using a factory function of closing
  * Observables to determine when to close, emit, and reset the buffer.
@@ -35588,67 +37614,12 @@ var BufferWhenSubscriber = (function (_super) {
 //# sourceMappingURL=bufferWhen.js.map
 
 /***/ },
-/* 317 */
+/* 347 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var Observable_1 = __webpack_require__(1);
-var ReplaySubject_1 = __webpack_require__(43);
-/**
- * @param bufferSize
- * @param windowTime
- * @param scheduler
- * @return {Observable<any>}
- * @method cache
- * @owner Observable
- */
-function cache(bufferSize, windowTime, scheduler) {
-    if (bufferSize === void 0) { bufferSize = Number.POSITIVE_INFINITY; }
-    if (windowTime === void 0) { windowTime = Number.POSITIVE_INFINITY; }
-    var subject;
-    var source = this;
-    var refs = 0;
-    var outerSub;
-    var getSubject = function () {
-        subject = new ReplaySubject_1.ReplaySubject(bufferSize, windowTime, scheduler);
-        return subject;
-    };
-    return new Observable_1.Observable(function (observer) {
-        if (!subject) {
-            subject = getSubject();
-            outerSub = source.subscribe(function (value) { return subject.next(value); }, function (err) {
-                var s = subject;
-                subject = null;
-                s.error(err);
-            }, function () { return subject.complete(); });
-        }
-        refs++;
-        if (!subject) {
-            subject = getSubject();
-        }
-        var innerSub = subject.subscribe(observer);
-        return function () {
-            refs--;
-            if (innerSub) {
-                innerSub.unsubscribe();
-            }
-            if (refs === 0) {
-                outerSub.unsubscribe();
-            }
-        };
-    });
-}
-exports.cache = cache;
-//# sourceMappingURL=cache.js.map
-
-/***/ },
-/* 318 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var combineLatest_1 = __webpack_require__(97);
+var combineLatest_1 = __webpack_require__(119);
 /**
  * Converts a higher-order Observable into a first-order Observable by waiting
  * for the outer Observable to complete, then applying {@link combineLatest}.
@@ -35696,68 +37667,13 @@ exports.combineAll = combineAll;
 //# sourceMappingURL=combineAll.js.map
 
 /***/ },
-/* 319 */
+/* 348 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var mergeMap_1 = __webpack_require__(403);
-/**
- * Projects each source value to an Observable which is merged in the output
- * Observable, in a serialized fashion waiting for each one to complete before
- * merging the next.
- *
- * <span class="informal">Maps each value to an Observable, then flattens all of
- * these inner Observables using {@link concatAll}.</span>
- *
- * <img src="./img/concatMap.png" width="100%">
- *
- * Returns an Observable that emits items based on applying a function that you
- * supply to each item emitted by the source Observable, where that function
- * returns an (so-called "inner") Observable. Each new inner Observable is
- * concatenated with the previous inner Observable.
- *
- * __Warning:__ if source values arrive endlessly and faster than their
- * corresponding inner Observables can complete, it will result in memory issues
- * as inner Observables amass in an unbounded buffer waiting for their turn to
- * be subscribed to.
- *
- * Note: `concatMap` is equivalent to `mergeMap` with concurrency parameter set
- * to `1`.
- *
- * @example <caption>For each click event, tick every second from 0 to 3, with no concurrency</caption>
- * var clicks = Rx.Observable.fromEvent(document, 'click');
- * var result = clicks.concatMap(ev => Rx.Observable.interval(1000).take(4));
- * result.subscribe(x => console.log(x));
- *
- * @see {@link concat}
- * @see {@link concatAll}
- * @see {@link concatMapTo}
- * @see {@link exhaustMap}
- * @see {@link mergeMap}
- * @see {@link switchMap}
- *
- * @param {function(value: T, ?index: number): Observable} project A function
- * that, when applied to an item emitted by the source Observable, returns an
- * Observable.
- * @param {function(outerValue: T, innerValue: I, outerIndex: number, innerIndex: number): any} [resultSelector]
- * A function to produce the value on the output Observable based on the values
- * and the indices of the source (outer) emission and the inner Observable
- * emission. The arguments passed to this function are:
- * - `outerValue`: the value that came from the source
- * - `innerValue`: the value that came from the projected Observable
- * - `outerIndex`: the "index" of the value that came from the source
- * - `innerIndex`: the "index" of the value from the projected Observable
- * @return {Observable} an observable of values merged from the projected
- * Observables as they were subscribed to, one at a time. Optionally, these
- * values may have been projected from a passed `projectResult` argument.
- * @return {Observable} An Observable that emits the result of applying the
- * projection function (and the optional `resultSelector`) to each item emitted
- * by the source Observable and taking values from each projected inner
- * Observable sequentially.
- * @method concatMap
- * @owner Observable
- */
+var mergeMap_1 = __webpack_require__(433);
+/* tslint:disable:max-line-length */
 function concatMap(project, resultSelector) {
     return this.lift(new mergeMap_1.MergeMapOperator(project, resultSelector, 1));
 }
@@ -35765,62 +37681,13 @@ exports.concatMap = concatMap;
 //# sourceMappingURL=concatMap.js.map
 
 /***/ },
-/* 320 */
+/* 349 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var mergeMapTo_1 = __webpack_require__(76);
-/**
- * Projects each source value to the same Observable which is merged multiple
- * times in a serialized fashion on the output Observable.
- *
- * <span class="informal">It's like {@link concatMap}, but maps each value
- * always to the same inner Observable.</span>
- *
- * <img src="./img/concatMapTo.png" width="100%">
- *
- * Maps each source value to the given Observable `innerObservable` regardless
- * of the source value, and then flattens those resulting Observables into one
- * single Observable, which is the output Observable. Each new `innerObservable`
- * instance emitted on the output Observable is concatenated with the previous
- * `innerObservable` instance.
- *
- * __Warning:__ if source values arrive endlessly and faster than their
- * corresponding inner Observables can complete, it will result in memory issues
- * as inner Observables amass in an unbounded buffer waiting for their turn to
- * be subscribed to.
- *
- * Note: `concatMapTo` is equivalent to `mergeMapTo` with concurrency parameter
- * set to `1`.
- *
- * @example <caption>For each click event, tick every second from 0 to 3, with no concurrency</caption>
- * var clicks = Rx.Observable.fromEvent(document, 'click');
- * var result = clicks.concatMapTo(Rx.Observable.interval(1000).take(4));
- * result.subscribe(x => console.log(x));
- *
- * @see {@link concat}
- * @see {@link concatAll}
- * @see {@link concatMap}
- * @see {@link mergeMapTo}
- * @see {@link switchMapTo}
- *
- * @param {Observable} innerObservable An Observable to replace each value from
- * the source Observable.
- * @param {function(outerValue: T, innerValue: I, outerIndex: number, innerIndex: number): any} [resultSelector]
- * A function to produce the value on the output Observable based on the values
- * and the indices of the source (outer) emission and the inner Observable
- * emission. The arguments passed to this function are:
- * - `outerValue`: the value that came from the source
- * - `innerValue`: the value that came from the projected Observable
- * - `outerIndex`: the "index" of the value that came from the source
- * - `innerIndex`: the "index" of the value from the projected Observable
- * @return {Observable} An observable of values merged together by joining the
- * passed observable with itself, one after the other, for each value emitted
- * from the source.
- * @method concatMapTo
- * @owner Observable
- */
+var mergeMapTo_1 = __webpack_require__(97);
+/* tslint:disable:max-line-length */
 function concatMapTo(innerObservable, resultSelector) {
     return this.lift(new mergeMapTo_1.MergeMapToOperator(innerObservable, resultSelector, 1));
 }
@@ -35828,7 +37695,7 @@ exports.concatMapTo = concatMapTo;
 //# sourceMappingURL=concatMapTo.js.map
 
 /***/ },
-/* 321 */
+/* 350 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35942,7 +37809,7 @@ var CountSubscriber = (function (_super) {
 //# sourceMappingURL=count.js.map
 
 /***/ },
-/* 322 */
+/* 351 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35952,8 +37819,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
 /**
  * Emits a value from the source Observable only after a particular time span
  * determined by another Observable has passed without another source emission.
@@ -36075,7 +37942,7 @@ var DebounceSubscriber = (function (_super) {
 //# sourceMappingURL=debounce.js.map
 
 /***/ },
-/* 323 */
+/* 352 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36086,36 +37953,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-/**
- * Emits a given value if the source Observable completes without emitting any
- * `next` value, otherwise mirrors the source Observable.
- *
- * <span class="informal">If the source Observable turns out to be empty, then
- * this operator will emit a default value.</span>
- *
- * <img src="./img/defaultIfEmpty.png" width="100%">
- *
- * `defaultIfEmpty` emits the values emitted by the source Observable or a
- * specified default value if the source Observable is empty (completes without
- * having emitted any `next` value).
- *
- * @example <caption>If no clicks happen in 5 seconds, then emit "no clicks"</caption>
- * var clicks = Rx.Observable.fromEvent(document, 'click');
- * var clicksBeforeFive = clicks.takeUntil(Rx.Observable.interval(5000));
- * var result = clicksBeforeFive.defaultIfEmpty('no clicks');
- * result.subscribe(x => console.log(x));
- *
- * @see {@link empty}
- * @see {@link last}
- *
- * @param {any} [defaultValue=null] The default value used if the source
- * Observable is empty.
- * @return {Observable} An Observable that emits either the specified
- * `defaultValue` if the source Observable emits no items, or the values emitted
- * by the source Observable.
- * @method defaultIfEmpty
- * @owner Observable
- */
+/* tslint:disable:max-line-length */
 function defaultIfEmpty(defaultValue) {
     if (defaultValue === void 0) { defaultValue = null; }
     return this.lift(new DefaultIfEmptyOperator(defaultValue));
@@ -36157,7 +37995,7 @@ var DefaultIfEmptySubscriber = (function (_super) {
 //# sourceMappingURL=defaultIfEmpty.js.map
 
 /***/ },
-/* 324 */
+/* 353 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36168,9 +38006,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var async_1 = __webpack_require__(13);
-var isDate_1 = __webpack_require__(41);
+var isDate_1 = __webpack_require__(44);
 var Subscriber_1 = __webpack_require__(2);
-var Notification_1 = __webpack_require__(42);
+var Notification_1 = __webpack_require__(46);
 /**
  * Delays the emission of items from the source Observable by a given timeout or
  * until a given Date.
@@ -36298,7 +38136,7 @@ var DelayMessage = (function () {
 //# sourceMappingURL=delay.js.map
 
 /***/ },
-/* 325 */
+/* 354 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36310,8 +38148,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Subscriber_1 = __webpack_require__(2);
 var Observable_1 = __webpack_require__(1);
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
 /**
  * Delays the emission of items from the source Observable by a given time span
  * determined by the emissions of another Observable.
@@ -36494,7 +38332,7 @@ var SubscriptionDelaySubscriber = (function (_super) {
 //# sourceMappingURL=delayWhen.js.map
 
 /***/ },
-/* 326 */
+/* 355 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36570,26 +38408,13 @@ var DeMaterializeSubscriber = (function (_super) {
 //# sourceMappingURL=dematerialize.js.map
 
 /***/ },
-/* 327 */
+/* 356 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var distinct_1 = __webpack_require__(73);
-/**
- * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from previous items,
- * using a property accessed by using the key provided to check if the two items are distinct.
- * If a comparator function is provided, then it will be called for each item to test for whether or not that value should be emitted.
- * If a comparator function is not provided, an equality check is used by default.
- * As the internal HashSet of this operator grows larger and larger, care should be taken in the domain of inputs this operator may see.
- * An optional parameter is also provided such that an Observable can be provided to queue the internal HashSet to flush the values it holds.
- * @param {string} key string key for object property lookup on each item.
- * @param {function} [compare] optional comparison function called to test if an item is distinct from previous items in the source.
- * @param {Observable} [flushes] optional Observable for flushing the internal HashSet of the operator.
- * @return {Observable} an Observable that emits items from the source Observable with distinct values.
- * @method distinctKey
- * @owner Observable
- */
+var distinct_1 = __webpack_require__(94);
+/* tslint:disable:max-line-length */
 function distinctKey(key, compare, flushes) {
     return distinct_1.distinct.call(this, function (x, y) {
         if (compare) {
@@ -36602,23 +38427,13 @@ exports.distinctKey = distinctKey;
 //# sourceMappingURL=distinctKey.js.map
 
 /***/ },
-/* 328 */
+/* 357 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var distinctUntilChanged_1 = __webpack_require__(463);
-/**
- * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from the previous item,
- * using a property accessed by using the key provided to check if the two items are distinct.
- * If a comparator function is provided, then it will be called for each item to test for whether or not that value should be emitted.
- * If a comparator function is not provided, an equality check is used by default.
- * @param {string} key string key for object property lookup on each item.
- * @param {function} [compare] optional comparison function called to test if an item is distinct from the previous item in the source.
- * @return {Observable} an Observable that emits items from the source Observable with distinct values based on the key specified.
- * @method distinctUntilKeyChanged
- * @owner Observable
- */
+var distinctUntilChanged_1 = __webpack_require__(493);
+/* tslint:disable:max-line-length */
 function distinctUntilKeyChanged(key, compare) {
     return distinctUntilChanged_1.distinctUntilChanged.call(this, function (x, y) {
         if (compare) {
@@ -36631,7 +38446,7 @@ exports.distinctUntilKeyChanged = distinctUntilKeyChanged;
 //# sourceMappingURL=distinctUntilKeyChanged.js.map
 
 /***/ },
-/* 329 */
+/* 358 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36642,49 +38457,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-/**
- * Perform a side effect for every emission on the source Observable, but return
- * an Observable that is identical to the source.
- *
- * <span class="informal">Intercepts each emission on the source and runs a
- * function, but returns an output which is identical to the source.</span>
- *
- * <img src="./img/do.png" width="100%">
- *
- * Returns a mirrored Observable of the source Observable, but modified so that
- * the provided Observer is called to perform a side effect for every value,
- * error, and completion emitted by the source. Any errors that are thrown in
- * the aforementioned Observer or handlers are safely sent down the error path
- * of the output Observable.
- *
- * This operator is useful for debugging your Observables for the correct values
- * or performing other side effects.
- *
- * Note: this is different to a `subscribe` on the Observable. If the Observable
- * returned by `do` is not subscribed, the side effects specified by the
- * Observer will never happen. `do` therefore simply spies on existing
- * execution, it does not trigger an execution to happen like `subscribe` does.
- *
- * @example <caption>Map every every click to the clientX position of that click, while also logging the click event</caption>
- * var clicks = Rx.Observable.fromEvent(document, 'click');
- * var positions = clicks
- *   .do(ev => console.log(ev))
- *   .map(ev => ev.clientX);
- * positions.subscribe(x => console.log(x));
- *
- * @see {@link map}
- * @see {@link subscribe}
- *
- * @param {Observer|function} [nextOrObserver] A normal Observer object or a
- * callback for `next`.
- * @param {function} [error] Callback for errors in the source.
- * @param {function} [complete] Callback for the completion of the source.
- * @return {Observable} An Observable identical to the source, but runs the
- * specified Observer or callback(s) for each item.
- * @method do
- * @name do
- * @owner Observable
- */
+/* tslint:disable:max-line-length */
 function _do(nextOrObserver, error, complete) {
     return this.lift(new DoOperator(nextOrObserver, error, complete));
 }
@@ -36749,7 +38522,7 @@ var DoSubscriber = (function (_super) {
 //# sourceMappingURL=do.js.map
 
 /***/ },
-/* 330 */
+/* 359 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36760,7 +38533,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var ArgumentOutOfRangeError_1 = __webpack_require__(64);
+var ArgumentOutOfRangeError_1 = __webpack_require__(69);
 /**
  * Emits the single value at the specified `index` in a sequence of emissions
  * from the source Observable.
@@ -36850,7 +38623,7 @@ var ElementAtSubscriber = (function (_super) {
 //# sourceMappingURL=elementAt.js.map
 
 /***/ },
-/* 331 */
+/* 360 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36860,8 +38633,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
 /**
  * Converts a higher-order Observable into a first-order Observable by dropping
  * inner Observables while the previous inner Observable has not yet completed.
@@ -36946,7 +38719,7 @@ var SwitchFirstSubscriber = (function (_super) {
 //# sourceMappingURL=exhaust.js.map
 
 /***/ },
-/* 332 */
+/* 361 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36956,53 +38729,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
-/**
- * Projects each source value to an Observable which is merged in the output
- * Observable only if the previous projected Observable has completed.
- *
- * <span class="informal">Maps each value to an Observable, then flattens all of
- * these inner Observables using {@link exhaust}.</span>
- *
- * <img src="./img/exhaustMap.png" width="100%">
- *
- * Returns an Observable that emits items based on applying a function that you
- * supply to each item emitted by the source Observable, where that function
- * returns an (so-called "inner") Observable. When it projects a source value to
- * an Observable, the output Observable begins emitting the items emitted by
- * that projected Observable. However, `exhaustMap` ignores every new projected
- * Observable if the previous projected Observable has not yet completed. Once
- * that one completes, it will accept and flatten the next projected Observable
- * and repeat this process.
- *
- * @example <caption>Run a finite timer for each click, only if there is no currently active timer</caption>
- * var clicks = Rx.Observable.fromEvent(document, 'click');
- * var result = clicks.exhaustMap((ev) => Rx.Observable.interval(1000));
- * result.subscribe(x => console.log(x));
- *
- * @see {@link concatMap}
- * @see {@link exhaust}
- * @see {@link mergeMap}
- * @see {@link switchMap}
- *
- * @param {function(value: T, ?index: number): Observable} project A function
- * that, when applied to an item emitted by the source Observable, returns an
- * Observable.
- * @param {function(outerValue: T, innerValue: I, outerIndex: number, innerIndex: number): any} [resultSelector]
- * A function to produce the value on the output Observable based on the values
- * and the indices of the source (outer) emission and the inner Observable
- * emission. The arguments passed to this function are:
- * - `outerValue`: the value that came from the source
- * - `innerValue`: the value that came from the projected Observable
- * - `outerIndex`: the "index" of the value that came from the source
- * - `innerIndex`: the "index" of the value from the projected Observable
- * @return {Observable} An Observable containing projected Observables
- * of each item of the source, ignoring projected Observables that start before
- * their preceding Observable has completed.
- * @method exhaustMap
- * @owner Observable
- */
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
+/* tslint:disable:max-line-length */
 function exhaustMap(project, resultSelector) {
     return this.lift(new SwitchFirstMapOperator(project, resultSelector));
 }
@@ -37089,7 +38818,7 @@ var SwitchFirstMapSubscriber = (function (_super) {
 //# sourceMappingURL=exhaustMap.js.map
 
 /***/ },
-/* 333 */
+/* 362 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37101,53 +38830,9 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var tryCatch_1 = __webpack_require__(12);
 var errorObject_1 = __webpack_require__(11);
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
-/**
- * Recursively projects each source value to an Observable which is merged in
- * the output Observable.
- *
- * <span class="informal">It's similar to {@link mergeMap}, but applies the
- * projection function to every source value as well as every output value.
- * It's recursive.</span>
- *
- * <img src="./img/expand.png" width="100%">
- *
- * Returns an Observable that emits items based on applying a function that you
- * supply to each item emitted by the source Observable, where that function
- * returns an Observable, and then merging those resulting Observables and
- * emitting the results of this merger. *Expand* will re-emit on the output
- * Observable every source value. Then, each output value is given to the
- * `project` function which returns an inner Observable to be merged on the
- * output Observable. Those output values resulting from the projection are also
- * given to the `project` function to produce new output values. This is how
- * *expand* behaves recursively.
- *
- * @example <caption>Start emitting the powers of two on every click, at most 10 of them</caption>
- * var clicks = Rx.Observable.fromEvent(document, 'click');
- * var powersOfTwo = clicks
- *   .mapTo(1)
- *   .expand(x => Rx.Observable.of(2 * x).delay(1000))
- *   .take(10);
- * powersOfTwo.subscribe(x => console.log(x));
- *
- * @see {@link mergeMap}
- * @see {@link mergeScan}
- *
- * @param {function(value: T, index: number) => Observable} project A function
- * that, when applied to an item emitted by the source or the output Observable,
- * returns an Observable.
- * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of input
- * Observables being subscribed to concurrently.
- * @param {Scheduler} [scheduler=null] The Scheduler to use for subscribing to
- * each projected inner Observable.
- * @return {Observable} An Observable that emits the source values and also
- * result of applying the projection function to each value emitted on the
- * output Observable and and merging the results of the Observables obtained
- * from this transformation.
- * @method expand
- * @owner Observable
- */
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
+/* tslint:disable:max-line-length */
 function expand(project, concurrent, scheduler) {
     if (concurrent === void 0) { concurrent = Number.POSITIVE_INFINITY; }
     if (scheduler === void 0) { scheduler = undefined; }
@@ -37245,7 +38930,7 @@ exports.ExpandSubscriber = ExpandSubscriber;
 //# sourceMappingURL=expand.js.map
 
 /***/ },
-/* 334 */
+/* 363 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37294,12 +38979,12 @@ var FinallySubscriber = (function (_super) {
 //# sourceMappingURL=finally.js.map
 
 /***/ },
-/* 335 */
+/* 364 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var find_1 = __webpack_require__(74);
+var find_1 = __webpack_require__(95);
 /**
  * Emits only the index of the first value emitted by the source Observable that
  * meets some condition.
@@ -37341,7 +39026,7 @@ exports.findIndex = findIndex;
 //# sourceMappingURL=findIndex.js.map
 
 /***/ },
-/* 336 */
+/* 365 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37355,29 +39040,9 @@ var Subscriber_1 = __webpack_require__(2);
 var Subscription_1 = __webpack_require__(14);
 var Observable_1 = __webpack_require__(1);
 var Subject_1 = __webpack_require__(9);
-var Map_1 = __webpack_require__(390);
-var FastMap_1 = __webpack_require__(388);
-/**
- * Groups the items emitted by an Observable according to a specified criterion,
- * and emits these grouped items as `GroupedObservables`, one
- * {@link GroupedObservable} per group.
- *
- * <img src="./img/groupBy.png" width="100%">
- *
- * @param {function(value: T): K} keySelector a function that extracts the key
- * for each item.
- * @param {function(value: T): R} [elementSelector] a function that extracts the
- * return element for each item.
- * @param {function(grouped: GroupedObservable<K,R>): Observable<any>} [durationSelector]
- * a function that returns an Observable to determine how long each group should
- * exist.
- * @return {Observable<GroupedObservable<K,R>>} an Observable that emits
- * GroupedObservables, each of which corresponds to a unique key value and each
- * of which emits those items from the source Observable that share that key
- * value.
- * @method groupBy
- * @owner Observable
- */
+var Map_1 = __webpack_require__(419);
+var FastMap_1 = __webpack_require__(417);
+/* tslint:disable:max-line-length */
 function groupBy(keySelector, elementSelector, durationSelector) {
     return this.lift(new GroupByOperator(this, keySelector, elementSelector, durationSelector));
 }
@@ -37579,7 +39244,7 @@ var InnerRefCountSubscription = (function (_super) {
 //# sourceMappingURL=groupBy.js.map
 
 /***/ },
-/* 337 */
+/* 366 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37590,7 +39255,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var noop_1 = __webpack_require__(86);
+var noop_1 = __webpack_require__(108);
 /**
  * Ignores all items emitted by the source Observable and only passes calls of `complete` or `error`.
  *
@@ -37632,7 +39297,7 @@ var IgnoreElementsSubscriber = (function (_super) {
 //# sourceMappingURL=ignoreElements.js.map
 
 /***/ },
-/* 338 */
+/* 367 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37690,7 +39355,7 @@ var IsEmptySubscriber = (function (_super) {
 //# sourceMappingURL=isEmpty.js.map
 
 /***/ },
-/* 339 */
+/* 368 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37701,7 +39366,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var Notification_1 = __webpack_require__(42);
+var Notification_1 = __webpack_require__(46);
 /**
  * Represents all of the notifications from the source Observable as `next`
  * emissions marked with their original types within {@link Notification}
@@ -37779,12 +39444,12 @@ var MaterializeSubscriber = (function (_super) {
 //# sourceMappingURL=materialize.js.map
 
 /***/ },
-/* 340 */
+/* 369 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var reduce_1 = __webpack_require__(63);
+var reduce_1 = __webpack_require__(68);
 /**
  * The Max operator operates on an Observable that emits numbers (or items that can be evaluated as numbers),
  * and when source Observable completes it emits a single item: the item with the largest number.
@@ -37807,7 +39472,7 @@ exports.max = max;
 //# sourceMappingURL=max.js.map
 
 /***/ },
-/* 341 */
+/* 370 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37819,8 +39484,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var tryCatch_1 = __webpack_require__(12);
 var errorObject_1 = __webpack_require__(11);
-var subscribeToResult_1 = __webpack_require__(4);
-var OuterSubscriber_1 = __webpack_require__(3);
+var subscribeToResult_1 = __webpack_require__(5);
+var OuterSubscriber_1 = __webpack_require__(4);
 /**
  * @param project
  * @param seed
@@ -37919,12 +39584,12 @@ exports.MergeScanSubscriber = MergeScanSubscriber;
 //# sourceMappingURL=mergeScan.js.map
 
 /***/ },
-/* 342 */
+/* 371 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var reduce_1 = __webpack_require__(63);
+var reduce_1 = __webpack_require__(68);
 /**
  * The Min operator operates on an Observable that emits numbers (or items that can be evaluated as numbers),
  * and when source Observable completes it emits a single item: the item with the smallest number.
@@ -37946,7 +39611,7 @@ exports.min = min;
 //# sourceMappingURL=min.js.map
 
 /***/ },
-/* 343 */
+/* 372 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38029,13 +39694,13 @@ var PairwiseSubscriber = (function (_super) {
 //# sourceMappingURL=pairwise.js.map
 
 /***/ },
-/* 344 */
+/* 373 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var not_1 = __webpack_require__(393);
-var filter_1 = __webpack_require__(464);
+var not_1 = __webpack_require__(422);
+var filter_1 = __webpack_require__(494);
 /**
  * Splits the source Observable into two, one with values that satisfy a
  * predicate, and another with values that don't satisfy the predicate.
@@ -38087,26 +39752,14 @@ exports.partition = partition;
 //# sourceMappingURL=partition.js.map
 
 /***/ },
-/* 345 */
+/* 374 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Subject_1 = __webpack_require__(9);
-var multicast_1 = __webpack_require__(24);
-/**
- * Returns a ConnectableObservable, which is a variety of Observable that waits until its connect method is called
- * before it begins emitting items to those Observers that have subscribed to it.
- *
- * <img src="./img/publish.png" width="100%">
- *
- * @param {Function} Optional selector function which can use the multicasted source sequence as many times as needed,
- * without causing multiple subscriptions to the source sequence.
- * Subscribers to the given source will receive all notifications of the source from the time of the subscription on.
- * @return a ConnectableObservable that upon connection causes the source Observable to emit items to its Observers.
- * @method publish
- * @owner Observable
- */
+var multicast_1 = __webpack_require__(25);
+/* tslint:disable:max-line-length */
 function publish(selector) {
     return selector ? multicast_1.multicast.call(this, function () { return new Subject_1.Subject(); }, selector) :
         multicast_1.multicast.call(this, new Subject_1.Subject());
@@ -38115,13 +39768,13 @@ exports.publish = publish;
 //# sourceMappingURL=publish.js.map
 
 /***/ },
-/* 346 */
+/* 375 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var BehaviorSubject_1 = __webpack_require__(92);
-var multicast_1 = __webpack_require__(24);
+var BehaviorSubject_1 = __webpack_require__(114);
+var multicast_1 = __webpack_require__(25);
 /**
  * @param value
  * @return {ConnectableObservable<T>}
@@ -38135,13 +39788,13 @@ exports.publishBehavior = publishBehavior;
 //# sourceMappingURL=publishBehavior.js.map
 
 /***/ },
-/* 347 */
+/* 376 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var AsyncSubject_1 = __webpack_require__(40);
-var multicast_1 = __webpack_require__(24);
+var AsyncSubject_1 = __webpack_require__(43);
+var multicast_1 = __webpack_require__(25);
 /**
  * @return {ConnectableObservable<T>}
  * @method publishLast
@@ -38154,13 +39807,13 @@ exports.publishLast = publishLast;
 //# sourceMappingURL=publishLast.js.map
 
 /***/ },
-/* 348 */
+/* 377 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var ReplaySubject_1 = __webpack_require__(43);
-var multicast_1 = __webpack_require__(24);
+var ReplaySubject_1 = __webpack_require__(67);
+var multicast_1 = __webpack_require__(25);
 /**
  * @param bufferSize
  * @param windowTime
@@ -38178,7 +39831,7 @@ exports.publishReplay = publishReplay;
 //# sourceMappingURL=publishReplay.js.map
 
 /***/ },
-/* 349 */
+/* 378 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38259,7 +39912,7 @@ var RepeatSubscriber = (function (_super) {
 //# sourceMappingURL=repeat.js.map
 
 /***/ },
-/* 350 */
+/* 379 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38272,8 +39925,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Subject_1 = __webpack_require__(9);
 var tryCatch_1 = __webpack_require__(12);
 var errorObject_1 = __webpack_require__(11);
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
 /**
  * Returns an Observable that emits the same values as the source observable with the exception of a `complete`.
  * A `complete` will cause the emission of the Throwable that cause the complete to the Observable returned from
@@ -38371,7 +40024,7 @@ var RepeatWhenSubscriber = (function (_super) {
 //# sourceMappingURL=repeatWhen.js.map
 
 /***/ },
-/* 351 */
+/* 380 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38446,7 +40099,7 @@ var RetrySubscriber = (function (_super) {
 //# sourceMappingURL=retry.js.map
 
 /***/ },
-/* 352 */
+/* 381 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38459,8 +40112,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Subject_1 = __webpack_require__(9);
 var tryCatch_1 = __webpack_require__(12);
 var errorObject_1 = __webpack_require__(11);
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
 /**
  * Returns an Observable that emits the same values as the source observable with the exception of an `error`.
  * An `error` will cause the emission of the Throwable that cause the error to the Observable returned from
@@ -38558,7 +40211,7 @@ var RetryWhenSubscriber = (function (_super) {
 //# sourceMappingURL=retryWhen.js.map
 
 /***/ },
-/* 353 */
+/* 382 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38655,7 +40308,7 @@ function dispatchNotification(state) {
 //# sourceMappingURL=sampleTime.js.map
 
 /***/ },
-/* 354 */
+/* 383 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38666,43 +40319,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-/**
- * Applies an accumulator function over the source Observable, and returns each
- * intermediate result, with an optional seed value.
- *
- * <span class="informal">It's like {@link reduce}, but emits the current
- * accumulation whenever the source emits a value.</span>
- *
- * <img src="./img/scan.png" width="100%">
- *
- * Combines together all values emitted on the source, using an accumulator
- * function that knows how to join a new source value into the accumulation from
- * the past. Is similar to {@link reduce}, but emits the intermediate
- * accumulations.
- *
- * Returns an Observable that applies a specified `accumulator` function to each
- * item emitted by the source Observable. If a `seed` value is specified, then
- * that value will be used as the initial value for the accumulator. If no seed
- * value is specified, the first item of the source is used as the seed.
- *
- * @example <caption>Count the number of click events</caption>
- * var clicks = Rx.Observable.fromEvent(document, 'click');
- * var ones = clicks.mapTo(1);
- * var seed = 0;
- * var count = ones.scan((acc, one) => acc + one, seed);
- * count.subscribe(x => console.log(x));
- *
- * @see {@link expand}
- * @see {@link mergeScan}
- * @see {@link reduce}
- *
- * @param {function(acc: R, value: T, index: number): R} accumulator
- * The accumulator function called on each source value.
- * @param {T|R} [seed] The initial accumulation value.
- * @return {Observable<R>} An observable of the accumulated values.
- * @method scan
- * @owner Observable
- */
+/* tslint:disable:max-line-length */
 function scan(accumulator, seed) {
     return this.lift(new ScanOperator(accumulator, seed));
 }
@@ -38769,7 +40386,7 @@ var ScanSubscriber = (function (_super) {
 //# sourceMappingURL=scan.js.map
 
 /***/ },
-/* 355 */
+/* 384 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38939,12 +40556,12 @@ var SequenceEqualCompareToSubscriber = (function (_super) {
 //# sourceMappingURL=sequenceEqual.js.map
 
 /***/ },
-/* 356 */
+/* 385 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var multicast_1 = __webpack_require__(24);
+var multicast_1 = __webpack_require__(25);
 var Subject_1 = __webpack_require__(9);
 function shareSubjectFactory() {
     return new Subject_1.Subject();
@@ -38969,7 +40586,7 @@ exports.share = share;
 //# sourceMappingURL=share.js.map
 
 /***/ },
-/* 357 */
+/* 386 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38980,7 +40597,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var EmptyError_1 = __webpack_require__(91);
+var EmptyError_1 = __webpack_require__(113);
 /**
  * Returns an Observable that emits the single item emitted by the source Observable that matches a specified
  * predicate, if that Observable emits one such item. If the source Observable emits more than one such item or no
@@ -39070,7 +40687,7 @@ var SingleSubscriber = (function (_super) {
 //# sourceMappingURL=single.js.map
 
 /***/ },
-/* 358 */
+/* 387 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39127,7 +40744,7 @@ var SkipSubscriber = (function (_super) {
 //# sourceMappingURL=skip.js.map
 
 /***/ },
-/* 359 */
+/* 388 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39137,8 +40754,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
 /**
  * Returns an Observable that skips items emitted by the source Observable until a second Observable emits an item.
  *
@@ -39204,7 +40821,7 @@ var SkipUntilSubscriber = (function (_super) {
 //# sourceMappingURL=skipUntil.js.map
 
 /***/ },
-/* 360 */
+/* 389 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39276,28 +40893,17 @@ var SkipWhileSubscriber = (function (_super) {
 //# sourceMappingURL=skipWhile.js.map
 
 /***/ },
-/* 361 */
+/* 390 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var ArrayObservable_1 = __webpack_require__(31);
-var ScalarObservable_1 = __webpack_require__(434);
+var ScalarObservable_1 = __webpack_require__(464);
 var EmptyObservable_1 = __webpack_require__(32);
-var concat_1 = __webpack_require__(54);
-var isScheduler_1 = __webpack_require__(25);
-/**
- * Returns an Observable that emits the items in a specified Iterable before it begins to emit items emitted by the
- * source Observable.
- *
- * <img src="./img/startWith.png" width="100%">
- *
- * @param {Values} an Iterable that contains the items you want the modified Observable to emit first.
- * @return {Observable} an Observable that emits the items in the specified Iterable and then emits the items
- * emitted by the source Observable.
- * @method startWith
- * @owner Observable
- */
+var concat_1 = __webpack_require__(59);
+var isScheduler_1 = __webpack_require__(26);
+/* tslint:disable:max-line-length */
 function startWith() {
     var array = [];
     for (var _i = 0; _i < arguments.length; _i++) {
@@ -39325,12 +40931,12 @@ exports.startWith = startWith;
 //# sourceMappingURL=startWith.js.map
 
 /***/ },
-/* 362 */
+/* 391 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var SubscribeOnObservable_1 = __webpack_require__(289);
+var SubscribeOnObservable_1 = __webpack_require__(319);
 /**
  * Asynchronously subscribes Observers to this Observable on the specified Scheduler.
  *
@@ -39350,7 +40956,7 @@ exports.subscribeOn = subscribeOn;
 //# sourceMappingURL=subscribeOn.js.map
 
 /***/ },
-/* 363 */
+/* 392 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39360,8 +40966,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
 /**
  * Converts a higher-order Observable into a first-order Observable by
  * subscribing to only the most recently emitted of those inner Observables.
@@ -39464,7 +41070,7 @@ var SwitchSubscriber = (function (_super) {
 //# sourceMappingURL=switch.js.map
 
 /***/ },
-/* 364 */
+/* 393 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39474,52 +41080,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
-/**
- * Projects each source value to the same Observable which is flattened multiple
- * times with {@link switch} in the output Observable.
- *
- * <span class="informal">It's like {@link switchMap}, but maps each value
- * always to the same inner Observable.</span>
- *
- * <img src="./img/switchMapTo.png" width="100%">
- *
- * Maps each source value to the given Observable `innerObservable` regardless
- * of the source value, and then flattens those resulting Observables into one
- * single Observable, which is the output Observable. The output Observables
- * emits values only from the most recently emitted instance of
- * `innerObservable`.
- *
- * @example <caption>Rerun an interval Observable on every click event</caption>
- * var clicks = Rx.Observable.fromEvent(document, 'click');
- * var result = clicks.switchMapTo(Rx.Observable.interval(1000));
- * result.subscribe(x => console.log(x));
- *
- * @see {@link concatMapTo}
- * @see {@link switch}
- * @see {@link switchMap}
- * @see {@link mergeMapTo}
- *
- * @param {Observable} innerObservable An Observable to replace each value from
- * the source Observable.
- * @param {function(outerValue: T, innerValue: I, outerIndex: number, innerIndex: number): any} [resultSelector]
- * A function to produce the value on the output Observable based on the values
- * and the indices of the source (outer) emission and the inner Observable
- * emission. The arguments passed to this function are:
- * - `outerValue`: the value that came from the source
- * - `innerValue`: the value that came from the projected Observable
- * - `outerIndex`: the "index" of the value that came from the source
- * - `innerIndex`: the "index" of the value from the projected Observable
- * @return {Observable} An Observable that emits items from the given
- * `innerObservable` every time a value is emitted on the source Observable.
- * @return {Observable} An Observable that emits items from the given
- * `innerObservable` (and optionally transformed through `resultSelector`) every
- * time a value is emitted on the source Observable, and taking only the values
- * from the most recently projected inner Observable.
- * @method switchMapTo
- * @owner Observable
- */
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
+/* tslint:disable:max-line-length */
 function switchMapTo(innerObservable, resultSelector) {
     return this.lift(new SwitchMapToOperator(innerObservable, resultSelector));
 }
@@ -39596,7 +41159,7 @@ var SwitchMapToSubscriber = (function (_super) {
 //# sourceMappingURL=switchMapTo.js.map
 
 /***/ },
-/* 365 */
+/* 394 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39607,7 +41170,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var ArgumentOutOfRangeError_1 = __webpack_require__(64);
+var ArgumentOutOfRangeError_1 = __webpack_require__(69);
 var EmptyObservable_1 = __webpack_require__(32);
 /**
  * Emits only the last `count` values emitted by the source Observable.
@@ -39709,7 +41272,7 @@ var TakeLastSubscriber = (function (_super) {
 //# sourceMappingURL=takeLast.js.map
 
 /***/ },
-/* 366 */
+/* 395 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39719,8 +41282,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
 /**
  * Emits the values emitted by the source Observable until a `notifier`
  * Observable emits a value.
@@ -39790,7 +41353,7 @@ var TakeUntilSubscriber = (function (_super) {
 //# sourceMappingURL=takeUntil.js.map
 
 /***/ },
-/* 367 */
+/* 396 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39888,7 +41451,7 @@ var TakeWhileSubscriber = (function (_super) {
 //# sourceMappingURL=takeWhile.js.map
 
 /***/ },
-/* 368 */
+/* 397 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39898,8 +41461,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
 /**
  * Emits a value from the source Observable, then ignores subsequent source
  * values for a duration determined by another Observable, then repeats this
@@ -40002,7 +41565,7 @@ var ThrottleSubscriber = (function (_super) {
 //# sourceMappingURL=throttle.js.map
 
 /***/ },
-/* 369 */
+/* 398 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40103,7 +41666,7 @@ function dispatchNext(arg) {
 //# sourceMappingURL=throttleTime.js.map
 
 /***/ },
-/* 370 */
+/* 399 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40114,8 +41677,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var async_1 = __webpack_require__(13);
-var isDate_1 = __webpack_require__(41);
+var isDate_1 = __webpack_require__(44);
 var Subscriber_1 = __webpack_require__(2);
+var TimeoutError_1 = __webpack_require__(106);
 /**
  * @param due
  * @param errorToSend
@@ -40204,14 +41768,14 @@ var TimeoutSubscriber = (function (_super) {
         this._hasCompleted = true;
     };
     TimeoutSubscriber.prototype.notifyTimeout = function () {
-        this.error(this.errorToSend || new Error('timeout'));
+        this.error(this.errorToSend || new TimeoutError_1.TimeoutError());
     };
     return TimeoutSubscriber;
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=timeout.js.map
 
 /***/ },
-/* 371 */
+/* 400 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40222,17 +41786,10 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var async_1 = __webpack_require__(13);
-var isDate_1 = __webpack_require__(41);
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
-/**
- * @param due
- * @param withObservable
- * @param scheduler
- * @return {Observable<R>|WebSocketSubject<T>|Observable<T>}
- * @method timeoutWith
- * @owner Observable
- */
+var isDate_1 = __webpack_require__(44);
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
+/* tslint:disable:max-line-length */
 function timeoutWith(due, withObservable, scheduler) {
     if (scheduler === void 0) { scheduler = async_1.async; }
     var absoluteTimeout = isDate_1.isDate(due);
@@ -40327,7 +41884,7 @@ var TimeoutWithSubscriber = (function (_super) {
 //# sourceMappingURL=timeoutWith.js.map
 
 /***/ },
-/* 372 */
+/* 401 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40338,8 +41895,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subject_1 = __webpack_require__(9);
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
 /**
  * Branch out the source Observable values as a nested Observable whenever
  * `windowBoundaries` emits.
@@ -40443,7 +42000,7 @@ var WindowSubscriber = (function (_super) {
 //# sourceMappingURL=window.js.map
 
 /***/ },
-/* 373 */
+/* 402 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40580,7 +42137,7 @@ var WindowCountSubscriber = (function (_super) {
 //# sourceMappingURL=windowCount.js.map
 
 /***/ },
-/* 374 */
+/* 403 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40755,7 +42312,7 @@ function dispatchWindowClose(arg) {
 //# sourceMappingURL=windowTime.js.map
 
 /***/ },
-/* 375 */
+/* 404 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40769,8 +42326,8 @@ var Subject_1 = __webpack_require__(9);
 var Subscription_1 = __webpack_require__(14);
 var tryCatch_1 = __webpack_require__(12);
 var errorObject_1 = __webpack_require__(11);
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
 /**
  * Branch out the source Observable values as a nested Observable starting from
  * an emission from `openings` and ending when the output of `closingSelector`
@@ -40941,7 +42498,7 @@ var WindowToggleSubscriber = (function (_super) {
 //# sourceMappingURL=windowToggle.js.map
 
 /***/ },
-/* 376 */
+/* 405 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40954,8 +42511,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Subject_1 = __webpack_require__(9);
 var tryCatch_1 = __webpack_require__(12);
 var errorObject_1 = __webpack_require__(11);
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
 /**
  * Branch out the source Observable values as a nested Observable using a
  * factory function of closing Observables to determine when to start a new
@@ -41074,7 +42631,7 @@ var WindowSubscriber = (function (_super) {
 //# sourceMappingURL=windowWhen.js.map
 
 /***/ },
-/* 377 */
+/* 406 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41084,46 +42641,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
-/**
- * Combines the source Observable with other Observables to create an Observable
- * whose values are calculated from the latest values of each, only when the
- * source emits.
- *
- * <span class="informal">Whenever the source Observable emits a value, it
- * computes a formula using that value plus the latest values from other input
- * Observables, then emits the output of that formula.</span>
- *
- * <img src="./img/withLatestFrom.png" width="100%">
- *
- * `withLatestFrom` combines each value from the source Observable (the
- * instance) with the latest values from the other input Observables only when
- * the source emits a value, optionally using a `project` function to determine
- * the value to be emitted on the output Observable. All input Observables must
- * emit at least one value before the output Observable will emit a value.
- *
- * @example <caption>On every click event, emit an array with the latest timer event plus the click event</caption>
- * var clicks = Rx.Observable.fromEvent(document, 'click');
- * var timer = Rx.Observable.interval(1000);
- * var result = clicks.withLatestFrom(timer);
- * result.subscribe(x => console.log(x));
- *
- * @see {@link combineLatest}
- *
- * @param {Observable} other An input Observable to combine with the source
- * Observable. More than one input Observables may be given as argument.
- * @param {Function} [project] Projection function for combining values
- * together. Receives all values in order of the Observables passed, where the
- * first parameter is a value from the source Observable. (e.g.
- * `a.withLatestFrom(b, c, (a1, b1, c1) => a1 + b1 + c1)`). If this is not
- * passed, arrays will be emitted on the output Observable.
- * @return {Observable} An Observable of projected values from the most recent
- * values from each input Observable, or an array of the most recent values from
- * each input Observable.
- * @method withLatestFrom
- * @owner Observable
- */
+var OuterSubscriber_1 = __webpack_require__(4);
+var subscribeToResult_1 = __webpack_require__(5);
+/* tslint:disable:max-line-length */
 function withLatestFrom() {
     var args = [];
     for (var _i = 0; _i < arguments.length; _i++) {
@@ -41137,7 +42657,6 @@ function withLatestFrom() {
     return this.lift(new WithLatestFromOperator(observables, project));
 }
 exports.withLatestFrom = withLatestFrom;
-/* tslint:enable:max-line-length */
 var WithLatestFromOperator = (function () {
     function WithLatestFromOperator(observables, project) {
         this.observables = observables;
@@ -41210,12 +42729,12 @@ var WithLatestFromSubscriber = (function (_super) {
 //# sourceMappingURL=withLatestFrom.js.map
 
 /***/ },
-/* 378 */
+/* 407 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var zip_1 = __webpack_require__(55);
+var zip_1 = __webpack_require__(60);
 /**
  * @param project
  * @return {Observable<R>|WebSocketSubject<T>|Observable<T>}
@@ -41229,7 +42748,7 @@ exports.zipAll = zipAll;
 //# sourceMappingURL=zipAll.js.map
 
 /***/ },
-/* 379 */
+/* 408 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41239,8 +42758,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var AsyncAction_1 = __webpack_require__(59);
-var AnimationFrame_1 = __webpack_require__(387);
+var AsyncAction_1 = __webpack_require__(64);
+var AnimationFrame_1 = __webpack_require__(416);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -41268,8 +42787,10 @@ var AnimationFrameAction = (function (_super) {
     };
     AnimationFrameAction.prototype.recycleAsyncId = function (scheduler, id, delay) {
         if (delay === void 0) { delay = 0; }
-        // If delay exists and is greater than 0, recycle as an async action.
-        if (delay !== null && delay > 0) {
+        // If delay exists and is greater than 0, or if the delay is null (the
+        // action wasn't rescheduled) but was originally scheduled as an async
+        // action, then recycle as an async action.
+        if ((delay !== null && delay > 0) || (delay === null && this.delay > 0)) {
             return _super.prototype.recycleAsyncId.call(this, scheduler, id, delay);
         }
         // If the scheduler queue is empty, cancel the requested animation frame and
@@ -41288,7 +42809,7 @@ exports.AnimationFrameAction = AnimationFrameAction;
 //# sourceMappingURL=AnimationFrameAction.js.map
 
 /***/ },
-/* 380 */
+/* 409 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41298,20 +42819,20 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var AsyncScheduler_1 = __webpack_require__(60);
+var AsyncScheduler_1 = __webpack_require__(65);
 var AnimationFrameScheduler = (function (_super) {
     __extends(AnimationFrameScheduler, _super);
     function AnimationFrameScheduler() {
         _super.apply(this, arguments);
     }
-    AnimationFrameScheduler.prototype.flush = function () {
+    AnimationFrameScheduler.prototype.flush = function (action) {
         this.active = true;
         this.scheduled = undefined;
         var actions = this.actions;
         var error;
         var index = -1;
         var count = actions.length;
-        var action = actions.shift();
+        action = action || actions.shift();
         do {
             if (error = action.execute(action.state, action.delay)) {
                 break;
@@ -41331,7 +42852,7 @@ exports.AnimationFrameScheduler = AnimationFrameScheduler;
 //# sourceMappingURL=AnimationFrameScheduler.js.map
 
 /***/ },
-/* 381 */
+/* 410 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41341,8 +42862,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Immediate_1 = __webpack_require__(389);
-var AsyncAction_1 = __webpack_require__(59);
+var Immediate_1 = __webpack_require__(418);
+var AsyncAction_1 = __webpack_require__(64);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -41370,8 +42891,10 @@ var AsapAction = (function (_super) {
     };
     AsapAction.prototype.recycleAsyncId = function (scheduler, id, delay) {
         if (delay === void 0) { delay = 0; }
-        // If delay exists and is greater than 0, recycle as an async action.
-        if (delay !== null && delay > 0) {
+        // If delay exists and is greater than 0, or if the delay is null (the
+        // action wasn't rescheduled) but was originally scheduled as an async
+        // action, then recycle as an async action.
+        if ((delay !== null && delay > 0) || (delay === null && this.delay > 0)) {
             return _super.prototype.recycleAsyncId.call(this, scheduler, id, delay);
         }
         // If the scheduler queue is empty, cancel the requested microtask and
@@ -41390,7 +42913,7 @@ exports.AsapAction = AsapAction;
 //# sourceMappingURL=AsapAction.js.map
 
 /***/ },
-/* 382 */
+/* 411 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41400,20 +42923,20 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var AsyncScheduler_1 = __webpack_require__(60);
+var AsyncScheduler_1 = __webpack_require__(65);
 var AsapScheduler = (function (_super) {
     __extends(AsapScheduler, _super);
     function AsapScheduler() {
         _super.apply(this, arguments);
     }
-    AsapScheduler.prototype.flush = function () {
+    AsapScheduler.prototype.flush = function (action) {
         this.active = true;
         this.scheduled = undefined;
         var actions = this.actions;
         var error;
         var index = -1;
         var count = actions.length;
-        var action = actions.shift();
+        action = action || actions.shift();
         do {
             if (error = action.execute(action.state, action.delay)) {
                 break;
@@ -41433,18 +42956,18 @@ exports.AsapScheduler = AsapScheduler;
 //# sourceMappingURL=AsapScheduler.js.map
 
 /***/ },
-/* 383 */
+/* 412 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var AnimationFrameAction_1 = __webpack_require__(379);
-var AnimationFrameScheduler_1 = __webpack_require__(380);
+var AnimationFrameAction_1 = __webpack_require__(408);
+var AnimationFrameScheduler_1 = __webpack_require__(409);
 exports.animationFrame = new AnimationFrameScheduler_1.AnimationFrameScheduler(AnimationFrameAction_1.AnimationFrameAction);
 //# sourceMappingURL=animationFrame.js.map
 
 /***/ },
-/* 384 */
+/* 413 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41456,8 +42979,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Observable_1 = __webpack_require__(1);
 var Subscription_1 = __webpack_require__(14);
-var SubscriptionLoggable_1 = __webpack_require__(84);
-var applyMixins_1 = __webpack_require__(85);
+var SubscriptionLoggable_1 = __webpack_require__(105);
+var applyMixins_1 = __webpack_require__(107);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -41496,7 +43019,7 @@ applyMixins_1.applyMixins(ColdObservable, [SubscriptionLoggable_1.SubscriptionLo
 //# sourceMappingURL=ColdObservable.js.map
 
 /***/ },
-/* 385 */
+/* 414 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41508,8 +43031,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Subject_1 = __webpack_require__(9);
 var Subscription_1 = __webpack_require__(14);
-var SubscriptionLoggable_1 = __webpack_require__(84);
-var applyMixins_1 = __webpack_require__(85);
+var SubscriptionLoggable_1 = __webpack_require__(105);
+var applyMixins_1 = __webpack_require__(107);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -41550,7 +43073,7 @@ applyMixins_1.applyMixins(HotObservable, [SubscriptionLoggable_1.SubscriptionLog
 //# sourceMappingURL=HotObservable.js.map
 
 /***/ },
-/* 386 */
+/* 415 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41561,11 +43084,11 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(1);
-var Notification_1 = __webpack_require__(42);
-var ColdObservable_1 = __webpack_require__(384);
-var HotObservable_1 = __webpack_require__(385);
-var SubscriptionLog_1 = __webpack_require__(83);
-var VirtualTimeScheduler_1 = __webpack_require__(81);
+var Notification_1 = __webpack_require__(46);
+var ColdObservable_1 = __webpack_require__(413);
+var HotObservable_1 = __webpack_require__(414);
+var SubscriptionLog_1 = __webpack_require__(104);
+var VirtualTimeScheduler_1 = __webpack_require__(102);
 var defaultMaxFrame = 750;
 var TestScheduler = (function (_super) {
     __extends(TestScheduler, _super);
@@ -41779,12 +43302,12 @@ exports.TestScheduler = TestScheduler;
 //# sourceMappingURL=TestScheduler.js.map
 
 /***/ },
-/* 387 */
+/* 416 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var root_1 = __webpack_require__(27);
+var root_1 = __webpack_require__(28);
 var RequestAnimationFrameDefinition = (function () {
     function RequestAnimationFrameDefinition(root) {
         if (root.requestAnimationFrame) {
@@ -41819,7 +43342,7 @@ exports.AnimationFrame = new RequestAnimationFrameDefinition(root_1.root);
 //# sourceMappingURL=AnimationFrame.js.map
 
 /***/ },
-/* 388 */
+/* 417 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -41856,7 +43379,7 @@ exports.FastMap = FastMap;
 //# sourceMappingURL=FastMap.js.map
 
 /***/ },
-/* 389 */
+/* 418 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41864,7 +43387,7 @@ exports.FastMap = FastMap;
 Some credit for this helper goes to http://github.com/YuzuJS/setImmediate
 */
 "use strict";
-var root_1 = __webpack_require__(27);
+var root_1 = __webpack_require__(28);
 var ImmediateDefinition = (function () {
     function ImmediateDefinition(root) {
         this.root = root;
@@ -42071,18 +43594,18 @@ exports.Immediate = new ImmediateDefinition(root_1.root);
 //# sourceMappingURL=Immediate.js.map
 
 /***/ },
-/* 390 */
+/* 419 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var root_1 = __webpack_require__(27);
-var MapPolyfill_1 = __webpack_require__(391);
+var root_1 = __webpack_require__(28);
+var MapPolyfill_1 = __webpack_require__(420);
 exports.Map = root_1.root.Map || (function () { return MapPolyfill_1.MapPolyfill; })();
 //# sourceMappingURL=Map.js.map
 
 /***/ },
-/* 391 */
+/* 420 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -42135,12 +43658,12 @@ exports.MapPolyfill = MapPolyfill;
 //# sourceMappingURL=MapPolyfill.js.map
 
 /***/ },
-/* 392 */
+/* 421 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var root_1 = __webpack_require__(27);
+var root_1 = __webpack_require__(28);
 var Object = root_1.root.Object;
 if (typeof Object.assign != 'function') {
     (function () {
@@ -42172,7 +43695,7 @@ exports.assign = Object.assign;
 //# sourceMappingURL=assign.js.map
 
 /***/ },
-/* 393 */
+/* 422 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -42189,7 +43712,7 @@ exports.not = not;
 //# sourceMappingURL=not.js.map
 
 /***/ },
-/* 394 */
+/* 423 */
 /***/ function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -42318,7 +43841,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 
 /***/ },
-/* 395 */
+/* 424 */
 /***/ function(module, exports) {
 
 module.exports = function(module) {
@@ -42344,492 +43867,1925 @@ module.exports = function(module) {
 
 
 /***/ },
-/* 396 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(100);
-
-/***/ },
-/* 397 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(104);
-
-/***/ },
-/* 398 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(118);
-
-/***/ },
-/* 399 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(132);
-
-/***/ },
-/* 400 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(133);
-
-/***/ },
-/* 401 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(135);
-
-/***/ },
-/* 402 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(138);
-
-/***/ },
-/* 403 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(152);
-
-/***/ },
-/* 404 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(154);
-
-/***/ },
-/* 405 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(155);
-
-/***/ },
-/* 406 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(173);
-
-/***/ },
-/* 407 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(174);
-
-/***/ },
-/* 408 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(176);
-
-/***/ },
-/* 409 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(185);
-
-/***/ },
-/* 410 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(186);
-
-/***/ },
-/* 411 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(188);
-
-/***/ },
-/* 412 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(196);
-
-/***/ },
-/* 413 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(197);
-
-/***/ },
-/* 414 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(200);
-
-/***/ },
-/* 415 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(201);
-
-/***/ },
-/* 416 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(202);
-
-/***/ },
-/* 417 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(203);
-
-/***/ },
-/* 418 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(204);
-
-/***/ },
-/* 419 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(206);
-
-/***/ },
-/* 420 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(231);
-
-/***/ },
-/* 421 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(234);
-
-/***/ },
-/* 422 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(235);
-
-/***/ },
-/* 423 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(276);
-
-/***/ },
-/* 424 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = (__webpack_require__(0))(277);
-
-/***/ },
 /* 425 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(280);
+/* WEBPACK VAR INJECTION */(function(global, Promise) {/**
+* @license
+* Copyright Google Inc. All Rights Reserved.
+*
+* Use of this source code is governed by an MIT-style license that can be
+* found in the LICENSE file at https://angular.io/license
+*/
+(function (global, factory) {
+     true ? factory() :
+    typeof define === 'function' && define.amd ? define(factory) :
+    (factory());
+}(this, (function () { 'use strict';
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+
+var Zone$1 = (function (global) {
+    if (global.Zone) {
+        throw new Error('Zone already loaded.');
+    }
+    var Zone = (function () {
+        function Zone(parent, zoneSpec) {
+            this._properties = null;
+            this._parent = parent;
+            this._name = zoneSpec ? zoneSpec.name || 'unnamed' : '<root>';
+            this._properties = zoneSpec && zoneSpec.properties || {};
+            this._zoneDelegate =
+                new ZoneDelegate(this, this._parent && this._parent._zoneDelegate, zoneSpec);
+        }
+        Zone.assertZonePatched = function () {
+            if (global.Promise !== ZoneAwarePromise) {
+                throw new Error('Zone.js has detected that ZoneAwarePromise `(window|global).Promise` ' +
+                    'has been overwritten.\n' +
+                    'Most likely cause is that a Promise polyfill has been loaded ' +
+                    'after Zone.js (Polyfilling Promise api is not necessary when zone.js is loaded. ' +
+                    'If you must load one, do so before loading zone.js.)');
+            }
+        };
+        Object.defineProperty(Zone, "current", {
+            get: function () {
+                return _currentZone;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        
+        Object.defineProperty(Zone, "currentTask", {
+            get: function () {
+                return _currentTask;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        
+        Object.defineProperty(Zone.prototype, "parent", {
+            get: function () {
+                return this._parent;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        
+        Object.defineProperty(Zone.prototype, "name", {
+            get: function () {
+                return this._name;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        
+        Zone.prototype.get = function (key) {
+            var zone = this.getZoneWith(key);
+            if (zone)
+                return zone._properties[key];
+        };
+        Zone.prototype.getZoneWith = function (key) {
+            var current = this;
+            while (current) {
+                if (current._properties.hasOwnProperty(key)) {
+                    return current;
+                }
+                current = current._parent;
+            }
+            return null;
+        };
+        Zone.prototype.fork = function (zoneSpec) {
+            if (!zoneSpec)
+                throw new Error('ZoneSpec required!');
+            return this._zoneDelegate.fork(this, zoneSpec);
+        };
+        Zone.prototype.wrap = function (callback, source) {
+            if (typeof callback !== 'function') {
+                throw new Error('Expecting function got: ' + callback);
+            }
+            var _callback = this._zoneDelegate.intercept(this, callback, source);
+            var zone = this;
+            return function () {
+                return zone.runGuarded(_callback, this, arguments, source);
+            };
+        };
+        Zone.prototype.run = function (callback, applyThis, applyArgs, source) {
+            if (applyThis === void 0) { applyThis = null; }
+            if (applyArgs === void 0) { applyArgs = null; }
+            if (source === void 0) { source = null; }
+            var oldZone = _currentZone;
+            _currentZone = this;
+            try {
+                return this._zoneDelegate.invoke(this, callback, applyThis, applyArgs, source);
+            }
+            finally {
+                _currentZone = oldZone;
+            }
+        };
+        Zone.prototype.runGuarded = function (callback, applyThis, applyArgs, source) {
+            if (applyThis === void 0) { applyThis = null; }
+            if (applyArgs === void 0) { applyArgs = null; }
+            if (source === void 0) { source = null; }
+            var oldZone = _currentZone;
+            _currentZone = this;
+            try {
+                try {
+                    return this._zoneDelegate.invoke(this, callback, applyThis, applyArgs, source);
+                }
+                catch (error) {
+                    if (this._zoneDelegate.handleError(this, error)) {
+                        throw error;
+                    }
+                }
+            }
+            finally {
+                _currentZone = oldZone;
+            }
+        };
+        Zone.prototype.runTask = function (task, applyThis, applyArgs) {
+            task.runCount++;
+            if (task.zone != this)
+                throw new Error('A task can only be run in the zone which created it! (Creation: ' + task.zone.name +
+                    '; Execution: ' + this.name + ')');
+            var previousTask = _currentTask;
+            _currentTask = task;
+            var oldZone = _currentZone;
+            _currentZone = this;
+            try {
+                if (task.type == 'macroTask' && task.data && !task.data.isPeriodic) {
+                    task.cancelFn = null;
+                }
+                try {
+                    return this._zoneDelegate.invokeTask(this, task, applyThis, applyArgs);
+                }
+                catch (error) {
+                    if (this._zoneDelegate.handleError(this, error)) {
+                        throw error;
+                    }
+                }
+            }
+            finally {
+                _currentZone = oldZone;
+                _currentTask = previousTask;
+            }
+        };
+        Zone.prototype.scheduleMicroTask = function (source, callback, data, customSchedule) {
+            return this._zoneDelegate.scheduleTask(this, new ZoneTask('microTask', this, source, callback, data, customSchedule, null));
+        };
+        Zone.prototype.scheduleMacroTask = function (source, callback, data, customSchedule, customCancel) {
+            return this._zoneDelegate.scheduleTask(this, new ZoneTask('macroTask', this, source, callback, data, customSchedule, customCancel));
+        };
+        Zone.prototype.scheduleEventTask = function (source, callback, data, customSchedule, customCancel) {
+            return this._zoneDelegate.scheduleTask(this, new ZoneTask('eventTask', this, source, callback, data, customSchedule, customCancel));
+        };
+        Zone.prototype.cancelTask = function (task) {
+            var value = this._zoneDelegate.cancelTask(this, task);
+            task.runCount = -1;
+            task.cancelFn = null;
+            return value;
+        };
+        Zone.__symbol__ = __symbol__;
+        return Zone;
+    }());
+    
+    var ZoneDelegate = (function () {
+        function ZoneDelegate(zone, parentDelegate, zoneSpec) {
+            this._taskCounts = { microTask: 0, macroTask: 0, eventTask: 0 };
+            this.zone = zone;
+            this._parentDelegate = parentDelegate;
+            this._forkZS = zoneSpec && (zoneSpec && zoneSpec.onFork ? zoneSpec : parentDelegate._forkZS);
+            this._forkDlgt = zoneSpec && (zoneSpec.onFork ? parentDelegate : parentDelegate._forkDlgt);
+            this._interceptZS =
+                zoneSpec && (zoneSpec.onIntercept ? zoneSpec : parentDelegate._interceptZS);
+            this._interceptDlgt =
+                zoneSpec && (zoneSpec.onIntercept ? parentDelegate : parentDelegate._interceptDlgt);
+            this._invokeZS = zoneSpec && (zoneSpec.onInvoke ? zoneSpec : parentDelegate._invokeZS);
+            this._invokeDlgt =
+                zoneSpec && (zoneSpec.onInvoke ? parentDelegate : parentDelegate._invokeDlgt);
+            this._handleErrorZS =
+                zoneSpec && (zoneSpec.onHandleError ? zoneSpec : parentDelegate._handleErrorZS);
+            this._handleErrorDlgt =
+                zoneSpec && (zoneSpec.onHandleError ? parentDelegate : parentDelegate._handleErrorDlgt);
+            this._scheduleTaskZS =
+                zoneSpec && (zoneSpec.onScheduleTask ? zoneSpec : parentDelegate._scheduleTaskZS);
+            this._scheduleTaskDlgt =
+                zoneSpec && (zoneSpec.onScheduleTask ? parentDelegate : parentDelegate._scheduleTaskDlgt);
+            this._invokeTaskZS =
+                zoneSpec && (zoneSpec.onInvokeTask ? zoneSpec : parentDelegate._invokeTaskZS);
+            this._invokeTaskDlgt =
+                zoneSpec && (zoneSpec.onInvokeTask ? parentDelegate : parentDelegate._invokeTaskDlgt);
+            this._cancelTaskZS =
+                zoneSpec && (zoneSpec.onCancelTask ? zoneSpec : parentDelegate._cancelTaskZS);
+            this._cancelTaskDlgt =
+                zoneSpec && (zoneSpec.onCancelTask ? parentDelegate : parentDelegate._cancelTaskDlgt);
+            this._hasTaskZS = zoneSpec && (zoneSpec.onHasTask ? zoneSpec : parentDelegate._hasTaskZS);
+            this._hasTaskDlgt =
+                zoneSpec && (zoneSpec.onHasTask ? parentDelegate : parentDelegate._hasTaskDlgt);
+        }
+        ZoneDelegate.prototype.fork = function (targetZone, zoneSpec) {
+            return this._forkZS ? this._forkZS.onFork(this._forkDlgt, this.zone, targetZone, zoneSpec) :
+                new Zone(targetZone, zoneSpec);
+        };
+        ZoneDelegate.prototype.intercept = function (targetZone, callback, source) {
+            return this._interceptZS ?
+                this._interceptZS.onIntercept(this._interceptDlgt, this.zone, targetZone, callback, source) :
+                callback;
+        };
+        ZoneDelegate.prototype.invoke = function (targetZone, callback, applyThis, applyArgs, source) {
+            return this._invokeZS ?
+                this._invokeZS.onInvoke(this._invokeDlgt, this.zone, targetZone, callback, applyThis, applyArgs, source) :
+                callback.apply(applyThis, applyArgs);
+        };
+        ZoneDelegate.prototype.handleError = function (targetZone, error) {
+            return this._handleErrorZS ?
+                this._handleErrorZS.onHandleError(this._handleErrorDlgt, this.zone, targetZone, error) :
+                true;
+        };
+        ZoneDelegate.prototype.scheduleTask = function (targetZone, task) {
+            try {
+                if (this._scheduleTaskZS) {
+                    return this._scheduleTaskZS.onScheduleTask(this._scheduleTaskDlgt, this.zone, targetZone, task);
+                }
+                else if (task.scheduleFn) {
+                    task.scheduleFn(task);
+                }
+                else if (task.type == 'microTask') {
+                    scheduleMicroTask(task);
+                }
+                else {
+                    throw new Error('Task is missing scheduleFn.');
+                }
+                return task;
+            }
+            finally {
+                if (targetZone == this.zone) {
+                    this._updateTaskCount(task.type, 1);
+                }
+            }
+        };
+        ZoneDelegate.prototype.invokeTask = function (targetZone, task, applyThis, applyArgs) {
+            try {
+                return this._invokeTaskZS ?
+                    this._invokeTaskZS.onInvokeTask(this._invokeTaskDlgt, this.zone, targetZone, task, applyThis, applyArgs) :
+                    task.callback.apply(applyThis, applyArgs);
+            }
+            finally {
+                if (targetZone == this.zone && (task.type != 'eventTask') &&
+                    !(task.data && task.data.isPeriodic)) {
+                    this._updateTaskCount(task.type, -1);
+                }
+            }
+        };
+        ZoneDelegate.prototype.cancelTask = function (targetZone, task) {
+            var value;
+            if (this._cancelTaskZS) {
+                value = this._cancelTaskZS.onCancelTask(this._cancelTaskDlgt, this.zone, targetZone, task);
+            }
+            else if (!task.cancelFn) {
+                throw new Error('Task does not support cancellation, or is already canceled.');
+            }
+            else {
+                value = task.cancelFn(task);
+            }
+            if (targetZone == this.zone) {
+                // this should not be in the finally block, because exceptions assume not canceled.
+                this._updateTaskCount(task.type, -1);
+            }
+            return value;
+        };
+        ZoneDelegate.prototype.hasTask = function (targetZone, isEmpty) {
+            return this._hasTaskZS &&
+                this._hasTaskZS.onHasTask(this._hasTaskDlgt, this.zone, targetZone, isEmpty);
+        };
+        ZoneDelegate.prototype._updateTaskCount = function (type, count) {
+            var counts = this._taskCounts;
+            var prev = counts[type];
+            var next = counts[type] = prev + count;
+            if (next < 0) {
+                throw new Error('More tasks executed then were scheduled.');
+            }
+            if (prev == 0 || next == 0) {
+                var isEmpty = {
+                    microTask: counts.microTask > 0,
+                    macroTask: counts.macroTask > 0,
+                    eventTask: counts.eventTask > 0,
+                    change: type
+                };
+                try {
+                    this.hasTask(this.zone, isEmpty);
+                }
+                finally {
+                    if (this._parentDelegate) {
+                        this._parentDelegate._updateTaskCount(type, count);
+                    }
+                }
+            }
+        };
+        return ZoneDelegate;
+    }());
+    var ZoneTask = (function () {
+        function ZoneTask(type, zone, source, callback, options, scheduleFn, cancelFn) {
+            this.runCount = 0;
+            this.type = type;
+            this.zone = zone;
+            this.source = source;
+            this.data = options;
+            this.scheduleFn = scheduleFn;
+            this.cancelFn = cancelFn;
+            this.callback = callback;
+            var self = this;
+            this.invoke = function () {
+                _numberOfNestedTaskFrames++;
+                try {
+                    return zone.runTask(self, this, arguments);
+                }
+                finally {
+                    if (_numberOfNestedTaskFrames == 1) {
+                        drainMicroTaskQueue();
+                    }
+                    _numberOfNestedTaskFrames--;
+                }
+            };
+        }
+        ZoneTask.prototype.toString = function () {
+            if (this.data && typeof this.data.handleId !== 'undefined') {
+                return this.data.handleId;
+            }
+            else {
+                return Object.prototype.toString.call(this);
+            }
+        };
+        return ZoneTask;
+    }());
+    function __symbol__(name) {
+        return '__zone_symbol__' + name;
+    }
+    
+    var symbolSetTimeout = __symbol__('setTimeout');
+    var symbolPromise = __symbol__('Promise');
+    var symbolThen = __symbol__('then');
+    var _currentZone = new Zone(null, null);
+    var _currentTask = null;
+    var _microTaskQueue = [];
+    var _isDrainingMicrotaskQueue = false;
+    var _uncaughtPromiseErrors = [];
+    var _numberOfNestedTaskFrames = 0;
+    function scheduleQueueDrain() {
+        // if we are not running in any task, and there has not been anything scheduled
+        // we must bootstrap the initial task creation by manually scheduling the drain
+        if (_numberOfNestedTaskFrames == 0 && _microTaskQueue.length == 0) {
+            // We are not running in Task, so we need to kickstart the microtask queue.
+            if (global[symbolPromise]) {
+                global[symbolPromise].resolve(0)[symbolThen](drainMicroTaskQueue);
+            }
+            else {
+                global[symbolSetTimeout](drainMicroTaskQueue, 0);
+            }
+        }
+    }
+    function scheduleMicroTask(task) {
+        scheduleQueueDrain();
+        _microTaskQueue.push(task);
+    }
+    function consoleError(e) {
+        var rejection = e && e.rejection;
+        if (rejection) {
+            console.error('Unhandled Promise rejection:', rejection instanceof Error ? rejection.message : rejection, '; Zone:', e.zone.name, '; Task:', e.task && e.task.source, '; Value:', rejection, rejection instanceof Error ? rejection.stack : undefined);
+        }
+        console.error(e);
+    }
+    function drainMicroTaskQueue() {
+        if (!_isDrainingMicrotaskQueue) {
+            _isDrainingMicrotaskQueue = true;
+            while (_microTaskQueue.length) {
+                var queue = _microTaskQueue;
+                _microTaskQueue = [];
+                for (var i = 0; i < queue.length; i++) {
+                    var task = queue[i];
+                    try {
+                        task.zone.runTask(task, null, null);
+                    }
+                    catch (e) {
+                        consoleError(e);
+                    }
+                }
+            }
+            while (_uncaughtPromiseErrors.length) {
+                var _loop_1 = function() {
+                    var uncaughtPromiseError = _uncaughtPromiseErrors.shift();
+                    try {
+                        uncaughtPromiseError.zone.runGuarded(function () {
+                            throw uncaughtPromiseError;
+                        });
+                    }
+                    catch (e) {
+                        consoleError(e);
+                    }
+                };
+                while (_uncaughtPromiseErrors.length) {
+                    _loop_1();
+                }
+            }
+            _isDrainingMicrotaskQueue = false;
+        }
+    }
+    function isThenable(value) {
+        return value && value.then;
+    }
+    function forwardResolution(value) {
+        return value;
+    }
+    function forwardRejection(rejection) {
+        return ZoneAwarePromise.reject(rejection);
+    }
+    var symbolState = __symbol__('state');
+    var symbolValue = __symbol__('value');
+    var source = 'Promise.then';
+    var UNRESOLVED = null;
+    var RESOLVED = true;
+    var REJECTED = false;
+    var REJECTED_NO_CATCH = 0;
+    function makeResolver(promise, state) {
+        return function (v) {
+            resolvePromise(promise, state, v);
+            // Do not return value or you will break the Promise spec.
+        };
+    }
+    function resolvePromise(promise, state, value) {
+        if (promise[symbolState] === UNRESOLVED) {
+            if (value instanceof ZoneAwarePromise && value[symbolState] !== UNRESOLVED) {
+                clearRejectedNoCatch(value);
+                resolvePromise(promise, value[symbolState], value[symbolValue]);
+            }
+            else if (isThenable(value)) {
+                value.then(makeResolver(promise, state), makeResolver(promise, false));
+            }
+            else {
+                promise[symbolState] = state;
+                var queue = promise[symbolValue];
+                promise[symbolValue] = value;
+                for (var i = 0; i < queue.length;) {
+                    scheduleResolveOrReject(promise, queue[i++], queue[i++], queue[i++], queue[i++]);
+                }
+                if (queue.length == 0 && state == REJECTED) {
+                    promise[symbolState] = REJECTED_NO_CATCH;
+                    try {
+                        throw new Error('Uncaught (in promise): ' + value +
+                            (value && value.stack ? '\n' + value.stack : ''));
+                    }
+                    catch (e) {
+                        var error_1 = e;
+                        error_1.rejection = value;
+                        error_1.promise = promise;
+                        error_1.zone = Zone.current;
+                        error_1.task = Zone.currentTask;
+                        _uncaughtPromiseErrors.push(error_1);
+                        scheduleQueueDrain();
+                    }
+                }
+            }
+        }
+        // Resolving an already resolved promise is a noop.
+        return promise;
+    }
+    function clearRejectedNoCatch(promise) {
+        if (promise[symbolState] === REJECTED_NO_CATCH) {
+            promise[symbolState] = REJECTED;
+            for (var i = 0; i < _uncaughtPromiseErrors.length; i++) {
+                if (promise === _uncaughtPromiseErrors[i].promise) {
+                    _uncaughtPromiseErrors.splice(i, 1);
+                    break;
+                }
+            }
+        }
+    }
+    function scheduleResolveOrReject(promise, zone, chainPromise, onFulfilled, onRejected) {
+        clearRejectedNoCatch(promise);
+        var delegate = promise[symbolState] ? onFulfilled || forwardResolution : onRejected || forwardRejection;
+        zone.scheduleMicroTask(source, function () {
+            try {
+                resolvePromise(chainPromise, true, zone.run(delegate, null, [promise[symbolValue]]));
+            }
+            catch (error) {
+                resolvePromise(chainPromise, false, error);
+            }
+        });
+    }
+    var ZoneAwarePromise = (function () {
+        function ZoneAwarePromise(executor) {
+            var promise = this;
+            if (!(promise instanceof ZoneAwarePromise)) {
+                throw new Error('Must be an instanceof Promise.');
+            }
+            promise[symbolState] = UNRESOLVED;
+            promise[symbolValue] = []; // queue;
+            try {
+                executor && executor(makeResolver(promise, RESOLVED), makeResolver(promise, REJECTED));
+            }
+            catch (e) {
+                resolvePromise(promise, false, e);
+            }
+        }
+        ZoneAwarePromise.resolve = function (value) {
+            return resolvePromise(new this(null), RESOLVED, value);
+        };
+        ZoneAwarePromise.reject = function (error) {
+            return resolvePromise(new this(null), REJECTED, error);
+        };
+        ZoneAwarePromise.race = function (values) {
+            var resolve;
+            var reject;
+            var promise = new this(function (res, rej) {
+                _a = [res, rej], resolve = _a[0], reject = _a[1];
+                var _a;
+            });
+            function onResolve(value) {
+                promise && (promise = null || resolve(value));
+            }
+            function onReject(error) {
+                promise && (promise = null || reject(error));
+            }
+            for (var _i = 0, values_1 = values; _i < values_1.length; _i++) {
+                var value = values_1[_i];
+                if (!isThenable(value)) {
+                    value = this.resolve(value);
+                }
+                value.then(onResolve, onReject);
+            }
+            return promise;
+        };
+        ZoneAwarePromise.all = function (values) {
+            var resolve;
+            var reject;
+            var promise = new this(function (res, rej) {
+                resolve = res;
+                reject = rej;
+            });
+            var count = 0;
+            var resolvedValues = [];
+            for (var _i = 0, values_2 = values; _i < values_2.length; _i++) {
+                var value = values_2[_i];
+                if (!isThenable(value)) {
+                    value = this.resolve(value);
+                }
+                value.then((function (index) { return function (value) {
+                    resolvedValues[index] = value;
+                    count--;
+                    if (!count) {
+                        resolve(resolvedValues);
+                    }
+                }; })(count), reject);
+                count++;
+            }
+            if (!count)
+                resolve(resolvedValues);
+            return promise;
+        };
+        ZoneAwarePromise.prototype.then = function (onFulfilled, onRejected) {
+            var chainPromise = new this.constructor(null);
+            var zone = Zone.current;
+            if (this[symbolState] == UNRESOLVED) {
+                this[symbolValue].push(zone, chainPromise, onFulfilled, onRejected);
+            }
+            else {
+                scheduleResolveOrReject(this, zone, chainPromise, onFulfilled, onRejected);
+            }
+            return chainPromise;
+        };
+        ZoneAwarePromise.prototype.catch = function (onRejected) {
+            return this.then(null, onRejected);
+        };
+        return ZoneAwarePromise;
+    }());
+    // Protect against aggressive optimizers dropping seemingly unused properties.
+    // E.g. Closure Compiler in advanced mode.
+    ZoneAwarePromise['resolve'] = ZoneAwarePromise.resolve;
+    ZoneAwarePromise['reject'] = ZoneAwarePromise.reject;
+    ZoneAwarePromise['race'] = ZoneAwarePromise.race;
+    ZoneAwarePromise['all'] = ZoneAwarePromise.all;
+    var NativePromise = global[__symbol__('Promise')] = global.Promise;
+    global.Promise = ZoneAwarePromise;
+    function patchThen(NativePromise) {
+        var NativePromiseProtototype = NativePromise.prototype;
+        var NativePromiseThen = NativePromiseProtototype[__symbol__('then')] =
+            NativePromiseProtototype.then;
+        NativePromiseProtototype.then = function (onResolve, onReject) {
+            var nativePromise = this;
+            return new ZoneAwarePromise(function (resolve, reject) {
+                NativePromiseThen.call(nativePromise, resolve, reject);
+            })
+                .then(onResolve, onReject);
+        };
+    }
+    if (NativePromise) {
+        patchThen(NativePromise);
+        if (typeof global['fetch'] !== 'undefined') {
+            var fetchPromise = void 0;
+            try {
+                // In MS Edge this throws
+                fetchPromise = global['fetch']();
+            }
+            catch (e) {
+                // In Chrome this throws instead.
+                fetchPromise = global['fetch']('about:blank');
+            }
+            // ignore output to prevent error;
+            fetchPromise.then(function () { return null; }, function () { return null; });
+            if (fetchPromise.constructor != NativePromise &&
+                fetchPromise.constructor != ZoneAwarePromise) {
+                patchThen(fetchPromise.constructor);
+            }
+        }
+    }
+    // This is not part of public API, but it is usefull for tests, so we expose it.
+    Promise[Zone.__symbol__('uncaughtPromiseErrors')] = _uncaughtPromiseErrors;
+    return global.Zone = Zone;
+})(typeof window === 'object' && window || typeof self === 'object' && self || global);
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var zoneSymbol = Zone['__symbol__'];
+var _global$1 = typeof window === 'object' && window || typeof self === 'object' && self || global;
+function bindArguments(args, source) {
+    for (var i = args.length - 1; i >= 0; i--) {
+        if (typeof args[i] === 'function') {
+            args[i] = Zone.current.wrap(args[i], source + '_' + i);
+        }
+    }
+    return args;
+}
+
+function patchPrototype(prototype, fnNames) {
+    var source = prototype.constructor['name'];
+    var _loop_1 = function(i) {
+        var name_1 = fnNames[i];
+        var delegate = prototype[name_1];
+        if (delegate) {
+            prototype[name_1] = (function (delegate) {
+                return function () {
+                    return delegate.apply(this, bindArguments(arguments, source + '.' + name_1));
+                };
+            })(delegate);
+        }
+    };
+    for (var i = 0; i < fnNames.length; i++) {
+        _loop_1(i);
+    }
+}
+
+var isWebWorker = (typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope);
+var isNode = (typeof process !== 'undefined' && {}.toString.call(process) === '[object process]');
+var isBrowser = !isNode && !isWebWorker && !!(typeof window !== 'undefined' && window['HTMLElement']);
+function patchProperty(obj, prop) {
+    var desc = Object.getOwnPropertyDescriptor(obj, prop) || { enumerable: true, configurable: true };
+    // A property descriptor cannot have getter/setter and be writable
+    // deleting the writable and value properties avoids this error:
+    //
+    // TypeError: property descriptors must not specify a value or be writable when a
+    // getter or setter has been specified
+    delete desc.writable;
+    delete desc.value;
+    // substr(2) cuz 'onclick' -> 'click', etc
+    var eventName = prop.substr(2);
+    var _prop = '_' + prop;
+    desc.set = function (fn) {
+        if (this[_prop]) {
+            this.removeEventListener(eventName, this[_prop]);
+        }
+        if (typeof fn === 'function') {
+            var wrapFn = function (event) {
+                var result;
+                result = fn.apply(this, arguments);
+                if (result != undefined && !result)
+                    event.preventDefault();
+            };
+            this[_prop] = wrapFn;
+            this.addEventListener(eventName, wrapFn, false);
+        }
+        else {
+            this[_prop] = null;
+        }
+    };
+    // The getter would return undefined for unassigned properties but the default value of an
+    // unassigned property is null
+    desc.get = function () {
+        return this[_prop] || null;
+    };
+    Object.defineProperty(obj, prop, desc);
+}
+
+function patchOnProperties(obj, properties) {
+    var onProperties = [];
+    for (var prop in obj) {
+        if (prop.substr(0, 2) == 'on') {
+            onProperties.push(prop);
+        }
+    }
+    for (var j = 0; j < onProperties.length; j++) {
+        patchProperty(obj, onProperties[j]);
+    }
+    if (properties) {
+        for (var i = 0; i < properties.length; i++) {
+            patchProperty(obj, 'on' + properties[i]);
+        }
+    }
+}
+
+var EVENT_TASKS = zoneSymbol('eventTasks');
+// For EventTarget
+var ADD_EVENT_LISTENER = 'addEventListener';
+var REMOVE_EVENT_LISTENER = 'removeEventListener';
+function findExistingRegisteredTask(target, handler, name, capture, remove) {
+    var eventTasks = target[EVENT_TASKS];
+    if (eventTasks) {
+        for (var i = 0; i < eventTasks.length; i++) {
+            var eventTask = eventTasks[i];
+            var data = eventTask.data;
+            if (data.handler === handler && data.useCapturing === capture && data.eventName === name) {
+                if (remove) {
+                    eventTasks.splice(i, 1);
+                }
+                return eventTask;
+            }
+        }
+    }
+    return null;
+}
+function attachRegisteredEvent(target, eventTask) {
+    var eventTasks = target[EVENT_TASKS];
+    if (!eventTasks) {
+        eventTasks = target[EVENT_TASKS] = [];
+    }
+    eventTasks.push(eventTask);
+}
+function makeZoneAwareAddListener(addFnName, removeFnName, useCapturingParam, allowDuplicates) {
+    if (useCapturingParam === void 0) { useCapturingParam = true; }
+    if (allowDuplicates === void 0) { allowDuplicates = false; }
+    var addFnSymbol = zoneSymbol(addFnName);
+    var removeFnSymbol = zoneSymbol(removeFnName);
+    var defaultUseCapturing = useCapturingParam ? false : undefined;
+    function scheduleEventListener(eventTask) {
+        var meta = eventTask.data;
+        attachRegisteredEvent(meta.target, eventTask);
+        return meta.target[addFnSymbol](meta.eventName, eventTask.invoke, meta.useCapturing);
+    }
+    function cancelEventListener(eventTask) {
+        var meta = eventTask.data;
+        findExistingRegisteredTask(meta.target, eventTask.invoke, meta.eventName, meta.useCapturing, true);
+        meta.target[removeFnSymbol](meta.eventName, eventTask.invoke, meta.useCapturing);
+    }
+    return function zoneAwareAddListener(self, args) {
+        var eventName = args[0];
+        var handler = args[1];
+        var useCapturing = args[2] || defaultUseCapturing;
+        // - Inside a Web Worker, `this` is undefined, the context is `global`
+        // - When `addEventListener` is called on the global context in strict mode, `this` is undefined
+        // see https://github.com/angular/zone.js/issues/190
+        var target = self || _global$1;
+        var delegate = null;
+        if (typeof handler == 'function') {
+            delegate = handler;
+        }
+        else if (handler && handler.handleEvent) {
+            delegate = function (event) { return handler.handleEvent(event); };
+        }
+        var validZoneHandler = false;
+        try {
+            // In cross site contexts (such as WebDriver frameworks like Selenium),
+            // accessing the handler object here will cause an exception to be thrown which
+            // will fail tests prematurely.
+            validZoneHandler = handler && handler.toString() === '[object FunctionWrapper]';
+        }
+        catch (e) {
+            // Returning nothing here is fine, because objects in a cross-site context are unusable
+            return;
+        }
+        // Ignore special listeners of IE11 & Edge dev tools, see
+        // https://github.com/angular/zone.js/issues/150
+        if (!delegate || validZoneHandler) {
+            return target[addFnSymbol](eventName, handler, useCapturing);
+        }
+        if (!allowDuplicates) {
+            var eventTask = findExistingRegisteredTask(target, handler, eventName, useCapturing, false);
+            if (eventTask) {
+                // we already registered, so this will have noop.
+                return target[addFnSymbol](eventName, eventTask.invoke, useCapturing);
+            }
+        }
+        var zone = Zone.current;
+        var source = target.constructor['name'] + '.' + addFnName + ':' + eventName;
+        var data = {
+            target: target,
+            eventName: eventName,
+            name: eventName,
+            useCapturing: useCapturing,
+            handler: handler
+        };
+        zone.scheduleEventTask(source, delegate, data, scheduleEventListener, cancelEventListener);
+    };
+}
+function makeZoneAwareRemoveListener(fnName, useCapturingParam) {
+    if (useCapturingParam === void 0) { useCapturingParam = true; }
+    var symbol = zoneSymbol(fnName);
+    var defaultUseCapturing = useCapturingParam ? false : undefined;
+    return function zoneAwareRemoveListener(self, args) {
+        var eventName = args[0];
+        var handler = args[1];
+        var useCapturing = args[2] || defaultUseCapturing;
+        // - Inside a Web Worker, `this` is undefined, the context is `global`
+        // - When `addEventListener` is called on the global context in strict mode, `this` is undefined
+        // see https://github.com/angular/zone.js/issues/190
+        var target = self || _global$1;
+        var eventTask = findExistingRegisteredTask(target, handler, eventName, useCapturing, true);
+        if (eventTask) {
+            eventTask.zone.cancelTask(eventTask);
+        }
+        else {
+            target[symbol](eventName, handler, useCapturing);
+        }
+    };
+}
+
+var zoneAwareAddEventListener = makeZoneAwareAddListener(ADD_EVENT_LISTENER, REMOVE_EVENT_LISTENER);
+var zoneAwareRemoveEventListener = makeZoneAwareRemoveListener(REMOVE_EVENT_LISTENER);
+function patchEventTargetMethods(obj) {
+    if (obj && obj.addEventListener) {
+        patchMethod(obj, ADD_EVENT_LISTENER, function () { return zoneAwareAddEventListener; });
+        patchMethod(obj, REMOVE_EVENT_LISTENER, function () { return zoneAwareRemoveEventListener; });
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+var originalInstanceKey = zoneSymbol('originalInstance');
+// wrap some native API on `window`
+function patchClass(className) {
+    var OriginalClass = _global$1[className];
+    if (!OriginalClass)
+        return;
+    _global$1[className] = function () {
+        var a = bindArguments(arguments, className);
+        switch (a.length) {
+            case 0:
+                this[originalInstanceKey] = new OriginalClass();
+                break;
+            case 1:
+                this[originalInstanceKey] = new OriginalClass(a[0]);
+                break;
+            case 2:
+                this[originalInstanceKey] = new OriginalClass(a[0], a[1]);
+                break;
+            case 3:
+                this[originalInstanceKey] = new OriginalClass(a[0], a[1], a[2]);
+                break;
+            case 4:
+                this[originalInstanceKey] = new OriginalClass(a[0], a[1], a[2], a[3]);
+                break;
+            default:
+                throw new Error('Arg list too long.');
+        }
+    };
+    var instance = new OriginalClass(function () { });
+    var prop;
+    for (prop in instance) {
+        // https://bugs.webkit.org/show_bug.cgi?id=44721
+        if (className === 'XMLHttpRequest' && prop === 'responseBlob')
+            continue;
+        (function (prop) {
+            if (typeof instance[prop] === 'function') {
+                _global$1[className].prototype[prop] = function () {
+                    return this[originalInstanceKey][prop].apply(this[originalInstanceKey], arguments);
+                };
+            }
+            else {
+                Object.defineProperty(_global$1[className].prototype, prop, {
+                    set: function (fn) {
+                        if (typeof fn === 'function') {
+                            this[originalInstanceKey][prop] = Zone.current.wrap(fn, className + '.' + prop);
+                        }
+                        else {
+                            this[originalInstanceKey][prop] = fn;
+                        }
+                    },
+                    get: function () {
+                        return this[originalInstanceKey][prop];
+                    }
+                });
+            }
+        }(prop));
+    }
+    for (prop in OriginalClass) {
+        if (prop !== 'prototype' && OriginalClass.hasOwnProperty(prop)) {
+            _global$1[className][prop] = OriginalClass[prop];
+        }
+    }
+}
+
+function createNamedFn(name, delegate) {
+    try {
+        return (Function('f', "return function " + name + "(){return f(this, arguments)}"))(delegate);
+    }
+    catch (e) {
+        // if we fail, we must be CSP, just return delegate.
+        return function () {
+            return delegate(this, arguments);
+        };
+    }
+}
+function patchMethod(target, name, patchFn) {
+    var proto = target;
+    while (proto && Object.getOwnPropertyNames(proto).indexOf(name) === -1) {
+        proto = Object.getPrototypeOf(proto);
+    }
+    if (!proto && target[name]) {
+        // somehow we did not find it, but we can see it. This happens on IE for Window properties.
+        proto = target;
+    }
+    var delegateName = zoneSymbol(name);
+    var delegate;
+    if (proto && !(delegate = proto[delegateName])) {
+        delegate = proto[delegateName] = proto[name];
+        proto[name] = createNamedFn(name, patchFn(delegate, delegateName, name));
+    }
+    return delegate;
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+function patchTimer(window, setName, cancelName, nameSuffix) {
+    var setNative = null;
+    var clearNative = null;
+    setName += nameSuffix;
+    cancelName += nameSuffix;
+    var tasksByHandleId = {};
+    function scheduleTask(task) {
+        var data = task.data;
+        data.args[0] = function () {
+            task.invoke.apply(this, arguments);
+            delete tasksByHandleId[data.handleId];
+        };
+        data.handleId = setNative.apply(window, data.args);
+        tasksByHandleId[data.handleId] = task;
+        return task;
+    }
+    function clearTask(task) {
+        delete tasksByHandleId[task.data.handleId];
+        return clearNative(task.data.handleId);
+    }
+    setNative =
+        patchMethod(window, setName, function (delegate) { return function (self, args) {
+            if (typeof args[0] === 'function') {
+                var zone = Zone.current;
+                var options = {
+                    handleId: null,
+                    isPeriodic: nameSuffix === 'Interval',
+                    delay: (nameSuffix === 'Timeout' || nameSuffix === 'Interval') ? args[1] || 0 : null,
+                    args: args
+                };
+                var task = zone.scheduleMacroTask(setName, args[0], options, scheduleTask, clearTask);
+                if (!task) {
+                    return task;
+                }
+                // Node.js must additionally support the ref and unref functions.
+                var handle = task.data.handleId;
+                if (handle.ref && handle.unref) {
+                    task.ref = handle.ref.bind(handle);
+                    task.unref = handle.unref.bind(handle);
+                }
+                return task;
+            }
+            else {
+                // cause an error by calling it directly.
+                return delegate.apply(window, args);
+            }
+        }; });
+    clearNative =
+        patchMethod(window, cancelName, function (delegate) { return function (self, args) {
+            var task = typeof args[0] === 'number' ? tasksByHandleId[args[0]] : args[0];
+            if (task && typeof task.type === 'string') {
+                if (task.cancelFn && task.data.isPeriodic || task.runCount === 0) {
+                    // Do not cancel already canceled functions
+                    task.zone.cancelTask(task);
+                }
+            }
+            else {
+                // cause an error by calling it directly.
+                delegate.apply(window, args);
+            }
+        }; });
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/*
+ * This is necessary for Chrome and Chrome mobile, to enable
+ * things like redefining `createdCallback` on an element.
+ */
+var _defineProperty = Object[zoneSymbol('defineProperty')] = Object.defineProperty;
+var _getOwnPropertyDescriptor = Object[zoneSymbol('getOwnPropertyDescriptor')] =
+    Object.getOwnPropertyDescriptor;
+var _create = Object.create;
+var unconfigurablesKey = zoneSymbol('unconfigurables');
+function propertyPatch() {
+    Object.defineProperty = function (obj, prop, desc) {
+        if (isUnconfigurable(obj, prop)) {
+            throw new TypeError('Cannot assign to read only property \'' + prop + '\' of ' + obj);
+        }
+        var originalConfigurableFlag = desc.configurable;
+        if (prop !== 'prototype') {
+            desc = rewriteDescriptor(obj, prop, desc);
+        }
+        return _tryDefineProperty(obj, prop, desc, originalConfigurableFlag);
+    };
+    Object.defineProperties = function (obj, props) {
+        Object.keys(props).forEach(function (prop) {
+            Object.defineProperty(obj, prop, props[prop]);
+        });
+        return obj;
+    };
+    Object.create = function (obj, proto) {
+        if (typeof proto === 'object' && !Object.isFrozen(proto)) {
+            Object.keys(proto).forEach(function (prop) {
+                proto[prop] = rewriteDescriptor(obj, prop, proto[prop]);
+            });
+        }
+        return _create(obj, proto);
+    };
+    Object.getOwnPropertyDescriptor = function (obj, prop) {
+        var desc = _getOwnPropertyDescriptor(obj, prop);
+        if (isUnconfigurable(obj, prop)) {
+            desc.configurable = false;
+        }
+        return desc;
+    };
+}
+
+function _redefineProperty(obj, prop, desc) {
+    var originalConfigurableFlag = desc.configurable;
+    desc = rewriteDescriptor(obj, prop, desc);
+    return _tryDefineProperty(obj, prop, desc, originalConfigurableFlag);
+}
+
+function isUnconfigurable(obj, prop) {
+    return obj && obj[unconfigurablesKey] && obj[unconfigurablesKey][prop];
+}
+function rewriteDescriptor(obj, prop, desc) {
+    desc.configurable = true;
+    if (!desc.configurable) {
+        if (!obj[unconfigurablesKey]) {
+            _defineProperty(obj, unconfigurablesKey, { writable: true, value: {} });
+        }
+        obj[unconfigurablesKey][prop] = true;
+    }
+    return desc;
+}
+function _tryDefineProperty(obj, prop, desc, originalConfigurableFlag) {
+    try {
+        return _defineProperty(obj, prop, desc);
+    }
+    catch (e) {
+        if (desc.configurable) {
+            // In case of errors, when the configurable flag was likely set by rewriteDescriptor(), let's
+            // retry with the original flag value
+            if (typeof originalConfigurableFlag == 'undefined') {
+                delete desc.configurable;
+            }
+            else {
+                desc.configurable = originalConfigurableFlag;
+            }
+            try {
+                return _defineProperty(obj, prop, desc);
+            }
+            catch (e) {
+                var descJson = null;
+                try {
+                    descJson = JSON.stringify(desc);
+                }
+                catch (e) {
+                    descJson = descJson.toString();
+                }
+                console.log("Attempting to configure '" + prop + "' with descriptor '" + descJson + "' on object '" + obj + "' and got error, giving up: " + e);
+            }
+        }
+        else {
+            throw e;
+        }
+    }
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var WTF_ISSUE_555 = 'Anchor,Area,Audio,BR,Base,BaseFont,Body,Button,Canvas,Content,DList,Directory,Div,Embed,FieldSet,Font,Form,Frame,FrameSet,HR,Head,Heading,Html,IFrame,Image,Input,Keygen,LI,Label,Legend,Link,Map,Marquee,Media,Menu,Meta,Meter,Mod,OList,Object,OptGroup,Option,Output,Paragraph,Pre,Progress,Quote,Script,Select,Source,Span,Style,TableCaption,TableCell,TableCol,Table,TableRow,TableSection,TextArea,Title,Track,UList,Unknown,Video';
+var NO_EVENT_TARGET = 'ApplicationCache,EventSource,FileReader,InputMethodContext,MediaController,MessagePort,Node,Performance,SVGElementInstance,SharedWorker,TextTrack,TextTrackCue,TextTrackList,WebKitNamedFlow,Window,Worker,WorkerGlobalScope,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload,IDBRequest,IDBOpenDBRequest,IDBDatabase,IDBTransaction,IDBCursor,DBIndex'
+    .split(',');
+var EVENT_TARGET = 'EventTarget';
+function eventTargetPatch(_global) {
+    var apis = [];
+    var isWtf = _global['wtf'];
+    if (isWtf) {
+        // Workaround for: https://github.com/google/tracing-framework/issues/555
+        apis = WTF_ISSUE_555.split(',').map(function (v) { return 'HTML' + v + 'Element'; }).concat(NO_EVENT_TARGET);
+    }
+    else if (_global[EVENT_TARGET]) {
+        apis.push(EVENT_TARGET);
+    }
+    else {
+        // Note: EventTarget is not available in all browsers,
+        // if it's not available, we instead patch the APIs in the IDL that inherit from EventTarget
+        apis = NO_EVENT_TARGET;
+    }
+    for (var i = 0; i < apis.length; i++) {
+        var type = _global[apis[i]];
+        patchEventTargetMethods(type && type.prototype);
+    }
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+// we have to patch the instance since the proto is non-configurable
+function apply(_global) {
+    var WS = _global.WebSocket;
+    // On Safari window.EventTarget doesn't exist so need to patch WS add/removeEventListener
+    // On older Chrome, no need since EventTarget was already patched
+    if (!_global.EventTarget) {
+        patchEventTargetMethods(WS.prototype);
+    }
+    _global.WebSocket = function (a, b) {
+        var socket = arguments.length > 1 ? new WS(a, b) : new WS(a);
+        var proxySocket;
+        // Safari 7.0 has non-configurable own 'onmessage' and friends properties on the socket instance
+        var onmessageDesc = Object.getOwnPropertyDescriptor(socket, 'onmessage');
+        if (onmessageDesc && onmessageDesc.configurable === false) {
+            proxySocket = Object.create(socket);
+            ['addEventListener', 'removeEventListener', 'send', 'close'].forEach(function (propName) {
+                proxySocket[propName] = function () {
+                    return socket[propName].apply(socket, arguments);
+                };
+            });
+        }
+        else {
+            // we can patch the real socket
+            proxySocket = socket;
+        }
+        patchOnProperties(proxySocket, ['close', 'error', 'message', 'open']);
+        return proxySocket;
+    };
+    for (var prop in WS) {
+        _global.WebSocket[prop] = WS[prop];
+    }
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var eventNames = 'copy cut paste abort blur focus canplay canplaythrough change click contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop durationchange emptied ended input invalid keydown keypress keyup load loadeddata loadedmetadata loadstart message mousedown mouseenter mouseleave mousemove mouseout mouseover mouseup pause play playing progress ratechange reset scroll seeked seeking select show stalled submit suspend timeupdate volumechange waiting mozfullscreenchange mozfullscreenerror mozpointerlockchange mozpointerlockerror error webglcontextrestored webglcontextlost webglcontextcreationerror'
+    .split(' ');
+function propertyDescriptorPatch(_global) {
+    if (isNode) {
+        return;
+    }
+    var supportsWebSocket = typeof WebSocket !== 'undefined';
+    if (canPatchViaPropertyDescriptor()) {
+        // for browsers that we can patch the descriptor:  Chrome & Firefox
+        if (isBrowser) {
+            patchOnProperties(HTMLElement.prototype, eventNames);
+        }
+        patchOnProperties(XMLHttpRequest.prototype, null);
+        if (typeof IDBIndex !== 'undefined') {
+            patchOnProperties(IDBIndex.prototype, null);
+            patchOnProperties(IDBRequest.prototype, null);
+            patchOnProperties(IDBOpenDBRequest.prototype, null);
+            patchOnProperties(IDBDatabase.prototype, null);
+            patchOnProperties(IDBTransaction.prototype, null);
+            patchOnProperties(IDBCursor.prototype, null);
+        }
+        if (supportsWebSocket) {
+            patchOnProperties(WebSocket.prototype, null);
+        }
+    }
+    else {
+        // Safari, Android browsers (Jelly Bean)
+        patchViaCapturingAllTheEvents();
+        patchClass('XMLHttpRequest');
+        if (supportsWebSocket) {
+            apply(_global);
+        }
+    }
+}
+function canPatchViaPropertyDescriptor() {
+    if (isBrowser && !Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'onclick') &&
+        typeof Element !== 'undefined') {
+        // WebKit https://bugs.webkit.org/show_bug.cgi?id=134364
+        // IDL interface attributes are not configurable
+        var desc = Object.getOwnPropertyDescriptor(Element.prototype, 'onclick');
+        if (desc && !desc.configurable)
+            return false;
+    }
+    Object.defineProperty(XMLHttpRequest.prototype, 'onreadystatechange', {
+        get: function () {
+            return true;
+        }
+    });
+    var req = new XMLHttpRequest();
+    var result = !!req.onreadystatechange;
+    Object.defineProperty(XMLHttpRequest.prototype, 'onreadystatechange', {});
+    return result;
+}
+
+var unboundKey = zoneSymbol('unbound');
+// Whenever any eventListener fires, we check the eventListener target and all parents
+// for `onwhatever` properties and replace them with zone-bound functions
+// - Chrome (for now)
+function patchViaCapturingAllTheEvents() {
+    var _loop_1 = function(i) {
+        var property = eventNames[i];
+        var onproperty = 'on' + property;
+        self.addEventListener(property, function (event) {
+            var elt = event.target, bound, source;
+            if (elt) {
+                source = elt.constructor['name'] + '.' + onproperty;
+            }
+            else {
+                source = 'unknown.' + onproperty;
+            }
+            while (elt) {
+                if (elt[onproperty] && !elt[onproperty][unboundKey]) {
+                    bound = Zone.current.wrap(elt[onproperty], source);
+                    bound[unboundKey] = elt[onproperty];
+                    elt[onproperty] = bound;
+                }
+                elt = elt.parentElement;
+            }
+        }, true);
+    };
+    for (var i = 0; i < eventNames.length; i++) {
+        _loop_1(i);
+    }
+    
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+function registerElementPatch(_global) {
+    if (!isBrowser || !('registerElement' in _global.document)) {
+        return;
+    }
+    var _registerElement = document.registerElement;
+    var callbacks = ['createdCallback', 'attachedCallback', 'detachedCallback', 'attributeChangedCallback'];
+    document.registerElement = function (name, opts) {
+        if (opts && opts.prototype) {
+            callbacks.forEach(function (callback) {
+                var source = 'Document.registerElement::' + callback;
+                if (opts.prototype.hasOwnProperty(callback)) {
+                    var descriptor = Object.getOwnPropertyDescriptor(opts.prototype, callback);
+                    if (descriptor && descriptor.value) {
+                        descriptor.value = Zone.current.wrap(descriptor.value, source);
+                        _redefineProperty(opts.prototype, callback, descriptor);
+                    }
+                    else {
+                        opts.prototype[callback] = Zone.current.wrap(opts.prototype[callback], source);
+                    }
+                }
+                else if (opts.prototype[callback]) {
+                    opts.prototype[callback] = Zone.current.wrap(opts.prototype[callback], source);
+                }
+            });
+        }
+        return _registerElement.apply(document, [name, opts]);
+    };
+}
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var set = 'set';
+var clear = 'clear';
+var blockingMethods = ['alert', 'prompt', 'confirm'];
+var _global = typeof window === 'object' && window || typeof self === 'object' && self || global;
+patchTimer(_global, set, clear, 'Timeout');
+patchTimer(_global, set, clear, 'Interval');
+patchTimer(_global, set, clear, 'Immediate');
+patchTimer(_global, 'request', 'cancel', 'AnimationFrame');
+patchTimer(_global, 'mozRequest', 'mozCancel', 'AnimationFrame');
+patchTimer(_global, 'webkitRequest', 'webkitCancel', 'AnimationFrame');
+for (var i = 0; i < blockingMethods.length; i++) {
+    var name = blockingMethods[i];
+    patchMethod(_global, name, function (delegate, symbol, name) {
+        return function (s, args) {
+            return Zone.current.run(delegate, _global, args, name);
+        };
+    });
+}
+eventTargetPatch(_global);
+propertyDescriptorPatch(_global);
+patchClass('MutationObserver');
+patchClass('WebKitMutationObserver');
+patchClass('FileReader');
+propertyPatch();
+registerElementPatch(_global);
+// Treat XMLHTTPRequest as a macrotask.
+patchXHR(_global);
+var XHR_TASK = zoneSymbol('xhrTask');
+var XHR_SYNC = zoneSymbol('xhrSync');
+function patchXHR(window) {
+    function findPendingTask(target) {
+        var pendingTask = target[XHR_TASK];
+        return pendingTask;
+    }
+    function scheduleTask(task) {
+        var data = task.data;
+        data.target.addEventListener('readystatechange', function () {
+            if (data.target.readyState === data.target.DONE) {
+                if (!data.aborted) {
+                    task.invoke();
+                }
+            }
+        });
+        var storedTask = data.target[XHR_TASK];
+        if (!storedTask) {
+            data.target[XHR_TASK] = task;
+        }
+        sendNative.apply(data.target, data.args);
+        return task;
+    }
+    function placeholderCallback() { }
+    function clearTask(task) {
+        var data = task.data;
+        // Note - ideally, we would call data.target.removeEventListener here, but it's too late
+        // to prevent it from firing. So instead, we store info for the event listener.
+        data.aborted = true;
+        return abortNative.apply(data.target, data.args);
+    }
+    var openNative = patchMethod(window.XMLHttpRequest.prototype, 'open', function () { return function (self, args) {
+        self[XHR_SYNC] = args[2] == false;
+        return openNative.apply(self, args);
+    }; });
+    var sendNative = patchMethod(window.XMLHttpRequest.prototype, 'send', function () { return function (self, args) {
+        var zone = Zone.current;
+        if (self[XHR_SYNC]) {
+            // if the XHR is sync there is no task to schedule, just execute the code.
+            return sendNative.apply(self, args);
+        }
+        else {
+            var options = { target: self, isPeriodic: false, delay: null, args: args, aborted: false };
+            return zone.scheduleMacroTask('XMLHttpRequest.send', placeholderCallback, options, scheduleTask, clearTask);
+        }
+    }; });
+    var abortNative = patchMethod(window.XMLHttpRequest.prototype, 'abort', function (delegate) { return function (self, args) {
+        var task = findPendingTask(self);
+        if (task && typeof task.type == 'string') {
+            // If the XHR has already completed, do nothing.
+            if (task.cancelFn == null) {
+                return;
+            }
+            task.zone.cancelTask(task);
+        }
+        // Otherwise, we are trying to abort an XHR which has not yet been sent, so there is no task
+        // to cancel. Do nothing.
+    }; });
+}
+/// GEO_LOCATION
+if (_global['navigator'] && _global['navigator'].geolocation) {
+    patchPrototype(_global['navigator'].geolocation, ['getCurrentPosition', 'watchPosition']);
+}
+
+})));
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(45), __webpack_require__(24)))
 
 /***/ },
 /* 426 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(284);
+module.exports = (__webpack_require__(0))(100);
 
 /***/ },
 /* 427 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(287);
+module.exports = (__webpack_require__(0))(104);
 
 /***/ },
 /* 428 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(303);
+module.exports = (__webpack_require__(0))(118);
 
 /***/ },
 /* 429 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(311);
+module.exports = (__webpack_require__(0))(132);
 
 /***/ },
 /* 430 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(315);
+module.exports = (__webpack_require__(0))(133);
 
 /***/ },
 /* 431 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(316);
+module.exports = (__webpack_require__(0))(135);
 
 /***/ },
 /* 432 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(317);
+module.exports = (__webpack_require__(0))(138);
 
 /***/ },
 /* 433 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(355);
+module.exports = (__webpack_require__(0))(152);
 
 /***/ },
 /* 434 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(357);
+module.exports = (__webpack_require__(0))(154);
 
 /***/ },
 /* 435 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(359);
+module.exports = (__webpack_require__(0))(155);
 
 /***/ },
 /* 436 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(360);
+module.exports = (__webpack_require__(0))(173);
 
 /***/ },
 /* 437 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(361);
+module.exports = (__webpack_require__(0))(174);
 
 /***/ },
 /* 438 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(365);
+module.exports = (__webpack_require__(0))(176);
 
 /***/ },
 /* 439 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(422);
+module.exports = (__webpack_require__(0))(185);
 
 /***/ },
 /* 440 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(433);
+module.exports = (__webpack_require__(0))(186);
 
 /***/ },
 /* 441 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(444);
+module.exports = (__webpack_require__(0))(188);
 
 /***/ },
 /* 442 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(445);
+module.exports = (__webpack_require__(0))(196);
 
 /***/ },
 /* 443 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(447);
+module.exports = (__webpack_require__(0))(197);
 
 /***/ },
 /* 444 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(450);
+module.exports = (__webpack_require__(0))(200);
 
 /***/ },
 /* 445 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(639);
+module.exports = (__webpack_require__(0))(201);
 
 /***/ },
 /* 446 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(640);
+module.exports = (__webpack_require__(0))(202);
 
 /***/ },
 /* 447 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(641);
+module.exports = (__webpack_require__(0))(203);
 
 /***/ },
 /* 448 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(642);
+module.exports = (__webpack_require__(0))(204);
 
 /***/ },
 /* 449 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(644);
+module.exports = (__webpack_require__(0))(206);
 
 /***/ },
 /* 450 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(645);
+module.exports = (__webpack_require__(0))(231);
 
 /***/ },
 /* 451 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(646);
+module.exports = (__webpack_require__(0))(234);
 
 /***/ },
 /* 452 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(647);
+module.exports = (__webpack_require__(0))(235);
 
 /***/ },
 /* 453 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(648);
+module.exports = (__webpack_require__(0))(276);
 
 /***/ },
 /* 454 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(649);
+module.exports = (__webpack_require__(0))(277);
 
 /***/ },
 /* 455 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(650);
+module.exports = (__webpack_require__(0))(280);
 
 /***/ },
 /* 456 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(651);
+module.exports = (__webpack_require__(0))(284);
 
 /***/ },
 /* 457 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(652);
+module.exports = (__webpack_require__(0))(287);
 
 /***/ },
 /* 458 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(653);
+module.exports = (__webpack_require__(0))(303);
 
 /***/ },
 /* 459 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(654);
+module.exports = (__webpack_require__(0))(311);
 
 /***/ },
 /* 460 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(655);
+module.exports = (__webpack_require__(0))(315);
 
 /***/ },
 /* 461 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(656);
+module.exports = (__webpack_require__(0))(316);
 
 /***/ },
 /* 462 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(660);
+module.exports = (__webpack_require__(0))(317);
 
 /***/ },
 /* 463 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(669);
+module.exports = (__webpack_require__(0))(356);
 
 /***/ },
 /* 464 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(670);
+module.exports = (__webpack_require__(0))(358);
 
 /***/ },
 /* 465 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(671);
+module.exports = (__webpack_require__(0))(360);
 
 /***/ },
 /* 466 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(672);
+module.exports = (__webpack_require__(0))(361);
 
 /***/ },
 /* 467 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(68);
+module.exports = (__webpack_require__(0))(362);
 
 /***/ },
 /* 468 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(681);
+module.exports = (__webpack_require__(0))(366);
 
 /***/ },
 /* 469 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(685);
+module.exports = (__webpack_require__(0))(423);
 
 /***/ },
 /* 470 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(687);
+module.exports = (__webpack_require__(0))(434);
 
 /***/ },
 /* 471 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(100))(693);
+module.exports = (__webpack_require__(0))(445);
 
 /***/ },
 /* 472 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(78);
+module.exports = (__webpack_require__(0))(446);
 
 /***/ },
 /* 473 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(89);
+module.exports = (__webpack_require__(0))(448);
 
 /***/ },
 /* 474 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(0))(97);
+module.exports = (__webpack_require__(0))(451);
 
 /***/ },
 /* 475 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-/* (ignored) */
+module.exports = (__webpack_require__(0))(638);
 
 /***/ },
 /* 476 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(101);
+module.exports = (__webpack_require__(0))(639);
+
+/***/ },
+/* 477 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(640);
+
+/***/ },
+/* 478 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(641);
+
+/***/ },
+/* 479 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(643);
+
+/***/ },
+/* 480 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(644);
+
+/***/ },
+/* 481 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(645);
+
+/***/ },
+/* 482 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(646);
+
+/***/ },
+/* 483 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(647);
+
+/***/ },
+/* 484 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(648);
+
+/***/ },
+/* 485 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(649);
+
+/***/ },
+/* 486 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(650);
+
+/***/ },
+/* 487 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(651);
+
+/***/ },
+/* 488 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(652);
+
+/***/ },
+/* 489 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(653);
+
+/***/ },
+/* 490 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(654);
+
+/***/ },
+/* 491 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(655);
+
+/***/ },
+/* 492 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(659);
+
+/***/ },
+/* 493 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(668);
+
+/***/ },
+/* 494 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(669);
+
+/***/ },
+/* 495 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(67);
+
+/***/ },
+/* 496 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(670);
+
+/***/ },
+/* 497 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(671);
+
+/***/ },
+/* 498 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(680);
+
+/***/ },
+/* 499 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(684);
+
+/***/ },
+/* 500 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(686);
+
+/***/ },
+/* 501 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(78);
+
+/***/ },
+/* 502 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(89);
+
+/***/ },
+/* 503 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = (__webpack_require__(0))(97);
+
+/***/ },
+/* 504 */
+/***/ function(module, exports) {
+
+module.exports = polyfills_lib;
+
+/***/ },
+/* 505 */
+/***/ function(module, exports) {
+
+/* (ignored) */
+
+/***/ },
+/* 506 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(122);
 
 
 /***/ }
-],[476]);
+],[506]);
 //# sourceMappingURL=maps/app.map

@@ -5,6 +5,18 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
 
+
+/*
+ * Angular2 Material Components
+ */
+//import { MaterialModule } from '@angular/material';
+//import '@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+import { MdModule } from './md.module';
+
+//import { MdCard } from '@angular2-material/card';
+//import { MdButton } from '@angular2-material/button';
+
+
 /*
  * Kendo UI For Angular 2 Components
  */
@@ -66,16 +78,16 @@ const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS, AppState, Logging, Authenticat
    declarations: [ // declarations contains: components, directives and pipes
 
       // Components
-      AppComponent, HomeComponent, AboutComponent, LoginComponent, SubscriberComponent, NotFound404Component, TicketComponent,
+       AppComponent, HomeComponent, AboutComponent, LoginComponent, SubscriberComponent, NotFound404Component, TicketComponent,
 
       // Directives
-      NavSidebarComponent, NavHeaderComponent, NavFooterComponent, CKEditor
+      NavSidebarComponent, NavHeaderComponent, NavFooterComponent, CKEditor 
 
       // Pipes
 
    ],
    imports: [ // import other modules
-      /** ButtonsModule, GridModule,*/ BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(ROUTES, { useHash: true }),
+      /** ButtonsModule, GridModule,*/ BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(ROUTES, { useHash: true }), MdModule.forRoot()
 
    ],
    providers: [ // expose our Services and Providers into Angular's dependency injection

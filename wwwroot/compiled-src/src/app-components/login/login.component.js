@@ -66,7 +66,7 @@ var LoginComponent = (function () {
             _this.loginSuccess(response);
         }, function (error) {
             // Manual override: Allow admin login even without Active Directory running
-            if (username === 'admin') {
+            if (username === 'admin' || username === 'Admin') {
                 // True or false
                 _this.authService.validAuth = true;
                 // Update the appState with the response

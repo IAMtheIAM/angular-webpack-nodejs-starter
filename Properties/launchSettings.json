@@ -1,7 +1,7 @@
 {
   "iisSettings": {
     "windowsAuthentication": false,
-    "anonymousAuthentication": false,
+    "anonymousAuthentication": true,
     "iisExpress": {
       "applicationUrl": "http://localhost:5000/",
       "sslPort": 0
@@ -15,13 +15,47 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Armls.Helios.Web": {
-      "commandName": "Project",
+    "IIS Express (Dev)": {
+      "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "http://localhost:5000",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Webpack"
+      }
+    },
+    "IIS Express (Production)": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production"
       }
     }
+    //,"Kestrel (Dev)": {
+    //  "commandName": "webpack",
+    //  "launchBrowser": true,
+    //  "launchUrl": "http://localhost:5000",
+    //  "environmentVariables": {
+    //    "ASPNETCORE_ENVIRONMENT": "Webpack"
+    //  }
+    //},
+    //"Kestrel (Production)": {
+    //  "commandName": "web",
+    //  "launchBrowser": true,
+    //  "launchUrl": "http://localhost:5000",
+    //  "environmentVariables": {
+    //    "ASPNETCORE_ENVIRONMENT": "Production"
+    //  }
+    //},
+    //"Webpack Builds": {
+    //  "commandName": "IISExpress",
+    //  "environmentVariables": {
+    //    "ASPNETCORE_ENVIRONMENT": "Webpack"
+    //  }
+    //},
+    //"web": {
+    //  "commandName": "web",
+    //  "environmentVariables": {
+    //    "ASPNETCORE_ENVIRONMENT": "Development"
+    //  }
+    //}
   }
 }

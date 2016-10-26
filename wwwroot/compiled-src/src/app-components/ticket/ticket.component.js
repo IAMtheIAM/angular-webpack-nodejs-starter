@@ -63,7 +63,8 @@ var TicketComponent = (function () {
     };
     TicketComponent.prototype.searchSubscriberByID = function (subscriberID) {
         this.appState.set('searchSubscriberByID', subscriberID);
-        this._callApi('DataService', '/api/subscriber/' + subscriberID);
+        this._callApi('DataService', '/api/subscriber/' + subscriberID); // C# API controller
+        // this._callApi('DataService', 'http://localhost:52222/subscriber/v1/' + subscriberID) // Node API Controller
         // this._callApi('DataService', 'https://jsonplaceholder.typicode.com/users');
     };
     TicketComponent.prototype._callApi = function (type, url) {

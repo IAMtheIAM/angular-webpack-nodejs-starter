@@ -9,6 +9,14 @@ var http_1 = require('@angular/http');
 var router_1 = require('@angular/router');
 var hmr_1 = require('@angularclass/hmr');
 /*
+ * Angular2 Material Components
+ */
+//import { MaterialModule } from '@angular/material';
+//import '@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+var md_module_1 = require('./md.module');
+//import { MdCard } from '@angular2-material/card';
+//import { MdButton } from '@angular2-material/button';
+/*
  * Kendo UI For Angular 2 Components
  */
 // import { ButtonsModule } from '@progress/kendo-angular-buttons';
@@ -108,7 +116,7 @@ var AppModule = (function () {
                         nav_sidebar_component_1.NavSidebarComponent, nav_header_component_1.NavHeaderComponent, nav_footer_component_1.NavFooterComponent, ckeditor_component_1.CKEditor
                     ],
                     imports: [
-                        /** ButtonsModule, GridModule,*/ platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule, router_1.RouterModule.forRoot(app_routes_1.ROUTES, { useHash: true }),
+                        /** ButtonsModule, GridModule,*/ platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule, router_1.RouterModule.forRoot(app_routes_1.ROUTES, { useHash: true }), md_module_1.MdModule.forRoot()
                     ],
                     providers: [
                         environment_1.ENV_PROVIDERS, APP_PROVIDERS]

@@ -257,9 +257,9 @@ class _View_NavHeaderComponent0 extends import3.DebugAppView<import1.NavHeaderCo
     this.renderer.setElementAttribute(this._el_35,'placeholder','Search');
     this.renderer.setElementAttribute(this._el_35,'type','text');
     this._el_36 = this.renderer.createElement(this._el_33,'i',this.debug(36,15,101));
-    this.renderer.setElementAttribute(this._el_36,'class','material-icons');
-    this._text_37 = this.renderer.createText(this._el_36,'search',this.debug(37,16,41));
-    this._text_38 = this.renderer.createText(this._el_33,'\n                  ',this.debug(38,16,51));
+    this.renderer.setElementAttribute(this._el_36,'class','material-icons align-right');
+    this._text_37 = this.renderer.createText(this._el_36,'search',this.debug(37,16,53));
+    this._text_38 = this.renderer.createText(this._el_33,'\n                  ',this.debug(38,16,63));
     this._el_39 = this.renderer.createElement(this._el_33,'div',this.debug(39,17,18));
     this.renderer.setElementAttribute(this._el_39,'class','search-results');
     this._text_40 = this.renderer.createText(this._el_33,'\n               ',this.debug(40,17,52));

@@ -23,6 +23,11 @@
     display: flex;
     justify-content: center;
 
+    .welcome-message {
+        color: #fff;
+        font-weight: bold;
+    }
+
     .login-form {
       width: span(6);
       margin: 20px;

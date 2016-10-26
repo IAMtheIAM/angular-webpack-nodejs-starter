@@ -1,6 +1,6 @@
 webpackJsonp([5,7],{
 
-/***/ 103:
+/***/ 123:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18,19 +18,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var common_1 = __webpack_require__(102);
+var common_1 = __webpack_require__(70);
 var router_1 = __webpack_require__(22);
-var core_1 = __webpack_require__(7);
+var core_1 = __webpack_require__(3);
 //
-var detail_routes_1 = __webpack_require__(481);
+var detail_routes_1 = __webpack_require__(511);
 /*
  * Shared Utilities & Other Services
  */
-var utility_service_1 = __webpack_require__(5);
+var utility_service_1 = __webpack_require__(6);
 /**
  * Imported Components
  */
-var detail_component_1 = __webpack_require__(478);
+var detail_component_1 = __webpack_require__(508);
 var DetailModule = (function () {
     function DetailModule() {
         if (utility_service_1.Logging.isEnabled.light) {
@@ -57,7 +57,7 @@ exports.DetailModule = DetailModule;
 
 /***/ },
 
-/***/ 478:
+/***/ 508:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -71,11 +71,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = __webpack_require__(7);
+var core_1 = __webpack_require__(3);
 /*
  * Shared Utilities
  */
-var utility_service_1 = __webpack_require__(5);
+var utility_service_1 = __webpack_require__(6);
 /**
  * This is where CSS/SCSS files that the component depends on are required.
  *
@@ -84,7 +84,7 @@ var utility_service_1 = __webpack_require__(5);
  * external stylesheets. Do NOT add styles the "Angular2 Way" in the
  * @Component decorator ("styles" and "styleUrls" properties)
  */
-__webpack_require__(483);
+__webpack_require__(513);
 var DetailComponent = (function () {
     function DetailComponent() {
     }
@@ -96,7 +96,7 @@ var DetailComponent = (function () {
     DetailComponent = __decorate([
         core_1.Component({
             selector: 'detail',
-            template: __webpack_require__(486),
+            template: __webpack_require__(516),
         }), 
         __metadata('design:paramtypes', [])
     ], DetailComponent);
@@ -107,7 +107,7 @@ exports.DetailComponent = DetailComponent;
 
 /***/ },
 
-/***/ 481:
+/***/ 511:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -115,7 +115,7 @@ exports.DetailComponent = DetailComponent;
 /**
  * Imported Components
  */
-var detail_component_1 = __webpack_require__(478);
+var detail_component_1 = __webpack_require__(508);
 // async components must be named detailRoutes for WebpackAsyncRoute
 exports.detailRoutes = [{
         path: '',
@@ -126,14 +126,14 @@ exports.detailRoutes = [{
 
 /***/ },
 
-/***/ 483:
+/***/ 513:
 /***/ function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ },
 
-/***/ 486:
+/***/ 516:
 /***/ function(module, exports) {
 
 module.exports = "<h1>Hello from Detail (sub module)</h1>\n<div class=\"row\">\n   <div class=\"col s4\">\n      <div class=\"card-panel\">\n          <span>I am a very simple card. I am good at containing small bits of information.\n          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\n          </span>\n      </div>\n   </div>\n</div>\n<router-outlet></router-outlet>\n"

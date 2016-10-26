@@ -1,0 +1,27 @@
+{
+  "kendo.for.jquery": {
+    "js": "js/chunks/kendo.for.jquery.chunk.js"
+  },
+  "mock-data": {
+    "js": "js/chunks/mock-data.chunk.js"
+  },
+  "iframe.module.ngfactory": {
+    "js": "js/chunks/iframe.module.ngfactory.chunk.js"
+  },
+  "iframe.module": {
+    "js": "js/chunks/iframe.module.chunk.js"
+  },
+  "detail.module.ngfactory": {
+    "js": "js/chunks/detail.module.ngfactory.chunk.js"
+  },
+  "detail.module": {
+    "js": "js/chunks/detail.module.chunk.js"
+  },
+  "app": {
+    "js": "js/app.bundle.js",
+    "css": "/css/app.style.css?ccb67fa09e8c5e13fcf7"
+  },
+  "commons": {
+    "js": "js/commons.bundle.js"
+  }
+}

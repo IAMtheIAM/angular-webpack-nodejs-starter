@@ -17,15 +17,15 @@ ticket {
             @include span(3);
          }
          .col_problem-statement {
-            @include span(6);
+            @include span(8);
 
          }
-         .col_support-info {
+         /*.col_support-info {
             @include span(4);
 
-         }
+         }*/
          .col_solution {
-            @include span(6);
+            @include span(8);
 
          }
          .col_action-buttons {

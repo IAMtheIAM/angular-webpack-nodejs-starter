@@ -1,6 +1,6 @@
 webpackJsonp([4,5,7],{
 
-/***/ 103:
+/***/ 123:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18,19 +18,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var common_1 = __webpack_require__(102);
+var common_1 = __webpack_require__(70);
 var router_1 = __webpack_require__(22);
-var core_1 = __webpack_require__(7);
+var core_1 = __webpack_require__(3);
 //
-var detail_routes_1 = __webpack_require__(481);
+var detail_routes_1 = __webpack_require__(511);
 /*
  * Shared Utilities & Other Services
  */
-var utility_service_1 = __webpack_require__(5);
+var utility_service_1 = __webpack_require__(6);
 /**
  * Imported Components
  */
-var detail_component_1 = __webpack_require__(478);
+var detail_component_1 = __webpack_require__(508);
 var DetailModule = (function () {
     function DetailModule() {
         if (utility_service_1.Logging.isEnabled.light) {
@@ -57,7 +57,7 @@ exports.DetailModule = DetailModule;
 
 /***/ },
 
-/***/ 113:
+/***/ 133:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -72,15 +72,15 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var import0 = __webpack_require__(109);
-var import1 = __webpack_require__(103);
-var import2 = __webpack_require__(112);
-var import3 = __webpack_require__(111);
-var import4 = __webpack_require__(107);
-var import6 = __webpack_require__(489);
-var import7 = __webpack_require__(478);
-var import8 = __webpack_require__(66);
-var import9 = __webpack_require__(108);
+var import0 = __webpack_require__(129);
+var import1 = __webpack_require__(123);
+var import2 = __webpack_require__(132);
+var import3 = __webpack_require__(131);
+var import4 = __webpack_require__(127);
+var import6 = __webpack_require__(519);
+var import7 = __webpack_require__(508);
+var import8 = __webpack_require__(72);
+var import9 = __webpack_require__(128);
 var DetailModuleInjector = (function (_super) {
     __extends(DetailModuleInjector, _super);
     function DetailModuleInjector(parent) {
@@ -169,7 +169,7 @@ exports.DetailModuleNgFactory = new import0.NgModuleFactory(DetailModuleInjector
 
 /***/ },
 
-/***/ 478:
+/***/ 508:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -183,11 +183,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = __webpack_require__(7);
+var core_1 = __webpack_require__(3);
 /*
  * Shared Utilities
  */
-var utility_service_1 = __webpack_require__(5);
+var utility_service_1 = __webpack_require__(6);
 /**
  * This is where CSS/SCSS files that the component depends on are required.
  *
@@ -196,7 +196,7 @@ var utility_service_1 = __webpack_require__(5);
  * external stylesheets. Do NOT add styles the "Angular2 Way" in the
  * @Component decorator ("styles" and "styleUrls" properties)
  */
-__webpack_require__(483);
+__webpack_require__(513);
 var DetailComponent = (function () {
     function DetailComponent() {
     }
@@ -208,7 +208,7 @@ var DetailComponent = (function () {
     DetailComponent = __decorate([
         core_1.Component({
             selector: 'detail',
-            template: __webpack_require__(486),
+            template: __webpack_require__(516),
         }), 
         __metadata('design:paramtypes', [])
     ], DetailComponent);
@@ -219,7 +219,7 @@ exports.DetailComponent = DetailComponent;
 
 /***/ },
 
-/***/ 481:
+/***/ 511:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -227,7 +227,7 @@ exports.DetailComponent = DetailComponent;
 /**
  * Imported Components
  */
-var detail_component_1 = __webpack_require__(478);
+var detail_component_1 = __webpack_require__(508);
 // async components must be named detailRoutes for WebpackAsyncRoute
 exports.detailRoutes = [{
         path: '',
@@ -238,21 +238,21 @@ exports.detailRoutes = [{
 
 /***/ },
 
-/***/ 483:
+/***/ 513:
 /***/ function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ },
 
-/***/ 486:
+/***/ 516:
 /***/ function(module, exports) {
 
 module.exports = "<h1>Hello from Detail (sub module)</h1>\n<div class=\"row\">\n   <div class=\"col s4\">\n      <div class=\"card-panel\">\n          <span>I am a very simple card. I am good at containing small bits of information.\n          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\n          </span>\n      </div>\n   </div>\n</div>\n<router-outlet></router-outlet>\n"
 
 /***/ },
 
-/***/ 489:
+/***/ 519:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -268,16 +268,16 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var import0 = __webpack_require__(19);
-var import1 = __webpack_require__(478);
+var import1 = __webpack_require__(508);
 var import3 = __webpack_require__(21);
 var import4 = __webpack_require__(17);
 var import7 = __webpack_require__(16);
 var import8 = __webpack_require__(15);
 var import9 = __webpack_require__(20);
 var import10 = __webpack_require__(18);
-var import11 = __webpack_require__(106);
-var import12 = __webpack_require__(65);
-var import13 = __webpack_require__(105);
+var import11 = __webpack_require__(126);
+var import12 = __webpack_require__(71);
+var import13 = __webpack_require__(125);
 var nodeDebugInfos_DetailComponent_Host0 = [new import0.StaticNodeDebugInfo([import1.DetailComponent], import1.DetailComponent, {})];
 var renderType_DetailComponent_Host = null;
 var _View_DetailComponent_Host0 = (function (_super) {

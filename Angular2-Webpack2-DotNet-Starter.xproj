@@ -7,7 +7,7 @@
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
     <ProjectGuid>197c60bf-7216-46b0-bf9b-730cef735833</ProjectGuid>
-    <RootNamespace>Armls.Helios.Web</RootNamespace>
+    <RootNamespace>IAMtheIAM</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -20,32 +20,34 @@
     <SchemaVersion>2.0</SchemaVersion>
     <TypeScriptCompileBlocked>True</TypeScriptCompileBlocked>
   </PropertyGroup>
-    <ItemGroup>
-      <DnxInvisibleFolder Include="bower_components\" />
-      <DnxInvisibleFolder Include="node_modules\" />
-    </ItemGroup>
-    <Import Project="$(VSToolsPath)\DotNet.Web\Microsoft.DotNet.Web.targets" Condition="'$(VSToolsPath)' != ''" />
-    <PropertyGroup>
-        <CompileDependsOn>
-          $(CompileDependsOn);
-    	  PreBuildEvents
-        </CompileDependsOn>
-        <CleanDependsOn>
-          $(CleanDependsOn);
-          NpmClean
-        </CleanDependsOn>
-        <BuildDependsOn>
-          $(BuildDependsOn);
-    	  PostBuildEvents
-        </BuildDependsOn>
-    </PropertyGroup>
-      <Target Name="PreBuildEvents">
-          <Exec Command="set NODE_ENV=$(ConfigurationName)" />
-        </Target>
-        <Target Name="NpmClean">
-          <Exec Command="set NODE_ENV=$(ConfigurationName)" />
-        </Target>
-        <Target Name="PostBuildEvents">
-          <Exec Command="set NODE_ENV=$(ConfigurationName)" />
-        </Target>
-</Project>
+  <ItemGroup>
+    <DnxInvisibleFolder Include="bower_components\" />
+    <DnxInvisibleFolder Include="node_modules\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\DotNet.Web\Microsoft.DotNet.Web.targets" Condition="'$(VSToolsPath)' != ''" />
+  <PropertyGroup>
+    <CompileDependsOn>
+      $(CompileDependsOn);  
+      PreBuildEvents
+    </CompileDependsOn>
+    <CleanDependsOn>
+      $(CleanDependsOn);
+      NpmClean
+    </CleanDependsOn>
+    <BuildDependsOn>
+      $(BuildDependsOn);
+      PostBuildEvents
+    </BuildDependsOn>
+    <RunDependsOn>
+      $(RunDependsOn);
+      BeforeApplicationRuns
+    </RunDependsOn>
+  </PropertyGroup>
+  <Target Name="PreBuildEvents">     
+   <Exec Command="npm run launch:$(ConfigurationName)" />
+ </Target>
+  <Target Name="NpmClean">  </Target>
+  <Target Name="PostBuildEvents">  </Target>
+  <Target Name="BeforeApplicationRuns">
+  </Target>
+</Project> 

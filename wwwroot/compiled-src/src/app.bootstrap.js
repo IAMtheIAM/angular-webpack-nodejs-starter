@@ -1,12 +1,12 @@
-"use strict";
 /**
  * JIT Build
  * MAIN ANGULAR2 APP ENTRY POINT
  * This is where we bootstrap the Angular2 application
  */
-// These 2 imports are needed here first, or app throws errors during bootstrapping
-// import 'core-js/shim';
-require('zone.js/dist/zone');
+"use strict";
+/**
+ * reflect-metadata needs to be imported here, in the app bundle, or app throws errors during bootstrapping
+ */
 require('reflect-metadata');
 var core_1 = require('@angular/core');
 var platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
@@ -17,6 +17,11 @@ var utility_service_1 = require('./app-components/services/utility.service');
  * AppComponent and AppComponent Services
  */
 var app_module_1 = require('./app-components/app/app.module');
+/**
+ * zone.js MUST be imported AFTER AppModule/AppModuleNgFactory, otherwise it will throw
+ * error "ZoneAware promise has been overriden" during bootstrapping
+ */
+require('zone.js/dist/zone');
 if ('production' === ENV) {
     core_1.enableProdMode();
 }

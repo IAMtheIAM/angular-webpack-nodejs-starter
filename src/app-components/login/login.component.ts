@@ -90,7 +90,7 @@ export class LoginComponent {
              error => {
 
                 // Manual override: Allow admin login even without Active Directory running
-                if (username === 'admin') {
+                 if (username === 'admin' || username === 'Admin') {
 
                    // True or false
                    this.authService.validAuth = true;
