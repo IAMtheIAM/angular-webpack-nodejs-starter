@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Armls.Helios.Web.Models.AccountViewModels
+﻿namespace Starter.Models.AccountViewModels
 {
+    using System.ComponentModel.DataAnnotations;
+
     public class LoginViewModel
     {
         [Required]
-       // [EmailAddress]
+
+        // [EmailAddress]
         public string Email { get; set; }
 
         [Required]
