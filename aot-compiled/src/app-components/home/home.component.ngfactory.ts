@@ -4,11 +4,11 @@
  */
  /* tslint:disable */
 
-import * as import0 from '@angular/core/src/linker/debug_context';
-import * as import1 from '../../../../src/app-components/services/authentication.service';
-import * as import2 from '../../../../src/app-components/home/home.component';
-import * as import3 from '@angular/core/src/render/api';
-import * as import4 from '@angular/core/src/linker/view';
+import * as import0 from '../../../../src/app-components/home/home.component';
+import * as import1 from '@angular/core/src/linker/view';
+import * as import2 from '@angular/core/src/linker/debug_context';
+import * as import3 from '../../../../src/app-components/services/authentication.service';
+import * as import4 from '@angular/core/src/render/api';
 import * as import5 from '@angular/core/src/linker/element';
 import * as import6 from '@angular/core/src/linker/view_utils';
 import * as import7 from '@angular/core/src/di/injector';
@@ -20,66 +20,84 @@ import * as import12 from '@angular/http/src/http';
 import * as import13 from '../../../../src/app-components/services/utility.service';
 import * as import14 from '@angular/core/src/metadata/view';
 import * as import15 from '@angular/core/src/linker/component_factory';
-  const nodeDebugInfos_HomeComponent_Host0:import0.StaticNodeDebugInfo[] = [new import0.StaticNodeDebugInfo([
-    import1.Authentication,
-    import2.HomeComponent
+export class Wrapper_HomeComponent {
+  context:import0.HomeComponent;
+  changed:boolean;
+  constructor(p0:any,p1:any,p2:any,p3:any) {
+    this.changed = false;
+    this.context = new import0.HomeComponent(p0,p1,p2,p3);
+  }
+  detectChangesInInputProps(view:import1.AppView<any>,el:any,throwOnChange:boolean):boolean {
+    var changed:any = this.changed;
+    this.changed = false;
+    if (!throwOnChange) { if ((view.numberOfChecks === 0)) { this.context.ngOnInit(); } }
+    return changed;
+  }
+  detectChangesInHostProps(view:import1.AppView<any>,el:any,throwOnChange:boolean):void {
+  }
+}
+  const nodeDebugInfos_HomeComponent_Host0:import2.StaticNodeDebugInfo[] = [new import2.StaticNodeDebugInfo([
+    import3.Authentication,
+    import0.HomeComponent
   ]
-,import2.HomeComponent,{})];
-var renderType_HomeComponent_Host:import3.RenderComponentType = (null as any);
-class _View_HomeComponent_Host0 extends import4.DebugAppView<any> {
+,import0.HomeComponent,{})];
+var renderType_HomeComponent_Host:import4.RenderComponentType = (null as any);
+class _View_HomeComponent_Host0 extends import1.DebugAppView<any> {
   _el_0:any;
   /*private*/ _appEl_0:import5.AppElement;
-  _Authentication_0_4:import1.Authentication;
-  _HomeComponent_0_5:import2.HomeComponent;
+  _Authentication_0_4:import3.Authentication;
+  _HomeComponent_0_5:Wrapper_HomeComponent;
   constructor(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import5.AppElement) {
     super(_View_HomeComponent_Host0,renderType_HomeComponent_Host,import8.ViewType.HOST,viewUtils,parentInjector,declarationEl,import9.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_HomeComponent_Host0);
   }
   createInternal(rootSelector:string):import5.AppElement {
-    this._el_0 = this.selectOrCreateHostElement('home',rootSelector,this.debug(0,0,0));
+    this._el_0 = import6.selectOrCreateRenderHostElement(this.renderer,'home',import6.EMPTY_INLINE_ARRAY,rootSelector,this.debug(0,0,0));
     this._appEl_0 = new import5.AppElement(0,(null as any),this,this._el_0);
     var compView_0:any = viewFactory_HomeComponent0(this.viewUtils,this.injector(0),this._appEl_0);
-    this._Authentication_0_4 = new import1.Authentication(this.parentInjector.get(import10.AppState),this.parentInjector.get(import11.Router),this.parentInjector.get(import12.Http),this.parentInjector.get(import13.UtilityService));
-    this._HomeComponent_0_5 = new import2.HomeComponent(this.parentInjector.get(import10.AppState),this.parentInjector.get(import11.Router),this.parentInjector.get(import12.Http),this._Authentication_0_4);
-    this._appEl_0.initComponent(this._HomeComponent_0_5,[],compView_0);
-    compView_0.create(this._HomeComponent_0_5,this.projectableNodes,(null as any));
-    this.init([].concat([this._el_0]),[this._el_0],[],[]);
+    this._Authentication_0_4 = new import3.Authentication(this.parentInjector.get(import10.AppState),this.parentInjector.get(import11.Router),this.parentInjector.get(import12.Http),this.parentInjector.get(import13.UtilityService));
+    this._HomeComponent_0_5 = new Wrapper_HomeComponent(this.parentInjector.get(import10.AppState),this.parentInjector.get(import11.Router),this.parentInjector.get(import12.Http),this._Authentication_0_4);
+    this._appEl_0.initComponent(this._HomeComponent_0_5.context,([] as any[]),compView_0);
+    compView_0.create(this._HomeComponent_0_5.context,this.projectableNodes,(null as any));
+    this.init(([] as any[]).concat([this._el_0]),[this._el_0],([] as any[]),([] as any[]));
     return this._appEl_0;
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import1.Authentication) && (0 === requestNodeIndex))) { return this._Authentication_0_4; }
-    if (((token === import2.HomeComponent) && (0 === requestNodeIndex))) { return this._HomeComponent_0_5; }
+    if (((token === import3.Authentication) && (0 === requestNodeIndex))) { return this._Authentication_0_4; }
+    if (((token === import0.HomeComponent) && (0 === requestNodeIndex))) { return this._HomeComponent_0_5.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    if (((this.numberOfChecks === 0) && !throwOnChange)) { this._HomeComponent_0_5.ngOnInit(); }
+    this.debug(0,0,0);
+    this._HomeComponent_0_5.detectChangesInInputProps(this,this._el_0,throwOnChange);
     this.detectContentChildrenChanges(throwOnChange);
+    this._HomeComponent_0_5.detectChangesInHostProps(this,this._el_0,throwOnChange);
     this.detectViewChildrenChanges(throwOnChange);
     if (!throwOnChange) {
       this.debug(0,0,0);
-      if ((this.numberOfChecks === 0)) { this._HomeComponent_0_5.ngAfterViewInit(); }
+      if ((this.numberOfChecks === 0)) { this._HomeComponent_0_5.context.ngAfterViewInit(); }
     }
   }
 }
-function viewFactory_HomeComponent_Host0(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import5.AppElement):import4.AppView<any> {
-  if ((renderType_HomeComponent_Host === (null as any))) { (renderType_HomeComponent_Host = viewUtils.createRenderComponentType('',0,import14.ViewEncapsulation.None,[],{})); }
+function viewFactory_HomeComponent_Host0(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import5.AppElement):import1.AppView<any> {
+  if ((renderType_HomeComponent_Host === (null as any))) { (renderType_HomeComponent_Host = viewUtils.createRenderComponentType('',0,import14.ViewEncapsulation.None,([] as any[]),{})); }
   return new _View_HomeComponent_Host0(viewUtils,parentInjector,declarationEl);
 }
-export const HomeComponentNgFactory:import15.ComponentFactory<import2.HomeComponent> = new import15.ComponentFactory<import2.HomeComponent>('home',viewFactory_HomeComponent_Host0,import2.HomeComponent);
-const styles_HomeComponent:any[] = [];
-const nodeDebugInfos_HomeComponent0:import0.StaticNodeDebugInfo[] = [
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{})
+export const HomeComponentNgFactory:import15.ComponentFactory<import0.HomeComponent> = new import15.ComponentFactory<import0.HomeComponent>('home',viewFactory_HomeComponent_Host0,import0.HomeComponent);
+const styles_HomeComponent:any[] = ([] as any[]);
+const nodeDebugInfos_HomeComponent0:import2.StaticNodeDebugInfo[] = [
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_HomeComponent:import3.RenderComponentType = (null as any);
-class _View_HomeComponent0 extends import4.DebugAppView<import2.HomeComponent> {
+var renderType_HomeComponent:import4.RenderComponentType = (null as any);
+class _View_HomeComponent0 extends import1.DebugAppView<import0.HomeComponent> {
   _el_0:any;
   _text_1:any;
   _text_2:any;
@@ -94,17 +112,16 @@ class _View_HomeComponent0 extends import4.DebugAppView<import2.HomeComponent> {
   }
   createInternal(rootSelector:string):import5.AppElement {
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
-    this._el_0 = this.renderer.createElement(parentRenderNode,'h1',this.debug(0,0,0));
+    this._el_0 = import6.createRenderElement(this.renderer,parentRenderNode,'h1',import6.EMPTY_INLINE_ARRAY,this.debug(0,0,0));
     this._text_1 = this.renderer.createText(this._el_0,'Grid (Editing, Lazy loaded)',this.debug(1,0,4));
     this._text_2 = this.renderer.createText(parentRenderNode,'\n',this.debug(2,0,36));
-    this._el_3 = this.renderer.createElement(parentRenderNode,'div',this.debug(3,1,0));
-    this.renderer.setElementAttribute(this._el_3,'id','kendoUI');
+    this._el_3 = import6.createRenderElement(this.renderer,parentRenderNode,'div',new import6.InlineArray2(2,'id','kendoUI'),this.debug(3,1,0));
     this._text_4 = this.renderer.createText(parentRenderNode,'\n\n\n',this.debug(4,1,24));
     this._text_5 = this.renderer.createText(parentRenderNode,'\n',this.debug(5,4,38));
     this._text_6 = this.renderer.createText(parentRenderNode,'\n',this.debug(6,5,121));
     this._text_7 = this.renderer.createText(parentRenderNode,'\n',this.debug(7,6,113));
     this._text_8 = this.renderer.createText(parentRenderNode,'\n',this.debug(8,7,16));
-    this.init([],[
+    this.init(([] as any[]),[
       this._el_0,
       this._text_1,
       this._text_2,
@@ -115,11 +132,11 @@ class _View_HomeComponent0 extends import4.DebugAppView<import2.HomeComponent> {
       this._text_7,
       this._text_8
     ]
-    ,[],[]);
+    ,([] as any[]),([] as any[]));
     return (null as any);
   }
 }
-export function viewFactory_HomeComponent0(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import5.AppElement):import4.AppView<import2.HomeComponent> {
+export function viewFactory_HomeComponent0(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import5.AppElement):import1.AppView<import0.HomeComponent> {
   if ((renderType_HomeComponent === (null as any))) { (renderType_HomeComponent = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-aot-webpack2-typescript-dotnet/master/src/app-components/home/home.template.html',0,import14.ViewEncapsulation.None,styles_HomeComponent,{})); }
   return new _View_HomeComponent0(viewUtils,parentInjector,declarationEl);
 }

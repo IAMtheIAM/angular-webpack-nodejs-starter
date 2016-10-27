@@ -4,10 +4,10 @@
  */
  /* tslint:disable */
 
-import * as import0 from '@angular/core/src/linker/debug_context';
-import * as import1 from '../../../../src/app-components/login/login.component';
-import * as import2 from '@angular/core/src/render/api';
-import * as import3 from '@angular/core/src/linker/view';
+import * as import0 from '../../../../src/app-components/login/login.component';
+import * as import1 from '@angular/core/src/linker/view';
+import * as import2 from '@angular/core/src/linker/debug_context';
+import * as import3 from '@angular/core/src/render/api';
 import * as import4 from '@angular/core/src/linker/element';
 import * as import5 from '@angular/core/src/linker/view_utils';
 import * as import6 from '@angular/core/src/di/injector';
@@ -22,128 +22,148 @@ import * as import14 from '@angular/core/src/linker/component_factory';
 import * as import15 from '@angular/forms/src/directives/ng_form';
 import * as import16 from '@angular/forms/src/directives/control_container';
 import * as import17 from '@angular/forms/src/directives/ng_control_status';
-const nodeDebugInfos_LoginComponent_Host0:import0.StaticNodeDebugInfo[] = [new import0.StaticNodeDebugInfo([import1.LoginComponent],import1.LoginComponent,{})];
-var renderType_LoginComponent_Host:import2.RenderComponentType = (null as any);
-class _View_LoginComponent_Host0 extends import3.DebugAppView<any> {
+import * as import18 from '../../../node_modules/@angular/forms/src/directives/ng_form.ngfactory';
+import * as import19 from '../../../node_modules/@angular/forms/src/directives/ng_control_status.ngfactory';
+export class Wrapper_LoginComponent {
+  context:import0.LoginComponent;
+  changed:boolean;
+  constructor(p0:any,p1:any,p2:any,p3:any) {
+    this.changed = false;
+    this.context = new import0.LoginComponent(p0,p1,p2,p3);
+  }
+  detectChangesInInputProps(view:import1.AppView<any>,el:any,throwOnChange:boolean):boolean {
+    var changed:any = this.changed;
+    this.changed = false;
+    if (!throwOnChange) { if ((view.numberOfChecks === 0)) { this.context.ngOnInit(); } }
+    return changed;
+  }
+  detectChangesInHostProps(view:import1.AppView<any>,el:any,throwOnChange:boolean):void {
+  }
+}
+const nodeDebugInfos_LoginComponent_Host0:import2.StaticNodeDebugInfo[] = [new import2.StaticNodeDebugInfo([import0.LoginComponent],import0.LoginComponent,{})];
+var renderType_LoginComponent_Host:import3.RenderComponentType = (null as any);
+class _View_LoginComponent_Host0 extends import1.DebugAppView<any> {
   _el_0:any;
   /*private*/ _appEl_0:import4.AppElement;
-  _LoginComponent_0_4:import1.LoginComponent;
+  _LoginComponent_0_4:Wrapper_LoginComponent;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement) {
     super(_View_LoginComponent_Host0,renderType_LoginComponent_Host,import7.ViewType.HOST,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_LoginComponent_Host0);
   }
   createInternal(rootSelector:string):import4.AppElement {
-    this._el_0 = this.selectOrCreateHostElement('login',rootSelector,this.debug(0,0,0));
+    this._el_0 = import5.selectOrCreateRenderHostElement(this.renderer,'login',import5.EMPTY_INLINE_ARRAY,rootSelector,this.debug(0,0,0));
     this._appEl_0 = new import4.AppElement(0,(null as any),this,this._el_0);
     var compView_0:any = viewFactory_LoginComponent0(this.viewUtils,this.injector(0),this._appEl_0);
-    this._LoginComponent_0_4 = new import1.LoginComponent(this.parentInjector.get(import9.AppState),this.parentInjector.get(import10.Authentication),this.parentInjector.get(import11.UtilityService),this.parentInjector.get(import12.Router));
-    this._appEl_0.initComponent(this._LoginComponent_0_4,[],compView_0);
-    compView_0.create(this._LoginComponent_0_4,this.projectableNodes,(null as any));
-    this.init([].concat([this._el_0]),[this._el_0],[],[]);
+    this._LoginComponent_0_4 = new Wrapper_LoginComponent(this.parentInjector.get(import9.AppState),this.parentInjector.get(import10.Authentication),this.parentInjector.get(import11.UtilityService),this.parentInjector.get(import12.Router));
+    this._appEl_0.initComponent(this._LoginComponent_0_4.context,([] as any[]),compView_0);
+    compView_0.create(this._LoginComponent_0_4.context,this.projectableNodes,(null as any));
+    this.init(([] as any[]).concat([this._el_0]),[this._el_0],([] as any[]),([] as any[]));
     return this._appEl_0;
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import1.LoginComponent) && (0 === requestNodeIndex))) { return this._LoginComponent_0_4; }
+    if (((token === import0.LoginComponent) && (0 === requestNodeIndex))) { return this._LoginComponent_0_4.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    if (((this.numberOfChecks === 0) && !throwOnChange)) { this._LoginComponent_0_4.ngOnInit(); }
+    this.debug(0,0,0);
+    this._LoginComponent_0_4.detectChangesInInputProps(this,this._el_0,throwOnChange);
     this.detectContentChildrenChanges(throwOnChange);
+    this._LoginComponent_0_4.detectChangesInHostProps(this,this._el_0,throwOnChange);
     this.detectViewChildrenChanges(throwOnChange);
   }
 }
-function viewFactory_LoginComponent_Host0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<any> {
-  if ((renderType_LoginComponent_Host === (null as any))) { (renderType_LoginComponent_Host = viewUtils.createRenderComponentType('',0,import13.ViewEncapsulation.None,[],{})); }
+function viewFactory_LoginComponent_Host0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import1.AppView<any> {
+  if ((renderType_LoginComponent_Host === (null as any))) { (renderType_LoginComponent_Host = viewUtils.createRenderComponentType('',0,import13.ViewEncapsulation.None,([] as any[]),{})); }
   return new _View_LoginComponent_Host0(viewUtils,parentInjector,declarationEl);
 }
-export const LoginComponentNgFactory:import14.ComponentFactory<import1.LoginComponent> = new import14.ComponentFactory<import1.LoginComponent>('login',viewFactory_LoginComponent_Host0,import1.LoginComponent);
-const styles_LoginComponent:any[] = [];
-const nodeDebugInfos_LoginComponent0:import0.StaticNodeDebugInfo[] = [
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([
+export const LoginComponentNgFactory:import14.ComponentFactory<import0.LoginComponent> = new import14.ComponentFactory<import0.LoginComponent>('login',viewFactory_LoginComponent_Host0,import0.LoginComponent);
+const styles_LoginComponent:any[] = ([] as any[]);
+const nodeDebugInfos_LoginComponent0:import2.StaticNodeDebugInfo[] = [
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([
     import15.NgForm,
     import16.ControlContainer,
     import17.NgControlStatusGroup
   ]
   ,(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{username: (null as any)}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{password: (null as any)}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{})
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{username: (null as any)}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{password: (null as any)}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_LoginComponent:import2.RenderComponentType = (null as any);
-class _View_LoginComponent0 extends import3.DebugAppView<import1.LoginComponent> {
+var renderType_LoginComponent:import3.RenderComponentType = (null as any);
+class _View_LoginComponent0 extends import1.DebugAppView<import0.LoginComponent> {
   _el_0:any;
   _text_1:any;
   _el_2:any;
@@ -163,9 +183,9 @@ class _View_LoginComponent0 extends import3.DebugAppView<import1.LoginComponent>
   _el_16:any;
   _text_17:any;
   _el_18:any;
-  _NgForm_18_3:import15.NgForm;
+  _NgForm_18_3:import18.Wrapper_NgForm;
   _ControlContainer_18_4:any;
-  _NgControlStatusGroup_18_5:import17.NgControlStatusGroup;
+  _NgControlStatusGroup_18_5:import19.Wrapper_NgControlStatusGroup;
   _text_19:any;
   _el_20:any;
   _text_21:any;
@@ -224,126 +244,84 @@ class _View_LoginComponent0 extends import3.DebugAppView<import1.LoginComponent>
   _text_74:any;
   _text_75:any;
   _text_76:any;
-  /*private*/ _expr_3:any;
-  /*private*/ _expr_4:any;
-  /*private*/ _expr_5:any;
-  /*private*/ _expr_6:any;
-  /*private*/ _expr_7:any;
-  /*private*/ _expr_8:any;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement) {
     super(_View_LoginComponent0,renderType_LoginComponent,import7.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_LoginComponent0);
   }
   createInternal(rootSelector:string):import4.AppElement {
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
-    this._el_0 = this.renderer.createElement(parentRenderNode,'div',this.debug(0,0,0));
-    this.renderer.setElementAttribute(this._el_0,'class','card-container login-form');
+    this._el_0 = import5.createRenderElement(this.renderer,parentRenderNode,'div',new import5.InlineArray2(2,'class','card-container login-form'),this.debug(0,0,0));
     this._text_1 = this.renderer.createText(this._el_0,'\n    ',this.debug(1,0,39));
-    this._el_2 = this.renderer.createElement(this._el_0,'div',this.debug(2,1,4));
-    this.renderer.setElementAttribute(this._el_2,'class','welcome-message text-align-center');
+    this._el_2 = import5.createRenderElement(this.renderer,this._el_0,'div',new import5.InlineArray2(2,'class','welcome-message text-align-center'),this.debug(2,1,4));
     this._text_3 = this.renderer.createText(this._el_2,'\n        ',this.debug(3,1,51));
-    this._el_4 = this.renderer.createElement(this._el_2,'h5',this.debug(4,2,8));
+    this._el_4 = import5.createRenderElement(this.renderer,this._el_2,'h5',import5.EMPTY_INLINE_ARRAY,this.debug(4,2,8));
     this._text_5 = this.renderer.createText(this._el_4,'Angular2 Webpack2 DotNET Starter',this.debug(5,2,12));
     this._text_6 = this.renderer.createText(this._el_2,'\n        ',this.debug(6,2,49));
-    this._el_7 = this.renderer.createElement(this._el_2,'h3',this.debug(7,3,8));
+    this._el_7 = import5.createRenderElement(this.renderer,this._el_2,'h3',import5.EMPTY_INLINE_ARRAY,this.debug(7,3,8));
     this._text_8 = this.renderer.createText(this._el_7,'By IAMtheIAM',this.debug(8,3,12));
     this._text_9 = this.renderer.createText(this._el_2,'\n    ',this.debug(9,3,29));
     this._text_10 = this.renderer.createText(this._el_0,'\n\n    ',this.debug(10,4,10));
     this._text_11 = this.renderer.createText(this._el_0,'\n    ',this.debug(11,6,50));
     this._text_12 = this.renderer.createText(this._el_0,'\n    ',this.debug(12,25,17));
     this._text_13 = this.renderer.createText(this._el_0,'\n    ',this.debug(13,26,30));
-    this._el_14 = this.renderer.createElement(this._el_0,'div',this.debug(14,27,4));
-    this.renderer.setElementAttribute(this._el_14,'class','card');
+    this._el_14 = import5.createRenderElement(this.renderer,this._el_0,'div',new import5.InlineArray2(2,'class','card'),this.debug(14,27,4));
     this._text_15 = this.renderer.createText(this._el_14,'\n        ',this.debug(15,27,22));
-    this._el_16 = this.renderer.createElement(this._el_14,'div',this.debug(16,28,8));
-    this.renderer.setElementAttribute(this._el_16,'class','card-content');
+    this._el_16 = import5.createRenderElement(this.renderer,this._el_14,'div',new import5.InlineArray2(2,'class','card-content'),this.debug(16,28,8));
     this._text_17 = this.renderer.createText(this._el_16,'\n            ',this.debug(17,28,34));
-    this._el_18 = this.renderer.createElement(this._el_16,'form',this.debug(18,29,12));
-    this.renderer.setElementAttribute(this._el_18,'role','form');
-    this._NgForm_18_3 = new import15.NgForm((null as any),(null as any));
-    this._ControlContainer_18_4 = this._NgForm_18_3;
-    this._NgControlStatusGroup_18_5 = new import17.NgControlStatusGroup(this._ControlContainer_18_4);
+    this._el_18 = import5.createRenderElement(this.renderer,this._el_16,'form',new import5.InlineArray2(2,'role','form'),this.debug(18,29,12));
+    this._NgForm_18_3 = new import18.Wrapper_NgForm((null as any),(null as any));
+    this._ControlContainer_18_4 = this._NgForm_18_3.context;
+    this._NgControlStatusGroup_18_5 = new import19.Wrapper_NgControlStatusGroup(this._ControlContainer_18_4);
     this._text_19 = this.renderer.createText(this._el_18,'\n                ',this.debug(19,29,87));
-    this._el_20 = this.renderer.createElement(this._el_18,'div',this.debug(20,30,16));
-    this.renderer.setElementAttribute(this._el_20,'class','row');
+    this._el_20 = import5.createRenderElement(this.renderer,this._el_18,'div',new import5.InlineArray2(2,'class','row'),this.debug(20,30,16));
     this._text_21 = this.renderer.createText(this._el_20,'\n                    ',this.debug(21,30,33));
-    this._el_22 = this.renderer.createElement(this._el_20,'div',this.debug(22,31,20));
-    this.renderer.setElementAttribute(this._el_22,'class','input-field');
+    this._el_22 = import5.createRenderElement(this.renderer,this._el_20,'div',new import5.InlineArray2(2,'class','input-field'),this.debug(22,31,20));
     this._text_23 = this.renderer.createText(this._el_22,'\n                        ',this.debug(23,31,45));
-    this._el_24 = this.renderer.createElement(this._el_22,'i',this.debug(24,32,24));
-    this.renderer.setElementAttribute(this._el_24,'class','material-icons suffix');
+    this._el_24 = import5.createRenderElement(this.renderer,this._el_22,'i',new import5.InlineArray2(2,'class','material-icons suffix'),this.debug(24,32,24));
     this._text_25 = this.renderer.createText(this._el_24,'account_circle',this.debug(25,32,57));
     this._text_26 = this.renderer.createText(this._el_22,'\n                        ',this.debug(26,32,75));
-    this._el_27 = this.renderer.createElement(this._el_22,'input',this.debug(27,33,24));
-    this.renderer.setElementAttribute(this._el_27,'class','');
-    this.renderer.setElementAttribute(this._el_27,'id','username1');
-    this.renderer.setElementAttribute(this._el_27,'type','text');
-    this.renderer.setElementAttribute(this._el_27,'value','admin');
+    this._el_27 = import5.createRenderElement(this.renderer,this._el_22,'input',new import5.InlineArray8(8,'class','','id','username1','type','text','value','admin'),this.debug(27,33,24));
     this._text_28 = this.renderer.createText(this._el_22,'\n                        ',this.debug(28,33,91));
-    this._el_29 = this.renderer.createElement(this._el_22,'label',this.debug(29,34,24));
-    this.renderer.setElementAttribute(this._el_29,'for','username1');
+    this._el_29 = import5.createRenderElement(this.renderer,this._el_22,'label',new import5.InlineArray2(2,'for','username1'),this.debug(29,34,24));
     this._text_30 = this.renderer.createText(this._el_29,'Username',this.debug(30,34,47));
     this._text_31 = this.renderer.createText(this._el_22,'\n\n                    ',this.debug(31,34,63));
     this._text_32 = this.renderer.createText(this._el_20,'\n                ',this.debug(32,36,26));
     this._text_33 = this.renderer.createText(this._el_18,'\n                ',this.debug(33,37,22));
-    this._el_34 = this.renderer.createElement(this._el_18,'div',this.debug(34,38,16));
-    this.renderer.setElementAttribute(this._el_34,'class','row');
+    this._el_34 = import5.createRenderElement(this.renderer,this._el_18,'div',new import5.InlineArray2(2,'class','row'),this.debug(34,38,16));
     this._text_35 = this.renderer.createText(this._el_34,'\n                    ',this.debug(35,38,33));
-    this._el_36 = this.renderer.createElement(this._el_34,'div',this.debug(36,39,20));
-    this.renderer.setElementAttribute(this._el_36,'class','input-field');
+    this._el_36 = import5.createRenderElement(this.renderer,this._el_34,'div',new import5.InlineArray2(2,'class','input-field'),this.debug(36,39,20));
     this._text_37 = this.renderer.createText(this._el_36,'\n                        ',this.debug(37,39,45));
-    this._el_38 = this.renderer.createElement(this._el_36,'i',this.debug(38,40,24));
-    this.renderer.setElementAttribute(this._el_38,'class','material-icons suffix');
+    this._el_38 = import5.createRenderElement(this.renderer,this._el_36,'i',new import5.InlineArray2(2,'class','material-icons suffix'),this.debug(38,40,24));
     this._text_39 = this.renderer.createText(this._el_38,'lock_outline',this.debug(39,40,57));
     this._text_40 = this.renderer.createText(this._el_36,'\n                        ',this.debug(40,40,73));
-    this._el_41 = this.renderer.createElement(this._el_36,'input',this.debug(41,41,24));
-    this.renderer.setElementAttribute(this._el_41,'class','');
-    this.renderer.setElementAttribute(this._el_41,'id','password1');
-    this.renderer.setElementAttribute(this._el_41,'type','password');
+    this._el_41 = import5.createRenderElement(this.renderer,this._el_36,'input',new import5.InlineArray8(6,'class','','id','password1','type','password'),this.debug(41,41,24));
     this._text_42 = this.renderer.createText(this._el_36,'\n                        ',this.debug(42,41,81));
-    this._el_43 = this.renderer.createElement(this._el_36,'label',this.debug(43,42,24));
-    this.renderer.setElementAttribute(this._el_43,'for','password1');
+    this._el_43 = import5.createRenderElement(this.renderer,this._el_36,'label',new import5.InlineArray2(2,'for','password1'),this.debug(43,42,24));
     this._text_44 = this.renderer.createText(this._el_43,'Password',this.debug(44,42,47));
     this._text_45 = this.renderer.createText(this._el_36,'\n                    ',this.debug(45,42,63));
     this._text_46 = this.renderer.createText(this._el_34,'\n                ',this.debug(46,43,26));
     this._text_47 = this.renderer.createText(this._el_18,'\n\n                ',this.debug(47,44,22));
-    this._el_48 = this.renderer.createElement(this._el_18,'div',this.debug(48,46,16));
-    this.renderer.setElementAttribute(this._el_48,'class','row');
+    this._el_48 = import5.createRenderElement(this.renderer,this._el_18,'div',new import5.InlineArray2(2,'class','row'),this.debug(48,46,16));
     this._text_49 = this.renderer.createText(this._el_48,'\n                    ',this.debug(49,46,33));
-    this._el_50 = this.renderer.createElement(this._el_48,'div',this.debug(50,47,20));
-    this.renderer.setElementAttribute(this._el_50,'class','input-field');
+    this._el_50 = import5.createRenderElement(this.renderer,this._el_48,'div',new import5.InlineArray2(2,'class','input-field'),this.debug(50,47,20));
     this._text_51 = this.renderer.createText(this._el_50,'\n                        ',this.debug(51,47,45));
-    this._el_52 = this.renderer.createElement(this._el_50,'input',this.debug(52,48,24));
-    this.renderer.setElementAttribute(this._el_52,'class','rememberMe');
-    this.renderer.setElementAttribute(this._el_52,'id','rememberMe1');
-    this.renderer.setElementAttribute(this._el_52,'type','checkbox');
-    this.renderer.setElementAttribute(this._el_52,'value','');
+    this._el_52 = import5.createRenderElement(this.renderer,this._el_50,'input',new import5.InlineArray8(8,'class','rememberMe','id','rememberMe1','type','checkbox','value',''),this.debug(52,48,24));
     this._text_53 = this.renderer.createText(this._el_50,'\n\n                        ',this.debug(53,48,145));
-    this._el_54 = this.renderer.createElement(this._el_50,'input',this.debug(54,50,24));
-    this.renderer.setElementAttribute(this._el_54,'class','filled-in rememberMe');
-    this.renderer.setElementAttribute(this._el_54,'id','filled-in-box1');
-    this.renderer.setElementAttribute(this._el_54,'type','checkbox');
+    this._el_54 = import5.createRenderElement(this.renderer,this._el_50,'input',new import5.InlineArray8(6,'class','filled-in rememberMe','id','filled-in-box1','type','checkbox'),this.debug(54,50,24));
     this._text_55 = this.renderer.createText(this._el_50,'\n                        ',this.debug(55,50,98));
-    this._el_56 = this.renderer.createElement(this._el_50,'label',this.debug(56,51,24));
-    this.renderer.setElementAttribute(this._el_56,'for','filled-in-box1');
+    this._el_56 = import5.createRenderElement(this.renderer,this._el_50,'label',new import5.InlineArray2(2,'for','filled-in-box1'),this.debug(56,51,24));
     this._text_57 = this.renderer.createText(this._el_56,'Remember me',this.debug(57,51,52));
     this._text_58 = this.renderer.createText(this._el_50,'\n\n                        ',this.debug(58,51,71));
-    this._el_59 = this.renderer.createElement(this._el_50,'span',this.debug(59,53,24));
-    this.renderer.setElementAttribute(this._el_59,'class','float-right');
-    this._el_60 = this.renderer.createElement(this._el_59,'a',this.debug(60,53,50));
-    this.renderer.setElementAttribute(this._el_60,'href','/forgotpassword');
+    this._el_59 = import5.createRenderElement(this.renderer,this._el_50,'span',new import5.InlineArray2(2,'class','float-right'),this.debug(59,53,24));
+    this._el_60 = import5.createRenderElement(this.renderer,this._el_59,'a',new import5.InlineArray2(2,'href','/forgotpassword'),this.debug(60,53,50));
     this._text_61 = this.renderer.createText(this._el_60,'Forgot password?',this.debug(61,53,76));
-    this._el_62 = this.renderer.createElement(this._el_50,'br',this.debug(62,53,103));
+    this._el_62 = import5.createRenderElement(this.renderer,this._el_50,'br',import5.EMPTY_INLINE_ARRAY,this.debug(62,53,103));
     this._text_63 = this.renderer.createText(this._el_50,'\n                        ',this.debug(63,53,107));
     this._text_64 = this.renderer.createText(this._el_50,'\n\n                    ',this.debug(64,54,96));
     this._text_65 = this.renderer.createText(this._el_48,'\n                ',this.debug(65,56,26));
     this._text_66 = this.renderer.createText(this._el_18,'\n\n                ',this.debug(66,57,22));
-    this._el_67 = this.renderer.createElement(this._el_18,'button',this.debug(67,59,16));
-    this.renderer.setElementAttribute(this._el_67,'class','btn btn-block btn-large waves-effect waves-light login-submit');
-    this.renderer.setElementAttribute(this._el_67,'name','action');
-    this.renderer.setElementAttribute(this._el_67,'type','submit');
+    this._el_67 = import5.createRenderElement(this.renderer,this._el_18,'button',new import5.InlineArray8(6,'class','btn btn-block btn-large waves-effect waves-light login-submit','name','action','type','submit'),this.debug(67,59,16));
     this._text_68 = this.renderer.createText(this._el_67,'\n                    Login',this.debug(68,59,122));
-    this._el_69 = this.renderer.createElement(this._el_67,'i',this.debug(69,60,25));
-    this.renderer.setElementAttribute(this._el_69,'class','material-icons right');
+    this._el_69 = import5.createRenderElement(this.renderer,this._el_67,'i',new import5.InlineArray2(2,'class','material-icons right'),this.debug(69,60,25));
     this._text_70 = this.renderer.createText(this._el_69,'send',this.debug(70,60,57));
     this._text_71 = this.renderer.createText(this._el_67,'\n                ',this.debug(71,60,65));
     this._text_72 = this.renderer.createText(this._el_18,'\n            ',this.debug(72,61,25));
@@ -353,13 +331,7 @@ class _View_LoginComponent0 extends import3.DebugAppView<import1.LoginComponent>
     this._text_76 = this.renderer.createText(parentRenderNode,'\n',this.debug(76,65,6));
     var disposable_0:Function = this.renderer.listen(this._el_18,'submit',this.eventHandler(this._handle_submit_18_0.bind(this)));
     var disposable_1:Function = this.renderer.listen(this._el_18,'reset',this.eventHandler(this._handle_reset_18_1.bind(this)));
-    this._expr_3 = import8.UNINITIALIZED;
-    this._expr_4 = import8.UNINITIALIZED;
-    this._expr_5 = import8.UNINITIALIZED;
-    this._expr_6 = import8.UNINITIALIZED;
-    this._expr_7 = import8.UNINITIALIZED;
-    this._expr_8 = import8.UNINITIALIZED;
-    this.init([],[
+    this.init(([] as any[]),[
       this._el_0,
       this._text_1,
       this._el_2,
@@ -442,71 +414,40 @@ class _View_LoginComponent0 extends import3.DebugAppView<import1.LoginComponent>
       disposable_0,
       disposable_1
     ]
-    ,[]);
+    ,([] as any[]));
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import15.NgForm) && ((18 <= requestNodeIndex) && (requestNodeIndex <= 72)))) { return this._NgForm_18_3; }
+    if (((token === import15.NgForm) && ((18 <= requestNodeIndex) && (requestNodeIndex <= 72)))) { return this._NgForm_18_3.context; }
     if (((token === import16.ControlContainer) && ((18 <= requestNodeIndex) && (requestNodeIndex <= 72)))) { return this._ControlContainer_18_4; }
-    if (((token === import17.NgControlStatusGroup) && ((18 <= requestNodeIndex) && (requestNodeIndex <= 72)))) { return this._NgControlStatusGroup_18_5; }
+    if (((token === import17.NgControlStatusGroup) && ((18 <= requestNodeIndex) && (requestNodeIndex <= 72)))) { return this._NgControlStatusGroup_18_5.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
+    this.debug(18,29,12);
+    this._NgForm_18_3.detectChangesInInputProps(this,this._el_18,throwOnChange);
+    this._NgControlStatusGroup_18_5.detectChangesInInputProps(this,this._el_18,throwOnChange);
     this.detectContentChildrenChanges(throwOnChange);
-    this.debug(18,29,12);
-    const currVal_3:any = this._NgControlStatusGroup_18_5.ngClassUntouched;
-    if (import5.checkBinding(throwOnChange,this._expr_3,currVal_3)) {
-      this.renderer.setElementClass(this._el_18,'ng-untouched',currVal_3);
-      this._expr_3 = currVal_3;
-    }
-    this.debug(18,29,12);
-    const currVal_4:any = this._NgControlStatusGroup_18_5.ngClassTouched;
-    if (import5.checkBinding(throwOnChange,this._expr_4,currVal_4)) {
-      this.renderer.setElementClass(this._el_18,'ng-touched',currVal_4);
-      this._expr_4 = currVal_4;
-    }
-    this.debug(18,29,12);
-    const currVal_5:any = this._NgControlStatusGroup_18_5.ngClassPristine;
-    if (import5.checkBinding(throwOnChange,this._expr_5,currVal_5)) {
-      this.renderer.setElementClass(this._el_18,'ng-pristine',currVal_5);
-      this._expr_5 = currVal_5;
-    }
-    this.debug(18,29,12);
-    const currVal_6:any = this._NgControlStatusGroup_18_5.ngClassDirty;
-    if (import5.checkBinding(throwOnChange,this._expr_6,currVal_6)) {
-      this.renderer.setElementClass(this._el_18,'ng-dirty',currVal_6);
-      this._expr_6 = currVal_6;
-    }
-    this.debug(18,29,12);
-    const currVal_7:any = this._NgControlStatusGroup_18_5.ngClassValid;
-    if (import5.checkBinding(throwOnChange,this._expr_7,currVal_7)) {
-      this.renderer.setElementClass(this._el_18,'ng-valid',currVal_7);
-      this._expr_7 = currVal_7;
-    }
-    this.debug(18,29,12);
-    const currVal_8:any = this._NgControlStatusGroup_18_5.ngClassInvalid;
-    if (import5.checkBinding(throwOnChange,this._expr_8,currVal_8)) {
-      this.renderer.setElementClass(this._el_18,'ng-invalid',currVal_8);
-      this._expr_8 = currVal_8;
-    }
+    this._NgForm_18_3.detectChangesInHostProps(this,this._el_18,throwOnChange);
+    this._NgControlStatusGroup_18_5.detectChangesInHostProps(this,this._el_18,throwOnChange);
     this.detectViewChildrenChanges(throwOnChange);
   }
   private _handle_submit_18_0($event:any):boolean {
     this.markPathToRootAsCheckOnce();
     this.debug(18,29,30);
-    const pd_0:any = ((<any>this.context.login($event,this._el_27.value,this._el_41.value)) !== false);
+    const pd_18_0:any = ((<any>this.context.login($event,this._el_27.value,this._el_41.value)) !== false);
     this.debug(18,29,12);
-    const pd_1:any = ((<any>this._NgForm_18_3.onSubmit($event)) !== false);
-    return ((true && pd_0) && pd_1);
+    const pd_18_1:any = ((<any>this._NgForm_18_3.context.onSubmit($event)) !== false);
+    return ((true && pd_18_0) && pd_18_1);
   }
   private _handle_reset_18_1($event:any):boolean {
     this.markPathToRootAsCheckOnce();
     this.debug(18,29,12);
-    const pd_0:any = ((<any>this._NgForm_18_3.onReset()) !== false);
-    return (true && pd_0);
+    const pd_18_0:any = ((<any>this._NgForm_18_3.context.onReset()) !== false);
+    return (true && pd_18_0);
   }
 }
-export function viewFactory_LoginComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<import1.LoginComponent> {
+export function viewFactory_LoginComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import1.AppView<import0.LoginComponent> {
   if ((renderType_LoginComponent === (null as any))) { (renderType_LoginComponent = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-aot-webpack2-typescript-dotnet/master/src/app-components/login/login.template.html',0,import13.ViewEncapsulation.None,styles_LoginComponent,{})); }
   return new _View_LoginComponent0(viewUtils,parentInjector,declarationEl);
 }
