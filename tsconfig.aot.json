@@ -37,8 +37,7 @@
    "exclude": [
       "./node_modules",
       "./**/*.e2e.ts",
-      "./**/*.spec.ts",
-      "./src/main.browser.aot.ts"
+      "./**/*.spec.ts"
    ],
    "awesomeTypescriptLoaderOptions": {
       "useWebpackText": true,
