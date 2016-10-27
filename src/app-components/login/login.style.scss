@@ -13,42 +13,40 @@
 // @include span( <$span> of [<$context>] [<$last>] );
 // Note: Arguments within square brackets are optional arguments
 
-
 @include nested(24) {
-  login {
-    align-self: center;
-    //height: 100vh; // This forces .app-container to 100% of your viewport
+   login {
+      @include clearfix;
+      align-items: center;
+      height: 80vh; // This forces <login> to 80% of your viewport
+      display: flex;
+      justify-content: center; 
 
-    @include clearfix;
-    display: flex;
-    justify-content: center;
-
-    .welcome-message {
-        color: #fff;
-        font-weight: bold;
-    }
-
-    .login-form {
-      width: span(6);
-      margin: 20px;
-      position: relative;
-      //top: 200px;
-      @include border-radius(10px);
-
-      md-card {
-        background-color: #f9f9f9;
-        margin: 20px 0;
-        padding: 34px;
-        @include border-radius(10px);
+      .welcome-message {
+         color: #fff;
+         font-weight: bold;
       }
 
-      button.login-submit {
-        margin: 15px 0 10px;
-        font-size: 1.5em;
+      .login-form {
+         width: span(6);
+         margin: 20px;
+         position: relative;
+         //top: 200px;
+         @include border-radius(10px);
+
+         md-card {
+            background-color: #f9f9f9;
+            margin: 20px 0;
+            padding: 34px;
+            @include border-radius(10px);
+         }
+
+         button.login-submit {
+            margin: 15px 0 10px;
+            font-size: 1.5em;
+         }
       }
-    }
+   }
+   // end login {}
+}
 
-
-
-  } // end login {}
-} // end susy nested {} context
+// end susy nested {} context
