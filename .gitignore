@@ -1,16 +1,13 @@
 # Created by .ignore support plugin (hsz.mobi)
-.idea/workspace.xml
-Armls.Helios.Web.xproj.user
-Armls.Helios.Web.xproj.vspscc
 bin/
 cache/
 node_modules/
-npm-debug.log
 obj/
+.vs
+.idea/shelf
+wwwroot/compiled-src
 project.lock.json
 stats.json
-aot-compiled/
-Atlas-UI.sln
-Atlas-UI.xproj
-Atlas-UI.xproj.user
-.idea/shelf/
+npm-debug.log
+Angular2-Webpack2-DotNet-Starter.xproj.user
+.idea/workspace.xml
