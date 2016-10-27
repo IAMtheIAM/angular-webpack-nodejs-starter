@@ -1,5 +1,8 @@
 ﻿namespace Dotnet.Starter
 {
+    using Dotnet.Starter.Data;
+    using Dotnet.Starter.Models;
+
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -7,9 +10,6 @@
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
-
-    using Starter.Data;
-    using Starter.Models;
 
     public class Startup
     {

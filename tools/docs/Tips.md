@@ -1,5 +1,14 @@
 ﻿# Tips on using this starter project
 
+### Using Visual Studio
+
+This project is configured to integrate with the Visual Studio build process.
+You can simply run as "dev" and "production". Production uses AOT compilation. 
+
+Development uses JIT compilation with Hot Module Replacement to make your development process a bit more enjoyable.
+To use the development mode, **before starting**, run `npm run devserver:jit` to host the development server.
+Now, start IIS Express (Dev) in Visual Studio and enjoy the magic!
+
 ### Changing the default namespace
 
 If you want to change the default `Dotnet.Starter` namespace to your own, simply go to any file such as `Program.cs` and highlight the `Dotnet.Starter` text.

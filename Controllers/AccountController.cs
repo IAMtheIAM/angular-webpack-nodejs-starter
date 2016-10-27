@@ -7,8 +7,8 @@
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Logging;
 
-    using Starter.Models;
-    using Starter.Models.AccountViewModels;
+    using Dotnet.Starter.Models;
+    using Dotnet.Starter.Models.AccountViewModels;
 
     // [Authorize]
     public class AccountController : Controller

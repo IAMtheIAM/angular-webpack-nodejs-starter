@@ -54,7 +54,7 @@ Viewing The App
 
 * For IntelliJ IDEA 2016 users, there are many useful run configurations, including debugging the Webpack build, debugging the Angular 2 application, and compound run configurations which upon executing, will execute the above scripts in order for you, so you don't have to remember the order and run multiple commands each time.
 
-* Of course, the app also works fine in Visual Studio 2015. However, the run configurations are not up to date, since I use IntelliJ for my main IDE. I will update them soon. You'll need to install `Task Runner Explorer` to execute the commands from within VS2015, otherwise you'll have to use a Terminal / Command Prompt.
+* Of course, the app also works fine in Visual Studio 2015. However, the run configurations are not up to date, since I use IntelliJ for my main IDE. I will update them soon. You'll need to install `Task Runner Explorer` to execute the commands from within VS2015, otherwise you'll have to use a Terminal / Command Prompt. There is more information on how to use this starter with Visual Studio in [the getting started tips document.](./tools/docs/Tips.md)
 
 * If you ever need to clean your project folder of any generated files, execute the "clean" task. This will remove everything within *"node_modules", "bower_components", "cache", "wwwroot" and "coverage"*.
 

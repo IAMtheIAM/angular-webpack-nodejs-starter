@@ -11,7 +11,7 @@ namespace Dotnet.Starter.Controllers
 
     using Newtonsoft.Json;
 
-    using Starter.Models;
+    using Dotnet.Starter.Models;
 
     public class Violation
     {
