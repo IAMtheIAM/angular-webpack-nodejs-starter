@@ -1,4 +1,4 @@
-﻿namespace Starter.Data
+﻿namespace Dotnet.Starter.Data
 {
     using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore;

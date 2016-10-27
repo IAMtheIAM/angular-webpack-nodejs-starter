@@ -1,4 +1,4 @@
-﻿namespace Starter.Data.Migrations
+﻿namespace Dotnet.Starter.Data.Migrations
 {
     using System;
 

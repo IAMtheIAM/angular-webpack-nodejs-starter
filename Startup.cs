@@ -1,4 +1,4 @@
-﻿namespace Starter
+﻿namespace Dotnet.Starter
 {
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;

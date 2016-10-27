@@ -1,4 +1,4 @@
-﻿namespace Starter.Controllers
+﻿namespace Dotnet.Starter.Controllers
 {
     using System.Threading.Tasks;
 

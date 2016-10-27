@@ -60,6 +60,10 @@ Viewing The App
 
 * Alternatively you can execute "clean:install" which will perform the task `clean` followed by the task `install:all` which will redownload and reinstall all dependencies for you.
 
+## Tips on getting started
+
+Please view the [tips on getting started document](./tools/docs/Tips.md) to read some more information on getting started with this starterkit.
+
 # Features of this Project
 
 ## Webpack

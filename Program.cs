@@ -1,4 +1,4 @@
-﻿namespace Starter
+﻿namespace Dotnet.Starter
 {
     using System.IO;
 

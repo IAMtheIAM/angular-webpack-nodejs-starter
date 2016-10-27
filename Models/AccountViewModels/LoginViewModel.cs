@@ -1,4 +1,4 @@
-﻿namespace Starter.Models.AccountViewModels
+﻿namespace Dotnet.Starter.Models.AccountViewModels
 {
     using System.ComponentModel.DataAnnotations;
 

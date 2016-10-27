@@ -1,4 +1,4 @@
-﻿namespace Starter.Models
+﻿namespace Dotnet.Starter.Models
 {
     public class ViolationMicroServiceConfiguration
     {

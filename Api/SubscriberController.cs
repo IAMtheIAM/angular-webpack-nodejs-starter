@@ -1,4 +1,4 @@
-﻿namespace Starter.Api
+﻿namespace Dotnet.Starter.Api
 {
     using System.Threading.Tasks;
 
