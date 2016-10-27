@@ -19,7 +19,7 @@
   },
   "app": {
     "js": "js/app.bundle.js",
-    "css": "/css/app.style.css?872a36bd0e321ba96180"
+    "css": "/css/app.style.css?4114fb8696c03798ed5a"
   },
   "commons": {
     "js": "js/commons.bundle.js"
