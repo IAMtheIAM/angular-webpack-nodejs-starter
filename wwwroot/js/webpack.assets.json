@@ -1,7 +1,4 @@
 {
-  "kendo.for.jquery": {
-    "js": "http://localhost:4000/js/chunks/kendo.for.jquery.chunk.js"
-  },
   "mock-data": {
     "js": "http://localhost:4000/js/chunks/mock-data.chunk.js"
   },

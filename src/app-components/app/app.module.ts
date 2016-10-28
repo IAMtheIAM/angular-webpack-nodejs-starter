@@ -45,7 +45,6 @@ import { NotFound404Component } from '../404/notfound404.component';
 import { NavHeaderComponent } from '../nav/header/nav-header.component';
 import { NavSidebarComponent } from '../nav/sidebar/nav-sidebar.component';
 import { NavFooterComponent } from '../nav/footer/nav-footer.component';
-import { CKEditor } from '../directives/ckeditor/ckeditor.component';
 /*
  * AppComponent Wide Services & Utilities
  */
@@ -81,7 +80,7 @@ const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS, AppState, Logging, Authenticat
        AppComponent, HomeComponent, AboutComponent, LoginComponent, SubscriberComponent, NotFound404Component, TicketComponent,
 
       // Directives
-      NavSidebarComponent, NavHeaderComponent, NavFooterComponent, CKEditor 
+      NavSidebarComponent, NavHeaderComponent, NavFooterComponent
 
       // Pipes
 

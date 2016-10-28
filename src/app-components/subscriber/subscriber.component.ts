@@ -60,114 +60,11 @@ export class SubscriberComponent {
    ngOnInit() {
       if (Logging.isEnabled.light) { console.log('%c Hello \"Subscriber\" component!', Logging.normal.lime); }
       if (Logging.isEnabled.verbose) { console.log('isLoggedIn(): ' + this.authService.isLoggedIn()); }
-
-      // Async load KendoUI for jQeury, with webpack require.ensure
-      require.ensure(['jquery'], function(require) {
-
-         /** These are for the jQuery version of Kendo UI */
-         // require('lib/kendoui/styles/kendo.material.min.css');
-         require('../../lib/kendoui/styles/kendo.common.min.css');
-         require('../../lib/kendoui/styles/kendo.default.min.css');
-         require('../../lib/kendoui/js/kendo.web.min.js');
-         require('../../lib/kendoui/js/kendo.core.min.js');
-         require('script!../../lib/kendoui/js/kendo.grid.min.js'); // must pass through "script-loader"
-
-         // Must call the prototype function, because 'this' is undefined inside the require.ensure during runtime
-         SubscriberComponent.prototype.loadKendoUIGrid();
-
-      }, "kendo.for.jquery") // 3rd parameter is the name of the chunk during compilation output - chunk.name.js
-
-      this.authService.redirectIfNotLoggedIn();
    }
 
    ngAfterViewInit() {
       // The ngAfterViewInit lifecycle hook makes sure the view is rendered so jQuery can do it's thing
       // This is where you put all your "$(document).ready() {}" code
       // this.loadJqxGrid();
-
-
    }
-
-   loadKendoUIGrid() {
-
-      ///
-      // Grid Detail / Nested Table
-      ///
-
-      $("#kendoUI-nested").kendoGrid({
-         dataSource: {
-            type: "odata",
-            transport: {
-               read: "//demos.telerik.com/kendo-ui/service/Northwind.svc/Employees"
-            },
-            pageSize: 6,
-            serverPaging: false,
-            serverSorting: false
-         },
-         sortable: true,
-         pageable: true,
-         detailInit: this.detailInit,
-         dataBound: function() {
-            this.expandRow(this.tbody.find("tr.k-master-row").first());
-         },
-         columns: [{
-            field: "FirstName",
-            title: "First Name",
-            width: "110px"
-         }, {
-            field: "LastName",
-            title: "Last Name",
-            width: "110px"
-         }, {
-            field: "Country",
-            width: "110px"
-         }, {
-            field: "City",
-            width: "110px"
-         }, {
-            field: "Title"
-         }]
-      });
-   }
-
-   detailInit(e) {
-      $("<div/>").appendTo(e.detailCell)
-                 // .html('hello~!');
-                 .kendoGrid({
-                    dataSource: {
-                       type: "odata",
-                       transport: {
-                          read: "//demos.telerik.com/kendo-ui/service/Northwind.svc/Orders"
-                       },
-                       serverPaging: false,
-                       serverSorting: false,
-                       serverFiltering: false,
-                       pageSize: 6,
-                       filter: {
-                          field: "EmployeeID",
-                          operator: "eq",
-                          value: e.data.EmployeeID
-                       }
-                    },
-                    scrollable: false,
-                    sortable: true,
-                    pageable: true,
-                    columns: [{
-                       field: "OrderID",
-                       width: "110px"
-                    }, {
-                       field: "ShipCountry",
-                       title: "Ship Country",
-                       width: "110px"
-                    }, {
-                       field: "ShipAddress",
-                       title: "Ship Address"
-                    }, {
-                       field: "ShipName",
-                       title: "Ship Name",
-                       width: "300px"
-                    }]
-                 });
-   }
-
 }

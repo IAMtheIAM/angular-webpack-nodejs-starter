@@ -56,23 +56,7 @@ export class HomeComponent {
    ngOnInit() {
       if (Logging.isEnabled.light) { console.log('%c Hello \"Home\" component!', Logging.normal.lime); }
       if (Logging.isEnabled.verbose) { console.log('isLoggedIn(): ' + this.authService.isLoggedIn()); }
-
-      // Async load KendoUI for jQeury, with webpack require.ensure
-      require.ensure(['jquery'], function(require) {
-
-         /** These are for the jQuery version of Kendo UI */
-         // require('lib/kendoui/styles/kendo.material.min.css');
-         require('../../lib/kendoui/styles/kendo.common.min.css');
-         require('../../lib/kendoui/styles/kendo.default.min.css');
-         require('../../lib/kendoui/js/kendo.web.min.js');
-         require('../../lib/kendoui/js/kendo.core.min.js');
-         require('script!../../lib/kendoui/js/kendo.grid.min.js'); // must pass through "script-loader"
-
-         // Must call the prototype function, because 'this' is undefined inside the require.ensure during runtime
-         HomeComponent.prototype.loadKendoUIGrid();
-
-      }, "kendo.for.jquery") // 3rd parameter is the name of the chunk during compilation output - chunk.name.js
-
+       
       this.authService.redirectIfNotLoggedIn();
    }
 
@@ -81,102 +65,5 @@ export class HomeComponent {
       // This is where you put all your "$(document).ready(function() { });" code
 
       // jQuery Kendo UI - switching to Angular 2 Kendo UI
-   }
-
-   loadKendoUIGrid() {
-
-      ///
-      // Grid Detail / Nested Table
-      ///
-
-      /////
-      // Editable Table
-      /////
-      var crudServiceBaseUrl = "//demos.telerik.com/kendo-ui/service", dataSource = new kendo.data.DataSource({
-         // serverPaging: true,
-         // serverSorting: true,
-         transport: {
-            read: {
-               url: crudServiceBaseUrl + "/Products",
-               dataType: "jsonp"
-            },
-            update: {
-               url: crudServiceBaseUrl + "/Products/Update",
-               dataType: "jsonp"
-            },
-            destroy: {
-               url: crudServiceBaseUrl + "/Products/Destroy",
-               dataType: "jsonp"
-            },
-            create: {
-               url: crudServiceBaseUrl + "/Products/Create",
-               dataType: "jsonp"
-            },
-            parameterMap: function(
-               options,
-               operation) {
-               if (operation !== "read" && options.models) {
-                  return { models: kendo.stringify(options.models) };
-               }
-            }
-         },
-         batch: true,
-         pageSize: 20,
-         schema: {
-            model: {
-               id: "ProductID",
-               fields: {
-                  ProductID: {
-                     editable: false,
-                     nullable: true
-                  },
-                  ProductName: { validation: { required: true } },
-                  UnitPrice: {
-                     type: "number",
-                     validation: {
-                        required: true,
-                        min: 1
-                     }
-                  },
-                  Discontinued: { type: "boolean" },
-                  UnitsInStock: {
-                     type: "number",
-                     validation: {
-                        min: 0,
-                        required: true
-                     }
-                  }
-               }
-            }
-         }
-      });
-
-      $("#kendoUI").kendoGrid({
-         dataSource: dataSource,
-         sortable: true,
-         groupable: true,
-         pageable: true,
-         height: 550,
-         toolbar: ["create"],
-         columns: ["ProductName", {
-            field: "UnitPrice",
-            title: "Unit Price",
-            format: "{0:c}",
-            width: "120px"
-         }, {
-            field: "UnitsInStock",
-            title: "Units In Stock",
-            width: "120px"
-         }, {
-            field: "Discontinued",
-            width: "120px"
-         }, {
-            command: ["edit", "destroy"],
-            title: "&nbsp;",
-            width: "250px"
-         }],
-         editable: "inline"
-      });
-
    }
 }
