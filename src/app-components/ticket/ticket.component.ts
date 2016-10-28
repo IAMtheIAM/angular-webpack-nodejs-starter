@@ -75,7 +75,7 @@ export class TicketComponent {
       // This is where you put all your "$(document).ready(function() { });" code
 
       // Init Material select dropdowns
-      $('select').material_select();
+      // $('select').material_select();
 
    }
 

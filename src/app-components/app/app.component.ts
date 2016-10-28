@@ -19,8 +19,8 @@ import { manualForceChangeDetection, autoForceChangeDetection } from '../common/
  **/
 /** jQuery 3.1.0 */
 window.$ = window.jQuery = require('jquery');
-require('script!materialize-css/dist/js/materialize.js'); // must pass through "script-loader"
-require('materialize-css/sass/materialize.scss');
+// require('script!materialize-css/dist/js/materialize.js'); // must pass through "script-loader"
+// require('materialize-css/sass/materialize.scss');
 
 
 /**
@@ -67,7 +67,7 @@ export class AppComponent {
          //==== AppComponent Wide Initializations ====//
 
          // Materialize Select
-         $('select').material_select();
+         // $('select').material_select();
 
          //==== End AppComponent Wide Initializations ====//
 

@@ -4,10 +4,10 @@
  */
  /* tslint:disable */
 
-import * as import0 from '@angular/core/src/linker/debug_context';
-import * as import1 from '../../../../../src/app-components/+iframe-module/webpage-1/webpage-1.component';
-import * as import2 from '@angular/core/src/render/api';
-import * as import3 from '@angular/core/src/linker/view';
+import * as import0 from '../../../../../src/app-components/+iframe-module/webpage-1/webpage-1.component';
+import * as import1 from '@angular/core/src/linker/view';
+import * as import2 from '@angular/core/src/linker/debug_context';
+import * as import3 from '@angular/core/src/render/api';
 import * as import4 from '@angular/core/src/linker/element';
 import * as import5 from '@angular/core/src/linker/view_utils';
 import * as import6 from '@angular/core/src/di/injector';
@@ -19,69 +19,88 @@ import * as import11 from '@angular/platform-browser/src/security/dom_sanitizati
 import * as import12 from '@angular/core/src/metadata/view';
 import * as import13 from '@angular/core/src/linker/component_factory';
 import * as import14 from '@angular/router/src/directives/router_outlet';
-import * as import15 from '@angular/router/src/router_outlet_map';
-import * as import16 from '@angular/core/src/linker/component_factory_resolver';
-import * as import17 from '@angular/core/src/security';
-const nodeDebugInfos_Webpage1_Host0:import0.StaticNodeDebugInfo[] = [new import0.StaticNodeDebugInfo([import1.Webpage1],import1.Webpage1,{})];
-var renderType_Webpage1_Host:import2.RenderComponentType = (null as any);
-class _View_Webpage1_Host0 extends import3.DebugAppView<any> {
+import * as import15 from '../../../../node_modules/@angular/router/src/directives/router_outlet.ngfactory';
+import * as import16 from '@angular/router/src/router_outlet_map';
+import * as import17 from '@angular/core/src/linker/component_factory_resolver';
+import * as import18 from '@angular/core/src/security';
+export class Wrapper_Webpage1 {
+  context:import0.Webpage1;
+  changed:boolean;
+  constructor(p0:any,p1:any,p2:any) {
+    this.changed = false;
+    this.context = new import0.Webpage1(p0,p1,p2);
+  }
+  detectChangesInInputProps(view:import1.AppView<any>,el:any,throwOnChange:boolean):boolean {
+    var changed:any = this.changed;
+    this.changed = false;
+    if (!throwOnChange) { if ((view.numberOfChecks === 0)) { this.context.ngOnInit(); } }
+    return changed;
+  }
+  detectChangesInHostProps(view:import1.AppView<any>,el:any,throwOnChange:boolean):void {
+  }
+}
+const nodeDebugInfos_Webpage1_Host0:import2.StaticNodeDebugInfo[] = [new import2.StaticNodeDebugInfo([import0.Webpage1],import0.Webpage1,{})];
+var renderType_Webpage1_Host:import3.RenderComponentType = (null as any);
+class _View_Webpage1_Host0 extends import1.DebugAppView<any> {
   _el_0:any;
   /*private*/ _appEl_0:import4.AppElement;
-  _Webpage1_0_4:import1.Webpage1;
+  _Webpage1_0_4:Wrapper_Webpage1;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement) {
     super(_View_Webpage1_Host0,renderType_Webpage1_Host,import7.ViewType.HOST,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_Webpage1_Host0);
   }
   createInternal(rootSelector:string):import4.AppElement {
-    this._el_0 = this.selectOrCreateHostElement('webpage1',rootSelector,this.debug(0,0,0));
+    this._el_0 = import5.selectOrCreateRenderHostElement(this.renderer,'webpage1',import5.EMPTY_INLINE_ARRAY,rootSelector,this.debug(0,0,0));
     this._appEl_0 = new import4.AppElement(0,(null as any),this,this._el_0);
     var compView_0:any = viewFactory_Webpage10(this.viewUtils,this.injector(0),this._appEl_0);
-    this._Webpage1_0_4 = new import1.Webpage1(this.parentInjector.get(import9.AppState),this.parentInjector.get(import10.Authentication),this.parentInjector.get(import11.DomSanitizer));
-    this._appEl_0.initComponent(this._Webpage1_0_4,[],compView_0);
-    compView_0.create(this._Webpage1_0_4,this.projectableNodes,(null as any));
-    this.init([].concat([this._el_0]),[this._el_0],[],[]);
+    this._Webpage1_0_4 = new Wrapper_Webpage1(this.parentInjector.get(import9.AppState),this.parentInjector.get(import10.Authentication),this.parentInjector.get(import11.DomSanitizer));
+    this._appEl_0.initComponent(this._Webpage1_0_4.context,([] as any[]),compView_0);
+    compView_0.create(this._Webpage1_0_4.context,this.projectableNodes,(null as any));
+    this.init(([] as any[]).concat([this._el_0]),[this._el_0],([] as any[]),([] as any[]));
     return this._appEl_0;
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import1.Webpage1) && (0 === requestNodeIndex))) { return this._Webpage1_0_4; }
+    if (((token === import0.Webpage1) && (0 === requestNodeIndex))) { return this._Webpage1_0_4.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    if (((this.numberOfChecks === 0) && !throwOnChange)) { this._Webpage1_0_4.ngOnInit(); }
+    this.debug(0,0,0);
+    this._Webpage1_0_4.detectChangesInInputProps(this,this._el_0,throwOnChange);
     this.detectContentChildrenChanges(throwOnChange);
+    this._Webpage1_0_4.detectChangesInHostProps(this,this._el_0,throwOnChange);
     this.detectViewChildrenChanges(throwOnChange);
     if (!throwOnChange) {
       this.debug(0,0,0);
-      if ((this.numberOfChecks === 0)) { this._Webpage1_0_4.ngAfterViewInit(); }
+      if ((this.numberOfChecks === 0)) { this._Webpage1_0_4.context.ngAfterViewInit(); }
     }
   }
 }
-function viewFactory_Webpage1_Host0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<any> {
-  if ((renderType_Webpage1_Host === (null as any))) { (renderType_Webpage1_Host = viewUtils.createRenderComponentType('',0,import12.ViewEncapsulation.None,[],{})); }
+function viewFactory_Webpage1_Host0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import1.AppView<any> {
+  if ((renderType_Webpage1_Host === (null as any))) { (renderType_Webpage1_Host = viewUtils.createRenderComponentType('',0,import12.ViewEncapsulation.None,([] as any[]),{})); }
   return new _View_Webpage1_Host0(viewUtils,parentInjector,declarationEl);
 }
-export const Webpage1NgFactory:import13.ComponentFactory<import1.Webpage1> = new import13.ComponentFactory<import1.Webpage1>('webpage1',viewFactory_Webpage1_Host0,import1.Webpage1);
-const styles_Webpage1:any[] = [];
-const nodeDebugInfos_Webpage10:import0.StaticNodeDebugInfo[] = [
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([import14.RouterOutlet],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{})
+export const Webpage1NgFactory:import13.ComponentFactory<import0.Webpage1> = new import13.ComponentFactory<import0.Webpage1>('webpage1',viewFactory_Webpage1_Host0,import0.Webpage1);
+const styles_Webpage1:any[] = ([] as any[]);
+const nodeDebugInfos_Webpage10:import2.StaticNodeDebugInfo[] = [
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([import14.RouterOutlet],(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_Webpage1:import2.RenderComponentType = (null as any);
-class _View_Webpage10 extends import3.DebugAppView<import1.Webpage1> {
+var renderType_Webpage1:import3.RenderComponentType = (null as any);
+class _View_Webpage10 extends import1.DebugAppView<import0.Webpage1> {
   _el_0:any;
   _text_1:any;
   _text_2:any;
@@ -98,15 +117,16 @@ class _View_Webpage10 extends import3.DebugAppView<import1.Webpage1> {
   _text_13:any;
   _el_14:any;
   /*private*/ _appEl_14:import4.AppElement;
-  _RouterOutlet_14_5:import14.RouterOutlet;
+  _RouterOutlet_14_5:import15.Wrapper_RouterOutlet;
   _text_15:any;
-  /*private*/ _expr_0:any;
+  /*private*/ _expr_18:any;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement) {
     super(_View_Webpage10,renderType_Webpage1,import7.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_Webpage10);
+    this._expr_18 = import8.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import4.AppElement {
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
-    this._el_0 = this.renderer.createElement(parentRenderNode,'h1',this.debug(0,0,0));
+    this._el_0 = import5.createRenderElement(this.renderer,parentRenderNode,'h1',import5.EMPTY_INLINE_ARRAY,this.debug(0,0,0));
     this._text_1 = this.renderer.createText(this._el_0,'Webpage1 (sub module)',this.debug(1,0,4));
     this._text_2 = this.renderer.createText(parentRenderNode,'\n',this.debug(2,0,30));
     this._text_3 = this.renderer.createText(parentRenderNode,'\n   ',this.debug(3,1,24));
@@ -118,16 +138,13 @@ class _View_Webpage10 extends import3.DebugAppView<import1.Webpage1> {
     this._text_9 = this.renderer.createText(parentRenderNode,'\n   ',this.debug(9,7,19));
     this._text_10 = this.renderer.createText(parentRenderNode,'\n',this.debug(10,8,16));
     this._text_11 = this.renderer.createText(parentRenderNode,'\n',this.debug(11,9,13));
-    this._el_12 = this.renderer.createElement(parentRenderNode,'iframe',this.debug(12,10,0));
-    this.renderer.setElementAttribute(this._el_12,'height','100%');
-    this.renderer.setElementAttribute(this._el_12,'width','100%');
+    this._el_12 = import5.createRenderElement(this.renderer,parentRenderNode,'iframe',new import5.InlineArray4(4,'height','100%','width','100%'),this.debug(12,10,0));
     this._text_13 = this.renderer.createText(parentRenderNode,'\n\n',this.debug(13,10,60));
-    this._el_14 = this.renderer.createElement(parentRenderNode,'router-outlet',this.debug(14,12,0));
+    this._el_14 = import5.createRenderElement(this.renderer,parentRenderNode,'router-outlet',import5.EMPTY_INLINE_ARRAY,this.debug(14,12,0));
     this._appEl_14 = new import4.AppElement(14,(null as any),this,this._el_14);
-    this._RouterOutlet_14_5 = new import14.RouterOutlet(this.parentInjector.get(import15.RouterOutletMap),this._appEl_14.vcRef,this.parentInjector.get(import16.ComponentFactoryResolver),(null as any));
+    this._RouterOutlet_14_5 = new import15.Wrapper_RouterOutlet(this.parentInjector.get(import16.RouterOutletMap),this._appEl_14.vcRef,this.parentInjector.get(import17.ComponentFactoryResolver),(null as any));
     this._text_15 = this.renderer.createText(parentRenderNode,'\n',this.debug(15,12,31));
-    this._expr_0 = import8.UNINITIALIZED;
-    this.init([],[
+    this.init(([] as any[]),[
       this._el_0,
       this._text_1,
       this._text_2,
@@ -145,29 +162,32 @@ class _View_Webpage10 extends import3.DebugAppView<import1.Webpage1> {
       this._el_14,
       this._text_15
     ]
-    ,[],[]);
+    ,([] as any[]),([] as any[]));
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import14.RouterOutlet) && (14 === requestNodeIndex))) { return this._RouterOutlet_14_5; }
+    if (((token === import14.RouterOutlet) && (14 === requestNodeIndex))) { return this._RouterOutlet_14_5.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
+    this.debug(14,12,0);
+    this._RouterOutlet_14_5.detectChangesInInputProps(this,this._el_14,throwOnChange);
     this.detectContentChildrenChanges(throwOnChange);
     this.debug(12,10,35);
-    const currVal_0:any = this.context.someUrl;
-    if (import5.checkBinding(throwOnChange,this._expr_0,currVal_0)) {
-      this.renderer.setElementProperty(this._el_12,'src',this.viewUtils.sanitizer.sanitize(import17.SecurityContext.RESOURCE_URL,currVal_0));
-      this._expr_0 = currVal_0;
+    const currVal_18:any = this.context.someUrl;
+    if (import5.checkBinding(throwOnChange,this._expr_18,currVal_18)) {
+      this.renderer.setElementProperty(this._el_12,'src',this.viewUtils.sanitizer.sanitize(import18.SecurityContext.RESOURCE_URL,currVal_18));
+      this._expr_18 = currVal_18;
     }
+    this._RouterOutlet_14_5.detectChangesInHostProps(this,this._el_14,throwOnChange);
     this.detectViewChildrenChanges(throwOnChange);
   }
   destroyInternal():void {
     this.debug(14,12,0);
-    this._RouterOutlet_14_5.ngOnDestroy();
+    this._RouterOutlet_14_5.context.ngOnDestroy();
   }
 }
-export function viewFactory_Webpage10(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<import1.Webpage1> {
+export function viewFactory_Webpage10(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import1.AppView<import0.Webpage1> {
   if ((renderType_Webpage1 === (null as any))) { (renderType_Webpage1 = viewUtils.createRenderComponentType('C:/Development/angular2-webpack2-dotnet-starter/src/app-components/+iframe-module/webpage-1/webpage-1.template.html',0,import12.ViewEncapsulation.None,styles_Webpage1,{})); }
   return new _View_Webpage10(viewUtils,parentInjector,declarationEl);
 }

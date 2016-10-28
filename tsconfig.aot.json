@@ -25,9 +25,7 @@
          "source-map",
          "uglify-js",
          "webpack",
-         "materialize-css",
-         "jquery",
-         "kendo-ui"
+         "jquery"
       ],
       "typeRoots": [
          "./node_modules/@types"
