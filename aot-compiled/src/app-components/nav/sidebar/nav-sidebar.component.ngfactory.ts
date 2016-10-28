@@ -287,18 +287,18 @@ class _View_NavSidebarComponent0 extends import1.DebugAppView<import0.NavSidebar
     this._el_6 = import5.createRenderElement(this.renderer,this._el_0,'li',import5.EMPTY_INLINE_ARRAY,this.debug(6,2,3));
     this._el_7 = import5.createRenderElement(this.renderer,this._el_6,'a',new import5.InlineArray4(4,'class','waves-effect waves-darkblue','router-active',''),this.debug(7,2,7));
     this._RouterLinkWithHref_7_3 = new import13.Wrapper_RouterLinkWithHref(this.parentInjector.get(import14.Router),this.parentInjector.get(import15.ActivatedRoute),this.parentInjector.get(import16.LocationStrategy));
-    this._text_8 = this.renderer.createText(this._el_7,'Ticket',this.debug(8,2,87));
-    this._text_9 = this.renderer.createText(this._el_0,'\n   ',this.debug(9,2,102));
+    this._text_8 = this.renderer.createText(this._el_7,'Home',this.debug(8,2,85));
+    this._text_9 = this.renderer.createText(this._el_0,'\n   ',this.debug(9,2,98));
     this._el_10 = import5.createRenderElement(this.renderer,this._el_0,'li',import5.EMPTY_INLINE_ARRAY,this.debug(10,3,3));
     this._el_11 = import5.createRenderElement(this.renderer,this._el_10,'a',new import5.InlineArray4(4,'class','waves-effect waves-darkblue','router-active',''),this.debug(11,3,7));
     this._RouterLinkWithHref_11_3 = new import13.Wrapper_RouterLinkWithHref(this.parentInjector.get(import14.Router),this.parentInjector.get(import15.ActivatedRoute),this.parentInjector.get(import16.LocationStrategy));
-    this._text_12 = this.renderer.createText(this._el_11,'Grid (Editing)',this.debug(12,3,86));
-    this._text_13 = this.renderer.createText(this._el_0,'\n   ',this.debug(13,3,109));
+    this._text_12 = this.renderer.createText(this._el_11,'Ticket',this.debug(12,3,87));
+    this._text_13 = this.renderer.createText(this._el_0,'\n   ',this.debug(13,3,102));
     this._el_14 = import5.createRenderElement(this.renderer,this._el_0,'li',import5.EMPTY_INLINE_ARRAY,this.debug(14,4,3));
     this._el_15 = import5.createRenderElement(this.renderer,this._el_14,'a',new import5.InlineArray4(4,'class','waves-effect waves-darkblue','router-active',''),this.debug(15,4,7));
     this._RouterLinkWithHref_15_3 = new import13.Wrapper_RouterLinkWithHref(this.parentInjector.get(import14.Router),this.parentInjector.get(import15.ActivatedRoute),this.parentInjector.get(import16.LocationStrategy));
-    this._text_16 = this.renderer.createText(this._el_15,'Grid (Nested)',this.debug(16,4,86));
-    this._text_17 = this.renderer.createText(this._el_0,'\n   ',this.debug(17,4,108));
+    this._text_16 = this.renderer.createText(this._el_15,'Subscriber',this.debug(16,4,91));
+    this._text_17 = this.renderer.createText(this._el_0,'\n   ',this.debug(17,4,110));
     this._el_18 = import5.createRenderElement(this.renderer,this._el_0,'li',import5.EMPTY_INLINE_ARRAY,this.debug(18,5,3));
     this._el_19 = import5.createRenderElement(this.renderer,this._el_18,'a',new import5.InlineArray4(4,'class','waves-effect waves-darkblue','router-active',''),this.debug(19,5,7));
     this._RouterLinkWithHref_19_3 = new import13.Wrapper_RouterLinkWithHref(this.parentInjector.get(import14.Router),this.parentInjector.get(import15.ActivatedRoute),this.parentInjector.get(import16.LocationStrategy));
@@ -477,15 +477,15 @@ class _View_NavSidebarComponent0 extends import1.DebugAppView<import0.NavSidebar
     this._RouterLinkWithHref_3_3.check_routerLink(currVal_3_0_0,throwOnChange,false);
     this._RouterLinkWithHref_3_3.detectChangesInInputProps(this,this._el_3,throwOnChange);
     this.debug(7,2,60);
-    const currVal_7_0_0:any = this._arr_84('/ticket');
+    const currVal_7_0_0:any = this._arr_84('/home');
     this._RouterLinkWithHref_7_3.check_routerLink(currVal_7_0_0,throwOnChange,false);
     this._RouterLinkWithHref_7_3.detectChangesInInputProps(this,this._el_7,throwOnChange);
     this.debug(11,3,60);
-    const currVal_11_0_0:any = this._arr_85('/grid1');
+    const currVal_11_0_0:any = this._arr_85('/ticket');
     this._RouterLinkWithHref_11_3.check_routerLink(currVal_11_0_0,throwOnChange,false);
     this._RouterLinkWithHref_11_3.detectChangesInInputProps(this,this._el_11,throwOnChange);
     this.debug(15,4,60);
-    const currVal_15_0_0:any = this._arr_86('/grid2');
+    const currVal_15_0_0:any = this._arr_86('/subscriber');
     this._RouterLinkWithHref_15_3.check_routerLink(currVal_15_0_0,throwOnChange,false);
     this._RouterLinkWithHref_15_3.detectChangesInInputProps(this,this._el_15,throwOnChange);
     this.debug(19,5,60);
@@ -596,6 +596,6 @@ class _View_NavSidebarComponent0 extends import1.DebugAppView<import0.NavSidebar
   }
 }
 export function viewFactory_NavSidebarComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import1.AppView<import0.NavSidebarComponent> {
-  if ((renderType_NavSidebarComponent === (null as any))) { (renderType_NavSidebarComponent = viewUtils.createRenderComponentType('C:/Development/angular2-webpack2-dotnet-starter/src/app-components/nav/sidebar/nav-sidebar.template.html',0,import10.ViewEncapsulation.None,styles_NavSidebarComponent,{})); }
+  if ((renderType_NavSidebarComponent === (null as any))) { (renderType_NavSidebarComponent = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-aot-webpack2-typescript-dotnet/master/src/app-components/nav/sidebar/nav-sidebar.template.html',0,import10.ViewEncapsulation.None,styles_NavSidebarComponent,{})); }
   return new _View_NavSidebarComponent0(viewUtils,parentInjector,declarationEl);
 }

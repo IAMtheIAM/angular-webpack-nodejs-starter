@@ -1,27 +1,16 @@
 import { NgModule, ApplicationRef } from '@angular/core';
+import { Http, RequestOptions } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
 
-
 /*
  * Angular2 Material Components
  */
-//import { MaterialModule } from '@angular/material';
-//import '@angular/material/core/theming/prebuilt/deeppurple-amber.css';
-import { MdModule } from './md.module';
 
-//import { MdCard } from '@angular2-material/card';
-//import { MdButton } from '@angular2-material/button';
-
-
-/*
- * Kendo UI For Angular 2 Components
- */
-// import { ButtonsModule } from '@progress/kendo-angular-buttons';
-// import { GridModule } from '@progress/kendo-angular-grid';
+// import { MdModule } from './md.module';
 
 /*
  * Platform and Environment providers/directives/pipes
@@ -62,12 +51,33 @@ import { Authentication } from '../services/authentication.service';
 import { DataService } from '../services/data.service';
 import { UtilityService } from '../services/utility.service';
 import { RouteProtection } from '../services/route-protection.service';
-// import { AuthHttp } from "angular2-jwt";
+
+/**
+ * Angular2-JWT workaround, until AUTH_PROVIDERS definition works in NPM package.
+ * See issue: https://github.com/auth0/angular2-jwt/issues/158
+ */
+
+// import { AUTH_PROVIDERS  } from "angular2-jwt";
+import { AuthHttp, AuthConfig } from "angular2-jwt";
+
+export function authFactory(
+   http: Http,
+   options: RequestOptions) {
+   return new AuthHttp(new AuthConfig({
+      // Config options if you want
+   }), http, options);
+};
+
+// Include this in your ngModule providers
+export const AUTH_PROVIDERS = {
+   provide: AuthHttp,
+   deps: [Http, RequestOptions],
+   useFactory: authFactory
+};
 
 // Declare Services & Utilities as AppComponent Providers
 // Application wide providers
-const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS, AppState, Logging, Authentication, DataService, UtilityService, RouteProtection//, AuthHttp
-];
+const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS, AppState, Logging, Authentication, DataService, UtilityService, RouteProtection,];
 
 /**
  * `AppModule` is the main entry point into Angular2's bootstraping process
@@ -77,7 +87,7 @@ const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS, AppState, Logging, Authenticat
    declarations: [ // declarations contains: components, directives and pipes
 
       // Components
-       AppComponent, HomeComponent, AboutComponent, LoginComponent, SubscriberComponent, NotFound404Component, TicketComponent,
+      AppComponent, HomeComponent, AboutComponent, LoginComponent, SubscriberComponent, NotFound404Component, TicketComponent,
 
       // Directives
       NavSidebarComponent, NavHeaderComponent, NavFooterComponent
@@ -86,11 +96,11 @@ const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS, AppState, Logging, Authenticat
 
    ],
    imports: [ // import other modules
-      /** ButtonsModule, GridModule,*/ BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(ROUTES, { useHash: true }), MdModule.forRoot()
+      BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(ROUTES, { useHash: true })
 
    ],
    providers: [ // expose our Services and Providers into Angular's dependency injection
-      ENV_PROVIDERS, APP_PROVIDERS]
+      ENV_PROVIDERS, APP_PROVIDERS, AUTH_PROVIDERS]
 })
 
 export class AppModule {

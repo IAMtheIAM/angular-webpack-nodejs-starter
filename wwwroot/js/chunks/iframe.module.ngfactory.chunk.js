@@ -1,6 +1,6 @@
 webpackJsonp([1,2,6],{
 
-/***/ 128:
+/***/ 115:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18,20 +18,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var common_1 = __webpack_require__(72);
+var common_1 = __webpack_require__(112);
 var router_1 = __webpack_require__(22);
-var core_1 = __webpack_require__(3);
+var core_1 = __webpack_require__(7);
 //
-var iframe_routes_1 = __webpack_require__(509);
+var iframe_routes_1 = __webpack_require__(482);
 /*
  * Shared Utilities & Other Services
  */
-var utility_service_1 = __webpack_require__(7);
+var utility_service_1 = __webpack_require__(6);
 /**
  * Imported Components
  */
-var webpage_1_component_1 = __webpack_require__(506);
-var webpage_2_component_1 = __webpack_require__(507);
+var webpage_1_component_1 = __webpack_require__(479);
+var webpage_2_component_1 = __webpack_require__(480);
 var IframeModule = (function () {
     function IframeModule() {
         if (utility_service_1.Logging.isEnabled.light) {
@@ -58,7 +58,7 @@ exports.IframeModule = IframeModule;
 
 /***/ },
 
-/***/ 138:
+/***/ 125:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73,18 +73,18 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var import0 = __webpack_require__(133);
-var import1 = __webpack_require__(128);
-var import2 = __webpack_require__(136);
-var import3 = __webpack_require__(135);
-var import4 = __webpack_require__(131);
-var import6 = __webpack_require__(517);
-var import7 = __webpack_require__(518);
-var import8 = __webpack_require__(132);
-var import9 = __webpack_require__(506);
+var import0 = __webpack_require__(120);
+var import1 = __webpack_require__(115);
+var import2 = __webpack_require__(123);
+var import3 = __webpack_require__(122);
+var import4 = __webpack_require__(118);
+var import6 = __webpack_require__(490);
+var import7 = __webpack_require__(491);
+var import8 = __webpack_require__(119);
+var import9 = __webpack_require__(479);
 var import10 = __webpack_require__(33);
-var import11 = __webpack_require__(507);
-var import12 = __webpack_require__(130);
+var import11 = __webpack_require__(480);
+var import12 = __webpack_require__(117);
 var IframeModuleInjector = (function (_super) {
     __extends(IframeModuleInjector, _super);
     function IframeModuleInjector(parent) {
@@ -163,7 +163,7 @@ exports.IframeModuleNgFactory = new import0.NgModuleFactory(IframeModuleInjector
 
 /***/ },
 
-/***/ 506:
+/***/ 479:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -181,14 +181,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 /*
  * Angular 2 decorators and services
  */
-var core_1 = __webpack_require__(3);
-var platform_browser_1 = __webpack_require__(32);
+var core_1 = __webpack_require__(7);
+var platform_browser_1 = __webpack_require__(52);
 /*
  * Shared Utilities
  */
-var utility_service_1 = __webpack_require__(7);
+var utility_service_1 = __webpack_require__(6);
 var authentication_service_1 = __webpack_require__(8);
-var appstate_service_1 = __webpack_require__(6);
+var appstate_service_1 = __webpack_require__(5);
 /**
  * This is where CSS/SCSS files that the component depends on are required.
  *
@@ -196,7 +196,7 @@ var appstate_service_1 = __webpack_require__(6);
  * during development. During productions, all styles will be extracted into
  *  external stylesheets. Do NOT add styles the "Angular2 Way" in
  */
-__webpack_require__(511);
+__webpack_require__(484);
 var Webpage1 = (function () {
     function Webpage1(appState, Authentication, sanitizer) {
         this.appState = appState;
@@ -218,7 +218,7 @@ var Webpage1 = (function () {
     Webpage1 = __decorate([
         core_1.Component({
             selector: 'webpage1',
-            template: __webpack_require__(514)
+            template: __webpack_require__(487)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof appstate_service_1.AppState !== 'undefined' && appstate_service_1.AppState) === 'function' && _a) || Object, (typeof (_b = typeof authentication_service_1.Authentication !== 'undefined' && authentication_service_1.Authentication) === 'function' && _b) || Object, (typeof (_c = typeof platform_browser_1.DomSanitizer !== 'undefined' && platform_browser_1.DomSanitizer) === 'function' && _c) || Object])
     ], Webpage1);
@@ -230,7 +230,7 @@ exports.Webpage1 = Webpage1;
 
 /***/ },
 
-/***/ 507:
+/***/ 480:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -248,14 +248,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 /*
  * Angular 2 decorators and services
  */
-var core_1 = __webpack_require__(3);
-var platform_browser_1 = __webpack_require__(32);
+var core_1 = __webpack_require__(7);
+var platform_browser_1 = __webpack_require__(52);
 /*
  * Shared Utilities
  */
-var utility_service_1 = __webpack_require__(7);
+var utility_service_1 = __webpack_require__(6);
 var authentication_service_1 = __webpack_require__(8);
-var appstate_service_1 = __webpack_require__(6);
+var appstate_service_1 = __webpack_require__(5);
 /**
  * This is where CSS/SCSS files that the component depends on are required.
  *
@@ -263,7 +263,7 @@ var appstate_service_1 = __webpack_require__(6);
  * during development. During productions, all styles will be extracted into
  *  external stylesheets. Do NOT add styles the "Angular2 Way" in
  */
-__webpack_require__(512);
+__webpack_require__(485);
 var Webpage2 = (function () {
     function Webpage2(appState, Authentication, sanitizer) {
         this.appState = appState;
@@ -285,7 +285,7 @@ var Webpage2 = (function () {
     Webpage2 = __decorate([
         core_1.Component({
             selector: 'webpage2',
-            template: __webpack_require__(515)
+            template: __webpack_require__(488)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof appstate_service_1.AppState !== 'undefined' && appstate_service_1.AppState) === 'function' && _a) || Object, (typeof (_b = typeof authentication_service_1.Authentication !== 'undefined' && authentication_service_1.Authentication) === 'function' && _b) || Object, (typeof (_c = typeof platform_browser_1.DomSanitizer !== 'undefined' && platform_browser_1.DomSanitizer) === 'function' && _c) || Object])
     ], Webpage2);
@@ -297,7 +297,7 @@ exports.Webpage2 = Webpage2;
 
 /***/ },
 
-/***/ 509:
+/***/ 482:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -305,8 +305,8 @@ exports.Webpage2 = Webpage2;
 /**
  * Imported Components
  */
-var webpage_1_component_1 = __webpack_require__(506);
-var webpage_2_component_1 = __webpack_require__(507);
+var webpage_1_component_1 = __webpack_require__(479);
+var webpage_2_component_1 = __webpack_require__(480);
 /*
  * Shared Utilities & Other Services
  */
@@ -328,35 +328,35 @@ exports.iframeRoutes = [{
 
 /***/ },
 
-/***/ 511:
+/***/ 484:
 /***/ function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ },
 
-/***/ 512:
+/***/ 485:
 /***/ function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ },
 
-/***/ 514:
+/***/ 487:
 /***/ function(module, exports) {
 
-module.exports = "<h1>Webpage1 (sub module)</h1>\r\n<!--<div class=\"row\">-->\r\n   <!--<div class=\"col s3\">-->\r\n      <!--<div class=\"card-panel\">-->\r\n         <!--<span>I am a very simple card. I am good at containing small bits of information.-->\r\n          <!--I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.-->\r\n          <!--</span>-->\r\n      <!--</div>-->\r\n   <!--</div>-->\r\n<!--</div>-->\r\n<iframe width=\"100%\" height=\"100%\" [src]=\"someUrl\"></iframe>\r\n\r\n<router-outlet></router-outlet>\r\n"
+module.exports = "<h1>Webpage1 (sub module)</h1>\n<!--<div class=\"row\">-->\n   <!--<div class=\"col s3\">-->\n      <!--<div class=\"card-panel\">-->\n         <!--<span>I am a very simple card. I am good at containing small bits of information.-->\n          <!--I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.-->\n          <!--</span>-->\n      <!--</div>-->\n   <!--</div>-->\n<!--</div>-->\n<iframe width=\"100%\" height=\"100%\" [src]=\"someUrl\"></iframe>\n\n<router-outlet></router-outlet>\n"
 
 /***/ },
 
-/***/ 515:
+/***/ 488:
 /***/ function(module, exports) {
 
-module.exports = "<h1>Webpage2 (sub module)</h1>\r\n<!--<div class=\"row\">-->\r\n   <!--<div class=\"col s3\">-->\r\n      <!--<div class=\"card-panel\">-->\r\n         <!--<span>I am a very simple card. I am good at containing small bits of information.-->\r\n          <!--I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.-->\r\n          <!--</span>-->\r\n      <!--</div>-->\r\n   <!--</div>-->\r\n<!--</div>-->\r\n<iframe width=\"100%\" height=\"100%\" [src]=\"someUrl\"></iframe>\r\n\r\n<router-outlet></router-outlet>\r\n"
+module.exports = "<h1>Webpage2 (sub module)</h1>\n<!--<div class=\"row\">-->\n   <!--<div class=\"col s3\">-->\n      <!--<div class=\"card-panel\">-->\n         <!--<span>I am a very simple card. I am good at containing small bits of information.-->\n          <!--I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.-->\n          <!--</span>-->\n      <!--</div>-->\n   <!--</div>-->\n<!--</div>-->\n<iframe width=\"100%\" height=\"100%\" [src]=\"someUrl\"></iframe>\n\n<router-outlet></router-outlet>\n"
 
 /***/ },
 
-/***/ 517:
+/***/ 490:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -371,23 +371,23 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var import0 = __webpack_require__(506);
+var import0 = __webpack_require__(479);
 var import1 = __webpack_require__(21);
 var import2 = __webpack_require__(19);
 var import4 = __webpack_require__(17);
 var import5 = __webpack_require__(9);
 var import7 = __webpack_require__(16);
 var import8 = __webpack_require__(10);
-var import9 = __webpack_require__(6);
+var import9 = __webpack_require__(5);
 var import10 = __webpack_require__(8);
-var import11 = __webpack_require__(134);
+var import11 = __webpack_require__(121);
 var import12 = __webpack_require__(20);
 var import13 = __webpack_require__(18);
-var import14 = __webpack_require__(74);
-var import15 = __webpack_require__(126);
-var import16 = __webpack_require__(73);
-var import17 = __webpack_require__(129);
-var import18 = __webpack_require__(50);
+var import14 = __webpack_require__(72);
+var import15 = __webpack_require__(113);
+var import16 = __webpack_require__(71);
+var import17 = __webpack_require__(116);
+var import18 = __webpack_require__(53);
 var Wrapper_Webpage1 = (function () {
     function Wrapper_Webpage1(p0, p1, p2) {
         this.changed = false;
@@ -546,7 +546,7 @@ var _View_Webpage10 = (function (_super) {
 }(import1.DebugAppView));
 function viewFactory_Webpage10(viewUtils, parentInjector, declarationEl) {
     if ((renderType_Webpage1 === null)) {
-        (renderType_Webpage1 = viewUtils.createRenderComponentType('C:/Development/angular2-webpack2-dotnet-starter/src/app-components/+iframe-module/webpage-1/webpage-1.template.html', 0, import12.ViewEncapsulation.None, styles_Webpage1, {}));
+        (renderType_Webpage1 = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-aot-webpack2-typescript-dotnet/master/src/app-components/+iframe-module/webpage-1/webpage-1.template.html', 0, import12.ViewEncapsulation.None, styles_Webpage1, {}));
     }
     return new _View_Webpage10(viewUtils, parentInjector, declarationEl);
 }
@@ -555,7 +555,7 @@ exports.viewFactory_Webpage10 = viewFactory_Webpage10;
 
 /***/ },
 
-/***/ 518:
+/***/ 491:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -570,23 +570,23 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var import0 = __webpack_require__(507);
+var import0 = __webpack_require__(480);
 var import1 = __webpack_require__(21);
 var import2 = __webpack_require__(19);
 var import4 = __webpack_require__(17);
 var import5 = __webpack_require__(9);
 var import7 = __webpack_require__(16);
 var import8 = __webpack_require__(10);
-var import9 = __webpack_require__(6);
+var import9 = __webpack_require__(5);
 var import10 = __webpack_require__(8);
-var import11 = __webpack_require__(134);
+var import11 = __webpack_require__(121);
 var import12 = __webpack_require__(20);
 var import13 = __webpack_require__(18);
-var import14 = __webpack_require__(74);
-var import15 = __webpack_require__(126);
-var import16 = __webpack_require__(73);
-var import17 = __webpack_require__(129);
-var import18 = __webpack_require__(50);
+var import14 = __webpack_require__(72);
+var import15 = __webpack_require__(113);
+var import16 = __webpack_require__(71);
+var import17 = __webpack_require__(116);
+var import18 = __webpack_require__(53);
 var Wrapper_Webpage2 = (function () {
     function Wrapper_Webpage2(p0, p1, p2) {
         this.changed = false;
@@ -745,7 +745,7 @@ var _View_Webpage20 = (function (_super) {
 }(import1.DebugAppView));
 function viewFactory_Webpage20(viewUtils, parentInjector, declarationEl) {
     if ((renderType_Webpage2 === null)) {
-        (renderType_Webpage2 = viewUtils.createRenderComponentType('C:/Development/angular2-webpack2-dotnet-starter/src/app-components/+iframe-module/webpage-2/webpage-2.template.html', 0, import12.ViewEncapsulation.None, styles_Webpage2, {}));
+        (renderType_Webpage2 = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-aot-webpack2-typescript-dotnet/master/src/app-components/+iframe-module/webpage-2/webpage-2.template.html', 0, import12.ViewEncapsulation.None, styles_Webpage2, {}));
     }
     return new _View_Webpage20(viewUtils, parentInjector, declarationEl);
 }

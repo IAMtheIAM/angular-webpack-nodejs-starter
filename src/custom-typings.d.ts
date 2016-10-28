@@ -46,7 +46,8 @@
 
 
 // support NodeJS modules without type definitions
-declare module '*';
+declare module '*'
+;
 
 // Extra variables that live on Global that will be replaced by webpack DefinePlugin
 declare var ENV: string;
@@ -81,7 +82,6 @@ type AsyncRoutes = {
       FactoryPromise
 };
 
-
 type IdleCallbacks = Es6PromiseLoader |
    Function |
    FactoryEs6PromiseLoader |
@@ -91,24 +91,41 @@ interface WebpackModule {
    hot: {
       data?: any,
       idle: any,
-      accept(dependencies?: string | string[], callback?: (updatedDependencies?: any) => void): void;
+      accept(
+         dependencies?: string | string[],
+         callback?: (updatedDependencies?: any) => void): void;
       decline(deps?: any | string | string[]): void;
       dispose(callback?: (data?: any) => void): void;
       addDisposeHandler(callback?: (data?: any) => void): void;
       removeDisposeHandler(callback?: (data?: any) => void): void;
-      check(autoApply?: any, callback?: (err?: Error, outdatedModules?: any[]) => void): void;
-      apply(options?: any, callback?: (err?: Error, outdatedModules?: any[]) => void): void;
+      check(
+         autoApply?: any,
+         callback?: (
+            err?: Error,
+            outdatedModules?: any[]) => void): void;
+      apply(
+         options?: any,
+         callback?: (
+            err?: Error,
+            outdatedModules?: any[]) => void): void;
       status(callback?: (status?: string) => void): void | string;
       removeStatusHandler(callback?: (status?: string) => void): void;
    };
 }
 
-
 interface WebpackRequire {
    (id: string): any;
-   (paths: string[], callback: (...modules: any[]) => void): void;
-   ensure(ids: string[], callback: (req: WebpackRequire) => void, chunkName?: string): void;
-   context(directory: string, useSubDirectories?: boolean, regExp?: RegExp): WebpackContext;
+   (
+      paths: string[],
+      callback: (...modules: any[]) => void): void;
+   ensure(
+      ids: string[],
+      callback: (req: WebpackRequire) => void,
+      chunkName?: string): void;
+   context(
+      directory: string,
+      useSubDirectories?: boolean,
+      regExp?: RegExp): WebpackContext;
 }
 
 interface WebpackContext extends WebpackRequire {
@@ -119,28 +136,28 @@ interface ErrorStackTraceLimit {
    stackTraceLimit: number;
 }
 
-
 // Extend typings
 interface NodeRequire extends WebpackRequire {}
 interface ErrorConstructor extends ErrorStackTraceLimit {}
-interface NodeRequireFunction extends Es6PromiseLoader  {}
+interface NodeRequireFunction extends Es6PromiseLoader {}
 interface NodeModule extends WebpackModule {}
-interface Global extends GlobalEnvironment  {}
+interface Global extends GlobalEnvironment {}
 
 // Extend Document Typings
 interface Document {
-    msExitFullscreen(): void;
-    mozCancelFullScreen(): void;
+   msExitFullscreen(): void;
+   mozCancelFullScreen(): void;
 }
 
 // Extend Document.documentElement Typings
 interface HTMLElement {
-    msRequestFullscreen(): void;
-    mozRequestFullScreen(): void;
+   msRequestFullscreen(): void;
+   mozRequestFullScreen(): void;
 }
 
 interface ExitStatus {
-    Token: any;
+   Token: any;
+   id_token: any;
 }
 
 // interface JQuery {
@@ -150,51 +167,18 @@ interface ExitStatus {
 
 declare var __webpack_public_path__: string;
 
-
 // Extend Window Typings
 interface Window {
-   jwt_decode(jwt: string): any;
+   // jwt_decode(jwt: string): any;
    dhx: any;
    jQuery: any;
    $: any;
 }
 
+// declare function jwt_decode(token: string): any;
 
-// incomplete definitions for http://www.tinymce.com
-
-interface TinyMceObservable {
-   off: (name?:string, callback?:Function) => Object
-   on: (name:string, callback:Function) => Object
-   fire: (name:string, args?:Object, bubble?:Boolean) => Event
+declare module "jwt-decode" {
+   function decode(token: string): any;
+   namespace decode {}  // notice how we have to create a namespace that is equal to the function we're assigning the export to
+   export = decode;
 }
-
-interface TinyMceEditor extends TinyMceObservable {
-   destroy: (automatic:boolean) => void
-   remove: () => void
-   hide: () => void
-   show: () => void
-   getContent: (args?:Object) => string
-   setContent: (content:string, args?:Object) => string
-   focus: (skip_focus?:Boolean) => void
-   undoManager: TinyMceUndoManager
-   settings: Object
-}
-
-interface TinyMceUndoManager {
-   undo: () => Object
-   clear: () => void
-   hasUndo: () => Boolean
-}
-
-interface TinyMceEvent {
-
-}
-
-interface TinyMceStatic extends TinyMceObservable {
-   init: (settings:Object) => void;
-   execCommand: (c:string, u:Boolean, v:string) => Boolean;
-   activeEditor: TinyMceEditor;
-   get: (id:String) => TinyMceEditor;
-}
-
-declare var tinymce:TinyMceStatic;

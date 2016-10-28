@@ -41,11 +41,11 @@ export const ROUTES: Routes = [{
    component: TicketComponent,
    canActivate: [RouteProtection]
 }, {
-   path: 'grid1',
+   path: 'home',
    component: HomeComponent,
    canActivate: [RouteProtection]
 }, {
-   path: 'grid2',
+   path: 'subscriber',
    component: SubscriberComponent,
    canActivate: [RouteProtection]
 }, {

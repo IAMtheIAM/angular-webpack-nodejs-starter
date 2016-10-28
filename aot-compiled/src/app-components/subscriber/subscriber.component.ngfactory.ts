@@ -121,6 +121,6 @@ class _View_SubscriberComponent0 extends import1.DebugAppView<import0.Subscriber
   }
 }
 export function viewFactory_SubscriberComponent0(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import5.AppElement):import1.AppView<import0.SubscriberComponent> {
-  if ((renderType_SubscriberComponent === (null as any))) { (renderType_SubscriberComponent = viewUtils.createRenderComponentType('C:/Development/angular2-webpack2-dotnet-starter/src/app-components/subscriber/subscriber.template.html',0,import14.ViewEncapsulation.None,styles_SubscriberComponent,{})); }
+  if ((renderType_SubscriberComponent === (null as any))) { (renderType_SubscriberComponent = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-aot-webpack2-typescript-dotnet/master/src/app-components/subscriber/subscriber.template.html',0,import14.ViewEncapsulation.None,styles_SubscriberComponent,{})); }
   return new _View_SubscriberComponent0(viewUtils,parentInjector,declarationEl);
 }

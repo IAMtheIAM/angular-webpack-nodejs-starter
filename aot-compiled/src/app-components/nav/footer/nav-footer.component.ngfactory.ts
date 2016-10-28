@@ -149,7 +149,7 @@ class _View_NavFooterComponent0 extends import1.DebugAppView<import0.NavFooterCo
   }
 }
 export function viewFactory_NavFooterComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import1.AppView<import0.NavFooterComponent> {
-  if ((renderType_NavFooterComponent === (null as any))) { (renderType_NavFooterComponent = viewUtils.createRenderComponentType('C:/Development/angular2-webpack2-dotnet-starter/src/app-components/nav/footer/nav-footer.template.html',0,import11.ViewEncapsulation.None,styles_NavFooterComponent,{})); }
+  if ((renderType_NavFooterComponent === (null as any))) { (renderType_NavFooterComponent = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-aot-webpack2-typescript-dotnet/master/src/app-components/nav/footer/nav-footer.template.html',0,import11.ViewEncapsulation.None,styles_NavFooterComponent,{})); }
   return new _View_NavFooterComponent0(viewUtils,parentInjector,declarationEl);
 }
 const nodeDebugInfos_NavFooterComponent1:import2.StaticNodeDebugInfo[] = [

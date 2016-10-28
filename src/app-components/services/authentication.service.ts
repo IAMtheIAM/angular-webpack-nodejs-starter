@@ -30,8 +30,8 @@ export class Authentication {
       public appState: AppState, public router: Router, public http: Http, // public authHttp: AuthHttp,
       public utilityService: UtilityService) {
 
-      // this.apiURL = 'http://maul:8889/authentication/loginviaactivedirectory';
-      this.apiURL = 'http://maul:8181/api/login';
+      // defaults to local API server - change this to your own authentication server URL
+      this.apiURL = 'http://localhost:3001/sessions/create';
       this.jwt = localStorage.getItem('jwt');
       this.decodedJwt = this.jwt && jwt_decode(this.jwt);
       this.isAuthenticated = this.isLoggedIn();

@@ -33,6 +33,7 @@ import './login.style.scss';
 export class LoginComponent {
    //@Input() loginText: string = 'Login';
    isAuthenticated: boolean;
+   token: string = '';
 
    constructor(
       /** This is where we setup/construct all the constants and variables as well as inject
@@ -90,7 +91,7 @@ export class LoginComponent {
              error => {
 
                 // Manual override: Allow admin login even without Active Directory running
-                 if (username === 'admin' || username === 'Admin') {
+                if (username === 'superadmin' || username === 'Superadmin') {
 
                    // True or false
                    this.authService.validAuth = true;
@@ -132,15 +133,22 @@ export class LoginComponent {
       }
 
       if (this.authService.validAuth) {
-         const token = response.Token;
-         // const splitToken = token.split('.');
-         // const responseHeaders = JSON.parse(atob(splitToken[0]));
-         // const responseBody = JSON.parse(atob(splitToken[1]));
-         //console.log(responseHeaders);
-         //console.log(responseBody);
+
+         if (response.id_token) {
+            this.token = response.id_token;
+         }
+         else if (response.Token) {
+            this.token = response.Token;
+         }
+
+         const splitToken = this.token.split('.');
+         const responseHeaders = JSON.parse(atob(splitToken[0]));
+         const responseBody = JSON.parse(atob(splitToken[1]));
+         console.log(responseHeaders);
+         console.log(responseBody);
 
          // Set the JWT
-         localStorage.setItem('jwt', token);
+         localStorage.setItem('jwt', this.token);
 
       }
       if (Logging.isEnabled.verbose) {
@@ -151,7 +159,7 @@ export class LoginComponent {
       // Get the redirect URL from our appState. If no redirect has been set, use the default
       let redirect = this.appState.state.redirectUrl
          ? this.appState.state.redirectUrl
-         : '/ticket';
+         : '/home';
       // Clear redirect URL after initial redirect
       this.appState.set('redirectUrl', '');
 

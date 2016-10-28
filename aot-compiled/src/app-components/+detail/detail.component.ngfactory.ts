@@ -176,6 +176,6 @@ class _View_DetailComponent0 extends import1.DebugAppView<import0.DetailComponen
   }
 }
 export function viewFactory_DetailComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import1.AppView<import0.DetailComponent> {
-  if ((renderType_DetailComponent === (null as any))) { (renderType_DetailComponent = viewUtils.createRenderComponentType('C:/Development/angular2-webpack2-dotnet-starter/src/app-components/+detail/detail.template.html',0,import9.ViewEncapsulation.None,styles_DetailComponent,{})); }
+  if ((renderType_DetailComponent === (null as any))) { (renderType_DetailComponent = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-aot-webpack2-typescript-dotnet/master/src/app-components/+detail/detail.template.html',0,import9.ViewEncapsulation.None,styles_DetailComponent,{})); }
   return new _View_DetailComponent0(viewUtils,parentInjector,declarationEl);
 }
