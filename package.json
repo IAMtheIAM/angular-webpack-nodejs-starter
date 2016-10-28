@@ -24,10 +24,11 @@
       "npm:install": "npm install --no-optional",
       "clean:compile:misc": "cd ./src/app-components && del *.ngfactory.ts *.ngfactory.js *.js.map *.metadata.json /s",
       "clean:compile": "rimraf -- aot-compiled wwwroot/compiled-src",
-      "clean:install": "npm run clean && npm run install:all",
-      "dirty:install": "npm run install:all",
+      "clean:install": "npm run clean && npm run install:all:build",
+      "dirty:install": "npm run install:all:build",
       "install:all": "npm set progress=false && npm install --no-optional --depth 0",
-      "postinstall:all": "npm run compile:aot && npm run build:dlls && npm run build:production:aot",
+      "install:all:build": "npm set progress=false && npm install --no-optional --depth 0 && npm run build:all:aot",
+      "build:all:aot": "npm run compile:aot && npm run build:dlls && npm run build:production:aot",
       "copy:index.html": "copyfiles --up 1 wwwroot/index.html Views/Shared",
       "prerename:index.html": "rimraf Views/Shared/_Layout.cshtml",
       "rename:index.html": "cd ./tools && elevate.exe  -c renamer --find \"index.html\" --replace \"_Layout.cshtml\" \"../Views/Shared/*\"",
@@ -58,7 +59,7 @@
       "launch:Tests-E2E": "start npm run e2e",
       "launch:Tests-Unit": "start npm run test:karma",
       "lint": "npm run tslint \"src/**/*.ts\" && npm run eslint \"config/**/*.js\"",
-      "onetimesetup": "npm run dotnet:restore && npm run install:globals:all && npm run install:all && npm run devserver:jit",
+      "onetimesetup": "npm run dotnet:restore && npm run install:globals:all && npm run install:all:build && npm run devserver:jit",
       "postversion": "git push && git push --tags",
       "pree2e": "npm run webdriver:update -- --standalone",
       "pree2e:server": "npm run clean:wwwroot",
@@ -99,13 +100,10 @@
       "server:dotnetcore:dev": "set \"ASPNETCORE_ENVIRONMENT=Webpack\" && dotnet run",
       "server:dotnetcore:production": "set \"ASPNETCORE_ENVIRONMENT=Production\" && dotnet run",
       "dotnet:restore": "dotnet restore",
-      "precommit-msg": "echo 'Pre-commit checks... Running \"build:dlls\" \"build:dev:jit\" and \"compile:build-production:aot\"' && exit 0"
+      "precommit-msg": "echo 'Pre-commit checks... Currently disabled. Consider running \"build:dlls\" \"build:dev:jit\" and \"compile:build-production:aot\" before committing to ensure the build succeeds.' && exit 0"
    },
    "pre-commit": [
-      "precommit-msg",
-      "build:dlls",
-      "build:dev:jit",
-      "compile:build-production:aot"
+      "precommit-msg"
    ],
    "dependencies": {
       "@angular/common": "2.1.2",
@@ -138,7 +136,7 @@
       "jwt-decode": "~2.0.1",
       "materialize-css": "~0.97.7",
       "reflect-metadata": "0.1.8",
-      "rxjs": "5.0.0-beta.12",
+      "rxjs": "5.0.0-rc.1",
       "scriptjs": "^2.5.8",
       "susy": "~2.2.12",
       "underscore": "~1.8.3",
@@ -160,7 +158,7 @@
       "@types/uglify-js": "^2.0.27",
       "@types/webpack": "^1.12.34",
       "angular2-load-children-loader": "^0.1.3",
-      "angular2-router-loader": "^0.2.2",
+      "angular2-router-loader": "0.3.3",
       "angular2-template-loader": "^0.5.0",
       "assets-webpack-plugin": "^3.5.0",
       "autoprefixer": "~6.3.6",
