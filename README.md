@@ -1,6 +1,8 @@
 
 # Angular 2 AOT + Webpack 2 + Typescript + SASS + .NET Core 1
 
+[![Join the chat at https://gitter.im/angular2-webpack2-dotnet-starter/Lobby](https://badges.gitter.im/angular2-webpack2-dotnet-starter/Lobby.svg)](https://gitter.im/angular2-webpack2-dotnet-starter/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 The purpose of the project is to assist Front-end developers and .NET developers to easily integrate their code. This documentation assumes you are developing on Windows 10, however it should work with little to no changes for Linux and Mac.
 
 This is based on the Angular 2 Webpack Starter repo [available on GitHub](https://angularclass.github.io/angular2-webpack-starter/). It enhances that repo with additional features, such as integration with .NET Core 1.0, Angular 2 AOT Compilation, Webpack 2.1.0-beta.25, and SASS + Sourcemaps working with Hot Module Replacement.
