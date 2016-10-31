@@ -1,7 +1,7 @@
 
 # Angular 2 AOT + Webpack 2 + Typescript + SASS + .NET Core 1
 
-[![Join the chat at https://gitter.im/angular2-webpack2-dotnet-starter/Lobby](https://badges.gitter.im/angular2-webpack2-dotnet-starter/Lobby.svg)](https://gitter.im/angular2-webpack2-dotnet-starter/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/IAMtheIAM/angular2-webpack2-dotnet-starter](https://badges.gitter.im/IAMtheIAM/angular2-webpack2-dotnet-starter.svg)](https://gitter.im/IAMtheIAM/angular2-webpack2-dotnet-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 The purpose of the project is to assist Front-end developers and .NET developers to easily integrate their code. This documentation assumes you are developing on Windows 10, however it should work with little to no changes for Linux and Mac.
 
