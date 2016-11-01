@@ -153,6 +153,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
       import43.TicketComponentNgFactory,
       import43.TicketComponentNgFactory,
       import44.HomeComponentNgFactory,
+      import44.HomeComponentNgFactory,
       import45.SubscriberComponentNgFactory,
       import42.LoginComponentNgFactory,
       import46.AboutComponentNgFactory,
@@ -323,6 +324,12 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
         {
           path: 'ticket/:ticketID',
           component: import57.TicketComponent,
+          canActivate: [import40.RouteProtection]
+        }
+        ,
+        {
+          path: 'home',
+          component: import58.HomeComponent,
           canActivate: [import40.RouteProtection]
         }
         ,

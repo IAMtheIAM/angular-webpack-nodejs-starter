@@ -41,6 +41,10 @@ export const ROUTES: Routes = [{
    component: TicketComponent,
    canActivate: [RouteProtection]
 }, {
+    path: 'home',
+    component: HomeComponent,
+    canActivate: [RouteProtection]
+},{
    path: 'grid1',
    component: HomeComponent,
    canActivate: [RouteProtection]

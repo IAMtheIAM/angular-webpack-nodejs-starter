@@ -92,9 +92,13 @@
             await context.Response.WriteAsync(response);
         }
 
+        /// <summary>
+        /// Validate the username and password combination.
+        /// TODO: Implement your own authentication mechanism
+        /// </summary>
         private Task<ClaimsIdentity> GetIdentity(string username, string password)
         {
-            // DON'T do this in production, obviously!
+            // DO NOT do this in production, obviously!
             if ((username.ToLower() == "admin") && (password == "admin"))
             {
                 return Task.FromResult(new ClaimsIdentity(new GenericIdentity(username, "Token"), new Claim[] { }));

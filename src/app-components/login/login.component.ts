@@ -1,29 +1,11 @@
-// login.component.ts
-/*
- * Angular 2 decorators and services
- */
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
-/*
- * Shared Utilities
- */
 import { Logging } from '../services/utility.service';
 import { AppState } from '../services/appstate.service';
 import { Authentication } from '../services/authentication.service';
 import { UtilityService } from '../services/utility.service';
 
-/*
- * Imported Components
- */
-
-/**
- * This is where CSS/SCSS files that the component depends on are required.
- *
- * Function: To enable "Hot Module Replacement" of CSS/SCSS files
- * during development. During productions, all styles will be extracted into
- *  external stylesheets. Do NOT add styles the "Angular2 Way" in
- */
 import './login.style.scss';
 
 @Component({
@@ -31,15 +13,9 @@ import './login.style.scss';
     templateUrl: './login.template.html'
 })
 export class LoginComponent {
-    //@Input() loginText: string = 'Login';
     isAuthenticated: boolean;
 
     constructor(
-        /** This is where we setup/construct all the constants and variables as well as inject
-         *  Angular dependenciesto be called in the class methods
-         *  NOTE: Injected Dependencies must be called using "this". Example: this.depencencyName.someMethod
-         */
-        //public isAuthenticated,
         public appState: AppState,
         public authService: Authentication,
         public utilityService: UtilityService,
@@ -54,9 +30,9 @@ export class LoginComponent {
         // If user is already logged in, skip the login page
         if (this.isAuthenticated) {
             if (Logging.isEnabled.light) {
-                console.log('%c Already logged in! Navigating to Ticket Component', Logging.normal.purple);
+                console.log('%c Already logged in! Navigating to index page...', Logging.normal.purple);
             }
-            this.utilityService.navigate('/ticket');
+            this.utilityService.navigate('/home'); // Index page
         }
 
         if (Logging.isEnabled.light) {
@@ -70,8 +46,6 @@ export class LoginComponent {
             .subscribe(
                 response => {
                     // On response
-                    console.log('Login response: ', response);
-
                     if (Logging.isEnabled.verbose) {
                         console.log('Response: ', response);
                     }
@@ -109,17 +83,11 @@ export class LoginComponent {
 
     loginSuccess(response?) {
         if (this.authService.validAuth) {
-            const token = response.Token;
-            // const splitToken = token.split('.');
-            // const responseHeaders = JSON.parse(atob(splitToken[0]));
-            // const responseBody = JSON.parse(atob(splitToken[1]));
-            //console.log(responseHeaders);
-            //console.log(responseBody);
-
+            const token = response.access_token;
             // Set the JWT
             localStorage.setItem('jwt', token);
-
         }
+
         if (Logging.isEnabled.verbose) {
             console.log('Login Component: login(response): ', response);
             console.log(`%c Logged In: ${this.authService.isLoggedIn()}`, Logging.normal.white);
@@ -128,9 +96,10 @@ export class LoginComponent {
         // Get the redirect URL from our appState. If no redirect has been set, use the default
         const redirect = this.appState.state.redirectUrl
             ? this.appState.state.redirectUrl
-            : '/ticket';
+            : '/home'; // Index page
+
         // Clear redirect URL after initial redirect
-        this.appState.set('redirectUrl', '');
+        this.appState.set('redirectUrl', '/home'); // Index page
 
         // Navigate the view
         this.utilityService.navigate(redirect);

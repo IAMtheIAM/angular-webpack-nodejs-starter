@@ -1,15 +1,8 @@
-// authentication.service.ts
-/*
- * Angular 2 decorators and services
- */
-// import { Router, RouterLink} from '@angular/router';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Http, URLSearchParams, Headers } from '@angular/http';
 import { Router } from '@angular/router';
-/*
- * Shared Utilities
- */
+
 import { Logging, UtilityService } from './utility.service';
 import { AppState } from './appstate.service';
 import { contentHeaders } from '../common/headers';
@@ -18,11 +11,9 @@ const jwt_decode = require('jwt-decode');
 
 @Injectable()
 export class Authentication {
-    token: string;
     jwt: string;
     decodedJwt: string;
-    response: string;
-    apiURL: string;
+    apiUrl: string;
     isAuthenticated = false;
     validAuth: any;
 
@@ -32,13 +23,13 @@ export class Authentication {
         public http: Http,
         public utilityService: UtilityService) {
         
-        this.apiURL = '/token';
+        this.apiUrl = '/token';
         this.jwt = localStorage.getItem('jwt');
         this.decodedJwt = this.jwt && jwt_decode(this.jwt);
         this.isAuthenticated = this.isLoggedIn();
         this.appState.set('isAuthenticated', this.isAuthenticated);
     }
-
+    
     login(event, username, password) {
         event.preventDefault();
 
@@ -47,13 +38,11 @@ export class Authentication {
         urlSearchParams.append('password', password);
         const body = urlSearchParams.toString();
 
-        console.log(body);
-
         const contentHeaders = new Headers();
         contentHeaders.append('Accept', 'application/json');
         contentHeaders.append('Content-Type', 'application/x-www-form-urlencoded');
 
-        return this.http.post(this.apiURL, body, { headers: contentHeaders })
+        return this.http.post(this.apiUrl, body, { headers: contentHeaders })
             .map(response => response.json()); // map the response body to JSON
     }
 
@@ -62,7 +51,7 @@ export class Authentication {
         localStorage.removeItem('jwt');
 
         this.appState.set('isAuthenticated', this.isLoggedIn());
-        this.utilityService.navigate('/');
+        this.utilityService.navigate('/login');
 
         if (Logging.isEnabled.verbose) {
             console.log(`%c Logged In: ${this.isLoggedIn()}`, Logging.normal.white);
@@ -78,7 +67,14 @@ export class Authentication {
     }
 
     isLoggedIn(): boolean {
-        return !!localStorage.getItem('jwt');
+        var item = localStorage.getItem('jwt');
+
+        if (item === undefined || item === 'undefined') {
+            // Localstorage became corrupted, remove undefined jwt
+            localStorage.removeItem('jwt');
+        }
+
+        return !!item;
     }
 
     redirectIfNotLoggedIn() {

@@ -186,18 +186,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-// authentication.service.ts
-/*
- * Angular 2 decorators and services
- */
-// import { Router, RouterLink} from '@angular/router';
 var core_1 = __webpack_require__(3);
 var rxjs_1 = __webpack_require__(208);
 var http_1 = __webpack_require__(32);
 var router_1 = __webpack_require__(23);
-/*
- * Shared Utilities
- */
 var utility_service_1 = __webpack_require__(6);
 var appstate_service_1 = __webpack_require__(7);
 var jwt_decode = __webpack_require__(195);
@@ -208,7 +200,7 @@ var Authentication = (function () {
         this.http = http;
         this.utilityService = utilityService;
         this.isAuthenticated = false;
-        this.apiURL = '/token';
+        this.apiUrl = '/token';
         this.jwt = localStorage.getItem('jwt');
         this.decodedJwt = this.jwt && jwt_decode(this.jwt);
         this.isAuthenticated = this.isLoggedIn();
@@ -220,18 +212,17 @@ var Authentication = (function () {
         urlSearchParams.append('username', username);
         urlSearchParams.append('password', password);
         var body = urlSearchParams.toString();
-        console.log(body);
         var contentHeaders = new http_1.Headers();
         contentHeaders.append('Accept', 'application/json');
         contentHeaders.append('Content-Type', 'application/x-www-form-urlencoded');
-        return this.http.post(this.apiURL, body, { headers: contentHeaders })
+        return this.http.post(this.apiUrl, body, { headers: contentHeaders })
             .map(function (response) { return response.json(); }); // map the response body to JSON
     };
     Authentication.prototype.logout = function () {
         // Must delete JWT first
         localStorage.removeItem('jwt');
         this.appState.set('isAuthenticated', this.isLoggedIn());
-        this.utilityService.navigate('/');
+        this.utilityService.navigate('/login');
         if (utility_service_1.Logging.isEnabled.verbose) {
             console.log("%c Logged In: " + this.isLoggedIn(), utility_service_1.Logging.normal.white);
             console.log("%c this.appState.isAuthenticated: " + this.appState.state.isAuthenticated, utility_service_1.Logging.normal.white);
@@ -242,7 +233,12 @@ var Authentication = (function () {
         return rxjs_1.Observable.of(this.isLoggedIn());
     };
     Authentication.prototype.isLoggedIn = function () {
-        return !!localStorage.getItem('jwt');
+        var item = localStorage.getItem('jwt');
+        if (item === undefined || item === 'undefined') {
+            // Localstorage became corrupted, remove undefined jwt
+            localStorage.removeItem('jwt');
+        }
+        return !!item;
     };
     Authentication.prototype.redirectIfNotLoggedIn = function () {
         if (!this.isLoggedIn) {
@@ -2087,38 +2083,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-// login.component.ts
-/*
- * Angular 2 decorators and services
- */
 var core_1 = __webpack_require__(3);
 var router_1 = __webpack_require__(23);
-/*
- * Shared Utilities
- */
 var utility_service_1 = __webpack_require__(6);
 var appstate_service_1 = __webpack_require__(7);
 var authentication_service_1 = __webpack_require__(8);
 var utility_service_2 = __webpack_require__(6);
-/*
- * Imported Components
- */
-/**
- * This is where CSS/SCSS files that the component depends on are required.
- *
- * Function: To enable "Hot Module Replacement" of CSS/SCSS files
- * during development. During productions, all styles will be extracted into
- *  external stylesheets. Do NOT add styles the "Angular2 Way" in
- */
 __webpack_require__(186);
 var LoginComponent = (function () {
-    function LoginComponent(
-        /** This is where we setup/construct all the constants and variables as well as inject
-         *  Angular dependenciesto be called in the class methods
-         *  NOTE: Injected Dependencies must be called using "this". Example: this.depencencyName.someMethod
-         */
-        //public isAuthenticated,
-        appState, authService, utilityService, router) {
+    function LoginComponent(appState, authService, utilityService, router) {
         this.appState = appState;
         this.authService = authService;
         this.utilityService = utilityService;
@@ -2130,9 +2103,9 @@ var LoginComponent = (function () {
         // If user is already logged in, skip the login page
         if (this.isAuthenticated) {
             if (utility_service_1.Logging.isEnabled.light) {
-                console.log('%c Already logged in! Navigating to Ticket Component', utility_service_1.Logging.normal.purple);
+                console.log('%c Already logged in! Navigating to index page...', utility_service_1.Logging.normal.purple);
             }
-            this.utilityService.navigate('/ticket');
+            this.utilityService.navigate('/home'); // Index page
         }
         if (utility_service_1.Logging.isEnabled.light) {
             console.log('%c Hello \"Login\" component!', utility_service_1.Logging.normal.lime);
@@ -2143,7 +2116,6 @@ var LoginComponent = (function () {
         this.authService.login(event, username, password)
             .subscribe(function (response) {
             // On response
-            console.log('Login response: ', response);
             if (utility_service_1.Logging.isEnabled.verbose) {
                 console.log('Response: ', response);
             }
@@ -2172,12 +2144,7 @@ var LoginComponent = (function () {
     };
     LoginComponent.prototype.loginSuccess = function (response) {
         if (this.authService.validAuth) {
-            var token = response.Token;
-            // const splitToken = token.split('.');
-            // const responseHeaders = JSON.parse(atob(splitToken[0]));
-            // const responseBody = JSON.parse(atob(splitToken[1]));
-            //console.log(responseHeaders);
-            //console.log(responseBody);
+            var token = response.access_token;
             // Set the JWT
             localStorage.setItem('jwt', token);
         }
@@ -2188,9 +2155,9 @@ var LoginComponent = (function () {
         // Get the redirect URL from our appState. If no redirect has been set, use the default
         var redirect = this.appState.state.redirectUrl
             ? this.appState.state.redirectUrl
-            : '/ticket';
+            : '/home'; // Index page
         // Clear redirect URL after initial redirect
-        this.appState.set('redirectUrl', '');
+        this.appState.set('redirectUrl', '/home'); // Index page
         // Navigate the view
         this.utilityService.navigate(redirect);
         return this.authService.isLoggedIn();
@@ -25941,6 +25908,7 @@ var AppModuleInjector = (function (_super) {
             import43.TicketComponentNgFactory,
             import43.TicketComponentNgFactory,
             import44.HomeComponentNgFactory,
+            import44.HomeComponentNgFactory,
             import45.SubscriberComponentNgFactory,
             import42.LoginComponentNgFactory,
             import46.AboutComponentNgFactory,
@@ -26299,6 +26267,11 @@ var AppModuleInjector = (function (_super) {
                         {
                             path: 'ticket/:ticketID',
                             component: import57.TicketComponent,
+                            canActivate: [import40.RouteProtection]
+                        },
+                        {
+                            path: 'home',
+                            component: import58.HomeComponent,
                             canActivate: [import40.RouteProtection]
                         },
                         {
@@ -29803,6 +29776,10 @@ exports.ROUTES = [{
     }, {
         path: 'ticket/:ticketID',
         component: ticket_component_ts_1.TicketComponent,
+        canActivate: [route_protection_service_1.RouteProtection]
+    }, {
+        path: 'home',
+        component: home_component_1.HomeComponent,
         canActivate: [route_protection_service_1.RouteProtection]
     }, {
         path: 'grid1',
