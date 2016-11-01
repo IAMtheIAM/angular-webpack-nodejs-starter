@@ -1,20 +1,27 @@
 {
   "kendo.for.jquery": {
-    "js": "http://localhost:4000/js/chunks/kendo.for.jquery.chunk.js"
+    "js": "js/chunks/kendo.for.jquery.chunk.js"
   },
   "mock-data": {
-    "js": "http://localhost:4000/js/chunks/mock-data.chunk.js"
+    "js": "js/chunks/mock-data.chunk.js"
+  },
+  "iframe.module.ngfactory": {
+    "js": "js/chunks/iframe.module.ngfactory.chunk.js"
   },
   "iframe.module": {
-    "js": "http://localhost:4000/js/chunks/iframe.module.chunk.js"
+    "js": "js/chunks/iframe.module.chunk.js"
+  },
+  "detail.module.ngfactory": {
+    "js": "js/chunks/detail.module.ngfactory.chunk.js"
   },
   "detail.module": {
-    "js": "http://localhost:4000/js/chunks/detail.module.chunk.js"
+    "js": "js/chunks/detail.module.chunk.js"
   },
   "app": {
-    "js": "http://localhost:4000/js/app.bundle.js"
+    "js": "js/app.bundle.js",
+    "css": "/css/app.style.css?5e7b7a3621b353a290e1"
   },
   "commons": {
-    "js": "http://localhost:4000/js/commons.bundle.js"
+    "js": "js/commons.bundle.js"
   }
 }

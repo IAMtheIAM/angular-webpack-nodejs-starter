@@ -12,61 +12,51 @@ import * as import4 from '@angular/common/src/localization';
 import * as import5 from '@angular/core/src/di/injector';
 import * as import6 from './webpage-1/webpage-1.component.ngfactory';
 import * as import7 from './webpage-2/webpage-2.component.ngfactory';
-import * as import8 from '../../../../src/app-components/+iframe-module/webpage-1/webpage-1.component';
-import * as import9 from '../../../../src/app-components/services/route-protection.service';
-import * as import10 from '../../../../src/app-components/+iframe-module/webpage-2/webpage-2.component';
-import * as import11 from '@angular/core/src/i18n/tokens';
+import * as import8 from '@angular/core/src/i18n/tokens';
+import * as import9 from '../../../../src/app-components/+iframe-module/webpage-1/webpage-1.component';
+import * as import10 from '../../../../src/app-components/services/route-protection.service';
+import * as import11 from '../../../../src/app-components/+iframe-module/webpage-2/webpage-2.component';
 import * as import12 from '@angular/router/src/router_config_loader';
 class IframeModuleInjector extends import0.NgModuleInjector<import1.IframeModule> {
   _CommonModule_0:import2.CommonModule;
   _RouterModule_1:import3.RouterModule;
   _IframeModule_2:import1.IframeModule;
-  __LOCALE_ID_3:any;
-  __NgLocalization_4:import4.NgLocaleLocalization;
-  __ROUTES_5:any[];
-  __TRANSLATIONS_FORMAT_6:any;
+  __NgLocalization_3:import4.NgLocaleLocalization;
+  __ROUTES_4:any[];
   constructor(parent:import5.Injector) {
     super(parent,[
       import6.Webpage1NgFactory,
       import6.Webpage1NgFactory,
       import7.Webpage2NgFactory
     ]
-    ,[]);
+    ,([] as any[]));
   }
-  get _LOCALE_ID_3():any {
-    if ((this.__LOCALE_ID_3 == (null as any))) { (this.__LOCALE_ID_3 = (null as any)); }
-    return this.__LOCALE_ID_3;
+  get _NgLocalization_3():import4.NgLocaleLocalization {
+    if ((this.__NgLocalization_3 == (null as any))) { (this.__NgLocalization_3 = new import4.NgLocaleLocalization(this.parent.get(import8.LOCALE_ID))); }
+    return this.__NgLocalization_3;
   }
-  get _NgLocalization_4():import4.NgLocaleLocalization {
-    if ((this.__NgLocalization_4 == (null as any))) { (this.__NgLocalization_4 = new import4.NgLocaleLocalization(this._LOCALE_ID_3)); }
-    return this.__NgLocalization_4;
-  }
-  get _ROUTES_5():any[] {
-      if ((this.__ROUTES_5 == (null as any))) { (this.__ROUTES_5 = [[
+  get _ROUTES_4():any[] {
+      if ((this.__ROUTES_4 == (null as any))) { (this.__ROUTES_4 = [[
         {
           path: '',
-          component: import8.Webpage1
+          component: import9.Webpage1
         }
         ,
         {
           path: 'webpage1',
-          component: import8.Webpage1,
-          canActivate: [import9.RouteProtection]
+          component: import9.Webpage1,
+          canActivate: [import10.RouteProtection]
         }
         ,
         {
           path: 'webpage2',
-          component: import10.Webpage2,
-          canActivate: [import9.RouteProtection]
+          component: import11.Webpage2,
+          canActivate: [import10.RouteProtection]
         }
 
       ]
     ]); }
-    return this.__ROUTES_5;
-  }
-  get _TRANSLATIONS_FORMAT_6():any {
-    if ((this.__TRANSLATIONS_FORMAT_6 == (null as any))) { (this.__TRANSLATIONS_FORMAT_6 = (null as any)); }
-    return this.__TRANSLATIONS_FORMAT_6;
+    return this.__ROUTES_4;
   }
   createInternal():import1.IframeModule {
     this._CommonModule_0 = new import2.CommonModule();
@@ -78,10 +68,8 @@ class IframeModuleInjector extends import0.NgModuleInjector<import1.IframeModule
     if ((token === import2.CommonModule)) { return this._CommonModule_0; }
     if ((token === import3.RouterModule)) { return this._RouterModule_1; }
     if ((token === import1.IframeModule)) { return this._IframeModule_2; }
-    if ((token === import11.LOCALE_ID)) { return this._LOCALE_ID_3; }
-    if ((token === import4.NgLocalization)) { return this._NgLocalization_4; }
-    if ((token === import12.ROUTES)) { return this._ROUTES_5; }
-    if ((token === import11.TRANSLATIONS_FORMAT)) { return this._TRANSLATIONS_FORMAT_6; }
+    if ((token === import4.NgLocalization)) { return this._NgLocalization_3; }
+    if ((token === import12.ROUTES)) { return this._ROUTES_4; }
     return notFoundResult;
   }
   destroyInternal():void {

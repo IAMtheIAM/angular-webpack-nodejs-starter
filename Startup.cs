@@ -1,5 +1,9 @@
 ﻿namespace Dotnet.Starter
 {
+    using System;
+    using System.Text;
+
+    using Dotnet.Starter.Auth;
     using Dotnet.Starter.Data;
     using Dotnet.Starter.Models;
 
@@ -10,6 +14,8 @@
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
+    using Microsoft.Extensions.Options;
+    using Microsoft.IdentityModel.Tokens;
 
     public class Startup
     {
@@ -77,6 +83,18 @@
 
             // Add external authentication middleware below. To configure them please see http://go.microsoft.com/fwlink/?LinkID=532715
             app.UseMvc(routes => { routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}"); });
+
+            // JWT Authentication middleware (Via https://stormpath.com/blog/token-authentication-asp-net-core)
+            // secretKey contains a secret passphrase only your server knows
+            var signingKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes("Dotnet.Starter.SuperSecretKey321"));
+            var options = new TokenProviderOptions
+            {
+                Audience = "Dotnet.Starter.Audience",
+                Issuer = "Dotnet.Starter.Issuer",
+                SigningCredentials = new SigningCredentials(signingKey, SecurityAlgorithms.HmacSha256),
+            };
+
+            app.UseMiddleware<TokenProviderMiddleware>(Options.Create(options));
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.

@@ -4,10 +4,10 @@
  */
  /* tslint:disable */
 
-import * as import0 from '@angular/core/src/linker/debug_context';
-import * as import1 from '../../../../src/app-components/ticket/ticket.component';
-import * as import2 from '@angular/core/src/render/api';
-import * as import3 from '@angular/core/src/linker/view';
+import * as import0 from '../../../../src/app-components/ticket/ticket.component';
+import * as import1 from '@angular/core/src/linker/view';
+import * as import2 from '@angular/core/src/linker/debug_context';
+import * as import3 from '@angular/core/src/render/api';
 import * as import4 from '@angular/core/src/linker/element';
 import * as import5 from '@angular/core/src/linker/view_utils';
 import * as import6 from '@angular/core/src/di/injector';
@@ -27,254 +27,277 @@ import * as import19 from '@angular/forms/src/directives/select_multiple_control
 import * as import20 from '../../../../src/app-components/directives/ckeditor/ckeditor.component';
 import * as import21 from '@angular/core/src/linker/template_ref';
 import * as import22 from '@angular/common/src/directives/ng_if';
-import * as import23 from '@angular/core/src/linker/element_ref';
-import * as import24 from '../directives/ckeditor/ckeditor.component.ngfactory';
-import * as import25 from '@angular/common/src/pipes/json_pipe';
-const nodeDebugInfos_TicketComponent_Host0:import0.StaticNodeDebugInfo[] = [new import0.StaticNodeDebugInfo([import1.TicketComponent],import1.TicketComponent,{})];
-var renderType_TicketComponent_Host:import2.RenderComponentType = (null as any);
-class _View_TicketComponent_Host0 extends import3.DebugAppView<any> {
+import * as import23 from '../../../node_modules/@angular/forms/src/directives/ng_form.ngfactory';
+import * as import24 from '../../../node_modules/@angular/forms/src/directives/ng_control_status.ngfactory';
+import * as import25 from '../../../node_modules/@angular/forms/src/directives/select_control_value_accessor.ngfactory';
+import * as import26 from '../../../node_modules/@angular/forms/src/directives/select_multiple_control_value_accessor.ngfactory';
+import * as import27 from '../directives/ckeditor/ckeditor.component.ngfactory';
+import * as import28 from '../../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
+import * as import29 from '@angular/core/src/linker/element_ref';
+import * as import30 from '@angular/common/src/pipes/json_pipe';
+export class Wrapper_TicketComponent {
+  context:import0.TicketComponent;
+  changed:boolean;
+  constructor(p0:any,p1:any,p2:any,p3:any) {
+    this.changed = false;
+    this.context = new import0.TicketComponent(p0,p1,p2,p3);
+  }
+  detectChangesInInputProps(view:import1.AppView<any>,el:any,throwOnChange:boolean):boolean {
+    var changed:any = this.changed;
+    this.changed = false;
+    if (!throwOnChange) { if ((view.numberOfChecks === 0)) { this.context.ngOnInit(); } }
+    return changed;
+  }
+  detectChangesInHostProps(view:import1.AppView<any>,el:any,throwOnChange:boolean):void {
+  }
+}
+const nodeDebugInfos_TicketComponent_Host0:import2.StaticNodeDebugInfo[] = [new import2.StaticNodeDebugInfo([import0.TicketComponent],import0.TicketComponent,{})];
+var renderType_TicketComponent_Host:import3.RenderComponentType = (null as any);
+class _View_TicketComponent_Host0 extends import1.DebugAppView<any> {
   _el_0:any;
   /*private*/ _appEl_0:import4.AppElement;
-  _TicketComponent_0_4:import1.TicketComponent;
+  _TicketComponent_0_4:Wrapper_TicketComponent;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement) {
     super(_View_TicketComponent_Host0,renderType_TicketComponent_Host,import7.ViewType.HOST,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_TicketComponent_Host0);
   }
   createInternal(rootSelector:string):import4.AppElement {
-    this._el_0 = this.selectOrCreateHostElement('ticket',rootSelector,this.debug(0,0,0));
+    this._el_0 = import5.selectOrCreateRenderHostElement(this.renderer,'ticket',import5.EMPTY_INLINE_ARRAY,rootSelector,this.debug(0,0,0));
     this._appEl_0 = new import4.AppElement(0,(null as any),this,this._el_0);
     var compView_0:any = viewFactory_TicketComponent0(this.viewUtils,this.injector(0),this._appEl_0);
-    this._TicketComponent_0_4 = new import1.TicketComponent(this.parentInjector.get(import9.AppState),this.parentInjector.get(import10.DataService),this.parentInjector.get(import11.Authentication),this.parentInjector.get(import12.ActivatedRoute));
-    this._appEl_0.initComponent(this._TicketComponent_0_4,[],compView_0);
-    compView_0.create(this._TicketComponent_0_4,this.projectableNodes,(null as any));
-    this.init([].concat([this._el_0]),[this._el_0],[],[]);
+    this._TicketComponent_0_4 = new Wrapper_TicketComponent(this.parentInjector.get(import9.AppState),this.parentInjector.get(import10.DataService),this.parentInjector.get(import11.Authentication),this.parentInjector.get(import12.ActivatedRoute));
+    this._appEl_0.initComponent(this._TicketComponent_0_4.context,([] as any[]),compView_0);
+    compView_0.create(this._TicketComponent_0_4.context,this.projectableNodes,(null as any));
+    this.init(([] as any[]).concat([this._el_0]),[this._el_0],([] as any[]),([] as any[]));
     return this._appEl_0;
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import1.TicketComponent) && (0 === requestNodeIndex))) { return this._TicketComponent_0_4; }
+    if (((token === import0.TicketComponent) && (0 === requestNodeIndex))) { return this._TicketComponent_0_4.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    if (((this.numberOfChecks === 0) && !throwOnChange)) { this._TicketComponent_0_4.ngOnInit(); }
+    this.debug(0,0,0);
+    this._TicketComponent_0_4.detectChangesInInputProps(this,this._el_0,throwOnChange);
     this.detectContentChildrenChanges(throwOnChange);
+    this._TicketComponent_0_4.detectChangesInHostProps(this,this._el_0,throwOnChange);
     this.detectViewChildrenChanges(throwOnChange);
     if (!throwOnChange) {
       this.debug(0,0,0);
-      if ((this.numberOfChecks === 0)) { this._TicketComponent_0_4.ngAfterViewInit(); }
+      if ((this.numberOfChecks === 0)) { this._TicketComponent_0_4.context.ngAfterViewInit(); }
     }
   }
   destroyInternal():void {
     this.debug(0,0,0);
-    this._TicketComponent_0_4.ngOnDestroy();
+    this._TicketComponent_0_4.context.ngOnDestroy();
   }
 }
-function viewFactory_TicketComponent_Host0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<any> {
-  if ((renderType_TicketComponent_Host === (null as any))) { (renderType_TicketComponent_Host = viewUtils.createRenderComponentType('',0,import13.ViewEncapsulation.None,[],{})); }
+function viewFactory_TicketComponent_Host0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import1.AppView<any> {
+  if ((renderType_TicketComponent_Host === (null as any))) { (renderType_TicketComponent_Host = viewUtils.createRenderComponentType('',0,import13.ViewEncapsulation.None,([] as any[]),{})); }
   return new _View_TicketComponent_Host0(viewUtils,parentInjector,declarationEl);
 }
-export const TicketComponentNgFactory:import14.ComponentFactory<import1.TicketComponent> = new import14.ComponentFactory<import1.TicketComponent>('ticket',viewFactory_TicketComponent_Host0,import1.TicketComponent);
-const styles_TicketComponent:any[] = [];
-const nodeDebugInfos_TicketComponent0:import0.StaticNodeDebugInfo[] = [
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([
+export const TicketComponentNgFactory:import14.ComponentFactory<import0.TicketComponent> = new import14.ComponentFactory<import0.TicketComponent>('ticket',viewFactory_TicketComponent_Host0,import0.TicketComponent);
+const styles_TicketComponent:any[] = ([] as any[]);
+const nodeDebugInfos_TicketComponent0:import2.StaticNodeDebugInfo[] = [
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([
     import15.NgForm,
     import16.ControlContainer,
     import17.NgControlStatusGroup
   ]
   ,(null as any),{subscriberSearchForm: import15.NgForm}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{inputSubscriberID: (null as any)}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{inputSubscriberID: (null as any)}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([
     import18.NgSelectOption,
     import19.NgSelectMultipleOption
   ]
   ,(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([
     import18.NgSelectOption,
     import19.NgSelectMultipleOption
   ]
   ,(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([
     import18.NgSelectOption,
     import19.NgSelectMultipleOption
   ]
   ,(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([
     import18.NgSelectOption,
     import19.NgSelectMultipleOption
   ]
   ,(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([import20.CKEditor],import20.CKEditor,{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([import20.CKEditor],import20.CKEditor,{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([import20.CKEditor],import20.CKEditor,{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([import20.CKEditor],import20.CKEditor,{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([
     import18.NgSelectOption,
     import19.NgSelectMultipleOption
   ]
   ,(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([
     import18.NgSelectOption,
     import19.NgSelectMultipleOption
   ]
   ,(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([
     import18.NgSelectOption,
     import19.NgSelectMultipleOption
   ]
   ,(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([
     import18.NgSelectOption,
     import19.NgSelectMultipleOption
   ]
   ,(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([
     import18.NgSelectOption,
     import19.NgSelectMultipleOption
   ]
   ,(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([
     import18.NgSelectOption,
     import19.NgSelectMultipleOption
   ]
   ,(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([
     import18.NgSelectOption,
     import19.NgSelectMultipleOption
   ]
   ,(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([
     import18.NgSelectOption,
     import19.NgSelectMultipleOption
   ]
   ,(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([
     import21.TemplateRef,
     import22.NgIf
   ]
   ,(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{})
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_TicketComponent:import2.RenderComponentType = (null as any);
-class _View_TicketComponent0 extends import3.DebugAppView<import1.TicketComponent> {
+var renderType_TicketComponent:import3.RenderComponentType = (null as any);
+class _View_TicketComponent0 extends import1.DebugAppView<import0.TicketComponent> {
   _el_0:any;
   _text_1:any;
   _el_2:any;
@@ -282,9 +305,9 @@ class _View_TicketComponent0 extends import3.DebugAppView<import1.TicketComponen
   _el_4:any;
   _text_5:any;
   _el_6:any;
-  _NgForm_6_3:import15.NgForm;
+  _NgForm_6_3:import23.Wrapper_NgForm;
   _ControlContainer_6_4:any;
-  _NgControlStatusGroup_6_5:import17.NgControlStatusGroup;
+  _NgControlStatusGroup_6_5:import24.Wrapper_NgControlStatusGroup;
   _text_7:any;
   _el_8:any;
   _text_9:any;
@@ -301,23 +324,23 @@ class _View_TicketComponent0 extends import3.DebugAppView<import1.TicketComponen
   _el_20:any;
   _text_21:any;
   _el_22:any;
-  _NgSelectOption_22_3:import18.NgSelectOption;
-  _NgSelectMultipleOption_22_4:import19.NgSelectMultipleOption;
+  _NgSelectOption_22_3:import25.Wrapper_NgSelectOption;
+  _NgSelectMultipleOption_22_4:import26.Wrapper_NgSelectMultipleOption;
   _text_23:any;
   _text_24:any;
   _el_25:any;
-  _NgSelectOption_25_3:import18.NgSelectOption;
-  _NgSelectMultipleOption_25_4:import19.NgSelectMultipleOption;
+  _NgSelectOption_25_3:import25.Wrapper_NgSelectOption;
+  _NgSelectMultipleOption_25_4:import26.Wrapper_NgSelectMultipleOption;
   _text_26:any;
   _text_27:any;
   _el_28:any;
-  _NgSelectOption_28_3:import18.NgSelectOption;
-  _NgSelectMultipleOption_28_4:import19.NgSelectMultipleOption;
+  _NgSelectOption_28_3:import25.Wrapper_NgSelectOption;
+  _NgSelectMultipleOption_28_4:import26.Wrapper_NgSelectMultipleOption;
   _text_29:any;
   _text_30:any;
   _el_31:any;
-  _NgSelectOption_31_3:import18.NgSelectOption;
-  _NgSelectMultipleOption_31_4:import19.NgSelectMultipleOption;
+  _NgSelectOption_31_3:import25.Wrapper_NgSelectOption;
+  _NgSelectMultipleOption_31_4:import26.Wrapper_NgSelectMultipleOption;
   _text_32:any;
   _text_33:any;
   _text_34:any;
@@ -328,7 +351,7 @@ class _View_TicketComponent0 extends import3.DebugAppView<import1.TicketComponen
   _text_39:any;
   _el_40:any;
   /*private*/ _appEl_40:import4.AppElement;
-  _CKEditor_40_4:import20.CKEditor;
+  _CKEditor_40_4:import27.Wrapper_CKEditor;
   _text_41:any;
   _text_42:any;
   _text_43:any;
@@ -336,7 +359,7 @@ class _View_TicketComponent0 extends import3.DebugAppView<import1.TicketComponen
   _text_45:any;
   _el_46:any;
   /*private*/ _appEl_46:import4.AppElement;
-  _CKEditor_46_4:import20.CKEditor;
+  _CKEditor_46_4:import27.Wrapper_CKEditor;
   _text_47:any;
   _text_48:any;
   _text_49:any;
@@ -347,23 +370,23 @@ class _View_TicketComponent0 extends import3.DebugAppView<import1.TicketComponen
   _el_54:any;
   _text_55:any;
   _el_56:any;
-  _NgSelectOption_56_3:import18.NgSelectOption;
-  _NgSelectMultipleOption_56_4:import19.NgSelectMultipleOption;
+  _NgSelectOption_56_3:import25.Wrapper_NgSelectOption;
+  _NgSelectMultipleOption_56_4:import26.Wrapper_NgSelectMultipleOption;
   _text_57:any;
   _text_58:any;
   _el_59:any;
-  _NgSelectOption_59_3:import18.NgSelectOption;
-  _NgSelectMultipleOption_59_4:import19.NgSelectMultipleOption;
+  _NgSelectOption_59_3:import25.Wrapper_NgSelectOption;
+  _NgSelectMultipleOption_59_4:import26.Wrapper_NgSelectMultipleOption;
   _text_60:any;
   _text_61:any;
   _el_62:any;
-  _NgSelectOption_62_3:import18.NgSelectOption;
-  _NgSelectMultipleOption_62_4:import19.NgSelectMultipleOption;
+  _NgSelectOption_62_3:import25.Wrapper_NgSelectOption;
+  _NgSelectMultipleOption_62_4:import26.Wrapper_NgSelectMultipleOption;
   _text_63:any;
   _text_64:any;
   _el_65:any;
-  _NgSelectOption_65_3:import18.NgSelectOption;
-  _NgSelectMultipleOption_65_4:import19.NgSelectMultipleOption;
+  _NgSelectOption_65_3:import25.Wrapper_NgSelectOption;
+  _NgSelectMultipleOption_65_4:import26.Wrapper_NgSelectMultipleOption;
   _text_66:any;
   _text_67:any;
   _text_68:any;
@@ -373,23 +396,23 @@ class _View_TicketComponent0 extends import3.DebugAppView<import1.TicketComponen
   _el_72:any;
   _text_73:any;
   _el_74:any;
-  _NgSelectOption_74_3:import18.NgSelectOption;
-  _NgSelectMultipleOption_74_4:import19.NgSelectMultipleOption;
+  _NgSelectOption_74_3:import25.Wrapper_NgSelectOption;
+  _NgSelectMultipleOption_74_4:import26.Wrapper_NgSelectMultipleOption;
   _text_75:any;
   _text_76:any;
   _el_77:any;
-  _NgSelectOption_77_3:import18.NgSelectOption;
-  _NgSelectMultipleOption_77_4:import19.NgSelectMultipleOption;
+  _NgSelectOption_77_3:import25.Wrapper_NgSelectOption;
+  _NgSelectMultipleOption_77_4:import26.Wrapper_NgSelectMultipleOption;
   _text_78:any;
   _text_79:any;
   _el_80:any;
-  _NgSelectOption_80_3:import18.NgSelectOption;
-  _NgSelectMultipleOption_80_4:import19.NgSelectMultipleOption;
+  _NgSelectOption_80_3:import25.Wrapper_NgSelectOption;
+  _NgSelectMultipleOption_80_4:import26.Wrapper_NgSelectMultipleOption;
   _text_81:any;
   _text_82:any;
   _el_83:any;
-  _NgSelectOption_83_3:import18.NgSelectOption;
-  _NgSelectMultipleOption_83_4:import19.NgSelectMultipleOption;
+  _NgSelectOption_83_3:import25.Wrapper_NgSelectOption;
+  _NgSelectMultipleOption_83_4:import26.Wrapper_NgSelectMultipleOption;
   _text_84:any;
   _text_85:any;
   _text_86:any;
@@ -426,7 +449,7 @@ class _View_TicketComponent0 extends import3.DebugAppView<import1.TicketComponen
   _anchor_117:any;
   /*private*/ _appEl_117:import4.AppElement;
   _TemplateRef_117_5:any;
-  _NgIf_117_6:import22.NgIf;
+  _NgIf_117_6:import28.Wrapper_NgIf;
   _text_118:any;
   _text_119:any;
   _text_120:any;
@@ -449,226 +472,149 @@ class _View_TicketComponent0 extends import3.DebugAppView<import1.TicketComponen
   _text_137:any;
   _text_138:any;
   _text_139:any;
-  /*private*/ _expr_3:any;
-  /*private*/ _expr_4:any;
-  /*private*/ _expr_5:any;
-  /*private*/ _expr_6:any;
-  /*private*/ _expr_7:any;
-  /*private*/ _expr_8:any;
-  /*private*/ _expr_10:any;
-  /*private*/ _expr_11:any;
-  /*private*/ _expr_12:any;
-  /*private*/ _expr_13:any;
-  /*private*/ _expr_14:any;
-  /*private*/ _expr_15:any;
-  /*private*/ _expr_16:any;
-  /*private*/ _expr_17:any;
-  /*private*/ _expr_18:any;
-  /*private*/ _expr_19:any;
-  /*private*/ _expr_20:any;
-  /*private*/ _expr_21:any;
-  /*private*/ _expr_22:any;
-  /*private*/ _expr_23:any;
-  /*private*/ _expr_24:any;
-  /*private*/ _expr_25:any;
-  /*private*/ _expr_26:any;
-  /*private*/ _expr_27:any;
-  /*private*/ _expr_28:any;
-  /*private*/ _expr_29:any;
-  /*private*/ _expr_30:any;
-  /*private*/ _expr_31:any;
-  /*private*/ _expr_32:any;
-  /*private*/ _expr_33:any;
-  /*private*/ _expr_34:any;
-  /*private*/ _expr_35:any;
-  /*private*/ _expr_36:any;
-  /*private*/ _expr_37:any;
+  /*private*/ _expr_174:any;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement) {
     super(_View_TicketComponent0,renderType_TicketComponent,import7.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_TicketComponent0);
+    this._expr_174 = import8.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import4.AppElement {
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
-    this._el_0 = this.renderer.createElement(parentRenderNode,'div',this.debug(0,0,0));
-    this.renderer.setElementAttribute(this._el_0,'class','row');
+    this._el_0 = import5.createRenderElement(this.renderer,parentRenderNode,'div',new import5.InlineArray2(2,'class','row'),this.debug(0,0,0));
     this._text_1 = this.renderer.createText(this._el_0,'\n    ',this.debug(1,0,17));
-    this._el_2 = this.renderer.createElement(this._el_0,'div',this.debug(2,1,4));
-    this.renderer.setElementAttribute(this._el_2,'class','ticket-action-container card-panel');
+    this._el_2 = import5.createRenderElement(this.renderer,this._el_0,'div',new import5.InlineArray2(2,'class','ticket-action-container card-panel'),this.debug(2,1,4));
     this._text_3 = this.renderer.createText(this._el_2,'\n        ',this.debug(3,1,52));
-    this._el_4 = this.renderer.createElement(this._el_2,'div',this.debug(4,2,8));
-    this.renderer.setElementAttribute(this._el_4,'class','col_subscriber-search input-field');
+    this._el_4 = import5.createRenderElement(this.renderer,this._el_2,'div',new import5.InlineArray2(2,'class','col_subscriber-search input-field'),this.debug(4,2,8));
     this._text_5 = this.renderer.createText(this._el_4,'\n            ',this.debug(5,2,55));
-    this._el_6 = this.renderer.createElement(this._el_4,'form',this.debug(6,3,12));
-    this.renderer.setElementAttribute(this._el_6,'autocomplete','off');
-    this._NgForm_6_3 = new import15.NgForm((null as any),(null as any));
-    this._ControlContainer_6_4 = this._NgForm_6_3;
-    this._NgControlStatusGroup_6_5 = new import17.NgControlStatusGroup(this._ControlContainer_6_4);
+    this._el_6 = import5.createRenderElement(this.renderer,this._el_4,'form',new import5.InlineArray2(2,'autocomplete','off'),this.debug(6,3,12));
+    this._NgForm_6_3 = new import23.Wrapper_NgForm((null as any),(null as any));
+    this._ControlContainer_6_4 = this._NgForm_6_3.context;
+    this._NgControlStatusGroup_6_5 = new import24.Wrapper_NgControlStatusGroup(this._ControlContainer_6_4);
     this._text_7 = this.renderer.createText(this._el_6,'\n                ',this.debug(7,3,127));
-    this._el_8 = this.renderer.createElement(this._el_6,'input',this.debug(8,4,16));
-    this.renderer.setElementAttribute(this._el_8,'autofocus','');
-    this.renderer.setElementAttribute(this._el_8,'class','validate');
-    this.renderer.setElementAttribute(this._el_8,'id','subscriberID');
-    this.renderer.setElementAttribute(this._el_8,'placeholder','Subscriber ID');
-    this.renderer.setElementAttribute(this._el_8,'type','text');
+    this._el_8 = import5.createRenderElement(this.renderer,this._el_6,'input',new import5.InlineArray16(10,'autofocus','','class','validate','id','subscriberID','placeholder','Subscriber ID','type','text'),this.debug(8,4,16));
     this._text_9 = this.renderer.createText(this._el_6,'\n                ',this.debug(9,8,51));
     this._text_10 = this.renderer.createText(this._el_6,'\n                ',this.debug(10,9,70));
-    this._el_11 = this.renderer.createElement(this._el_6,'i',this.debug(11,10,16));
-    this.renderer.setElementAttribute(this._el_11,'class','material-icons align-right');
-    this.renderer.setElementAttribute(this._el_11,'name','action');
-    this.renderer.setElementAttribute(this._el_11,'type','submit');
+    this._el_11 = import5.createRenderElement(this.renderer,this._el_6,'i',new import5.InlineArray8(6,'class','material-icons align-right','name','action','type','submit'),this.debug(11,10,16));
     this._text_12 = this.renderer.createText(this._el_11,'search',this.debug(12,10,82));
     this._text_13 = this.renderer.createText(this._el_6,'\n                ',this.debug(13,10,92));
     this._text_14 = this.renderer.createText(this._el_6,'\n                ',this.debug(14,11,102));
     this._text_15 = this.renderer.createText(this._el_6,'\n                ',this.debug(15,12,65));
     this._text_16 = this.renderer.createText(this._el_6,'\n            ',this.debug(16,13,32));
     this._text_17 = this.renderer.createText(this._el_4,'\n            ',this.debug(17,14,19));
-    this._el_18 = this.renderer.createElement(this._el_4,'div',this.debug(18,15,12));
-    this.renderer.setElementAttribute(this._el_18,'class','input-field');
+    this._el_18 = import5.createRenderElement(this.renderer,this._el_4,'div',new import5.InlineArray2(2,'class','input-field'),this.debug(18,15,12));
     this._text_19 = this.renderer.createText(this._el_18,'\n                ',this.debug(19,15,37));
-    this._el_20 = this.renderer.createElement(this._el_18,'select',this.debug(20,16,16));
+    this._el_20 = import5.createRenderElement(this.renderer,this._el_18,'select',import5.EMPTY_INLINE_ARRAY,this.debug(20,16,16));
     this._text_21 = this.renderer.createText(this._el_20,'\n                    ',this.debug(21,16,24));
-    this._el_22 = this.renderer.createElement(this._el_20,'option',this.debug(22,17,20));
-    this.renderer.setElementAttribute(this._el_22,'disabled','');
-    this.renderer.setElementAttribute(this._el_22,'selected','');
-    this.renderer.setElementAttribute(this._el_22,'value','');
-    this._NgSelectOption_22_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_22),this.renderer,(null as any));
-    this._NgSelectMultipleOption_22_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_22),this.renderer,(null as any));
+    this._el_22 = import5.createRenderElement(this.renderer,this._el_20,'option',new import5.InlineArray8(6,'disabled','','selected','','value',''),this.debug(22,17,20));
+    this._NgSelectOption_22_3 = new import25.Wrapper_NgSelectOption(new import29.ElementRef(this._el_22),this.renderer,(null as any));
+    this._NgSelectMultipleOption_22_4 = new import26.Wrapper_NgSelectMultipleOption(new import29.ElementRef(this._el_22),this.renderer,(null as any));
     this._text_23 = this.renderer.createText(this._el_22,'Contact Type',this.debug(23,17,55));
     this._text_24 = this.renderer.createText(this._el_20,'\n                    ',this.debug(24,17,76));
-    this._el_25 = this.renderer.createElement(this._el_20,'option',this.debug(25,18,20));
-    this.renderer.setElementAttribute(this._el_25,'value','1');
-    this._NgSelectOption_25_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_25),this.renderer,(null as any));
-    this._NgSelectMultipleOption_25_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_25),this.renderer,(null as any));
+    this._el_25 = import5.createRenderElement(this.renderer,this._el_20,'option',new import5.InlineArray2(2,'value','1'),this.debug(25,18,20));
+    this._NgSelectOption_25_3 = new import25.Wrapper_NgSelectOption(new import29.ElementRef(this._el_25),this.renderer,(null as any));
+    this._NgSelectMultipleOption_25_4 = new import26.Wrapper_NgSelectMultipleOption(new import29.ElementRef(this._el_25),this.renderer,(null as any));
     this._text_26 = this.renderer.createText(this._el_25,'Phone Call',this.debug(26,18,38));
     this._text_27 = this.renderer.createText(this._el_20,'\n                    ',this.debug(27,18,57));
-    this._el_28 = this.renderer.createElement(this._el_20,'option',this.debug(28,19,20));
-    this.renderer.setElementAttribute(this._el_28,'value','2');
-    this._NgSelectOption_28_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_28),this.renderer,(null as any));
-    this._NgSelectMultipleOption_28_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_28),this.renderer,(null as any));
+    this._el_28 = import5.createRenderElement(this.renderer,this._el_20,'option',new import5.InlineArray2(2,'value','2'),this.debug(28,19,20));
+    this._NgSelectOption_28_3 = new import25.Wrapper_NgSelectOption(new import29.ElementRef(this._el_28),this.renderer,(null as any));
+    this._NgSelectMultipleOption_28_4 = new import26.Wrapper_NgSelectMultipleOption(new import29.ElementRef(this._el_28),this.renderer,(null as any));
     this._text_29 = this.renderer.createText(this._el_28,'Email',this.debug(29,19,38));
     this._text_30 = this.renderer.createText(this._el_20,'\n                    ',this.debug(30,19,52));
-    this._el_31 = this.renderer.createElement(this._el_20,'option',this.debug(31,20,20));
-    this.renderer.setElementAttribute(this._el_31,'value','3');
-    this._NgSelectOption_31_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_31),this.renderer,(null as any));
-    this._NgSelectMultipleOption_31_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_31),this.renderer,(null as any));
+    this._el_31 = import5.createRenderElement(this.renderer,this._el_20,'option',new import5.InlineArray2(2,'value','3'),this.debug(31,20,20));
+    this._NgSelectOption_31_3 = new import25.Wrapper_NgSelectOption(new import29.ElementRef(this._el_31),this.renderer,(null as any));
+    this._NgSelectMultipleOption_31_4 = new import26.Wrapper_NgSelectMultipleOption(new import29.ElementRef(this._el_31),this.renderer,(null as any));
     this._text_32 = this.renderer.createText(this._el_31,'Walk In',this.debug(32,20,38));
     this._text_33 = this.renderer.createText(this._el_20,'\n                ',this.debug(33,20,54));
     this._text_34 = this.renderer.createText(this._el_18,'\n            ',this.debug(34,21,25));
     this._text_35 = this.renderer.createText(this._el_4,'\n        ',this.debug(35,22,18));
     this._text_36 = this.renderer.createText(this._el_2,' ',this.debug(36,23,14));
     this._text_37 = this.renderer.createText(this._el_2,'\n        ',this.debug(37,23,44));
-    this._el_38 = this.renderer.createElement(this._el_2,'div',this.debug(38,24,8));
-    this.renderer.setElementAttribute(this._el_38,'class','col_problem-statement');
+    this._el_38 = import5.createRenderElement(this.renderer,this._el_2,'div',new import5.InlineArray2(2,'class','col_problem-statement'),this.debug(38,24,8));
     this._text_39 = this.renderer.createText(this._el_38,'\n            ',this.debug(39,24,43));
-    this._el_40 = this.renderer.createElement(this._el_38,'ckeditor',this.debug(40,25,12));
+    this._el_40 = import5.createRenderElement(this.renderer,this._el_38,'ckeditor',import5.EMPTY_INLINE_ARRAY,this.debug(40,25,12));
     this._appEl_40 = new import4.AppElement(40,38,this,this._el_40);
-    var compView_40:any = import24.viewFactory_CKEditor0(this.viewUtils,this.injector(40),this._appEl_40);
-    this._CKEditor_40_4 = new import20.CKEditor();
-    this._appEl_40.initComponent(this._CKEditor_40_4,[],compView_40);
-    compView_40.create(this._CKEditor_40_4,[],(null as any));
+    var compView_40:any = import27.viewFactory_CKEditor0(this.viewUtils,this.injector(40),this._appEl_40);
+    this._CKEditor_40_4 = new import27.Wrapper_CKEditor();
+    this._appEl_40.initComponent(this._CKEditor_40_4.context,([] as any[]),compView_40);
+    compView_40.create(this._CKEditor_40_4.context,([] as any[]),(null as any));
     this._text_41 = this.renderer.createText(this._el_38,'\n        ',this.debug(41,25,85));
     this._text_42 = this.renderer.createText(this._el_2,' ',this.debug(42,26,14));
     this._text_43 = this.renderer.createText(this._el_2,'\n\n        ',this.debug(43,26,33));
-    this._el_44 = this.renderer.createElement(this._el_2,'div',this.debug(44,28,8));
-    this.renderer.setElementAttribute(this._el_44,'class','col_solution');
+    this._el_44 = import5.createRenderElement(this.renderer,this._el_2,'div',new import5.InlineArray2(2,'class','col_solution'),this.debug(44,28,8));
     this._text_45 = this.renderer.createText(this._el_44,'\n            ',this.debug(45,28,34));
-    this._el_46 = this.renderer.createElement(this._el_44,'ckeditor',this.debug(46,29,12));
+    this._el_46 = import5.createRenderElement(this.renderer,this._el_44,'ckeditor',import5.EMPTY_INLINE_ARRAY,this.debug(46,29,12));
     this._appEl_46 = new import4.AppElement(46,44,this,this._el_46);
-    var compView_46:any = import24.viewFactory_CKEditor0(this.viewUtils,this.injector(46),this._appEl_46);
-    this._CKEditor_46_4 = new import20.CKEditor();
-    this._appEl_46.initComponent(this._CKEditor_46_4,[],compView_46);
-    compView_46.create(this._CKEditor_46_4,[],(null as any));
+    var compView_46:any = import27.viewFactory_CKEditor0(this.viewUtils,this.injector(46),this._appEl_46);
+    this._CKEditor_46_4 = new import27.Wrapper_CKEditor();
+    this._appEl_46.initComponent(this._CKEditor_46_4.context,([] as any[]),compView_46);
+    compView_46.create(this._CKEditor_46_4.context,([] as any[]),(null as any));
     this._text_47 = this.renderer.createText(this._el_44,'\n\n        ',this.debug(47,29,76));
     this._text_48 = this.renderer.createText(this._el_2,' ',this.debug(48,31,14));
     this._text_49 = this.renderer.createText(this._el_2,'\n        ',this.debug(49,31,33));
-    this._el_50 = this.renderer.createElement(this._el_2,'div',this.debug(50,32,8));
-    this.renderer.setElementAttribute(this._el_50,'class','col_action-buttons');
+    this._el_50 = import5.createRenderElement(this.renderer,this._el_2,'div',new import5.InlineArray2(2,'class','col_action-buttons'),this.debug(50,32,8));
     this._text_51 = this.renderer.createText(this._el_50,'\n            ',this.debug(51,32,40));
-    this._el_52 = this.renderer.createElement(this._el_50,'div',this.debug(52,33,12));
-    this.renderer.setElementAttribute(this._el_52,'class','input-field');
+    this._el_52 = import5.createRenderElement(this.renderer,this._el_50,'div',new import5.InlineArray2(2,'class','input-field'),this.debug(52,33,12));
     this._text_53 = this.renderer.createText(this._el_52,'\n                ',this.debug(53,33,37));
-    this._el_54 = this.renderer.createElement(this._el_52,'select',this.debug(54,34,16));
+    this._el_54 = import5.createRenderElement(this.renderer,this._el_52,'select',import5.EMPTY_INLINE_ARRAY,this.debug(54,34,16));
     this._text_55 = this.renderer.createText(this._el_54,'\n                    ',this.debug(55,34,24));
-    this._el_56 = this.renderer.createElement(this._el_54,'option',this.debug(56,35,20));
-    this.renderer.setElementAttribute(this._el_56,'disabled','');
-    this.renderer.setElementAttribute(this._el_56,'selected','');
-    this.renderer.setElementAttribute(this._el_56,'value','');
-    this._NgSelectOption_56_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_56),this.renderer,(null as any));
-    this._NgSelectMultipleOption_56_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_56),this.renderer,(null as any));
+    this._el_56 = import5.createRenderElement(this.renderer,this._el_54,'option',new import5.InlineArray8(6,'disabled','','selected','','value',''),this.debug(56,35,20));
+    this._NgSelectOption_56_3 = new import25.Wrapper_NgSelectOption(new import29.ElementRef(this._el_56),this.renderer,(null as any));
+    this._NgSelectMultipleOption_56_4 = new import26.Wrapper_NgSelectMultipleOption(new import29.ElementRef(this._el_56),this.renderer,(null as any));
     this._text_57 = this.renderer.createText(this._el_56,'Status',this.debug(57,35,55));
     this._text_58 = this.renderer.createText(this._el_54,'\n                    ',this.debug(58,35,70));
-    this._el_59 = this.renderer.createElement(this._el_54,'option',this.debug(59,36,20));
-    this.renderer.setElementAttribute(this._el_59,'value','1');
-    this._NgSelectOption_59_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_59),this.renderer,(null as any));
-    this._NgSelectMultipleOption_59_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_59),this.renderer,(null as any));
+    this._el_59 = import5.createRenderElement(this.renderer,this._el_54,'option',new import5.InlineArray2(2,'value','1'),this.debug(59,36,20));
+    this._NgSelectOption_59_3 = new import25.Wrapper_NgSelectOption(new import29.ElementRef(this._el_59),this.renderer,(null as any));
+    this._NgSelectMultipleOption_59_4 = new import26.Wrapper_NgSelectMultipleOption(new import29.ElementRef(this._el_59),this.renderer,(null as any));
     this._text_60 = this.renderer.createText(this._el_59,'Phone Call',this.debug(60,36,38));
     this._text_61 = this.renderer.createText(this._el_54,'\n                    ',this.debug(61,36,57));
-    this._el_62 = this.renderer.createElement(this._el_54,'option',this.debug(62,37,20));
-    this.renderer.setElementAttribute(this._el_62,'value','2');
-    this._NgSelectOption_62_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_62),this.renderer,(null as any));
-    this._NgSelectMultipleOption_62_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_62),this.renderer,(null as any));
+    this._el_62 = import5.createRenderElement(this.renderer,this._el_54,'option',new import5.InlineArray2(2,'value','2'),this.debug(62,37,20));
+    this._NgSelectOption_62_3 = new import25.Wrapper_NgSelectOption(new import29.ElementRef(this._el_62),this.renderer,(null as any));
+    this._NgSelectMultipleOption_62_4 = new import26.Wrapper_NgSelectMultipleOption(new import29.ElementRef(this._el_62),this.renderer,(null as any));
     this._text_63 = this.renderer.createText(this._el_62,'Email',this.debug(63,37,38));
     this._text_64 = this.renderer.createText(this._el_54,'\n                    ',this.debug(64,37,52));
-    this._el_65 = this.renderer.createElement(this._el_54,'option',this.debug(65,38,20));
-    this.renderer.setElementAttribute(this._el_65,'value','3');
-    this._NgSelectOption_65_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_65),this.renderer,(null as any));
-    this._NgSelectMultipleOption_65_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_65),this.renderer,(null as any));
+    this._el_65 = import5.createRenderElement(this.renderer,this._el_54,'option',new import5.InlineArray2(2,'value','3'),this.debug(65,38,20));
+    this._NgSelectOption_65_3 = new import25.Wrapper_NgSelectOption(new import29.ElementRef(this._el_65),this.renderer,(null as any));
+    this._NgSelectMultipleOption_65_4 = new import26.Wrapper_NgSelectMultipleOption(new import29.ElementRef(this._el_65),this.renderer,(null as any));
     this._text_66 = this.renderer.createText(this._el_65,'Walk In',this.debug(66,38,38));
     this._text_67 = this.renderer.createText(this._el_54,'\n                ',this.debug(67,38,54));
     this._text_68 = this.renderer.createText(this._el_52,'\n            ',this.debug(68,39,25));
     this._text_69 = this.renderer.createText(this._el_50,'\n            ',this.debug(69,40,18));
-    this._el_70 = this.renderer.createElement(this._el_50,'div',this.debug(70,41,12));
-    this.renderer.setElementAttribute(this._el_70,'class','input-field');
+    this._el_70 = import5.createRenderElement(this.renderer,this._el_50,'div',new import5.InlineArray2(2,'class','input-field'),this.debug(70,41,12));
     this._text_71 = this.renderer.createText(this._el_70,'\n                ',this.debug(71,41,37));
-    this._el_72 = this.renderer.createElement(this._el_70,'select',this.debug(72,42,16));
+    this._el_72 = import5.createRenderElement(this.renderer,this._el_70,'select',import5.EMPTY_INLINE_ARRAY,this.debug(72,42,16));
     this._text_73 = this.renderer.createText(this._el_72,'\n                    ',this.debug(73,42,24));
-    this._el_74 = this.renderer.createElement(this._el_72,'option',this.debug(74,43,20));
-    this.renderer.setElementAttribute(this._el_74,'disabled','');
-    this.renderer.setElementAttribute(this._el_74,'selected','');
-    this.renderer.setElementAttribute(this._el_74,'value','');
-    this._NgSelectOption_74_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_74),this.renderer,(null as any));
-    this._NgSelectMultipleOption_74_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_74),this.renderer,(null as any));
+    this._el_74 = import5.createRenderElement(this.renderer,this._el_72,'option',new import5.InlineArray8(6,'disabled','','selected','','value',''),this.debug(74,43,20));
+    this._NgSelectOption_74_3 = new import25.Wrapper_NgSelectOption(new import29.ElementRef(this._el_74),this.renderer,(null as any));
+    this._NgSelectMultipleOption_74_4 = new import26.Wrapper_NgSelectMultipleOption(new import29.ElementRef(this._el_74),this.renderer,(null as any));
     this._text_75 = this.renderer.createText(this._el_74,'Assignee',this.debug(75,43,55));
     this._text_76 = this.renderer.createText(this._el_72,'\n                    ',this.debug(76,43,72));
-    this._el_77 = this.renderer.createElement(this._el_72,'option',this.debug(77,44,20));
-    this.renderer.setElementAttribute(this._el_77,'value','1');
-    this._NgSelectOption_77_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_77),this.renderer,(null as any));
-    this._NgSelectMultipleOption_77_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_77),this.renderer,(null as any));
+    this._el_77 = import5.createRenderElement(this.renderer,this._el_72,'option',new import5.InlineArray2(2,'value','1'),this.debug(77,44,20));
+    this._NgSelectOption_77_3 = new import25.Wrapper_NgSelectOption(new import29.ElementRef(this._el_77),this.renderer,(null as any));
+    this._NgSelectMultipleOption_77_4 = new import26.Wrapper_NgSelectMultipleOption(new import29.ElementRef(this._el_77),this.renderer,(null as any));
     this._text_78 = this.renderer.createText(this._el_77,'Phone Call',this.debug(78,44,38));
     this._text_79 = this.renderer.createText(this._el_72,'\n                    ',this.debug(79,44,57));
-    this._el_80 = this.renderer.createElement(this._el_72,'option',this.debug(80,45,20));
-    this.renderer.setElementAttribute(this._el_80,'value','2');
-    this._NgSelectOption_80_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_80),this.renderer,(null as any));
-    this._NgSelectMultipleOption_80_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_80),this.renderer,(null as any));
+    this._el_80 = import5.createRenderElement(this.renderer,this._el_72,'option',new import5.InlineArray2(2,'value','2'),this.debug(80,45,20));
+    this._NgSelectOption_80_3 = new import25.Wrapper_NgSelectOption(new import29.ElementRef(this._el_80),this.renderer,(null as any));
+    this._NgSelectMultipleOption_80_4 = new import26.Wrapper_NgSelectMultipleOption(new import29.ElementRef(this._el_80),this.renderer,(null as any));
     this._text_81 = this.renderer.createText(this._el_80,'Email',this.debug(81,45,38));
     this._text_82 = this.renderer.createText(this._el_72,'\n                    ',this.debug(82,45,52));
-    this._el_83 = this.renderer.createElement(this._el_72,'option',this.debug(83,46,20));
-    this.renderer.setElementAttribute(this._el_83,'value','3');
-    this._NgSelectOption_83_3 = new import18.NgSelectOption(new import23.ElementRef(this._el_83),this.renderer,(null as any));
-    this._NgSelectMultipleOption_83_4 = new import19.NgSelectMultipleOption(new import23.ElementRef(this._el_83),this.renderer,(null as any));
+    this._el_83 = import5.createRenderElement(this.renderer,this._el_72,'option',new import5.InlineArray2(2,'value','3'),this.debug(83,46,20));
+    this._NgSelectOption_83_3 = new import25.Wrapper_NgSelectOption(new import29.ElementRef(this._el_83),this.renderer,(null as any));
+    this._NgSelectMultipleOption_83_4 = new import26.Wrapper_NgSelectMultipleOption(new import29.ElementRef(this._el_83),this.renderer,(null as any));
     this._text_84 = this.renderer.createText(this._el_83,'Walk In',this.debug(84,46,38));
     this._text_85 = this.renderer.createText(this._el_72,'\n                ',this.debug(85,46,54));
     this._text_86 = this.renderer.createText(this._el_70,'\n            ',this.debug(86,47,25));
     this._text_87 = this.renderer.createText(this._el_50,'\n            ',this.debug(87,48,18));
-    this._el_88 = this.renderer.createElement(this._el_50,'div',this.debug(88,49,12));
-    this.renderer.setElementAttribute(this._el_88,'class','action-buttons_container');
+    this._el_88 = import5.createRenderElement(this.renderer,this._el_50,'div',new import5.InlineArray2(2,'class','action-buttons_container'),this.debug(88,49,12));
     this._text_89 = this.renderer.createText(this._el_88,'\n                ',this.debug(89,49,50));
-    this._el_90 = this.renderer.createElement(this._el_88,'button',this.debug(90,50,16));
-    this.renderer.setElementAttribute(this._el_90,'class','green btn waves-effect waves-light action-button');
-    this.renderer.setElementAttribute(this._el_90,'name','action');
-    this.renderer.setElementAttribute(this._el_90,'type','submit');
+    this._el_90 = import5.createRenderElement(this.renderer,this._el_88,'button',new import5.InlineArray8(6,'class','green btn waves-effect waves-light action-button','name','action','type','submit'),this.debug(90,50,16));
     this._text_91 = this.renderer.createText(this._el_90,'\n                    Resolve\n                    ',this.debug(91,50,109));
-    this._el_92 = this.renderer.createElement(this._el_90,'i',this.debug(92,52,20));
-    this.renderer.setElementAttribute(this._el_92,'class','material-icons right');
+    this._el_92 = import5.createRenderElement(this.renderer,this._el_90,'i',new import5.InlineArray2(2,'class','material-icons right'),this.debug(92,52,20));
     this._text_93 = this.renderer.createText(this._el_92,'check',this.debug(93,52,52));
     this._text_94 = this.renderer.createText(this._el_90,'\n                ',this.debug(94,52,61));
     this._text_95 = this.renderer.createText(this._el_88,'\n                ',this.debug(95,53,25));
-    this._el_96 = this.renderer.createElement(this._el_88,'button',this.debug(96,54,16));
-    this.renderer.setElementAttribute(this._el_96,'class','orange btn waves-effect waves-light action-button');
-    this.renderer.setElementAttribute(this._el_96,'name','action');
-    this.renderer.setElementAttribute(this._el_96,'type','submit');
+    this._el_96 = import5.createRenderElement(this.renderer,this._el_88,'button',new import5.InlineArray8(6,'class','orange btn waves-effect waves-light action-button','name','action','type','submit'),this.debug(96,54,16));
     this._text_97 = this.renderer.createText(this._el_96,'\n                    Hold\n                    ',this.debug(97,54,110));
-    this._el_98 = this.renderer.createElement(this._el_96,'i',this.debug(98,56,20));
-    this.renderer.setElementAttribute(this._el_98,'class','material-icons right');
+    this._el_98 = import5.createRenderElement(this.renderer,this._el_96,'i',new import5.InlineArray2(2,'class','material-icons right'),this.debug(98,56,20));
     this._text_99 = this.renderer.createText(this._el_98,'pause',this.debug(99,56,52));
     this._text_100 = this.renderer.createText(this._el_96,'\n                ',this.debug(100,56,61));
     this._text_101 = this.renderer.createText(this._el_88,'\n\n            ',this.debug(101,57,25));
@@ -678,43 +624,36 @@ class _View_TicketComponent0 extends import3.DebugAppView<import1.TicketComponen
     this._text_105 = this.renderer.createText(this._el_0,' ',this.debug(105,61,10));
     this._text_106 = this.renderer.createText(this._el_0,'\n',this.debug(106,61,57));
     this._text_107 = this.renderer.createText(parentRenderNode,'\n\n',this.debug(107,62,6));
-    this._el_108 = this.renderer.createElement(parentRenderNode,'div',this.debug(108,64,0));
-    this.renderer.setElementAttribute(this._el_108,'class','row');
+    this._el_108 = import5.createRenderElement(this.renderer,parentRenderNode,'div',new import5.InlineArray2(2,'class','row'),this.debug(108,64,0));
     this._text_109 = this.renderer.createText(this._el_108,'\n    ',this.debug(109,64,17));
-    this._el_110 = this.renderer.createElement(this._el_108,'div',this.debug(110,65,4));
-    this.renderer.setElementAttribute(this._el_110,'class','col s4');
+    this._el_110 = import5.createRenderElement(this.renderer,this._el_108,'div',new import5.InlineArray2(2,'class','col s4'),this.debug(110,65,4));
     this._text_111 = this.renderer.createText(this._el_110,'\n        ',this.debug(111,65,24));
-    this._el_112 = this.renderer.createElement(this._el_110,'div',this.debug(112,66,8));
-    this.renderer.setElementAttribute(this._el_112,'class','card-panel');
+    this._el_112 = import5.createRenderElement(this.renderer,this._el_110,'div',new import5.InlineArray2(2,'class','card-panel'),this.debug(112,66,8));
     this._text_113 = this.renderer.createText(this._el_112,'\n            ',this.debug(113,66,32));
-    this._el_114 = this.renderer.createElement(this._el_112,'span',this.debug(114,67,12));
+    this._el_114 = import5.createRenderElement(this.renderer,this._el_112,'span',import5.EMPTY_INLINE_ARRAY,this.debug(114,67,12));
     this._text_115 = this.renderer.createText(this._el_114,'\n                I am a very simple card. I am good at containing small bits of information.\n                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\n            ',this.debug(115,67,18));
     this._text_116 = this.renderer.createText(this._el_112,'\n            ',this.debug(116,70,19));
     this._anchor_117 = this.renderer.createTemplateAnchor(this._el_112,this.debug(117,71,12));
     this._appEl_117 = new import4.AppElement(117,112,this,this._anchor_117);
     this._TemplateRef_117_5 = new import21.TemplateRef_(this._appEl_117,viewFactory_TicketComponent1);
-    this._NgIf_117_6 = new import22.NgIf(this._appEl_117.vcRef,this._TemplateRef_117_5);
+    this._NgIf_117_6 = new import28.Wrapper_NgIf(this._appEl_117.vcRef,this._TemplateRef_117_5);
     this._text_118 = this.renderer.createText(this._el_112,'\n        ',this.debug(118,71,96));
     this._text_119 = this.renderer.createText(this._el_110,'\n    ',this.debug(119,72,14));
     this._text_120 = this.renderer.createText(this._el_108,'\n    ',this.debug(120,73,10));
-    this._el_121 = this.renderer.createElement(this._el_108,'div',this.debug(121,74,4));
-    this.renderer.setElementAttribute(this._el_121,'class','col s4');
+    this._el_121 = import5.createRenderElement(this.renderer,this._el_108,'div',new import5.InlineArray2(2,'class','col s4'),this.debug(121,74,4));
     this._text_122 = this.renderer.createText(this._el_121,'\n        ',this.debug(122,74,24));
-    this._el_123 = this.renderer.createElement(this._el_121,'div',this.debug(123,75,8));
-    this.renderer.setElementAttribute(this._el_123,'class','card-panel');
+    this._el_123 = import5.createRenderElement(this.renderer,this._el_121,'div',new import5.InlineArray2(2,'class','card-panel'),this.debug(123,75,8));
     this._text_124 = this.renderer.createText(this._el_123,'\n            ',this.debug(124,75,32));
-    this._el_125 = this.renderer.createElement(this._el_123,'span',this.debug(125,76,12));
+    this._el_125 = import5.createRenderElement(this.renderer,this._el_123,'span',import5.EMPTY_INLINE_ARRAY,this.debug(125,76,12));
     this._text_126 = this.renderer.createText(this._el_125,'\n                I am a very simple card. I am good at containing small bits of information.\n                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\n            ',this.debug(126,76,18));
     this._text_127 = this.renderer.createText(this._el_123,'\n        ',this.debug(127,79,19));
     this._text_128 = this.renderer.createText(this._el_121,'\n    ',this.debug(128,80,14));
     this._text_129 = this.renderer.createText(this._el_108,'\n    ',this.debug(129,81,10));
-    this._el_130 = this.renderer.createElement(this._el_108,'div',this.debug(130,82,4));
-    this.renderer.setElementAttribute(this._el_130,'class','col s4');
+    this._el_130 = import5.createRenderElement(this.renderer,this._el_108,'div',new import5.InlineArray2(2,'class','col s4'),this.debug(130,82,4));
     this._text_131 = this.renderer.createText(this._el_130,'\n        ',this.debug(131,82,24));
-    this._el_132 = this.renderer.createElement(this._el_130,'div',this.debug(132,83,8));
-    this.renderer.setElementAttribute(this._el_132,'class','card-panel');
+    this._el_132 = import5.createRenderElement(this.renderer,this._el_130,'div',new import5.InlineArray2(2,'class','card-panel'),this.debug(132,83,8));
     this._text_133 = this.renderer.createText(this._el_132,'\n            ',this.debug(133,83,32));
-    this._el_134 = this.renderer.createElement(this._el_132,'span',this.debug(134,84,12));
+    this._el_134 = import5.createRenderElement(this.renderer,this._el_132,'span',import5.EMPTY_INLINE_ARRAY,this.debug(134,84,12));
     this._text_135 = this.renderer.createText(this._el_134,'\n                I am a very simple card. I am good at containing small bits of information.\n                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\n            ',this.debug(135,84,18));
     this._text_136 = this.renderer.createText(this._el_132,'\n        ',this.debug(136,87,19));
     this._text_137 = this.renderer.createText(this._el_130,'\n    ',this.debug(137,88,14));
@@ -723,43 +662,9 @@ class _View_TicketComponent0 extends import3.DebugAppView<import1.TicketComponen
     var disposable_0:Function = this.renderer.listen(this._el_6,'ngSubmit',this.eventHandler(this._handle_ngSubmit_6_0.bind(this)));
     var disposable_1:Function = this.renderer.listen(this._el_6,'submit',this.eventHandler(this._handle_submit_6_1.bind(this)));
     var disposable_2:Function = this.renderer.listen(this._el_6,'reset',this.eventHandler(this._handle_reset_6_2.bind(this)));
-    const subscription_0:any = this._NgForm_6_3.ngSubmit.subscribe(this.eventHandler(this._handle_ngSubmit_6_0.bind(this)));
-    this._expr_3 = import8.UNINITIALIZED;
-    this._expr_4 = import8.UNINITIALIZED;
-    this._expr_5 = import8.UNINITIALIZED;
-    this._expr_6 = import8.UNINITIALIZED;
-    this._expr_7 = import8.UNINITIALIZED;
-    this._expr_8 = import8.UNINITIALIZED;
-    this._expr_10 = import8.UNINITIALIZED;
+    const subscription_0:any = this._NgForm_6_3.context.ngSubmit.subscribe(this.eventHandler(this._handle_ngSubmit_6_0.bind(this)));
     var disposable_3:Function = this.renderer.listen(this._el_8,'input',this.eventHandler(this._handle_input_8_0.bind(this)));
-    this._expr_11 = import8.UNINITIALIZED;
-    this._expr_12 = import8.UNINITIALIZED;
-    this._expr_13 = import8.UNINITIALIZED;
-    this._expr_14 = import8.UNINITIALIZED;
-    this._expr_15 = import8.UNINITIALIZED;
-    this._expr_16 = import8.UNINITIALIZED;
-    this._expr_17 = import8.UNINITIALIZED;
-    this._expr_18 = import8.UNINITIALIZED;
-    this._expr_19 = import8.UNINITIALIZED;
-    this._expr_20 = import8.UNINITIALIZED;
-    this._expr_21 = import8.UNINITIALIZED;
-    this._expr_22 = import8.UNINITIALIZED;
-    this._expr_23 = import8.UNINITIALIZED;
-    this._expr_24 = import8.UNINITIALIZED;
-    this._expr_25 = import8.UNINITIALIZED;
-    this._expr_26 = import8.UNINITIALIZED;
-    this._expr_27 = import8.UNINITIALIZED;
-    this._expr_28 = import8.UNINITIALIZED;
-    this._expr_29 = import8.UNINITIALIZED;
-    this._expr_30 = import8.UNINITIALIZED;
-    this._expr_31 = import8.UNINITIALIZED;
-    this._expr_32 = import8.UNINITIALIZED;
-    this._expr_33 = import8.UNINITIALIZED;
-    this._expr_34 = import8.UNINITIALIZED;
-    this._expr_35 = import8.UNINITIALIZED;
-    this._expr_36 = import8.UNINITIALIZED;
-    this._expr_37 = import8.UNINITIALIZED;
-    this.init([],[
+    this.init(([] as any[]),[
       this._el_0,
       this._text_1,
       this._el_2,
@@ -911,350 +816,289 @@ class _View_TicketComponent0 extends import3.DebugAppView<import1.TicketComponen
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import15.NgForm) && ((6 <= requestNodeIndex) && (requestNodeIndex <= 16)))) { return this._NgForm_6_3; }
+    if (((token === import15.NgForm) && ((6 <= requestNodeIndex) && (requestNodeIndex <= 16)))) { return this._NgForm_6_3.context; }
     if (((token === import16.ControlContainer) && ((6 <= requestNodeIndex) && (requestNodeIndex <= 16)))) { return this._ControlContainer_6_4; }
-    if (((token === import17.NgControlStatusGroup) && ((6 <= requestNodeIndex) && (requestNodeIndex <= 16)))) { return this._NgControlStatusGroup_6_5; }
-    if (((token === import18.NgSelectOption) && ((22 <= requestNodeIndex) && (requestNodeIndex <= 23)))) { return this._NgSelectOption_22_3; }
-    if (((token === import19.NgSelectMultipleOption) && ((22 <= requestNodeIndex) && (requestNodeIndex <= 23)))) { return this._NgSelectMultipleOption_22_4; }
-    if (((token === import18.NgSelectOption) && ((25 <= requestNodeIndex) && (requestNodeIndex <= 26)))) { return this._NgSelectOption_25_3; }
-    if (((token === import19.NgSelectMultipleOption) && ((25 <= requestNodeIndex) && (requestNodeIndex <= 26)))) { return this._NgSelectMultipleOption_25_4; }
-    if (((token === import18.NgSelectOption) && ((28 <= requestNodeIndex) && (requestNodeIndex <= 29)))) { return this._NgSelectOption_28_3; }
-    if (((token === import19.NgSelectMultipleOption) && ((28 <= requestNodeIndex) && (requestNodeIndex <= 29)))) { return this._NgSelectMultipleOption_28_4; }
-    if (((token === import18.NgSelectOption) && ((31 <= requestNodeIndex) && (requestNodeIndex <= 32)))) { return this._NgSelectOption_31_3; }
-    if (((token === import19.NgSelectMultipleOption) && ((31 <= requestNodeIndex) && (requestNodeIndex <= 32)))) { return this._NgSelectMultipleOption_31_4; }
-    if (((token === import20.CKEditor) && (40 === requestNodeIndex))) { return this._CKEditor_40_4; }
-    if (((token === import20.CKEditor) && (46 === requestNodeIndex))) { return this._CKEditor_46_4; }
-    if (((token === import18.NgSelectOption) && ((56 <= requestNodeIndex) && (requestNodeIndex <= 57)))) { return this._NgSelectOption_56_3; }
-    if (((token === import19.NgSelectMultipleOption) && ((56 <= requestNodeIndex) && (requestNodeIndex <= 57)))) { return this._NgSelectMultipleOption_56_4; }
-    if (((token === import18.NgSelectOption) && ((59 <= requestNodeIndex) && (requestNodeIndex <= 60)))) { return this._NgSelectOption_59_3; }
-    if (((token === import19.NgSelectMultipleOption) && ((59 <= requestNodeIndex) && (requestNodeIndex <= 60)))) { return this._NgSelectMultipleOption_59_4; }
-    if (((token === import18.NgSelectOption) && ((62 <= requestNodeIndex) && (requestNodeIndex <= 63)))) { return this._NgSelectOption_62_3; }
-    if (((token === import19.NgSelectMultipleOption) && ((62 <= requestNodeIndex) && (requestNodeIndex <= 63)))) { return this._NgSelectMultipleOption_62_4; }
-    if (((token === import18.NgSelectOption) && ((65 <= requestNodeIndex) && (requestNodeIndex <= 66)))) { return this._NgSelectOption_65_3; }
-    if (((token === import19.NgSelectMultipleOption) && ((65 <= requestNodeIndex) && (requestNodeIndex <= 66)))) { return this._NgSelectMultipleOption_65_4; }
-    if (((token === import18.NgSelectOption) && ((74 <= requestNodeIndex) && (requestNodeIndex <= 75)))) { return this._NgSelectOption_74_3; }
-    if (((token === import19.NgSelectMultipleOption) && ((74 <= requestNodeIndex) && (requestNodeIndex <= 75)))) { return this._NgSelectMultipleOption_74_4; }
-    if (((token === import18.NgSelectOption) && ((77 <= requestNodeIndex) && (requestNodeIndex <= 78)))) { return this._NgSelectOption_77_3; }
-    if (((token === import19.NgSelectMultipleOption) && ((77 <= requestNodeIndex) && (requestNodeIndex <= 78)))) { return this._NgSelectMultipleOption_77_4; }
-    if (((token === import18.NgSelectOption) && ((80 <= requestNodeIndex) && (requestNodeIndex <= 81)))) { return this._NgSelectOption_80_3; }
-    if (((token === import19.NgSelectMultipleOption) && ((80 <= requestNodeIndex) && (requestNodeIndex <= 81)))) { return this._NgSelectMultipleOption_80_4; }
-    if (((token === import18.NgSelectOption) && ((83 <= requestNodeIndex) && (requestNodeIndex <= 84)))) { return this._NgSelectOption_83_3; }
-    if (((token === import19.NgSelectMultipleOption) && ((83 <= requestNodeIndex) && (requestNodeIndex <= 84)))) { return this._NgSelectMultipleOption_83_4; }
+    if (((token === import17.NgControlStatusGroup) && ((6 <= requestNodeIndex) && (requestNodeIndex <= 16)))) { return this._NgControlStatusGroup_6_5.context; }
+    if (((token === import18.NgSelectOption) && ((22 <= requestNodeIndex) && (requestNodeIndex <= 23)))) { return this._NgSelectOption_22_3.context; }
+    if (((token === import19.NgSelectMultipleOption) && ((22 <= requestNodeIndex) && (requestNodeIndex <= 23)))) { return this._NgSelectMultipleOption_22_4.context; }
+    if (((token === import18.NgSelectOption) && ((25 <= requestNodeIndex) && (requestNodeIndex <= 26)))) { return this._NgSelectOption_25_3.context; }
+    if (((token === import19.NgSelectMultipleOption) && ((25 <= requestNodeIndex) && (requestNodeIndex <= 26)))) { return this._NgSelectMultipleOption_25_4.context; }
+    if (((token === import18.NgSelectOption) && ((28 <= requestNodeIndex) && (requestNodeIndex <= 29)))) { return this._NgSelectOption_28_3.context; }
+    if (((token === import19.NgSelectMultipleOption) && ((28 <= requestNodeIndex) && (requestNodeIndex <= 29)))) { return this._NgSelectMultipleOption_28_4.context; }
+    if (((token === import18.NgSelectOption) && ((31 <= requestNodeIndex) && (requestNodeIndex <= 32)))) { return this._NgSelectOption_31_3.context; }
+    if (((token === import19.NgSelectMultipleOption) && ((31 <= requestNodeIndex) && (requestNodeIndex <= 32)))) { return this._NgSelectMultipleOption_31_4.context; }
+    if (((token === import20.CKEditor) && (40 === requestNodeIndex))) { return this._CKEditor_40_4.context; }
+    if (((token === import20.CKEditor) && (46 === requestNodeIndex))) { return this._CKEditor_46_4.context; }
+    if (((token === import18.NgSelectOption) && ((56 <= requestNodeIndex) && (requestNodeIndex <= 57)))) { return this._NgSelectOption_56_3.context; }
+    if (((token === import19.NgSelectMultipleOption) && ((56 <= requestNodeIndex) && (requestNodeIndex <= 57)))) { return this._NgSelectMultipleOption_56_4.context; }
+    if (((token === import18.NgSelectOption) && ((59 <= requestNodeIndex) && (requestNodeIndex <= 60)))) { return this._NgSelectOption_59_3.context; }
+    if (((token === import19.NgSelectMultipleOption) && ((59 <= requestNodeIndex) && (requestNodeIndex <= 60)))) { return this._NgSelectMultipleOption_59_4.context; }
+    if (((token === import18.NgSelectOption) && ((62 <= requestNodeIndex) && (requestNodeIndex <= 63)))) { return this._NgSelectOption_62_3.context; }
+    if (((token === import19.NgSelectMultipleOption) && ((62 <= requestNodeIndex) && (requestNodeIndex <= 63)))) { return this._NgSelectMultipleOption_62_4.context; }
+    if (((token === import18.NgSelectOption) && ((65 <= requestNodeIndex) && (requestNodeIndex <= 66)))) { return this._NgSelectOption_65_3.context; }
+    if (((token === import19.NgSelectMultipleOption) && ((65 <= requestNodeIndex) && (requestNodeIndex <= 66)))) { return this._NgSelectMultipleOption_65_4.context; }
+    if (((token === import18.NgSelectOption) && ((74 <= requestNodeIndex) && (requestNodeIndex <= 75)))) { return this._NgSelectOption_74_3.context; }
+    if (((token === import19.NgSelectMultipleOption) && ((74 <= requestNodeIndex) && (requestNodeIndex <= 75)))) { return this._NgSelectMultipleOption_74_4.context; }
+    if (((token === import18.NgSelectOption) && ((77 <= requestNodeIndex) && (requestNodeIndex <= 78)))) { return this._NgSelectOption_77_3.context; }
+    if (((token === import19.NgSelectMultipleOption) && ((77 <= requestNodeIndex) && (requestNodeIndex <= 78)))) { return this._NgSelectMultipleOption_77_4.context; }
+    if (((token === import18.NgSelectOption) && ((80 <= requestNodeIndex) && (requestNodeIndex <= 81)))) { return this._NgSelectOption_80_3.context; }
+    if (((token === import19.NgSelectMultipleOption) && ((80 <= requestNodeIndex) && (requestNodeIndex <= 81)))) { return this._NgSelectMultipleOption_80_4.context; }
+    if (((token === import18.NgSelectOption) && ((83 <= requestNodeIndex) && (requestNodeIndex <= 84)))) { return this._NgSelectOption_83_3.context; }
+    if (((token === import19.NgSelectMultipleOption) && ((83 <= requestNodeIndex) && (requestNodeIndex <= 84)))) { return this._NgSelectMultipleOption_83_4.context; }
     if (((token === import21.TemplateRef) && (117 === requestNodeIndex))) { return this._TemplateRef_117_5; }
-    if (((token === import22.NgIf) && (117 === requestNodeIndex))) { return this._NgIf_117_6; }
+    if (((token === import22.NgIf) && (117 === requestNodeIndex))) { return this._NgIf_117_6.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
+    this.debug(6,3,12);
+    this._NgForm_6_3.detectChangesInInputProps(this,this._el_6,throwOnChange);
+    this._NgControlStatusGroup_6_5.detectChangesInInputProps(this,this._el_6,throwOnChange);
     this.debug(22,17,28);
-    const currVal_11:any = '';
-    if (import5.checkBinding(throwOnChange,this._expr_11,currVal_11)) {
-      this._NgSelectOption_22_3.value = currVal_11;
-      this._expr_11 = currVal_11;
-    }
+    const currVal_22_0_0:any = '';
+    this._NgSelectOption_22_3.check_value(currVal_22_0_0,throwOnChange,false);
+    this._NgSelectOption_22_3.detectChangesInInputProps(this,this._el_22,throwOnChange);
     this.debug(22,17,28);
-    const currVal_12:any = '';
-    if (import5.checkBinding(throwOnChange,this._expr_12,currVal_12)) {
-      this._NgSelectMultipleOption_22_4.value = currVal_12;
-      this._expr_12 = currVal_12;
-    }
+    const currVal_22_1_0:any = '';
+    this._NgSelectMultipleOption_22_4.check_value(currVal_22_1_0,throwOnChange,false);
+    this._NgSelectMultipleOption_22_4.detectChangesInInputProps(this,this._el_22,throwOnChange);
     this.debug(25,18,28);
-    const currVal_13:any = '1';
-    if (import5.checkBinding(throwOnChange,this._expr_13,currVal_13)) {
-      this._NgSelectOption_25_3.value = currVal_13;
-      this._expr_13 = currVal_13;
-    }
+    const currVal_25_0_0:any = '1';
+    this._NgSelectOption_25_3.check_value(currVal_25_0_0,throwOnChange,false);
+    this._NgSelectOption_25_3.detectChangesInInputProps(this,this._el_25,throwOnChange);
     this.debug(25,18,28);
-    const currVal_14:any = '1';
-    if (import5.checkBinding(throwOnChange,this._expr_14,currVal_14)) {
-      this._NgSelectMultipleOption_25_4.value = currVal_14;
-      this._expr_14 = currVal_14;
-    }
+    const currVal_25_1_0:any = '1';
+    this._NgSelectMultipleOption_25_4.check_value(currVal_25_1_0,throwOnChange,false);
+    this._NgSelectMultipleOption_25_4.detectChangesInInputProps(this,this._el_25,throwOnChange);
     this.debug(28,19,28);
-    const currVal_15:any = '2';
-    if (import5.checkBinding(throwOnChange,this._expr_15,currVal_15)) {
-      this._NgSelectOption_28_3.value = currVal_15;
-      this._expr_15 = currVal_15;
-    }
+    const currVal_28_0_0:any = '2';
+    this._NgSelectOption_28_3.check_value(currVal_28_0_0,throwOnChange,false);
+    this._NgSelectOption_28_3.detectChangesInInputProps(this,this._el_28,throwOnChange);
     this.debug(28,19,28);
-    const currVal_16:any = '2';
-    if (import5.checkBinding(throwOnChange,this._expr_16,currVal_16)) {
-      this._NgSelectMultipleOption_28_4.value = currVal_16;
-      this._expr_16 = currVal_16;
-    }
+    const currVal_28_1_0:any = '2';
+    this._NgSelectMultipleOption_28_4.check_value(currVal_28_1_0,throwOnChange,false);
+    this._NgSelectMultipleOption_28_4.detectChangesInInputProps(this,this._el_28,throwOnChange);
     this.debug(31,20,28);
-    const currVal_17:any = '3';
-    if (import5.checkBinding(throwOnChange,this._expr_17,currVal_17)) {
-      this._NgSelectOption_31_3.value = currVal_17;
-      this._expr_17 = currVal_17;
-    }
+    const currVal_31_0_0:any = '3';
+    this._NgSelectOption_31_3.check_value(currVal_31_0_0,throwOnChange,false);
+    this._NgSelectOption_31_3.detectChangesInInputProps(this,this._el_31,throwOnChange);
     this.debug(31,20,28);
-    const currVal_18:any = '3';
-    if (import5.checkBinding(throwOnChange,this._expr_18,currVal_18)) {
-      this._NgSelectMultipleOption_31_4.value = currVal_18;
-      this._expr_18 = currVal_18;
-    }
+    const currVal_31_1_0:any = '3';
+    this._NgSelectMultipleOption_31_4.check_value(currVal_31_1_0,throwOnChange,false);
+    this._NgSelectMultipleOption_31_4.detectChangesInInputProps(this,this._el_31,throwOnChange);
     this.debug(40,25,22);
-    const currVal_19:any = 'ckeditor_problem-statement';
-    if (import5.checkBinding(throwOnChange,this._expr_19,currVal_19)) {
-      this._CKEditor_40_4.ckEditorInstanceID = currVal_19;
-      this._expr_19 = currVal_19;
-    }
-    if (((this.numberOfChecks === 0) && !throwOnChange)) { this._CKEditor_40_4.ngOnInit(); }
+    const currVal_40_0_0:any = 'ckeditor_problem-statement';
+    this._CKEditor_40_4.check_ckEditorInstanceID(currVal_40_0_0,throwOnChange,false);
+    this._CKEditor_40_4.detectChangesInInputProps(this,this._el_40,throwOnChange);
     this.debug(46,29,22);
-    const currVal_20:any = 'ckeditor_solution';
-    if (import5.checkBinding(throwOnChange,this._expr_20,currVal_20)) {
-      this._CKEditor_46_4.ckEditorInstanceID = currVal_20;
-      this._expr_20 = currVal_20;
-    }
-    if (((this.numberOfChecks === 0) && !throwOnChange)) { this._CKEditor_46_4.ngOnInit(); }
+    const currVal_46_0_0:any = 'ckeditor_solution';
+    this._CKEditor_46_4.check_ckEditorInstanceID(currVal_46_0_0,throwOnChange,false);
+    this._CKEditor_46_4.detectChangesInInputProps(this,this._el_46,throwOnChange);
     this.debug(56,35,28);
-    const currVal_21:any = '';
-    if (import5.checkBinding(throwOnChange,this._expr_21,currVal_21)) {
-      this._NgSelectOption_56_3.value = currVal_21;
-      this._expr_21 = currVal_21;
-    }
+    const currVal_56_0_0:any = '';
+    this._NgSelectOption_56_3.check_value(currVal_56_0_0,throwOnChange,false);
+    this._NgSelectOption_56_3.detectChangesInInputProps(this,this._el_56,throwOnChange);
     this.debug(56,35,28);
-    const currVal_22:any = '';
-    if (import5.checkBinding(throwOnChange,this._expr_22,currVal_22)) {
-      this._NgSelectMultipleOption_56_4.value = currVal_22;
-      this._expr_22 = currVal_22;
-    }
+    const currVal_56_1_0:any = '';
+    this._NgSelectMultipleOption_56_4.check_value(currVal_56_1_0,throwOnChange,false);
+    this._NgSelectMultipleOption_56_4.detectChangesInInputProps(this,this._el_56,throwOnChange);
     this.debug(59,36,28);
-    const currVal_23:any = '1';
-    if (import5.checkBinding(throwOnChange,this._expr_23,currVal_23)) {
-      this._NgSelectOption_59_3.value = currVal_23;
-      this._expr_23 = currVal_23;
-    }
+    const currVal_59_0_0:any = '1';
+    this._NgSelectOption_59_3.check_value(currVal_59_0_0,throwOnChange,false);
+    this._NgSelectOption_59_3.detectChangesInInputProps(this,this._el_59,throwOnChange);
     this.debug(59,36,28);
-    const currVal_24:any = '1';
-    if (import5.checkBinding(throwOnChange,this._expr_24,currVal_24)) {
-      this._NgSelectMultipleOption_59_4.value = currVal_24;
-      this._expr_24 = currVal_24;
-    }
+    const currVal_59_1_0:any = '1';
+    this._NgSelectMultipleOption_59_4.check_value(currVal_59_1_0,throwOnChange,false);
+    this._NgSelectMultipleOption_59_4.detectChangesInInputProps(this,this._el_59,throwOnChange);
     this.debug(62,37,28);
-    const currVal_25:any = '2';
-    if (import5.checkBinding(throwOnChange,this._expr_25,currVal_25)) {
-      this._NgSelectOption_62_3.value = currVal_25;
-      this._expr_25 = currVal_25;
-    }
+    const currVal_62_0_0:any = '2';
+    this._NgSelectOption_62_3.check_value(currVal_62_0_0,throwOnChange,false);
+    this._NgSelectOption_62_3.detectChangesInInputProps(this,this._el_62,throwOnChange);
     this.debug(62,37,28);
-    const currVal_26:any = '2';
-    if (import5.checkBinding(throwOnChange,this._expr_26,currVal_26)) {
-      this._NgSelectMultipleOption_62_4.value = currVal_26;
-      this._expr_26 = currVal_26;
-    }
+    const currVal_62_1_0:any = '2';
+    this._NgSelectMultipleOption_62_4.check_value(currVal_62_1_0,throwOnChange,false);
+    this._NgSelectMultipleOption_62_4.detectChangesInInputProps(this,this._el_62,throwOnChange);
     this.debug(65,38,28);
-    const currVal_27:any = '3';
-    if (import5.checkBinding(throwOnChange,this._expr_27,currVal_27)) {
-      this._NgSelectOption_65_3.value = currVal_27;
-      this._expr_27 = currVal_27;
-    }
+    const currVal_65_0_0:any = '3';
+    this._NgSelectOption_65_3.check_value(currVal_65_0_0,throwOnChange,false);
+    this._NgSelectOption_65_3.detectChangesInInputProps(this,this._el_65,throwOnChange);
     this.debug(65,38,28);
-    const currVal_28:any = '3';
-    if (import5.checkBinding(throwOnChange,this._expr_28,currVal_28)) {
-      this._NgSelectMultipleOption_65_4.value = currVal_28;
-      this._expr_28 = currVal_28;
-    }
+    const currVal_65_1_0:any = '3';
+    this._NgSelectMultipleOption_65_4.check_value(currVal_65_1_0,throwOnChange,false);
+    this._NgSelectMultipleOption_65_4.detectChangesInInputProps(this,this._el_65,throwOnChange);
     this.debug(74,43,28);
-    const currVal_29:any = '';
-    if (import5.checkBinding(throwOnChange,this._expr_29,currVal_29)) {
-      this._NgSelectOption_74_3.value = currVal_29;
-      this._expr_29 = currVal_29;
-    }
+    const currVal_74_0_0:any = '';
+    this._NgSelectOption_74_3.check_value(currVal_74_0_0,throwOnChange,false);
+    this._NgSelectOption_74_3.detectChangesInInputProps(this,this._el_74,throwOnChange);
     this.debug(74,43,28);
-    const currVal_30:any = '';
-    if (import5.checkBinding(throwOnChange,this._expr_30,currVal_30)) {
-      this._NgSelectMultipleOption_74_4.value = currVal_30;
-      this._expr_30 = currVal_30;
-    }
+    const currVal_74_1_0:any = '';
+    this._NgSelectMultipleOption_74_4.check_value(currVal_74_1_0,throwOnChange,false);
+    this._NgSelectMultipleOption_74_4.detectChangesInInputProps(this,this._el_74,throwOnChange);
     this.debug(77,44,28);
-    const currVal_31:any = '1';
-    if (import5.checkBinding(throwOnChange,this._expr_31,currVal_31)) {
-      this._NgSelectOption_77_3.value = currVal_31;
-      this._expr_31 = currVal_31;
-    }
+    const currVal_77_0_0:any = '1';
+    this._NgSelectOption_77_3.check_value(currVal_77_0_0,throwOnChange,false);
+    this._NgSelectOption_77_3.detectChangesInInputProps(this,this._el_77,throwOnChange);
     this.debug(77,44,28);
-    const currVal_32:any = '1';
-    if (import5.checkBinding(throwOnChange,this._expr_32,currVal_32)) {
-      this._NgSelectMultipleOption_77_4.value = currVal_32;
-      this._expr_32 = currVal_32;
-    }
+    const currVal_77_1_0:any = '1';
+    this._NgSelectMultipleOption_77_4.check_value(currVal_77_1_0,throwOnChange,false);
+    this._NgSelectMultipleOption_77_4.detectChangesInInputProps(this,this._el_77,throwOnChange);
     this.debug(80,45,28);
-    const currVal_33:any = '2';
-    if (import5.checkBinding(throwOnChange,this._expr_33,currVal_33)) {
-      this._NgSelectOption_80_3.value = currVal_33;
-      this._expr_33 = currVal_33;
-    }
+    const currVal_80_0_0:any = '2';
+    this._NgSelectOption_80_3.check_value(currVal_80_0_0,throwOnChange,false);
+    this._NgSelectOption_80_3.detectChangesInInputProps(this,this._el_80,throwOnChange);
     this.debug(80,45,28);
-    const currVal_34:any = '2';
-    if (import5.checkBinding(throwOnChange,this._expr_34,currVal_34)) {
-      this._NgSelectMultipleOption_80_4.value = currVal_34;
-      this._expr_34 = currVal_34;
-    }
+    const currVal_80_1_0:any = '2';
+    this._NgSelectMultipleOption_80_4.check_value(currVal_80_1_0,throwOnChange,false);
+    this._NgSelectMultipleOption_80_4.detectChangesInInputProps(this,this._el_80,throwOnChange);
     this.debug(83,46,28);
-    const currVal_35:any = '3';
-    if (import5.checkBinding(throwOnChange,this._expr_35,currVal_35)) {
-      this._NgSelectOption_83_3.value = currVal_35;
-      this._expr_35 = currVal_35;
-    }
+    const currVal_83_0_0:any = '3';
+    this._NgSelectOption_83_3.check_value(currVal_83_0_0,throwOnChange,false);
+    this._NgSelectOption_83_3.detectChangesInInputProps(this,this._el_83,throwOnChange);
     this.debug(83,46,28);
-    const currVal_36:any = '3';
-    if (import5.checkBinding(throwOnChange,this._expr_36,currVal_36)) {
-      this._NgSelectMultipleOption_83_4.value = currVal_36;
-      this._expr_36 = currVal_36;
-    }
+    const currVal_83_1_0:any = '3';
+    this._NgSelectMultipleOption_83_4.check_value(currVal_83_1_0,throwOnChange,false);
+    this._NgSelectMultipleOption_83_4.detectChangesInInputProps(this,this._el_83,throwOnChange);
     this.debug(117,71,17);
-    const currVal_37:any = this.context.subscriberFoundByID;
-    if (import5.checkBinding(throwOnChange,this._expr_37,currVal_37)) {
-      this._NgIf_117_6.ngIf = currVal_37;
-      this._expr_37 = currVal_37;
-    }
+    const currVal_117_0_0:any = this.context.subscriberFoundByID;
+    this._NgIf_117_6.check_ngIf(currVal_117_0_0,throwOnChange,false);
+    this._NgIf_117_6.detectChangesInInputProps(this,this._anchor_117,throwOnChange);
     this.detectContentChildrenChanges(throwOnChange);
-    this.debug(6,3,12);
-    const currVal_3:any = this._NgControlStatusGroup_6_5.ngClassUntouched;
-    if (import5.checkBinding(throwOnChange,this._expr_3,currVal_3)) {
-      this.renderer.setElementClass(this._el_6,'ng-untouched',currVal_3);
-      this._expr_3 = currVal_3;
-    }
-    this.debug(6,3,12);
-    const currVal_4:any = this._NgControlStatusGroup_6_5.ngClassTouched;
-    if (import5.checkBinding(throwOnChange,this._expr_4,currVal_4)) {
-      this.renderer.setElementClass(this._el_6,'ng-touched',currVal_4);
-      this._expr_4 = currVal_4;
-    }
-    this.debug(6,3,12);
-    const currVal_5:any = this._NgControlStatusGroup_6_5.ngClassPristine;
-    if (import5.checkBinding(throwOnChange,this._expr_5,currVal_5)) {
-      this.renderer.setElementClass(this._el_6,'ng-pristine',currVal_5);
-      this._expr_5 = currVal_5;
-    }
-    this.debug(6,3,12);
-    const currVal_6:any = this._NgControlStatusGroup_6_5.ngClassDirty;
-    if (import5.checkBinding(throwOnChange,this._expr_6,currVal_6)) {
-      this.renderer.setElementClass(this._el_6,'ng-dirty',currVal_6);
-      this._expr_6 = currVal_6;
-    }
-    this.debug(6,3,12);
-    const currVal_7:any = this._NgControlStatusGroup_6_5.ngClassValid;
-    if (import5.checkBinding(throwOnChange,this._expr_7,currVal_7)) {
-      this.renderer.setElementClass(this._el_6,'ng-valid',currVal_7);
-      this._expr_7 = currVal_7;
-    }
-    this.debug(6,3,12);
-    const currVal_8:any = this._NgControlStatusGroup_6_5.ngClassInvalid;
-    if (import5.checkBinding(throwOnChange,this._expr_8,currVal_8)) {
-      this.renderer.setElementClass(this._el_6,'ng-invalid',currVal_8);
-      this._expr_8 = currVal_8;
-    }
+    this._NgForm_6_3.detectChangesInHostProps(this,this._el_6,throwOnChange);
+    this._NgControlStatusGroup_6_5.detectChangesInHostProps(this,this._el_6,throwOnChange);
     this.debug(8,6,23);
-    const currVal_10:any = this.context.ticketID;
-    if (import5.checkBinding(throwOnChange,this._expr_10,currVal_10)) {
-      this.renderer.setElementProperty(this._el_8,'value',currVal_10);
-      this._expr_10 = currVal_10;
+    const currVal_174:any = this.context.ticketID;
+    if (import5.checkBinding(throwOnChange,this._expr_174,currVal_174)) {
+      this.renderer.setElementProperty(this._el_8,'value',currVal_174);
+      this._expr_174 = currVal_174;
     }
+    this._NgSelectOption_22_3.detectChangesInHostProps(this,this._el_22,throwOnChange);
+    this._NgSelectMultipleOption_22_4.detectChangesInHostProps(this,this._el_22,throwOnChange);
+    this._NgSelectOption_25_3.detectChangesInHostProps(this,this._el_25,throwOnChange);
+    this._NgSelectMultipleOption_25_4.detectChangesInHostProps(this,this._el_25,throwOnChange);
+    this._NgSelectOption_28_3.detectChangesInHostProps(this,this._el_28,throwOnChange);
+    this._NgSelectMultipleOption_28_4.detectChangesInHostProps(this,this._el_28,throwOnChange);
+    this._NgSelectOption_31_3.detectChangesInHostProps(this,this._el_31,throwOnChange);
+    this._NgSelectMultipleOption_31_4.detectChangesInHostProps(this,this._el_31,throwOnChange);
+    this._CKEditor_40_4.detectChangesInHostProps(this,this._el_40,throwOnChange);
+    this._CKEditor_46_4.detectChangesInHostProps(this,this._el_46,throwOnChange);
+    this._NgSelectOption_56_3.detectChangesInHostProps(this,this._el_56,throwOnChange);
+    this._NgSelectMultipleOption_56_4.detectChangesInHostProps(this,this._el_56,throwOnChange);
+    this._NgSelectOption_59_3.detectChangesInHostProps(this,this._el_59,throwOnChange);
+    this._NgSelectMultipleOption_59_4.detectChangesInHostProps(this,this._el_59,throwOnChange);
+    this._NgSelectOption_62_3.detectChangesInHostProps(this,this._el_62,throwOnChange);
+    this._NgSelectMultipleOption_62_4.detectChangesInHostProps(this,this._el_62,throwOnChange);
+    this._NgSelectOption_65_3.detectChangesInHostProps(this,this._el_65,throwOnChange);
+    this._NgSelectMultipleOption_65_4.detectChangesInHostProps(this,this._el_65,throwOnChange);
+    this._NgSelectOption_74_3.detectChangesInHostProps(this,this._el_74,throwOnChange);
+    this._NgSelectMultipleOption_74_4.detectChangesInHostProps(this,this._el_74,throwOnChange);
+    this._NgSelectOption_77_3.detectChangesInHostProps(this,this._el_77,throwOnChange);
+    this._NgSelectMultipleOption_77_4.detectChangesInHostProps(this,this._el_77,throwOnChange);
+    this._NgSelectOption_80_3.detectChangesInHostProps(this,this._el_80,throwOnChange);
+    this._NgSelectMultipleOption_80_4.detectChangesInHostProps(this,this._el_80,throwOnChange);
+    this._NgSelectOption_83_3.detectChangesInHostProps(this,this._el_83,throwOnChange);
+    this._NgSelectMultipleOption_83_4.detectChangesInHostProps(this,this._el_83,throwOnChange);
     this.detectViewChildrenChanges(throwOnChange);
     if (!throwOnChange) {
       this.debug(40,25,12);
-      if ((this.numberOfChecks === 0)) { this._CKEditor_40_4.ngAfterViewInit(); }
+      if ((this.numberOfChecks === 0)) { this._CKEditor_40_4.context.ngAfterViewInit(); }
       this.debug(46,29,12);
-      if ((this.numberOfChecks === 0)) { this._CKEditor_46_4.ngAfterViewInit(); }
+      if ((this.numberOfChecks === 0)) { this._CKEditor_46_4.context.ngAfterViewInit(); }
     }
   }
   destroyInternal():void {
     this.debug(22,17,20);
-    this._NgSelectOption_22_3.ngOnDestroy();
-    this._NgSelectMultipleOption_22_4.ngOnDestroy();
+    this._NgSelectOption_22_3.context.ngOnDestroy();
+    this._NgSelectMultipleOption_22_4.context.ngOnDestroy();
     this.debug(25,18,20);
-    this._NgSelectOption_25_3.ngOnDestroy();
-    this._NgSelectMultipleOption_25_4.ngOnDestroy();
+    this._NgSelectOption_25_3.context.ngOnDestroy();
+    this._NgSelectMultipleOption_25_4.context.ngOnDestroy();
     this.debug(28,19,20);
-    this._NgSelectOption_28_3.ngOnDestroy();
-    this._NgSelectMultipleOption_28_4.ngOnDestroy();
+    this._NgSelectOption_28_3.context.ngOnDestroy();
+    this._NgSelectMultipleOption_28_4.context.ngOnDestroy();
     this.debug(31,20,20);
-    this._NgSelectOption_31_3.ngOnDestroy();
-    this._NgSelectMultipleOption_31_4.ngOnDestroy();
+    this._NgSelectOption_31_3.context.ngOnDestroy();
+    this._NgSelectMultipleOption_31_4.context.ngOnDestroy();
     this.debug(56,35,20);
-    this._NgSelectOption_56_3.ngOnDestroy();
-    this._NgSelectMultipleOption_56_4.ngOnDestroy();
+    this._NgSelectOption_56_3.context.ngOnDestroy();
+    this._NgSelectMultipleOption_56_4.context.ngOnDestroy();
     this.debug(59,36,20);
-    this._NgSelectOption_59_3.ngOnDestroy();
-    this._NgSelectMultipleOption_59_4.ngOnDestroy();
+    this._NgSelectOption_59_3.context.ngOnDestroy();
+    this._NgSelectMultipleOption_59_4.context.ngOnDestroy();
     this.debug(62,37,20);
-    this._NgSelectOption_62_3.ngOnDestroy();
-    this._NgSelectMultipleOption_62_4.ngOnDestroy();
+    this._NgSelectOption_62_3.context.ngOnDestroy();
+    this._NgSelectMultipleOption_62_4.context.ngOnDestroy();
     this.debug(65,38,20);
-    this._NgSelectOption_65_3.ngOnDestroy();
-    this._NgSelectMultipleOption_65_4.ngOnDestroy();
+    this._NgSelectOption_65_3.context.ngOnDestroy();
+    this._NgSelectMultipleOption_65_4.context.ngOnDestroy();
     this.debug(74,43,20);
-    this._NgSelectOption_74_3.ngOnDestroy();
-    this._NgSelectMultipleOption_74_4.ngOnDestroy();
+    this._NgSelectOption_74_3.context.ngOnDestroy();
+    this._NgSelectMultipleOption_74_4.context.ngOnDestroy();
     this.debug(77,44,20);
-    this._NgSelectOption_77_3.ngOnDestroy();
-    this._NgSelectMultipleOption_77_4.ngOnDestroy();
+    this._NgSelectOption_77_3.context.ngOnDestroy();
+    this._NgSelectMultipleOption_77_4.context.ngOnDestroy();
     this.debug(80,45,20);
-    this._NgSelectOption_80_3.ngOnDestroy();
-    this._NgSelectMultipleOption_80_4.ngOnDestroy();
+    this._NgSelectOption_80_3.context.ngOnDestroy();
+    this._NgSelectMultipleOption_80_4.context.ngOnDestroy();
     this.debug(83,46,20);
-    this._NgSelectOption_83_3.ngOnDestroy();
-    this._NgSelectMultipleOption_83_4.ngOnDestroy();
+    this._NgSelectOption_83_3.context.ngOnDestroy();
+    this._NgSelectMultipleOption_83_4.context.ngOnDestroy();
   }
   private _handle_ngSubmit_6_0($event:any):boolean {
     this.markPathToRootAsCheckOnce();
     this.debug(6,3,49);
-    const pd_0:any = ((<any>this.context.searchSubscriberByID(this._el_8.value)) !== false);
-    return (true && pd_0);
+    const pd_6_0:any = ((<any>this.context.searchSubscriberByID(this._el_8.value)) !== false);
+    return (true && pd_6_0);
   }
   private _handle_submit_6_1($event:any):boolean {
     this.markPathToRootAsCheckOnce();
     this.debug(6,3,12);
-    const pd_0:any = ((<any>this._NgForm_6_3.onSubmit($event)) !== false);
-    return (true && pd_0);
+    const pd_6_0:any = ((<any>this._NgForm_6_3.context.onSubmit($event)) !== false);
+    return (true && pd_6_0);
   }
   private _handle_reset_6_2($event:any):boolean {
     this.markPathToRootAsCheckOnce();
     this.debug(6,3,12);
-    const pd_0:any = ((<any>this._NgForm_6_3.onReset()) !== false);
-    return (true && pd_0);
+    const pd_6_0:any = ((<any>this._NgForm_6_3.context.onReset()) !== false);
+    return (true && pd_6_0);
   }
   private _handle_input_8_0($event:any):boolean {
     this.markPathToRootAsCheckOnce();
     this.debug(8,7,23);
-    const pd_0:any = ((<any>(this.context.subscriberID = $event.target.value)) !== false);
-    return (true && pd_0);
+    const pd_8_0:any = ((<any>(this.context.subscriberID = $event.target.value)) !== false);
+    return (true && pd_8_0);
   }
 }
-export function viewFactory_TicketComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<import1.TicketComponent> {
+export function viewFactory_TicketComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import1.AppView<import0.TicketComponent> {
   if ((renderType_TicketComponent === (null as any))) { (renderType_TicketComponent = viewUtils.createRenderComponentType('C:/Development/angular2-webpack2-dotnet-starter/src/app-components/ticket/ticket.template.html',0,import13.ViewEncapsulation.None,styles_TicketComponent,{})); }
   return new _View_TicketComponent0(viewUtils,parentInjector,declarationEl);
 }
-const nodeDebugInfos_TicketComponent1:import0.StaticNodeDebugInfo[] = [
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{})
+const nodeDebugInfos_TicketComponent1:import2.StaticNodeDebugInfo[] = [
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-class _View_TicketComponent1 extends import3.DebugAppView<any> {
+class _View_TicketComponent1 extends import1.DebugAppView<any> {
   _el_0:any;
   _el_1:any;
   _text_2:any;
-  _pipe_json_0:import25.JsonPipe;
-  /*private*/ _expr_0:any;
+  /*private*/ _expr_3:any;
+  _pipe_json_0:import30.JsonPipe;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement) {
     super(_View_TicketComponent1,renderType_TicketComponent,import7.ViewType.EMBEDDED,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_TicketComponent1);
+    this._expr_3 = import8.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import4.AppElement {
-    this._el_0 = this.renderer.createElement((null as any),'pre',this.debug(0,71,12));
-    this._el_1 = this.renderer.createElement(this._el_0,'code',this.debug(1,71,45));
+    this._el_0 = import5.createRenderElement(this.renderer,(null as any),'pre',import5.EMPTY_INLINE_ARRAY,this.debug(0,71,12));
+    this._el_1 = import5.createRenderElement(this.renderer,this._el_0,'code',import5.EMPTY_INLINE_ARRAY,this.debug(1,71,45));
     this._text_2 = this.renderer.createText(this._el_1,'',this.debug(2,71,51));
     this.debug((null as any),(null as any),(null as any));
-    this._pipe_json_0 = new import25.JsonPipe();
-    this._expr_0 = import8.UNINITIALIZED;
-    this.init([].concat([this._el_0]),[
+    this._pipe_json_0 = new import30.JsonPipe();
+    this.init(([] as any[]).concat([this._el_0]),[
       this._el_0,
       this._el_1,
       this._text_2
     ]
-    ,[],[]);
+    ,([] as any[]),([] as any[]));
     return (null as any);
   }
   detectChangesInternal(throwOnChange:boolean):void {
@@ -1262,14 +1106,14 @@ class _View_TicketComponent1 extends import3.DebugAppView<any> {
     this.detectContentChildrenChanges(throwOnChange);
     this.debug(2,71,51);
     valUnwrapper.reset();
-    const currVal_0:any = import5.interpolate(1,'',valUnwrapper.unwrap(this._pipe_json_0.transform(this.parent.context.subscriberFoundByID)),'');
-    if ((valUnwrapper.hasWrappedValue || import5.checkBinding(throwOnChange,this._expr_0,currVal_0))) {
-      this.renderer.setText(this._text_2,currVal_0);
-      this._expr_0 = currVal_0;
+    const currVal_3:any = import5.interpolate(1,'',valUnwrapper.unwrap(this._pipe_json_0.transform(this.parent.context.subscriberFoundByID)),'');
+    if ((valUnwrapper.hasWrappedValue || import5.checkBinding(throwOnChange,this._expr_3,currVal_3))) {
+      this.renderer.setText(this._text_2,currVal_3);
+      this._expr_3 = currVal_3;
     }
     this.detectViewChildrenChanges(throwOnChange);
   }
 }
-function viewFactory_TicketComponent1(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<any> {
+function viewFactory_TicketComponent1(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import1.AppView<any> {
   return new _View_TicketComponent1(viewUtils,parentInjector,declarationEl);
 }
