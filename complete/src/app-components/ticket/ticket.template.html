@@ -1,0 +1,91 @@
+<div class="row">
+    <div class="ticket-action-container card-panel">
+        <div class="col_subscriber-search input-field">
+            <form #subscriberSearchForm="ngForm" (ngSubmit)="searchSubscriberByID(inputSubscriberID.value)" autocomplete="off">
+                <input #inputSubscriberID
+                       id="subscriberID" type="text" class="validate" autofocus
+                       [value]="ticketID"
+                       (input)="subscriberID = $event.target.value"
+                       placeholder="Subscriber ID">
+                <!--<label for="subscriberID">Subscriber ID</label>-->
+                <i class="material-icons align-right" type="submit" name="action">search</i>
+                <!--<button class="btn waves-effect waves-light" type="submit" name="action">Search-->
+                <!--<i class="material-icons right">search</i>-->
+                <!--</button>-->
+            </form>
+            <div class="input-field">
+                <select>
+                    <option value="" disabled selected>Contact Type</option>
+                    <option value="1">Phone Call</option>
+                    <option value="2">Email</option>
+                    <option value="3">Walk In</option>
+                </select>
+            </div>
+        </div> <!--end .inputfield.col.s2-->
+        <div class="col_problem-statement">
+            <ckeditor [ckEditorInstanceID]="'ckeditor_problem-statement'"></ckeditor>
+        </div> <!--end .col.s4-->
+
+        <div class="col_solution">
+            <ckeditor [ckEditorInstanceID]="'ckeditor_solution'"></ckeditor>
+
+        </div> <!--end .col.s3-->
+        <div class="col_action-buttons">
+            <div class="input-field">
+                <select>
+                    <option value="" disabled selected>Status</option>
+                    <option value="1">Phone Call</option>
+                    <option value="2">Email</option>
+                    <option value="3">Walk In</option>
+                </select>
+            </div>
+            <div class="input-field">
+                <select>
+                    <option value="" disabled selected>Assignee</option>
+                    <option value="1">Phone Call</option>
+                    <option value="2">Email</option>
+                    <option value="3">Walk In</option>
+                </select>
+            </div>
+            <div class="action-buttons_container">
+                <button class="green btn waves-effect waves-light action-button" type="submit" name="action">
+                    Resolve
+                    <i class="material-icons right">check</i>
+                </button>
+                <button class="orange btn waves-effect waves-light action-button" type="submit" name="action">
+                    Hold
+                    <i class="material-icons right">pause</i>
+                </button>
+
+            </div>
+        </div> <!--end .col.s2-->
+    </div> <!--end .ticket-action-container.card-panel-->
+</div>
+
+<div class="row">
+    <div class="col s4">
+        <div class="card-panel">
+            <span>
+                I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+            </span>
+            <pre *ngIf="subscriberFoundByID"><code>{{ subscriberFoundByID | json }}</code></pre>
+        </div>
+    </div>
+    <div class="col s4">
+        <div class="card-panel">
+            <span>
+                I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+            </span>
+        </div>
+    </div>
+    <div class="col s4">
+        <div class="card-panel">
+            <span>
+                I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+            </span>
+        </div>
+    </div>
+</div>

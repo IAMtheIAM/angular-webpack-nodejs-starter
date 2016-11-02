@@ -48,7 +48,7 @@ I wouldn't recommend JIT build for production code, because it's around 50% slow
 Viewing The App
 
 * [http://localhost:5000](http://localhost:5000)
-* Username: `admin`, password: `admin`. Obviously not something you can use in production. You can find the moment passwords are validated in `TokenProviderMiddleware.cs`.
+* Username: Admin (this will bypass the application authentication, the same as an "Authenticated: true" response from the server. No password needed)
 
 **Important points of consideration**
 

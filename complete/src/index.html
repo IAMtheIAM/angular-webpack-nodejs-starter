@@ -1,0 +1,51 @@
+﻿@using Starter;
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+
+   <title>IAMtheIAM</title>
+
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="IAMtheIAM">
+
+   <!-- use http://www.favicon-generator.org/ to replace files in public/icon-->
+
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+   <!-- base url -->
+   <base href="/">
+
+   <environment names="Development, Production">
+      <!-- .NET Production / Development mode  -->
+      <!--<link href="/css/vendors.style.css?8609335d43fa570a3897" rel="stylesheet">-->
+      <link href="/css/app.style.css?8609335d43fa570a3897" rel="stylesheet">
+   </environment>
+</head>
+
+<body class="@Startup.Environment">
+Loading...
+@RenderBody()
+
+<environment names="Development, Production">
+   <!-- .NET Production / Development mode  -->
+   <script type="text/javascript" src="commons.bundle.js?8609335d43fa570a3897"></script>
+   <!--<script type="text/javascript" src="manifest.bundle.js?8609335d43fa570a3897"></script>-->
+   <script type="text/javascript" src="polyfills.bundle.js?8609335d43fa570a3897"></script>
+   <script type="text/javascript" src="vendors.bundle.js?8609335d43fa570a3897"></script>
+   <script type="text/javascript" src="app.bundle.js?8609335d43fa570a3897"></script>
+</environment>
+
+<environment names="Webpack">
+   <!-- Webpack Development mode -->
+   <script type="text/javascript" src="http://localhost:4000/commons.bundle.js?8609335d43fa570a3897"></script>
+   <!--<script type="text/javascript" src="http://localhost:4000/manifest.bundle.js?8609335d43fa570a3897"></script>-->
+   <script type="text/javascript" src="http://localhost:4000/polyfills.bundle.js?8609335d43fa570a3897"></script>
+   <script type="text/javascript" src="http://localhost:4000/vendors.bundle.js?8609335d43fa570a3897"></script>
+   <script type="text/javascript" src="http://localhost:4000/app.bundle.js?8609335d43fa570a3897"></script>
+</environment>
+
+</body>
+</html>

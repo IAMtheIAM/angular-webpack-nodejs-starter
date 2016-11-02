@@ -1,0 +1,11 @@
+$colors: require("./my_colors.js");
+@each $key in $colors {
+    .color-#{$key} {
+        $key: $colors
+    }
+}
+
+body {
+    color: map-get($colors, "contentContainerWidth");
+    size: map-get($colors, "contentContainerPosition");
+}

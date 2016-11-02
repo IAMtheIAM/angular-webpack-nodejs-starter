@@ -1,0 +1,14 @@
+/********************/
+/* NotFound404.style.scss */
+/********************/
+@import '../../../assets/styles/appwide-metastyles';
+
+webpage2 {
+   iframe {
+      display: block;       /* iframes are inline by default */
+      background: #666;
+      border: none;         /* Reset default border */
+      height: 150vh;        /* Viewport-relative units */
+      width: 100%;
+   }
+}

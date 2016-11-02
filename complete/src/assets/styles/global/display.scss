@@ -1,0 +1,26 @@
+/* global/Forms.scss*/
+
+/* ===============================================================
+ *                       DISLAY CSS LOGIC
+ * =============================================================== */
+
+.hidden {
+  display: none;
+}
+
+// Hidden from production build
+.app-state {
+  display: none;
+}
+
+/* =================================================
+ *               DEVELOPMENT MODE CSS
+ * ================================================= */
+body.development, body.webpack {
+
+  .app-state {
+    display: flex;
+  }
+}
+
+

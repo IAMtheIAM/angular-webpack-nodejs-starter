@@ -1,0 +1,66 @@
+<div class="card-container login-form">
+    <div class="welcome-message text-align-center">
+        <h5>Angular2 Webpack2 DotNET Starter</h5>
+        <h3>By IAMtheIAM</h3>
+    </div>
+
+    <!-- The Bootstrap + Angular2 Material way -->
+    <!--<md-card>
+        <form role="form" (submit)="login($event, username.value, password.value)">
+            <div class="form-group">
+                <input type="text" #username class="form-control" id="username" value="admin">
+                <label for="username">Username</label>
+            </div>
+            <div class="form-group">
+                <input type="password" #password class="form-control" id="password">
+                <label for="password">Password</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="rememberMe" id="rememberMe" value="" class="rememberMe"/>
+                <label for="rememberMe">Remember me</label>
+                <span class="float-right"><a href="/forgotpassword">Forgot password?</a></span>
+            </div>
+
+            <button md-raised-button color="primary" class="btn btn-large btn-block waves-effect waves-light login-submit" ype="submit">Login<i class="material-icons right">send</i></button>
+        </form>
+    </md-card>-->
+    <!--The Materialize way-->
+    <div class="card">
+        <div class="card-content">
+            <form role="form" (submit)="login($event, username.value, password.value)">
+                <div class="row">
+                    <div class="input-field">
+                        <i class="material-icons suffix">account_circle</i>
+                        <input type="text" #username class="" id="username1" value="admin">
+                        <label for="username1">Username</label>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field">
+                        <i class="material-icons suffix">lock_outline</i>
+                        <input type="password" #password class="" id="password1">
+                        <label for="password1">Password</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field">
+                        <input type="checkbox" id="rememberMe1" value="" class="rememberMe" /><!--<label for="rememberMe1">Remember me</label>-->
+
+                        <input type="checkbox" id="filled-in-box1" class="filled-in rememberMe" />
+                        <label for="filled-in-box1">Remember me</label>
+
+                        <span class="float-right"><a href="/forgotpassword">Forgot password?</a></span><br>
+                        <!--<span class="float-right"><a (click)="logout()">Logout</a></span>-->
+
+                    </div>
+                </div>
+
+                <button class="btn btn-block btn-large waves-effect waves-light login-submit" type="submit" name="action">
+                    Login<i class="material-icons right">send</i>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="JIT: Dev Server" type="js.build_tools.npm" factoryName="npm">
+    <package-json value="$PROJECT_DIR$/package.json" />
+    <command value="run-script" />
+    <scripts>
+      <script value="devserver:jit" />
+    </scripts>
+    <node-interpreter value="project" />
+    <envs />
+    <method />
+  </configuration>
+</component>
