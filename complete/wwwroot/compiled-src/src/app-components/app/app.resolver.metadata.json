@@ -1,0 +1,1 @@
+{"__symbolic":"module","version":1,"metadata":{"DataResolver":{"__symbolic":"class","decorators":[{"__symbolic":"call","expression":{"__symbolic":"reference","module":"@angular/core","name":"Injectable"}}],"members":{"__ctor__":[{"__symbolic":"constructor"}],"resolve":[{"__symbolic":"method"}]}},"APP_RESOLVER_PROVIDERS":[{"__symbolic":"reference","name":"DataResolver"}]}}

@@ -1,0 +1,1 @@
+{"version":3,"file":"appInjector.js","sourceRoot":"C:/Source/GitHub/angular2-webpack2-dotnet-starter/complete/","sources":["src/app-components/common/appInjector.ts"],"names":[],"mappings":";AAKA,IAAI,cAAwB,CAAC;AAEhB,mBAAW,GAAG,UAAC,QAAmB;IAC7C,EAAE,CAAC,CAAC,QAAQ,CAAC,CAAC,CAAC;QACb,cAAc,GAAG,QAAQ,CAAC;IAC5B,CAAC;IAED,MAAM,CAAC,cAAc,CAAC;AACxB,CAAC,CAAC"}

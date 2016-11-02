@@ -2,7 +2,7 @@
  * @author: @AngularClass
  */
 
-const helpers = require('./helpers');
+const helpers = require('./helpers.js');
 const webpackMerge = require('webpack-merge'); // used to merge webpack configs
 const commonConfig = require('./webpack.common.js'); // the settings that are common to prod and dev
 const webpack = require('webpack');
@@ -25,6 +25,7 @@ const PurifyCSSPlugin = require('../node_modules_custom/purifycss-webpack-plugin
 /**
  * Webpack Constants
  */
+const outputDir = 'wwwroot';
 // const webpackConditionals = require('./webpack.conditionals')
 // const METADATA = webpackConditionals.METADATA;
 
@@ -55,7 +56,7 @@ module.exports = webpackMerge(commonConfig, {
        *
        * See: http://webpack.github.io/docs/configuration.html#output-path
        */
-      path: helpers.root('wwwroot'),
+      path: helpers.root(outputDir),
 
       /**
        * Specifies the name of each output file on disk.
@@ -63,7 +64,7 @@ module.exports = webpackMerge(commonConfig, {
        *
        * See: http://webpack.github.io/docs/configuration.html#output-filename
        */
-      filename: 'js/[name].bundle.js',
+      filename: '/js/[name].bundle.js',
 
       /**
        * The filename of the SourceMaps for the JavaScript files.
@@ -71,7 +72,7 @@ module.exports = webpackMerge(commonConfig, {
        *
        * See: http://webpack.github.io/docs/configuration.html#output-sourcemapfilename
        */
-      sourceMapFilename: 'js/maps/[name].map',
+      sourceMapFilename: '/js/maps/[name].map',
 
       /**
        * The filename of non-entry chunks as relative path
@@ -79,7 +80,7 @@ module.exports = webpackMerge(commonConfig, {
        *
        * See: http://webpack.github.io/docs/configuration.html#output-chunkfilename
        */
-      chunkFilename: 'js/chunks/[name].chunk.js',
+      chunkFilename: '/js/chunks/[name].chunk.js',
 
    },
 
@@ -120,7 +121,8 @@ module.exports = webpackMerge(commonConfig, {
          purifyOptions: {
             minify: true,
             info: true,
-            output: 'wwwroot/css/purified',
+            // output: 'wwwroot/css/purified',
+            output: helpers.root(outputDir) + '/css/purified',
             rejected: false,
             whitelist: // KendoUI for jQuery - classes that are programatically added to DOM, therefore must be whitelisted since they cannot be evaluated during compile-time
             // '*selector*' means any class which contains that selector.

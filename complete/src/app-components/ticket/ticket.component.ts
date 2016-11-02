@@ -4,6 +4,7 @@
  */
 import { Component, Output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import * as _ from 'lodash'; // needed for AOT, even though webpack defineplugin makes it available already
 
 /*
  * Shared Utilities

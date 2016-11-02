@@ -1,0 +1,26 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+.idea/shelf
+.idea/workspace.xml
+
+complete/dotnetcore/Angular2-Webpack2-DotNetCore-Starter.xproj.user
+complete/dotnetcore/wwwroot/compiled-src
+complete/dotnetcore/project.lock.json
+complete/dotnetcore/obj
+complete/dotnetcore/bin
+complete/dotnetcore/.vs
+
+complete/dotnetframework/Angular2-Webpack2-DotNetFramework-Starter.xproj.user
+complete/dotnetframework/wwwroot/compiled-src
+complete/dotnetframework/project.lock.json
+complete/dotnetframework/Api.Authentication/obj
+complete/dotnetframework/Api.Authentication/bin
+complete/dotnetframework/.vs
+complete/dotnetframework/packages/
+
+complete/cache
+complete/node_modules
+complete/stats.json
+complete/npm-debug.log
+complete/aot-compiled/node_modules
+complete/wwwroot/compiled-src

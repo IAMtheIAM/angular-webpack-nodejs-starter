@@ -1,15 +1,9 @@
 /**
- * @author: @AngularClass
- * For more info on Webpack Hot module Replacement (HMR), go to :
- * http://andrewhfarmer.com/understanding-hmr/
- */
-
-/**
  * Webpack Plugins & Required Modules
  */
 const chalk = require('chalk');
 const path = require('path');
-const helpers = require('./helpers');
+const helpers = require('./helpers.js');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 // const HappyThreadPool = HappyPack.ThreadPool({size: 5});
 // const HtmlElementsPlugin = require('./html-elements-plugin');
@@ -34,7 +28,6 @@ const ENV = webpackConditionals.ENV;
 const PRODUCTION = webpackConditionals.PRODUCTION;
 const isDLLs = webpackConditionals.isDLLs;
 const appBoostrapFile = webpackConditionals.appBoostrapFile;
-
 
 
 /*********************************************************************************************

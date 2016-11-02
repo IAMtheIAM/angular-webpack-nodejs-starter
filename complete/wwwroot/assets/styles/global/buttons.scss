@@ -1,0 +1,20 @@
+/* global/Forms.scss*/
+
+
+/* ===============================================================
+ *                            BUTTONS
+ * =============================================================== */
+
+
+.btn-block {
+  width: 100%;
+}
+
+/*
+ * Material Waves
+ */
+.waves-effect.waves-darkblue .waves-ripple {
+   /* The alpha value allows the text and background color
+   of the button to still show through. */
+   background-color: rgba(150, 212, 99, 0.85);
+}

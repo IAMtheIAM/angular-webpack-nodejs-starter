@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name=".NET Server: Production" type="js.build_tools.npm" factoryName="npm" folderName="Complete" singleton="false">
+    <package-json value="$PROJECT_DIR$/complete/package.json" />
+    <command value="run-script" />
+    <scripts>
+      <script value="dotnetcore:server:production" />
+    </scripts>
+    <node-interpreter value="project" />
+    <envs />
+    <method />
+  </configuration>
+</component>

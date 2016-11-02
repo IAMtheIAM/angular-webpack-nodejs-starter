@@ -1,9 +1,14 @@
+/**
+ * Webpack Constants
+ */
 const resolveNgRoute = require('@angularclass/resolve-angular-routes');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');const webpack = require('webpack');
 const CompressionPlugin = require('compression-webpack-plugin');
 const AutoPrefixer = require('autoprefixer');
-const helpers = require('./helpers');
+const helpers = require('./helpers.js');
 const commonConfig = require('./webpack.common.js'); // the settings that are common to prod and dev
+const outputDir = 'wwwroot';
+console.log('testing for outputDir: ' + commonConfig.outputDir);
 
 // module.exports = webpackMerge(commonConfig,
 module.exports = {
@@ -13,10 +18,10 @@ module.exports = {
       vendors: ['./src/vendors.ts']
    },
    output: {
-      path: helpers.root('wwwroot'),
-      filename: 'dlls/[name].dll.bundle.js',
-      sourceMapFilename: 'dlls/maps/[name].map',
-      chunkFilename: 'dlls/chunks/[name].chunk.js',
+      path: helpers.root(outputDir),
+      filename: '/dlls/[name].dll.bundle.js',
+      sourceMapFilename: '/dlls/maps/[name].map',
+      chunkFilename: '/dlls/chunks/[name].chunk.js',
 
 
       // The name of the global variable which the library's
@@ -39,7 +44,7 @@ module.exports = {
          // The path to the manifest file which maps between
          // modules included in a bundle and the internal IDs
          // within that bundle
-         path: helpers.root('wwwroot/dlls/[name]-manifest.json'),
+         path: helpers.root(outputDir + '/dlls/[name]-manifest.json'),
 
          // The name of the global variable which the library's
          // require function has been assigned to. This must match the

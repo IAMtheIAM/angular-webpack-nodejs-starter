@@ -1,11 +1,6 @@
-/**
- * @author: @AngularClass
- */
-
 const webpackMerge = require('webpack-merge'); // used to merge webpack configs
 const webpack = require('webpack');
 const helpers = require('./helpers');
-const commonConfig = require('./webpack.common.js'); // the settings that are common to prod and dev
 
 /**
  * Webpack Plugins
@@ -18,11 +13,10 @@ const NamedModulesPlugin = require('webpack/lib/NamedModulesPlugin');
 /**
  * Webpack Constants
  */
-
-
+const commonConfig = require('./webpack.common.js'); // the settings that are common to prod and dev
 const webpackConditionals = require('./webpack.conditionals')
 const METADATA = webpackConditionals.METADATA;
-
+const outputDir = 'wwwroot';
 
 /**
  * Webpack configuration
@@ -57,7 +51,7 @@ module.exports = webpackMerge(commonConfig,
           *
           * See: http://webpack.github.io/docs/configuration.html#output-path
           */
-         path: helpers.root('wwwroot'),
+         path: helpers.root(outputDir),
 
          /**
           * Specifies the name of each output file on disk.
@@ -130,7 +124,7 @@ module.exports = webpackMerge(commonConfig,
        * See: https://webpack.github.io/docs/webpack-dev-server.html
        */
       devServer: {
-         outputPath: helpers.root('wwwroot'),
+         outputPath: helpers.root(outputDir),
          port: METADATA.port,
          host: METADATA.host,
          compress: true, // Set this if you want to enable gzip compression for assets

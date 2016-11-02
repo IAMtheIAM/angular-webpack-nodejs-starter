@@ -4,10 +4,10 @@
  */
  /* tslint:disable */
 
-import * as import0 from '@angular/core/src/linker/debug_context';
-import * as import1 from '../../../../../src/app-components/nav/footer/nav-footer.component';
-import * as import2 from '@angular/core/src/render/api';
-import * as import3 from '@angular/core/src/linker/view';
+import * as import0 from '../../../../../src/app-components/nav/footer/nav-footer.component';
+import * as import1 from '@angular/core/src/linker/view';
+import * as import2 from '@angular/core/src/linker/debug_context';
+import * as import3 from '@angular/core/src/render/api';
 import * as import4 from '@angular/core/src/linker/element';
 import * as import5 from '@angular/core/src/linker/view_utils';
 import * as import6 from '@angular/core/src/di/injector';
@@ -19,59 +19,78 @@ import * as import11 from '@angular/core/src/metadata/view';
 import * as import12 from '@angular/core/src/linker/component_factory';
 import * as import13 from '@angular/core/src/linker/template_ref';
 import * as import14 from '@angular/common/src/directives/ng_if';
-const nodeDebugInfos_NavFooterComponent_Host0:import0.StaticNodeDebugInfo[] = [new import0.StaticNodeDebugInfo([import1.NavFooterComponent],import1.NavFooterComponent,{})];
-var renderType_NavFooterComponent_Host:import2.RenderComponentType = (null as any);
-class _View_NavFooterComponent_Host0 extends import3.DebugAppView<any> {
+import * as import15 from '../../../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
+export class Wrapper_NavFooterComponent {
+  context:import0.NavFooterComponent;
+  changed:boolean;
+  constructor(p0:any,p1:any) {
+    this.changed = false;
+    this.context = new import0.NavFooterComponent(p0,p1);
+  }
+  detectChangesInInputProps(view:import1.AppView<any>,el:any,throwOnChange:boolean):boolean {
+    var changed:any = this.changed;
+    this.changed = false;
+    if (!throwOnChange) { if ((view.numberOfChecks === 0)) { this.context.ngOnInit(); } }
+    return changed;
+  }
+  detectChangesInHostProps(view:import1.AppView<any>,el:any,throwOnChange:boolean):void {
+  }
+}
+const nodeDebugInfos_NavFooterComponent_Host0:import2.StaticNodeDebugInfo[] = [new import2.StaticNodeDebugInfo([import0.NavFooterComponent],import0.NavFooterComponent,{})];
+var renderType_NavFooterComponent_Host:import3.RenderComponentType = (null as any);
+class _View_NavFooterComponent_Host0 extends import1.DebugAppView<any> {
   _el_0:any;
   /*private*/ _appEl_0:import4.AppElement;
-  _NavFooterComponent_0_4:import1.NavFooterComponent;
+  _NavFooterComponent_0_4:Wrapper_NavFooterComponent;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement) {
     super(_View_NavFooterComponent_Host0,renderType_NavFooterComponent_Host,import7.ViewType.HOST,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_NavFooterComponent_Host0);
   }
   createInternal(rootSelector:string):import4.AppElement {
-    this._el_0 = this.selectOrCreateHostElement('nav-footer',rootSelector,this.debug(0,0,0));
+    this._el_0 = import5.selectOrCreateRenderHostElement(this.renderer,'nav-footer',import5.EMPTY_INLINE_ARRAY,rootSelector,this.debug(0,0,0));
     this._appEl_0 = new import4.AppElement(0,(null as any),this,this._el_0);
     var compView_0:any = viewFactory_NavFooterComponent0(this.viewUtils,this.injector(0),this._appEl_0);
-    this._NavFooterComponent_0_4 = new import1.NavFooterComponent(this.parentInjector.get(import9.AppState),this.parentInjector.get(import10.Authentication));
-    this._appEl_0.initComponent(this._NavFooterComponent_0_4,[],compView_0);
-    compView_0.create(this._NavFooterComponent_0_4,this.projectableNodes,(null as any));
-    this.init([].concat([this._el_0]),[this._el_0],[],[]);
+    this._NavFooterComponent_0_4 = new Wrapper_NavFooterComponent(this.parentInjector.get(import9.AppState),this.parentInjector.get(import10.Authentication));
+    this._appEl_0.initComponent(this._NavFooterComponent_0_4.context,([] as any[]),compView_0);
+    compView_0.create(this._NavFooterComponent_0_4.context,this.projectableNodes,(null as any));
+    this.init(([] as any[]).concat([this._el_0]),[this._el_0],([] as any[]),([] as any[]));
     return this._appEl_0;
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import1.NavFooterComponent) && (0 === requestNodeIndex))) { return this._NavFooterComponent_0_4; }
+    if (((token === import0.NavFooterComponent) && (0 === requestNodeIndex))) { return this._NavFooterComponent_0_4.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    if (((this.numberOfChecks === 0) && !throwOnChange)) { this._NavFooterComponent_0_4.ngOnInit(); }
+    this.debug(0,0,0);
+    this._NavFooterComponent_0_4.detectChangesInInputProps(this,this._el_0,throwOnChange);
     this.detectContentChildrenChanges(throwOnChange);
+    this._NavFooterComponent_0_4.detectChangesInHostProps(this,this._el_0,throwOnChange);
     this.detectViewChildrenChanges(throwOnChange);
   }
 }
-function viewFactory_NavFooterComponent_Host0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<any> {
-  if ((renderType_NavFooterComponent_Host === (null as any))) { (renderType_NavFooterComponent_Host = viewUtils.createRenderComponentType('',0,import11.ViewEncapsulation.None,[],{})); }
+function viewFactory_NavFooterComponent_Host0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import1.AppView<any> {
+  if ((renderType_NavFooterComponent_Host === (null as any))) { (renderType_NavFooterComponent_Host = viewUtils.createRenderComponentType('',0,import11.ViewEncapsulation.None,([] as any[]),{})); }
   return new _View_NavFooterComponent_Host0(viewUtils,parentInjector,declarationEl);
 }
-export const NavFooterComponentNgFactory:import12.ComponentFactory<import1.NavFooterComponent> = new import12.ComponentFactory<import1.NavFooterComponent>('nav-footer',viewFactory_NavFooterComponent_Host0,import1.NavFooterComponent);
-const styles_NavFooterComponent:any[] = [];
-const nodeDebugInfos_NavFooterComponent0:import0.StaticNodeDebugInfo[] = [
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([
+export const NavFooterComponentNgFactory:import12.ComponentFactory<import0.NavFooterComponent> = new import12.ComponentFactory<import0.NavFooterComponent>('nav-footer',viewFactory_NavFooterComponent_Host0,import0.NavFooterComponent);
+const styles_NavFooterComponent:any[] = ([] as any[]);
+const nodeDebugInfos_NavFooterComponent0:import2.StaticNodeDebugInfo[] = [
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([
     import13.TemplateRef,
     import14.NgIf
   ]
   ,(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{})
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-var renderType_NavFooterComponent:import2.RenderComponentType = (null as any);
-class _View_NavFooterComponent0 extends import3.DebugAppView<import1.NavFooterComponent> {
+var renderType_NavFooterComponent:import3.RenderComponentType = (null as any);
+class _View_NavFooterComponent0 extends import1.DebugAppView<import0.NavFooterComponent> {
   _text_0:any;
   _el_1:any;
   _text_2:any;
@@ -81,31 +100,27 @@ class _View_NavFooterComponent0 extends import3.DebugAppView<import1.NavFooterCo
   _anchor_6:any;
   /*private*/ _appEl_6:import4.AppElement;
   _TemplateRef_6_5:any;
-  _NgIf_6_6:import14.NgIf;
+  _NgIf_6_6:import15.Wrapper_NgIf;
   _text_7:any;
   _text_8:any;
-  /*private*/ _expr_0:any;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement) {
     super(_View_NavFooterComponent0,renderType_NavFooterComponent,import7.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_NavFooterComponent0);
   }
   createInternal(rootSelector:string):import4.AppElement {
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
     this._text_0 = this.renderer.createText(parentRenderNode,'\n',this.debug(0,0,48));
-    this._el_1 = this.renderer.createElement(parentRenderNode,'div',this.debug(1,1,0));
-    this.renderer.setElementAttribute(this._el_1,'class','text-align-center');
+    this._el_1 = import5.createRenderElement(this.renderer,parentRenderNode,'div',new import5.InlineArray2(2,'class','text-align-center'),this.debug(1,1,0));
     this._text_2 = this.renderer.createText(this._el_1,'\n   ',this.debug(2,1,31));
-    this._el_3 = this.renderer.createElement(this._el_1,'p',this.debug(3,2,3));
-    this.renderer.setElementAttribute(this._el_3,'class','copyright');
+    this._el_3 = import5.createRenderElement(this.renderer,this._el_1,'p',new import5.InlineArray2(2,'class','copyright'),this.debug(3,2,3));
     this._text_4 = this.renderer.createText(this._el_3,'Copyright © 2016 IAMtheIAM. All rights reserved.',this.debug(4,2,24));
     this._text_5 = this.renderer.createText(this._el_1,'\n   ',this.debug(5,2,81));
     this._anchor_6 = this.renderer.createTemplateAnchor(this._el_1,this.debug(6,3,3));
     this._appEl_6 = new import4.AppElement(6,1,this,this._anchor_6);
     this._TemplateRef_6_5 = new import13.TemplateRef_(this._appEl_6,viewFactory_NavFooterComponent1);
-    this._NgIf_6_6 = new import14.NgIf(this._appEl_6.vcRef,this._TemplateRef_6_5);
+    this._NgIf_6_6 = new import15.Wrapper_NgIf(this._appEl_6.vcRef,this._TemplateRef_6_5);
     this._text_7 = this.renderer.createText(this._el_1,'\n',this.debug(7,4,11));
     this._text_8 = this.renderer.createText(parentRenderNode,'\n',this.debug(8,5,6));
-    this._expr_0 = import8.UNINITIALIZED;
-    this.init([],[
+    this.init(([] as any[]),[
       this._text_0,
       this._el_1,
       this._text_2,
@@ -116,36 +131,34 @@ class _View_NavFooterComponent0 extends import3.DebugAppView<import1.NavFooterCo
       this._text_7,
       this._text_8
     ]
-    ,[],[]);
+    ,([] as any[]),([] as any[]));
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
     if (((token === import13.TemplateRef) && (6 === requestNodeIndex))) { return this._TemplateRef_6_5; }
-    if (((token === import14.NgIf) && (6 === requestNodeIndex))) { return this._NgIf_6_6; }
+    if (((token === import14.NgIf) && (6 === requestNodeIndex))) { return this._NgIf_6_6.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
     this.debug(6,3,6);
-    const currVal_0:any = this.context.appState.state.isAuthenticated;
-    if (import5.checkBinding(throwOnChange,this._expr_0,currVal_0)) {
-      this._NgIf_6_6.ngIf = currVal_0;
-      this._expr_0 = currVal_0;
-    }
+    const currVal_6_0_0:any = this.context.appState.state.isAuthenticated;
+    this._NgIf_6_6.check_ngIf(currVal_6_0_0,throwOnChange,false);
+    this._NgIf_6_6.detectChangesInInputProps(this,this._anchor_6,throwOnChange);
     this.detectContentChildrenChanges(throwOnChange);
     this.detectViewChildrenChanges(throwOnChange);
   }
 }
-export function viewFactory_NavFooterComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<import1.NavFooterComponent> {
-  if ((renderType_NavFooterComponent === (null as any))) { (renderType_NavFooterComponent = viewUtils.createRenderComponentType('C:/Development/angular2-webpack2-dotnet-starter/src/app-components/nav/footer/nav-footer.template.html',0,import11.ViewEncapsulation.None,styles_NavFooterComponent,{})); }
+export function viewFactory_NavFooterComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import1.AppView<import0.NavFooterComponent> {
+  if ((renderType_NavFooterComponent === (null as any))) { (renderType_NavFooterComponent = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-webpack2-dotnet-starter/complete/src/app-components/nav/footer/nav-footer.template.html',0,import11.ViewEncapsulation.None,styles_NavFooterComponent,{})); }
   return new _View_NavFooterComponent0(viewUtils,parentInjector,declarationEl);
 }
-const nodeDebugInfos_NavFooterComponent1:import0.StaticNodeDebugInfo[] = [
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{})
+const nodeDebugInfos_NavFooterComponent1:import2.StaticNodeDebugInfo[] = [
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{})
 ]
 ;
-class _View_NavFooterComponent1 extends import3.DebugAppView<any> {
+class _View_NavFooterComponent1 extends import1.DebugAppView<any> {
   _el_0:any;
   _el_1:any;
   _text_2:any;
@@ -153,27 +166,25 @@ class _View_NavFooterComponent1 extends import3.DebugAppView<any> {
     super(_View_NavFooterComponent1,renderType_NavFooterComponent,import7.ViewType.EMBEDDED,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_NavFooterComponent1);
   }
   createInternal(rootSelector:string):import4.AppElement {
-    this._el_0 = this.renderer.createElement((null as any),'p',this.debug(0,3,3));
-    this._el_1 = this.renderer.createElement(this._el_0,'a',this.debug(1,3,45));
-    this.renderer.setElementAttribute(this._el_1,'class','btn btn-primary btn-lg');
-    this.renderer.setElementAttribute(this._el_1,'role','button');
+    this._el_0 = import5.createRenderElement(this.renderer,(null as any),'p',import5.EMPTY_INLINE_ARRAY,this.debug(0,3,3));
+    this._el_1 = import5.createRenderElement(this.renderer,this._el_0,'a',new import5.InlineArray4(4,'class','btn btn-primary btn-lg','role','button'),this.debug(1,3,45));
     this._text_2 = this.renderer.createText(this._el_1,'Logout\n   ',this.debug(2,3,112));
     var disposable_0:Function = this.renderer.listen(this._el_1,'click',this.eventHandler(this._handle_click_1_0.bind(this)));
-    this.init([].concat([this._el_0]),[
+    this.init(([] as any[]).concat([this._el_0]),[
       this._el_0,
       this._el_1,
       this._text_2
     ]
-    ,[disposable_0],[]);
+    ,[disposable_0],([] as any[]));
     return (null as any);
   }
   private _handle_click_1_0($event:any):boolean {
     this.markPathToRootAsCheckOnce();
     this.debug(1,3,93);
-    const pd_0:any = ((<any>this.parent.context.logout()) !== false);
-    return (true && pd_0);
+    const pd_1_0:any = ((<any>this.parent.context.logout()) !== false);
+    return (true && pd_1_0);
   }
 }
-function viewFactory_NavFooterComponent1(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<any> {
+function viewFactory_NavFooterComponent1(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import1.AppView<any> {
   return new _View_NavFooterComponent1(viewUtils,parentInjector,declarationEl);
 }

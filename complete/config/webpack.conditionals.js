@@ -5,12 +5,12 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ForkCheckerPlugin = require('awesome-typescript-loader').ForkCheckerPlugin;
 const webpack = require('webpack');
 const AutoPrefixer = require('autoprefixer');
-const CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
-const ContextReplacementPlugin = require("webpack/lib/ContextReplacementPlugin");
+const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
+const ContextReplacementPlugin = require('webpack/lib/ContextReplacementPlugin');
 const resolveNgRoute = require('@angularclass/resolve-angular-routes');
 const querystring = require('querystring');
 const path = require('path');
-const helpers = require('./helpers');
+const helpers = require('./helpers.js');
 const AssetsPlugin = require('assets-webpack-plugin');
 
 
@@ -19,7 +19,7 @@ const AssetsPlugin = require('assets-webpack-plugin');
  ********************************************************************************************/
 const ENVlc = process.env.npm_lifecycle_event;
 const AOT = ENVlc === 'devserver:aot' || ENVlc === 'build:dev:aot' || ENVlc === 'build:production:aot';
-const JIT = ENVlc === 'devserver:jit' || ENVlc === 'build:dev:jit' || ENVlc === 'build:production:jit';
+const JIT = ENVlc === 'devserver:jit' || ENVlc === 'build:dev:jit'  || ENVlc === 'build:dev:jit:watch' || ENVlc === 'build:production:jit' || ENVlc === 'build:production:jit:watch';
 const isDLLs = ENVlc === 'build:dlls:jit';
 
 const ENV = process.env.NODE_ENV;
@@ -52,7 +52,7 @@ var webpackPlugins = [
    }),
 
    new webpack.LoaderOptionsPlugin({
-       /** Append a new entry under the "options" property to pass addition custom properties to webpack loaders. They listen for the properties here. */
+       /** Append a new entry under the 'options' property to pass addition custom properties to webpack loaders. They listen for the properties here. */
        options: {
            postcss: function () {
                return [AutoPrefixer];
@@ -60,7 +60,7 @@ var webpackPlugins = [
            sassResources: ['./src/assets/styles/variables.scss', './src/assets/styles/mixins.scss'],
            context: helpers.paths.root,
            // sassLoader: {  //Pass custom variables such as ENV variable to scss files.
-           //    data: "$susyDebug: " + susyDebug + ";"
+           //    data: '$susyDebug: ' + susyDebug + ';'
            // }
        }
    }),
@@ -104,8 +104,8 @@ var webpackPlugins = [
     * See: https://github.com/diurnalist/chunk-manifest-webpack-plugin
     */
    // new ChunkManifestPlugin({
-   //    filename: "manifest.json",
-   //    manifestVariable: "webpackManifest"
+   //    filename: 'manifest.json',
+   //    manifestVariable: 'webpackManifest'
    // }),
    // /**
    //  * Plugin: HtmlWebpackPlugin
@@ -132,7 +132,7 @@ var webpackPlugins = [
  ********************************************************************************************/
 
 // Skip for DLLS build
-if (ENV === "production" || ENV === "development" || ENV === "testing") {
+if (ENV === 'production' || ENV === 'development' || ENV === 'testing') {
 
     var conditionalPlugins = [
 
@@ -162,12 +162,14 @@ if (ENV === "production" || ENV === "development" || ENV === "testing") {
 
 
        new CopyWebpackPlugin([
-          { from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/plugins"), to: 'js/ckeditor/plugins' },
-          { from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/lang"), to: 'js/ckeditor/lang' },
-          { from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/skins"), to: 'js/ckeditor/skins' },
-          { from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/ckeditor.js"), to: 'js/ckeditor' },
-          { from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/styles.js"), to: 'js/ckeditor' },
-          { from: path.resolve(helpers.paths.appRoot, "lib/ckeditor/contents.css"), to: 'js/ckeditor' },
+          { from: path.resolve(helpers.paths.appRoot, 'lib/ckeditor/plugins'), to: 'js/ckeditor/plugins' },
+          { from: path.resolve(helpers.paths.appRoot, 'lib/ckeditor/lang'), to: 'js/ckeditor/lang' },
+          { from: path.resolve(helpers.paths.appRoot, 'lib/ckeditor/skins'), to: 'js/ckeditor/skins' },
+          { from: path.resolve(helpers.paths.appRoot, 'lib/ckeditor/ckeditor.js'), to: 'js/ckeditor' },
+          { from: path.resolve(helpers.paths.appRoot, 'lib/ckeditor/styles.js'), to: 'js/ckeditor' },
+          { from: path.resolve(helpers.paths.appRoot, 'lib/ckeditor/contents.css'), to: 'js/ckeditor' },
+          { from: path.resolve(helpers.paths.root, 'wwwroot'), to: path.resolve(helpers.paths.root, 'dotnetcore/wwwroot') },
+          { from: path.resolve(helpers.paths.root, 'wwwroot'), to: path.resolve(helpers.paths.root, 'dotnetframework/wwwroot') },
        ]),
 
 
@@ -175,8 +177,8 @@ if (ENV === "production" || ENV === "development" || ENV === "testing") {
            'Promise': 'imports?this=>global!exports?global.Promise!es6-promise',
            'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch',
            // 'tinymce': 'imports?tinymce=>window.tinymce!exports?window.tinymce!tinymce/tinymce.min.js',
-           'jQuery': "jquery",
-           '$': "jquery",
+           'jQuery': 'jquery',
+           '$': 'jquery',
            '_': 'lodash'
 
        }),
@@ -217,7 +219,7 @@ if (!isDLLs) {
 // var showSidebar = sidebarEnabled ? 'visible' : 'hidden';
 
 
-// Sets debug for Susy Grid to "hide" or "show" depending on environment variable
+// Sets debug for Susy Grid to 'hide' or 'show' depending on environment variable
 const susyDebug = DEBUG ? 'show' : 'hide';
 const sassVarsConfig = querystring.stringify({
     files: [

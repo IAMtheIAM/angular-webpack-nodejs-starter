@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Debug Webpack (Production)" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" path-to-js-file="webpack.debugger.cli.js" working-dir="$PROJECT_DIR$/complete">
+    <envs>
+      <env name="NODE_ENV" value="production" />
+    </envs>
+    <profiling v8-profiler-path="" />
+    <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSProfilingRunConfigurationExtension">
+      <profiling v8-profiler-path="" />
+    </EXTENSION>
+    <method />
+  </configuration>
+</component>
