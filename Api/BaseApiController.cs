@@ -30,8 +30,9 @@
             if (this.client == null)
             {
                 this.client = new HttpClient();
-                var token = await this.GetTokenAsync();
-                this.client.SetBearerToken(token.AccessToken);
+ 
+//                var token = await this.GetTokenAsync();
+//                this.client.SetBearerToken(token.AccessToken);
             }
 
             return this.client;
