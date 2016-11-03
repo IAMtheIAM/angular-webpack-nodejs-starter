@@ -1,0 +1,13 @@
+# Created by .ignore support plugin (hsz.mobi)
+bin/
+cache/
+node_modules/
+obj/
+.vs
+.idea/shelf
+wwwroot/compiled-src
+project.lock.json
+stats.json
+npm-debug.log
+Angular2-Webpack2-DotNet-Starter.xproj.user
+.idea/workspace.xml
