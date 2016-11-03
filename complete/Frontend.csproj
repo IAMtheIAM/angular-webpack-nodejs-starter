@@ -45,6 +45,7 @@
     <None Include=".gitignore" />
     <None Include=".travis.yml" />
     <None Include="bundleconfig.json" />
+    <None Include="dotnetframework\README.md" />
     <None Include="package.json" />
     <None Include="README.md" />
     <None Include="src\app-components\+detail\detail.style.scss" />

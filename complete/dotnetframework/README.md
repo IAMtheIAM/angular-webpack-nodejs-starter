@@ -1,0 +1,34 @@
+# ASP.NET Framework starter project
+
+### Features
+
+* Works fully in Visual Studio 2015
+* ASP.NET Framework 4.6
+* Angular 2 (AOT & JIT Compilation)
+* Webpack
+* TypeScript
+* SASS
+* Microservices architecture
+  * Identity server
+  * Resource server(s)
+  * Frontend server
+
+### Please note
+
+This web project is intended to be hosted in IIS.
+Visit [the guide for publishing your website on a (local) IIS instance](https://docs.asp.net/en/latest/publishing/iis.html).
+
+
+URL to Project mapping:
+```
+         starter.local -> Frontend.Webhost
+identity.starter.local -> Api.Authentication
+resource.starter.local -> Api.Resource
+```
+
+Hosts file configuration:
+```
+127.0.0.1   starter.local
+127.0.0.1   identity.starter.local
+127.0.0.1   resource.starter.local
+```
