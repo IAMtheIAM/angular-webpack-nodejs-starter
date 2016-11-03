@@ -53,7 +53,7 @@
     "copy:index.html": "ncp wwwroot/index.html Views/Shared",
     "copy:wwwroot": "npm run copy:wwwroot:dotnetcore && npm run copy:wwwroot:dotnetframework",
     "copy:wwwroot:dotnetcore": "ncp wwwroot ../dotnetcore/wwwroot",
-    "copy:wwwroot:dotnetframework": "ncp wwwroot ../dotnetframework/wwwroot",
+    "copy:wwwroot:dotnetframework": "ncp wwwroot ../dotnetframework/Frontend.Webhost/wwwroot",
 
     "ci": "npm run lint && npm test:karma && npm run e2e",
     "devserver": "npm run devserver:aot",
