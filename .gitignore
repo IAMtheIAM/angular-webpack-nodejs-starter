@@ -3,7 +3,7 @@
 .idea/shelf
 .idea/workspace.xml
 
-complete/dotnetcore/Angular2-Webpack2-DotNetCore-Starter.xproj.user
+complete/dotnetcore/Backend - DotNetCore-Starter.xproj.user
 complete/dotnetcore/wwwroot/compiled-src
 complete/dotnetcore/project.lock.json
 complete/dotnetcore/obj
@@ -15,6 +15,10 @@ complete/dotnetframework/wwwroot/compiled-src
 complete/dotnetframework/project.lock.json
 complete/dotnetframework/Api.Authentication/obj
 complete/dotnetframework/Api.Authentication/bin
+complete/dotnetframework/Frontend.Webhost/obj
+complete/dotnetframework/Frontend.Webhost/bin
+complete/dotnetframework/Api.Resource/obj
+complete/dotnetframework/Api.Resource/bin
 complete/dotnetframework/.vs
 complete/dotnetframework/packages/
 
