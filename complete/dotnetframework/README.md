@@ -32,3 +32,14 @@ Hosts file configuration:
 127.0.0.1   identity.starter.local
 127.0.0.1   resource.starter.local
 ```
+
+After configuring the three server processes in IIS, you can simply go to [http://starter.local/](http://starter.local/) to visit your site. If you want to debug, simply run the project in debug mode in Visual Studio and the debugger would work as you expect it to.
+
+You might have to change all the server projects to point to your local IIS instance, which you do (for each project) by:
+* Right clicking the project in your solution
+* -> Properties
+* -> Web
+* Change "IIS Express" to "Local IIS"
+* Point the project URL to the URL you configured in IIS
+   * For example: `http://identity.starter.local/` for the identity server
+   
