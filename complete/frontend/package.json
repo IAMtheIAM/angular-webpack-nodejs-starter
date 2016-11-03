@@ -52,8 +52,8 @@
 
     "copy:index.html": "ncp wwwroot/index.html Views/Shared",
     "copy:wwwroot": "npm run copy:wwwroot:dotnetcore && npm run copy:wwwroot:dotnetframework",
-    "copy:wwwroot:dotnetcore": "ncp wwwroot ../dotnetcore/wwwroot",
-    "copy:wwwroot:dotnetframework": "ncp wwwroot ../dotnetframework/Frontend.Webhost/wwwroot",
+    "copy:wwwroot:dotnetcore": "ncp wwwroot \"../dotnetcore/wwwroot\"",
+    "copy:wwwroot:dotnetframework": "ncp wwwroot \"../dotnetframework/Frontend.Webhost/wwwroot\"",
 
     "ci": "npm run lint && npm test:karma && npm run e2e",
     "devserver": "npm run devserver:aot",
@@ -109,10 +109,10 @@
     "webdriver-manager": "webdriver-manager",
     "webpack": "webpack",
     "webpack-dev-server": "webpack-dev-server",
-    "dotnetcore:server:dev": "cd dotnetcore && set \"ASPNETCORE_ENVIRONMENT=Webpack\" && dotnet run",
-    "dotnetcore:server:production": "cd dotnetcore && set \"ASPNETCORE_ENVIRONMENT=Production\" && dotnet run",
-    "dotnetcore:clean": "cd dotnetcore && rimraf bin obj",
-    "dotnetcore:restore": "cd dotnetcore && dotnet restore",
+    "dotnetcore:server:dev": "cd ../dotnetcore && set \"ASPNETCORE_ENVIRONMENT=Webpack\" && dotnet run",
+    "dotnetcore:server:production": "cd ../dotnetcore && set \"ASPNETCORE_ENVIRONMENT=Production\" && dotnet run",
+    "dotnetcore:clean": "cd ../dotnetcore && rimraf bin obj",
+    "dotnetcore:restore": "cd ../dotnetcore && dotnet restore",
     "precommit-msg": "echo 'Pre-commit checks... Currently disabled. Consider running \"build:dlls\" \"build:dev:jit\" and \"compile:build-production:aot\" before committing to ensure the build succeeds.' && exit 0"
   },
    "pre-commit": [
