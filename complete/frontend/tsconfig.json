@@ -37,7 +37,7 @@
       "./wwwroot"
    ],
    "filesGlob": [
-      "./src/app-components/**/*.ts",
+      "./src/**/*.ts",
       "!./node_modules/**",
       "./src/custom-typings.d.ts",
       "./src/types/require.d.ts"
@@ -50,8 +50,5 @@
    "buildOnSave": false,
    "atom": {
       "rewriteTsconfig": false
-   },
-   "angularCompilerOptions": {
-      "genDir": "aot-compiled"
    }
 }

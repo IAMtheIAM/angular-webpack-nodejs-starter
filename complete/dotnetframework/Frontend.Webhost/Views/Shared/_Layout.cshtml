@@ -1,42 +1,47 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-</head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    <title>IAMtheIAM</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="IAMtheIAM">
+
+    <!-- use http://www.favicon-generator.org/ to replace files in public/icon-->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- base url -->
+    <base href="/">
+
+    <environment names="Development, Production">
+        <!-- .NET Production / Development mode  -->
+        <link href="/css/app.style.css.gz?8609335d43fa570a3897" rel="stylesheet">
+    </environment>
+
+</head>
+
+<body class="">
+    Loading...
+    @RenderBody()
+
+    <environment names="Development, Production">
+        <!-- .NET Production / Development mode  -->
+        <script type="text/javascript" src="js/commons.bundle.js.gz?8609335d43fa570a3897"></script>
+        <script type="text/javascript" src="dlls/polyfills.dll.bundle.js.gz?8609335d43fa570a3897"></script>
+        <script type="text/javascript" src="dlls/vendors.dll.bundle.js.gz?8609335d43fa570a3897"></script>
+        <script type="text/javascript" src="js/app.bundle.js.gz?8609335d43fa570a3897"></script>
+    </environment>
+
+    <environment names="Webpack">
+        <!-- Webpack Development mode -->
+        <script type="text/javascript" src="http://localhost:4000/js/commons.bundle.js?8609335d43fa570a3897"></script>
+        <script type="text/javascript" src="http://localhost:4000/dlls/polyfills.dll.bundle.js?8609335d43fa570a3897"></script>
+        <script type="text/javascript" src="http://localhost:4000/dlls/vendors.dll.bundle.js?8609335d43fa570a3897"></script>
+        <script type="text/javascript" src="http://localhost:4000/js/app.bundle.js?8609335d43fa570a3897"></script>
+    </environment>
+
 </body>
 </html>

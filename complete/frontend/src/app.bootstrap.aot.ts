@@ -18,7 +18,7 @@ import { Logging } from './app-components/services/utility.service';
 /**
  * AppComponent and AppComponent Services
  */
-import { AppModuleNgFactory } from '../aot-compiled/src/app-components/app/app.module.ngfactory';
+import { AppModuleNgFactory } from '../compiled/aot/src/app-components/app/app.module.ngfactory';
 
 /**
  * zone.js MUST be imported AFTER AppModule/AppModuleNgFactory, otherwise it will throw

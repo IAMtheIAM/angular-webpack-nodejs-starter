@@ -1,0 +1,20 @@
+/********************/
+/* Grid-Editing.scss */
+/********************/
+@import '../../../assets/styles/appwide-metastyles.scss';
+
+grid-editing {
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    /*margin: 15px;*/
+    /*border: 2px dashed #FBC02D;*/
+
+  }
+
+  .card-container md-card {
+    margin: 5px;
+  }
+
+}

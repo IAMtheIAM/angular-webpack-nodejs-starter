@@ -101,9 +101,8 @@
   },
 
   "configurations": {
-    "AOT-Compile+Build.Prod": {},
-    "DLLs-Build": {},
-    "JIT-Webpack.Dev.Server": {},
-    "JIT-Compile+Build.Prod.Watch.Changes": {}
+    "~AOT.Prod-Compile+Build.Prod": {},
+    "~JIT.Dev-Webpack.Dev.Server": {},
+    "~JIT.Prod-Compile+Build.Prod.Watch.Changes": {}
   }
 }

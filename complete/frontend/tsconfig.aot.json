@@ -7,10 +7,8 @@
       "noEmitHelpers": true,
       "pretty": true,
       "sourceMap": true,
-      "lib": ["es5", "dom"],
       "strictNullChecks": false,
       "baseUrl": ".",
-      "sourceMap": true,
       "sourceRoot": ".",
       "lib": [
          "es6",
@@ -32,7 +30,7 @@
       "typeRoots": [
          "./node_modules/@types"
       ],
-      "outDir": "./wwwroot/compiled-src"
+      "outDir": "./compiled/src"
    },
    "exclude": [
       "./node_modules",
@@ -50,7 +48,7 @@
       "rewriteTsconfig": false
    },
    "angularCompilerOptions": {
-      "genDir": "./aot-compiled",
+      "genDir": "./compiled/aot",
       "debug": true
    }
 }

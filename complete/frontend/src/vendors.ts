@@ -22,9 +22,7 @@ import '@angular/router';
 /** AngularClass */
 import '@angularclass/hmr';
 
-// /** RxJS */
-
-// RxJS
+/** RxJS */
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/combineLatest';
 import 'rxjs/add/observable/throw';
@@ -50,6 +48,9 @@ import 'rxjs/Observable';
 import 'rxjs/Subject';
 import 'rxjs/Subscription';
 
+
+/** JWT Decode */
+import 'jwt-decode';
 
 /** jQuery 3.1.0 */
 /** During development, use full jquery library, then scale back before production launch */

@@ -1,6 +1,6 @@
 webpackJsonp([3,5],{
 
-/***/ 422:
+/***/ 426:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27,7 +27,7 @@ var utility_service_1 = __webpack_require__(6);
  * external stylesheets. Do NOT add styles the "Angular2 Way" in the
  * @Component decorator ("styles" and "styleUrls" properties)
  */
-__webpack_require__(427);
+__webpack_require__(431);
 var DetailComponent = (function () {
     function DetailComponent() {
     }
@@ -39,7 +39,7 @@ var DetailComponent = (function () {
     DetailComponent = __decorate([
         core_1.Component({
             selector: 'detail',
-            template: __webpack_require__(430),
+            template: __webpack_require__(434),
         }), 
         __metadata('design:paramtypes', [])
     ], DetailComponent);
@@ -50,7 +50,7 @@ exports.DetailComponent = DetailComponent;
 
 /***/ },
 
-/***/ 425:
+/***/ 429:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58,7 +58,7 @@ exports.DetailComponent = DetailComponent;
 /**
  * Imported Components
  */
-var detail_component_1 = __webpack_require__(422);
+var detail_component_1 = __webpack_require__(426);
 // async components must be named detailRoutes for WebpackAsyncRoute
 exports.detailRoutes = [{
         path: '',
@@ -69,21 +69,21 @@ exports.detailRoutes = [{
 
 /***/ },
 
-/***/ 427:
+/***/ 431:
 /***/ function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ },
 
-/***/ 430:
+/***/ 434:
 /***/ function(module, exports) {
 
 module.exports = "<h1>Hello from Detail (sub module)</h1>\r\n<div class=\"row\">\r\n   <div class=\"col s4\">\r\n      <div class=\"card-panel\">\r\n          <span>I am a very simple card. I am good at containing small bits of information.\r\n          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\r\n          </span>\r\n      </div>\r\n   </div>\r\n</div>\r\n<router-outlet></router-outlet>\r\n"
 
 /***/ },
 
-/***/ 94:
+/***/ 99:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101,11 +101,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var common_1 = __webpack_require__(44);
+var common_1 = __webpack_require__(46);
 var router_1 = __webpack_require__(15);
 var core_1 = __webpack_require__(3);
 //
-var detail_routes_1 = __webpack_require__(425);
+var detail_routes_1 = __webpack_require__(429);
 /*
  * Shared Utilities & Other Services
  */
@@ -113,7 +113,7 @@ var utility_service_1 = __webpack_require__(6);
 /**
  * Imported Components
  */
-var detail_component_1 = __webpack_require__(422);
+var detail_component_1 = __webpack_require__(426);
 var DetailModule = (function () {
     function DetailModule() {
         if (utility_service_1.Logging.isEnabled.light) {

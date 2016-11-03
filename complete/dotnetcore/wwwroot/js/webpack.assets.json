@@ -13,7 +13,7 @@
   },
   "app": {
     "js": "/js/app.bundle.js",
-    "css": "/css/app.style.css?04b7f61fcb43ba1cda84"
+    "css": "/css/app.style.css?2e5c9f5486cb6440409b"
   },
   "commons": {
     "js": "/js/commons.bundle.js"

@@ -15,9 +15,10 @@ import { DataResolver } from './app.resolver';
  * Imported Components
  */
 import { HomeComponent } from '../home/home.component';
+import { GridEditingComponent } from '../grid/grid-editing/grid-editing.component';
+import { GridNestedComponent } from '../grid/grid-nested/grid-nested.component';
 import { AboutComponent } from '../about/about.component';
 import { LoginComponent } from '../login/login.component';
-import { SubscriberComponent } from '../subscriber/subscriber.component.ts';
 import { TicketComponent } from '../ticket/ticket.component.ts';
 import { NotFound404Component } from '../404/notfound404.component';
 
@@ -41,12 +42,17 @@ export const ROUTES: Routes = [{
    component: TicketComponent,
    canActivate: [RouteProtection]
 }, {
-   path: 'grid1',
+   path: 'home',
    component: HomeComponent,
    canActivate: [RouteProtection]
 }, {
-   path: 'grid2',
-   component: SubscriberComponent,
+   path: 'gridEditing',
+   component: GridEditingComponent,
+   canActivate: [RouteProtection]
+},
+{
+   path: 'gridNested',
+   component: GridNestedComponent,
    canActivate: [RouteProtection]
 }, {
    path: 'login',

@@ -33,6 +33,7 @@ import './login.style.scss';
 export class LoginComponent {
    //@Input() loginText: string = 'Login';
    isAuthenticated: boolean;
+   token: string = '';
 
    constructor(
       /** This is where we setup/construct all the constants and variables as well as inject
@@ -54,9 +55,9 @@ export class LoginComponent {
       // If user is already logged in, skip the login page
       if (this.isAuthenticated) {
          if (Logging.isEnabled.light) {
-            console.log('%c Already logged in! Navigating to Ticket Component', Logging.normal.purple);
+            console.log('%c Already logged in! Navigating to Home Component', Logging.normal.purple);
          }
-         this.utilityService.navigate('/ticket');
+         this.utilityService.navigate('/home');
       }
 
       if (Logging.isEnabled.light) {
@@ -88,9 +89,10 @@ export class LoginComponent {
                 this.loginSuccess(response);
              },
              error => {
+                // this.notificationService.printErrorMessage('Authentication required');
 
                 // Manual override: Allow admin login even without Active Directory running
-                 if (username === 'admin' || username === 'Admin') {
+                 if (username === 'superadmin' || username === 'Superadmin') {
 
                    // True or false
                    this.authService.validAuth = true;
@@ -132,15 +134,22 @@ export class LoginComponent {
       }
 
       if (this.authService.validAuth) {
-         const token = response.Token;
-         // const splitToken = token.split('.');
-         // const responseHeaders = JSON.parse(atob(splitToken[0]));
-         // const responseBody = JSON.parse(atob(splitToken[1]));
-         //console.log(responseHeaders);
-         //console.log(responseBody);
 
-         // Set the JWT
-         localStorage.setItem('jwt', token);
+          if (response.id_token) {
+              this.token = response.id_token;
+          }
+          else if (response.Token) {
+              this.token = response.Token;
+          }
+
+          const splitToken = this.token.split('.');
+          const responseHeaders = JSON.parse(atob(splitToken[0]));
+          const responseBody = JSON.parse(atob(splitToken[1]));
+          console.log(responseHeaders);
+          console.log(responseBody);
+
+          // Set the JWT
+          localStorage.setItem('jwt', this.token);
 
       }
       if (Logging.isEnabled.verbose) {
@@ -151,9 +160,10 @@ export class LoginComponent {
       // Get the redirect URL from our appState. If no redirect has been set, use the default
       let redirect = this.appState.state.redirectUrl
          ? this.appState.state.redirectUrl
-         : '/ticket';
+          : '/home';
+
       // Clear redirect URL after initial redirect
-      this.appState.set('redirectUrl', '');
+      this.appState.set('redirectUrl', ''); // Index page
 
       // Navigate the view
       this.utilityService.navigate(redirect);
