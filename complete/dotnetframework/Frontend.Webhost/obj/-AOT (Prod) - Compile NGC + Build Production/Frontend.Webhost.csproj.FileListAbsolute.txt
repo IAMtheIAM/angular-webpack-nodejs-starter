@@ -1,1 +1,0 @@
-C:\Source\GitHub\angular2-webpack2-dotnet-starter\complete\dotnetframework\Frontend.Webhost\obj\-AOT (Prod) - Compile NGC + Build Production\Frontend.Webhost.dll
