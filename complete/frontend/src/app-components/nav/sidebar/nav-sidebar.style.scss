@@ -22,6 +22,11 @@ nav-sidebar {
 
    .side-nav.fixed {
       top: 64px;
+
+      i.material-icons {
+         margin-right: 5px;
+         margin-left: -14px;
+      }
    }
 
 }

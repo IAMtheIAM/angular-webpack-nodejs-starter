@@ -127,9 +127,9 @@ module.exports = webpackMerge(commonConfig, {
             whitelist: // KendoUI for jQuery - classes that are programatically added to DOM, therefore must be whitelisted since they cannot be evaluated during compile-time
             // '*selector*' means any class which contains that selector.
 
-               ["*gridcell*", "*k-alt*", "*k-auto-scrollable*", "*k-button*", "*k-button-icontext*", "*k-current-page*", "*k-delete*", "*k-edit*", "*k-editable*", "*k-filter-row*", "*k-floatwrap*", "*k-grid*", "*k-grid-content*", "*k-grid-edit*", "*k-grid-header*", "*k-grid-header-wrap*", "*k-grid-pager*", "*k-grid-toolbar*", "*k-grouping-header*", "*k-header*", "*k-i-arrow-e*", "*k-i-arrow-w*", "*k-i-seek-e*", "*k-i-seek-w*", "*k-icon*", "*k-label*", "*k-link*", "*k-pager-first*", "*k-pager-info*", "*k-pager-last*", "*k-pager-nav*", "*k-pager-nav*", "*k-pager-numbers*", "*k-pager-wrap*", "*k-reset*", "*k-state-disabled*", "*k-state-selected*", "*k-widget*", "*kendoUI*", "*k-widget*", "*k-numerictextbox*", "*k-numeric-wrap*", "*k-state-default*",
+               ["*gridcell*", "*k-alt*", "*k-auto-scrollable*", "*k-button*", "*k-button-icontext*", "*k-current-page*", "*k-delete*", "*k-edit*", "*k-editable*", "*k-filter-row*", "*k-floatwrap*", "*k-grid*", "*k-grid-content*", "*k-grid-edit*", "*k-grid-header*", "*k-grid-header-wrap*", "*k-grid-pager*", "*k-grid-toolbar*", "*k-grouping-header*", "*k-header*", "*k-i-arrow-e*", "*k-i-arrow-w*", "*k-i-seek-e*", "*k-i-seek-w*", "*k-icon*", "*k-minus*", "*k-plus*", "*k-label*", "*k-link*", "*k-pager-first*", "*k-pager-info*", "*k-pager-last*", "*k-pager-nav*", "*k-pager-nav*", "*k-pager-numbers*", "*k-pager-wrap*", "*k-reset*", "*k-state-disabled*", "*k-state-selected*", "*k-widget*", "*kendoUI*", "*k-widget*", "*k-numerictextbox*", "*k-numeric-wrap*", "*k-state-default*",
                   "*k-formatted-value*", "*k-input*", "*k-select*", "*k-textbox*", "*k-cancel*",
-                  "*k-grid-cancel*", "*k-grid-update*", "*k-state-hover*", "*caret*"]
+                  "*k-grid-cancel*", "*k-grid-update*", "*k-state-hover*", "*caret*", "*collapsible*", "*collapsible-header*", "*collapsible-body*", "*active*", "*mdi-navigation-arrow-drop-down*"]
 
          }
       }),
