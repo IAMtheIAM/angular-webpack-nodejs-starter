@@ -147,7 +147,7 @@ module.exports = {
 
          {
             test: /\.ts$/,
-            include: [helpers.paths.appRoot, helpers.root('./aot-compiled')],
+            include: [helpers.paths.appRoot, helpers.root('./compiled/aot')],
             exclude: [/\.(spec|e2e)\.ts$/],
             // loaders: ['awesome-typescript-loader'],
             loaders: [
