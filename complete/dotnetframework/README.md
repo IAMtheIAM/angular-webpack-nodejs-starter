@@ -43,3 +43,6 @@ You might have to change all the server projects to point to your local IIS inst
 * Point the project URL to the URL you configured in IIS
    * For example: `http://identity.starter.local/` for the identity server
    
+### Recommended Plugins
+
+- [NPM Task Runner extension for VS2015](https://visualstudiogallery.msdn.microsoft.com/8f2f2cbc-4da5-43ba-9de2-c9d08ade4941)

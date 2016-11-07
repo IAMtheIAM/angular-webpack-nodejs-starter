@@ -65,6 +65,7 @@ import { Authentication } from '../services/authentication.service';
 import { DataService } from '../services/data.service';
 import { UtilityService } from '../services/utility.service';
 import { RouteProtection } from '../services/route-protection.service';
+import { UrlManagingService } from '../services/url-managing.service';
 
 /**
  * Angular2-JWT workaround, until AUTH_PROVIDERS definition works in NPM package.
@@ -92,7 +93,7 @@ export const AUTH_PROVIDERS = {
 
 // Declare Services & Utilities as AppComponent Providers
 // Application wide providers
-const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS, AppState, Logging, Authentication, DataService, UtilityService, RouteProtection//, AuthHttp
+const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS, AppState, Logging, Authentication, DataService, UtilityService, RouteProtection, UrlManagingService
 ];
 
 /**
@@ -106,7 +107,7 @@ const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS, AppState, Logging, Authenticat
        AppComponent, HomeComponent, AboutComponent, LoginComponent, GridEditingComponent, GridNestedComponent, NotFound404Component, TicketComponent,
 
       // Directives
-      NavSidebarComponent, NavHeaderComponent, NavFooterComponent, CKEditor 
+      NavSidebarComponent, NavHeaderComponent, NavFooterComponent, CKEditor
 
       // Pipes
 

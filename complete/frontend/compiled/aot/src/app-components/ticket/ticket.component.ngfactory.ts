@@ -1068,7 +1068,7 @@ class _View_TicketComponent0 extends import1.DebugAppView<import0.TicketComponen
   }
 }
 export function viewFactory_TicketComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import1.AppView<import0.TicketComponent> {
-  if ((renderType_TicketComponent === (null as any))) { (renderType_TicketComponent = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-webpack2-dotnet-starter/complete/frontend/src/app-components/ticket/ticket.template.html',0,import13.ViewEncapsulation.None,styles_TicketComponent,{})); }
+  if ((renderType_TicketComponent === (null as any))) { (renderType_TicketComponent = viewUtils.createRenderComponentType('C:/Development/angular2-webpack2-dotnet-starter/complete/frontend/src/app-components/ticket/ticket.template.html',0,import13.ViewEncapsulation.None,styles_TicketComponent,{})); }
   return new _View_TicketComponent0(viewUtils,parentInjector,declarationEl);
 }
 const nodeDebugInfos_TicketComponent1:import2.StaticNodeDebugInfo[] = [

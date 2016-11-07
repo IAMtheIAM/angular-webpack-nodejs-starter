@@ -18,26 +18,27 @@ import * as import10 from '../../../../../src/app-components/services/appstate.s
 import * as import11 from '@angular/router/src/router';
 import * as import12 from '@angular/http/src/http';
 import * as import13 from '../../../../../src/app-components/services/utility.service';
-import * as import14 from '@angular/core/src/zone/ng_zone';
-import * as import15 from 'angular2-jwt/angular2-jwt';
-import * as import16 from '@angular/core/src/metadata/view';
-import * as import17 from '@angular/core/src/linker/component_factory';
-import * as import18 from '@angular/core/src/linker/template_ref';
-import * as import19 from '@angular/common/src/directives/ng_if';
-import * as import20 from '@angular/forms/src/directives/ng_form';
-import * as import21 from '@angular/forms/src/directives/control_container';
-import * as import22 from '@angular/forms/src/directives/ng_control_status';
-import * as import23 from '@angular/forms/src/directives/default_value_accessor';
-import * as import24 from '@angular/forms/src/directives/control_value_accessor';
-import * as import25 from '@angular/forms/src/directives/ng_model';
-import * as import26 from '@angular/forms/src/directives/ng_control';
-import * as import27 from '../../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
-import * as import28 from '../../../node_modules/@angular/forms/src/directives/ng_form.ngfactory';
-import * as import29 from '../../../node_modules/@angular/forms/src/directives/ng_control_status.ngfactory';
-import * as import30 from '../../../node_modules/@angular/forms/src/directives/default_value_accessor.ngfactory';
-import * as import31 from '../../../node_modules/@angular/forms/src/directives/ng_model.ngfactory';
-import * as import32 from '@angular/core/src/linker/element_ref';
-import * as import33 from '@angular/common/src/pipes/json_pipe';
+import * as import14 from '../../../../../src/app-components/services/url-managing.service';
+import * as import15 from '@angular/core/src/zone/ng_zone';
+import * as import16 from 'angular2-jwt/angular2-jwt';
+import * as import17 from '@angular/core/src/metadata/view';
+import * as import18 from '@angular/core/src/linker/component_factory';
+import * as import19 from '@angular/core/src/linker/template_ref';
+import * as import20 from '@angular/common/src/directives/ng_if';
+import * as import21 from '@angular/forms/src/directives/ng_form';
+import * as import22 from '@angular/forms/src/directives/control_container';
+import * as import23 from '@angular/forms/src/directives/ng_control_status';
+import * as import24 from '@angular/forms/src/directives/default_value_accessor';
+import * as import25 from '@angular/forms/src/directives/control_value_accessor';
+import * as import26 from '@angular/forms/src/directives/ng_model';
+import * as import27 from '@angular/forms/src/directives/ng_control';
+import * as import28 from '../../../node_modules/@angular/common/src/directives/ng_if.ngfactory';
+import * as import29 from '../../../node_modules/@angular/forms/src/directives/ng_form.ngfactory';
+import * as import30 from '../../../node_modules/@angular/forms/src/directives/ng_control_status.ngfactory';
+import * as import31 from '../../../node_modules/@angular/forms/src/directives/default_value_accessor.ngfactory';
+import * as import32 from '../../../node_modules/@angular/forms/src/directives/ng_model.ngfactory';
+import * as import33 from '@angular/core/src/linker/element_ref';
+import * as import34 from '@angular/common/src/pipes/json_pipe';
 export class Wrapper_HomeComponent {
   context:import0.HomeComponent;
   changed:boolean;
@@ -72,8 +73,8 @@ class _View_HomeComponent_Host0 extends import1.DebugAppView<any> {
     this._el_0 = import6.selectOrCreateRenderHostElement(this.renderer,'home',import6.EMPTY_INLINE_ARRAY,rootSelector,this.debug(0,0,0));
     this._appEl_0 = new import5.AppElement(0,(null as any),this,this._el_0);
     var compView_0:any = viewFactory_HomeComponent0(this.viewUtils,this.injector(0),this._appEl_0);
-    this._Authentication_0_4 = new import3.Authentication(this.parentInjector.get(import10.AppState),this.parentInjector.get(import11.Router),this.parentInjector.get(import12.Http),this.parentInjector.get(import13.UtilityService));
-    this._HomeComponent_0_5 = new Wrapper_HomeComponent(this.parentInjector.get(import14.NgZone),this.parentInjector.get(import10.AppState),this.parentInjector.get(import11.Router),this.parentInjector.get(import12.Http),this._Authentication_0_4,this.parentInjector.get(import15.AuthHttp));
+    this._Authentication_0_4 = new import3.Authentication(this.parentInjector.get(import10.AppState),this.parentInjector.get(import11.Router),this.parentInjector.get(import12.Http),this.parentInjector.get(import13.UtilityService),this.parentInjector.get(import14.UrlManagingService));
+    this._HomeComponent_0_5 = new Wrapper_HomeComponent(this.parentInjector.get(import15.NgZone),this.parentInjector.get(import10.AppState),this.parentInjector.get(import11.Router),this.parentInjector.get(import12.Http),this._Authentication_0_4,this.parentInjector.get(import16.AuthHttp));
     this._appEl_0.initComponent(this._HomeComponent_0_5.context,([] as any[]),compView_0);
     compView_0.create(this._HomeComponent_0_5.context,this.projectableNodes,(null as any));
     this.init(([] as any[]).concat([this._el_0]),[this._el_0],([] as any[]),([] as any[]));
@@ -97,10 +98,10 @@ class _View_HomeComponent_Host0 extends import1.DebugAppView<any> {
   }
 }
 function viewFactory_HomeComponent_Host0(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import5.AppElement):import1.AppView<any> {
-  if ((renderType_HomeComponent_Host === (null as any))) { (renderType_HomeComponent_Host = viewUtils.createRenderComponentType('',0,import16.ViewEncapsulation.None,([] as any[]),{})); }
+  if ((renderType_HomeComponent_Host === (null as any))) { (renderType_HomeComponent_Host = viewUtils.createRenderComponentType('',0,import17.ViewEncapsulation.None,([] as any[]),{})); }
   return new _View_HomeComponent_Host0(viewUtils,parentInjector,declarationEl);
 }
-export const HomeComponentNgFactory:import17.ComponentFactory<import0.HomeComponent> = new import17.ComponentFactory<import0.HomeComponent>('home',viewFactory_HomeComponent_Host0,import0.HomeComponent);
+export const HomeComponentNgFactory:import18.ComponentFactory<import0.HomeComponent> = new import18.ComponentFactory<import0.HomeComponent>('home',viewFactory_HomeComponent_Host0,import0.HomeComponent);
 const styles_HomeComponent:any[] = ([] as any[]);
 const nodeDebugInfos_HomeComponent0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
@@ -116,55 +117,20 @@ const nodeDebugInfos_HomeComponent0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import2.StaticNodeDebugInfo([
-    import18.TemplateRef,
-    import19.NgIf
+    import19.TemplateRef,
+    import20.NgIf
   ]
   ,(null as any),{}),
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import2.StaticNodeDebugInfo([
-    import18.TemplateRef,
-    import19.NgIf
+    import19.TemplateRef,
+    import20.NgIf
   ]
   ,(null as any),{}),
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import2.StaticNodeDebugInfo([
-    import18.TemplateRef,
-    import19.NgIf
-  ]
-  ,(null as any),{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo([
-    import18.TemplateRef,
-    import19.NgIf
-  ]
-  ,(null as any),{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo([
-    import18.TemplateRef,
-    import19.NgIf
-  ]
-  ,(null as any),{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
-  new import2.StaticNodeDebugInfo([
-    import20.NgForm,
-    import21.ControlContainer,
-    import22.NgControlStatusGroup
+    import19.TemplateRef,
+    import20.NgIf
   ]
   ,(null as any),{}),
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
@@ -180,14 +146,49 @@ const nodeDebugInfos_HomeComponent0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([
+    import19.TemplateRef,
+    import20.NgIf
+  ]
+  ,(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([
+    import19.TemplateRef,
+    import20.NgIf
+  ]
+  ,(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
   new import2.StaticNodeDebugInfo([
-    import23.DefaultValueAccessor,
-    import24.NG_VALUE_ACCESSOR,
-    import25.NgModel,
-    import26.NgControl,
-    import22.NgControlStatus
+    import21.NgForm,
+    import22.ControlContainer,
+    import23.NgControlStatusGroup
+  ]
+  ,(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
+  new import2.StaticNodeDebugInfo([
+    import24.DefaultValueAccessor,
+    import25.NG_VALUE_ACCESSOR,
+    import26.NgModel,
+    import27.NgControl,
+    import23.NgControlStatus
   ]
   ,(null as any),{}),
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
@@ -220,17 +221,17 @@ class _View_HomeComponent0 extends import1.DebugAppView<import0.HomeComponent> {
   _anchor_12:any;
   /*private*/ _appEl_12:import5.AppElement;
   _TemplateRef_12_5:any;
-  _NgIf_12_6:import27.Wrapper_NgIf;
+  _NgIf_12_6:import28.Wrapper_NgIf;
   _text_13:any;
   _anchor_14:any;
   /*private*/ _appEl_14:import5.AppElement;
   _TemplateRef_14_5:any;
-  _NgIf_14_6:import27.Wrapper_NgIf;
+  _NgIf_14_6:import28.Wrapper_NgIf;
   _text_15:any;
   _anchor_16:any;
   /*private*/ _appEl_16:import5.AppElement;
   _TemplateRef_16_5:any;
-  _NgIf_16_6:import27.Wrapper_NgIf;
+  _NgIf_16_6:import28.Wrapper_NgIf;
   _text_17:any;
   _el_18:any;
   _text_19:any;
@@ -247,21 +248,21 @@ class _View_HomeComponent0 extends import1.DebugAppView<import0.HomeComponent> {
   _anchor_30:any;
   /*private*/ _appEl_30:import5.AppElement;
   _TemplateRef_30_5:any;
-  _NgIf_30_6:import27.Wrapper_NgIf;
+  _NgIf_30_6:import28.Wrapper_NgIf;
   _text_31:any;
   _anchor_32:any;
   /*private*/ _appEl_32:import5.AppElement;
   _TemplateRef_32_5:any;
-  _NgIf_32_6:import27.Wrapper_NgIf;
+  _NgIf_32_6:import28.Wrapper_NgIf;
   _text_33:any;
   _text_34:any;
   _text_35:any;
   _el_36:any;
   _text_37:any;
   _el_38:any;
-  _NgForm_38_3:import28.Wrapper_NgForm;
+  _NgForm_38_3:import29.Wrapper_NgForm;
   _ControlContainer_38_4:any;
-  _NgControlStatusGroup_38_5:import29.Wrapper_NgControlStatusGroup;
+  _NgControlStatusGroup_38_5:import30.Wrapper_NgControlStatusGroup;
   _text_39:any;
   _el_40:any;
   _text_41:any;
@@ -278,11 +279,11 @@ class _View_HomeComponent0 extends import1.DebugAppView<import0.HomeComponent> {
   _text_52:any;
   _text_53:any;
   _el_54:any;
-  _DefaultValueAccessor_54_3:import30.Wrapper_DefaultValueAccessor;
+  _DefaultValueAccessor_54_3:import31.Wrapper_DefaultValueAccessor;
   _NG_VALUE_ACCESSOR_54_4:any[];
-  _NgModel_54_5:import31.Wrapper_NgModel;
+  _NgModel_54_5:import32.Wrapper_NgModel;
   _NgControl_54_6:any;
-  _NgControlStatus_54_7:import29.Wrapper_NgControlStatus;
+  _NgControlStatus_54_7:import30.Wrapper_NgControlStatus;
   _text_55:any;
   _text_56:any;
   _text_57:any;
@@ -319,18 +320,18 @@ class _View_HomeComponent0 extends import1.DebugAppView<import0.HomeComponent> {
     this._text_11 = this.renderer.createText(this._el_7,'\n            ',this.debug(11,4,55));
     this._anchor_12 = this.renderer.createTemplateAnchor(this._el_7,this.debug(12,5,12));
     this._appEl_12 = new import5.AppElement(12,7,this,this._anchor_12);
-    this._TemplateRef_12_5 = new import18.TemplateRef_(this._appEl_12,viewFactory_HomeComponent1);
-    this._NgIf_12_6 = new import27.Wrapper_NgIf(this._appEl_12.vcRef,this._TemplateRef_12_5);
+    this._TemplateRef_12_5 = new import19.TemplateRef_(this._appEl_12,viewFactory_HomeComponent1);
+    this._NgIf_12_6 = new import28.Wrapper_NgIf(this._appEl_12.vcRef,this._TemplateRef_12_5);
     this._text_13 = this.renderer.createText(this._el_7,'\n            ',this.debug(13,5,45));
     this._anchor_14 = this.renderer.createTemplateAnchor(this._el_7,this.debug(14,6,12));
     this._appEl_14 = new import5.AppElement(14,7,this,this._anchor_14);
-    this._TemplateRef_14_5 = new import18.TemplateRef_(this._appEl_14,viewFactory_HomeComponent2);
-    this._NgIf_14_6 = new import27.Wrapper_NgIf(this._appEl_14.vcRef,this._TemplateRef_14_5);
+    this._TemplateRef_14_5 = new import19.TemplateRef_(this._appEl_14,viewFactory_HomeComponent2);
+    this._NgIf_14_6 = new import28.Wrapper_NgIf(this._appEl_14.vcRef,this._TemplateRef_14_5);
     this._text_15 = this.renderer.createText(this._el_7,'\n            ',this.debug(15,6,69));
     this._anchor_16 = this.renderer.createTemplateAnchor(this._el_7,this.debug(16,7,12));
     this._appEl_16 = new import5.AppElement(16,7,this,this._anchor_16);
-    this._TemplateRef_16_5 = new import18.TemplateRef_(this._appEl_16,viewFactory_HomeComponent3);
-    this._NgIf_16_6 = new import27.Wrapper_NgIf(this._appEl_16.vcRef,this._TemplateRef_16_5);
+    this._TemplateRef_16_5 = new import19.TemplateRef_(this._appEl_16,viewFactory_HomeComponent3);
+    this._NgIf_16_6 = new import28.Wrapper_NgIf(this._appEl_16.vcRef,this._TemplateRef_16_5);
     this._text_17 = this.renderer.createText(this._el_7,'\n            ',this.debug(17,7,83));
     this._el_18 = import6.createRenderElement(this.renderer,this._el_7,'p',import6.EMPTY_INLINE_ARRAY,this.debug(18,8,12));
     this._text_19 = this.renderer.createText(this._el_18,'Click any of the buttons to call an API and get a funny response',this.debug(19,8,15));
@@ -346,22 +347,22 @@ class _View_HomeComponent0 extends import1.DebugAppView<import0.HomeComponent> {
     this._text_29 = this.renderer.createText(this._el_7,'\n            ',this.debug(29,12,16));
     this._anchor_30 = this.renderer.createTemplateAnchor(this._el_7,this.debug(30,13,12));
     this._appEl_30 = new import5.AppElement(30,7,this,this._anchor_30);
-    this._TemplateRef_30_5 = new import18.TemplateRef_(this._appEl_30,viewFactory_HomeComponent4);
-    this._NgIf_30_6 = new import27.Wrapper_NgIf(this._appEl_30.vcRef,this._TemplateRef_30_5);
+    this._TemplateRef_30_5 = new import19.TemplateRef_(this._appEl_30,viewFactory_HomeComponent4);
+    this._NgIf_30_6 = new import28.Wrapper_NgIf(this._appEl_30.vcRef,this._TemplateRef_30_5);
     this._text_31 = this.renderer.createText(this._el_7,'\n            ',this.debug(31,15,17));
     this._anchor_32 = this.renderer.createTemplateAnchor(this._el_7,this.debug(32,16,12));
     this._appEl_32 = new import5.AppElement(32,7,this,this._anchor_32);
-    this._TemplateRef_32_5 = new import18.TemplateRef_(this._appEl_32,viewFactory_HomeComponent5);
-    this._NgIf_32_6 = new import27.Wrapper_NgIf(this._appEl_32.vcRef,this._TemplateRef_32_5);
+    this._TemplateRef_32_5 = new import19.TemplateRef_(this._appEl_32,viewFactory_HomeComponent5);
+    this._NgIf_32_6 = new import28.Wrapper_NgIf(this._appEl_32.vcRef,this._TemplateRef_32_5);
     this._text_33 = this.renderer.createText(this._el_7,'\n        ',this.debug(33,16,50));
     this._text_34 = this.renderer.createText(this._el_5,'\n    ',this.debug(34,17,14));
     this._text_35 = this.renderer.createText(this._el_3,'\n\n    ',this.debug(35,18,10));
     this._el_36 = import6.createRenderElement(this.renderer,this._el_3,'div',new import6.InlineArray2(2,'class','card-panel'),this.debug(36,20,4));
     this._text_37 = this.renderer.createText(this._el_36,'\n\n        ',this.debug(37,20,28));
     this._el_38 = import6.createRenderElement(this.renderer,this._el_36,'form',new import6.InlineArray2(2,'autocomplete','off'),this.debug(38,22,8));
-    this._NgForm_38_3 = new import28.Wrapper_NgForm((null as any),(null as any));
+    this._NgForm_38_3 = new import29.Wrapper_NgForm((null as any),(null as any));
     this._ControlContainer_38_4 = this._NgForm_38_3.context;
-    this._NgControlStatusGroup_38_5 = new import29.Wrapper_NgControlStatusGroup(this._ControlContainer_38_4);
+    this._NgControlStatusGroup_38_5 = new import30.Wrapper_NgControlStatusGroup(this._ControlContainer_38_4);
     this._text_39 = this.renderer.createText(this._el_38,'\n            ',this.debug(39,22,76));
     this._el_40 = import6.createRenderElement(this.renderer,this._el_38,'span',new import6.InlineArray4(4,'class','card-title','x-large',''),this.debug(40,23,12));
     this._text_41 = this.renderer.createText(this._el_40,'Local State',this.debug(41,23,45));
@@ -378,11 +379,11 @@ class _View_HomeComponent0 extends import1.DebugAppView<import0.HomeComponent> {
     this._text_52 = this.renderer.createText(this._el_51,'Two way data binding',this.debug(52,35,14));
     this._text_53 = this.renderer.createText(this._el_36,'\n        ',this.debug(53,35,41));
     this._el_54 = import6.createRenderElement(this.renderer,this._el_36,'input',new import6.InlineArray4(4,'autofocus','','type','text'),this.debug(54,36,8));
-    this._DefaultValueAccessor_54_3 = new import30.Wrapper_DefaultValueAccessor(this.renderer,new import32.ElementRef(this._el_54));
+    this._DefaultValueAccessor_54_3 = new import31.Wrapper_DefaultValueAccessor(this.renderer,new import33.ElementRef(this._el_54));
     this._NG_VALUE_ACCESSOR_54_4 = [this._DefaultValueAccessor_54_3.context];
-    this._NgModel_54_5 = new import31.Wrapper_NgModel((null as any),(null as any),(null as any),this._NG_VALUE_ACCESSOR_54_4);
+    this._NgModel_54_5 = new import32.Wrapper_NgModel((null as any),(null as any),(null as any),this._NG_VALUE_ACCESSOR_54_4);
     this._NgControl_54_6 = this._NgModel_54_5.context;
-    this._NgControlStatus_54_7 = new import29.Wrapper_NgControlStatus(this._NgControl_54_6);
+    this._NgControlStatus_54_7 = new import30.Wrapper_NgControlStatus(this._NgControl_54_6);
     this._text_55 = this.renderer.createText(this._el_36,'\n\n    ',this.debug(55,36,68));
     this._text_56 = this.renderer.createText(this._el_3,'\n',this.debug(56,38,10));
     this._text_57 = this.renderer.createText(parentRenderNode,'\n\n\n',this.debug(57,39,6));
@@ -496,24 +497,24 @@ class _View_HomeComponent0 extends import1.DebugAppView<import0.HomeComponent> {
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import18.TemplateRef) && (12 === requestNodeIndex))) { return this._TemplateRef_12_5; }
-    if (((token === import19.NgIf) && (12 === requestNodeIndex))) { return this._NgIf_12_6.context; }
-    if (((token === import18.TemplateRef) && (14 === requestNodeIndex))) { return this._TemplateRef_14_5; }
-    if (((token === import19.NgIf) && (14 === requestNodeIndex))) { return this._NgIf_14_6.context; }
-    if (((token === import18.TemplateRef) && (16 === requestNodeIndex))) { return this._TemplateRef_16_5; }
-    if (((token === import19.NgIf) && (16 === requestNodeIndex))) { return this._NgIf_16_6.context; }
-    if (((token === import18.TemplateRef) && (30 === requestNodeIndex))) { return this._TemplateRef_30_5; }
-    if (((token === import19.NgIf) && (30 === requestNodeIndex))) { return this._NgIf_30_6.context; }
-    if (((token === import18.TemplateRef) && (32 === requestNodeIndex))) { return this._TemplateRef_32_5; }
-    if (((token === import19.NgIf) && (32 === requestNodeIndex))) { return this._NgIf_32_6.context; }
-    if (((token === import20.NgForm) && ((38 <= requestNodeIndex) && (requestNodeIndex <= 47)))) { return this._NgForm_38_3.context; }
-    if (((token === import21.ControlContainer) && ((38 <= requestNodeIndex) && (requestNodeIndex <= 47)))) { return this._ControlContainer_38_4; }
-    if (((token === import22.NgControlStatusGroup) && ((38 <= requestNodeIndex) && (requestNodeIndex <= 47)))) { return this._NgControlStatusGroup_38_5.context; }
-    if (((token === import23.DefaultValueAccessor) && (54 === requestNodeIndex))) { return this._DefaultValueAccessor_54_3.context; }
-    if (((token === import24.NG_VALUE_ACCESSOR) && (54 === requestNodeIndex))) { return this._NG_VALUE_ACCESSOR_54_4; }
-    if (((token === import25.NgModel) && (54 === requestNodeIndex))) { return this._NgModel_54_5.context; }
-    if (((token === import26.NgControl) && (54 === requestNodeIndex))) { return this._NgControl_54_6; }
-    if (((token === import22.NgControlStatus) && (54 === requestNodeIndex))) { return this._NgControlStatus_54_7.context; }
+    if (((token === import19.TemplateRef) && (12 === requestNodeIndex))) { return this._TemplateRef_12_5; }
+    if (((token === import20.NgIf) && (12 === requestNodeIndex))) { return this._NgIf_12_6.context; }
+    if (((token === import19.TemplateRef) && (14 === requestNodeIndex))) { return this._TemplateRef_14_5; }
+    if (((token === import20.NgIf) && (14 === requestNodeIndex))) { return this._NgIf_14_6.context; }
+    if (((token === import19.TemplateRef) && (16 === requestNodeIndex))) { return this._TemplateRef_16_5; }
+    if (((token === import20.NgIf) && (16 === requestNodeIndex))) { return this._NgIf_16_6.context; }
+    if (((token === import19.TemplateRef) && (30 === requestNodeIndex))) { return this._TemplateRef_30_5; }
+    if (((token === import20.NgIf) && (30 === requestNodeIndex))) { return this._NgIf_30_6.context; }
+    if (((token === import19.TemplateRef) && (32 === requestNodeIndex))) { return this._TemplateRef_32_5; }
+    if (((token === import20.NgIf) && (32 === requestNodeIndex))) { return this._NgIf_32_6.context; }
+    if (((token === import21.NgForm) && ((38 <= requestNodeIndex) && (requestNodeIndex <= 47)))) { return this._NgForm_38_3.context; }
+    if (((token === import22.ControlContainer) && ((38 <= requestNodeIndex) && (requestNodeIndex <= 47)))) { return this._ControlContainer_38_4; }
+    if (((token === import23.NgControlStatusGroup) && ((38 <= requestNodeIndex) && (requestNodeIndex <= 47)))) { return this._NgControlStatusGroup_38_5.context; }
+    if (((token === import24.DefaultValueAccessor) && (54 === requestNodeIndex))) { return this._DefaultValueAccessor_54_3.context; }
+    if (((token === import25.NG_VALUE_ACCESSOR) && (54 === requestNodeIndex))) { return this._NG_VALUE_ACCESSOR_54_4; }
+    if (((token === import26.NgModel) && (54 === requestNodeIndex))) { return this._NgModel_54_5.context; }
+    if (((token === import27.NgControl) && (54 === requestNodeIndex))) { return this._NgControl_54_6; }
+    if (((token === import23.NgControlStatus) && (54 === requestNodeIndex))) { return this._NgControlStatus_54_7.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
@@ -646,7 +647,7 @@ class _View_HomeComponent0 extends import1.DebugAppView<import0.HomeComponent> {
   }
 }
 export function viewFactory_HomeComponent0(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import5.AppElement):import1.AppView<import0.HomeComponent> {
-  if ((renderType_HomeComponent === (null as any))) { (renderType_HomeComponent = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-webpack2-dotnet-starter/complete/frontend/src/app-components/home/home.template.html',0,import16.ViewEncapsulation.None,styles_HomeComponent,{})); }
+  if ((renderType_HomeComponent === (null as any))) { (renderType_HomeComponent = viewUtils.createRenderComponentType('C:/Development/angular2-webpack2-dotnet-starter/complete/frontend/src/app-components/home/home.template.html',0,import17.ViewEncapsulation.None,styles_HomeComponent,{})); }
   return new _View_HomeComponent0(viewUtils,parentInjector,declarationEl);
 }
 const nodeDebugInfos_HomeComponent1:import2.StaticNodeDebugInfo[] = [
@@ -726,7 +727,7 @@ class _View_HomeComponent3 extends import1.DebugAppView<any> {
   _el_1:any;
   _text_2:any;
   /*private*/ _expr_3:any;
-  _pipe_json_0:import33.JsonPipe;
+  _pipe_json_0:import34.JsonPipe;
   constructor(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import5.AppElement) {
     super(_View_HomeComponent3,renderType_HomeComponent,import8.ViewType.EMBEDDED,viewUtils,parentInjector,declarationEl,import9.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_HomeComponent3);
     this._expr_3 = import9.UNINITIALIZED;
@@ -736,7 +737,7 @@ class _View_HomeComponent3 extends import1.DebugAppView<any> {
     this._el_1 = import6.createRenderElement(this.renderer,this._el_0,'code',import6.EMPTY_INLINE_ARRAY,this.debug(1,7,41));
     this._text_2 = this.renderer.createText(this._el_1,'',this.debug(2,7,47));
     this.debug((null as any),(null as any),(null as any));
-    this._pipe_json_0 = new import33.JsonPipe();
+    this._pipe_json_0 = new import34.JsonPipe();
     this.init(([] as any[]).concat([this._el_0]),[
       this._el_0,
       this._el_1,

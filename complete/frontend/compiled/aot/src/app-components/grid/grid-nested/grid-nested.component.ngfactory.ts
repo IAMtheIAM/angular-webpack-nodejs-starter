@@ -18,8 +18,9 @@ import * as import10 from '../../../../../../src/app-components/services/appstat
 import * as import11 from '@angular/router/src/router';
 import * as import12 from '@angular/http/src/http';
 import * as import13 from '../../../../../../src/app-components/services/utility.service';
-import * as import14 from '@angular/core/src/metadata/view';
-import * as import15 from '@angular/core/src/linker/component_factory';
+import * as import14 from '../../../../../../src/app-components/services/url-managing.service';
+import * as import15 from '@angular/core/src/metadata/view';
+import * as import16 from '@angular/core/src/linker/component_factory';
 export class Wrapper_GridNestedComponent {
   context:import0.GridNestedComponent;
   changed:boolean;
@@ -54,7 +55,7 @@ class _View_GridNestedComponent_Host0 extends import1.DebugAppView<any> {
     this._el_0 = import6.selectOrCreateRenderHostElement(this.renderer,'grid-nested',import6.EMPTY_INLINE_ARRAY,rootSelector,this.debug(0,0,0));
     this._appEl_0 = new import5.AppElement(0,(null as any),this,this._el_0);
     var compView_0:any = viewFactory_GridNestedComponent0(this.viewUtils,this.injector(0),this._appEl_0);
-    this._Authentication_0_4 = new import3.Authentication(this.parentInjector.get(import10.AppState),this.parentInjector.get(import11.Router),this.parentInjector.get(import12.Http),this.parentInjector.get(import13.UtilityService));
+    this._Authentication_0_4 = new import3.Authentication(this.parentInjector.get(import10.AppState),this.parentInjector.get(import11.Router),this.parentInjector.get(import12.Http),this.parentInjector.get(import13.UtilityService),this.parentInjector.get(import14.UrlManagingService));
     this._GridNestedComponent_0_5 = new Wrapper_GridNestedComponent(this.parentInjector.get(import10.AppState),this.parentInjector.get(import11.Router),this.parentInjector.get(import12.Http),this._Authentication_0_4);
     this._appEl_0.initComponent(this._GridNestedComponent_0_5.context,([] as any[]),compView_0);
     compView_0.create(this._GridNestedComponent_0_5.context,this.projectableNodes,(null as any));
@@ -79,10 +80,10 @@ class _View_GridNestedComponent_Host0 extends import1.DebugAppView<any> {
   }
 }
 function viewFactory_GridNestedComponent_Host0(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import5.AppElement):import1.AppView<any> {
-  if ((renderType_GridNestedComponent_Host === (null as any))) { (renderType_GridNestedComponent_Host = viewUtils.createRenderComponentType('',0,import14.ViewEncapsulation.None,([] as any[]),{})); }
+  if ((renderType_GridNestedComponent_Host === (null as any))) { (renderType_GridNestedComponent_Host = viewUtils.createRenderComponentType('',0,import15.ViewEncapsulation.None,([] as any[]),{})); }
   return new _View_GridNestedComponent_Host0(viewUtils,parentInjector,declarationEl);
 }
-export const GridNestedComponentNgFactory:import15.ComponentFactory<import0.GridNestedComponent> = new import15.ComponentFactory<import0.GridNestedComponent>('grid-nested',viewFactory_GridNestedComponent_Host0,import0.GridNestedComponent);
+export const GridNestedComponentNgFactory:import16.ComponentFactory<import0.GridNestedComponent> = new import16.ComponentFactory<import0.GridNestedComponent>('grid-nested',viewFactory_GridNestedComponent_Host0,import0.GridNestedComponent);
 const styles_GridNestedComponent:any[] = ([] as any[]);
 const nodeDebugInfos_GridNestedComponent0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
@@ -121,6 +122,6 @@ class _View_GridNestedComponent0 extends import1.DebugAppView<import0.GridNested
   }
 }
 export function viewFactory_GridNestedComponent0(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import5.AppElement):import1.AppView<import0.GridNestedComponent> {
-  if ((renderType_GridNestedComponent === (null as any))) { (renderType_GridNestedComponent = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-webpack2-dotnet-starter/complete/frontend/src/app-components/grid/grid-nested/grid-nested.template.html',0,import14.ViewEncapsulation.None,styles_GridNestedComponent,{})); }
+  if ((renderType_GridNestedComponent === (null as any))) { (renderType_GridNestedComponent = viewUtils.createRenderComponentType('C:/Development/angular2-webpack2-dotnet-starter/complete/frontend/src/app-components/grid/grid-nested/grid-nested.template.html',0,import15.ViewEncapsulation.None,styles_GridNestedComponent,{})); }
   return new _View_GridNestedComponent0(viewUtils,parentInjector,declarationEl);
 }

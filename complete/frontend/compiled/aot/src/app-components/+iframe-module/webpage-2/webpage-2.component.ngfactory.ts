@@ -188,6 +188,6 @@ class _View_Webpage20 extends import1.DebugAppView<import0.Webpage2> {
   }
 }
 export function viewFactory_Webpage20(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import1.AppView<import0.Webpage2> {
-  if ((renderType_Webpage2 === (null as any))) { (renderType_Webpage2 = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-webpack2-dotnet-starter/complete/frontend/src/app-components/+iframe-module/webpage-2/webpage-2.template.html',0,import12.ViewEncapsulation.None,styles_Webpage2,{})); }
+  if ((renderType_Webpage2 === (null as any))) { (renderType_Webpage2 = viewUtils.createRenderComponentType('C:/Development/angular2-webpack2-dotnet-starter/complete/frontend/src/app-components/+iframe-module/webpage-2/webpage-2.template.html',0,import12.ViewEncapsulation.None,styles_Webpage2,{})); }
   return new _View_Webpage20(viewUtils,parentInjector,declarationEl);
 }

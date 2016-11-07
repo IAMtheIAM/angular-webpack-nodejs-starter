@@ -726,6 +726,6 @@ class _View_NavSidebarComponent0 extends import1.DebugAppView<import0.NavSidebar
   }
 }
 export function viewFactory_NavSidebarComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import1.AppView<import0.NavSidebarComponent> {
-  if ((renderType_NavSidebarComponent === (null as any))) { (renderType_NavSidebarComponent = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-webpack2-dotnet-starter/complete/frontend/src/app-components/nav/sidebar/nav-sidebar.template.html',0,import10.ViewEncapsulation.None,styles_NavSidebarComponent,{})); }
+  if ((renderType_NavSidebarComponent === (null as any))) { (renderType_NavSidebarComponent = viewUtils.createRenderComponentType('C:/Development/angular2-webpack2-dotnet-starter/complete/frontend/src/app-components/nav/sidebar/nav-sidebar.template.html',0,import10.ViewEncapsulation.None,styles_NavSidebarComponent,{})); }
   return new _View_NavSidebarComponent0(viewUtils,parentInjector,declarationEl);
 }

@@ -13,6 +13,7 @@ import { Router } from '@angular/router';
 import { Logging, UtilityService } from './utility.service';
 import { AppState } from './appstate.service';
 import { contentHeaders } from '../common/headers';
+import { UrlManagingService } from './url-managing.service';
 
 const jwt_decode = require('jwt-decode');
 
@@ -28,15 +29,15 @@ export class Authentication {
 
    constructor(
       public appState: AppState, public router: Router, public http: Http, // public authHttp: AuthHttp,
-      public utilityService: UtilityService) {
+      public utilityService: UtilityService, public urlManagingService: UrlManagingService) {
 
-      // this.apiURL = 'http://maul:8889/authentication/loginviaactivedirectory';
-      this.apiURL = 'http://maul:8181/api/login';
+      // Build the API Endpoint
+      this.apiURL = `${urlManagingService.getAuthenticationDomain()}/oauth2/token`;
+
       this.jwt = localStorage.getItem('jwt');
       this.decodedJwt = this.jwt && jwt_decode(this.jwt);
       this.isAuthenticated = this.isLoggedIn();
       this.appState.set('isAuthenticated', this.isAuthenticated);
-
    }
 
    login(event, username, password) {

@@ -394,6 +394,6 @@ class _View_NavHeaderComponent0 extends import1.DebugAppView<import0.NavHeaderCo
   }
 }
 export function viewFactory_NavHeaderComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import1.AppView<import0.NavHeaderComponent> {
-  if ((renderType_NavHeaderComponent === (null as any))) { (renderType_NavHeaderComponent = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-webpack2-dotnet-starter/complete/frontend/src/app-components/nav/header/nav-header.template.html',0,import10.ViewEncapsulation.None,styles_NavHeaderComponent,{})); }
+  if ((renderType_NavHeaderComponent === (null as any))) { (renderType_NavHeaderComponent = viewUtils.createRenderComponentType('C:/Development/angular2-webpack2-dotnet-starter/complete/frontend/src/app-components/nav/header/nav-header.template.html',0,import10.ViewEncapsulation.None,styles_NavHeaderComponent,{})); }
   return new _View_NavHeaderComponent0(viewUtils,parentInjector,declarationEl);
 }

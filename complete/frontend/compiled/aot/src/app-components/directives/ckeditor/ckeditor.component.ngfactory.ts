@@ -130,6 +130,6 @@ class _View_CKEditor0 extends import3.DebugAppView<import0.CKEditor> {
   }
 }
 export function viewFactory_CKEditor0(viewUtils:import2.ViewUtils,parentInjector:import7.Injector,declarationEl:import6.AppElement):import3.AppView<import0.CKEditor> {
-  if ((renderType_CKEditor === (null as any))) { (renderType_CKEditor = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-webpack2-dotnet-starter/complete/frontend/src/app-components/directives/ckeditor/ckeditor.component.ts class CKEditor - inline template',0,import9.ViewEncapsulation.None,styles_CKEditor,{})); }
+  if ((renderType_CKEditor === (null as any))) { (renderType_CKEditor = viewUtils.createRenderComponentType('C:/Development/angular2-webpack2-dotnet-starter/complete/frontend/src/app-components/directives/ckeditor/ckeditor.component.ts class CKEditor - inline template',0,import9.ViewEncapsulation.None,styles_CKEditor,{})); }
   return new _View_CKEditor0(viewUtils,parentInjector,declarationEl);
 }

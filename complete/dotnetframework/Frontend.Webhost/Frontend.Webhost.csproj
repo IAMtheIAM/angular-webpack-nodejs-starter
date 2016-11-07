@@ -233,10 +233,7 @@
     <Content Include="wwwroot\js\ckeditor\styles.js" />
     <Content Include="wwwroot\js\commons.bundle.js" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>

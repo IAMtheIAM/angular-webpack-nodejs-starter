@@ -23,6 +23,9 @@ namespace Api.Resource
 
             app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
 
+            // TODO: Fix Cors?
+            // config.EnableCors();
+
             app.UseWebApi(config);
 
         }

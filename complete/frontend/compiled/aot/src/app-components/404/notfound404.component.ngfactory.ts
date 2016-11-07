@@ -127,6 +127,6 @@ class _View_NotFound404Component0 extends import1.DebugAppView<import0.NotFound4
   }
 }
 export function viewFactory_NotFound404Component0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import1.AppView<import0.NotFound404Component> {
-  if ((renderType_NotFound404Component === (null as any))) { (renderType_NotFound404Component = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-webpack2-dotnet-starter/complete/frontend/src/app-components/404/NotFound404.template.html',0,import11.ViewEncapsulation.None,styles_NotFound404Component,{})); }
+  if ((renderType_NotFound404Component === (null as any))) { (renderType_NotFound404Component = viewUtils.createRenderComponentType('C:/Development/angular2-webpack2-dotnet-starter/complete/frontend/src/app-components/404/NotFound404.template.html',0,import11.ViewEncapsulation.None,styles_NotFound404Component,{})); }
   return new _View_NotFound404Component0(viewUtils,parentInjector,declarationEl);
 }

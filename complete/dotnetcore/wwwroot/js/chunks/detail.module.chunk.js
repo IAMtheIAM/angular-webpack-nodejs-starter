@@ -1,89 +1,6 @@
 webpackJsonp([3,5],{
 
-/***/ 426:
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var core_1 = __webpack_require__(3);
-/*
- * Shared Utilities
- */
-var utility_service_1 = __webpack_require__(6);
-/**
- * This is where CSS/SCSS files that the component depends on are required.
- *
- * Function: To enable "Hot Module Replacement" of CSS/SCSS files
- * during development. During productions, all styles will be extracted into
- * external stylesheets. Do NOT add styles the "Angular2 Way" in the
- * @Component decorator ("styles" and "styleUrls" properties)
- */
-__webpack_require__(431);
-var DetailComponent = (function () {
-    function DetailComponent() {
-    }
-    DetailComponent.prototype.ngOnInit = function () {
-        if (utility_service_1.Logging.isEnabled.light) {
-            console.log('%c Hello \"Detail\" component!', utility_service_1.Logging.normal.lime);
-        }
-    };
-    DetailComponent = __decorate([
-        core_1.Component({
-            selector: 'detail',
-            template: __webpack_require__(434),
-        }), 
-        __metadata('design:paramtypes', [])
-    ], DetailComponent);
-    return DetailComponent;
-}());
-exports.DetailComponent = DetailComponent;
-
-
-/***/ },
-
-/***/ 429:
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-/**
- * Imported Components
- */
-var detail_component_1 = __webpack_require__(426);
-// async components must be named detailRoutes for WebpackAsyncRoute
-exports.detailRoutes = [{
-        path: '',
-        component: detail_component_1.DetailComponent,
-    }];
-;
-
-
-/***/ },
-
-/***/ 431:
-/***/ function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ },
-
-/***/ 434:
-/***/ function(module, exports) {
-
-module.exports = "<h1>Hello from Detail (sub module)</h1>\r\n<div class=\"row\">\r\n   <div class=\"col s4\">\r\n      <div class=\"card-panel\">\r\n          <span>I am a very simple card. I am good at containing small bits of information.\r\n          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\r\n          </span>\r\n      </div>\r\n   </div>\r\n</div>\r\n<router-outlet></router-outlet>\r\n"
-
-/***/ },
-
-/***/ 99:
+/***/ 100:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -103,9 +20,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var common_1 = __webpack_require__(46);
 var router_1 = __webpack_require__(15);
-var core_1 = __webpack_require__(3);
+var core_1 = __webpack_require__(2);
 //
-var detail_routes_1 = __webpack_require__(429);
+var detail_routes_1 = __webpack_require__(428);
 /*
  * Shared Utilities & Other Services
  */
@@ -113,7 +30,7 @@ var utility_service_1 = __webpack_require__(6);
 /**
  * Imported Components
  */
-var detail_component_1 = __webpack_require__(426);
+var detail_component_1 = __webpack_require__(425);
 var DetailModule = (function () {
     function DetailModule() {
         if (utility_service_1.Logging.isEnabled.light) {
@@ -137,6 +54,89 @@ var DetailModule = (function () {
 }());
 exports.DetailModule = DetailModule;
 
+
+/***/ },
+
+/***/ 425:
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = __webpack_require__(2);
+/*
+ * Shared Utilities
+ */
+var utility_service_1 = __webpack_require__(6);
+/**
+ * This is where CSS/SCSS files that the component depends on are required.
+ *
+ * Function: To enable "Hot Module Replacement" of CSS/SCSS files
+ * during development. During productions, all styles will be extracted into
+ * external stylesheets. Do NOT add styles the "Angular2 Way" in the
+ * @Component decorator ("styles" and "styleUrls" properties)
+ */
+__webpack_require__(430);
+var DetailComponent = (function () {
+    function DetailComponent() {
+    }
+    DetailComponent.prototype.ngOnInit = function () {
+        if (utility_service_1.Logging.isEnabled.light) {
+            console.log('%c Hello \"Detail\" component!', utility_service_1.Logging.normal.lime);
+        }
+    };
+    DetailComponent = __decorate([
+        core_1.Component({
+            selector: 'detail',
+            template: __webpack_require__(433),
+        }), 
+        __metadata('design:paramtypes', [])
+    ], DetailComponent);
+    return DetailComponent;
+}());
+exports.DetailComponent = DetailComponent;
+
+
+/***/ },
+
+/***/ 428:
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+/**
+ * Imported Components
+ */
+var detail_component_1 = __webpack_require__(425);
+// async components must be named detailRoutes for WebpackAsyncRoute
+exports.detailRoutes = [{
+        path: '',
+        component: detail_component_1.DetailComponent,
+    }];
+;
+
+
+/***/ },
+
+/***/ 430:
+/***/ function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ },
+
+/***/ 433:
+/***/ function(module, exports) {
+
+module.exports = "<h1>Hello from Detail (sub module)</h1>\r\n<div class=\"row\">\r\n   <div class=\"col s4\">\r\n      <div class=\"card-panel\">\r\n          <span>I am a very simple card. I am good at containing small bits of information.\r\n          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.\r\n          </span>\r\n      </div>\r\n   </div>\r\n</div>\r\n<router-outlet></router-outlet>\r\n"
 
 /***/ }
 

@@ -18,10 +18,11 @@ import * as import10 from '../../../../../../src/app-components/services/appstat
 import * as import11 from '@angular/router/src/router';
 import * as import12 from '@angular/http/src/http';
 import * as import13 from '../../../../../../src/app-components/services/utility.service';
-import * as import14 from '@angular/core/src/zone/ng_zone';
-import * as import15 from 'angular2-jwt/angular2-jwt';
-import * as import16 from '@angular/core/src/metadata/view';
-import * as import17 from '@angular/core/src/linker/component_factory';
+import * as import14 from '../../../../../../src/app-components/services/url-managing.service';
+import * as import15 from '@angular/core/src/zone/ng_zone';
+import * as import16 from 'angular2-jwt/angular2-jwt';
+import * as import17 from '@angular/core/src/metadata/view';
+import * as import18 from '@angular/core/src/linker/component_factory';
 export class Wrapper_GridEditingComponent {
   context:import0.GridEditingComponent;
   changed:boolean;
@@ -56,8 +57,8 @@ class _View_GridEditingComponent_Host0 extends import1.DebugAppView<any> {
     this._el_0 = import6.selectOrCreateRenderHostElement(this.renderer,'grid-editing',import6.EMPTY_INLINE_ARRAY,rootSelector,this.debug(0,0,0));
     this._appEl_0 = new import5.AppElement(0,(null as any),this,this._el_0);
     var compView_0:any = viewFactory_GridEditingComponent0(this.viewUtils,this.injector(0),this._appEl_0);
-    this._Authentication_0_4 = new import3.Authentication(this.parentInjector.get(import10.AppState),this.parentInjector.get(import11.Router),this.parentInjector.get(import12.Http),this.parentInjector.get(import13.UtilityService));
-    this._GridEditingComponent_0_5 = new Wrapper_GridEditingComponent(this.parentInjector.get(import14.NgZone),this.parentInjector.get(import10.AppState),this.parentInjector.get(import11.Router),this.parentInjector.get(import12.Http),this._Authentication_0_4,this.parentInjector.get(import15.AuthHttp));
+    this._Authentication_0_4 = new import3.Authentication(this.parentInjector.get(import10.AppState),this.parentInjector.get(import11.Router),this.parentInjector.get(import12.Http),this.parentInjector.get(import13.UtilityService),this.parentInjector.get(import14.UrlManagingService));
+    this._GridEditingComponent_0_5 = new Wrapper_GridEditingComponent(this.parentInjector.get(import15.NgZone),this.parentInjector.get(import10.AppState),this.parentInjector.get(import11.Router),this.parentInjector.get(import12.Http),this._Authentication_0_4,this.parentInjector.get(import16.AuthHttp));
     this._appEl_0.initComponent(this._GridEditingComponent_0_5.context,([] as any[]),compView_0);
     compView_0.create(this._GridEditingComponent_0_5.context,this.projectableNodes,(null as any));
     this.init(([] as any[]).concat([this._el_0]),[this._el_0],([] as any[]),([] as any[]));
@@ -81,10 +82,10 @@ class _View_GridEditingComponent_Host0 extends import1.DebugAppView<any> {
   }
 }
 function viewFactory_GridEditingComponent_Host0(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import5.AppElement):import1.AppView<any> {
-  if ((renderType_GridEditingComponent_Host === (null as any))) { (renderType_GridEditingComponent_Host = viewUtils.createRenderComponentType('',0,import16.ViewEncapsulation.None,([] as any[]),{})); }
+  if ((renderType_GridEditingComponent_Host === (null as any))) { (renderType_GridEditingComponent_Host = viewUtils.createRenderComponentType('',0,import17.ViewEncapsulation.None,([] as any[]),{})); }
   return new _View_GridEditingComponent_Host0(viewUtils,parentInjector,declarationEl);
 }
-export const GridEditingComponentNgFactory:import17.ComponentFactory<import0.GridEditingComponent> = new import17.ComponentFactory<import0.GridEditingComponent>('grid-editing',viewFactory_GridEditingComponent_Host0,import0.GridEditingComponent);
+export const GridEditingComponentNgFactory:import18.ComponentFactory<import0.GridEditingComponent> = new import18.ComponentFactory<import0.GridEditingComponent>('grid-editing',viewFactory_GridEditingComponent_Host0,import0.GridEditingComponent);
 const styles_GridEditingComponent:any[] = ([] as any[]);
 const nodeDebugInfos_GridEditingComponent0:import2.StaticNodeDebugInfo[] = [
   new import2.StaticNodeDebugInfo(([] as any[]),(null as any),{}),
@@ -119,6 +120,6 @@ class _View_GridEditingComponent0 extends import1.DebugAppView<import0.GridEditi
   }
 }
 export function viewFactory_GridEditingComponent0(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import5.AppElement):import1.AppView<import0.GridEditingComponent> {
-  if ((renderType_GridEditingComponent === (null as any))) { (renderType_GridEditingComponent = viewUtils.createRenderComponentType('C:/Source/GitHub/angular2-webpack2-dotnet-starter/complete/frontend/src/app-components/grid/grid-editing/grid-editing.template.html',0,import16.ViewEncapsulation.None,styles_GridEditingComponent,{})); }
+  if ((renderType_GridEditingComponent === (null as any))) { (renderType_GridEditingComponent = viewUtils.createRenderComponentType('C:/Development/angular2-webpack2-dotnet-starter/complete/frontend/src/app-components/grid/grid-editing/grid-editing.template.html',0,import17.ViewEncapsulation.None,styles_GridEditingComponent,{})); }
   return new _View_GridEditingComponent0(viewUtils,parentInjector,declarationEl);
 }
