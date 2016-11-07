@@ -9,6 +9,7 @@ complete/dotnetcore/obj
 complete/dotnetcore/bin
 complete/dotnetcore/.vs
 complete/dotnetcore/npm-debug.log
+complete/dotnetcore/wwwroot/
 
 complete/dotnetframework/Angular2-Webpack2-DotNetFramework-Starter.xproj.user
 complete/dotnetframework/project.lock.json
@@ -18,14 +19,18 @@ complete/dotnetframework/packages/
 complete/dotnetframework/Api.Authentication/obj
 complete/dotnetframework/Api.Authentication/bin
 complete/dotnetframework/Api.Authentication/npm-debug.log
+complete/dotnetframework/Api.Authentication/Api.Authentication.csproj.user
 
 complete/dotnetframework/Api.Resource/obj
 complete/dotnetframework/Api.Resource/bin
 complete/dotnetframework/Api.Resource/npm-debug.log
+complete/dotnetframework/Api.Resource/Api.Resource.csproj.user
 
 complete/dotnetframework/Frontend.Webhost/obj
 complete/dotnetframework/Frontend.Webhost/bin
 complete/dotnetframework/Frontend.Webhost/npm-debug.log
+complete/dotnetframework/Frontend.Webhost/Frontend.Webhost.csproj.user
+complete/dotnetframework/Frontend.Webhost/wwwroot/
 
 complete/frontend/cache
 complete/frontend/node_modules
@@ -33,3 +38,4 @@ complete/frontend/stats.json
 complete/frontend/npm-debug.log
 complete/frontend/compiled/aot/node_modules
 complete/frontend/compiled/src
+complete/frontend/wwwroot/
