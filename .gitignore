@@ -42,3 +42,5 @@ complete/frontend/compiled/
 complete/frontend/wwwroot/
 complete/obj/
 complete/.vs/
+complete/frontend/dotnetframework/
+complete/frontend/dotnetcore/
