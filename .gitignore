@@ -38,4 +38,5 @@ complete/frontend/stats.json
 complete/frontend/npm-debug.log
 complete/frontend/compiled/aot/node_modules
 complete/frontend/compiled/src
+complete/frontend/compiled/
 complete/frontend/wwwroot/
