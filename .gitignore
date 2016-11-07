@@ -40,3 +40,5 @@ complete/frontend/compiled/aot/node_modules
 complete/frontend/compiled/src
 complete/frontend/compiled/
 complete/frontend/wwwroot/
+complete/obj/
+complete/.vs/
