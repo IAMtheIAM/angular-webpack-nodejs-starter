@@ -58,9 +58,9 @@
         /// </summary>
         public override Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
         {
-            context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
+//            context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
 
-            // Dummy check here. TODO: you need to do your DB checks against memebrship system http://bit.ly/SPAAuthCode
+            // Dummy check here. TODO: you need to do your DB checks against membership system http://bit.ly/SPAAuthCode
             if (context.UserName != context.Password)
             {
                 context.SetError("invalid_grant", "The user name or password is incorrect");
@@ -77,7 +77,7 @@
             var props = new AuthenticationProperties(new Dictionary<string, string>
             {
                 {
-                        "audience", context.ClientId ?? string.Empty
+                    "audience", context.ClientId ?? string.Empty
                 }
             });
 

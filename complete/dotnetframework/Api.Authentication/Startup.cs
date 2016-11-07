@@ -6,6 +6,7 @@ namespace Api.Authentication
 {
     using System;
     using System.Web.Http;
+    using System.Web.Http.Cors;
 
     using Api.Authentication.Formats;
     using Api.Authentication.Providers;
@@ -25,8 +26,9 @@ namespace Api.Authentication
             config.MapHttpAttributeRoutes();
 
             this.ConfigureOAuth(app);
-
+            
             app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
+            config.EnableCors(new EnableCorsAttribute("*", "*", "GET, POST, OPTIONS, PUT, DELETE"));
 
             app.UseWebApi(config);
         }
@@ -44,6 +46,8 @@ namespace Api.Authentication
                 Provider = new CustomOAuthProvider(),
                 AccessTokenFormat = new JwtFormat(Url)
             };
+
+            app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
 
             // OAuth 2.0 Bearer Access Token Generation
             app.UseOAuthAuthorizationServer(options);

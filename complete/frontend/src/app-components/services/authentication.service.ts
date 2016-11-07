@@ -5,14 +5,14 @@
 // import { Router, RouterLink} from '@angular/router';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Http } from '@angular/http';
+import { Http, URLSearchParams } from '@angular/http';
 import { Router } from '@angular/router';
+import { Headers } from '@angular/http';
 /*
  * Shared Utilities
  */
 import { Logging, UtilityService } from './utility.service';
 import { AppState } from './appstate.service';
-import { contentHeaders } from '../common/headers';
 import { UrlManagingService } from './url-managing.service';
 
 const jwt_decode = require('jwt-decode');
@@ -33,7 +33,7 @@ export class Authentication {
 
       // Build the API Endpoint
       this.apiURL = `${urlManagingService.getAuthenticationDomain()}/oauth2/token`;
-
+      debugger;
       this.jwt = localStorage.getItem('jwt');
       this.decodedJwt = this.jwt && jwt_decode(this.jwt);
       this.isAuthenticated = this.isLoggedIn();
@@ -42,10 +42,21 @@ export class Authentication {
 
    login(event, username, password) {
       event.preventDefault();
-      let body = JSON.stringify({
-         username,
-         password
-      });
+      // let body = JSON.stringify({
+      //    username,
+      //    password
+      // });
+
+      let urlSearchParams = new URLSearchParams();
+      urlSearchParams.append('username', username);
+      urlSearchParams.append('password', password);
+      urlSearchParams.append('grant_type', 'password');
+      urlSearchParams.append('client_id', '099153c2625149bc8ecb3e85e03f0022');
+      let body = urlSearchParams.toString()
+
+      const contentHeaders = new Headers();
+      contentHeaders.append('Accept', 'application/json');
+      contentHeaders.append('Content-Type', 'application/x-www-form-urlencoded');
 
       return this.http.post(this.apiURL, body, { headers: contentHeaders })
                  .map(response => response.json()); // map the response body to JSON

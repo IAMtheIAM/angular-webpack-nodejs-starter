@@ -6,6 +6,7 @@ using Owin;
 namespace Api.Resource
 {
     using System.Web.Http;
+    using System.Web.Http.Cors;
 
     using Microsoft.Owin.Security;
     using Microsoft.Owin.Security.DataHandler.Encoder;
@@ -23,8 +24,8 @@ namespace Api.Resource
 
             app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
 
-            // TODO: Fix Cors?
-            // config.EnableCors();
+            app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
+            config.EnableCors(new EnableCorsAttribute("*", "*", "GET, POST, OPTIONS, PUT, DELETE"));
 
             app.UseWebApi(config);
 
@@ -47,7 +48,8 @@ namespace Api.Resource
                         new SymmetricKeyIssuerSecurityTokenProvider(Issuer, secret)
                     }
                 });
-
+            
+            app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
         }
     }
 }

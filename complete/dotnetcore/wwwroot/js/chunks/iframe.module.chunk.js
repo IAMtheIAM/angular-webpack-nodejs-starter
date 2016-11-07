@@ -22,7 +22,7 @@ var common_1 = __webpack_require__(46);
 var router_1 = __webpack_require__(15);
 var core_1 = __webpack_require__(2);
 //
-var iframe_routes_1 = __webpack_require__(429);
+var iframe_routes_1 = __webpack_require__(428);
 /*
  * Shared Utilities & Other Services
  */
@@ -30,8 +30,8 @@ var utility_service_1 = __webpack_require__(6);
 /**
  * Imported Components
  */
-var webpage_1_component_1 = __webpack_require__(426);
-var webpage_2_component_1 = __webpack_require__(427);
+var webpage_1_component_1 = __webpack_require__(425);
+var webpage_2_component_1 = __webpack_require__(426);
 var IframeModule = (function () {
     function IframeModule() {
         if (utility_service_1.Logging.isEnabled.light) {
@@ -58,7 +58,7 @@ exports.IframeModule = IframeModule;
 
 /***/ },
 
-/***/ 426:
+/***/ 425:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -91,7 +91,7 @@ var appstate_service_1 = __webpack_require__(7);
  * during development. During productions, all styles will be extracted into
  *  external stylesheets. Do NOT add styles the "Angular2 Way" in
  */
-__webpack_require__(431);
+__webpack_require__(430);
 var Webpage1 = (function () {
     function Webpage1(appState, Authentication, sanitizer) {
         this.appState = appState;
@@ -113,7 +113,7 @@ var Webpage1 = (function () {
     Webpage1 = __decorate([
         core_1.Component({
             selector: 'webpage1',
-            template: __webpack_require__(434)
+            template: __webpack_require__(433)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof appstate_service_1.AppState !== 'undefined' && appstate_service_1.AppState) === 'function' && _a) || Object, (typeof (_b = typeof authentication_service_1.Authentication !== 'undefined' && authentication_service_1.Authentication) === 'function' && _b) || Object, (typeof (_c = typeof platform_browser_1.DomSanitizer !== 'undefined' && platform_browser_1.DomSanitizer) === 'function' && _c) || Object])
     ], Webpage1);
@@ -125,7 +125,7 @@ exports.Webpage1 = Webpage1;
 
 /***/ },
 
-/***/ 427:
+/***/ 426:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -158,7 +158,7 @@ var appstate_service_1 = __webpack_require__(7);
  * during development. During productions, all styles will be extracted into
  *  external stylesheets. Do NOT add styles the "Angular2 Way" in
  */
-__webpack_require__(432);
+__webpack_require__(431);
 var Webpage2 = (function () {
     function Webpage2(appState, Authentication, sanitizer) {
         this.appState = appState;
@@ -180,7 +180,7 @@ var Webpage2 = (function () {
     Webpage2 = __decorate([
         core_1.Component({
             selector: 'webpage2',
-            template: __webpack_require__(435)
+            template: __webpack_require__(434)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof appstate_service_1.AppState !== 'undefined' && appstate_service_1.AppState) === 'function' && _a) || Object, (typeof (_b = typeof authentication_service_1.Authentication !== 'undefined' && authentication_service_1.Authentication) === 'function' && _b) || Object, (typeof (_c = typeof platform_browser_1.DomSanitizer !== 'undefined' && platform_browser_1.DomSanitizer) === 'function' && _c) || Object])
     ], Webpage2);
@@ -192,7 +192,7 @@ exports.Webpage2 = Webpage2;
 
 /***/ },
 
-/***/ 429:
+/***/ 428:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -200,8 +200,8 @@ exports.Webpage2 = Webpage2;
 /**
  * Imported Components
  */
-var webpage_1_component_1 = __webpack_require__(426);
-var webpage_2_component_1 = __webpack_require__(427);
+var webpage_1_component_1 = __webpack_require__(425);
+var webpage_2_component_1 = __webpack_require__(426);
 /*
  * Shared Utilities & Other Services
  */
@@ -223,6 +223,13 @@ exports.iframeRoutes = [{
 
 /***/ },
 
+/***/ 430:
+/***/ function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ },
+
 /***/ 431:
 /***/ function(module, exports) {
 
@@ -230,21 +237,14 @@ exports.iframeRoutes = [{
 
 /***/ },
 
-/***/ 432:
-/***/ function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ },
-
-/***/ 434:
+/***/ 433:
 /***/ function(module, exports) {
 
 module.exports = "<h1>Webpage1 (sub module)</h1>\r\n<!--<div class=\"row\">-->\r\n   <!--<div class=\"col s3\">-->\r\n      <!--<div class=\"card-panel\">-->\r\n         <!--<span>I am a very simple card. I am good at containing small bits of information.-->\r\n          <!--I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.-->\r\n          <!--</span>-->\r\n      <!--</div>-->\r\n   <!--</div>-->\r\n<!--</div>-->\r\n<iframe width=\"100%\" height=\"100%\" [src]=\"someUrl\"></iframe>\r\n\r\n<router-outlet></router-outlet>\r\n"
 
 /***/ },
 
-/***/ 435:
+/***/ 434:
 /***/ function(module, exports) {
 
 module.exports = "<h1>Webpage2 (sub module)</h1>\r\n<!--<div class=\"row\">-->\r\n   <!--<div class=\"col s3\">-->\r\n      <!--<div class=\"card-panel\">-->\r\n         <!--<span>I am a very simple card. I am good at containing small bits of information.-->\r\n          <!--I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.-->\r\n          <!--</span>-->\r\n      <!--</div>-->\r\n   <!--</div>-->\r\n<!--</div>-->\r\n<iframe width=\"100%\" height=\"100%\" [src]=\"someUrl\"></iframe>\r\n\r\n<router-outlet></router-outlet>\r\n"
