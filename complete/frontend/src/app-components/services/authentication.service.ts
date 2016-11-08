@@ -33,7 +33,6 @@ export class Authentication {
 
       // Build the API Endpoint
       this.apiURL = `${urlManagingService.getAuthenticationDomain()}/oauth2/token`;
-      debugger;
       this.jwt = localStorage.getItem('jwt');
       this.decodedJwt = this.jwt && jwt_decode(this.jwt);
       this.isAuthenticated = this.isLoggedIn();

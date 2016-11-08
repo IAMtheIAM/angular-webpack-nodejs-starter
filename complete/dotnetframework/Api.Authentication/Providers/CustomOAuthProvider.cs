@@ -58,8 +58,6 @@
         /// </summary>
         public override Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
         {
-//            context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
-
             // Dummy check here. TODO: you need to do your DB checks against membership system http://bit.ly/SPAAuthCode
             if (context.UserName != context.Password)
             {
