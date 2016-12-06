@@ -1,6 +1,6 @@
 {
    "name": "Angular2-Webpack2-DotNET-Starter",
-   "version": "2.1.1",
+   "version": "2.2.0",
    "description": "A complete starter kit for building Single Page Apps featuring Angular 2, Typescript, Webpack, Authentication, NPM Scripts, Unit Tests, and E2E Tests. Includes .NET Core 1.0 integration for working with a C# backend and Continuous Integration scripts for using source control on a TFS build server.",
    "author": "IAMtheIAM",
    "homepage": "https://github.com/IAMtheIAM/angular2-webpack2-dotnet-starter",
