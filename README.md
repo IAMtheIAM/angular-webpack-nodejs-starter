@@ -1,6 +1,6 @@
 # Angular 2 ♥ .NET Core & Framework [![Join the chat at https://gitter.im/IAMtheIAM/angular2-webpack2-dotnet-starter](https://badges.gitter.im/IAMtheIAM/angular2-webpack2-dotnet-starter.svg)](https://gitter.im/IAMtheIAM/angular2-webpack2-dotnet-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-## Featuring Angular 2, Webpack 2, TypeScript 2, AOT + JIT Compilation, SASS, JWT Authentication, and .NET Core + Framework Integration
+## Starter Project Featuring: Angular 2, Webpack 2, TypeScript 2, AOT + JIT Compilation, SASS, JWT Authentication, and .NET Core + Framework Integration
 
 The purpose of this starter project is to assist Front-end developers and .NET developers to easily integrate their code. This documentation assumes you are developing on Windows 10, however it should work with little to no changes for Linux and Mac. It includes examples of how to integrate Angular 2 with .NET Core and .NET Framework.
 
