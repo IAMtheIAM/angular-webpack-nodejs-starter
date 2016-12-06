@@ -3,16 +3,7 @@
 
 The purpose of the project is to assist Front-end developers and .NET developers to easily integrate their code. This documentation assumes you are developing on Windows 10, however it should work with little to no changes for Linux and Mac. It includes examples of how to integrate Angular 2 with .NET Core and .NET Framework.
 
-<<<<<<< HEAD
-[![Join the chat at https://gitter.im/IAMtheIAM/angular2-webpack2-dotnet-starter](https://badges.gitter.im/IAMtheIAM/angular2-webpack2-dotnet-starter.svg)](https://gitter.im/IAMtheIAM/angular2-webpack2-dotnet-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-The purpose of the project is to assist Front-end developers and .NET developers to easily integrate their code. This documentation assumes you are developing on Windows 10, however it should work with little to no changes for Linux and Mac.
-
-This is based on the Angular 2 Webpack Starter repo [available on GitHub](https://angularclass.github.io/angular2-webpack-starter/). It enhances that repo with additional features, such as integration with .NET Core 1.0, Angular 2 AOT Compilation, Webpack 2.1.0-beta.25, and SASS + Sourcemaps working with Hot Module Replacement.
-=======
 This is based on the Angular 2 Webpack Starter repo [available on GitHub](https://angularclass.github.io/angular2-webpack-starter/). It enhances that repo with additional features, such as integration with .NET Core 1.0 as well as the original .NET Framework, Angular 2 with AOT Compilation, Webpack 2.1.0-beta.25, and SASS + Sourcemaps working with Hot Module Replacement.
->>>>>>> release/v0.1
-
 
 In the following section, you'll learn what you need to know in order to build, serve, and edit this app.
 
