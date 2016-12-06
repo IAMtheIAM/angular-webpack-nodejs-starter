@@ -10,11 +10,13 @@ This is based on the Angular 2 Webpack Starter repo [available on GitHub](https:
 This project is split into multiple subdirectories. The aspiration is to have a "complete" or full-featured version of the project, as as as a "barebones" or minimal version with all of the extra features and goodies removed that aren't needed for a basic Angular 2 / Webpack 2 / .NET integration. Currently, "barebones" is a work in progress. 
 
 The complete project lives in the [./complete](./complete) directory. Inside there you will find:
+
  - dotnetcore
  - dotnetframework
  - frontend
  
- It is relatively self-explanatory. 
+ It is relatively self-explanatory:
+ 
  - [/dotnetcore](./dotnetcore) contains the .NET Core files, VS2015 project and solution.
  - [/dotnetframework](./dotnetframework) contains the .NET Framework files, VS2015 project and solution.
  - [/frontend](./frontend) contains the Angular 2, Webpack 2, and all other frontend files and assets, plus the VS2015 project.
