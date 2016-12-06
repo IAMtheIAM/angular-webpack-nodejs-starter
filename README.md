@@ -68,10 +68,10 @@ I wouldn't recommend JIT build for production code, because it's around 50% slow
 * `npm run build:production:jit`
 * `npm run server:dotnetcore:production`
 
-Viewing The App
+**Viewing The App**
 
 * [http://localhost:5000](http://localhost:5000)
-* Username: Admin (this will bypass the application authentication, the same as an "Authenticated: true" response from the server. No password needed)
+* Username: superadmin (this will bypass the application authentication, the same as an "Authenticated: true" response from the server. No password needed)
 
 **Important points of consideration**
 
