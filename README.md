@@ -93,7 +93,7 @@ Please view the [tips on getting started document](./tools/docs/Tips.md) to read
 
 ## Webpack
 
-<img src="./tools/docs/images/webpack-overview-diagram.png" alt="Webpack Dev Server with Hot Module Replacement" width="900"/>
+<img src="./complete/frontend/tools/docs/images/webpack-overview-diagram.png" alt="Webpack Dev Server with Hot Module Replacement" width="900"/>
 
 **For more info on Webpack Hot module Replacement (HMR), see: [Understanding Webpack Hot Module Replacement](http://andrewhfarmer.com/understanding-hmr/).**
 
@@ -118,7 +118,7 @@ The benefit of this is that you will not lose your app "state" nor your current 
 
 My goal was to enable a standard CSS development workflow wherein all styles are "externally" loaded via `<link href="" />` tags rather than embedded/inlined styles via `<style>...</style>` tags in the `<head></head>`. The reason is because using embedded styles causes the source of the style to be hidden from the DevTools inspector. This was a big problem, because the default "Angular2 way" of loading styles within `@Component` results in the styles being embedded in the `<head></head>`, making it very difficult to know which css/scss file is applying the styles to a particular element. See image below.
 
-<img style="float: right" src="./tools/docs/images/styles-explanation.png" alt="Styles explanation" />
+<img style="float: right" src="./complete/frontend/tools/docs/images/styles-explanation.png" alt="Styles explanation" />
 
 In addition, I wanted Webpack Hot Module Replacement to still work, and because we're using SASS which compiles to CSS, I wanted to see the original .SCSS source-mapped file appear in the DevTools inspector, not the compiled .CSS file. Seeing the compiled .CSS is a step better, but it still forces the developer to have to "backtrack" the compiled .CSS to the original .SCSS. Sourcemaps solves this by directly displaying the original .SCSS source file in the Styles Pane, which you can click on and jump to the exact line in question within the original .SCSS file!
 
