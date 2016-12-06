@@ -70,12 +70,12 @@ I wouldn't recommend JIT build for production code, because it's around 50% slow
 
 **Viewing The App**
 
-* [http://localhost:5000](http://localhost:5000)
-* Username: superadmin (this will bypass the application authentication, the same as an "Authenticated: true" response from the server. No password needed)
+* **[http://localhost:5000](http://localhost:5000)**
+* **Username: superadmin** (All lowercase, no space. This will bypass the application authentication, which is the same as an "Authenticated: true" response from the server. No password needed.)
 
 **Important points of consideration**
 
-* The project repo includes a .idea folder. This is for developing in IntelliJ IDEA 2016, which is excellent in my opinion for developing front end code. The project takes advantage of the `dotnet` command-line SDK which allows you to compile .NET code outside of Visual Studio 2015. 
+* The project repo includes a `.idea` folder. This is for developing in IntelliJ IDEA 2016, which is excellent in my opinion for developing front end code. The project takes advantage of the `dotnet` command-line SDK which allows you to compile .NET code outside of Visual Studio 2015. 
 
 * For IntelliJ IDEA 2016 users, there are many useful run configurations, including debugging the Webpack build, debugging the Angular 2 application, and compound run configurations which upon executing, will execute the above scripts in order for you, so you don't have to remember the order and run multiple commands each time.
 
