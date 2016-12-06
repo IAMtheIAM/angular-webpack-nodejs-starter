@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="One Time Setup" type="js.build_tools.npm" factoryName="npm">
-    <package-json value="$PROJECT_DIR$/package.json" />
+  <configuration default="false" name="One Time Setup" type="js.build_tools.npm" factoryName="npm" folderName="Complete">
+    <package-json value="$PROJECT_DIR$/complete/frontend/package.json" />
     <command value="run-script" />
     <scripts>
       <script value="onetimesetup" />

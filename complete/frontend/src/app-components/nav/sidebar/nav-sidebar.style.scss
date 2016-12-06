@@ -1,0 +1,32 @@
+/********************/
+/* Nav-sidebar.scss */
+/********************/
+@import '../../../assets/styles/appwide-metastyles.scss';
+
+nav-sidebar {
+   //clear: left; // must clear the 'float: left' from the nav-header element - but we're self-clearing it in nav-header.style.scss for now
+
+   // The Susy Span Mixin Syntax
+   // @include span( <$span> of [<$context>] [<$last>] );
+   // @include span( isolate <$span> at [<$column>] [<$last>] );
+
+   .side-nav {
+      width: inherit;
+      background-color: #fff;
+
+      a {
+         font-size: 1em;
+         font-weight: 400;
+      }
+   }
+
+   .side-nav.fixed {
+      top: 64px;
+
+      i.material-icons {
+         margin-right: 5px;
+         margin-left: -14px;
+      }
+   }
+
+}

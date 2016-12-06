@@ -1,7 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Debug This Application" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:5000">
-    <mapping url="http://localhost:5000" local-file="$PROJECT_DIR$/wwwroot" />
-    <mapping url="webpack:///." local-file="$PROJECT_DIR$" />
+    <mapping url="webpack:///." local-file="$PROJECT_DIR$/complete" />
     <method />
   </configuration>
 </component>

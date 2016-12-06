@@ -1,11 +1,17 @@
+# Angular 2 ♥ .NET Core & Framework [![Join the chat at https://gitter.im/IAMtheIAM/angular2-webpack2-dotnet-starter](https://badges.gitter.im/IAMtheIAM/angular2-webpack2-dotnet-starter.svg)](https://gitter.im/IAMtheIAM/angular2-webpack2-dotnet-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+## Starter Project Featuring Webpack 2, JIT/AOT Compilation, TypeScript, & SASS
 
-# Angular 2 AOT + Webpack 2 + Typescript + SASS + .NET Core 1
+The purpose of the project is to assist Front-end developers and .NET developers to easily integrate their code. This documentation assumes you are developing on Windows 10, however it should work with little to no changes for Linux and Mac. It includes examples of how to integrate Angular 2 with .NET Core and .NET Framework.
 
+<<<<<<< HEAD
 [![Join the chat at https://gitter.im/IAMtheIAM/angular2-webpack2-dotnet-starter](https://badges.gitter.im/IAMtheIAM/angular2-webpack2-dotnet-starter.svg)](https://gitter.im/IAMtheIAM/angular2-webpack2-dotnet-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 The purpose of the project is to assist Front-end developers and .NET developers to easily integrate their code. This documentation assumes you are developing on Windows 10, however it should work with little to no changes for Linux and Mac.
 
 This is based on the Angular 2 Webpack Starter repo [available on GitHub](https://angularclass.github.io/angular2-webpack-starter/). It enhances that repo with additional features, such as integration with .NET Core 1.0, Angular 2 AOT Compilation, Webpack 2.1.0-beta.25, and SASS + Sourcemaps working with Hot Module Replacement.
+=======
+This is based on the Angular 2 Webpack Starter repo [available on GitHub](https://angularclass.github.io/angular2-webpack-starter/). It enhances that repo with additional features, such as integration with .NET Core 1.0 as well as the original .NET Framework, Angular 2 with AOT Compilation, Webpack 2.1.0-beta.25, and SASS + Sourcemaps working with Hot Module Replacement.
+>>>>>>> release/v0.1
 
 
 In the following section, you'll learn what you need to know in order to build, serve, and edit this app.
@@ -132,6 +138,11 @@ NPM utilizing exit codes to indicate whether the executing task failed or succee
 
 **CAVEAT 2**: Webpack-Dev-Server is an ongoing task and does NOT have an exit code, because it stays alive. Therefore you cannot chain any tasks after running Webpack-Dev-Server without utilizing a workaround to get them to run **asynchronously**. There are also other NPM pacakges such as `concurrently` that can help with this, and command line tools such as chaining commands together with a single `&` and prefixing them with `start` to open each command in a new cmd.exe instance and run them in parallel).(`start npm run server:Frontend:hmr & start npm run apiserver`). 
 
+## To-do
 
-# License
+- [x] Integrating with Visual Studio
+- [ ] Barebones version of the application containing just JWT-based Authentication
+- [ ] More solid backend structure
+
+## License
  [MIT](/LICENSE)

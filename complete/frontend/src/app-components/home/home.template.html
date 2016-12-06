@@ -1,0 +1,47 @@
+<h1>Home (Decoded JWT)</h1>
+<div class="card-container">
+    <div class="card-panel">
+        <div class="home">
+            <h1>Welcome {{ decodedJwt.username }}!</h1>
+            <h2 *ngIf="jwt">Your JWT is:</h2>
+            <pre *ngIf="jwt" class="jwt"><code>{{ jwt }}</code></pre>
+            <pre *ngIf="jwt" class="jwt"><code>{{ decodedJwt | json }}</code></pre>
+            <p>Click any of the buttons to call an API and get a funny response</p>
+            <p>
+                <button class="btn btn-primary btn-lg" role="button" (click)="callAnonymousApi()">Call Anonymous API</button>
+                <button class="btn btn-primary btn-lg" role="button" (click)="callSecuredApi()">Call Secure API</button>
+            </p>
+            <h2 *ngIf="response">
+                The response of calling the <span class="red">{{api}}</span> API is:
+            </h2>
+            <h3 *ngIf="response">{{response}}</h3>
+        </div>
+    </div>
+
+    <div class="card-panel">
+
+        <form (ngSubmit)="submitState(localState.value)" autocomplete="off">
+            <span class="card-title" x-large>Local State</span>
+
+            <input autofocus placeholder="Submit Local State to App State"
+                   [value]="localState.value"
+                   (input)="localState.value = $event.target.value" />
+
+            <button color="primary">Submit Value</button>
+        </form>
+
+
+        <!--Rather than wiring up two-way data-binding ourselves with [value] and (input) we can use Angular's banana in a box [(ngModel)] syntax-->
+        <!--<input type="text" [value]="localState.value" (input)="localState.value = $event.target.value" autofocus>-->
+        <span>Two way data binding</span>
+        <input type="text" [(ngModel)]="localState.value" autofocus>
+
+    </div>
+</div>
+
+
+<h3>Progress: {{progress}}</h3>
+<button color="primary" (click)="processInsideAngularZone()">Process within Angular zone</button>
+<button color="accent" (click)="processOutsideAngularZone()">
+    Process outside Angular zone
+</button>

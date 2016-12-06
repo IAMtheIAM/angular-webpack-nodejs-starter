@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="JIT: Build Production" type="js.build_tools.npm" factoryName="npm" singleton="false">
-    <package-json value="$PROJECT_DIR$/package.json" />
+  <configuration default="false" name="JIT: Build Production" type="js.build_tools.npm" factoryName="npm" folderName="Complete" singleton="false">
+    <package-json value="$PROJECT_DIR$/complete/frontend/package.json" />
     <command value="run-script" />
     <scripts>
       <script value="build:production:jit" />

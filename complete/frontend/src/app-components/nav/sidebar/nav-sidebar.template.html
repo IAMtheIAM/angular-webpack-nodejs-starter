@@ -1,0 +1,59 @@
+<ul id="slide-out" class="side-nav fixed">
+   <li><a class="waves-effect waves-darkblue" router-active [routerLink]="['/']">Index</a></li>
+   <li><a class="waves-effect waves-darkblue" router-active [routerLink]="['/ticket']">Ticket</a></li>
+   <li><a class="waves-effect waves-darkblue" router-active [routerLink]="['/home']">Home (Decoded JWT)</a></li>
+   <li class="no-padding">
+        <ul class="collapsible" data-collapsible="expandable">
+            <li>
+                <a class="waves-effect waves-darkblue" class="collapsible-header">Grids
+                   <i class="material-icons left">arrow_drop_down</i>
+                </a>
+                <div class="collapsible-body">
+                    <ul>
+                        <li><a class="waves-effect waves-darkblue" router-active [routerLink]="['/gridEditing']">Grid Editing</a></li>
+                        <li><a class="waves-effect waves-darkblue" router-active [routerLink]="['/gridNested']">Grid Nested</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+   </li>
+   <li><a class="waves-effect waves-darkblue" router-active [routerLink]="['/about']">About</a></li>
+   <li><a class="waves-effect waves-darkblue" router-active [routerLink]="['/login']">Login</a></li>
+   <li><a class="waves-effect waves-darkblue" router-active [routerLink]="['/detail']">Detail (Sub Module)</a></li>
+
+    <li class="no-padding">
+      <ul class="collapsible" data-collapsible="expandable">
+         <li>
+            <a class="waves-effect waves-darkblue" class="collapsible-header">Iframe Module
+               <i class="material-icons left">arrow_drop_down</i>
+            </a>
+            <div class="collapsible-body">
+               <ul>
+                  <li><a class="waves-effect waves-darkblue" router-active [routerLink]="['/iframe/webpage1']">Bing Images</a></li>
+                  <li><a class="waves-effect waves-darkblue" router-active [routerLink]="['/iframe/webpage2']">Bing Search</a></li>
+               </ul>
+            </div>
+         </li>
+      </ul>
+   </li>
+</ul>
+<a class="waves-effect waves-darkblue button-collapse" href="#" data-activates="slide-out"><i class="mdi-navigation-menu"></i></a>
+
+<!--<md-toolbar-row>-->
+<!--<a class="waves-effect waves-darkblue" class="waves-effect waves-darkblue waves-light btn"><i class="material-icons left">cloud</i>button</a>-->
+
+<!--<button md-button router-active [routerLink]="['/']">Index</button>-->
+<!--</md-toolbar-row>-->
+
+<!--<md-toolbar-row>-->
+<!--<button md-button router-active [routerLink]="['/home']">Home</button>-->
+<!--</md-toolbar-row>-->
+
+<!--<md-toolbar-row>-->
+<!--<button md-button router-active [routerLink]="['/about']">About</button>-->
+<!--</md-toolbar-row>-->
+
+<!--<md-toolbar-row>-->
+<!--<button md-button router-active [routerLink]="['/login']">Login</button>-->
+<!--</md-toolbar-row>-->
+
