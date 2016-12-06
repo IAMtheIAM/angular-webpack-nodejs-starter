@@ -17,9 +17,9 @@ The complete project lives in the [./complete](./complete) directory. Inside the
  
  It is relatively self-explanatory:
  
- - [/dotnetcore](./dotnetcore) contains the .NET Core files, VS2015 project and solution.
- - [/dotnetframework](./dotnetframework) contains the .NET Framework files, VS2015 project and solution.
- - [/frontend](./frontend) contains the Angular 2, Webpack 2, and all other frontend files and assets, plus the VS2015 project.
+ - [./complete/dotnetcore](./complete/dotnetcore) contains the .NET Core files, VS2015 project and solution.
+ - [./complete/dotnetframework](./complete/dotnetframework) contains the .NET Framework files, VS2015 project and solution.
+ - [./complete/frontend](./complete/frontend) contains the Angular 2, Webpack 2, and all other frontend files and assets, plus the VS2015 project.
  
 ### Editing in Visual Studio 2015
 To open this project in Visual Studio 2015, navigate to appropriate folder and choose the solution file.
