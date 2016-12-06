@@ -16,7 +16,7 @@ import { UtilityService } from '../services/utility.service';
 /*
  * Imported Components
  */
-const jwt_decode = require('jwt-decode');
+// const jwt_decode = require('jwt-decode');
 
 /**
  * This is where CSS/SCSS files that the component depends on are required.
@@ -92,6 +92,19 @@ export class LoginComponent {
              error => {
                 // this.notificationService.printErrorMessage('Authentication required');
 
+                // Manual override: Allow admin login even without Active Directory running
+                if (username === 'superadmin' || username === 'Superadmin') {
+
+                   // True or false
+                   this.authService.validAuth = true;
+
+                   // Update the appState with the response
+                   this.appState.set('isAuthenticated', this.authService.validAuth);
+
+                   // Fire the loginSuccess function
+                   return this.loginSuccess(); // 'return' stops the function from continuing
+                }
+
                 if (error.status === 401 || error.status === 404) {
                    // this.notificationService.printErrorMessage('Authentication required');
                    if (Logging.isEnabled.verbose) {
@@ -109,20 +122,44 @@ export class LoginComponent {
 
                 return this.authService.isLoggedIn();
              });
+
    }
 
    loginSuccess(response?) {
 
-      if (response !== null) {
-         this.token = response.access_token;
+      // if we're overriding with an admin login, fake a JWT
+      if (!response) {
+         response = {
+            Token: 'eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNyc2Etc2hhMjU2Iiwia2lkIjoiNjY4QThCQjE5OENCOTFCNEJGREMzMDdCOEM3QTVFM0U2QzA1NzA4NSIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJhZG1pbiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJucGFyc29uIiwibmJmIjoxNDc0NjYyMDQwLCJleHAiOjE0NzQ2NjU2NDAsImlzcyI6ImFybWxzX2lkX3NlcnZlciIsImF1ZCI6ImFybWxzX2lkX3NlcnZlciJ9.bVImq8ceJSQ_cjfA2_TbvAJcYk6qCgsHc6GEd1xby0RUdXIs7k-qvsFlDyGT9NSumiTY6B_eHkedBiaGwnMUBvMlUvjeMEYKffIB2odzg8pY4Z-2VGCA1HDJV1xis0odqIOtTr9n0uA_mD88NraM39HkxYFSNB4HbQyKc35QFgmnWVQaD0T6AG2nRHQLvkxtMVAumrV2XSDHeV_32E4p7evdZyCWbQ7seh7nvWeWXIOQlnHxfJrBfL25gBwyRytASMiuotIBCjdgRTHlVcOXJYpkwSzgAGUX_c2lodqmg6nZFkDfWdmTdU8bQkyetzx4hVLhMv8EENo6hCQL1fVBEA'
+         };
+      }
+
+      if (this.authService.validAuth) {
+
+         if (response.id_token) {
+            this.token = response.id_token;
+         }
+         else if (response.Token) {
+            this.token = response.Token;
+         }
+         else if (response !== null) {
+            // .Net generated JWT
+            this.token = response.access_token;
+
+            // Set the JWT
+            localStorage.setItem('jwt', this.token);
+         }
 
          // Token debugging
-         // const splitToken = this.token.split('.');
-         // const responseHeaders = JSON.parse(atob(splitToken[0]));
-         // const responseBody = JSON.parse(atob(splitToken[1]));
+         const splitToken = this.token.split('.');
+         const responseHeaders = JSON.parse(atob(splitToken[0]));
+         const responseBody = JSON.parse(atob(splitToken[1]));
+         console.log(responseHeaders);
+         console.log(responseBody);
 
          // Set the JWT
          localStorage.setItem('jwt', this.token);
+
       }
       if (Logging.isEnabled.verbose) {
          console.log("Login Component: login(response): ", response);
@@ -132,7 +169,7 @@ export class LoginComponent {
       // Get the redirect URL from our appState. If no redirect has been set, use the default
       let redirect = this.appState.state.redirectUrl
          ? this.appState.state.redirectUrl
-          : '/home';
+         : '/home';
 
       // Clear redirect URL after initial redirect
       this.appState.set('redirectUrl', ''); // Index page
