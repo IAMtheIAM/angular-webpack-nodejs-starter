@@ -5,9 +5,33 @@ The purpose of the project is to assist Front-end developers and .NET developers
 
 This is based on the Angular 2 Webpack Starter repo [available on GitHub](https://angularclass.github.io/angular2-webpack-starter/). It enhances that repo with additional features, such as integration with .NET Core 1.0 as well as the original .NET Framework, Angular 2 with AOT Compilation, Webpack 2.1.0-beta.25, and SASS + Sourcemaps working with Hot Module Replacement.
 
-In the following section, you'll learn what you need to know in order to build, serve, and edit this app.
+## Explanation of Project Structure
+
+This project is split into multiple subdirectories. The aspiration is to have a "complete" or full-featured version of the project, as as as a "barebones" or minimal version with all of the extra features and goodies removed that aren't needed for a basic Angular 2 / Webpack 2 / .NET integration. Currently, "barebones" is a work in progress. 
+
+The complete project lives in the [./complete](./complete) directory. Inside there you will find:
+ - dotnetcore
+ - dotnetframework
+ - frontend
+ 
+ It is relatively self-explanatory. 
+ - [/dotnetcore](./dotnetcore) contains the .NET Core files, VS2015 project and solution.
+ - [/dotnetframework](./dotnetframework) contains the .NET Framework files, VS2015 project and solution.
+ - [/frontend](./frontend) contains the Angular 2, Webpack 2, and all other frontend files and assets, plus the VS2015 project.
+ 
+### Editing in Visual Studio 2015
+To open this project in Visual Studio 2015, navigate to appropriate folder and choose the solution file.
+ 
+ For .NET Core, go to [`./complete/dotnetcore/Angular2-Webpack2-DotNetCore-Starter.sln`](./complete/dotnetcore/Angular2-Webpack2-DotNetCore-Starter.sln)
+ For .NET Framework, go to [`./complete/dotnetframework/Angular2-Webpack2-DotNetFramework-Starter.sln`](./complete/dotnetframework/Angular2-Webpack2-DotNetFramework-Starter.sln)
+
+### Editing in IntelliJ IDEA 2016
+To open this project in IntelliJ IDEA, simply open this [root](../../) folder of the project in the program. It contains the [`.idea`](./.idea) folder needed to load this project and all its run configurations.
+
 
 ## Getting Your Environment Setup
+
+In this section, you'll learn what you need to know in order to build, edit, and serve this app. 
 
 This project depends upon NodeJS and NPM. It is important that you only use **Node version 4.4.4 LTS or higher**, and **NPM version 3.10.6 or higher**. I do not recommend using the "Current" version which contains latest features, or you may run into build errors. Any other version of NodeJS and NPM is not guaranteed to work and may produce build errors.
 

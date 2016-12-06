@@ -9,8 +9,8 @@ To open this project in Visual Studio 2015, navigate to appropriate folder and c
  For .NET Core, go to [`../dotnetcore/Angular2-Webpack2-DotNetCore-Starter.sln`](../dotnetcore/Angular2-Webpack2-DotNetCore-Starter.sln)
  For .NET Framework, go to [`../dotnetframework/Angular2-Webpack2-DotNetFramework-Starter.sln`](../dotnetframework/Angular2-Webpack2-DotNetFramework-Starter.sln)
 
-##IntelliJ IDEA 2016
-To open this project in IntelliJ IDEA, simple open this folder in the program. It already contains the [`.idea`](.idea) folder needed to load the project and all its run configurations.
+## IntelliJ IDEA 2016
+To open this project in IntelliJ IDEA, navigate to the [root](../../) of the project and open the folder in the program. It contains the [`../../.idea`](../../.idea) folder needed to load the project and all its run configurations.
 
 ## To-do
 
