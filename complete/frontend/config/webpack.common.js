@@ -17,7 +17,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
  * Webpack Constants
  */
 
-const webpackConditionals = require('./webpack.conditionals')
+const webpackConditionals = require('./webpack.conditionals');
 const webpackPlugins = webpackConditionals.webpackPlugins;
 const sassVarsConfig = webpackConditionals.sassVarsConfig;
 const ENVlc = webpackConditionals.ENVlc;
@@ -79,6 +79,7 @@ module.exports = {
 
       // An array of directory names to be resolved to the current directory
       modules: ['node_modules', 'node_modules_custom', helpers.root('src')],
+      moduleExtensions: ['-loader']
    },
 
    resolve: {
@@ -154,7 +155,7 @@ module.exports = {
                '@angularclass/hmr-loader',
                'awesome-typescript-loader',
                'angular2-template-loader',
-               'angular2-router-loader?loader=system',
+               'angular-router-loader?loader=system',
                "angular2-load-children-loader" // this loader replaces loadChildren value to work with AOT/JIT
 
             ],

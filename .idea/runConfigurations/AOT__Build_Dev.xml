@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="AOT: Build Dev" type="js.build_tools.npm" factoryName="npm" folderName="Complete" singleton="false">
+  <configuration default="false" name="AOT: Build Dev" type="js.build_tools.npm" factoryName="npm" singleton="false">
     <package-json value="$PROJECT_DIR$/complete/frontend/package.json" />
     <command value="run-script" />
     <scripts>

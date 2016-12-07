@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="NPM Install" type="js.build_tools.npm" factoryName="npm" folderName="Complete">
+  <configuration default="false" name="NPM Install" type="js.build_tools.npm" factoryName="npm">
     <package-json value="$PROJECT_DIR$/complete/frontend/package.json" />
     <command value="run-script" />
     <scripts>

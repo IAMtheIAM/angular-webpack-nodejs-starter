@@ -8,7 +8,6 @@ const AutoPrefixer = require('autoprefixer');
 const helpers = require('./helpers.js');
 const commonConfig = require('./webpack.common.js'); // the settings that are common to prod and dev
 const outputDir = 'wwwroot';
-console.log('testing for outputDir: ' + commonConfig.outputDir);
 
 // module.exports = webpackMerge(commonConfig,
 module.exports = {

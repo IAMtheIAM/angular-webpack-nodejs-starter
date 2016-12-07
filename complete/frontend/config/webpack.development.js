@@ -14,7 +14,7 @@ const NamedModulesPlugin = require('webpack/lib/NamedModulesPlugin');
  * Webpack Constants
  */
 const commonConfig = require('./webpack.common.js'); // the settings that are common to prod and dev
-const webpackConditionals = require('./webpack.conditionals')
+const webpackConditionals = require('./webpack.conditionals');
 const METADATA = webpackConditionals.METADATA;
 const outputDir = 'wwwroot';
 
@@ -124,7 +124,6 @@ module.exports = webpackMerge(commonConfig,
        * See: https://webpack.github.io/docs/webpack-dev-server.html
        */
       devServer: {
-         outputPath: helpers.root(outputDir),
          port: METADATA.port,
          host: METADATA.host,
          compress: true, // Set this if you want to enable gzip compression for assets
