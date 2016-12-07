@@ -1,54 +1,9 @@
 # Created by .ignore support plugin (hsz.mobi)
 
 # Root
-
 .idea/shelf
 .idea/workspace.xml
 
-# .Net Core
-
-complete/dotnetcore/Angular2-Webpack2-DotNetCore-Starter.xproj.user
-complete/dotnetcore/project.lock.json
-complete/dotnetcore/obj
-complete/dotnetcore/bin
-complete/dotnetcore/.vs
-complete/dotnetcore/npm-debug.log
-complete/dotnetcore/wwwroot/
-
-# .Net Framework
-
-complete/dotnetframework/Angular2-Webpack2-DotNetFramework-Starter.xproj.user
-complete/dotnetframework/project.lock.json
-complete/dotnetframework/.vs
-complete/dotnetframework/packages/
-complete/dotnetframework/Api.Authentication/obj
-complete/dotnetframework/Api.Authentication/bin
-complete/dotnetframework/Api.Authentication/npm-debug.log
-complete/dotnetframework/Api.Authentication/Api.Authentication.csproj.user
-complete/dotnetframework/Api.Resource/obj
-complete/dotnetframework/Api.Resource/bin
-complete/dotnetframework/Api.Resource/npm-debug.log
-complete/dotnetframework/Api.Resource/Api.Resource.csproj.user
-complete/dotnetframework/Frontend.Webhost/obj
-complete/dotnetframework/Frontend.Webhost/bin
-complete/dotnetframework/Frontend.Webhost/npm-debug.log
-complete/dotnetframework/Frontend.Webhost/Frontend.Webhost.csproj.user
-complete/dotnetframework/Frontend.Webhost/wwwroot/
-
-# Frontend
-
-complete/frontend/Frontend - Angular2-Webpack2-Starter.xproj.user
-complete/frontend/cache
-complete/frontend/node_modules
-complete/frontend/stats.json
-complete/frontend/npm-debug.log
-complete/frontend/project.lock.json
-complete/frontend/compiled/aot/node_modules
-complete/frontend/compiled/src
-complete/frontend/compiled/
-complete/frontend/wwwroot/
-complete/frontend/bin
-complete/frontend/obj/
-complete/frontend/dotnetframework/
-complete/frontend/dotnetcore/
-complete/.vs/
+###################################
+# Other rules moved: .gitignore file split into 3 files and moved into /frontend and /dotnetcore and /dotnetframework project folder so they can be seen within Visual Studio.
+###################################

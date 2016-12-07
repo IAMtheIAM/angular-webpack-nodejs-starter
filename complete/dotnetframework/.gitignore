@@ -1,0 +1,22 @@
+# Backend - .Net Framework
+
+node_modules
+Frontend.Webhost/wwwroot
+
+# Visual Studio & other generated files to ignore
+
+*.lock.*
+.vs
+[Oo]bj
+[Bb]in
+*.user
+*.suo
+*.[Cc]ache
+*.bak
+*.ncb
+*.log 
+*.DS_Store
+[Tt]humbs.db
+_ReSharper.*
+*.ReSharper.user
+packages
