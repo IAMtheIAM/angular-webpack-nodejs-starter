@@ -14,7 +14,8 @@ wwwroot
 *.[Cc]ache
 *.bak
 *.ncb
-*.log 
+*.log
+*.log.*
 *.DS_Store
 [Tt]humbs.db
 _ReSharper.*
