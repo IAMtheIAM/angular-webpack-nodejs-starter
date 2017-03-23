@@ -1,35 +1,35 @@
-/**
- * @author: @AngularClass
- */
+/*********************************************************************************************
+ *******************************  Webpack Requires & Plugins *********************************
+ ********************************************************************************************/
 
 const helpers = require('./helpers.js');
 const webpackMerge = require('webpack-merge'); // used to merge webpack configs
-const commonConfig = require('./webpack.common.js'); // the settings that are common to prod and dev
 const webpack = require('webpack');
-
-/**
- * Webpack Plugins
- */
-   // const ProvidePlugin = require('webpack/lib/ProvidePlugin');
-   // const DefinePlugin = require('webpack/lib/DefinePlugin');
-   // const NormalModuleReplacementPlugin = require('webpack/lib/NormalModuleReplacementPlugin');
-   // const IgnorePlugin = require('webpack/lib/IgnorePlugin');
-   // const DedupePlugin = require('webpack/lib/optimize/DedupePlugin');
-   // const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const CompressionPlugin = require('compression-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const PurifyCSSPlugin = require('../node_modules_custom/purifycss-webpack-plugin');
+const OptimizeJsPlugin = require('optimize-js-plugin');
+const DefinePlugin = require('webpack/lib/DefinePlugin');
 
+/*********************************************************************************************
+ *******************************  Webpack Constants/Vars *************************************
+ ********************************************************************************************/
 
-/**
- * Webpack Constants
- */
 const outputDir = 'wwwroot';
-// const webpackConditionals = require('./webpack.conditionals')
-// const METADATA = webpackConditionals.METADATA;
 
+/*********************************************************************************************
+ *******************************  Imported Webpack Constants/Vars ****************************
+ ********************************************************************************************/
 
+const commonConfig = require('./webpack.common.js'); // the settings that are common to prod and dev
+const webpackConditionals = require('./webpack.conditionals');
+const AOT = webpackConditionals.AOT;
+const JIT = webpackConditionals.JIT;
+const DEBUG = webpackConditionals.DEBUG;
+const ENV = webpackConditionals.ENV;
+const PRODUCTION = webpackConditionals.PRODUCTION;
+const METADATA = webpackConditionals.METADATA;
 
 module.exports = webpackMerge(commonConfig, {
 
@@ -64,7 +64,7 @@ module.exports = webpackMerge(commonConfig, {
        *
        * See: http://webpack.github.io/docs/configuration.html#output-filename
        */
-      filename: '/js/[name].bundle.js',
+      filename: 'js/[name].bundle.js',
 
       /**
        * The filename of the SourceMaps for the JavaScript files.
@@ -72,7 +72,7 @@ module.exports = webpackMerge(commonConfig, {
        *
        * See: http://webpack.github.io/docs/configuration.html#output-sourcemapfilename
        */
-      sourceMapFilename: '/js/maps/[name].map',
+      sourceMapFilename: 'js/maps/[name].map',
 
       /**
        * The filename of non-entry chunks as relative path
@@ -80,7 +80,7 @@ module.exports = webpackMerge(commonConfig, {
        *
        * See: http://webpack.github.io/docs/configuration.html#output-chunkfilename
        */
-      chunkFilename: '/js/chunks/[name].chunk.js',
+      chunkFilename: 'js/chunks/[name].chunk.js',
 
    },
 
@@ -90,6 +90,19 @@ module.exports = webpackMerge(commonConfig, {
     * See: http://webpack.github.io/docs/configuration.html#plugins
     */
    plugins: [
+
+
+      /**
+       * Webpack plugin to optimize a JavaScript file for faster initial load
+       * by wrapping eagerly-invoked functions.
+       *
+       * See: https://github.com/vigneshshanmugam/optimize-js-plugin
+       */
+
+      new OptimizeJsPlugin({
+         sourceMap: false // prod
+      }),
+
 
       /**
        * Plugin: ExtractTextPlugin
@@ -103,6 +116,25 @@ module.exports = webpackMerge(commonConfig, {
          allChunks: true
       }),
 
+      /**
+       * Plugin: DefinePlugin
+       * Description: Define free variables.
+       * Useful for having development builds with debug logging or adding global constants.
+       *
+       * Environment helpers
+       *
+       * See: https://webpack.github.io/docs/list-of-plugins.html#defineplugin
+       */
+      // NOTE: when adding more properties make sure you include them in custom-typings.d.ts
+      new DefinePlugin({
+         'ENV': JSON.stringify(METADATA.ENV),
+         'HMR': METADATA.HMR,
+         'process.env': {
+            'ENV': JSON.stringify(METADATA.ENV),
+            'NODE_ENV': JSON.stringify(METADATA.ENV),
+            'HMR': METADATA.HMR,
+         }
+      }),
 
       /**
        * Plugin: PurifyCSS WebPack Plugin
@@ -150,8 +182,7 @@ module.exports = webpackMerge(commonConfig, {
        *
        * See: https://github.com/webpack/docs/wiki/optimization#deduplication
        */
-      // new DedupePlugin(),
-
+      // new webpack.DedupePlugin(),
 
 
       /**
@@ -163,28 +194,50 @@ module.exports = webpackMerge(commonConfig, {
        */
       // NOTE: To debug prod builds uncomment //debug lines and comment //prod lines
 
-      // new webpack.UglifyJsPlugin({
-      //    // beautify: true, //debug
-      //    // mangle: false, //debug
-      //    // dead_code: false, //debug
-      //    // unused: false, //debug
-      //    // deadCode: false, //debug
-      //    // compress: {
-      //    //   screw_ie8: true,
-      //    //   keep_fnames: true,
-      //    //   drop_debugger: false,
-      //    //   dead_code: false,
-      //    //   unused: false
-      //    // }, // debug
-      //    // comments: true, //debug
-      //
-      //
-      //    beautify: false, //prod
-      //    mangle: { screw_ie8 : true, keep_fnames: true }, //prod
-      //    compress: {screw_ie8: true}, //prod
-      //    comments: false, //prod
-      //    sourceMap: false
-      // }),
+      new webpack.optimize.UglifyJsPlugin({
+         //    // "Debug" mode options
+
+         //    // beautify: true, //debug
+         //    // mangle: false, //debug
+         //    // dead_code: false, //debug
+         //    // unused: false, //debug
+         //    // deadCode: false, //debug
+         //    // compress: {
+         //    //   screw_ie8: true,
+         //    //   keep_fnames: true,
+         //    //   drop_debugger: false,
+         //    //   dead_code: false,
+         //    //   unused: false
+         //    // }, // debug
+         //    // comments: true, //debug
+
+
+         // "Production" mode options
+         beautify: false, //prod
+         output: {
+            comments: false //prod
+         },
+         mangle: { //prod
+            screw_ie8: true,
+            keep_fnames: true
+
+         },
+         compress: { //prod
+            screw_ie8: true,
+            warnings: false,
+            conditionals: true,
+            unused: true,
+            comparisons: true,
+            sequences: true,
+            dead_code: true,
+            evaluate: true,
+            if_return: true,
+            join_vars: true,
+            negate_iife: false // we need this for lazy v8
+         },
+         comments: false, //prod
+         sourceMap: false //prod
+      }),
 
       /**
        * Plugin: NormalModuleReplacementPlugin
@@ -215,6 +268,11 @@ module.exports = webpackMerge(commonConfig, {
          helpers.root('config/modules/angular2-hmr-prod.js')
       ),
 
+      new webpack.NormalModuleReplacementPlugin(
+         /zone\.js(\\|\/)dist(\\|\/)long-stack-trace-zone/,
+         helpers.root('config/empty.js')
+      ),
+
       /**
        * Plugin: IgnorePlugin
        * Description: Don’t generate modules for requests matching the provided RegExp.
@@ -235,7 +293,7 @@ module.exports = webpackMerge(commonConfig, {
          asset: "[path].gz",
          // regExp: /\.css$|\.html$|\.js$|\.map$/,
          test: /\.(css|html|js|json|map)(\?{0}(?=\?|$))/,
-         threshold: 2 * 1024,
+         // threshold: 1 * 1024, // minimum file size for compression to be applied
          algorithm: "gzip",
          minRatio: 0.8
       })

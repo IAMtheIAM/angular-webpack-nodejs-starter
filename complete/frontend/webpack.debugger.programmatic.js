@@ -10,12 +10,9 @@ webpackConfig.plugins.unshift(new webpack.HotModuleReplacementPlugin());
 var compiler = webpack(webpackConfig); // load webpack
 // run dev-server
 var server = new WebpackDevServer(compiler, {
-   devtool: "source-map",
    contentBase: "/",
    publicPath: "/",
    hot: true,
    inline: true,
-   progress: true,
-   colors: true
 });
-server.listen(8000);
+server.listen(9191);

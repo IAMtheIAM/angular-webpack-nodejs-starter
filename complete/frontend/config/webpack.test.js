@@ -102,7 +102,7 @@ module.exports = {
      *
      * See: http://webpack.github.io/docs/configuration.html#module-loaders
      */
-    loaders: [
+    rules: [
 
       /**
        * Typescript loader support for .ts and Angular 2 async detailRoutes via .async.ts
@@ -157,7 +157,7 @@ module.exports = {
       {
         test: /\.scss$/,
         exclude: /node_modules/,
-        loaders: ['raw-loader', 'sass-loader'] // sass-loader not scss-loader
+        use: ['raw-loader', 'sass-loader'] // sass-loader not scss-loader
       }
 
       //{ test: /\.scss$/, loader: 'style!css!sass', exclude: [helpers.root('src/index.html')] },

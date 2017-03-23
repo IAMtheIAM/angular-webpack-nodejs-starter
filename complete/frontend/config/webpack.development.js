@@ -1,28 +1,44 @@
+/*********************************************************************************************
+ *******************************  Webpack Requires & Plugins *********************************
+ ********************************************************************************************/
+
 const webpackMerge = require('webpack-merge'); // used to merge webpack configs
+const webpackMergeDll = webpackMerge.strategy({plugins: 'replace'});
 const webpack = require('webpack');
 const helpers = require('./helpers');
-
-/**
- * Webpack Plugins
- */
-   // const DashboardPlugin = require('webpack-dashboard/plugin');
-   // const DefinePlugin = require('webpack/lib/DefinePlugin');
 const NamedModulesPlugin = require('webpack/lib/NamedModulesPlugin');
+const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
+const OptimizeJsPlugin = require('optimize-js-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
+// const DllBundlesPlugin = require('../node_modules_custom/webpack-dll-bundles-plugin').DllBundlesPlugin;
+const DllBundlesPlugin = require('webpack-dll-bundles-plugin').DllBundlesPlugin;
+const ContextReplacementPlugin = require('webpack/lib/ContextReplacementPlugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+/*********************************************************************************************
+ *******************************  Webpack Constants/Vars *************************************
+ ********************************************************************************************/
 
-/**
- * Webpack Constants
- */
-const commonConfig = require('./webpack.common.js'); // the settings that are common to prod and dev
-const webpackConditionals = require('./webpack.conditionals');
-const METADATA = webpackConditionals.METADATA;
 const outputDir = 'wwwroot';
 
-/**
- * Webpack configuration
- *
- * See: http://webpack.github.io/docs/configuration.html#cli
- */
+/*********************************************************************************************
+ *******************************  Imported Webpack Constants/Vars ****************************
+ ********************************************************************************************/
+
+const commonConfig = require('./webpack.common.js'); // the settings that are common to prod and dev
+const webpackConditionals = require('./webpack.conditionals');
+const AOT = webpackConditionals.AOT;
+const JIT = webpackConditionals.JIT;
+const DEBUG = webpackConditionals.DEBUG;
+const ENV = webpackConditionals.ENV;
+const PRODUCTION = webpackConditionals.PRODUCTION;
+const METADATA = webpackConditionals.METADATA;
+
+/*********************************************************************************************
+ ********************************* BEGIN Webpack Configuration *******************************
+ *********************************    module.exports object      *****************************
+ ********************************************************************************************/
+
 module.exports = webpackMerge(commonConfig,
    {
       cache: true,
@@ -87,7 +103,6 @@ module.exports = webpackMerge(commonConfig,
       },
 
       plugins: [
-
 
 
          /**

@@ -1,6 +1,7 @@
-/**
- * Webpack Plugins & Required Modules
- */
+/*********************************************************************************************
+ *******************************  Webpack Requires & Plugins *********************************
+ ********************************************************************************************/
+
 const chalk = require('chalk');
 const path = require('path');
 const helpers = require('./helpers.js');
@@ -12,13 +13,34 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 // const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 // const ChunkManifestPlugin = require('chunk-manifest-webpack-plugin');
 // const SplitByPathPlugin = require('webpack-split-by-path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const webpack = require('webpack');
+const AutoPrefixer = require('autoprefixer');
+const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
+const ContextReplacementPlugin = require('webpack/lib/ContextReplacementPlugin');
+const querystring = require('querystring');
+const AssetsPlugin = require('assets-webpack-plugin');
+const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin');
+const DllBundlesPlugin = require('webpack-dll-bundles-plugin').DllBundlesPlugin;
+const webpackMerge = require('webpack-merge'); // used to merge webpack configs
+const webpackMergeDll = webpackMerge.strategy({plugins: 'replace'});
+const OptimizeJsPlugin = require('optimize-js-plugin');
+const NamedModulesPlugin = require('webpack/lib/NamedModulesPlugin');
+const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 
-/**
- * Webpack Constants
- */
+/*********************************************************************************************
+ *******************************  Webpack Constants/Vars *************************************
+ ********************************************************************************************/
 
+const outputDir = 'wwwroot';
+
+/*********************************************************************************************
+ *******************************  Imported Webpack Constants/Vars ****************************
+ ********************************************************************************************/
+
+const commonConfig = require('./webpack.common.js'); // the settings that are common to prod and dev
 const webpackConditionals = require('./webpack.conditionals');
-const webpackPlugins = webpackConditionals.webpackPlugins;
 const sassVarsConfig = webpackConditionals.sassVarsConfig;
 const ENVlc = webpackConditionals.ENVlc;
 const AOT = webpackConditionals.AOT;
@@ -27,7 +49,14 @@ const DEBUG = webpackConditionals.DEBUG;
 const ENV = webpackConditionals.ENV;
 const PRODUCTION = webpackConditionals.PRODUCTION;
 const isDLLs = webpackConditionals.isDLLs;
-const appBoostrapFile = webpackConditionals.appBoostrapFile;
+const METADATA = webpackConditionals.METADATA;
+
+
+/*********************************************************************************************
+ ********************************* Webpack Entry Points **************************************
+ ********************************************************************************************/
+
+var appBoostrapFile = AOT ? ['./src/app.bootstrap.aot.ts'] : ['./src/app.bootstrap.ts'];
 
 
 /*********************************************************************************************
@@ -41,6 +70,7 @@ const appBoostrapFile = webpackConditionals.appBoostrapFile;
  * See: http://webpack.github.io/docs/configuration.html#cli
  */
 module.exports = {
+
 
    /**
     * Cache generated modules and chunks to improve performance for multiple incremental builds.
@@ -120,7 +150,7 @@ module.exports = {
        *
        * See: http://webpack.github.io/docs/configuration.html#module-loaders
        */
-      loaders: [
+      rules: [
 
 
          /**
@@ -128,12 +158,22 @@ module.exports = {
           */
          {
             test: /\.(scss)$/,
-            loaders: DEBUG ?
-               ['style', 'css?sourceMap', 'postcss', 'sass?sourceMap', 'sass-resources', '@epegzz/sass-vars-loader?' + sassVarsConfig] : // dev mode
+            use: DEBUG ?
+               ['style', 'css?sourceMap', 'postcss', 'sass?sourceMap',
+                  {
+                     loader: 'sass-resources-loader',
+                     options: {
+                        resources: ['./src/assets/styles/variables.scss', './src/assets/styles/mixins.scss'],
+                     }
+                  }, '@epegzz/sass-vars-loader?' + sassVarsConfig] : // dev mode
                ExtractTextPlugin.extract({
-                  fallbackLoader: "css-loader",
-                  notExtractLoader: "css-loader",
-                  loader: ['css?sourceMap', 'postcss', 'sass?sourceMap', 'sass-resources', '@epegzz/sass-vars-loader?' + sassVarsConfig],
+                  fallback: "css-loader",
+                  use: ['css?sourceMap', 'postcss', 'sass?sourceMap', {
+                     loader: 'sass-resources-loader',
+                     options: {
+                        resources: ['./src/assets/styles/variables.scss', './src/assets/styles/mixins.scss'],
+                     }
+                  }, '@epegzz/sass-vars-loader?' + sassVarsConfig],
                   publicPath: '/' // 'string' override the publicPath setting for this loader
                })
          },
@@ -150,8 +190,8 @@ module.exports = {
             test: /\.ts$/,
             include: [helpers.paths.appRoot, helpers.root('./compiled/aot')],
             exclude: [/\.(spec|e2e)\.ts$/],
-            // loaders: ['awesome-typescript-loader'],
-            loaders: [
+            // use: ['awesome-typescript-loader'],
+            use: [
                '@angularclass/hmr-loader',
                'awesome-typescript-loader',
                'angular2-template-loader',
@@ -164,14 +204,14 @@ module.exports = {
 
          // {
          //    test: require.resolve('tinymce/tinymce'),
-         //    loaders: [
+         //    use: [
          //       'imports?this=>window',
          //       'exports?window.tinymce'
          //    ]
          // },
          // {
          //    test: /tinymce\/(themes|plugins)\//,
-         //    loaders: [
+         //    use: [
          //       'imports?this=>window'
          //    ]
          // },
@@ -196,13 +236,12 @@ module.exports = {
           */
          {
             test: /\.(css)$/,
-            loaders: DEBUG ?
+            use: DEBUG ?
                ['style', 'css?sourceMap', 'postcss'] : // dev mode
                ExtractTextPlugin.extract(
                   {
-                     fallbackLoader: "css-loader",
-                     notExtractLoader: "css-loader",
-                     loader: ['css?sourceMap', 'postcss'],
+                     fallback: "css-loader",
+                     use: ['css?sourceMap', 'postcss'],
                      publicPath: '/' // 'string' override the publicPath setting for this loader
                   }
                )
@@ -238,12 +277,39 @@ module.exports = {
          {
             // test: /.*\.(gif|png|jpe?g|svg|ico)$/i,
             // test: /\.((svg|jpe?g|png|gif|ico)(\?v=[0-9]\.[0-9]))|(svg|jpe?g|png|gif|ico)$/,
-            test: /\.(svg|jpe?g|png|gif|ico)(\?{0}(?=\?|$))/,
-            loaders: [
-               'file?name=assets/images/[name].[ext]',
-               'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false}'
 
-               // 'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "90", speed: 4}}'
+            test: /\.(svg|jpe?g|png|gif|ico)(\?{0}(?=\?|$))/,
+            use: [
+               // bug, file-loader doesn't recognize query object syntax yet in webpack 2 yet 3/23/17
+               // {
+               //    loader: 'file',
+               //    query: {
+               //       name: 'assets/images/[name].[ext]'
+               //    }
+               //
+               // },
+               {
+                  loader: 'file?name=assets/images/[name].[ext]'
+               },
+               {
+                  loader: 'image-webpack',
+                  query: {
+                     mozjpeg: {
+                        progressive: true,
+                     },
+                     gifsicle: {
+                        interlaced: false,
+                     },
+                     optipng: {
+                        optimizationLevel: 7,
+                     }
+                  }
+
+
+                  // 'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false}'
+
+                  // 'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "90", speed: 4}}'
+               }
             ],
             // happy: {id: 'images'} // HappyPack middleware
          },
@@ -288,7 +354,7 @@ module.exports = {
           */
          // {
          //    test: require.resolve('jquery'),
-         //    loaders: ['expose?jQuery', 'expose?$']
+         //    use: ['expose?jQuery', 'expose?$']
          // }
       ]
    },
@@ -299,7 +365,255 @@ module.exports = {
     *
     * See: http://webpack.github.io/docs/configuration.html#plugins
     */
-   plugins: webpackPlugins,
+   plugins: [
+
+      /**
+       * Plugin: webpack-dll-bundles-plugin
+       * Description: Compiles DLL files as part of the build process. Checks if DLLs are already compiled and contain the same version packages, if so, skips compilation. Monitors for changes in packages and builds the bundles accordingly.
+       *
+       * See: https://github.com/shlomiassaf/webpack-dll-bundles-plugin
+       */
+
+      new DllBundlesPlugin({
+         bundles: {
+            polyfills: [
+               'core-js',
+               'ts-helpers'
+            ],
+            vendors: [
+               '@angular/platform-browser',
+               '@angular/platform-browser-dynamic',
+               '@angular/core',
+               '@angular/common',
+               '@angular/forms',
+               '@angular/http',
+               '@angular/router',
+               '@angularclass/hmr',
+               'rxjs',
+               'jwt-decode',
+            ]
+         },
+         dllDir: helpers.root(outputDir + '/dlls'),
+         // bundleExtension: '.dll.bundle.js',
+         sourceMapFilename: '/maps/[name].map',
+         chunkFilename: '/chunks/[name].chunk.js',
+
+         webpackConfig: webpackMergeDll(commonConfig, {
+            devtool: 'cheap-module-source-map',
+            plugins: [ // These plugins are for the DLL build only, will not be used in dev or production builds.
+
+               new OptimizeJsPlugin({
+                  sourceMap: false // prod
+               }),
+
+               new UglifyJsPlugin({
+                  // DLLS is build in "Production" mode always, since it is not code I will be debugging (that's why its in the DLL bundle anyway)
+                  beautify: false, //prod
+                  output: {
+                     comments: false
+                  }, //prod
+                  mangle: {
+                     screw_ie8: true
+                  }, //prod
+                  compress: {
+                     screw_ie8: true,
+                     warnings: false,
+                     conditionals: true,
+                     unused: true,
+                     comparisons: true,
+                     sequences: true,
+                     dead_code: true,
+                     evaluate: true,
+                     if_return: true,
+                     join_vars: true,
+                     negate_iife: false // we need this for lazy v8
+                  },
+                  comments: false, //prod
+                  sourceMap: false //prod
+               }),
+
+               new ExtractTextPlugin({
+                  filename: '/css/[name].style.css?[hash]',
+                  disable: false,
+                  allChunks: true
+               }),
+
+               new webpack.DllPlugin({
+                  // The path to the manifest file which maps between
+                  // modules included in a bundle and the internal IDs
+                  // within that bundle
+                  path: helpers.root(outputDir + '/dlls/[name]-manifest.json'),
+
+                  // The name of the global variable which the library's
+                  // require function has been assigned to. This must match the
+                  // output.library option above
+                  name: '[name]_lib',
+
+               }),
+
+               // Append a new entry under the "options" property to pass addition custom properties to webpack loaders. They listen for the properties here.
+               new webpack.LoaderOptionsPlugin({
+                  options: {
+                     postcss: function () {
+                        return [AutoPrefixer];
+                     },
+                     context: helpers.paths.root,
+
+                     // sassLoader: {  //Pass custom variables such as ENV variable to scss files.
+                     //    data: "$susyDebug: " + susyDebug + ";"
+                     // }
+                  }
+               }),
+
+               new webpack.optimize.CommonsChunkPlugin({
+                  name: ['polyfills', 'vendors'].reverse()
+               }),
+
+               new CompressionPlugin({
+                  asset: "[path].gz",
+                  test: /\.(css|html|js|json|map)(\?{0}(?=\?|$))/,
+                  threshold: 2 * 1024,
+                  algorithm: "gzip",
+                  minRatio: 0.8
+               }),
+
+            ]
+         })
+      }),
+
+
+      new AssetsPlugin({
+         path: helpers.root('./wwwroot/js'),
+         filename: 'webpack.assets.json',
+         prettyPrint: true
+      }),
+
+
+      new webpack.LoaderOptionsPlugin({
+         /** Append a new entry under the 'options' property to pass addition custom properties to webpack loaders. They listen for the properties here. */
+         options: {
+            postcss: function () {
+               return [AutoPrefixer];
+            },
+            context: helpers.paths.root,
+            // sassLoader: {  //Pass custom variables such as ENV variable to scss files.
+            //    data: '$susyDebug: ' + susyDebug + ';'
+            // }
+         }
+      }),
+
+      new webpack.optimize.CommonsChunkPlugin({
+         name: ['polyfills', 'vendors'].reverse()
+      }),
+
+      new webpack.optimize.CommonsChunkPlugin('commons'),
+
+
+      // NOTE: when adding more properties, make sure you include them in custom-typings.d.ts
+      new webpack.DefinePlugin({
+         'ENV': JSON.stringify(METADATA.ENV),
+         'HMR': METADATA.HMR,
+         'AOT': AOT,
+         'JIT': JIT,
+         'process.env': {
+            'ENV': JSON.stringify(METADATA.ENV),
+            'NODE_ENV': JSON.stringify(METADATA.ENV),
+            'HMR': METADATA.HMR
+         },
+      }),
+
+
+      /**
+       * Plugin: ChunkManifestPlugin
+       * Description: Allows exporting a JSON file that maps chunk ids to their resulting asset files. Webpack can then read this mapping, assuming it is provided somehow on the client, instead of storing a mapping (with chunk asset hashes) in the bootstrap script, which allows to actually leverage long-term caching.
+       *
+       * See: https://github.com/diurnalist/chunk-manifest-webpack-plugin
+       */
+      // new ChunkManifestPlugin({
+      //    filename: 'manifest.json',
+      //    manifestVariable: 'webpackManifest'
+      // }),
+      // /**
+      //  * Plugin: HtmlWebpackPlugin
+      //  * Description: Simplifies creation of HTML files to serve your webpack bundles.
+      //  * This is especially useful for webpack bundles that include a hash in the filename
+      //  * which changes every compilation.
+      //  *
+      //  * This injects the webpack bundles into your main *.html/**.cshtml document which the browser loads
+      //  *
+      //  * See: https://github.com/ampedandwired/html-webpack-plugin
+      //  */
+      // new HtmlWebpackPlugin({
+      //    template: 'src/index.html',
+      //    chunksSortMode: 'dependency',
+      //    hash: true, // creates ?[hash], such as: main.bundle.js?62cd29765a7e959d0fe5
+      //    filename: 'index.html',
+      //    environment: ENV
+      // }),
+
+      /**
+       * Plugin: AddAssetHtmlPlugin
+       * Description: Adds the given JS or CSS file to the files
+       * Webpack knows about, and put it into the list of assets
+       * html-webpack-plugin injects into the generated html.
+       *
+       * Used for DllBundlesPlugin
+       *
+       * See: https://github.com/SimenB/add-asset-html-webpack-plugin
+       */
+
+      new AddAssetHtmlPlugin([
+         {filepath: helpers.root('wwwroot/dlls/polyfills.dll.bundle.js')},
+         {filepath: helpers.root('wwwroot/dlls/vendors.dll.bundle.js')}
+      ]),
+
+      // new webpack.DllReferencePlugin({
+      //    context: '.',
+      //    // manifest: helpers.root('wwwroot/dlls/polyfills-manifest.json'),
+      //    manifest: require(helpers.root('wwwroot/dlls', 'polyfills-manifest.json')),
+      //
+      // }),
+      //
+      // new webpack.DllReferencePlugin({
+      //    context: '.',
+      //    // manifest: helpers.root('wwwroot/dlls/vendors-manifest.json'),
+      //    manifest: require(helpers.root('wwwroot/dlls', 'vendors-manifest.json')),
+      // }),
+
+
+      new CopyWebpackPlugin(
+         [{
+            from: 'src/assets',
+            to: 'assets',
+            force: true
+         }],
+         {
+            copyUnmodified: false
+         }),
+
+
+      new CopyWebpackPlugin([
+         {from: path.resolve(helpers.paths.appRoot, 'lib/ckeditor/plugins'), to: 'js/ckeditor/plugins'},
+         {from: path.resolve(helpers.paths.appRoot, 'lib/ckeditor/lang'), to: 'js/ckeditor/lang'},
+         {from: path.resolve(helpers.paths.appRoot, 'lib/ckeditor/skins'), to: 'js/ckeditor/skins'},
+         {from: path.resolve(helpers.paths.appRoot, 'lib/ckeditor/ckeditor.js'), to: 'js/ckeditor'},
+         {from: path.resolve(helpers.paths.appRoot, 'lib/ckeditor/styles.js'), to: 'js/ckeditor'},
+         {from: path.resolve(helpers.paths.appRoot, 'lib/ckeditor/contents.css'), to: 'js/ckeditor'},
+         {from: path.resolve(helpers.paths.root, 'wwwroot'), to: path.resolve(helpers.paths.root, 'dotnetcore/wwwroot')},
+         {from: path.resolve(helpers.paths.root, 'wwwroot'), to: path.resolve(helpers.paths.root, 'dotnetframework/wwwroot')},
+      ]),
+
+
+      new webpack.ProvidePlugin({
+         'Promise': 'imports?this=>global!exports?global.Promise!es6-promise',
+         'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch',
+         // 'tinymce': 'imports?tinymce=>window.tinymce!exports?window.tinymce!tinymce/tinymce.min.js',
+         'jQuery': 'jquery',
+         '$': 'jquery',
+         '_': 'lodash'
+
+      }),
+   ],
 
    // end plugins
 
@@ -373,3 +687,7 @@ if (ENV) {
    console.log("            NODE_ENV not set!");
 }
 console.log("==================================================\n \n");
+
+
+
+

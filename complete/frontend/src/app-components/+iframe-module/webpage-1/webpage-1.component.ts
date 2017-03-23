@@ -35,7 +35,7 @@ export class Webpage1 {
       sanitizer: DomSanitizer) {
       this.isAuthenticated = Authentication.isAuthenticated;
       this.appState.set('isAuthenticated', this.isAuthenticated);
-      this.someUrl = sanitizer.bypassSecurityTrustResourceUrl('http://www.bing.com/images')
+      this.someUrl = sanitizer.bypassSecurityTrustResourceUrl('http://www.bing.com/images');
    }
 
    ngOnInit() {

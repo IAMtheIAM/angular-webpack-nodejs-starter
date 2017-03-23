@@ -1,5 +1,5 @@
 /*
-This class manages URL building for the dotnetframework solution.
+This class manages URL building for the dotnetcore solution.
 The current mapping of URL -> Project is described in the README file.
 */
 import { Injectable } from '@angular/core';

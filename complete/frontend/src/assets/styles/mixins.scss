@@ -5,7 +5,7 @@
 // Docs - http://outlinecss.co.uk/get-started.html#mixins
 //---------------------------------------------//
 //  * NOTE: Do not include anything that will be actually rendered in CSS, because it will be added to every imported SASS file.
-//  * Do not use SASS @import inside resources files. Add imported files directly in sassResources array in webpack config instead.
+//  * Do not use SASS @import inside resources files. Add imported files directly in resources array in webpack config instead.
 //  * See: https://github.com/shakacode/sass-resources-loader
 
 // ====================================================
@@ -19,7 +19,7 @@
 // Susy - SASS Math Library
 @import "~susy/sass/_susy";
 //  Bourbon - SASS Mixins Library
-@import "~bourbon/app/assets/stylesheets/_bourbon";
+@import "~bourbon/core/_bourbon.scss";
 
 // ====================================================
 // ============== OUTLINE.CSS MIXINS ==================

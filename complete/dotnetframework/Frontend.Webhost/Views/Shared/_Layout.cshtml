@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="IAMtheIAM">
+    <meta name="description" content="">
 
     <!-- use http://www.favicon-generator.org/ to replace files in public/icon-->
 
@@ -23,25 +23,33 @@
 
 </head>
 
-<body class="">
-    Loading...
-    @RenderBody()
+<body class="@Startup.Environment">
+Loading...
+@RenderBody()
 
-    <environment names="Development, Production">
-        <!-- .NET Production / Development mode  -->
-        <script type="text/javascript" src="~/wwwroot/js/commons.bundle.js.gz?8609335d43fa570a3897"></script>
-        <script type="text/javascript" src="~/wwwroot/dlls/polyfills.dll.bundle.js.gz?8609335d43fa570a3897"></script>
-        <script type="text/javascript" src="~/wwwroot/dlls/vendors.dll.bundle.js.gz?8609335d43fa570a3897"></script>
-        <script type="text/javascript" src="~/wwwroot/js/app.bundle.js.gz?8609335d43fa570a3897"></script>
-    </environment>
+<environment names="Development">
+    <!-- .NET Production / Development mode  -->
+    <script type="text/javascript" src="js/commons.bundle.js?8609335d43fa570a3897"></script>
+    <script type="text/javascript" src="dlls/polyfills.dll.js?8609335d43fa570a3897"></script>
+    <script type="text/javascript" src="dlls/vendors.dll.js?8609335d43fa570a3897"></script>
+    <script type="text/javascript" src="js/app.bundle.js?8609335d43fa570a3897"></script>
+</environment>
 
-    <environment names="Webpack">
-        <!-- Webpack Development mode, localhost:4000 is where the Devserver lives -->
-        <script type="text/javascript" src="http://localhost:4000/js/commons.bundle.js?8609335d43fa570a3897"></script>
-        <script type="text/javascript" src="http://localhost:4000/dlls/polyfills.dll.bundle.js?8609335d43fa570a3897"></script>
-        <script type="text/javascript" src="http://localhost:4000/dlls/vendors.dll.bundle.js?8609335d43fa570a3897"></script>
-        <script type="text/javascript" src="http://localhost:4000/js/app.bundle.js?8609335d43fa570a3897"></script>
-    </environment>
+<environment names="Production">
+    <!-- .NET Production / Development mode  -->
+    <script type="text/javascript" src="js/commons.bundle.js.gz?8609335d43fa570a3897"></script>
+    <script type="text/javascript" src="dlls/polyfills.dll.js.gz?8609335d43fa570a3897"></script>
+    <script type="text/javascript" src="dlls/vendors.dll.js.gz?8609335d43fa570a3897"></script>
+    <script type="text/javascript" src="js/app.bundle.js.gz?8609335d43fa570a3897"></script>
+</environment>
+
+<environment names="Webpack">
+    <!-- Webpack Development mode -->
+    <script type="text/javascript" src="http://localhost:4000/js/commons.bundle.js?8609335d43fa570a3897"></script>
+    <script type="text/javascript" src="http://localhost:4000/dlls/polyfills.dll.js?8609335d43fa570a3897"></script>
+    <script type="text/javascript" src="http://localhost:4000/dlls/vendors.dll.js?8609335d43fa570a3897"></script>
+    <script type="text/javascript" src="http://localhost:4000/js/app.bundle.js?8609335d43fa570a3897"></script>
+</environment>
 
 </body>
 </html>

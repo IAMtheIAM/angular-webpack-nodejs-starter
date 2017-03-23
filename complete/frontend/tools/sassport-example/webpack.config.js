@@ -6,10 +6,10 @@ module.exports = {
         filename: "bundle.js"
     },
     module: {
-        loaders: [
+        use: [
             {
                 test: /\.scss$/,
-                loaders: ["style", "css", require.resolve("../index.js")],
+                use: ["style", "css", require.resolve("../index.js")],
 
                 // loader: ExtractTextPlugin.extract({
                 //     loader: ["style", "css", require.resolve("../index.js")],
