@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Backend - DotNetCore-Starter", "dotnetcore\Backend - DotNetCore-Starter.csproj", "{197C60BF-7216-46B0-BF9B-730CEF735833}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Frontend - Angular2-Webpack2-Starter", "frontend\Frontend - Angular2-Webpack2-Starter.csproj", "{01711240-6BD8-47D8-A8F9-5F15B2283E4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		~AOT (Prod) - Compile NGC + Build Production|Any CPU = ~AOT (Prod) - Compile NGC + Build Production|Any CPU
+		~JIT (Dev) - Build Dev + Watch Changes|Any CPU = ~JIT (Dev) - Build Dev + Watch Changes|Any CPU
+		~JIT (Dev) - Webpack Dev Server|Any CPU = ~JIT (Dev) - Webpack Dev Server|Any CPU
+		~JIT (Prod) - Compile NGC + Build Prod + Watch Changes|Any CPU = ~JIT (Prod) - Compile NGC + Build Prod + Watch Changes|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{197C60BF-7216-46B0-BF9B-730CEF735833}.~AOT (Prod) - Compile NGC + Build Production|Any CPU.ActiveCfg = Release|Any CPU
+		{197C60BF-7216-46B0-BF9B-730CEF735833}.~AOT (Prod) - Compile NGC + Build Production|Any CPU.Build.0 = Release|Any CPU
+		{197C60BF-7216-46B0-BF9B-730CEF735833}.~JIT (Dev) - Build Dev + Watch Changes|Any CPU.ActiveCfg = ~JIT (Dev) - Build Dev + Watch Changes|Any CPU
+		{197C60BF-7216-46B0-BF9B-730CEF735833}.~JIT (Dev) - Build Dev + Watch Changes|Any CPU.Build.0 = ~JIT (Dev) - Build Dev + Watch Changes|Any CPU
+		{197C60BF-7216-46B0-BF9B-730CEF735833}.~JIT (Dev) - Webpack Dev Server|Any CPU.ActiveCfg = Debug|Any CPU
+		{197C60BF-7216-46B0-BF9B-730CEF735833}.~JIT (Dev) - Webpack Dev Server|Any CPU.Build.0 = Debug|Any CPU
+		{197C60BF-7216-46B0-BF9B-730CEF735833}.~JIT (Prod) - Compile NGC + Build Prod + Watch Changes|Any CPU.ActiveCfg = Debug|Any CPU
+		{197C60BF-7216-46B0-BF9B-730CEF735833}.~JIT (Prod) - Compile NGC + Build Prod + Watch Changes|Any CPU.Build.0 = Debug|Any CPU
+		{197C60BF-7216-46B0-BF9B-730CEF735833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{197C60BF-7216-46B0-BF9B-730CEF735833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{197C60BF-7216-46B0-BF9B-730CEF735833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{197C60BF-7216-46B0-BF9B-730CEF735833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01711240-6BD8-47D8-A8F9-5F15B2283E4D}.~AOT (Prod) - Compile NGC + Build Production|Any CPU.ActiveCfg = Release|Any CPU
+		{01711240-6BD8-47D8-A8F9-5F15B2283E4D}.~JIT (Dev) - Build Dev + Watch Changes|Any CPU.ActiveCfg = ~JIT (Dev) - Build Dev + Watch Changes|Any CPU
+		{01711240-6BD8-47D8-A8F9-5F15B2283E4D}.~JIT (Dev) - Webpack Dev Server|Any CPU.ActiveCfg = Debug|Any CPU
+		{01711240-6BD8-47D8-A8F9-5F15B2283E4D}.~JIT (Prod) - Compile NGC + Build Prod + Watch Changes|Any CPU.ActiveCfg = Debug|Any CPU
+		{01711240-6BD8-47D8-A8F9-5F15B2283E4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01711240-6BD8-47D8-A8F9-5F15B2283E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

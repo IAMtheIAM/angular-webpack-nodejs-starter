@@ -1,10 +1,10 @@
-# Angular 2 ♥ .NET Core & Framework [![Join the chat at https://gitter.im/IAMtheIAM/angular2-webpack2-dotnet-starter](https://badges.gitter.im/IAMtheIAM/angular2-webpack2-dotnet-starter.svg)](https://gitter.im/IAMtheIAM/angular2-webpack2-dotnet-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# Angular 2 ♥ .NET Core [![Join the chat at https://gitter.im/IAMtheIAM/angular2-webpack2-dotnet-starter](https://badges.gitter.im/IAMtheIAM/angular2-webpack2-dotnet-starter.svg)](https://gitter.im/IAMtheIAM/angular2-webpack2-dotnet-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-## Starter Project Featuring: Angular 2, Webpack 2, TypeScript 2, AOT + JIT Compilation, SASS, JWT Authentication, and .NET Core + Framework Integration
+## Starter Project Featuring: Angular 2, Webpack 2, TypeScript 2, AOT + JIT Compilation, SASS, JWT Authentication, and .NET Core Integration
 
-The purpose of this starter project is to assist Front-end developers and .NET developers to easily integrate their code. This documentation assumes you are developing on Windows 10, however it should work with little to no changes for Linux and Mac. It includes examples of how to integrate Angular 2 with .NET Core and .NET Framework.
+The purpose of this starter project is to assist Front-end developers and .NET developers to easily integrate their code. This documentation assumes you are developing on Windows 10, however it should work with little to no changes for Linux and Mac. It includes examples of how to integrate Angular 2 with .NET Core.
 
-This is based on the Angular 2 Webpack Starter repo [available on GitHub](https://angularclass.github.io/angular2-webpack-starter/). It enhances that repo with additional features, such as integration with .NET Core 1.0 as well as the original .NET Framework, Angular 2 with AOT + JIT Compilation, Webpack 2.1.0-beta.25, TypeScript 2, SASS + Sourcemaps working with Hot Module Replacement, and JWT (JSON Web Token) Authentication.
+This is based on the Angular 2 Webpack Starter repo [available on GitHub](https://angularclass.github.io/angular2-webpack-starter/). It enhances that repo with additional features, such as integration with .NET Core 1.1.1, Angular 2 with AOT + JIT Compilation, Webpack 2.1.0-beta.25, TypeScript 2, SASS + Sourcemaps working with Hot Module Replacement, and JWT (JSON Web Token) Authentication.
 
 ## Explanation of Project Structure
 
@@ -13,20 +13,17 @@ This project is split into multiple subdirectories. The aspiration is to have a 
 **The "complete" project lives in the [./complete](./complete) directory. Inside there you will find:**
 
 - dotnetcore
-- dotnetframework
 - frontend
 
 **These are relatively self-explanatory:**
 
 - [./complete/dotnetcore](./complete/dotnetcore) contains the .NET Core files, VS2015 project and solution.
-- [./complete/dotnetframework](./complete/dotnetframework) contains the .NET Framework files, VS2015 project and solution.
 - [./complete/frontend](./complete/frontend) contains the Angular 2, Webpack 2, and all other frontend files and assets, plus the VS2015 project.
  
 ### Editing in Visual Studio 2015
 To open this project in Visual Studio 2015, navigate to appropriate folder and choose the solution file.
  
  For .NET Core, go to [`./complete/dotnetcore/Angular2-Webpack2-DotNetCore-Starter.sln`](./complete/dotnetcore/Angular2-Webpack2-DotNetCore-Starter.sln)
- For .NET Framework, go to [`./complete/dotnetframework/Angular2-Webpack2-DotNetFramework-Starter.sln`](./complete/dotnetframework/Angular2-Webpack2-DotNetFramework-Starter.sln)
 
 ### Editing in IntelliJ IDEA 2016
 To open this project in IntelliJ IDEA, simply open this [root](../../) folder of the project in the program. It contains the [`.idea`](./.idea) folder needed to load this project and all its run configurations.
@@ -160,8 +157,13 @@ NPM utilizing exit codes to indicate whether the executing task failed or succee
 
 ## To-do
 
-- [x] Integrating with Visual Studio
-- [ ] Barebones version of the application containing just JWT-based Authentication
+- [x] Integrating with Visual Studio 2017
+- [x] All Angular Modules and Components working without errors
+- [x] App runs with Angular AOT Compilation using NGC on command line
+- [x] App runs with Angular JIT Compiler 
+- [x] Webpack 2 + Webpack DLLS configuration working
+- [ ] Speed up UglifyJS compression of JS files for Production Build
+- [ ] Barebones version of the application containing just JWT-based authentication
 - [ ] More solid backend structure
 
 ## License

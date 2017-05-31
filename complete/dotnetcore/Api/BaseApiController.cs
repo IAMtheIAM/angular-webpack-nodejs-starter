@@ -1,48 +1,65 @@
-﻿namespace Dotnet.Starter.Api
+﻿using IdentityModel.Client;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+
+
+namespace Dotnet.Starter.Api
 {
-    using System.Net.Http;
-    using System.Threading.Tasks;
-
-    using IdentityModel.Client;
-
-    using Microsoft.AspNetCore.Mvc;
-
     [Route("api/[controller]")]
     public class BaseApiController : Controller
     {
-        private HttpClient client;
-
-        protected async Task<string> CallApi(string endpoint)
-        {
-            var c = await this.GetClient();
-            return await c.GetStringAsync(endpoint);
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing) this.client?.Dispose();
-
-            base.Dispose(disposing);
-        }
+        private HttpClient _client;
 
         protected async Task<HttpClient> GetClient()
         {
-            if (this.client == null)
+            if (_client == null)
             {
-                this.client = new HttpClient();
-                var token = await this.GetTokenAsync();
-                this.client.SetBearerToken(token.AccessToken);
+                _client = new HttpClient();
+                var token = await GetTokenAsync();
+                _client.SetBearerToken(token.AccessToken);
             }
 
-            return this.client;
+            return _client;
+        }
+
+        protected async Task<string> CallApi(string endpoint)
+        {
+            var client = await GetClient();            
+            return await client.GetStringAsync(endpoint);
+        }
+
+        protected async Task<HttpResponseMessage> PostToApi(string endpoint, string jsonContent)
+        {
+            var client = await GetClient();
+            StringContent content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            return await client.PostAsync(new Uri(endpoint), content);
         }
 
         private async Task<TokenResponse> GetTokenAsync()
         {
-            var c = new TokenClient("http://localhost:8281/connect/token", "atlasSvcClient", "aSVCSpwd");
+            var client = new TokenClient(
+                "http://localhost:8281/connect/token",
+                "client",
+                "pass");
+            //return await client.RequestClientCredentialsAsync("scope");
+            return await client.RequestResourceOwnerPasswordAsync("my@email.com", "passWord!", "string");
+        }
 
-            // return await client.RequestClientCredentialsAsync("addamsApiScope");
-            return await c.RequestResourceOwnerPasswordAsync("mgaspar@armls.com", "Atlas4!", "addamsApiScope");
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                _client?.Dispose();
+            }
+
+            base.Dispose(disposing);
         }
     }
 }

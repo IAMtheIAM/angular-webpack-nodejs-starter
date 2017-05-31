@@ -28,12 +28,14 @@ const OptimizeJsPlugin = require('optimize-js-plugin');
 const NamedModulesPlugin = require('webpack/lib/NamedModulesPlugin');
 const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
 const CompressionPlugin = require('compression-webpack-plugin');
+const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 
 /*********************************************************************************************
  *******************************  Webpack Constants/Vars *************************************
  ********************************************************************************************/
 
 const outputDir = 'wwwroot';
+const autoPrefixerOptions = { browsers: ['last 2 versions'] };
 
 /*********************************************************************************************
  *******************************  Imported Webpack Constants/Vars ****************************
@@ -50,6 +52,7 @@ const ENV = webpackConditionals.ENV;
 const PRODUCTION = webpackConditionals.PRODUCTION;
 const isDLLs = webpackConditionals.isDLLs;
 const METADATA = webpackConditionals.METADATA;
+const isDevServer = webpackConditionals.isDevServer;
 
 
 /*********************************************************************************************
@@ -159,7 +162,11 @@ module.exports = {
          {
             test: /\.(scss)$/,
             use: DEBUG ?
-               ['style', 'css?sourceMap', 'postcss', 'sass?sourceMap',
+               ['style', 'css?sourceMap',
+                  {
+                     loader: 'postcss',
+                     options: { postcss: [AutoPrefixer(autoPrefixerOptions)], sourceMap: true }
+                  }, 'sass?sourceMap',
                   {
                      loader: 'sass-resources-loader',
                      options: {
@@ -168,7 +175,10 @@ module.exports = {
                   }, '@epegzz/sass-vars-loader?' + sassVarsConfig] : // dev mode
                ExtractTextPlugin.extract({
                   fallback: "css-loader",
-                  use: ['css?sourceMap', 'postcss', 'sass?sourceMap', {
+                  use: ['css?sourceMap', {
+                     loader: 'postcss',
+                     options: { postcss: [AutoPrefixer(autoPrefixerOptions)], sourceMap: true }
+                  }, 'sass?sourceMap', {
                      loader: 'sass-resources-loader',
                      options: {
                         resources: ['./src/assets/styles/variables.scss', './src/assets/styles/mixins.scss'],
@@ -237,11 +247,17 @@ module.exports = {
          {
             test: /\.(css)$/,
             use: DEBUG ?
-               ['style', 'css?sourceMap', 'postcss'] : // dev mode
+               ['style', 'css?sourceMap', {
+                  loader: 'postcss',
+                  options: { postcss: [AutoPrefixer(autoPrefixerOptions)], sourceMap: true }
+               }] : // dev mode
                ExtractTextPlugin.extract(
                   {
                      fallback: "css-loader",
-                     use: ['css?sourceMap', 'postcss'],
+                     use: ['css?sourceMap', {
+                        loader: 'postcss',
+                        options: { postcss: [AutoPrefixer(autoPrefixerOptions)], sourceMap: true }
+                     }],
                      publicPath: '/' // 'string' override the publicPath setting for this loader
                   }
                )
@@ -367,6 +383,12 @@ module.exports = {
     */
    plugins: [
 
+      new ProgressBarPlugin({
+         format: '  build [:bar] ' + chalk.green.bold(':percent') + ' (:elapsed seconds)',
+         clear: false
+      }),
+
+
       /**
        * Plugin: webpack-dll-bundles-plugin
        * Description: Compiles DLL files as part of the build process. Checks if DLLs are already compiled and contain the same version packages, if so, skips compilation. Monitors for changes in packages and builds the bundles accordingly.
@@ -451,20 +473,6 @@ module.exports = {
 
                }),
 
-               // Append a new entry under the "options" property to pass addition custom properties to webpack loaders. They listen for the properties here.
-               new webpack.LoaderOptionsPlugin({
-                  options: {
-                     postcss: function () {
-                        return [AutoPrefixer];
-                     },
-                     context: helpers.paths.root,
-
-                     // sassLoader: {  //Pass custom variables such as ENV variable to scss files.
-                     //    data: "$susyDebug: " + susyDebug + ";"
-                     // }
-                  }
-               }),
-
                new webpack.optimize.CommonsChunkPlugin({
                   name: ['polyfills', 'vendors'].reverse()
                }),
@@ -488,19 +496,6 @@ module.exports = {
          prettyPrint: true
       }),
 
-
-      new webpack.LoaderOptionsPlugin({
-         /** Append a new entry under the 'options' property to pass addition custom properties to webpack loaders. They listen for the properties here. */
-         options: {
-            postcss: function () {
-               return [AutoPrefixer];
-            },
-            context: helpers.paths.root,
-            // sassLoader: {  //Pass custom variables such as ENV variable to scss files.
-            //    data: '$susyDebug: ' + susyDebug + ';'
-            // }
-         }
-      }),
 
       new webpack.optimize.CommonsChunkPlugin({
          name: ['polyfills', 'vendors'].reverse()
@@ -681,6 +676,7 @@ if (ENV) {
    console.log("            PRODUCTION: " + PRODUCTION);
    console.log("            isDLLs: " + isDLLs);
    console.log("            ENVlc: " + ENVlc);
+   console.log("            isDevServer: " + isDevServer);
    console.log("            helpers.paths.root: " + helpers.paths.root);
 
 } else {

@@ -56,9 +56,9 @@ export class LoginComponent {
       // If user is already logged in, skip the login page
       if (this.isAuthenticated) {
          if (Logging.isEnabled.light) {
-            console.log('%c Already logged in! Navigating to Home Component', Logging.normal.purple);
+            console.log('%c Already logged in! Navigating to Map Component', Logging.normal.purple);
          }
-         this.utilityService.navigate('/home');
+         this.utilityService.navigate('/map');
       }
 
       if (Logging.isEnabled.light) {

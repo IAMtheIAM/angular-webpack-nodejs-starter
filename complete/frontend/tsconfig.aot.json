@@ -25,7 +25,8 @@
          "webpack",
          "materialize-css",
          "jquery",
-         "kendo-ui"
+         "kendo-ui",
+         "googlemaps"
       ],
       "typeRoots": [
          "./node_modules/@types"

@@ -1,0 +1,70 @@
+<div class="row">
+   <div class="col s12">
+      <div class="card-panel">
+         <h4>Drawing Manager</h4>
+         <div class="row">
+
+            <div class="col s9">
+               <ngui-map zoom="11"
+                  center="37.340498,-122.032097"
+                  (mapReady$)="onMapReady($event)"
+                  (mapClick)="onMapClick($event)"
+                  [fullscreenControl]="true"
+                  [fullscreenControlOptions]="{position: 'TOP_RIGHT'}"
+               >
+                  <polygon [editable]="true"
+                     [paths]="paths"
+                     [strokeColor]="'#FFC107'"
+                     [strokeOpacity]="0.8"
+                     [strokeWeight]="2"
+                     [fillColor]="'#FFC107'"
+                     [fillOpacity]="0.35"></polygon>
+
+                  <drawing-manager
+                     [drawingMode]="'marker'"
+                     [drawingControl]="true"
+                     [drawingControlOptions]="{
+                    position: 'TOP_CENTER',
+                    drawingModes: ['marker', 'circle', 'polygon', 'polyline', 'rectangle']
+                   }"
+                     [polylineOptions]="{draggable: true}"
+                     [rectangleOptions]="{draggable: true}"
+                     [polygonOptions]="{draggable: true}"
+                     [circleOptions]="{draggable: true}">
+                  </drawing-manager>
+               </ngui-map>
+            </div>
+            <div class="col s3">
+               <input id="pac-input" class="pac-input" type="text" placeholder="Search Box">
+               <div class="panel">
+                  <div id="color-palette" class="color-palette"></div>
+                  <button id="delete-shape" class="delete-button" (click)="deleteSelectedShape()">Delete Selected Shape</button>
+                  <button id="delete-places" class="delete-button" (click)="deletePlacesSearchResults()">Delete Places</button>
+                  <div class="coordinates-data">
+                     <div class="map-data">
+                        <b>Map Zoom:</b> {{mapzoom}}<br />
+                        <b>Map Center:</b> {{mapcenter}}
+                     </div>
+                     <div class="shape-data">
+                        <label>Shape Type</label>: {{selectedShapeType}}<br />
+                        <label>Position</label>: {{position}}<br />
+                        <label>Path</label>: {{path}}<br />
+                        <label>Bounds</label>: {{bounds}}<br />
+                        <label>Center Bounds</label>: {{centerBounds}}<br />
+                        <label>Radius</label>: {{radius}}<br />
+                     </div>
+                     <label>Places</label>:
+                     <div class="places-results">
+                        <span *ngFor="let placeMarker of placeMarkers">{{placeMarker.title}}<br /></span>
+                     </div>
+                     <div class="note">
+                        <small>Note: markers can be selected, but are not graphically indicated; can be deleted, but cannot have their color changed.</small>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<router-outlet></router-outlet>

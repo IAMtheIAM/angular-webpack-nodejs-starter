@@ -6,7 +6,7 @@ module.exports = {
         filename: "bundle.js"
     },
     module: {
-        use: [
+        rules: [
             {
                 test: /\.scss$/,
                 use: ["style", "css", require.resolve("../index.js")],

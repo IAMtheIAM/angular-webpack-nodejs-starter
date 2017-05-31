@@ -1,7 +1,8 @@
 /**
  * @author: @AngularClass
  */
-var path = require('path');
+const path = require('path');
+const glob = require('glob');
 
 // Helper functions
 // export var ROOT = path.resolve(__dirname, '..');
@@ -29,5 +30,7 @@ function root(args) {
 exports.hasProcessFlag = hasProcessFlag;
 exports.isWebpackDevServer = isWebpackDevServer;
 exports.root = root;
+exports.path = path;
 exports.paths = paths;
+exports.glob = glob;
 

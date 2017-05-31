@@ -70,7 +70,7 @@ export class GridEditingComponent {
       if (Logging.isEnabled.light) { console.log('%c Hello \"Grid Editing\" component!', Logging.normal.lime); }
       if (Logging.isEnabled.verbose) { console.log('isLoggedIn(): ' + this.authService.isLoggedIn()); }
 
-      // Async load KendoUI for jQeury, with webpack require.ensure
+      // Async load KendoUI for jQuery, with webpack require.ensure
       require.ensure(['jquery'], function(require) {
 
          /** These are for the jQuery version of Kendo UI */

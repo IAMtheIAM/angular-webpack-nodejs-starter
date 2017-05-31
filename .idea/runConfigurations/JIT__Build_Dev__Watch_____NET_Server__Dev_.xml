@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="JIT: Build Dev (Watch) + .NET Server (Dev)" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration" singleton="false">
+    <toRun type="js.build_tools.npm" name=".NET Server: Development" />
+    <toRun type="js.build_tools.npm" name="JIT: Build Dev (Watch)" />
+    <method />
+  </configuration>
+</component>

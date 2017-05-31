@@ -1,12 +1,15 @@
-﻿namespace Dotnet.Starter.Models.AccountViewModels
-{
-    using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Threading.Tasks;
 
+namespace Dotnet.Starter.Models.AccountViewModels
+{
     public class LoginViewModel
     {
         [Required]
-
-        // [EmailAddress]
+       // [EmailAddress]
         public string Email { get; set; }
 
         [Required]

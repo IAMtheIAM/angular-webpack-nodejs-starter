@@ -26,6 +26,10 @@ export const ROUTES: Routes = [{
    path: '',
    component: LoginComponent
 }, {
+   path: 'map',
+   loadChildren: 'es6-promise?,[name]!../+map/map.module#MapModule',
+   canActivate: [RouteProtection]
+},{
    path: 'detail',
    loadChildren: 'es6-promise?,[name]!../+detail/detail.module#DetailModule',
    canActivate: [RouteProtection]

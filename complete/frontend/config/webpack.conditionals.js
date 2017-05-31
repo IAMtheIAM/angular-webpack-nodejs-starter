@@ -14,6 +14,7 @@ const ENVlc = process.env.npm_lifecycle_event;
 const AOT = ENVlc === 'devserver:aot' || ENVlc === 'build:dev:aot' || ENVlc === 'build:production:aot';
 const JIT = ENVlc === 'devserver:jit' || ENVlc === 'build:dev:jit'  || ENVlc === 'build:dev:jit:watch' || ENVlc === 'build:production:jit' || ENVlc === 'build:production:jit:watch';
 const isDLLs = ENVlc === 'build:dlls:jit';
+const isDevServer = ENVlc === 'devserver:jit';
 
 const ENV = process.env.NODE_ENV;
 const PRODUCTION = ENV === 'production';
@@ -93,6 +94,7 @@ exports.ENV = ENV;
 exports.PRODUCTION = PRODUCTION;
 exports.isDLLs = isDLLs;
 exports.METADATA = METADATA;
+exports.isDevServer = isDevServer;
 // // skip this entry point for DLLS build
 // if (appBoostrapFile) {
 //     exports.appBoostrapFile = appBoostrapFile;

@@ -33,6 +33,7 @@ const DEBUG = webpackConditionals.DEBUG;
 const ENV = webpackConditionals.ENV;
 const PRODUCTION = webpackConditionals.PRODUCTION;
 const METADATA = webpackConditionals.METADATA;
+const isDevServer = webpackConditionals.isDevServer;
 
 /*********************************************************************************************
  ********************************* BEGIN Webpack Configuration *******************************
@@ -98,7 +99,7 @@ module.exports = webpackMerge(commonConfig,
           */
 
          // must end in a trailing forward slash or assets cannot be requested
-         publicPath: 'http://' + METADATA.host + ':' + METADATA.port + '/'
+         publicPath: 'http://' + METADATA.host + ':' + (isDevServer ? METADATA.port : METADATA.dotnetport) + '/'
 
       },
 
@@ -150,18 +151,106 @@ module.exports = webpackMerge(commonConfig,
          stats: {
             colors: true,
             errors: true,
-            errorDetails: false,
-            reasons: true,
+            errorDetails: true,
+            reasons: false,
             publicPath: false,
             version: true,
             timings: true,
             assets: false,
             modules: false,
-            source: true,
-            children: true,
+            source: false,
+            children: false,
             hash: false,
             chunks: false, // make sure 'chunks' is false or it will add 5-10 seconds to your build and incremental build time, due to excessive output.
             warnings: false
+
+            // All webpack.stats options and descriptions
+            // // Add asset Information
+            // assets: false,
+            //
+            // // Sort assets by a field
+            // assetsSort: "field",
+            //
+            // // Add information about cached (not built) modules
+            // cached: false,
+            //
+            // // Show cached assets (setting this to `false` only shows emitted files)
+            // cachedAssets: false,
+            //
+            // // Add children information
+            // children: false,
+            //
+            // // Add chunk information (setting this to `false` allows for a less verbose output)
+            // chunks: false,
+            //
+            // // Add built modules information to chunk information
+            // chunkModules: false,
+            //
+            // // Add the origins of chunks and chunk merging info
+            // chunkOrigins: false,
+            //
+            // // Sort the chunks by a field
+            // chunksSort: "field",
+            //
+            // // Context directory for request shortening
+            // context: "../src/",
+            //
+            // // `webpack --colors` equivalent
+            // colors: true,
+            //
+            // // Display the distance from the entry point for each module
+            // depth: false,
+            //
+            // // Display the entry points with the corresponding bundles
+            // entrypoints: false,
+            //
+            // // Add errors
+            // errors: true,
+            //
+            // // Add details to errors (like resolving log)
+            // errorDetails: true,
+            //
+            // // Exclude modules which match one of the given strings or regular expressions
+            // exclude: [],
+            //
+            // // Add the hash of the compilation
+            // hash: true,
+            //
+            // // Set the maximum number of modules to be shown
+            // maxModules: 15,
+            //
+            // // Add built modules information
+            // modules: false,
+            //
+            // // Sort the modules by a field
+            // modulesSort: "field",
+            //
+            // // Show performance hint when file size exceeds `performance.maxAssetSize`
+            // performance: true,
+            //
+            // // Show the exports of the modules
+            // providedExports: false,
+            //
+            // // Add public path information
+            // publicPath: false,
+            //
+            // // Add information about the reasons why modules are included
+            // reasons: false,
+            //
+            // // Add the source code of modules
+            // source: false,
+            //
+            // // Add timing information
+            // timings: true,
+            //
+            // // Show which exports of a module are used
+            // usedExports: false,
+            //
+            // // Add webpack version information
+            // version: true,
+            //
+            // // Add warnings
+            // warnings: false
          }
 
       },

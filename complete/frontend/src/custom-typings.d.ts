@@ -46,7 +46,8 @@
 
 
 // support NodeJS modules without type definitions
-declare module '*';
+declare module '*'
+;
 
 // Extra variables that live on Global that will be replaced by webpack DefinePlugin
 declare var ENV: string;
@@ -81,7 +82,6 @@ type AsyncRoutes = {
       FactoryPromise
 };
 
-
 type IdleCallbacks = Es6PromiseLoader |
    Function |
    FactoryEs6PromiseLoader |
@@ -103,7 +103,6 @@ interface WebpackModule {
    };
 }
 
-
 interface WebpackRequire {
    (id: string): any;
    (paths: string[], callback: (...modules: any[]) => void): void;
@@ -119,29 +118,28 @@ interface ErrorStackTraceLimit {
    stackTraceLimit: number;
 }
 
-
 // Extend typings
 interface NodeRequire extends WebpackRequire {}
 interface ErrorConstructor extends ErrorStackTraceLimit {}
-interface NodeRequireFunction extends Es6PromiseLoader  {}
+interface NodeRequireFunction extends Es6PromiseLoader {}
 interface NodeModule extends WebpackModule {}
-interface Global extends GlobalEnvironment  {}
+interface Global extends GlobalEnvironment {}
 
 // Extend Document Typings
 interface Document {
-    msExitFullscreen(): void;
-    mozCancelFullScreen(): void;
+   msExitFullscreen(): void;
+   mozCancelFullScreen(): void;
 }
 
 // Extend Document.documentElement Typings
 interface HTMLElement {
-    msRequestFullscreen(): void;
-    mozRequestFullScreen(): void;
+   msRequestFullscreen(): void;
+   mozRequestFullScreen(): void;
 }
 
 interface ExitStatus {
-    Token: any;
-    id_token: any;
+   Token: any;
+   id_token: any;
 }
 
 // interface JQuery {
@@ -150,7 +148,6 @@ interface ExitStatus {
 // }
 
 declare var __webpack_public_path__: string;
-
 
 // Extend Window Typings
 interface Window {
@@ -161,28 +158,28 @@ interface Window {
 }
 
 declare module "jwt-decode" {
-    function decode(token: string): any;
-    namespace decode { }  // notice how we have to create a namespace that is equal to the function we're assigning the export to
-    export = decode;
-}
+   function decode(token: string): any;
 
+   namespace decode { }  // notice how we have to create a namespace that is equal to the function we're assigning the export to
+   export = decode;
+}
 
 // incomplete definitions for http://www.tinymce.com
 
 interface TinyMceObservable {
-   off: (name?:string, callback?:Function) => Object
-   on: (name:string, callback:Function) => Object
-   fire: (name:string, args?:Object, bubble?:Boolean) => Event
+   off: (name?: string, callback?: Function) => Object
+   on: (name: string, callback: Function) => Object
+   fire: (name: string, args?: Object, bubble?: Boolean) => Event
 }
 
 interface TinyMceEditor extends TinyMceObservable {
-   destroy: (automatic:boolean) => void
+   destroy: (automatic: boolean) => void
    remove: () => void
    hide: () => void
    show: () => void
-   getContent: (args?:Object) => string
-   setContent: (content:string, args?:Object) => string
-   focus: (skip_focus?:Boolean) => void
+   getContent: (args?: Object) => string
+   setContent: (content: string, args?: Object) => string
+   focus: (skip_focus?: Boolean) => void
    undoManager: TinyMceUndoManager
    settings: Object
 }
@@ -198,10 +195,38 @@ interface TinyMceEvent {
 }
 
 interface TinyMceStatic extends TinyMceObservable {
-   init: (settings:Object) => void;
-   execCommand: (c:string, u:Boolean, v:string) => Boolean;
+   init: (settings: Object) => void;
+   execCommand: (c: string, u: Boolean, v: string) => Boolean;
    activeEditor: TinyMceEditor;
-   get: (id:String) => TinyMceEditor;
+   get: (id: String) => TinyMceEditor;
 }
 
-declare var tinymce:TinyMceStatic;
+declare var tinymce: TinyMceStatic;
+
+// // just an interface for type safety.
+// interface marker {
+//    lat: number;
+//    lng: number;
+//    label?: string;
+//    draggable: boolean;
+// }
+
+declare module google.maps {
+   interface Rectangle {
+      type: string;
+      enableCoordinatesChangedEvent(selectedShape: google.maps.Circle | google.maps.Rectangle | google.maps.Polygon | google.maps.Polyline): void;
+   }
+   interface Circle {
+      type: string;
+      enableCoordinatesChangedEvent(selectedShape: google.maps.Circle | google.maps.Rectangle | google.maps.Polygon | google.maps.Polyline): void;
+   }
+   interface Polygon {
+      type: string;
+      enableCoordinatesChangedEvent(selectedShape: google.maps.Circle | google.maps.Rectangle | google.maps.Polygon | google.maps.Polyline): void;
+   }
+   interface Polyline {
+      type: string;
+      enableCoordinatesChangedEvent(selectedShape: google.maps.Circle | google.maps.Rectangle | google.maps.Polygon | google.maps.Polyline): void;
+   }
+
+}

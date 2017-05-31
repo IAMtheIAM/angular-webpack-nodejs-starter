@@ -8,7 +8,6 @@ wwwroot
 cache
 stats.json
 dotnetcore
-dotnetframework
 
 # Visual Studio & other generated files to ignore
 

@@ -6,6 +6,10 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
 
+/*
+ * Google Maps Components
+ */
+import { NguiMapModule } from '@ngui/map'; // https://github.com/ng2-ui/map
 
 /*
  * Angular2 Material Components
@@ -16,7 +20,6 @@ import { MdModule } from './md.module';
 
 //import { MdCard } from '@angular2-material/card';
 //import { MdButton } from '@angular2-material/button';
-
 
 /*
  * Kendo UI For Angular 2 Components
@@ -33,6 +36,11 @@ import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 
 // AppComponent is our top level component
 import { AppComponent } from './app.component';
+
+/**
+ * Imported Custom Modules
+ */
+import { SharedModule } from '../common/shared.module';
 
 /**
  * Imported Components
@@ -52,13 +60,6 @@ import { CKEditor } from '../directives/ckeditor/ckeditor.component';
  * AppComponent Wide Services & Utilities
  */
 
-export * from '../services/utility.service';
-export * from '../services/appstate.service';
-export * from '../services/authentication.service';
-export * from '../services/data.service';
-export * from '../services/utility.service';
-export * from '../services/route-protection.service';
-
 import { Logging } from '../services/utility.service';
 import { AppState, InternalStateType } from '../services/appstate.service';
 import { Authentication } from '../services/authentication.service';
@@ -76,25 +77,22 @@ import { UrlManagingService } from '../services/url-managing.service';
 import { AuthHttp, AuthConfig } from "angular2-jwt";
 
 export function authFactory(
-    http: Http,
-    options: RequestOptions) {
-    return new AuthHttp(new AuthConfig({
-        // Config options if you want
-    }), http, options);
+   http: Http, options: RequestOptions) {
+   return new AuthHttp(new AuthConfig({
+      // Config options if you want
+   }), http, options);
 };
 
 // Include this in your ngModule providers
 export const AUTH_PROVIDERS = {
-    provide: AuthHttp,
-    deps: [Http, RequestOptions],
-    useFactory: authFactory
+   provide: AuthHttp,
+   deps: [Http, RequestOptions],
+   useFactory: authFactory
 };
-
 
 // Declare Services & Utilities as AppComponent Providers
 // Application wide providers
-const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS, AppState, Logging, Authentication, DataService, UtilityService, RouteProtection, UrlManagingService
-];
+const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS, AppState, Logging, Authentication, DataService, UtilityService, RouteProtection, UrlManagingService];
 
 /**
  * `AppModule` is the main entry point into Angular2's bootstraping process
@@ -104,7 +102,7 @@ const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS, AppState, Logging, Authenticat
    declarations: [ // declarations contains: components, directives and pipes
 
       // Components
-       AppComponent, HomeComponent, AboutComponent, LoginComponent, GridEditingComponent, GridNestedComponent, NotFound404Component, TicketComponent,
+      AppComponent, HomeComponent, AboutComponent, LoginComponent, GridEditingComponent, GridNestedComponent, NotFound404Component, TicketComponent,
 
       // Directives
       NavSidebarComponent, NavHeaderComponent, NavFooterComponent, CKEditor
@@ -113,17 +111,24 @@ const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS, AppState, Logging, Authenticat
 
    ],
    imports: [ // import other modules
-      /** ButtonsModule, GridModule,*/ BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(ROUTES, { useHash: true }), MdModule.forRoot()
+      /** ButtonsModule, GridModule,*/ BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(ROUTES,
+         { useHash: true }), MdModule.forRoot(), NguiMapModule.forRoot({
+         apiUrl: 'https://maps.google.com/maps/api/js?key=AIzaSyDFJ9CWZ6ko8W-43lG1gIjv0IDm4QUvCrQ' + '&libraries=visualization,places,drawing',
+      }), SharedModule
+      // AgmCoreModule.forRoot({
+      //    apiKey: 'AIzaSyDFJ9CWZ6ko8W-43lG1gIjv0IDm4QUvCrQ',
+      //    libraries: ['drawing', 'places']
+      //
+      // })
 
    ],
    providers: [ // expose our Services and Providers into Angular's dependency injection
-       ENV_PROVIDERS, APP_PROVIDERS, AUTH_PROVIDERS]
+      ENV_PROVIDERS, APP_PROVIDERS, AUTH_PROVIDERS]
 })
 
 export class AppModule {
    constructor(
-      public appRef: ApplicationRef,
-      public appState: AppState) {
+      public appRef: ApplicationRef, public appState: AppState) {
       if (Logging.isEnabled.light) {
          console.log('%c Hello \"App\" Module!', Logging.normal.orange);
       }
@@ -148,8 +153,7 @@ export class AppModule {
    }
 
    hmrOnDestroy(store: StoreType) {
-      const cmpLocation = this.appRef.components.map(
-         cmp => cmp.location.nativeElement);
+      const cmpLocation = this.appRef.components.map(cmp => cmp.location.nativeElement);
       // save state
       const state = this.appState._state;
       store.state = state;

@@ -1,0 +1,25 @@
+# Root
+.idea/shelf
+.idea/workspace.xml
+
+# Visual Studio & other generated files to ignore
+*.lock.*
+.vs
+[Oo]bj
+[Bb]in
+*.user
+*.suo
+*.[Cc]ache
+*.bak
+*.ncb
+*.log
+*.log.*
+*.DS_Store
+[Tt]humbs.db
+_ReSharper.*
+*.ReSharper.user
+packages/
+
+###################################
+# Other rules moved: .gitignore file split into 2 files and moved into /frontend and /dotnetcore project folder so it can be seen within Visual Studio.
+###################################

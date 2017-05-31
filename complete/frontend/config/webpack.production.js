@@ -8,15 +8,19 @@ const webpack = require('webpack');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const CompressionPlugin = require('compression-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const PurifyCSSPlugin = require('../node_modules_custom/purifycss-webpack-plugin');
+// const PurifyCSSPlugin = require('../node_modules_custom/purifycss-webpack-plugin');
+const PurifyCSSPlugin = require('purifycss-webpack');
 const OptimizeJsPlugin = require('optimize-js-plugin');
 const DefinePlugin = require('webpack/lib/DefinePlugin');
+const _ = require('lodash');
 
 /*********************************************************************************************
  *******************************  Webpack Constants/Vars *************************************
  ********************************************************************************************/
 
 const outputDir = 'wwwroot';
+const templatesPath = helpers.glob.sync(helpers.path.join(helpers.paths.root, "/src/app-components/**/*.template.html"));
+const componentsPath =  helpers.glob.sync(helpers.path.join(helpers.paths.root, "/src/app-components/**/*.component.ts"));
 
 /*********************************************************************************************
  *******************************  Imported Webpack Constants/Vars ****************************
@@ -30,6 +34,7 @@ const DEBUG = webpackConditionals.DEBUG;
 const ENV = webpackConditionals.ENV;
 const PRODUCTION = webpackConditionals.PRODUCTION;
 const METADATA = webpackConditionals.METADATA;
+const isDevServer = webpackConditionals.isDevServer;
 
 module.exports = webpackMerge(commonConfig, {
 
@@ -105,18 +110,6 @@ module.exports = webpackMerge(commonConfig, {
 
 
       /**
-       * Plugin: ExtractTextPlugin
-       * Description: Extract SCSS/CSS from bundle into external .css file
-       *
-       * See: https://github.com/webpack/extract-text-webpack-plugin
-       */
-      new ExtractTextPlugin({
-         filename: '/css/[name].style.css?[hash]',
-         disable: false,
-         allChunks: true
-      }),
-
-      /**
        * Plugin: DefinePlugin
        * Description: Define free variables.
        * Useful for having development builds with debug logging or adding global constants.
@@ -136,35 +129,54 @@ module.exports = webpackMerge(commonConfig, {
          }
       }),
 
+
+      /**
+       * Plugin: ExtractTextPlugin
+       * Description: Extract SCSS/CSS from bundle into external .css file
+       *
+       * See: https://github.com/webpack/extract-text-webpack-plugin
+       */
+      new ExtractTextPlugin({
+         filename: '/css/[name].style.css?[hash]',
+         disable: false,
+         allChunks: true
+      }),
+
+
       /**
        * Plugin: PurifyCSS WebPack Plugin
        * Description: This is a plugin for WebPack that utilizes PurifyCSS to clean your CSS. Its dead simple, but it requires you to be prepared.
        *
-       * See: https://github.com/purifycss/purifycss-webpack-plugin
+       * The order matters. ExtractTextPlugin CSS extraction has to happen before purifying.
+       *
+       * See: https://github.com/purifycss/purifycss-webpack
+       *
+       *
+       *  Currently breaks compilation. Throws error - diasbling until its fixed
+       *  See: https://github.com/webpack-contrib/purifycss-webpack/issues/112
        */
 
-      new PurifyCSSPlugin({
-         basePath: helpers.paths.root,
-         paths: [
-            "/src/app-components/**/*.template.html",
-            "/src/app-components/**/*.component.ts",
-         ],
-         resolveExtensions: ['.html'],
-         purifyOptions: {
-            minify: true,
-            info: true,
-            // output: 'wwwroot/css/purified',
-            output: helpers.root(outputDir) + '/css/purified',
-            rejected: false,
-            whitelist: // KendoUI for jQuery - classes that are programatically added to DOM, therefore must be whitelisted since they cannot be evaluated during compile-time
-            // '*selector*' means any class which contains that selector.
 
-               ["*gridcell*", "*k-alt*", "*k-auto-scrollable*", "*k-button*", "*k-button-icontext*", "*k-current-page*", "*k-delete*", "*k-edit*", "*k-editable*", "*k-filter-row*", "*k-floatwrap*", "*k-grid*", "*k-grid-content*", "*k-grid-edit*", "*k-grid-header*", "*k-grid-header-wrap*", "*k-grid-pager*", "*k-grid-toolbar*", "*k-grouping-header*", "*k-header*", "*k-i-arrow-e*", "*k-i-arrow-w*", "*k-i-seek-e*", "*k-i-seek-w*", "*k-icon*", "*k-minus*", "*k-plus*", "*k-label*", "*k-link*", "*k-pager-first*", "*k-pager-info*", "*k-pager-last*", "*k-pager-nav*", "*k-pager-nav*", "*k-pager-numbers*", "*k-pager-wrap*", "*k-reset*", "*k-state-disabled*", "*k-state-selected*", "*k-widget*", "*kendoUI*", "*k-widget*", "*k-numerictextbox*", "*k-numeric-wrap*", "*k-state-default*",
-                  "*k-formatted-value*", "*k-input*", "*k-select*", "*k-textbox*", "*k-cancel*",
-                  "*k-grid-cancel*", "*k-grid-update*", "*k-state-hover*", "*caret*", "*collapsible*", "*collapsible-header*", "*collapsible-body*", "*active*", "*mdi-navigation-arrow-drop-down*"]
-
-         }
-      }),
+      // new PurifyCSSPlugin({
+      //    // Give paths to parse for rules. These should be absolute!
+      //    paths: _.union(templatesPath, componentsPath), // this concats two or more array globs together into one array
+      //    moduleExtensions: ['.html'],
+      //    verbose: true,
+      //    purifyOptions: {
+      //       minify: true,
+      //       info: true,
+      //       output: helpers.root(outputDir) + '/css/purified',
+      //       rejected: false,
+      //       whitelist: // KendoUI for jQuery - classes that are programatically added to DOM, therefore must be whitelisted since they cannot be evaluated during compile-time
+      //
+      //       // '*selector*' means any class which contains that selector.
+      //
+      //          ["*gridcell*", "*k-alt*", "*k-auto-scrollable*", "*k-button*", "*k-button-icontext*", "*k-current-page*", "*k-delete*", "*k-edit*", "*k-editable*", "*k-filter-row*", "*k-floatwrap*", "*k-grid*", "*k-grid-content*", "*k-grid-edit*", "*k-grid-header*", "*k-grid-header-wrap*", "*k-grid-pager*", "*k-grid-toolbar*", "*k-grouping-header*", "*k-header*", "*k-i-arrow-e*", "*k-i-arrow-w*", "*k-i-seek-e*", "*k-i-seek-w*", "*k-icon*", "*k-minus*", "*k-plus*", "*k-label*", "*k-link*", "*k-pager-first*", "*k-pager-info*", "*k-pager-last*", "*k-pager-nav*", "*k-pager-nav*", "*k-pager-numbers*", "*k-pager-wrap*", "*k-reset*", "*k-state-disabled*", "*k-state-selected*", "*k-widget*", "*kendoUI*", "*k-widget*", "*k-numerictextbox*", "*k-numeric-wrap*", "*k-state-default*",
+      //             "*k-formatted-value*", "*k-input*", "*k-select*", "*k-textbox*", "*k-cancel*",
+      //             "*k-grid-cancel*", "*k-grid-update*", "*k-state-hover*", "*caret*", "*collapsible*", "*collapsible-header*", "*collapsible-body*", "*active*", "*mdi-navigation-arrow-drop-down*"]
+      //
+      //    }
+      // }),
 
 
       /**
@@ -211,17 +223,10 @@ module.exports = webpackMerge(commonConfig, {
          //    // }, // debug
          //    // comments: true, //debug
 
+         // compress: false,
+
 
          // "Production" mode options
-         beautify: false, //prod
-         output: {
-            comments: false //prod
-         },
-         mangle: { //prod
-            screw_ie8: true,
-            keep_fnames: true
-
-         },
          compress: { //prod
             screw_ie8: true,
             warnings: false,
@@ -233,10 +238,16 @@ module.exports = webpackMerge(commonConfig, {
             evaluate: true,
             if_return: true,
             join_vars: true,
-            negate_iife: false // we need this for lazy v8
+            negate_iife: false, // we need this for lazy v8
+            keep_fnames: true
          },
-         comments: false, //prod
-         sourceMap: false //prod
+
+         mangle: { //prod
+            screw_ie8: true,
+            keep_fnames: true
+
+         },
+
       }),
 
       /**
@@ -313,7 +324,8 @@ module.exports = webpackMerge(commonConfig, {
       module: false,
       clearImmediate: false,
       setImmediate: false
-   },
+   }
+   ,
    stats: {
       colors: true,
       errors: true,
@@ -331,4 +343,5 @@ module.exports = webpackMerge(commonConfig, {
       warnings: false
    }
 
-});
+})
+;
