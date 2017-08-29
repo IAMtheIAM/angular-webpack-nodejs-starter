@@ -20,7 +20,7 @@ import { NotFound404Component } from '../404/notfound404.component';
 
 export const ROUTES: Routes = [{
    path: '',
-   redirectTo: 'subscriber',
+   redirectTo: 'login',
    pathMatch: 'full',
 },
 // uncomment this route to enable lazy loading, then change the root path in the lazy loaded module to '' (empty)

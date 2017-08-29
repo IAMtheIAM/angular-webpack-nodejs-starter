@@ -39,7 +39,7 @@ gulp.task('default', function (cb) {
    console.log('Starting dev servers!...');
    gulp.start(
       'devserver:jit',
-      'nodemon',
+      'nodemon:dev',
       'browsersync',
       'ios_webkit_debug_proxy'
       // 'ngrok-url',
@@ -49,7 +49,7 @@ gulp.task('default', function (cb) {
    );
 });
 
-gulp.task('nodemon', shell.task('cd ../backend-nodejs && npm run nodemon'));
+gulp.task('nodemon:dev', shell.task('cd ../backend-nodejs && npm run nodemon:dev'));
 gulp.task('devserver:jit', shell.task('npm run devserver:jit'));
 gulp.task('ios_webkit_debug_proxy', shell.task('npm run ios-webkit-debug-proxy'));
 gulp.task('browsersync', shell.task(`browser-sync start --proxy ${serverToProxy1} --port ${finalPort1} --no-open`));

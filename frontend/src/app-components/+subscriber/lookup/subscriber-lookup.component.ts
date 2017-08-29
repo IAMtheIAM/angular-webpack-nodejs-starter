@@ -3,7 +3,7 @@ import { Observable } from 'rxjs/Observable'; // just the base functionality, ad
 import { FormControl } from '@angular/forms';
 // import { AppInsightsService } from '@markpieszak/ng-application-insights';
 import { Title } from '@angular/platform-browser';
-import { ActivatedRoute } from '@angular/router'
+import { ActivatedRoute } from '@angular/router';
 
 /*
  * Shared UtilityService
@@ -12,6 +12,7 @@ import { Logging } from '../../services';
 import { UtilityService } from '../../services/';
 import { AppState } from '../../services/appstate.service';
 import { DataService } from '../../services/data.service';
+import { hostName } from '../../services/data.service';
 
 /**
  * This is where CSS/SCSS files that the component depends on are required.
@@ -31,7 +32,7 @@ import './subscriber-lookup.style.scss';
 
 export class SubscriberLookupComponent {
    localState: any;
-   lookupSubscriberApiUrl: string = '//addams-asoc-signup-api.azurewebsites.net/api/associationsignup/v1/searchsubscribersnamelicense/'; // + searchParameter'
+   apiUrl1: string = `${hostName}/api/users/detail/`; // nodejs api at "backend-nodejs/app/routes/api/b.router.js"
    model: any;
    licenseNumber: string;
    response: Object[] | undefined | null;
@@ -53,13 +54,18 @@ export class SubscriberLookupComponent {
       this.titleService.setTitle('Subscriber Lookup | IAMtheIAM');
       // this.appInsightsService.trackPageView('Subscriber-Lookup Component');
 
-      this.route.data.subscribe((data: any) => {
-         // your resolved data from route
-         this.appState.set('resolvedData', data);
-         this.localState = data;
-         console.debug(data);
-         this.associationData = data;
-      });
+      // get resolved route data - the no observable method
+      this.associationData = this.route.snapshot.data;
+      console.debug(this.associationData);
+
+      // get resolved route data - the observable method
+      // this.route.data.subscribe((data: any) => {
+      //    // your resolved data from route
+      //    this.appState.set('resolvedData', data);
+      //    this.localState = data;
+      //    console.debug(data);
+      //    this.associationData = data;
+      // });
    }
 
    lookupSubscriber = (text$: Observable<string>) => {
@@ -69,7 +75,7 @@ export class SubscriberLookupComponent {
          .distinctUntilChanged()
          .do(() => this.searching = true)
          .switchMap(term => {
-            var data = this._callApi(this.lookupSubscriberApiUrl, term)
+            var data = this._callApi(this.apiUrl1, term)
                .map(response => this._transformResponse(response))
                .do((response) => {
                   this.response = response;

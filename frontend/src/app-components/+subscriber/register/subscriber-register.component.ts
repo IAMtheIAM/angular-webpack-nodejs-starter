@@ -45,11 +45,15 @@ export class SubscriberRegisterComponent {
       this.titleService.setTitle('Subscriber Register | IAMtheIAM');
       // this.appInsightsService.trackPageView('Subscriber-Lookup Component');
 
-      // the no-observable method
+      // get route param data - the no-observable method
       this.licenseNumber = this.route.snapshot.paramMap.get('licenseNumber');
       // console.debug(this.licenseNumber);
 
-      // // the observable method
+      // get resolved route data - the no observable method
+      this.subscriberData = this.route.snapshot.data.resolvedData;
+      console.debug(this.subscriberData);
+
+      // // get route param data - the observable method
       // this.route.paramMap
       //    .subscribe((params: ParamMap) => {
       //       // console.log(params);
@@ -59,13 +63,14 @@ export class SubscriberRegisterComponent {
       //    });
       // console.debug(this.licenseNumber2);
 
-      this.route.data.subscribe((data: any) => {
-         // your resolved data from route
-         this.appState.set('resolvedData', data.subscriberData);
-         this.localState = data.subscriberData;
-         console.debug(data.subscriberData);
-         this.subscriberData = data.subscriberData;
-      });
+      // // get resolved route data - the observable method
+      // this.route.data.subscribe((data: any) => {
+      //    // your resolved data from route
+      //    this.appState.set('resolvedData', data.resolvedData);
+      //    this.localState = data.subscriberData;
+      //    console.debug(data.subscriberData);
+      //    this.subscriberData = data.subscriberData;
+      // });
 
       // static data that is bundled
       // var mockData = require('assets/mock-data/mock-data.json');
@@ -95,7 +100,7 @@ export class SubscriberRegisterComponent {
          clear        : 'Clear',
          close        : 'Ok',
          closeOnSelect: true, // Close upon selecting a date,
-         format: 'mmmm d, yyyy'
+         format       : 'mmmm d, yyyy'
 
       });
 

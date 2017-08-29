@@ -12,7 +12,7 @@ This was originally based on the Angular Webpack Starter repo [available on GitH
 
 This project is split into multiple subdirectories. The aspiration is to have a "complete" or full-featured version of the project, and a minimal version with all of the extra features and goodies removed that aren't needed for a more simple Angular / Webpack / NodeJS integration.
 
-**The "complete" version is located at dotnetcore branch, which features more examples of advanced functionality using Angular.**
+**The "complete" version is located at [dotnetcore branch](./tree/dotnetcore/), which features more examples of advanced functionality using Angular.**
 
 On the Master Branch, you will find:
 
@@ -27,8 +27,7 @@ On the Master Branch, you will find:
 ### Editing in Visual Studio 2015
 To open this project in Visual Studio 2015, navigate to appropriate folder and choose the solution file.
  
- For .NET Core, go to [`./complete/dotnetcore/Angular2-Webpack2-DotNetCore-Starter.sln`](./complete/dotnetcore/Angular2-Webpack2-DotNetCore-Starter.sln)
- For .NET Framework, go to [`./complete/dotnetframework/Angular2-Webpack2-DotNetFramework-Starter.sln`](./complete/dotnetframework/Angular2-Webpack2-DotNetFramework-Starter.sln)
+ For the .NET Core backend integration (instead of NodeJS), go to [`./tree/dotnetcore/complete/dotnetcore/Angular2-Webpack2-DotNetCore-Starter.sln`](./tree/dotnetcore/complete/dotnetcore/Angular2-Webpack2-DotNetCore-Starter.sln)
 
 ### Editing in IntelliJ IDEA 2017
 To open this project in IntelliJ IDEA, simply open this [root](../../) folder of the project in the program. It contains the [`.idea`](./.idea) folder needed to load this project and all its run configurations for easily building and running the app.
@@ -49,22 +48,24 @@ Run One Time Setup
 **Webpack Dev Server with HMR (Hot Module Replacement) and Angular JIT (Just In Time) compilation**
  
 * `npm run devserver:jit`
-* `npm run server:dotnetcore:dev` (reads js/css files from webpack-dev-server memory, on localhost:4000)
+* `npm run nodemon:dev` (sets NODE_ENV=development)
+
+**Production Build-Production /w AOT Compilation (No HMR, non-optimized code, good for debugging production code)**
+ 
+* `npm run build:production:aot`
+* `npm run nodemon:debug` (sets NODE_ENV=production)
 
 **Production Build /w AOT Compilation (No HMR, optimized code)**
- 
-* `npm run compile:aot`
-* `npm run build:dlls`
+
 * `npm run build:production:aot`
-* `npm run server:dotnetcore:production` (reads js/css files from wwwroot disk folder, on localhost:5000)
+* `npm run nodemon:production` (sets NODE_ENV=production)
 
 **Production Build /w JIT Compilation (No HMR, optimized code)**
 
 I wouldn't recommend JIT build for production code, because it's around 50% slower to bootstrap the app compared to AOT build. But here's how you do it in case you want to for some reason:
  
-* `npm run build:dlls`
 * `npm run build:production:jit`
-* `npm run server:dotnetcore:production`
+* `npm run nodemon:production`
 
 **Viewing The App**
 
@@ -75,19 +76,15 @@ I wouldn't recommend JIT build for production code, because it's around 50% slow
 
 **Important points of consideration**
 
-* The project repo includes a `.idea` folder. This is for developing in IntelliJ IDEA 2016, which is excellent in my opinion for developing front end code. The project takes advantage of the `dotnet` command-line SDK which allows you to compile .NET code outside of Visual Studio 2015. 
+* The project repo includes a `.idea` folder. This is for developing in IntelliJ IDEA 2017, which is excellent in my opinion for developing front end code.
 
-* For IntelliJ IDEA 2016 users, there are many useful run configurations, including debugging the Webpack build, debugging the Angular 2 application, and compound run configurations which upon executing, will execute the above scripts in order for you, so you don't have to remember the order and run multiple commands each time.
+* For IntelliJ IDEA 2017 users, there are many useful run configurations, including debugging the Webpack build, debugging the Angular application, and compound run configurations which upon executing, will execute the above scripts in order for you, so you don't have to remember the order and run multiple commands each time.
 
-* Of course, the app also works fine in Visual Studio 2015. However, the run configurations are not up to date, since I use IntelliJ for my main IDE. I will update them soon. You'll need to install `Task Runner Explorer` to execute the commands from within VS2015, otherwise you'll have to use a Terminal / Command Prompt. There is more information on how to use this starter with Visual Studio in [the getting started tips document.](./tools/docs/Tips.md)
+* Of course, the app also works fine in Visual Studio 2015/2017. However, the run configurations are limited, since I use IntelliJ for my main IDE. You'll need to install `Task Runner Explorer` to execute the commands from within VS2015/2017, otherwise you'll have to use a Terminal / Command Prompt.
 
-* If you ever need to clean your project folder of any generated files, execute the "clean" task. This will remove everything within *"node_modules", "bower_components", "cache", "wwwroot" and "coverage"*.
+* If you ever need to clean your project folder of any generated files, execute the "clean" task. This will remove everything within *"node_modules", "compiled", "backend-nodejs/node_modules", and "backend-nodejs/wwwroot"*.
 
 * Alternatively you can execute "clean:install" which will perform the task `clean` followed by the task `install:all` which will redownload and reinstall all dependencies for you.
-
-## Tips on getting started
-
-Please view the [tips on getting started document](./tools/docs/Tips.md) to read some more information on getting started with this starterkit.
 
 # Features of this Project
 

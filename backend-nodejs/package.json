@@ -3,7 +3,9 @@
     "version": "0.0.1",
     "private": true,
     "scripts": {
-        "nodemon": "nodemon --config nodemon.json app/server.js",
+        "nodemon:dev": "cross-env NODE_ENV=development nodemon --config nodemon.json app/server.js",
+        "nodemon:debug": "cross-env NODE_ENV=debug nodemon --config nodemon.json app/server.js",
+        "nodemon:production": "cross-env NODE_ENV=production nodemon --config nodemon.json app/server.js",
         "devserver": "cross-env NODE_ENV=development NODE_ENV=development webpack-dev-server --profile --inline --hot --compress --content-base wwwroot",
         "build:debug:watch": "npm run clean:build && cross-env NODE_ENV=debug webpack --hot --profile --colors --display-cached --watch",
         "build:production": "npm run clean:build && cross-env NODE_ENV=production webpack --profile --colors --display-cached --bail && npm run copy:wwwroot",

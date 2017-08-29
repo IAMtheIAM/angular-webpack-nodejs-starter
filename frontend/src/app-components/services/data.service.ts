@@ -2,6 +2,15 @@ import { Http, Response } from '@angular/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 
+let useLocalHost: boolean = false;
+// Use localhost when on development mode, override this here if not desired.
+if(ENV !== "production") {
+   useLocalHost = true;
+   // useLocalHost = false;
+}
+// Production Host Name
+export const hostName: string = useLocalHost ? 'http://localhost:54455' : '//your.api.net'; // use localhost:5000 for nodeJS API routes
+
 @Injectable()
 export class DataService {
 

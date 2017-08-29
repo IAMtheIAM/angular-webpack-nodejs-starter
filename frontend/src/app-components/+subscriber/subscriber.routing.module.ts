@@ -28,7 +28,7 @@ export const subscriberRoutes: Routes = [{
    }, {
       path     : 'lookup/:associationGuid', // gets the route parameters
       component: SubscriberLookupComponent,
-      resolve  : { associationGuid: SubscriberLookupDataResolver }
+      resolve  : { resolvedData: SubscriberLookupDataResolver }
    }, {
       path      : 'register',
       pathMatch : 'full',
@@ -36,7 +36,7 @@ export const subscriberRoutes: Routes = [{
    }, {
       path     : 'register/:licenseNumber', // gets the route parameters
       component: SubscriberRegisterComponent,
-      resolve  : { subscriberData: SubscriberRegisterDataResolver }
+      resolve  : { resolvedData: SubscriberRegisterDataResolver }
    }]
 
 }];
