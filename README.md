@@ -154,9 +154,11 @@ NPM utilizing exit codes to indicate whether the executing task failed or succee
 
 ## To-do
 
-- [x] Integrating with Visual Studio
-- [ ] Barebones version of the application containing just JWT-based Authentication
-- [ ] More solid backend structure
+- [x] Integrating with NodeJS backend
+- [x] Setup example NodeJS API routes
+- [x] Minimal version of the Angular app in Master branch
+- [x] Convert webpack config to TypeScript
+- [x] Move .Net CORE version of project to separate [DotNetCore branch](./tree/dotnetcore/)
 
 ## License
  [MIT](/LICENSE)
