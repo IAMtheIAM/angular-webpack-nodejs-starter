@@ -1,0 +1,175 @@
+<div class="card-container">
+
+   <!--The Materialize way-->
+   <div class="card">
+      <div class="card-content">
+         <form class="personal_info" role="form" #form_personal_info="ngForm">
+            <h1>Personal Information</h1>
+            <div class="input-wrapper input-field">
+               <input [value]="this.subscriberData?.firstName" id="full_name" type="text" class="validate">
+               <label for="full_name">First Name</label>
+            </div>
+            <div class="input-wrapper input-field">
+               <input [value]="this.subscriberData?.middleName" id="middle_name" type="text" class="validate">
+               <label for="full_name">Middle Name</label>
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="full_name">Last Name</label>
+               <input [value]="this.subscriberData?.lastName" id="last_name" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="nick_name">Nickname</label>
+               <input [value]="this.subscriberData?.firstName" id="nick_name" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="email_address">E-Mail Address</label>
+               <input id="email_address" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="home_address">Home Address</label>
+               <input [value]="this.subscriberData?.employerMailingAddress1" id="home_address" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="home_city">Home City</label>
+               <input [value]="this.subscriberData?.employerMailingCity" id="home_city" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="home_state">Home State</label>
+               <input [value]="this.subscriberData?.employerMailingState" id="home_state" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="home_zipcode">Home Zip Code</label>
+               <input [value]="this.subscriberData?.employerMailingZip" id="home_zipcode" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="home_phone">Home Phone</label>
+               <input [value]="this.subscriberData?.employerPhone" id="home_phone" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="home_fax">Home Fax</label>
+               <input [value]="this.subscriberData?.employerFax" id="home_fax" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="mobile_phone">Mobile Phone</label>
+               <input id="mobile_phone" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="languages_spoken">Languages Spoken</label>
+               <input id="languages_spoken" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="date_of_birth">Date Of Birth (MM/YYYY)</label>
+               <input id="date_of_birth" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <select id="sex">
+                  <option value="" disabled selected>Choose Your Sex</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="noanswer">Prefer Not To Answer</option>
+               </select>
+            </div>
+            <div class="input-wrapper input-field">
+               <select id="preferred_phone">
+                  <option value="" disabled selected>Choose Your Preferred Phone</option>
+                  <option value="mobile">Mobile</option>
+                  <option value="home">Home</option>
+               </select>
+            </div>
+         </form>
+      </div>
+   </div>
+   <div class="card">
+      <div class="card-content">
+         <form class="office_info" role="form" #form_office_info="ngForm">
+            <h1>Office Information</h1>
+            <div class="input-wrapper input-field">
+               <label for="adre_officeName">Office Name</label>
+               <input [value]="this.subscriberData?.adreOffice?.legalName" id="adre_officeName" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="adre_licenseNumber">Office ID Number</label>
+               <input [value]="this.subscriberData?.adreOffice?.licenseNumber" id="adre_licenseNumber" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="adre_brokerage_name">Brokerage Name</label>
+               <input [value]="this.subscriberData?.adreOffice?.dbaName" id="adre_brokerage_name" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="adre_association">Association</label>
+               <input [value]="this.subscriberData?.adreOffice?.association" id="adre_association" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="adre_address">Address</label>
+               <input [value]="this.subscriberData?.adreOffice?.address1" id="adre_address" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="adre_address2">Suite #</label>
+               <input [value]="this.subscriberData?.adreOffice?.address2" id="adre_address2" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="adre_city">City</label>
+               <input [value]="this.subscriberData?.adreOffice?.city" id="adre_city" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="adre_state">State</label>
+               <input [value]="this.subscriberData?.adreOffice?.state" id="adre_state" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="adre_zipcode">Zip Code</label>
+               <input [value]="this.subscriberData?.adreOffice?.zip" id="adre_zipcode" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="adre_phone">Phone</label>
+               <input [value]="this.subscriberData?.adreOffice?.phone" id="adre_phone" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="adre_fax">Fax</label>
+               <input [value]="this.subscriberData?.adreOffice?.fax" id="adre_fax" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="adre_date_joined">Date Joined</label>
+               <input [value]="" id="adre_date_joined" type="text" class="validate" class="datepicker">
+            </div>
+            <div class="input-wrapper input-field">
+               <select id="adre_preferred_mailing_address">
+                  <option value="" disabled selected>Choose Your Preferred Mailing Address</option>
+                  <option value="home">Home</option>
+                  <option value="office">Office</option>
+               </select>
+            </div>
+         </form>
+      </div>
+   </div>
+   <div class="card">
+      <div class="card-content">
+         <form class="license_info" role="form" #form_license_info="ngForm">
+            <h1>License Information</h1>
+            <div class="input-wrapper input-field">
+               <label for="license_number">License Number</label>
+               <input [value]="this.subscriberData?.licenseNumber" id="license_number" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="original_license_date">Original License Date</label>
+               <input [value]="this.subscriberData?.originalDate" id="original_license_date" type="text" class="validate" class="datepicker">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="license_expiration_date">License Expiration Date</label>
+               <input [value]="this.subscriberData?.expireDate" id="license_expiration_date" type="text" class="validate" class="datepicker">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="license_type">License Type</label>
+               <input [value]="this.subscriberData?.licenseType" id="license_type" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="license_category">License Category</label>
+               <input [value]="this.subscriberData?.licenseCategory" id="license_category" type="text" class="validate">
+            </div>
+            <div class="input-wrapper input-field">
+               <label for="employment_type">Employment Type</label>
+               <input [value]="this.subscriberData?.employmentType" id="employment_type" type="text" class="validate">
+            </div>
+         </form>
+      </div>
+   </div>
+</div>

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Microservice.Poc.iml" filepath="$PROJECT_DIR$/.idea/Microservice.Poc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/IntelliJ Module.iml" filepath="$PROJECT_DIR$/.idea/IntelliJ Module.iml" />
     </modules>
   </component>
 </project>

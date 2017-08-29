@@ -5,5 +5,5 @@
 .idea/workspace.xml
 
 ###################################
-# Other rules moved: .gitignore file split into 3 files and moved into /frontend and /dotnetcore and /dotnetframework project folder so they can be seen within Visual Studio.
+# Other rules moved: .gitignore file split into 3 files: 2 were moved into /frontend and /backend-nodejs project folders for specificity.
 ###################################

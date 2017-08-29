@@ -1,0 +1,167 @@
+/********************/
+/* Subscriber-Lookup.scss */
+/********************/
+//@import '../../../assets/styles/appwide-metastyles.scss';
+
+// The Susy Span Mixin Syntax
+// This creates the app layout using Susy's Math functions
+// @include span( <$span> of [<$context>] [<$last>] );
+// Note: Arguments within square brackets are optional arguments
+
+subscriber-lookup {
+
+   @include clearfix;
+   align-items: center;
+   height: 85vh; // This forces <login> to 80% of your viewport
+   display: flex;
+   justify-content: center;
+
+   .welcome-message {
+      color: #fff;
+      font-weight: bold;
+   }
+
+   .card-container {
+      width: span(8 of 24);
+      margin: 20px;
+      position: relative;
+      //top: 200px;
+      @include border-radius(10px);
+
+      @media only screen and (max-width: 799px) {
+         width: span(24 of 24);
+      }
+
+      @media only screen and (min-width: 800px) and (max-width: 1199px) {
+         width: span(14 of 24);
+      }
+
+      @media only screen and (min-width: 1200px) and (max-width: 1599px) {
+         width: span(12 of 24);
+      }
+
+   }
+
+   md-card {
+      //margin: 20px 0;
+      padding: 34px;
+      border-top: 3px solid #549DE5;
+
+      md-input-container {
+         width: 100%;
+
+         input {
+            border-bottom: 0 !important;
+            height: unset !important;
+            margin: 0 !important;
+
+            &:focus {
+               box-shadow: none !important;
+            }
+         }
+      }
+
+      md-progress-spinner.mat-progress-spinner {
+         position: absolute;
+         top: 84px;
+         right: 29px;
+         width: 26px;
+         height: 26px;
+      }
+   }
+
+   .card {
+      margin: 0;
+      padding: 0;
+      border-top: 3px solid #549DE5;
+
+      md-progress-spinner.mat-progress-spinner {
+         position: absolute;
+         top: 84px;
+         right: 29px;
+         width: 26px;
+         height: 26px;
+      }
+   }
+
+   img.logo {
+      width: 275px;
+      margin: 10px auto 30px;
+      display: block;
+   }
+
+   button.login-submit {
+      margin: 15px 0 10px;
+      font-size: 1.5em;
+   }
+
+   section.list-group.results {
+      //position: absolute;
+   }
+
+   .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+      display: none;
+      float: left;
+      min-width: 10rem;
+      padding: 0.5rem 0;
+      margin: 0.125rem 0 0;
+      font-size: 1rem;
+      color: #292b2c;
+      text-align: left;
+      list-style: none;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      border-radius: 0.25rem;
+
+      button {
+         font-size: 100%;
+         touch-action: manipulation;
+         line-height: inherit;
+
+         // Bootstrap 4 autocomplete typehead
+         &.dropdown-item {
+            display: block;
+            width: 100%; // For `<button>`s
+            padding: 3px 1.5rem;
+            clear: both;
+            font-weight: normal;
+            color: #292b2c;
+            text-align: inherit; // For `<button>`s
+            white-space: nowrap; // prevent links from randomly breaking onto new lines
+            background: none; // For `<button>`s
+            border: 0; // For `<button>`s
+
+            .dropdown-item:focus, .dropdown-item:hover {
+               color: #1d1e1f;
+               text-decoration: none;
+               background-color: #f7f7f9;
+            }
+
+            &.active,
+            &:active {
+               color: #fff;
+               text-decoration: none;
+               background-color: #0275d8;
+            }
+
+            &.disabled,
+            &:disabled {
+               color: #636c72;
+               cursor: not-allowed;
+               background-color: transparent;
+               // Remove CSS gradients if they're enabled
+               //background-image: none;
+            }
+         }
+      }
+   }
+}
+
+// end login {}
+
+

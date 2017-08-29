@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run Gulp" type="js.build_tools.npm" factoryName="npm" singleton="true">
+    <package-json value="$PROJECT_DIR$/frontend/package.json" />
+    <command value="run" />
+    <scripts>
+      <script value="gulp" />
+    </scripts>
+    <node-interpreter value="project" />
+    <envs />
+    <method />
+  </configuration>
+</component>

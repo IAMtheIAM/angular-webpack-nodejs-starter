@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Debug Webpack (Production)" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" path-to-js-file="webpack.debugger.cli.js" working-dir="$PROJECT_DIR$/">
+    <envs>
+      <env name="NODE_ENV" value="production" />
+    </envs>
+    <method />
+  </configuration>
+</component>

@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="JIT: Dev Server + NodeServer (Development) (IntelliJ)" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration" singleton="false">
+    <toRun type="js.build_tools.npm" name="1) Run NodeServer - Live Reload (Development)" />
+    <toRun type="js.build_tools.npm" name="2) JIT: Dev Server" />
+    <method />
+  </configuration>
+</component>

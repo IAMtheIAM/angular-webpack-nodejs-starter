@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="AOT: Compile + Build Debug (Watch) + NodeServer (Debug)" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration" singleton="false">
+    <toRun type="js.build_tools.npm" name="1) Run NodeServer - Live Reload (Debug-Production)" />
+    <toRun type="js.build_tools.npm" name="2) AOT: Compile + Build Debug (Webpack) (Watch)" />
+    <method />
+  </configuration>
+</component>

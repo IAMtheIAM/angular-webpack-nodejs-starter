@@ -1,0 +1,14 @@
+<!-- App Container -->
+<div class="app-container mat-app-background">
+   <!--<nav-header *ngIf="appState.state.isAuthenticated" class="clearfix"></nav-header>-->
+   <!--<nav-sidebar *ngIf="appState.state.isAuthenticated"></nav-sidebar>-->
+   <div class="content-container">
+      <div class="content">
+         <router-outlet></router-outlet>
+         <pre class="app-state centered-block" *ngIf="appState.state.isAuthenticated">
+            <div class="">this.appState.state = {{ appState.state | json }}</div>
+         </pre>
+      </div>
+      <nav-footer></nav-footer>
+   </div>
+</div>

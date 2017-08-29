@@ -1,0 +1,142 @@
+﻿/********************/
+/* App.scss */
+/********************/
+/* ====================================================
+ * ============== REQUIRED MATERIAL THEME  ============
+ * ==================================================== */
+//@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '../common/material-design-theme.style';
+/* ====================================================
+ * ============== APP-WIDE STYLES  ====================
+ *  Should come after other @imports so it overrides any styles intended to be overridden
+ * ==================================================== */
+//@import '../../assets/styles/appwide-metastyles.scss';
+@import '../../assets/styles/global';
+
+/* ====================================================
+ * ============== "APP" COMPONENT STYLES  =============
+ * ==================================================== */
+
+html, body {
+   margin: 0;
+   min-height: 100%;
+}
+
+html {
+   font-size: $html-font-base;
+}
+
+body {
+   line-height: $line-height-base;
+
+   // This makes the the background fill the entire screen height even if the content does not
+   &::before {
+      content: ' ';
+      height: 100%;
+      position: fixed; // instead of background-attachment
+      width: 100%;
+      top: 0;
+      left: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: $colors-app-background;
+      //background-image: url('/assets/images/login-ellipse.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      will-change: transform; // creates a new paint layer
+      z-index: -1;
+   }
+}
+
+// The Susy Span Mixin Syntax
+// @include span( <$span> of [<$context>] [<$last>] );
+// @include span( isolate <$span> at [<$column>] [<$last>] );
+
+/********************/
+/* Logged in styles */
+/********************/
+
+body.authenticated {
+   &::before {
+      background-color: #eeeeee;
+      background-image: none;
+   }
+
+   .app-container {
+      position: relative;
+      top: 0;
+      @include clearfix;
+
+      nav-header {
+         width: 100%
+      }
+
+      nav-sidebar { // inputs come from variables.scss
+         //@include span(isolate $sidebarWidth at $sidebarPosition); // 3 cols if true, 1 col if false.
+         flex: 1 1 span($sidebarWidth at $sidebarPosition);
+         padding: 0 gutter() / 2;
+         display: $showSidebar;
+      }
+
+      .app-state {
+         color: unset;
+      }
+   }
+
+   .content-container {
+      //@include span(isolate $contentContainerWidth at $contentContainerPosition last);
+      flex: 1 1 span($contentContainerWidth at $contentContainerPosition);
+      padding: 40px gutter() / 2;
+      //padding: 40px;
+   }
+
+   .content {
+      height: unset;
+   }
+}
+
+// end body.authenticated
+
+/********************/
+/* Logged out styles */
+/********************/
+
+:not(body.authenticated) {
+   .app-container {
+      position: relative;
+      //top: 140px;
+      @include clearfix;
+
+      nav-header {
+         width: 100%
+      }
+
+      nav-sidebar {
+         display: none;
+      }
+
+      .app-state {
+         color: #ffffff;
+      }
+   }
+
+   .content-container {
+      //@include span(24 of 24 last);
+      flex: 1 1 span(24);
+      padding: 0 gutter() / 2;
+   }
+
+   .content {
+      //height: 100vh; // This forces .app-container to 100% of your viewport
+   }
+}
+
+// end nested(24)
+
+.app-container {
+   //@include container(100%);
+   padding: 0;
+   background: $colors-app-background;; // override Materialize.css background color
+}
+
+

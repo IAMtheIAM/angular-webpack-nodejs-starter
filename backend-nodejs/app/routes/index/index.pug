@@ -1,0 +1,66 @@
+doctype html
+html(lang='')
+    head
+        title IAMtheIAM
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        // use http://www.favicon-generator.org/ to replace files in public/icon
+        link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+        // base url
+        base(href='/')
+
+        if settings.env === 'localhost' || settings.env === 'development' || settings.env === 'debug'
+            // Development & Debug mode
+            //script(type='text/javascript', src='//' + localIP + ':1337/vorlon.js')
+
+        if settings.env === 'debug'
+            // Development mode
+            link(href='css/app.style.css?8609335d43fa570a3897', rel='stylesheet')
+
+        else if settings.env === 'production'
+            // Production mode
+            link(href='css/app.style.css?8609335d43fa570a3897', rel='stylesheet')
+
+    body(class=settings.env)
+    p Loading...
+
+    if settings.env === 'localhost' || settings.env === 'development'
+
+        // Webpack mode
+        script(type='text/javascript', src='//' + localIP + ':4000/dlls/commons.dll.js?8609335d43fa570a3897')
+        script(type='text/javascript', src='//' + localIP + ':4000/dlls/polyfills.dll.js?8609335d43fa570a3897')
+        script(type='text/javascript', src='//' + localIP + ':4000/dlls/vendors.dll.js?8609335d43fa570a3897')
+        script(type='text/javascript', src='//' + localIP + ':4000/js/app.bundle.js?8609335d43fa570a3897')
+
+    else if settings.env==='debug'
+
+        // Debug / Development mode
+        script(type='text/javascript', src='dlls/commons.dll.js?8609335d43fa570a3897')
+        script(type='text/javascript', src='dlls/polyfills.dll.js?8609335d43fa570a3897')
+        script(type='text/javascript', src='dlls/vendors.dll.js?8609335d43fa570a3897')
+        script(type='text/javascript', src='js/app.bundle.js?8609335d43fa570a3897')
+
+    else if settings.env==='production'
+
+        // Production mode
+        script(type='text/javascript', src='dlls/commons.dll.js?8609335d43fa570a3897')
+        script(type='text/javascript', src='dlls/polyfills.dll.js?8609335d43fa570a3897')
+        script(type='text/javascript', src='dlls/vendors.dll.js?8609335d43fa570a3897')
+        script(type='text/javascript', src='js/app.bundle.js?8609335d43fa570a3897')
+
+    else
+
+        // No Environment Set - Fallback to Development mode
+        script(type='text/javascript', src='dlls/commons.dll.js?8609335d43fa570a3897')
+        script(type='text/javascript', src='dlls/polyfills.dll.js?8609335d43fa570a3897')
+        script(type='text/javascript', src='dlls/vendors.dll.js?8609335d43fa570a3897')
+        script(type='text/javascript', src='js/app.bundle.js?8609335d43fa570a3897')
+
+
+//extends layout
+//
+//block content
+//  h1= title
+//  p Welcome to #{title}

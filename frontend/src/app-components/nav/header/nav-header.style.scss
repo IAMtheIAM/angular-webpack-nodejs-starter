@@ -1,0 +1,84 @@
+/********************/
+/* Nav-header.scss */
+/********************/
+//@import '../../../assets/styles/appwide-metastyles.scss';
+
+nav-header {
+
+   //// must clear the 'float: left' from this nav-header element, regardless of the next element
+   //& + * {
+   //   content: "";
+   //   display: table;
+   //   clear: both;
+   //}
+
+   nav {
+      color: unset;
+      background-color: #2a4f91;
+      padding: 0 17px;
+      img {
+         vertical-align: middle;
+      }
+
+      .profile-picture {
+         a {
+            left: 5px;
+         }
+         img {
+            border: 2px solid #fff;
+            border-radius: 50%;
+            margin-right: 10px;
+
+         }
+      }
+
+      .notifications-alert {
+         img {
+            vertical-align: middle;
+         }
+      }
+
+      #fullScreenTrigger {
+         filter: invert(100%);
+      }
+
+      // The Susy Span Mixin Syntax
+      .brand-logo {
+         position: relative;
+         padding-right: 5px;
+         width: span(3 of 24);
+
+         a {
+            font-size: 1em;
+         }
+      }
+
+      .search {
+         width: span(5 of 24);
+
+         input.search-sidenav {
+            display: block;
+            font-size: 16px;
+            font-weight: 300;
+            width: 100%;
+            height: 45px;
+            margin: 0;
+            padding: 0 8px;
+            background-color: #fff;
+            border-radius: 10px;
+            //border: 0;
+         }
+
+         input.search-sidenav::placeholder {
+            color: #888;
+         }
+      }
+      .search-wrapper {
+         position: relative;
+         padding: 8px 0;
+      }
+
+   }
+   // end nav
+}
+

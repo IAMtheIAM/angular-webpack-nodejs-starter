@@ -1,0 +1,12 @@
+# Frontend
+
+node_modules
+compiled/aot/node_modules
+compiled/src
+compiled
+wwwroot
+cache
+stats.json
+dotnetcore
+.awcache
+npm-debug.log

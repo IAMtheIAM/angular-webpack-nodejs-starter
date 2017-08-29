@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Build App (Watch) + Run NodeServer (LiveReload) (Debug)" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
+    <toRun type="js.build_tools.npm" name="Build NodeServer - Watch Changes (Debug)" />
+    <toRun type="js.build_tools.npm" name="Run NodeServer - Live Reload (Debug)" />
+    <method />
+  </configuration>
+</component>

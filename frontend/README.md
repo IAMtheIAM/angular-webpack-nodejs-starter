@@ -1,0 +1,22 @@
+
+# Angular 2 + Webpack 2 Frontend
+
+This folder contains the Angular 2 + Webpack 2 frontend code for the project. 
+
+## Visual Studio 2015
+To open this project in Visual Studio 2015, navigate to appropriate folder and choose the solution file.
+ 
+ For .NET Core, go to [`../dotnetcore/Angular2-Webpack2-DotNetCore-Starter.sln`](../dotnetcore/Angular2-Webpack2-DotNetCore-Starter.sln)
+ For .NET Framework, go to [`../dotnetframework/Angular2-Webpack2-DotNetFramework-Starter.sln`](../dotnetframework/Angular2-Webpack2-DotNetFramework-Starter.sln)
+
+## IntelliJ IDEA 2016
+To open this project in IntelliJ IDEA, navigate to the [root](../../) of the project and open the folder in the program. It contains the [`../../.idea`](../../.idea) folder needed to load the project and all its run configurations.
+
+## To-do
+
+- [x] Integrating with Visual Studio
+- [ ] Get unit tests working
+
+
+## License
+ [MIT](/LICENSE)

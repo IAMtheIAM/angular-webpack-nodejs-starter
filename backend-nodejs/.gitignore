@@ -1,0 +1,13 @@
+# Backend-NodeJS
+
+node_modules
+.idea/compiler.xml
+.idea/express-mvc.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/jsLibraryMappings.xml
+.idea/workspace.xml
+.idea/vcs.xml
+.vscode
+wwwroot/js/chunks/hot/
+npm-debug.log

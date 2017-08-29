@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Debug NodeServer (Localhost) (Bundled)" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="project" path-to-js-file="build/server.bundle.js" working-dir="$PROJECT_DIR$">
+    <envs>
+      <env name="NODE_ENV" value="localhost" />
+    </envs>
+    <method />
+  </configuration>
+</component>

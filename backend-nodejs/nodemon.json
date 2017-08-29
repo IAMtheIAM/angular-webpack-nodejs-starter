@@ -1,0 +1,8 @@
+{
+    "execMap": {
+        "js": "node"
+    },
+    "watch": ["build", "app", "config"],
+    "ext": "js"
+}
+

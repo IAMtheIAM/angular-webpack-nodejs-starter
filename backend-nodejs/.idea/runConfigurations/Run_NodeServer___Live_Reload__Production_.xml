@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run NodeServer - Live Reload (Production)" type="js.build_tools.npm" factoryName="npm" singleton="false">
+    <package-json value="$PROJECT_DIR$/package.json" />
+    <command value="run" />
+    <scripts>
+      <script value="nodemon" />
+    </scripts>
+    <node-interpreter value="project" />
+    <envs>
+      <env name="NODE_ENV" value="production" />
+    </envs>
+    <method />
+  </configuration>
+</component>

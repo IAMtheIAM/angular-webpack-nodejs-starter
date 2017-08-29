@@ -1,0 +1,19 @@
+/* global.scss */
+
+/* Import Materialize CSS Mixins and Variables */
+@import "~materialize-css/sass/components/_mixins";
+@import "~materialize-css/sass/components/_color";
+@import '~materialize-css/sass/components/_variables';
+
+/* Import custom global styles */
+@import "variables"; // even though variables.scss is imported globally from webpack sass-vars-loader, it also needs to be here
+// so that some materialize.css custom variables contained in the imports below can reference the mixins from the node_modules materialize.css imports above
+
+@import '~susy/sass/susy';
+@import '~susy/sass/plugins/svg-grid/prefix';
+@import "global/susy-grid-config";
+@import "global/reset";
+@import "global/forms";
+@import "global/alignments";
+@import "global/display";
+@import "global/buttons";

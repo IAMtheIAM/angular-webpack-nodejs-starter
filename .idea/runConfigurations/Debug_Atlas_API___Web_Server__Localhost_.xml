@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Debug Atlas API / Web Server (Localhost)" type="NodeJSConfigurationType" factoryName="Node.js" singleton="true" path-to-node="project" path-to-js-file="app/server.js" working-dir="$PROJECT_DIR$/backend-nodejs">
+    <envs>
+      <env name="NODE_ENV" value="localhost" />
+    </envs>
+    <method />
+  </configuration>
+</component>

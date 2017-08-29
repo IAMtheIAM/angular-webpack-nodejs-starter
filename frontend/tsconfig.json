@@ -1,0 +1,58 @@
+{
+   "compilerOptions": {
+      "allowSyntheticDefaultImports": true,
+      "baseUrl": "./src",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "lib": [
+         "dom",
+         "es6"
+      ],
+      "moduleResolution": "node",
+      "noStrictGenericChecks": true,
+      "outDir": "lib",
+      "paths": {},
+      "pretty": true,
+      "sourceMap": true,
+      "sourceRoot": ".",
+      "strictNullChecks": false,
+      "target": "es5",
+      "typeRoots": [
+         "./node_modules/@types"
+      ],
+      "types": [
+         "core-js",
+         "hammerjs",
+         "lodash",
+         "materialize-css",
+         "node",
+         "source-map",
+         "uglify-js",
+         "webpack"
+      ]
+   },
+   "exclude": [
+      "./node_modules",
+      "./compiled",
+      "./wwwroot",
+      "../backend-nodejs",
+      "./src/**/*.e2e.ts",
+      "./src/**/*.spec.ts"
+   ],
+   "filesGlob": [
+      "!./node_modules/**",
+      "./src/**/*.ts",
+      "./src/custom-typings.d.ts",
+      "./src/types/require.d.ts"
+   ],
+   "atom": {
+      "rewriteTsconfig": false
+   },
+   "awesomeTypescriptLoaderOptions": {
+      "forkChecker": true,
+      "resolveGlobs": true,
+      "useCache": true
+   },
+   "buildOnSave": false,
+   "compileOnSave": false
+}

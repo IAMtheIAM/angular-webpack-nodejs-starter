@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run NodeServer - Live Reload (Debug)" type="js.build_tools.npm" factoryName="npm" singleton="false">
+    <package-json value="$PROJECT_DIR$/package.json" />
+    <command value="run" />
+    <scripts>
+      <script value="nodemon" />
+    </scripts>
+    <node-interpreter value="project" />
+    <envs>
+      <env name="NODE_ENV" value="debug" />
+    </envs>
+    <method />
+  </configuration>
+</component>

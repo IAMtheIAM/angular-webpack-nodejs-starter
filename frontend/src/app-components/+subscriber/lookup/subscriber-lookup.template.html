@@ -1,0 +1,71 @@
+<div class="card-container">
+   <!--The Materialize way-->
+   <div class="card">
+      <div class="card-content">
+
+         <!--<img class="logo" src="/assets/images/logo.svg" />-->
+
+         <form role="form" #form="ngForm" (ngSubmit)="getSelectedSubscriberData(subscriber.value)">
+            <div class="row">
+               <div class="input-field">
+                  <!--<i class="material-icons suffix">search</i>-->
+
+                  <input #subscriber type="text" class="" id="adre_number" value=""
+                     [ngbTypeahead]="lookupSubscriber"
+                     [resultFormatter]="responseFormatter"
+                     [inputFormatter]="responseFormatter"
+                     [(ngModel)]="model"
+                     [formControl]="lookupSubscriberControl"
+                     (selectItem)="getSelectedSubscriberData($event.item)">
+                  <button (click)="lookupSubscriber" class="material-icons suffix">search</button>
+
+                  <label for="adre_number">Search by Name or ADRE License #</label>
+               </div>
+            </div>
+
+            <button [routerLink]="['../register', this.licenseNumber]" class="btn btn-large btn-block waves-effect waves-light blue">
+            <!--<button (click)="goToRegisterView()" class="btn btn-large btn-block waves-effect waves-light blue">-->
+               Next Page<i class="material-icons right">send</i>
+            </button>
+         </form>
+      </div>
+   </div>
+   <div class="row">
+      <div class="input-field">
+         <span class="float-right"><a [routerLink]="['/forgot-password']">Need help?</a></span><br>
+      </div>
+   </div>
+
+
+   <!--<md-card>-->
+   <!--<form #form2="ngForm" (ngSubmit)="getSelectedSubscriberData(subscriber.value)"-->
+   <!--[class.has-danger]="searchFailed">-->
+   <!--<md-input-container>-->
+   <!--<input #subscriber mdInput-->
+   <!--[ngbTypeahead]="lookupSubscriber"-->
+   <!--[(ngModel)]="model2"-->
+   <!--[formControl]="lookupSubscriberControl2"-->
+   <!--(selectItem)="getSelectedSubscriberData($event.item)"-->
+   <!--placeholder="Search by Name or ADRE License #">-->
+   <!--<button type="submit" mdSuffix class="material-icons">search</button>-->
+   <!--</md-input-container>-->
+
+   <!--<span *ngIf="searching"><md-progress-spinner mode="indeterminate"></md-progress-spinner></span>-->
+   <!--<div class="form-control-feedback" *ngIf="searchFailed">Sorry, suggestions could not be loaded.</div>-->
+
+   <!--<button md-raised-button color="primary" class="btn-block btn-large">-->
+   <!--Next Page<i class="material-icons right">send</i>-->
+   <!--</button>-->
+   <!--</form>-->
+   <!--</md-card>-->
+   <!--<div class="input-field">-->
+   <!--<span class="float-right"><a [routerLink]="['/forgot-password']">Need help?</a></span><br>-->
+   <!--</div>-->
+
+
+   <!--<br />-->
+   <!--<br />-->
+   <!--<br />-->
+   <!--<br />-->
+
+</div>

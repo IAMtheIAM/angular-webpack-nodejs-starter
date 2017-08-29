@@ -1,0 +1,55 @@
+/* global/Forms.scss*/
+
+/* ===============================================================
+ *                            BUTTONS
+ * =============================================================== */
+
+/* ===============================================================
+ *                MATERIALIZE.CSS CUSTOMIZATIONS
+ * =============================================================== */
+
+.btn-block {
+   width: 100%;
+}
+
+/*
+ * Material Waves
+ */
+.waves-effect.waves-darkblue .waves-ripple {
+   /* The alpha value allows the text and background color
+   of the button to still show through. */
+   background-color: rgba(150, 212, 99, 0.85);
+}
+
+button.material-icons {
+   cursor: pointer;
+   background: none;
+   border: none;
+}
+
+.btn-large {
+   height: 3.0rem;
+   line-height: 3.0rem;
+}
+
+//.btn {
+//   font-weight: 500;
+//}
+
+/* ===============================================================
+ *                END MATERIALIZE.CSS CUSTOMIZATIONS
+ * =============================================================== */
+
+/* ===============================================================
+ *                ANGULAR MATERIAL CUSTOMIZATIONS
+ * =============================================================== */
+
+.mat-button, .mat-raised-button, .mat-icon-button {
+   font-size: 1rem;
+   font-weight: 400;
+
+}
+
+/* ===============================================================
+ *                END ANGULAR MATERIAL CUSTOMIZATIONS
+ * =============================================================== */

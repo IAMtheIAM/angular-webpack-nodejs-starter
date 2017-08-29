@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Debug Webpack - Watch Changes (Debug)" type="NodeJSConfigurationType" factoryName="Node.js" singleton="false" path-to-node="project" path-to-js-file="webpack.debugger.cli.js" working-dir="$PROJECT_DIR$/">
+    <envs>
+      <env name="NODE_ENV" value="debug" />
+    </envs>
+    <method />
+  </configuration>
+</component>

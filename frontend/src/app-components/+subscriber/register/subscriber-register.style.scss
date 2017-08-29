@@ -1,0 +1,149 @@
+/********************/
+/* Subscriber-Register.scss */
+/********************/
+//@import '../../../assets/styles/appwide-metastyles.scss';
+
+// The Susy Span Mixin Syntax
+// This creates the app layout using Susy's Math functions
+// @include span( <$span> of [<$context>] [<$last>] );
+// Note: Arguments within square brackets are optional arguments
+
+subscriber-register {
+
+   @include clearfix;
+   //align-items: center;
+   //height: 85vh; // This forces <login> to 80% of your viewport
+   display: flex;
+   justify-content: center;
+   padding-top: 40px;
+
+   .card-container {
+      background: susy-svg-grid() no-repeat scroll;
+      width: span(12 of 24);
+      margin: 20px;
+      position: relative;
+      //top: 200px;
+      @include border-radius(10px);
+
+      @media only screen and (max-width: 799px) {
+         width: span(24 of 24);
+      }
+
+      @media only screen and (min-width: 800px) and (max-width: 1199px) {
+         width: span(18 of 24);
+      }
+
+      @media only screen and (min-width: 1200px) and (max-width: 1599px) {
+         width: span(12 of 24);
+      }
+
+   }
+
+   .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+      display: none;
+      float: left;
+      min-width: 10rem;
+      padding: 0.5rem 0;
+      margin: 0.125rem 0 0;
+      font-size: 1rem;
+      color: #292b2c;
+      text-align: left;
+      list-style: none;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      border-radius: 0.25rem;
+
+      button {
+         font-size: 100%;
+         touch-action: manipulation;
+         line-height: inherit;
+
+         // Bootstrap 4 autocomplete typehead
+         &.dropdown-item {
+            display: block;
+            width: 100%; // For `<button>`s
+            padding: 3px 1.5rem;
+            clear: both;
+            font-weight: normal;
+            color: #292b2c;
+            text-align: inherit; // For `<button>`s
+            white-space: nowrap; // prevent links from randomly breaking onto new lines
+            background: none; // For `<button>`s
+            border: 0; // For `<button>`s
+
+            .dropdown-item:focus, .dropdown-item:hover {
+               color: #1d1e1f;
+               text-decoration: none;
+               background-color: #f7f7f9;
+            }
+
+            &.active,
+            &:active {
+               color: #fff;
+               text-decoration: none;
+               background-color: #0275d8;
+            }
+
+            &.disabled,
+            &:disabled {
+               color: #636c72;
+               cursor: not-allowed;
+               background-color: transparent;
+               // Remove CSS gradients if they're enabled
+               //background-image: none;
+            }
+         }
+      }
+   }
+
+   h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      flex-basis: 100%;
+      margin: 0.3em 0 1em;
+   }
+
+   form {
+      /* We first create a flex layout context */
+      display: flex;
+
+      /* Then we define the flow direction and if we allow the items to wrap
+       * Remember this is the same as:
+       * flex-direction: row;
+       * flex-wrap: wrap;
+       */
+      flex-flow: row wrap;
+
+      /* Then we define how is distributed the remaining space */
+      justify-content: space-around;
+
+      .input-wrapper, label {
+         flex: 1 1 span(12 of 24);
+         padding: 0 gutter() / 2;
+      }
+   }
+
+   //.full_name {
+   //
+   //}
+   //
+   //.nick_name {
+   //
+   //}
+   //
+   //.email_address {
+   //
+   //}
+   //
+   //.home_address {
+   //}
+}
+
+// end login {}
+
+

@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Debug Webpack (Production) (AOT)" type="NodeJSConfigurationType" factoryName="Node.js" singleton="true" path-to-node="project" path-to-js-file="debug-webpack.cli.js" working-dir="$PROJECT_DIR$/frontend">
+    <envs>
+      <env name="NODE_ENV" value="production" />
+      <env name="npm_lifecycle_event" value="build:production:aot" />
+    </envs>
+    <method />
+  </configuration>
+</component>

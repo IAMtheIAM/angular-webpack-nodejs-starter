@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="2) AOT: Compile + Build Debug (Webpack) (Watch)" type="js.build_tools.npm" factoryName="npm" singleton="true">
+    <package-json value="$PROJECT_DIR$/frontend/package.json" />
+    <command value="run" />
+    <scripts>
+      <script value="compile-ngc:webpack:build-debug:aot" />
+    </scripts>
+    <node-interpreter value="project" />
+    <envs />
+    <method />
+  </configuration>
+</component>
