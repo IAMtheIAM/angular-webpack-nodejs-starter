@@ -80,7 +80,7 @@ if (ENV !== 'development') {
 
 if (ENV !== 'development') {
    ConditionalImports = APP_IMPORTS.push(ApplicationInsightsModule.forRoot({
-      instrumentationKey: '116b16e7-0307-4d62-b201-db3ea88a32c7'
+      instrumentationKey: 'your_key'
    }));
 }
 

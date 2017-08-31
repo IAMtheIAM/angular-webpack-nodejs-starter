@@ -1,6 +1,6 @@
 /* Configuration by Nathan Parson on 06/02/2017 **/
 var appInsights = require('applicationinsights'); // azure application insights
-appInsights.setup('df7862b7-9f2d-4f8d-9f4f-1e404e06a209').start(); // key also set in azure APPINSIGHTS_INSTRUMENTATIONKEY environment variable
+appInsights.setup('your_key').start(); // key also set in azure APPINSIGHTS_INSTRUMENTATIONKEY environment variable
 
 var glob = require('glob');
 var path = require('path');
