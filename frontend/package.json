@@ -92,8 +92,11 @@
       "webdriver-manager": "webdriver-manager",
       "webpack": "webpack",
       "webpack-dev-server": "webpack-dev-server",
-      "precommit-msg": "echo 'Husky: Git hooks made easy... NOTE: This is currently disabled. Consider running \"devserver:jit\" and \"build:production:aot\" before committing to ensure the build succeeds.' && exit 0",
-      "precommit": "precommit-msg",
+      "precommit": "npm run precommit-msg1 && npm run precommit-msg2 && npm run build:production:aot && npm run precommit:stage:zipdir",
+      "precommit-msg1": "echo Starting Husky: Git hooks made easy...",
+      "precommit-msg2": "echo Running \"build:production:aot\" to generate Angular App (AOT Productinon Mode)",
+      "precommit-msg3": "echo Staging \"./backend-nodejs/wwwroot\" into current commit",
+      "precommit:stage:zipdir": "npm run precommit-msg3 && node ./config/tools/getCurrentDirectory.js && cd ../ && node ./backend-nodejs/config/tools/getCurrentDirectory.js && git add ./backend-nodejs/wwwroot",
       "upgrade": "ncu -u -a --packageFile package.json && npm update"
    },
    "dependencies": {
