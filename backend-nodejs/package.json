@@ -70,7 +70,6 @@
         "webpack-merge": "4.1.0"
     },
     "devDependencies": {
-        "husky": "^0.14.3",
         "pre-commit": "^1.2.2",
         "zip-dir": "^1.0.2"
     },
