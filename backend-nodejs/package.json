@@ -20,14 +20,14 @@
         "gulp": "gulp",
         "postinstall:original": "cd ./config/tools && elevate.exe -c mkdir \"../../../.git/hooks\" ^& mklink /H \"../../../.git/hooks/pre-commit\" \"../git-hooks/pre-commit.sh\"",
         "postinstall:pre-commit": "echo This is not currently in use && npm run clean:githooks && cd ./config/tools && elevate.exe -c mkdir \"../../../.git/hooks\" ^& mklink /H \"../../../.git/hooks/pre-commit\" \"../git-hooks/hook-custom\"",
+        "rimrafglobal": "npm uninstall rimraf && rimraf",
+        "run:node": "node app.js",
+        "run:zipdir": "node zipdir.js && npm run precommit:stage:zipdir",
         "precommit": "npm run precommit-msg1 && npm run precommit-msg2 && npm run run:zipdir",
         "precommit-msg1": "echo Starting Husky: Git hooks made easy...",
         "precommit-msg2": "echo Running \"node zipdir.js\" to generate Azure-Deploy.zip",
         "precommit-msg3": "echo Staging \"Azure-Deploy.zip\" into current commit",
-        "rimrafglobal": "npm uninstall rimraf && rimraf",
-        "run:node": "node app.js",
-        "run:zipdir": "node zipdir.js && npm run stage:zipdir",
-        "stage:zipdir": "npm run precommit-msg3 && cd ../ && git add ./backend-nodejs/Azure-Deploy.zip",
+        "precommit:stage:zipdir": "npm run precommit-msg3 && node ./config/tools/getCurrentDirectory.js && cd ../ && node ./backend-nodejs/config/tools/getCurrentDirectory.js && git add ./backend-nodejs/Azure-Deploy.zip",
         "upgrade": "ncu -u -a --packageFile package.json && npm i"
     },
     "dependencies": {
