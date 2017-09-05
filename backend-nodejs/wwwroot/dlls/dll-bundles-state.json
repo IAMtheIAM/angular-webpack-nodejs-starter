@@ -1,7 +1,7 @@
 {
   "core-js": {
     "bundle": "polyfills",
-    "version": "2.5.0"
+    "version": "2.5.1"
   },
   "ts-helpers": {
     "bundle": "polyfills",
@@ -9,31 +9,31 @@
   },
   "@angular/platform-browser": {
     "bundle": "vendors",
-    "version": "4.3.5"
+    "version": "4.3.6"
   },
   "@angular/platform-browser-dynamic": {
     "bundle": "vendors",
-    "version": "4.3.5"
+    "version": "4.3.6"
   },
   "@angular/core": {
     "bundle": "vendors",
-    "version": "4.3.5"
+    "version": "4.3.6"
   },
   "@angular/common": {
     "bundle": "vendors",
-    "version": "4.3.5"
+    "version": "4.3.6"
   },
   "@angular/forms": {
     "bundle": "vendors",
-    "version": "4.3.5"
+    "version": "4.3.6"
   },
   "@angular/http": {
     "bundle": "vendors",
-    "version": "4.3.5"
+    "version": "4.3.6"
   },
   "@angular/router": {
     "bundle": "vendors",
-    "version": "4.3.5"
+    "version": "4.3.6"
   },
   "@angularclass/hmr": {
     "bundle": "vendors",
